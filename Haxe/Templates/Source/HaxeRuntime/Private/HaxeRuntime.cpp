@@ -39,12 +39,15 @@ static void *get_top_of_stack(void)
 #endif
 }
 
-static bool did_init = false;
+// static bool did_init = false;
+static uint32 init_tls = FPlatformTLS::AllocTlsSlot();
+static bool first_init = false;
 
 extern "C" void check_hx_init()
 {
+  void *did_init = FPlatformTLS::GetTlsValue(init_tls);
   if (did_init) return;
-  did_init = true;
+  FPlatformTLS::SetTlsValue(init_tls, (void *) 1);
 
   // This code will execute after your module is loaded into memory (but after global variables are initialized, of course.)
   int x;
@@ -57,9 +60,13 @@ extern "C" void check_hx_init()
 
 #ifdef WITH_HAXE
   gc_set_top_of_stack((int *)top_of_stack, false);
-  const char *error = hxRunLibrary();
-  // if (error) { UE_LOG(HXR, Error, TEXT("Error on Haxe main function: %s"), UTF8_TO_TCHAR(error)); }
-  if (error) { fprintf(stderr, "Error on Haxe main function: %s", error); }
+  if (!first_init)
+  {
+    first_init = true;
+    const char *error = hxRunLibrary();
+    // if (error) { UE_LOG(HXR, Error, TEXT("Error on Haxe main function: %s"), UTF8_TO_TCHAR(error)); }
+    if (error) { fprintf(stderr, "Error on Haxe main function: %s", error); }
+  }
 #endif
 }
 

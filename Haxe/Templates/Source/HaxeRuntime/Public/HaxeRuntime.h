@@ -7,6 +7,8 @@
 #include "ModuleManager.h"
 #include "UnrealEd.h"
 
+extern "C" void check_hx_init();
+
 class FHaxeRuntime : public IModuleInterface
 {
 public:

@@ -96,6 +96,10 @@ class BuildExpose {
           headerDef += ' override';
         headerDef += ';\n';
         cppDef += '{\n\t';
+        if (field.type == Override) {
+          // we always need to check if we need to register the haxe thread
+          cppDef += 'check_hx_init();\n\t';
+        }
         var args = [ for (arg in field.args) arg.type.ueToGlue( arg.name ) ];
         if (!field.type.isStatic())
           args.unshift( thisConv.ueToGlue(thisConst ? 'const_cast<${ nativeUe.getCppType() }>(this)' : 'this') );

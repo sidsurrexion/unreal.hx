@@ -264,7 +264,8 @@ class HaxeRuntime extends BaseModuleRules
           } else if (showErrors) {
             Log.TraceError('HaxeCompiler: $ln');
           } else {
-            Log.TraceInformation('HaxeCompiler: $ln');
+            Sys.println('HaxeCompiler: $ln');
+            // Log.TraceInformation('HaxeCompiler: $ln');
           }
         }
       }
