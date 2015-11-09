@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundGroups.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundGroups.h")
 @:uname("ESoundGroup")
 @:uextern extern enum ESoundGroup {
   

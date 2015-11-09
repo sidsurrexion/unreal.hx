@@ -31,7 +31,7 @@ package unreal;
                          /                     \
   FadeInDistance.Min -->/                       \ <-- FadeOutDistance.Max
 **/
-@:glueCppIncludes("Sound/SoundNodeDistanceCrossFade.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeDistanceCrossFade.h")
 @:uextern extern class USoundNodeDistanceCrossFade extends unreal.USoundNode {
   
   /**

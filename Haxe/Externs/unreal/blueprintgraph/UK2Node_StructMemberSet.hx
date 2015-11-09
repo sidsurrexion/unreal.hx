@@ -9,7 +9,7 @@ package unreal.blueprintgraph;
   Imperative kismet node that sets one or more member variables of a struct
 **/
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_StructMemberSet.h", "Engine.h")
+@:glueCppIncludes("K2Node_StructMemberSet.h")
 @:uextern extern class UK2Node_StructMemberSet extends unreal.blueprintgraph.UK2Node_StructOperation {
   public var ShowPinForProperties : unreal.TArray<unreal.blueprintgraph.FOptionalPinFromProperty>;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Lightmass/PrecomputedVisibilityVolume.h", "Engine.h")
+@:glueCppIncludes("Lightmass/PrecomputedVisibilityVolume.h")
 @:uextern extern class APrecomputedVisibilityVolume extends unreal.AVolume {
   
 }

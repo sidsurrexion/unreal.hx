@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/SoundSurroundFactory.h", "Engine.h")
+@:glueCppIncludes("Factories/SoundSurroundFactory.h")
 @:uextern extern class USoundSurroundFactory extends unreal.editor.UFactory {
   public var CueVolume : unreal.Float32;
   

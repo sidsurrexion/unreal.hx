@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/OnlineSession.h", "Engine.h")
+@:glueCppIncludes("GameFramework/OnlineSession.h")
 @:uextern extern class UOnlineSession extends unreal.UObject {
   
 }

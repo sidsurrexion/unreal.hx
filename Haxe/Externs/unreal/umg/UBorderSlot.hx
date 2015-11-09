@@ -9,7 +9,7 @@ package unreal.umg;
   The Slot for the UBorderSlot, contains the widget displayed in a border's single slot
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/BorderSlot.h", "Engine.h")
+@:glueCppIncludes("Components/BorderSlot.h")
 @:uextern extern class UBorderSlot extends unreal.umg.UPanelSlot {
   
   /**

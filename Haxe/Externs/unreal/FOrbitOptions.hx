@@ -8,7 +8,7 @@ package unreal;
 /**
   Container struct for holding options on the data updating for the module.
 **/
-@:glueCppIncludes("Particles/Orbit/ParticleModuleOrbit.h", "Engine.h")
+@:glueCppIncludes("Particles/Orbit/ParticleModuleOrbit.h")
 @:uextern extern class FOrbitOptions {
   @:uname('new') public static function create():PHaxeCreated<unreal.FOrbitOptions>;
   

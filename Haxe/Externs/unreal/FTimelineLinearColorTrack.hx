@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct that contains one entry for each linear color interpolation performed by the timeline
 **/
-@:glueCppIncludes("Components/TimelineComponent.h", "Engine.h")
+@:glueCppIncludes("Components/TimelineComponent.h")
 @:uextern extern class FTimelineLinearColorTrack {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTimelineLinearColorTrack>;
   

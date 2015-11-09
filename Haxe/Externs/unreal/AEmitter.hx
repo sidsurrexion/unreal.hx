@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Emitter.h", "Engine.h")
+@:glueCppIncludes("Particles/Emitter.h")
 @:uextern extern class AEmitter extends unreal.AActor {
   #if WITH_EDITORONLY_DATA
   public var ArrowComponent : unreal.UArrowComponent;

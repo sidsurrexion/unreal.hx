@@ -9,7 +9,7 @@ package unreal;
   Setting that controls behavior when movement is restricted to a 2D plane defined by a specific axis/normal,
   so that movement along the locked axis is not be possible.
 **/
-@:glueCppIncludes("GameFramework/MovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/MovementComponent.h")
 @:uname("EPlaneConstraintAxisSetting")
 @:class @:uextern extern enum EPlaneConstraintAxisSetting {
   

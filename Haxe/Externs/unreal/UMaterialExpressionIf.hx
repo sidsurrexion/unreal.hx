@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionIf.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionIf.h")
 @:uextern extern class UMaterialExpressionIf extends unreal.UMaterialExpression {
   public var ConstAEqualsB_DEPRECATED : unreal.Float32;
   

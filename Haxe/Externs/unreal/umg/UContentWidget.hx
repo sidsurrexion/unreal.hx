@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Components/ContentWidget.h", "Engine.h")
+@:glueCppIncludes("Components/ContentWidget.h")
 @:uextern extern class UContentWidget extends unreal.umg.UPanelWidget {
   
 }

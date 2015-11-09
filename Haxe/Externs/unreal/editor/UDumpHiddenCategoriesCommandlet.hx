@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/DumpHiddenCategoriesCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/DumpHiddenCategoriesCommandlet.h")
 @:uextern extern class UDumpHiddenCategoriesCommandlet extends unreal.UCommandlet {
   
 }

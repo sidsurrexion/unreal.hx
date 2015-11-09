@@ -12,7 +12,7 @@ package unreal;
   Up to 24 bits per component.
   Valid range: 2^24 / 10 = +/- 1,677,721.6
 **/
-@:glueCppIncludes("GameFramework/Character.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Character.h")
 @:uextern extern class FVector_NetQuantize10 extends unreal.FVector {
   @:uname('new') public static function create():PHaxeCreated<unreal.FVector_NetQuantize10>;
   

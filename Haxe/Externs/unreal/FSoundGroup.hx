@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundGroups.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundGroups.h")
 @:uextern extern class FSoundGroup {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSoundGroup>;
   

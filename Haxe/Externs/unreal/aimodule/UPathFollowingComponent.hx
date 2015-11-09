@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Navigation/PathFollowingComponent.h", "Engine.h")
+@:glueCppIncludes("Navigation/PathFollowingComponent.h")
 @:uextern extern class UPathFollowingComponent extends unreal.UActorComponent implements unreal.aimodule.IAIResourceInterface {
   
   /**

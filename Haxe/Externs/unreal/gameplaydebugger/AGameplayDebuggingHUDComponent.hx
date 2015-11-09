@@ -5,7 +5,7 @@
 package unreal.gameplaydebugger;
 
 @:umodule("GameplayDebugger")
-@:glueCppIncludes("GameplayDebuggingHUDComponent.h", "Engine.h")
+@:glueCppIncludes("GameplayDebuggingHUDComponent.h")
 @:uextern extern class AGameplayDebuggingHUDComponent extends unreal.AActor {
   private var PlayerOwner : unreal.APlayerController;
   private var Canvas : unreal.UCanvas;

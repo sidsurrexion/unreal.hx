@@ -11,7 +11,7 @@ package unreal.gameplayabilities;
    This is only blueprintable to allow for templating gameplay effects. Gameplay effects should NOT contain blueprint graphs.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayEffect.h", "Engine.h")
+@:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class UGameplayEffect extends unreal.UObject implements unreal.gameplaytags.IGameplayTagAssetInterface {
   
   /**

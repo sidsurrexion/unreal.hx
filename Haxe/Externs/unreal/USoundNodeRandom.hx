@@ -8,7 +8,7 @@ package unreal;
 /**
   Selects sounds from a random set
 **/
-@:glueCppIncludes("Sound/SoundNodeRandom.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeRandom.h")
 @:uextern extern class USoundNodeRandom extends unreal.USoundNode {
   #if WITH_EDITORONLY_DATA
   

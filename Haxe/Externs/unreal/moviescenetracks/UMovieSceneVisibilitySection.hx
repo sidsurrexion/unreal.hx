@@ -12,7 +12,7 @@ package unreal.moviescenetracks;
   This custom bool track stores the inverse keys to display visibility (A green section bar means visible).
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Sections/MovieSceneVisibilitySection.h", "Engine.h")
+@:glueCppIncludes("Sections/MovieSceneVisibilitySection.h")
 @:uextern extern class UMovieSceneVisibilitySection extends unreal.moviescenetracks.UMovieSceneBoolSection {
   
 }

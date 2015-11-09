@@ -5,7 +5,7 @@
 package unreal.moviescenetools;
 
 @:umodule("MovieSceneTools")
-@:glueCppIncludes("K2Node_PlayMovieScene.h", "Engine.h")
+@:glueCppIncludes("K2Node_PlayMovieScene.h")
 @:uextern extern class UK2Node_PlayMovieScene extends unreal.blueprintgraph.UK2Node {
   
   /**

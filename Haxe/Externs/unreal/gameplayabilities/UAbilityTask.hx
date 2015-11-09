@@ -56,7 +56,7 @@ package unreal.gameplayabilities;
   This is a lot of steps but in general, AbilityTask_SpawnActor() gives a clear, minimal example.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/Tasks/AbilityTask.h", "Engine.h")
+@:glueCppIncludes("Abilities/Tasks/AbilityTask.h")
 @:uextern extern class UAbilityTask extends unreal.gameplaytasks.UGameplayTask {
   
 }

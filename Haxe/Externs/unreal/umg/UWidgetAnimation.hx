@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Animation/WidgetAnimation.h", "Engine.h")
+@:glueCppIncludes("Animation/WidgetAnimation.h")
 @:uextern extern class UWidgetAnimation extends unreal.UObject {
   public var AnimationBindings : unreal.TArray<unreal.umg.FWidgetAnimationBinding>;
   public var MovieScene : unreal.moviescene.UMovieScene;

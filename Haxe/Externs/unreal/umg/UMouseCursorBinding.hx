@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Binding/MouseCursorBinding.h", "Engine.h")
+@:glueCppIncludes("Binding/MouseCursorBinding.h")
 @:uextern extern class UMouseCursorBinding extends unreal.umg.UPropertyBinding {
   
 }

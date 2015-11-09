@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("AISystem.h", "Engine.h")
+@:glueCppIncludes("AISystem.h")
 @:uextern extern class UAISystem extends unreal.UAISystemBase {
   private var HotSpotManager : unreal.aimodule.UAIHotSpotManager;
   private var AllProxyObjects : unreal.TArray<unreal.aimodule.UAIAsyncTaskBlueprintProxy>;

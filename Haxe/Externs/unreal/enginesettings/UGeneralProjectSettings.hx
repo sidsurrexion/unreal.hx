@@ -5,7 +5,7 @@
 package unreal.enginesettings;
 
 @:umodule("EngineSettings")
-@:glueCppIncludes("GeneralProjectSettings.h", "Engine.h")
+@:glueCppIncludes("GeneralProjectSettings.h")
 @:uextern extern class UGeneralProjectSettings extends unreal.UObject {
   
   /**

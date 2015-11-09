@@ -10,7 +10,7 @@ package unreal.niagara;
   that need to be serialized and are used for its initialization
 **/
 @:umodule("Niagara")
-@:glueCppIncludes("NiagaraSimulation.h", "Engine.h")
+@:glueCppIncludes("NiagaraSimulation.h")
 @:uextern extern class UNiagaraEmitterProperties extends unreal.UObject {
   public var SpawnScriptProps : unreal.niagara.FNiagaraEmitterScriptProperties;
   public var UpdateScriptProps : unreal.niagara.FNiagaraEmitterScriptProperties;

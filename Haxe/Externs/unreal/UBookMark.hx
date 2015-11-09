@@ -8,7 +8,7 @@ package unreal;
 /**
   A camera position the current level.
 **/
-@:glueCppIncludes("Engine/BookMark.h", "Engine.h")
+@:glueCppIncludes("Engine/BookMark.h")
 @:uextern extern class UBookMark extends unreal.UObject {
   
   /**

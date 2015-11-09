@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_Donut.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_Donut.h")
 @:uextern extern class UEnvQueryGenerator_Donut extends unreal.aimodule.UEnvQueryGenerator_ProjectedPoints {
   public var bDefineArc : Bool;
   

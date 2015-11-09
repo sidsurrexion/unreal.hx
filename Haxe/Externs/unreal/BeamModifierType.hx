@@ -8,7 +8,7 @@ package unreal;
 /**
   What to modify.
 **/
-@:glueCppIncludes("Particles/Beam/ParticleModuleBeamModifier.h", "Engine.h")
+@:glueCppIncludes("Particles/Beam/ParticleModuleBeamModifier.h")
 @:uname("BeamModifierType")
 @:uextern extern enum BeamModifierType {
   

@@ -9,7 +9,7 @@ package unreal.umg;
   This is the base class for all wrapped Slate controls that are exposed to UObjects.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/Widget.h", "Engine.h")
+@:glueCppIncludes("Components/Widget.h")
 @:uextern extern class UWidget extends unreal.umg.UVisual {
   
   /**

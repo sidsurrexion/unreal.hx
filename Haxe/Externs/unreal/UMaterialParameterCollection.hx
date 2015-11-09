@@ -9,7 +9,7 @@ package unreal;
   Asset class that contains a list of parameter names and their default values.
   Any number of materials can reference these parameters and get new values when the parameter values are changed.
 **/
-@:glueCppIncludes("Materials/MaterialParameterCollection.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialParameterCollection.h")
 @:uextern extern class UMaterialParameterCollection extends unreal.UObject {
   public var VectorParameters : unreal.TArray<unreal.FCollectionVectorParameter>;
   public var ScalarParameters : unreal.TArray<unreal.FCollectionScalarParameter>;

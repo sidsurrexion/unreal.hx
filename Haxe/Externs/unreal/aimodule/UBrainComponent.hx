@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("BrainComponent.h", "Engine.h")
+@:glueCppIncludes("BrainComponent.h")
 @:uextern extern class UBrainComponent extends unreal.UActorComponent implements unreal.aimodule.IAIResourceInterface {
   private var AIOwner : unreal.aimodule.AAIController;
   

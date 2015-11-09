@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct used to specify the property name of the component to constrain
 **/
-@:glueCppIncludes("PhysicsEngine/PhysicsConstraintComponent.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsConstraintComponent.h")
 @:uextern extern class FConstrainComponentPropName {
   @:uname('new') public static function create():PHaxeCreated<unreal.FConstrainComponentPropName>;
   

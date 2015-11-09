@@ -8,7 +8,7 @@ package unreal;
 /**
   Class containing definition of a navigation area
 **/
-@:glueCppIncludes("AI/Navigation/NavAreas/NavArea.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavAreas/NavArea.h")
 @:uextern extern class UNavArea extends unreal.UObject {
   public var bSupportsAgent15 : Bool;
   public var bSupportsAgent14 : Bool;

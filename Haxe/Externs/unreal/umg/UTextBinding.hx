@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Binding/TextBinding.h", "Engine.h")
+@:glueCppIncludes("Binding/TextBinding.h")
 @:uextern extern class UTextBinding extends unreal.umg.UPropertyBinding {
   
 }

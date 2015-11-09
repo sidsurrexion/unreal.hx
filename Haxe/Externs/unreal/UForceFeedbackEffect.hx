@@ -8,7 +8,7 @@ package unreal;
 /**
   A predefined force-feedback effect to be played on a controller
 **/
-@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h", "Engine.h")
+@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class UForceFeedbackEffect extends unreal.UObject {
   
   /**

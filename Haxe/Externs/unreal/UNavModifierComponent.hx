@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavModifierComponent.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavModifierComponent.h")
 @:uextern extern class UNavModifierComponent extends unreal.UNavRelevantComponent {
   
   /**

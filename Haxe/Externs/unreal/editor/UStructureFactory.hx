@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/StructureFactory.h", "Engine.h")
+@:glueCppIncludes("Factories/StructureFactory.h")
 @:uextern extern class UStructureFactory extends unreal.editor.UFactory {
   
 }

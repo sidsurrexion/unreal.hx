@@ -8,7 +8,7 @@ package unreal;
 /**
   Information for one sound in the track.
 **/
-@:glueCppIncludes("Matinee/InterpTrackSound.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackSound.h")
 @:uextern extern class FSoundTrackKey {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSoundTrackKey>;
   public var Sound : unreal.USoundBase;

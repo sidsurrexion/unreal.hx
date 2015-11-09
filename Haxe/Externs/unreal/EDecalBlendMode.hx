@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines how the GBuffer channels are getting manipulated by a decal material pass. Actual index is used to control shader parameters so don't change order.
 **/
-@:glueCppIncludes("Materials/Material.h", "Engine.h")
+@:glueCppIncludes("Materials/Material.h")
 @:uname("EDecalBlendMode")
 @:uextern extern enum EDecalBlendMode {
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   A curve base class which enables key handles to index lookups
 **/
-@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h", "Engine.h")
+@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FIndexedCurve {
   @:uname('new') public static function create():PHaxeCreated<unreal.FIndexedCurve>;
   

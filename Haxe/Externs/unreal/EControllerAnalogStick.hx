@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/PlayerController.h", "Engine.h")
+@:glueCppIncludes("GameFramework/PlayerController.h")
 @:uname("EControllerAnalogStick.Type")
 @:uextern extern enum EControllerAnalogStick {
   CAS_LeftStick;

@@ -9,7 +9,7 @@ package unreal.umg;
   Allows a user to enter multiple lines of text
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/MultiLineEditableTextBox.h", "Engine.h")
+@:glueCppIncludes("Components/MultiLineEditableTextBox.h")
 @:uextern extern class UMultiLineEditableTextBox extends unreal.umg.UWidget {
   
   /**

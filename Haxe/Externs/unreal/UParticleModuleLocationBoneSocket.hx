@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Location/ParticleModuleLocationBoneSocket.h", "Engine.h")
+@:glueCppIncludes("Particles/Location/ParticleModuleLocationBoneSocket.h")
 @:uextern extern class UParticleModuleLocationBoneSocket extends unreal.UParticleModuleLocationBase {
   #if WITH_EDITORONLY_DATA
   

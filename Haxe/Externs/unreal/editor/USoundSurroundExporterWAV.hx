@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Exporters/SoundSurroundExporterWAV.h", "Engine.h")
+@:glueCppIncludes("Exporters/SoundSurroundExporterWAV.h")
 @:uextern extern class USoundSurroundExporterWAV extends unreal.UExporter {
   
 }

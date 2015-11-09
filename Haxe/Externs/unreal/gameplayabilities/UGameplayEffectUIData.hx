@@ -10,7 +10,7 @@ package unreal.gameplayabilities;
   Base class to provide game-specific data about how to describe a Gameplay Effect in the UI. Subclass with data to use in your game.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayEffectUIData.h", "Engine.h")
+@:glueCppIncludes("GameplayEffectUIData.h")
 @:uextern extern class UGameplayEffectUIData extends unreal.UObject {
   
 }

@@ -8,7 +8,7 @@ package unreal;
 /**
   Provides different easing functions that can be used in blueprints
 **/
-@:glueCppIncludes("Kismet/KismetMathLibrary.h", "Engine.h")
+@:glueCppIncludes("Kismet/KismetMathLibrary.h")
 @:uname("EEasingFunc.Type")
 @:uextern extern enum EEasingFunc {
   

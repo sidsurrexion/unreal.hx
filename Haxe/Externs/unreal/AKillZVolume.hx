@@ -10,7 +10,7 @@ package unreal;
   
   @see FellOutOfWorld
 **/
-@:glueCppIncludes("GameFramework/KillZVolume.h", "Engine.h")
+@:glueCppIncludes("GameFramework/KillZVolume.h")
 @:uextern extern class AKillZVolume extends unreal.APhysicsVolume {
   
 }

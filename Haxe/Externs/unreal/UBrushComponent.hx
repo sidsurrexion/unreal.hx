@@ -10,7 +10,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Actors/Volumes
   @see https://docs.unrealengine.com/latest/INT/Engine/Actors/Brushes
 **/
-@:glueCppIncludes("Components/BrushComponent.h", "Engine.h")
+@:glueCppIncludes("Components/BrushComponent.h")
 @:uextern extern class UBrushComponent extends unreal.UPrimitiveComponent {
   
   /**

@@ -8,7 +8,7 @@ package unreal;
 /**
   Purchase information structure
 **/
-@:glueCppIncludes("Engine/MicroTransactionBase.h", "Engine.h")
+@:glueCppIncludes("Engine/MicroTransactionBase.h")
 @:uextern extern class FPurchaseInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FPurchaseInfo>;
   

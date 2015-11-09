@@ -8,7 +8,7 @@ package unreal;
 /**
   Parameters that apply to a destructible actor.
 **/
-@:glueCppIncludes("Engine/DestructibleMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleParameters {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleParameters>;
   

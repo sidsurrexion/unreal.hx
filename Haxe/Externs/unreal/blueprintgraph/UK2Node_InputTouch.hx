@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_InputTouch.h", "Engine.h")
+@:glueCppIncludes("K2Node_InputTouch.h")
 @:uextern extern class UK2Node_InputTouch extends unreal.blueprintgraph.UK2Node {
   
   /**

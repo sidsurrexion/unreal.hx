@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Camera/PlayerCameraManager.h", "Engine.h")
+@:glueCppIncludes("Camera/PlayerCameraManager.h")
 @:uextern extern class FMinimalViewInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMinimalViewInfo>;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Whether or not the timeline should be finished after the specified length, or the last keyframe in the tracks
 **/
-@:glueCppIncludes("Engine/TimelineTemplate.h", "Engine.h")
+@:glueCppIncludes("Engine/TimelineTemplate.h")
 @:uname("ETimelineLengthMode")
 @:uextern extern enum ETimelineLengthMode {
   TL_TimelineLength;

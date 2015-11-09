@@ -8,7 +8,7 @@ package unreal;
 /**
   Each elements in the grid
 **/
-@:glueCppIncludes("Animation/BlendSpaceBase.h", "Engine.h")
+@:glueCppIncludes("Animation/BlendSpaceBase.h")
 @:uextern extern class FEditorElement {
   @:uname('new') public static function create():PHaxeCreated<unreal.FEditorElement>;
   

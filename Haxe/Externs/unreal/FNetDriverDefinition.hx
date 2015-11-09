@@ -10,7 +10,7 @@ package unreal;
   The engine will try to construct a netdriver of a given type and, failing that,
   the fallback version.
 **/
-@:glueCppIncludes("Engine/Engine.h", "Engine.h")
+@:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FNetDriverDefinition {
   @:uname('new') public static function create():PHaxeCreated<unreal.FNetDriverDefinition>;
   

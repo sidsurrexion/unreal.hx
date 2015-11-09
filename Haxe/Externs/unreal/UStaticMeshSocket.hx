@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/StaticMeshSocket.h", "Engine.h")
+@:glueCppIncludes("Engine/StaticMeshSocket.h")
 @:uextern extern class UStaticMeshSocket extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   public var PreviewStaticMesh : unreal.UStaticMesh;

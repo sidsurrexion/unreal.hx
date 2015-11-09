@@ -8,7 +8,7 @@ package unreal;
 /**
   A Material Function is a collection of material expressions that can be reused in different materials
 **/
-@:glueCppIncludes("Materials/MaterialFunction.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialFunction.h")
 @:uextern extern class UMaterialFunction extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   

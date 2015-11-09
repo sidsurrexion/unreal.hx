@@ -8,7 +8,7 @@ package unreal;
 /**
   Tick function that calls AActor::TickActor
 **/
-@:glueCppIncludes("GameFramework/Actor.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Actor.h")
 @:uextern extern class FActorTickFunction extends unreal.FTickFunction {
   @:uname('new') public static function create():PHaxeCreated<unreal.FActorTickFunction>;
   

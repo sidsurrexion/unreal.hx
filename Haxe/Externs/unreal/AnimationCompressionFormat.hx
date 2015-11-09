@@ -8,7 +8,7 @@ package unreal;
 /**
   Indicates animation data compression format.
 **/
-@:glueCppIncludes("Animation/AnimCompress.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimCompress.h")
 @:uname("AnimationCompressionFormat")
 @:uextern extern enum AnimationCompressionFormat {
   ACF_None;

@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_TwoWayBlend.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_TwoWayBlend.h")
 @:uextern extern class UAnimGraphNode_TwoWayBlend extends unreal.animgraph.UAnimGraphNode_Base {
   public var BlendNode : unreal.FAnimationNode_TwoWayBlend;
   

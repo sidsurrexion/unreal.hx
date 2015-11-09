@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/WorldSettings.h", "Engine.h")
+@:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uname("EVisibilityAggressiveness")
 @:uextern extern enum EVisibilityAggressiveness {
   VIS_LeastAggressive;

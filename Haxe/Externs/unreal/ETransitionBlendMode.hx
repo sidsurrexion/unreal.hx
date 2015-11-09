@@ -8,7 +8,7 @@ package unreal;
 /**
   @TODO: Document
 **/
-@:glueCppIncludes("AnimStateTransitionNode.h", "Engine.h")
+@:glueCppIncludes("AnimStateTransitionNode.h")
 @:uname("ETransitionBlendMode.Type")
 @:uextern extern enum ETransitionBlendMode {
   

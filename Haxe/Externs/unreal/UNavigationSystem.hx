@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavigationSystem.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationSystem.h")
 @:uextern extern class UNavigationSystem extends unreal.UBlueprintFunctionLibrary {
   private var OperationMode : unreal.FNavigationSystemRunMode;
   public var NavDataRegistrationQueue : unreal.TArray<unreal.ANavigationData>;

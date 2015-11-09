@@ -8,7 +8,7 @@ package unreal;
 /**
   Traveling from server to server.
 **/
-@:glueCppIncludes("GameFramework/PlayerController.h", "Engine.h")
+@:glueCppIncludes("GameFramework/PlayerController.h")
 @:uname("ETravelType")
 @:uextern extern enum ETravelType {
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   struct with all the settings we want in USubsurfaceProfile, separate to make it easer to pass this data around in the engine.
 **/
-@:glueCppIncludes("Engine/SubsurfaceProfile.h", "Engine.h")
+@:glueCppIncludes("Engine/SubsurfaceProfile.h")
 @:uextern extern class FSubsurfaceProfileStruct {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSubsurfaceProfileStruct>;
   

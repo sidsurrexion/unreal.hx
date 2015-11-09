@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/Engine.h", "Engine.h")
+@:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FMatineeScreenshotOptions {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMatineeScreenshotOptions>;
   public var bHideHud : Bool;

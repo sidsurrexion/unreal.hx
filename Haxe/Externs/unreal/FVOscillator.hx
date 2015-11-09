@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines FVector oscillation.
 **/
-@:glueCppIncludes("Camera/CameraShake.h", "Engine.h")
+@:glueCppIncludes("Camera/CameraShake.h")
 @:uextern extern class FVOscillator {
   @:uname('new') public static function create():PHaxeCreated<unreal.FVOscillator>;
   

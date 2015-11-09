@@ -5,7 +5,7 @@
 package unreal.gameplayabilities;
 
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayEffectExtension_ShieldTest.h", "Engine.h")
+@:glueCppIncludes("GameplayEffectExtension_ShieldTest.h")
 @:uextern extern class UGameplayEffectExtension_ShieldTest extends unreal.gameplayabilities.UGameplayEffectExtension {
   public var ShieldRemoveGameplayEffect : unreal.gameplayabilities.UGameplayEffect;
   

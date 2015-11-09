@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Private/Tests/CollisionAutomationTests.h", "Engine.h")
+@:glueCppIncludes("Private/Tests/CollisionAutomationTests.h")
 @:uextern extern class UCollisionAutomationTestConfigData extends unreal.UObject {
   public var LineTracePerformanceTests : unreal.TArray<unreal.editor.FCollisionPerfTest>;
   public var LineTraceSingleByChannelTests : unreal.TArray<unreal.editor.FCollisionTestEntry>;

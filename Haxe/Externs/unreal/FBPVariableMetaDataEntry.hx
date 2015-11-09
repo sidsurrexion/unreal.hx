@@ -8,7 +8,7 @@ package unreal;
 /**
   One metadata entry for a variable
 **/
-@:glueCppIncludes("Engine/SCS_Node.h", "Engine.h")
+@:glueCppIncludes("Engine/SCS_Node.h")
 @:uextern extern class FBPVariableMetaDataEntry {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBPVariableMetaDataEntry>;
   

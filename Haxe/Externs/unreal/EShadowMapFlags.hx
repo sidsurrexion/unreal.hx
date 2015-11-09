@@ -8,7 +8,7 @@ package unreal;
 /**
   Bit-field flags that affects storage (e.g. packing, streaming) and other info about a shadowmap.
 **/
-@:glueCppIncludes("Engine/ShadowMapTexture2D.h", "Engine.h")
+@:glueCppIncludes("Engine/ShadowMapTexture2D.h")
 @:uname("EShadowMapFlags")
 @:uextern extern enum EShadowMapFlags {
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct indicating a variable in the generated class
 **/
-@:glueCppIncludes("Engine/Blueprint.h", "Engine.h")
+@:glueCppIncludes("Engine/Blueprint.h")
 @:uextern extern class FBPVariableDescription {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBPVariableDescription>;
   

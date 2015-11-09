@@ -8,7 +8,7 @@ package unreal;
 /**
   Editable scalar parameter.
 **/
-@:glueCppIncludes("Materials/MaterialInstance.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialInstance.h")
 @:uextern extern class FScalarParameterValue {
   @:uname('new') public static function create():PHaxeCreated<unreal.FScalarParameterValue>;
   public var ExpressionGUID : unreal.FGuid;

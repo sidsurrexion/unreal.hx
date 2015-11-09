@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavLinkCustomInterface.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavLinkCustomInterface.h")
 @:uextern extern interface INavLinkCustomInterface {
   
 }

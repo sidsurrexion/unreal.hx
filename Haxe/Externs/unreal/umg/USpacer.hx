@@ -11,7 +11,7 @@ package unreal.umg;
   ● No Children
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/Spacer.h", "Engine.h")
+@:glueCppIncludes("Components/Spacer.h")
 @:uextern extern class USpacer extends unreal.umg.UWidget {
   
   /**

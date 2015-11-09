@@ -9,7 +9,7 @@ package unreal;
   A spline component is a spline shape which can be used for other purposes (e.g. animating objects). It does not contain rendering capabilities itself (outside the editor)
   @see https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/Blueprint_Splines
 **/
-@:glueCppIncludes("Components/SplineComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SplineComponent.h")
 @:uextern extern class USplineComponent extends unreal.UPrimitiveComponent {
   #if WITH_EDITORONLY_DATA
   

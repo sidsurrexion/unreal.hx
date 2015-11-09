@@ -8,7 +8,7 @@ package unreal;
 /**
   this is anim segment that defines what animation and how *
 **/
-@:glueCppIncludes("Animation/AnimComposite.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimComposite.h")
 @:uextern extern class FAnimSegment {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimSegment>;
   public var LoopingCount : unreal.Int32;

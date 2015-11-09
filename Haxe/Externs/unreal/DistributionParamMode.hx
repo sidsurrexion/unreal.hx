@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Distributions/DistributionFloatParameterBase.h", "Engine.h")
+@:glueCppIncludes("Distributions/DistributionFloatParameterBase.h")
 @:uname("DistributionParamMode")
 @:uextern extern enum DistributionParamMode {
   DPM_Normal;

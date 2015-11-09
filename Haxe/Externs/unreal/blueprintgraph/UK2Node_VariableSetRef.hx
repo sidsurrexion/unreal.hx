@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_VariableSetRef.h", "Engine.h")
+@:glueCppIncludes("K2Node_VariableSetRef.h")
 @:uextern extern class UK2Node_VariableSetRef extends unreal.blueprintgraph.UK2Node {
   
 }

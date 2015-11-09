@@ -8,7 +8,7 @@ package unreal;
 /**
   Types of coordinate space accepted by the functions.
 **/
-@:glueCppIncludes("Components/SplineComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SplineComponent.h")
 @:uname("ESplineCoordinateSpace.Type")
 @:uextern extern enum ESplineCoordinateSpace {
   Local;

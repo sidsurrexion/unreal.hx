@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct that contains one entry for an 'event' during the timeline
 **/
-@:glueCppIncludes("Components/TimelineComponent.h", "Engine.h")
+@:glueCppIncludes("Components/TimelineComponent.h")
 @:uextern extern class FTimelineEventEntry {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTimelineEventEntry>;
   

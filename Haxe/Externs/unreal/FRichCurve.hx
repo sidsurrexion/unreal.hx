@@ -8,7 +8,7 @@ package unreal;
 /**
   A rich, editable float curve
 **/
-@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h", "Engine.h")
+@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FRichCurve extends unreal.FIndexedCurve {
   @:uname('new') public static function create():PHaxeCreated<unreal.FRichCurve>;
   

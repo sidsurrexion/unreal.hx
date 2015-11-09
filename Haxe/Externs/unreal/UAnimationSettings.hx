@@ -8,7 +8,7 @@ package unreal;
 /**
   Default animation settings.
 **/
-@:glueCppIncludes("Animation/AnimationSettings.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimationSettings.h")
 @:uextern extern class UAnimationSettings extends unreal.UDeveloperSettings {
   public var bTryIntervalKeyRemoval : Bool;
   public var bTryLinearKeyRemovalCompression : Bool;

@@ -9,7 +9,7 @@ package unreal;
   Struct used for storing one per-instance named parameter for this AudioComponent.
   Certain nodes in the SoundCue may reference parameters by name so they can be adjusted per-instance.
 **/
-@:glueCppIncludes("Components/AudioComponent.h", "Engine.h")
+@:glueCppIncludes("Components/AudioComponent.h")
 @:uextern extern class FAudioComponentParam {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAudioComponentParam>;
   

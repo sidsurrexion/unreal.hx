@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GraphEditorSettings.h", "Engine.h")
+@:glueCppIncludes("GraphEditorSettings.h")
 @:uname("EBlueprintPinStyleType")
 @:uextern extern enum EBlueprintPinStyleType {
   

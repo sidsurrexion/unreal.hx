@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/InstancedStaticMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/InstancedStaticMeshComponent.h")
 @:uextern extern class FInstancedStaticMeshInstanceData {
   @:uname('new') public static function create():PHaxeCreated<unreal.FInstancedStaticMeshInstanceData>;
   public var ShadowmapUVBias : unreal.FVector2D;

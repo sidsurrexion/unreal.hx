@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Location/ParticleModuleLocationPrimitiveTriangle.h", "Engine.h")
+@:glueCppIncludes("Particles/Location/ParticleModuleLocationPrimitiveTriangle.h")
 @:uextern extern class UParticleModuleLocationPrimitiveTriangle extends unreal.UParticleModuleLocationBase {
   public var Thickness : unreal.FRawDistributionFloat;
   public var Angle : unreal.FRawDistributionFloat;

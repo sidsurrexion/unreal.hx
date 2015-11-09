@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackInstAnimControl.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackInstAnimControl.h")
 @:uextern extern class UInterpTrackInstAnimControl extends unreal.UInterpTrackInst {
   #if WITH_EDITORONLY_DATA
   public var InitRotation : unreal.FRotator;

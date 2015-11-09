@@ -11,7 +11,7 @@ package unreal.gameplayabilities;
   reset it on completion.!
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/Tasks/AbilityTask_MoveToLocation.h", "Engine.h")
+@:glueCppIncludes("Abilities/Tasks/AbilityTask_MoveToLocation.h")
 @:uextern extern class UAbilityTask_MoveToLocation extends unreal.gameplayabilities.UAbilityTask {
   private var LerpCurveVector : unreal.UCurveVector;
   private var LerpCurve : unreal.UCurveFloat;

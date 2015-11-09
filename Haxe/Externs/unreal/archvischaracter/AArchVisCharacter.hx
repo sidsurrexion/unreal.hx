@@ -5,7 +5,7 @@
 package unreal.archvischaracter;
 
 @:umodule("ArchVisCharacter")
-@:glueCppIncludes("ArchVisCharacter.h", "Engine.h")
+@:glueCppIncludes("ArchVisCharacter.h")
 @:uextern extern class AArchVisCharacter extends unreal.ACharacter {
   
   /**

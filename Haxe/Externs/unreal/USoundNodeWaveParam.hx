@@ -8,7 +8,7 @@ package unreal;
 /**
   Sound node that takes a runtime parameter for the wave to play
 **/
-@:glueCppIncludes("Sound/SoundNodeWaveParam.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeWaveParam.h")
 @:uextern extern class USoundNodeWaveParam extends unreal.USoundNode {
   
   /**

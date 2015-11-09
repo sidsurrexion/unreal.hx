@@ -5,7 +5,7 @@
 package unreal.gameprojectgeneration;
 
 @:umodule("GameProjectGeneration")
-@:glueCppIncludes("TemplateProjectDefs.h", "Engine.h")
+@:glueCppIncludes("TemplateProjectDefs.h")
 @:uextern extern class UTemplateProjectDefs extends unreal.UObject {
   
   /**

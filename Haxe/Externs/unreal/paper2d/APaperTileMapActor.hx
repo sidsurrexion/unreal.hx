@@ -12,7 +12,7 @@ package unreal.paper2d;
   it is just a thin wrapper around a UPaperTileMapComponent that actually references the asset.
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("PaperTileMapActor.h", "Engine.h")
+@:glueCppIncludes("PaperTileMapActor.h")
 @:uextern extern class APaperTileMapActor extends unreal.AActor {
   
 }

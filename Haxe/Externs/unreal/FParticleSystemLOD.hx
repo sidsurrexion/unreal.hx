@@ -8,7 +8,7 @@ package unreal;
 /**
   Structure containing per-LOD settings that pertain to the entire UParticleSystem.
 **/
-@:glueCppIncludes("Particles/ParticleSystem.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleSystem.h")
 @:uextern extern class FParticleSystemLOD {
   @:uname('new') public static function create():PHaxeCreated<unreal.FParticleSystemLOD>;
   

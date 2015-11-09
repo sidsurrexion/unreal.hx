@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimCompress_RemoveLinearKeys.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimCompress_RemoveLinearKeys.h")
 @:uextern extern class UAnimCompress_RemoveLinearKeys extends unreal.UAnimCompress {
   
   /**

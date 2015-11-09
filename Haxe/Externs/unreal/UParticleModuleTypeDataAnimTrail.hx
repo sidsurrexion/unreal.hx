@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataAnimTrail.h", "Engine.h")
+@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataAnimTrail.h")
 @:uextern extern class UParticleModuleTypeDataAnimTrail extends unreal.UParticleModuleTypeDataBase {
   
   /**

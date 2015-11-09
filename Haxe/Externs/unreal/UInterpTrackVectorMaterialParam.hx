@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackVectorMaterialParam.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackVectorMaterialParam.h")
 @:uextern extern class UInterpTrackVectorMaterialParam extends unreal.UInterpTrackVectorBase {
   
   /**

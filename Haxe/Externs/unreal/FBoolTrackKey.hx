@@ -8,7 +8,7 @@ package unreal;
 /**
   Information for one event in the track.
 **/
-@:glueCppIncludes("Matinee/InterpTrackBoolProp.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackBoolProp.h")
 @:uextern extern class FBoolTrackKey {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBoolTrackKey>;
   public var Value : Bool;

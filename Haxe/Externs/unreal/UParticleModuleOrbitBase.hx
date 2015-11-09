@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Orbit/ParticleModuleOrbitBase.h", "Engine.h")
+@:glueCppIncludes("Particles/Orbit/ParticleModuleOrbitBase.h")
 @:uextern extern class UParticleModuleOrbitBase extends unreal.UParticleModule {
   
   /**

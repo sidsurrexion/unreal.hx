@@ -8,7 +8,7 @@ package unreal;
 /**
   Used to capture a 'snapshot' of the scene from a single plane and feed it to a render target.
 **/
-@:glueCppIncludes("Components/SceneCaptureComponent2D.h", "Engine.h")
+@:glueCppIncludes("Components/SceneCaptureComponent2D.h")
 @:uextern extern class USceneCaptureComponent2D extends unreal.USceneCaptureComponent {
   
   /**

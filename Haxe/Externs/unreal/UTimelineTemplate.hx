@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/TimelineTemplate.h", "Engine.h")
+@:glueCppIncludes("Engine/TimelineTemplate.h")
 @:uextern extern class UTimelineTemplate extends unreal.UObject {
   public var TimelineGuid : unreal.FGuid;
   

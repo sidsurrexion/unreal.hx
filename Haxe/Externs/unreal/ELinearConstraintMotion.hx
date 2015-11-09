@@ -8,7 +8,7 @@ package unreal;
 /**
   LINEAR DOF
 **/
-@:glueCppIncludes("PhysicsEngine/PhysicsConstraintTemplate.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsConstraintTemplate.h")
 @:uname("ELinearConstraintMotion")
 @:uextern extern enum ELinearConstraintMotion {
   

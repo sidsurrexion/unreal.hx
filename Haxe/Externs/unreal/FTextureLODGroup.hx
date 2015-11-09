@@ -8,7 +8,7 @@ package unreal;
 /**
   LOD settings for a single texture group.
 **/
-@:glueCppIncludes("Engine/TextureLODSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/TextureLODSettings.h")
 @:uextern extern class FTextureLODGroup {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTextureLODGroup>;
   public var MipFilter : unreal.FName;

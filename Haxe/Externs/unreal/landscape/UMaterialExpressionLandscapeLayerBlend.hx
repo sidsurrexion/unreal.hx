@@ -5,7 +5,7 @@
 package unreal.landscape;
 
 @:umodule("Landscape")
-@:glueCppIncludes("Materials/MaterialExpressionLandscapeLayerBlend.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionLandscapeLayerBlend.h")
 @:uextern extern class UMaterialExpressionLandscapeLayerBlend extends unreal.UMaterialExpression {
   
   /**

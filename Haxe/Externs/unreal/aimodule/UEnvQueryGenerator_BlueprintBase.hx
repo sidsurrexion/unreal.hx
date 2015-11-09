@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_BlueprintBase.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_BlueprintBase.h")
 @:uextern extern class UEnvQueryGenerator_BlueprintBase extends unreal.aimodule.UEnvQueryGenerator {
   public var GeneratedItemType : unreal.TSubclassOf<unreal.aimodule.UEnvQueryItemType>;
   

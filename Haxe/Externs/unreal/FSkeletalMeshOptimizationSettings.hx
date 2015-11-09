@@ -8,7 +8,7 @@ package unreal;
 /**
   FSkeletalMeshOptimizationSettings - The settings used to optimize a skeletal mesh LOD.
 **/
-@:glueCppIncludes("Engine/SkeletalMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FSkeletalMeshOptimizationSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSkeletalMeshOptimizationSettings>;
   public var BonesToRemove : unreal.TArray<unreal.FBoneReference>;

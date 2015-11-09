@@ -8,7 +8,7 @@ package unreal;
 /**
   Bone translation retargeting mode.
 **/
-@:glueCppIncludes("Animation/Skeleton.h", "Engine.h")
+@:glueCppIncludes("Animation/Skeleton.h")
 @:uname("EBoneTranslationRetargetingMode.Type")
 @:uextern extern enum EBoneTranslationRetargetingMode {
   

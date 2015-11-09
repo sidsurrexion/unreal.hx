@@ -9,7 +9,7 @@ package unreal.sequencer;
   Movie scene object manager used by Sequencer.
 **/
 @:umodule("Sequencer")
-@:glueCppIncludes("Private/SequencerMovieSceneObjectManager.h", "Engine.h")
+@:glueCppIncludes("Private/SequencerMovieSceneObjectManager.h")
 @:uextern extern class USequencerMovieSceneObjectManager extends unreal.UObject implements unreal.moviescene.IMovieSceneObjectManager {
   
 }

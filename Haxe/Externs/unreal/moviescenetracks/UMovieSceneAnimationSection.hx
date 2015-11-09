@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   Audio section, for use in the master audio, or by attached audio objects
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Sections/MovieSceneAnimationSection.h", "Engine.h")
+@:glueCppIncludes("Sections/MovieSceneAnimationSection.h")
 @:uextern extern class UMovieSceneAnimationSection extends unreal.moviescene.UMovieSceneSection {
   
 }

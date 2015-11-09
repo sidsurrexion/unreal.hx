@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/TargetPoint.h", "Engine.h")
+@:glueCppIncludes("Engine/TargetPoint.h")
 @:uextern extern class ATargetPoint extends unreal.AActor {
   #if WITH_EDITORONLY_DATA
   public var ArrowComponent : unreal.UArrowComponent;

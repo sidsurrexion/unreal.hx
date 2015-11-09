@@ -8,7 +8,7 @@ package unreal;
 /**
   Vehicle-specific wheel setup
 **/
-@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent.h", "Engine.h")
+@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent.h")
 @:uextern extern class FWheelSetup {
   @:uname('new') public static function create():PHaxeCreated<unreal.FWheelSetup>;
   

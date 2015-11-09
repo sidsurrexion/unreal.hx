@@ -9,7 +9,7 @@ package unreal.gameplayabilities;
   A self contained handler of a GameplayCue. These are similar to AnimNotifies in implementation.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayCueManager.h", "Engine.h")
+@:glueCppIncludes("GameplayCueManager.h")
 @:uextern extern class UGameplayCueManager extends unreal.UDataAsset {
   
   /**

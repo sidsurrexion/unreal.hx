@@ -8,7 +8,7 @@ package unreal;
 /**
   Helper struct for creating sub tracks supported by this track
 **/
-@:glueCppIncludes("Matinee/InterpTrack.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrack.h")
 @:uextern extern class FSupportedSubTrackInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSupportedSubTrackInfo>;
   

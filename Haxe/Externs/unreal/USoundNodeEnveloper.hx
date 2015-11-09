@@ -8,7 +8,7 @@ package unreal;
 /**
   Allows manipulation of volume and pitch over a set time period
 **/
-@:glueCppIncludes("Sound/SoundNodeEnveloper.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeEnveloper.h")
 @:uextern extern class USoundNodeEnveloper extends unreal.USoundNode {
   
   /**

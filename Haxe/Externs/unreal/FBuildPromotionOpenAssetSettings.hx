@@ -8,7 +8,7 @@ package unreal;
 /**
   Holds settings for the open assets stage of the build promotion test
 **/
-@:glueCppIncludes("Tests/AutomationTestSettings.h", "Engine.h")
+@:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FBuildPromotionOpenAssetSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBuildPromotionOpenAssetSettings>;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   @TODO: Comment
 **/
-@:glueCppIncludes("AnimGraphNode_BlendSpaceEvaluator.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_BlendSpaceEvaluator.h")
 @:uextern extern class FAnimNode_BlendSpacePlayer extends unreal.FAnimNode_AssetPlayerBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_BlendSpacePlayer>;
   private var BlendSampleDataCache : unreal.TArray<unreal.FBlendSampleData>;

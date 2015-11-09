@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct to hold information about the "base" object the character is standing on.
 **/
-@:glueCppIncludes("GameFramework/Character.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Character.h")
 @:uextern extern class FBasedMovementInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBasedMovementInfo>;
   

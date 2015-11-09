@@ -8,7 +8,7 @@ package unreal;
 /**
   A particle emitter.
 **/
-@:glueCppIncludes("Particles/ParticleSystemComponent.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleSystemComponent.h")
 @:uextern extern class UParticleSystemComponent extends unreal.UPrimitiveComponent {
   
   /**

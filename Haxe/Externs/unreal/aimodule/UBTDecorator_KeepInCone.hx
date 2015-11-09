@@ -10,7 +10,7 @@ package unreal.aimodule;
   A decorator node that bases its condition on whether the observed position is still inside a cone. The cone's direction is calculated when the node first becomes relevant.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_KeepInCone.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_KeepInCone.h")
 @:uextern extern class UBTDecorator_KeepInCone extends unreal.aimodule.UBTDecorator {
   
   /**

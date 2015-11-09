@@ -8,7 +8,7 @@ package unreal;
 /**
   Default physics settings.
 **/
-@:glueCppIncludes("PhysicsEngine/PhysicsSettings.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsSettings.h")
 @:uextern extern class UPhysicsSettings extends unreal.UDeveloperSettings {
   
   /**

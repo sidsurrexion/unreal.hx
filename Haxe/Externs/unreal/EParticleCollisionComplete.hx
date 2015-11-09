@@ -8,7 +8,7 @@ package unreal;
 /**
   Flags indicating what to do with the particle when MaxCollisions is reached
 **/
-@:glueCppIncludes("Particles/Collision/ParticleModuleCollision.h", "Engine.h")
+@:glueCppIncludes("Particles/Collision/ParticleModuleCollision.h")
 @:uname("EParticleCollisionComplete")
 @:uextern extern enum EParticleCollisionComplete {
   

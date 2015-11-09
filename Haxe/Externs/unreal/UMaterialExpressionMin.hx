@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionMin.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionMin.h")
 @:uextern extern class UMaterialExpressionMin extends unreal.UMaterialExpression {
   
   /**

@@ -5,7 +5,7 @@
 package unreal.gameplayabilities;
 
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitGameplayEffectApplied.h", "Engine.h")
+@:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitGameplayEffectApplied.h")
 @:uextern extern class UAbilityTask_WaitGameplayEffectApplied extends unreal.gameplayabilities.UAbilityTask {
   
 }

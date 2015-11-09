@@ -5,7 +5,7 @@
 package unreal.aitestsuite;
 
 @:umodule("AITestSuite")
-@:glueCppIncludes("MockGameplayTasks.h", "Engine.h")
+@:glueCppIncludes("MockGameplayTasks.h")
 @:uextern extern class UMockTask_Log extends unreal.gameplaytasks.UGameplayTask {
   
 }

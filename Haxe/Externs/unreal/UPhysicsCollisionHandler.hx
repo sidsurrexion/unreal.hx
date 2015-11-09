@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("PhysicsEngine/PhysicsCollisionHandler.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsCollisionHandler.h")
 @:uextern extern class UPhysicsCollisionHandler extends unreal.UObject {
   
   /**

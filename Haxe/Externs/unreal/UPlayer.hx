@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/Player.h", "Engine.h")
+@:glueCppIncludes("Engine/Player.h")
 @:uextern extern class UPlayer extends unreal.UObject {
   
   /**

@@ -11,7 +11,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Actors/DecalActor
   @see UDecalComponent
 **/
-@:glueCppIncludes("Engine/DecalActor.h", "Engine.h")
+@:glueCppIncludes("Engine/DecalActor.h")
 @:uextern extern class ADecalActor extends unreal.AActor {
   #if WITH_EDITORONLY_DATA
   public var BoxComponent : unreal.UBoxComponent;

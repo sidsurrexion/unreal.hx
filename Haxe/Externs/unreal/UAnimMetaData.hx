@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimMetaData.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimMetaData.h")
 @:uextern extern class UAnimMetaData extends unreal.UObject {
   
 }

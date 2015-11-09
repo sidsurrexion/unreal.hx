@@ -8,7 +8,7 @@ package unreal;
 /**
   Sequence player node
 **/
-@:glueCppIncludes("AnimGraphNode_SequencePlayer.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_SequencePlayer.h")
 @:uextern extern class FAnimNode_SequencePlayer extends unreal.FAnimNode_AssetPlayerBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_SequencePlayer>;
   

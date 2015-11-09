@@ -9,7 +9,7 @@ package unreal.gameplayabilities;
   This is a dummy reticle for internal use by visualization placement tasks. It builds a custom visual model of the visualization being placed.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/GameplayAbilityWorldReticle_ActorVisualization.h", "Engine.h")
+@:glueCppIncludes("Abilities/GameplayAbilityWorldReticle_ActorVisualization.h")
 @:uextern extern class AGameplayAbilityWorldReticle_ActorVisualization extends unreal.gameplayabilities.AGameplayAbilityWorldReticle {
   public var VisualizationComponents : unreal.TArray<unreal.UActorComponent>;
   

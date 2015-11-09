@@ -8,7 +8,7 @@ package unreal;
 /**
   Actor containing all script accessible world properties.
 **/
-@:glueCppIncludes("GameFramework/WorldSettings.h", "Engine.h")
+@:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class AWorldSettings extends unreal.AInfo implements unreal.IInterface_AssetUserData {
   
   /**

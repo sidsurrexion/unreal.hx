@@ -8,7 +8,7 @@ package unreal;
 /**
   Info about one note dropped in the map during PIE.
 **/
-@:glueCppIncludes("Engine/Engine.h", "Engine.h")
+@:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FDropNoteInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDropNoteInfo>;
   

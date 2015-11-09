@@ -8,7 +8,7 @@ package unreal;
 /**
   Enum for different usage cases of level streaming volumes.
 **/
-@:glueCppIncludes("Engine/LevelStreamingVolume.h", "Engine.h")
+@:glueCppIncludes("Engine/LevelStreamingVolume.h")
 @:uname("EStreamingVolumeUsage")
 @:uextern extern enum EStreamingVolumeUsage {
   SVB_Loading;

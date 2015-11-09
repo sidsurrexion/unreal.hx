@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/BlueprintGeneratedClass.h", "Engine.h")
+@:glueCppIncludes("Engine/BlueprintGeneratedClass.h")
 @:uextern extern class FEventGraphFastCallPair {
   @:uname('new') public static function create():PHaxeCreated<unreal.FEventGraphFastCallPair>;
   public var EventGraphCallOffset : unreal.Int32;

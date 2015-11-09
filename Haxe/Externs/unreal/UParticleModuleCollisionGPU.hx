@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Collision/ParticleModuleCollisionGPU.h", "Engine.h")
+@:glueCppIncludes("Particles/Collision/ParticleModuleCollisionGPU.h")
 @:uextern extern class UParticleModuleCollisionGPU extends unreal.UParticleModuleCollisionBase {
   public var CollisionMode : unreal.EParticleCollisionMode;
   

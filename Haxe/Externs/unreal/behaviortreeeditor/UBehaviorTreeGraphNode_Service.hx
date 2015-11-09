@@ -5,7 +5,7 @@
 package unreal.behaviortreeeditor;
 
 @:umodule("BehaviorTreeEditor")
-@:glueCppIncludes("BehaviorTreeGraphNode_Service.h", "Engine.h")
+@:glueCppIncludes("BehaviorTreeGraphNode_Service.h")
 @:uextern extern class UBehaviorTreeGraphNode_Service extends unreal.behaviortreeeditor.UBehaviorTreeGraphNode {
   
 }

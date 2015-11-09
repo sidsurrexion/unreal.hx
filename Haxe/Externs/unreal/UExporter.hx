@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Exporters/Exporter.h", "Engine.h")
+@:glueCppIncludes("Exporters/Exporter.h")
 @:uextern extern class UExporter extends unreal.UObject {
   
   /**

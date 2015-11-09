@@ -5,7 +5,7 @@
 package unreal.moviescenetools;
 
 @:umodule("MovieSceneTools")
-@:glueCppIncludes("MovieSceneFactory.h", "Engine.h")
+@:glueCppIncludes("MovieSceneFactory.h")
 @:uextern extern class UMovieSceneFactory extends unreal.editor.UFactory {
   
 }

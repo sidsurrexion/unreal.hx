@@ -10,7 +10,7 @@ package unreal.blueprintgraph;
   "action" portion of certain FBlueprintActionMenuItems.
 **/
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("BlueprintBoundNodeSpawner.h", "Engine.h")
+@:glueCppIncludes("BlueprintBoundNodeSpawner.h")
 @:uextern extern class UBlueprintBoundNodeSpawner extends unreal.blueprintgraph.UBlueprintNodeSpawner {
   
 }

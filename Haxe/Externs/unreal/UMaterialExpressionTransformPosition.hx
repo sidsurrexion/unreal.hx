@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionTransformPosition.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionTransformPosition.h")
 @:uextern extern class UMaterialExpressionTransformPosition extends unreal.UMaterialExpression {
   
   /**

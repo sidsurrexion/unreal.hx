@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines FRotator oscillation.
 **/
-@:glueCppIncludes("Camera/CameraShake.h", "Engine.h")
+@:glueCppIncludes("Camera/CameraShake.h")
 @:uextern extern class FROscillator {
   @:uname('new') public static function create():PHaxeCreated<unreal.FROscillator>;
   

@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Preferences/UnrealEdOptions.h", "Engine.h")
+@:glueCppIncludes("Preferences/UnrealEdOptions.h")
 @:uextern extern class UUnrealEdOptions extends unreal.UObject {
   
   /**

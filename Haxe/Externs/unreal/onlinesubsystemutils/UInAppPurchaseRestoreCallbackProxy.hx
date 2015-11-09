@@ -5,7 +5,7 @@
 package unreal.onlinesubsystemutils;
 
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("InAppPurchaseRestoreCallbackProxy.h", "Engine.h")
+@:glueCppIncludes("InAppPurchaseRestoreCallbackProxy.h")
 @:uextern extern class UInAppPurchaseRestoreCallbackProxy extends unreal.UObject {
   
 }

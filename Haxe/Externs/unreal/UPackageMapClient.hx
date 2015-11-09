@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/PackageMapClient.h", "Engine.h")
+@:glueCppIncludes("Engine/PackageMapClient.h")
 @:uextern extern class UPackageMapClient extends unreal.UPackageMap {
   
 }

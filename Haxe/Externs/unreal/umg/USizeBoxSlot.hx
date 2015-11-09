@@ -9,7 +9,7 @@ package unreal.umg;
   The Slot for the USizeBoxSlot, contains the widget displayed in a button's single slot
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/SizeBoxSlot.h", "Engine.h")
+@:glueCppIncludes("Components/SizeBoxSlot.h")
 @:uextern extern class USizeBoxSlot extends unreal.umg.UPanelSlot {
   
   /**

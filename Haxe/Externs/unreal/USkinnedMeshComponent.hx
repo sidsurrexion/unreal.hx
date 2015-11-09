@@ -11,7 +11,7 @@ package unreal;
   
   @see USkeletalMeshComponent
 **/
-@:glueCppIncludes("Components/SkinnedMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SkinnedMeshComponent.h")
 @:uextern extern class USkinnedMeshComponent extends unreal.UMeshComponent {
   
   /**

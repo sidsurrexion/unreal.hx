@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpGroupDirector.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpGroupDirector.h")
 @:uextern extern class UInterpGroupDirector extends unreal.UInterpGroup {
   
 }

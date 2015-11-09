@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_TransitionResult.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_TransitionResult.h")
 @:uextern extern class UAnimGraphNode_TransitionResult extends unreal.animgraph.UAnimGraphNode_Base {
   public var Node : unreal.FAnimNode_TransitionResult;
   

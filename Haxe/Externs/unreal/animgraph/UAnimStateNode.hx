@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimStateNode.h", "Engine.h")
+@:glueCppIncludes("AnimStateNode.h")
 @:uextern extern class UAnimStateNode extends unreal.animgraph.UAnimStateNodeBase {
   public var StateFullyBlended : unreal.FAnimNotifyEvent;
   public var StateLeft : unreal.FAnimNotifyEvent;

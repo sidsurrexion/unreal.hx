@@ -11,7 +11,7 @@ package unreal.aimodule;
      project's game mode.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("EnvironmentQuery/EQSTestingPawn.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQuery/EQSTestingPawn.h")
 @:uextern extern class AEQSTestingPawn extends unreal.ACharacter implements unreal.aimodule.IEQSQueryResultSourceInterface {
   #if WITH_EDITORONLY_DATA
   public var EdRenderComp : unreal.aimodule.UEQSRenderingComponent;

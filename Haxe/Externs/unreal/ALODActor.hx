@@ -12,7 +12,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Actors/LODActor/
   @see UStaticMesh
 **/
-@:glueCppIncludes("Engine/LODActor.h", "Engine.h")
+@:glueCppIncludes("Engine/LODActor.h")
 @:uextern extern class ALODActor extends unreal.AActor {
   #if WITH_EDITORONLY_DATA
   

@@ -11,7 +11,7 @@ package unreal;
   @see UStaticMeshComponent
   @see USkeletalMeshComponent
 **/
-@:glueCppIncludes("Components/MeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/MeshComponent.h")
 @:uextern extern class UMeshComponent extends unreal.UPrimitiveComponent {
   
   /**

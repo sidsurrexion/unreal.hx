@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/SkeletalMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SkeletalMeshComponent.h")
 @:uextern extern class FSingleAnimationPlayData {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSingleAnimationPlayData>;
   

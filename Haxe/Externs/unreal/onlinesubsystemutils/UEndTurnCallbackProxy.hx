@@ -5,7 +5,7 @@
 package unreal.onlinesubsystemutils;
 
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("EndTurnCallbackProxy.h", "Engine.h")
+@:glueCppIncludes("EndTurnCallbackProxy.h")
 @:uextern extern class UEndTurnCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
   
 }

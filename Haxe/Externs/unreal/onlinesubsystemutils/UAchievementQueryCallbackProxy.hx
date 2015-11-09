@@ -5,7 +5,7 @@
 package unreal.onlinesubsystemutils;
 
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("AchievementQueryCallbackProxy.h", "Engine.h")
+@:glueCppIncludes("AchievementQueryCallbackProxy.h")
 @:uextern extern class UAchievementQueryCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
   
 }

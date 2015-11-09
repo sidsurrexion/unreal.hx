@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("EdGraphNode_Comment.h", "Engine.h")
+@:glueCppIncludes("EdGraphNode_Comment.h")
 @:uextern extern class UEdGraphNode_Comment extends unreal.UEdGraphNode {
   
   /**

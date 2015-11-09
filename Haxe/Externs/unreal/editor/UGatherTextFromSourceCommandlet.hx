@@ -9,7 +9,7 @@ package unreal.editor;
   UGatherTextFromSourceCommandlet: Localization commandlet that collects all text to be localized from the source code.
 **/
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/GatherTextFromSourceCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/GatherTextFromSourceCommandlet.h")
 @:uextern extern class UGatherTextFromSourceCommandlet extends unreal.editor.UGatherTextCommandletBase {
   
 }

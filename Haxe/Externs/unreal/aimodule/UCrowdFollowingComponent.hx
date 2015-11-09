@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Navigation/CrowdFollowingComponent.h", "Engine.h")
+@:glueCppIncludes("Navigation/CrowdFollowingComponent.h")
 @:uextern extern class UCrowdFollowingComponent extends unreal.aimodule.UPathFollowingComponent implements unreal.aimodule.ICrowdAgentInterface {
   
   /**

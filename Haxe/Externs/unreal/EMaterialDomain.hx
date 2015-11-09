@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines the domain of a material.
 **/
-@:glueCppIncludes("Materials/Material.h", "Engine.h")
+@:glueCppIncludes("Materials/Material.h")
 @:uname("EMaterialDomain")
 @:uextern extern enum EMaterialDomain {
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Debug/ReporterGraph.h", "Engine.h")
+@:glueCppIncludes("Debug/ReporterGraph.h")
 @:uextern extern class UReporterGraph extends unreal.UReporterBase {
   
 }

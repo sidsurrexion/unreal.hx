@@ -10,7 +10,7 @@ package unreal;
   Updates bounding box automatically based on actors transformation changes or holds fixed user defined bounding box
   Uses only actors where AActor::IsLevelBoundsRelevant() == true
 **/
-@:glueCppIncludes("Engine/LevelBounds.h", "Engine.h")
+@:glueCppIncludes("Engine/LevelBounds.h")
 @:uextern extern class ALevelBounds extends unreal.AActor {
   
   /**

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/MicroTransactionBase.h", "Engine.h")
+@:glueCppIncludes("Engine/MicroTransactionBase.h")
 @:uextern extern class UMicroTransactionBase extends unreal.UPlatformInterfaceBase {
   
   /**

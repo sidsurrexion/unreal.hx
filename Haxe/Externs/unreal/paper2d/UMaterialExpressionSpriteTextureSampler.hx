@@ -9,7 +9,7 @@ package unreal.paper2d;
   This is a texture sampler 2D with a special automatically defined parameter name. The texture specified here will be replaced by the SourceTexture or an AdditionalSourceTextures entry of a Paper2D sprite if this material is used on a sprite.
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("MaterialExpressionSpriteTextureSampler.h", "Engine.h")
+@:glueCppIncludes("MaterialExpressionSpriteTextureSampler.h")
 @:uextern extern class UMaterialExpressionSpriteTextureSampler extends unreal.UMaterialExpressionTextureSampleParameter2D {
   
   /**

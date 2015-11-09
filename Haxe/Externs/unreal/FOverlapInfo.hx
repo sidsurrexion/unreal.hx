@@ -8,7 +8,7 @@ package unreal;
 /**
   Overlap info consisting of the primitive and the body that is overlapping
 **/
-@:glueCppIncludes("Engine.h", "Engine.h")
+@:glueCppIncludes("Engine.h")
 @:uextern extern class FOverlapInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FOverlapInfo>;
   

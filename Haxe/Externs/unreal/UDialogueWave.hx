@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/DialogueWave.h", "Engine.h")
+@:glueCppIncludes("Sound/DialogueWave.h")
 @:uextern extern class UDialogueWave extends unreal.UObject {
   public var LocalizationGUID : unreal.FGuid;
   

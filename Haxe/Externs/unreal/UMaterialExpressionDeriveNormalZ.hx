@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionDeriveNormalZ.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionDeriveNormalZ.h")
 @:uextern extern class UMaterialExpressionDeriveNormalZ extends unreal.UMaterialExpression {
   public var InXY : unreal.FExpressionInput;
   

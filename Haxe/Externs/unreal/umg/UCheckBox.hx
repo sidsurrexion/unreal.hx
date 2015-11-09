@@ -14,7 +14,7 @@ package unreal.umg;
   ● Toggle
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/CheckBox.h", "Engine.h")
+@:glueCppIncludes("Components/CheckBox.h")
 @:uextern extern class UCheckBox extends unreal.umg.UContentWidget {
   
   /**

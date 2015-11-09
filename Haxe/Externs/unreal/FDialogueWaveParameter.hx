@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundNodeDialoguePlayer.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeDialoguePlayer.h")
 @:uextern extern class FDialogueWaveParameter {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDialogueWaveParameter>;
   

@@ -10,7 +10,7 @@ package unreal;
   
   
 **/
-@:glueCppIncludes("Materials/Material.h", "Engine.h")
+@:glueCppIncludes("Materials/Material.h")
 @:uextern extern class FVectorMaterialInput extends unreal.FMaterialInput {
   @:uname('new') public static function create():PHaxeCreated<unreal.FVectorMaterialInput>;
   

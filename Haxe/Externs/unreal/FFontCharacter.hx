@@ -8,7 +8,7 @@ package unreal;
 /**
   This struct is serialized using native serialization so any changes to it require a package version bump.
 **/
-@:glueCppIncludes("Engine/Font.h", "Engine.h")
+@:glueCppIncludes("Engine/Font.h")
 @:uextern extern class FFontCharacter {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFontCharacter>;
   public var VerticalOffset : unreal.Int32;

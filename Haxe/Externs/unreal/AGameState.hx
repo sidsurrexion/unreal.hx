@@ -8,7 +8,7 @@ package unreal;
 /**
   GameState is replicated and is valid on servers and clients.
 **/
-@:glueCppIncludes("GameFramework/GameState.h", "Engine.h")
+@:glueCppIncludes("GameFramework/GameState.h")
 @:uextern extern class AGameState extends unreal.AInfo {
   
   /**

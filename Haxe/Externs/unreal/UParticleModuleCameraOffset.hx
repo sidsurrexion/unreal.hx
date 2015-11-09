@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Camera/ParticleModuleCameraOffset.h", "Engine.h")
+@:glueCppIncludes("Particles/Camera/ParticleModuleCameraOffset.h")
 @:uextern extern class UParticleModuleCameraOffset extends unreal.UParticleModuleCameraBase {
   
   /**

@@ -10,7 +10,7 @@ package unreal;
   
   Type-safe floating point distribution.
 **/
-@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h", "Engine.h")
+@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h")
 @:uextern extern class FFloatDistribution {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFloatDistribution>;
   

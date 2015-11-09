@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("ActorFactories/ActorFactorySkeletalMesh.h", "Engine.h")
+@:glueCppIncludes("ActorFactories/ActorFactorySkeletalMesh.h")
 @:uextern extern class UActorFactorySkeletalMesh extends unreal.editor.UActorFactory {
   
 }

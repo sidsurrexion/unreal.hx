@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Event/ParticleModuleEventSendToGame.h", "Engine.h")
+@:glueCppIncludes("Particles/Event/ParticleModuleEventSendToGame.h")
 @:uextern extern class UParticleModuleEventSendToGame extends unreal.UObject {
   
 }

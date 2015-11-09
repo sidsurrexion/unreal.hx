@@ -9,7 +9,7 @@ package unreal.introtutorials;
   Per-project tutorial settings
 **/
 @:umodule("IntroTutorials")
-@:glueCppIncludes("Private/TutorialSettings.h", "Engine.h")
+@:glueCppIncludes("Private/TutorialSettings.h")
 @:uextern extern class UTutorialSettings extends unreal.UObject {
   
   /**

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("EditorFramework/ThumbnailInfo.h", "Engine.h")
+@:glueCppIncludes("EditorFramework/ThumbnailInfo.h")
 @:uextern extern class UThumbnailInfo extends unreal.UObject {
   
 }

@@ -5,7 +5,7 @@
 package unreal.gameplayabilities;
 
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/GameplayAbilityTargetActor_GroundTrace.h", "Engine.h")
+@:glueCppIncludes("Abilities/GameplayAbilityTargetActor_GroundTrace.h")
 @:uextern extern class AGameplayAbilityTargetActor_GroundTrace extends unreal.gameplayabilities.AGameplayAbilityTargetActor_Trace {
   
   /**

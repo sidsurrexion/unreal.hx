@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_DoOnceMultiInput.h", "Engine.h")
+@:glueCppIncludes("K2Node_DoOnceMultiInput.h")
 @:uextern extern class UK2Node_DoOnceMultiInput extends unreal.blueprintgraph.UK2Node {
   
   /**

@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_BlendListByEnum.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_BlendListByEnum.h")
 @:uextern extern class UAnimGraphNode_BlendListByEnum extends unreal.animgraph.UAnimGraphNode_BlendListBase implements unreal.blueprintgraph.INodeDependingOnEnumInterface {
   private var VisibleEnumEntries : unreal.TArray<unreal.FName>;
   

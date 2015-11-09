@@ -10,7 +10,7 @@ package unreal.aimodule;
   allowing the actor to see/hear Pawns in the world. It does nothing on network clients.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("Perception/PawnSensingComponent.h", "Engine.h")
+@:glueCppIncludes("Perception/PawnSensingComponent.h")
 @:uextern extern class UPawnSensingComponent extends unreal.UActorComponent {
   
   /**

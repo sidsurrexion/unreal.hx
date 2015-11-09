@@ -11,7 +11,7 @@ package unreal;
   
   @see https://docs.unrealengine.com/latest/INT/Gameplay/Input/index.html
 **/
-@:glueCppIncludes("GameFramework/PlayerInput.h", "Engine.h")
+@:glueCppIncludes("GameFramework/PlayerInput.h")
 @:uextern extern class UPlayerInput extends unreal.UObject {
   
   /**

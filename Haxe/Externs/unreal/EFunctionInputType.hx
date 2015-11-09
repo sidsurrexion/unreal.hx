@@ -8,7 +8,7 @@ package unreal;
 /**
   Supported input types
 **/
-@:glueCppIncludes("Materials/MaterialExpressionFunctionInput.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionFunctionInput.h")
 @:uname("EFunctionInputType")
 @:uextern extern enum EFunctionInputType {
   FunctionInput_Scalar;

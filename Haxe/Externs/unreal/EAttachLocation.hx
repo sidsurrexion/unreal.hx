@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/Actor.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Actor.h")
 @:uname("EAttachLocation.Type")
 @:uextern extern enum EAttachLocation {
   

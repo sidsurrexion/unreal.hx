@@ -8,7 +8,7 @@ package unreal;
 /**
   Structure containing configurable properties of a sound class.
 **/
-@:glueCppIncludes("Sound/SoundClass.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundClass.h")
 @:uextern extern class FSoundClassProperties {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSoundClassProperties>;
   

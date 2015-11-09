@@ -8,7 +8,7 @@ package unreal;
 /**
   Sample data
 **/
-@:glueCppIncludes("Animation/BlendSpaceBase.h", "Engine.h")
+@:glueCppIncludes("Animation/BlendSpaceBase.h")
 @:uextern extern class FBlendSample {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBlendSample>;
   

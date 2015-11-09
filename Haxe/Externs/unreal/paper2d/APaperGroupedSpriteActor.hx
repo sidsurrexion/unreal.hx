@@ -12,7 +12,7 @@ package unreal.paper2d;
   it is just a thin wrapper around a UPaperGroupedSpriteComponent.
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("PaperGroupedSpriteActor.h", "Engine.h")
+@:glueCppIncludes("PaperGroupedSpriteActor.h")
 @:uextern extern class APaperGroupedSpriteActor extends unreal.AActor {
   
 }

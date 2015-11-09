@@ -8,7 +8,7 @@ package unreal;
 /**
   Types of server travel failures broadcast by the engine
 **/
-@:glueCppIncludes("Engine/GameInstance.h", "Engine.h")
+@:glueCppIncludes("Engine/GameInstance.h")
 @:uname("ETravelFailure.Type")
 @:uextern extern enum ETravelFailure {
   

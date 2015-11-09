@@ -8,7 +8,7 @@ package unreal;
 /**
   Class containing definition of a navigation query filter
 **/
-@:glueCppIncludes("AI/Navigation/NavFilters/NavigationQueryFilter.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavFilters/NavigationQueryFilter.h")
 @:uextern extern class UNavigationQueryFilter extends unreal.UObject {
   
   /**

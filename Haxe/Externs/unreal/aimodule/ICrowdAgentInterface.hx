@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Navigation/CrowdAgentInterface.h", "Engine.h")
+@:glueCppIncludes("Navigation/CrowdAgentInterface.h")
 @:uextern extern interface ICrowdAgentInterface {
   
 }

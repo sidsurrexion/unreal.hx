@@ -10,7 +10,7 @@ package unreal.aimodule;
   Runs the specified environment query when executed.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Tasks/BTTask_RunEQSQuery.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Tasks/BTTask_RunEQSQuery.h")
 @:uextern extern class UBTTask_RunEQSQuery extends unreal.aimodule.UBTTask_BlackboardBase {
   
   /**

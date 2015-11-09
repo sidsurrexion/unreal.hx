@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/Texture2D.h", "Engine.h")
+@:glueCppIncludes("Engine/Texture2D.h")
 @:uextern extern class UTexture2D extends unreal.UTexture {
   
   /**

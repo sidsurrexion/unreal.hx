@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionDistanceToNearestSurface.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionDistanceToNearestSurface.h")
 @:uextern extern class UMaterialExpressionDistanceToNearestSurface extends unreal.UMaterialExpression {
   
   /**

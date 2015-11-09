@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimSequence.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSequence.h")
 @:uextern extern class UAnimSequence extends unreal.UAnimSequenceBase {
   #if WITH_EDITORONLY_DATA
   public var bNeedsRebake : Bool;

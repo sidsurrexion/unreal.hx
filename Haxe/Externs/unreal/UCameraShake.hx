@@ -19,7 +19,7 @@ package unreal;
   more natural-feeling results and things like directional shakes.  For instance, you can have an explosion
   to the camera's right push it primarily to the left.
 **/
-@:glueCppIncludes("Camera/CameraShake.h", "Engine.h")
+@:glueCppIncludes("Camera/CameraShake.h")
 @:uextern extern class UCameraShake extends unreal.UObject {
   
   /**

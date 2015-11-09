@@ -10,7 +10,7 @@ package unreal.umg;
   in the grid.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/UniformGridSlot.h", "Engine.h")
+@:glueCppIncludes("Components/UniformGridSlot.h")
 @:uextern extern class UUniformGridSlot extends unreal.umg.UPanelSlot {
   
   /**

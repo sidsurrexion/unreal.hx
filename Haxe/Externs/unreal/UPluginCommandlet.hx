@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Commandlets/PluginCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/PluginCommandlet.h")
 @:uextern extern class UPluginCommandlet extends unreal.UCommandlet {
   
 }

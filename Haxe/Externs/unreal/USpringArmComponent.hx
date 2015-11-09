@@ -11,7 +11,7 @@ package unreal;
   
   Example: Use as a 'camera boom' to keep the follow camera for a player from colliding into the world.
 **/
-@:glueCppIncludes("GameFramework/SpringArmComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/SpringArmComponent.h")
 @:uextern extern class USpringArmComponent extends unreal.USceneComponent {
   
   /**

@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Binding/BoolBinding.h", "Engine.h")
+@:glueCppIncludes("Binding/BoolBinding.h")
 @:uextern extern class UBoolBinding extends unreal.umg.UPropertyBinding {
   
 }

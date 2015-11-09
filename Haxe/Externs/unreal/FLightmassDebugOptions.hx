@@ -8,7 +8,7 @@ package unreal;
 /**
   Debug options for Lightmass
 **/
-@:glueCppIncludes("Preferences/LightmassOptionsObject.h", "Engine.h")
+@:glueCppIncludes("Preferences/LightmassOptionsObject.h")
 @:uextern extern class FLightmassDebugOptions {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassDebugOptions>;
   

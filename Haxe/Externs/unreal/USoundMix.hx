@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundMix.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundMix.h")
 @:uextern extern class USoundMix extends unreal.UObject {
   
   /**

@@ -5,7 +5,7 @@
 package unreal.environmentqueryeditor;
 
 @:umodule("EnvironmentQueryEditor")
-@:glueCppIncludes("EnvironmentQueryGraphNode_Option.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQueryGraphNode_Option.h")
 @:uextern extern class UEnvironmentQueryGraphNode_Option extends unreal.environmentqueryeditor.UEnvironmentQueryGraphNode {
   
 }

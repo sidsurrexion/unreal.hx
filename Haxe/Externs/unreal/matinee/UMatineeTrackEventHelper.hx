@@ -5,7 +5,7 @@
 package unreal.matinee;
 
 @:umodule("Matinee")
-@:glueCppIncludes("MatineeTrackEventHelper.h", "Engine.h")
+@:glueCppIncludes("MatineeTrackEventHelper.h")
 @:uextern extern class UMatineeTrackEventHelper extends unreal.matinee.UInterpTrackHelper {
   
 }

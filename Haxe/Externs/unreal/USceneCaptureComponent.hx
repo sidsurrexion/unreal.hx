@@ -8,7 +8,7 @@ package unreal;
 /**
   -> will be exported to EngineDecalClasses.h
 **/
-@:glueCppIncludes("Components/SceneCaptureComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SceneCaptureComponent.h")
 @:uextern extern class USceneCaptureComponent extends unreal.USceneComponent {
   
   /**

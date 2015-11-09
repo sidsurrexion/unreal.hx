@@ -8,7 +8,7 @@ package unreal;
 /**
   Implements a helper class that manages all profiles in the Device
 **/
-@:glueCppIncludes("DeviceProfiles/DeviceProfileManager.h", "Engine.h")
+@:glueCppIncludes("DeviceProfiles/DeviceProfileManager.h")
 @:uextern extern class UDeviceProfileManager extends unreal.UObject {
   
   /**

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Kismet/DataTableFunctionLibrary.h", "Engine.h")
+@:glueCppIncludes("Kismet/DataTableFunctionLibrary.h")
 @:uextern extern class UDataTableFunctionLibrary extends unreal.UBlueprintFunctionLibrary {
   
 }

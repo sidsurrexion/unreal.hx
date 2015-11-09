@@ -8,7 +8,7 @@ package unreal;
 /**
   stores information on a viewer that actors need to be checked against for relevancy
 **/
-@:glueCppIncludes("GameFramework/WorldSettings.h", "Engine.h")
+@:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class FNetViewer {
   @:uname('new') public static function create():PHaxeCreated<unreal.FNetViewer>;
   

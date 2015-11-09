@@ -9,7 +9,7 @@ package unreal;
   now exposed a part of properties based on 3DS Max plug-in
   property names are also changed into 3DS Max plug-in's one
 **/
-@:glueCppIncludes("Engine/SkeletalMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FClothPhysicsProperties {
   @:uname('new') public static function create():PHaxeCreated<unreal.FClothPhysicsProperties>;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("PhysicsEngine/RadialForceActor.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/RadialForceActor.h")
 @:uextern extern class ARadialForceActor extends unreal.ARigidBodyBase {
   #if WITH_EDITORONLY_DATA
   public var SpriteComponent : unreal.UBillboardComponent;

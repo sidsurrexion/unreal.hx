@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Editor/Transactor.h", "Engine.h")
+@:glueCppIncludes("Editor/Transactor.h")
 @:uextern extern class UTransactor extends unreal.UObject {
   
 }

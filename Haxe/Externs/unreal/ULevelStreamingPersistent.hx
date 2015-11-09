@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/LevelStreamingPersistent.h", "Engine.h")
+@:glueCppIncludes("Engine/LevelStreamingPersistent.h")
 @:uextern extern class ULevelStreamingPersistent extends unreal.ULevelStreaming {
   
 }

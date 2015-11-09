@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/AvoidanceManager.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/AvoidanceManager.h")
 @:uextern extern class UAvoidanceManager extends unreal.UObject {
   
   /**

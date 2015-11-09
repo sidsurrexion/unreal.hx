@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Editor/UnrealEdEngine.h", "Engine.h")
+@:glueCppIncludes("Editor/UnrealEdEngine.h")
 @:uextern extern class UUnrealEdEngine extends unreal.editor.UEditorEngine {
   
   /**

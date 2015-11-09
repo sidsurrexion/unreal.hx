@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Layers/Layer.h", "Engine.h")
+@:glueCppIncludes("Layers/Layer.h")
 @:uextern extern class FLayerActorStats {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLayerActorStats>;
   

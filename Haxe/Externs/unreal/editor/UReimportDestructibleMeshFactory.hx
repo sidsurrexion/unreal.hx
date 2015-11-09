@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/ReimportDestructibleMeshFactory.h", "Engine.h")
+@:glueCppIncludes("Factories/ReimportDestructibleMeshFactory.h")
 @:uextern extern class UReimportDestructibleMeshFactory extends unreal.editor.UDestructibleMeshFactory {
   
 }

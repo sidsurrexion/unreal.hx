@@ -5,7 +5,7 @@
 package unreal.gameplaytags;
 
 @:umodule("GameplayTags")
-@:glueCppIncludes("GameplayTagAssetInterface.h", "Engine.h")
+@:glueCppIncludes("GameplayTagAssetInterface.h")
 @:uextern extern interface IGameplayTagAssetInterface {
   
 }

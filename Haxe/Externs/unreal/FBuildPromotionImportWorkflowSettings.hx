@@ -8,7 +8,7 @@ package unreal;
 /**
   Holds settings for the import workflow stage of the build promotion test
 **/
-@:glueCppIncludes("Tests/AutomationTestSettings.h", "Engine.h")
+@:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FBuildPromotionImportWorkflowSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBuildPromotionImportWorkflowSettings>;
   

@@ -9,7 +9,7 @@ package unreal.aimodule;
   Gives owning actor a way to auto-register as perception system's sense stimuli source
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("Perception/AIPerceptionStimuliSourceComponent.h", "Engine.h")
+@:glueCppIncludes("Perception/AIPerceptionStimuliSourceComponent.h")
 @:uextern extern class UAIPerceptionStimuliSourceComponent extends unreal.UActorComponent {
   private var RegisterAsSourceForSenses : unreal.TArray<unreal.TSubclassOf<unreal.aimodule.UAISense>>;
   

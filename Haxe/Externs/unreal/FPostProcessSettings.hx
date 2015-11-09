@@ -10,7 +10,7 @@ package unreal;
   // the variable declaration and further down the default value for it.
   // The comment should include the meaning and usable range.
 **/
-@:glueCppIncludes("Camera/CameraAnim.h", "Engine.h")
+@:glueCppIncludes("Camera/CameraAnim.h")
 @:uextern extern class FPostProcessSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FPostProcessSettings>;
   

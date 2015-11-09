@@ -9,7 +9,7 @@ package unreal.gameplayabilities;
   TargetActors are spawned to assist with ability targeting. They are spawned by ability tasks and create/determine the outgoing targeting data passed from one task to another.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/GameplayAbilityTargetActor.h", "Engine.h")
+@:glueCppIncludes("Abilities/GameplayAbilityTargetActor.h")
 @:uextern extern class AGameplayAbilityTargetActor extends unreal.AActor {
   
   /**

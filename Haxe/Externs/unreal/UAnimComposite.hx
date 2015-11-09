@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimComposite.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimComposite.h")
 @:uextern extern class UAnimComposite extends unreal.UAnimCompositeBase {
   #if WITH_EDITORONLY_DATA
   

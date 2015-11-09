@@ -8,7 +8,7 @@ package unreal;
 /**
   Parameters that pertain to chunk debris-level settings.
 **/
-@:glueCppIncludes("Engine/DestructibleMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleDebrisParameters {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleDebrisParameters>;
   

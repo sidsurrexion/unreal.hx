@@ -5,7 +5,7 @@
 package unreal.aitestsuite;
 
 @:umodule("AITestSuite")
-@:glueCppIncludes("MockAI.h", "Engine.h")
+@:glueCppIncludes("MockAI.h")
 @:uextern extern class UMockAI extends unreal.UObject {
   public var PawnActionComp : unreal.aimodule.UPawnActionsComponent;
   public var PerceptionComp : unreal.aimodule.UAIPerceptionComponent;

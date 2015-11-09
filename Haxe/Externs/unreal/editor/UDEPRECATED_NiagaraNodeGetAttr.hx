@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Niagara/NiagaraNodeGetAttr.h", "Engine.h")
+@:glueCppIncludes("Niagara/NiagaraNodeGetAttr.h")
 @:uextern extern class UDEPRECATED_NiagaraNodeGetAttr extends unreal.editor.UNiagaraNode {
   
   /**

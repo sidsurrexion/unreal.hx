@@ -8,7 +8,7 @@ package unreal;
 /**
   A light component that has parallel rays. Will provide a uniform lighting across any affected surface (eg. The Sun). This will affect all objects in the defined light-mass importance volume.
 **/
-@:glueCppIncludes("Components/DirectionalLightComponent.h", "Engine.h")
+@:glueCppIncludes("Components/DirectionalLightComponent.h")
 @:uextern extern class UDirectionalLightComponent extends unreal.ULightComponent {
   public var bUsedAsAtmosphereSunLight : Bool;
   

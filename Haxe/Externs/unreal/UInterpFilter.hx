@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpFilter.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpFilter.h")
 @:uextern extern class UInterpFilter extends unreal.UObject {
   
   /**

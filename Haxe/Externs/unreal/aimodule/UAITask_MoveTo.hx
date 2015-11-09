@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Tasks/AITask_MoveTo.h", "Engine.h")
+@:glueCppIncludes("Tasks/AITask_MoveTo.h")
 @:uextern extern class UAITask_MoveTo extends unreal.aimodule.UAITask {
   private var MoveAcceptanceRadius : unreal.Float32;
   private var MoveGoalActor : unreal.AActor;

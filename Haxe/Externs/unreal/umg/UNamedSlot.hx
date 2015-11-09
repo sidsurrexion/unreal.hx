@@ -10,7 +10,7 @@ package unreal.umg;
   they can put whatever they want in this named slot.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/NamedSlot.h", "Engine.h")
+@:glueCppIncludes("Components/NamedSlot.h")
 @:uextern extern class UNamedSlot extends unreal.umg.UContentWidget {
   
 }

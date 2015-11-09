@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Lightmass/LightmappedSurfaceCollection.h", "Engine.h")
+@:glueCppIncludes("Lightmass/LightmappedSurfaceCollection.h")
 @:uextern extern class ULightmappedSurfaceCollection extends unreal.UObject {
   
   /**

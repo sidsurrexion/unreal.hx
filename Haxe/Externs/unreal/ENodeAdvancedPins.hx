@@ -8,7 +8,7 @@ package unreal;
 /**
   Enum to indicate if a node has advanced-display-pins, and whether they are shown.
 **/
-@:glueCppIncludes("EdGraph/EdGraphNode.h", "Engine.h")
+@:glueCppIncludes("EdGraph/EdGraphNode.h")
 @:uname("ENodeAdvancedPins.Type")
 @:uextern extern enum ENodeAdvancedPins {
   

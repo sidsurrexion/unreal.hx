@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct used to indicate one active vertex animation that should be applied to this USkeletalMesh when rendered.
 **/
-@:glueCppIncludes("Animation/AnimInstance.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimInstance.h")
 @:uextern extern class FActiveVertexAnim {
   @:uname('new') public static function create():PHaxeCreated<unreal.FActiveVertexAnim>;
   

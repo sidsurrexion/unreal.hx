@@ -5,7 +5,7 @@
 package unreal.landscape;
 
 @:umodule("Landscape")
-@:glueCppIncludes("LandscapeSplineSegment.h", "Engine.h")
+@:glueCppIncludes("LandscapeSplineSegment.h")
 @:uextern extern class ULandscapeSplineSegment extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   

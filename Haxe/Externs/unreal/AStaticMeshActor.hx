@@ -13,7 +13,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Actors/StaticMeshActor/
   @see UStaticMesh
 **/
-@:glueCppIncludes("Engine/StaticMeshActor.h", "Engine.h")
+@:glueCppIncludes("Engine/StaticMeshActor.h")
 @:uextern extern class AStaticMeshActor extends unreal.AActor {
   public var NavigationGeometryGatheringMode : unreal.ENavDataGatheringMode;
   

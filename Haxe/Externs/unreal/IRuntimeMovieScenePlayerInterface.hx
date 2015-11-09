@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("MovieScene/RuntimeMovieScenePlayerInterface.h", "Engine.h")
+@:glueCppIncludes("MovieScene/RuntimeMovieScenePlayerInterface.h")
 @:uextern extern interface IRuntimeMovieScenePlayerInterface {
   
 }

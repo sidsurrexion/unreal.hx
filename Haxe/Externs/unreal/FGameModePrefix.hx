@@ -8,7 +8,7 @@ package unreal;
 /**
   Helper structure, used to associate GameModes for a map via its filename prefix.
 **/
-@:glueCppIncludes("GameFramework/WorldSettings.h", "Engine.h")
+@:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class FGameModePrefix {
   @:uname('new') public static function create():PHaxeCreated<unreal.FGameModePrefix>;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionDecalMipmapLevel.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionDecalMipmapLevel.h")
 @:uextern extern class UMaterialExpressionDecalMipmapLevel extends unreal.UMaterialExpression {
   public var ConstHeight : unreal.Float32;
   

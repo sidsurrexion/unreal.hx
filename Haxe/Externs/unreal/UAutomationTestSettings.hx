@@ -8,7 +8,7 @@ package unreal;
 /**
   Implements the Editor's user settings.
 **/
-@:glueCppIncludes("Tests/AutomationTestSettings.h", "Engine.h")
+@:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class UAutomationTestSettings extends unreal.UObject {
   
   /**

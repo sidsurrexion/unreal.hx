@@ -9,7 +9,7 @@ package unreal;
   Abstract base class of container object encapsulating data required for streaming and providing
   interface for when a level should be streamed in and out of memory.
 **/
-@:glueCppIncludes("Engine/LevelStreaming.h", "Engine.h")
+@:glueCppIncludes("Engine/LevelStreaming.h")
 @:uextern extern class ULevelStreaming extends unreal.UObject {
   
   /**

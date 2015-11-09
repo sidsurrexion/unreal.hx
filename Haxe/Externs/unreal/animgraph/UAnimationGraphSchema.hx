@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimationGraphSchema.h", "Engine.h")
+@:glueCppIncludes("AnimationGraphSchema.h")
 @:uextern extern class UAnimationGraphSchema extends unreal.blueprintgraph.UEdGraphSchema_K2 {
   public var DefaultEvaluationHandlerName : unreal.FName;
   public var NAME_OnEvaluate : unreal.FName;

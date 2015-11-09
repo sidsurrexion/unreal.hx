@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Debug/DebugDrawService.h", "Engine.h")
+@:glueCppIncludes("Debug/DebugDrawService.h")
 @:uextern extern class UDebugDrawService extends unreal.UBlueprintFunctionLibrary {
   
 }

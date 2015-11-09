@@ -12,7 +12,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Content/Types/StaticMeshes/
   @see UStaticMesh
 **/
-@:glueCppIncludes("Components/StaticMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/StaticMeshComponent.h")
 @:uextern extern class UStaticMeshComponent extends unreal.UMeshComponent {
   
   /**

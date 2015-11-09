@@ -15,7 +15,7 @@ package unreal.haxeunittests;
    \___/\____/      |_/ \_| |_/\/   \/
 **/
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("HaxeProtected2.h", "Engine.h")
+@:glueCppIncludes("HaxeProtected2.h")
 @:uextern extern class UHaxeProtected2 extends unreal.haxeunittests.UHaxeProtected1 {
   
 }

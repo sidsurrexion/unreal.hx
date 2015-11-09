@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Perception/AISense_Team.h", "Engine.h")
+@:glueCppIncludes("Perception/AISense_Team.h")
 @:uextern extern class UAISense_Team extends unreal.aimodule.UAISense {
   public var RegisteredEvents : unreal.TArray<unreal.aimodule.FAITeamStimulusEvent>;
   

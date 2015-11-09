@@ -9,7 +9,7 @@ package unreal;
   DefaultPawn implements a simple Pawn with spherical collision and built-in flying movement.
   @see UFloatingPawnMovement
 **/
-@:glueCppIncludes("GameFramework/DefaultPawn.h", "Engine.h")
+@:glueCppIncludes("GameFramework/DefaultPawn.h")
 @:uextern extern class ADefaultPawn extends unreal.APawn {
   
   /**

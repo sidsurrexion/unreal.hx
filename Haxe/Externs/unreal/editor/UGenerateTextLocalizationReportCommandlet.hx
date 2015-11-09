@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/GenerateTextLocalizationReportCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/GenerateTextLocalizationReportCommandlet.h")
 @:uextern extern class UGenerateTextLocalizationReportCommandlet extends unreal.editor.UGatherTextCommandletBase {
   
 }

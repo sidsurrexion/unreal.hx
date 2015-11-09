@@ -8,7 +8,7 @@ package unreal;
 /**
   Input scaling struct
 **/
-@:glueCppIncludes("AnimPreviewInstance.h", "Engine.h")
+@:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class FInputScaleBias {
   @:uname('new') public static function create():PHaxeCreated<unreal.FInputScaleBias>;
   public var Bias : unreal.Float32;

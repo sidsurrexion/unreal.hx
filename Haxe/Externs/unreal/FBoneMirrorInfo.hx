@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/SkeletalMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FBoneMirrorInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBoneMirrorInfo>;
   

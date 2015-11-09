@@ -14,7 +14,7 @@ package unreal;
   
   Note: this is the historical UE format for vector net serialization
 **/
-@:glueCppIncludes("GameFramework/CharacterMovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
 @:uextern extern class FVector_NetQuantize extends unreal.FVector {
   @:uname('new') public static function create():PHaxeCreated<unreal.FVector_NetQuantize>;
   

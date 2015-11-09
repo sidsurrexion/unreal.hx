@@ -19,7 +19,7 @@ package unreal.aimodule;
   their runtime properties in provided NodeMemory block (allocation size determined by GetInstanceMemorySize() )
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/BTTaskNode.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/BTTaskNode.h")
 @:uextern extern class UBTTaskNode extends unreal.aimodule.UBTNode {
   
 }

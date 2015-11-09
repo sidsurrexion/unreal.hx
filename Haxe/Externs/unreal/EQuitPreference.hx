@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Kismet/KismetSystemLibrary.h", "Engine.h")
+@:glueCppIncludes("Kismet/KismetSystemLibrary.h")
 @:uname("EQuitPreference.Type")
 @:uextern extern enum EQuitPreference {
   

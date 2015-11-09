@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Distributions/DistributionVectorConstant.h", "Engine.h")
+@:glueCppIncludes("Distributions/DistributionVectorConstant.h")
 @:uname("EDistributionVectorLockFlags")
 @:uextern extern enum EDistributionVectorLockFlags {
   

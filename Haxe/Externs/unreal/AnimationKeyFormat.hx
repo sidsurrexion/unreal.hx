@@ -8,7 +8,7 @@ package unreal;
 /**
   Indicates animation data key format.
 **/
-@:glueCppIncludes("Animation/AnimSequence.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSequence.h")
 @:uname("AnimationKeyFormat")
 @:uextern extern enum AnimationKeyFormat {
   AKF_ConstantKeyLerp;

@@ -10,7 +10,7 @@ package unreal;
   when light from the scene hits the surface, the shading model of the material is used to calculate how
   that light interacts with the surface.
 **/
-@:glueCppIncludes("Materials/Material.h", "Engine.h")
+@:glueCppIncludes("Materials/Material.h")
 @:uextern extern class UMaterial extends unreal.UMaterialInterface {
   
   /**

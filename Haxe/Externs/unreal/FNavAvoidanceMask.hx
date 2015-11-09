@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/CharacterMovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
 @:uextern extern class FNavAvoidanceMask {
   @:uname('new') public static function create():PHaxeCreated<unreal.FNavAvoidanceMask>;
   public var bGroup31 : Bool;

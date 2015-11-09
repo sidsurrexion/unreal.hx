@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/NiagaraRibbonRendererProperties.h", "Engine.h")
+@:glueCppIncludes("Engine/NiagaraRibbonRendererProperties.h")
 @:uextern extern class UNiagaraRibbonRendererProperties extends unreal.UNiagaraEffectRendererProperties {
   
 }

@@ -8,7 +8,7 @@ package unreal;
 /**
   A sound actor that can be placed in a level
 **/
-@:glueCppIncludes("Sound/AmbientSound.h", "Engine.h")
+@:glueCppIncludes("Sound/AmbientSound.h")
 @:uextern extern class AAmbientSound extends unreal.AActor {
   public var AudioComponent : unreal.UAudioComponent;
   

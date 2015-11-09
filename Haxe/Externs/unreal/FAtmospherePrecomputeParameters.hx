@@ -8,7 +8,7 @@ package unreal;
 /**
   Structure storing Data for pre-computation
 **/
-@:glueCppIncludes("Atmosphere/AtmosphericFogComponent.h", "Engine.h")
+@:glueCppIncludes("Atmosphere/AtmosphericFogComponent.h")
 @:uextern extern class FAtmospherePrecomputeParameters {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAtmospherePrecomputeParameters>;
   

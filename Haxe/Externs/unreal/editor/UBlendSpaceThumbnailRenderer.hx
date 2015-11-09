@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("ThumbnailRendering/BlendSpaceThumbnailRenderer.h", "Engine.h")
+@:glueCppIncludes("ThumbnailRendering/BlendSpaceThumbnailRenderer.h")
 @:uextern extern class UBlendSpaceThumbnailRenderer extends unreal.editor.UDefaultSizedThumbnailRenderer {
   
 }

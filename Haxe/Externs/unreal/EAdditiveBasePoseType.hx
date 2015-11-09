@@ -8,7 +8,7 @@ package unreal;
 /**
   For an additive animation, indicates what the animation is relative to.
 **/
-@:glueCppIncludes("Animation/AnimSequence.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSequence.h")
 @:uname("EAdditiveBasePoseType")
 @:uextern extern enum EAdditiveBasePoseType {
   

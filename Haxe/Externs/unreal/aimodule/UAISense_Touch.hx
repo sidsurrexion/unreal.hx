@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Perception/AISense_Touch.h", "Engine.h")
+@:glueCppIncludes("Perception/AISense_Touch.h")
 @:uextern extern class UAISense_Touch extends unreal.aimodule.UAISense {
   public var RegisteredEvents : unreal.TArray<unreal.aimodule.FAITouchEvent>;
   

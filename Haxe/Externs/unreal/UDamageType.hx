@@ -14,7 +14,7 @@ package unreal;
   DamageTypes are never instanced and should be treated as immutable data holders with static code
   functionality.  They should never be stateful.
 **/
-@:glueCppIncludes("GameFramework/DamageType.h", "Engine.h")
+@:glueCppIncludes("GameFramework/DamageType.h")
 @:uextern extern class UDamageType extends unreal.UObject {
   
   /**

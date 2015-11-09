@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionCustom.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionCustom.h")
 @:uname("ECustomMaterialOutputType")
 @:uextern extern enum ECustomMaterialOutputType {
   CMOT_Float1;

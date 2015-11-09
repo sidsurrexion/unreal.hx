@@ -15,7 +15,7 @@ package unreal.gameplayabilities;
           -OnExecute/Active/Remove are more clear, easy to use. Make it harder to share info between events.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayCueNotify_Static.h", "Engine.h")
+@:glueCppIncludes("GameplayCueNotify_Static.h")
 @:uextern extern class UGameplayCueNotify_Static extends unreal.UObject {
   
   /**

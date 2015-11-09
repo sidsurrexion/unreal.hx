@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Size/ParticleModuleSizeMultiplyLife.h", "Engine.h")
+@:glueCppIncludes("Particles/Size/ParticleModuleSizeMultiplyLife.h")
 @:uextern extern class UParticleModuleSizeMultiplyLife extends unreal.UParticleModuleSizeBase {
   
   /**

@@ -8,7 +8,7 @@ package unreal;
 /**
   Holds settings for the material editor build promotion tests
 **/
-@:glueCppIncludes("Tests/AutomationTestSettings.h", "Engine.h")
+@:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FMaterialEditorPromotionSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialEditorPromotionSettings>;
   

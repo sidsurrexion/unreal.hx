@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/FbxImportUI.h", "Engine.h")
+@:glueCppIncludes("Factories/FbxImportUI.h")
 @:uextern extern class UFbxImportUI extends unreal.UObject {
   
   /**

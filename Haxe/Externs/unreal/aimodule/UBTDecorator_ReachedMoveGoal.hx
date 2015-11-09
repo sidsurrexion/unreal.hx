@@ -10,7 +10,7 @@ package unreal.aimodule;
   A decorator node that bases its condition on whether the AI controller's path following component returns that it has reached its goal.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_ReachedMoveGoal.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_ReachedMoveGoal.h")
 @:uextern extern class UBTDecorator_ReachedMoveGoal extends unreal.aimodule.UBTDecorator {
   
 }

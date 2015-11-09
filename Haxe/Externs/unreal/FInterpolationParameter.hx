@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/BlendSpaceBase.h", "Engine.h")
+@:glueCppIncludes("Animation/BlendSpaceBase.h")
 @:uextern extern class FInterpolationParameter {
   @:uname('new') public static function create():PHaxeCreated<unreal.FInterpolationParameter>;
   

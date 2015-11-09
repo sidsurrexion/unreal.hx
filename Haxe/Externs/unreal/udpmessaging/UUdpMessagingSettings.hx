@@ -5,7 +5,7 @@
 package unreal.udpmessaging;
 
 @:umodule("UdpMessaging")
-@:glueCppIncludes("Private/Shared/UdpMessagingSettings.h", "Engine.h")
+@:glueCppIncludes("Private/Shared/UdpMessagingSettings.h")
 @:uextern extern class UUdpMessagingSettings extends unreal.UObject {
   
   /**

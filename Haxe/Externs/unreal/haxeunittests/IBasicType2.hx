@@ -5,7 +5,7 @@
 package unreal.haxeunittests;
 
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("BasicType2.h", "Engine.h")
+@:glueCppIncludes("BasicType2.h")
 @:uextern extern interface IBasicType2 {
   
 }

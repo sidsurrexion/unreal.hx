@@ -8,7 +8,7 @@ package unreal;
 /**
   This represents a baked transition
 **/
-@:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h")
 @:uextern extern class FAnimationTransitionBetweenStates extends unreal.FAnimationStateBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimationTransitionBetweenStates>;
   public var LogicType : unreal.ETransitionLogicType;

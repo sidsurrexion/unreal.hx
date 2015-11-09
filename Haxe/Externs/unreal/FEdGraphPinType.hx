@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct used to define the type of information carried on this pin
 **/
-@:glueCppIncludes("EdGraph/EdGraphPin.h", "Engine.h")
+@:glueCppIncludes("EdGraph/EdGraphPin.h")
 @:uextern extern class FEdGraphPinType {
   @:uname('new') public static function create():PHaxeCreated<unreal.FEdGraphPinType>;
   

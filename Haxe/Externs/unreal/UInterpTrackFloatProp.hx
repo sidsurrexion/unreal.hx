@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackFloatProp.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackFloatProp.h")
 @:uextern extern class UInterpTrackFloatProp extends unreal.UInterpTrackFloatBase {
   
   /**

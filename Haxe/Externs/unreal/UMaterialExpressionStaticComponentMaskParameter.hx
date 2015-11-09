@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionStaticComponentMaskParameter.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionStaticComponentMaskParameter.h")
 @:uextern extern class UMaterialExpressionStaticComponentMaskParameter extends unreal.UMaterialExpressionParameter {
   public var DefaultA : Bool;
   public var DefaultB : Bool;

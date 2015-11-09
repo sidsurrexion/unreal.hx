@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/WorldSettings.h", "Engine.h")
+@:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class FLightmassWorldInfoSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassWorldInfoSettings>;
   

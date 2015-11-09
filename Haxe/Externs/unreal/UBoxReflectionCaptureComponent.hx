@@ -8,7 +8,7 @@ package unreal;
 /**
   -> will be exported to EngineDecalClasses.h
 **/
-@:glueCppIncludes("Components/BoxReflectionCaptureComponent.h", "Engine.h")
+@:glueCppIncludes("Components/BoxReflectionCaptureComponent.h")
 @:uextern extern class UBoxReflectionCaptureComponent extends unreal.UReflectionCaptureComponent {
   public var PreviewCaptureBox : unreal.UBoxComponent;
   public var PreviewInfluenceBox : unreal.UBoxComponent;

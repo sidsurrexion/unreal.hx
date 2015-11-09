@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/InheritableComponentHandler.h", "Engine.h")
+@:glueCppIncludes("Engine/InheritableComponentHandler.h")
 @:uextern extern class FComponentKey {
   @:uname('new') public static function create():PHaxeCreated<unreal.FComponentKey>;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Simple 2d triangle with UVs
 **/
-@:glueCppIncludes("Engine.h", "Engine.h")
+@:glueCppIncludes("Engine.h")
 @:uextern extern class FCanvasUVTri {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCanvasUVTri>;
   

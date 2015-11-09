@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/SceneCaptureComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SceneCaptureComponent.h")
 @:uextern extern class FEngineShowFlagsSetting {
   @:uname('new') public static function create():PHaxeCreated<unreal.FEngineShowFlagsSetting>;
   public var Enabled : Bool;

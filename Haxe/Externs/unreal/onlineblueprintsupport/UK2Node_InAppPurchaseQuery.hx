@@ -5,7 +5,7 @@
 package unreal.onlineblueprintsupport;
 
 @:umodule("OnlineBlueprintSupport")
-@:glueCppIncludes("K2Node_InAppPurchaseQuery.h", "Engine.h")
+@:glueCppIncludes("K2Node_InAppPurchaseQuery.h")
 @:uextern extern class UK2Node_InAppPurchaseQuery extends unreal.blueprintgraph.UK2Node_BaseAsyncTask {
   
 }

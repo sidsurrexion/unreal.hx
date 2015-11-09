@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionClamp.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionClamp.h")
 @:uname("EClampMode")
 @:uextern extern enum EClampMode {
   CMODE_Clamp;

@@ -9,7 +9,7 @@ package unreal.html5platformeditor;
   Implements the settings for the HTML5 SDK setup.
 **/
 @:umodule("HTML5PlatformEditor")
-@:glueCppIncludes("Private/HTML5SDKSettings.h", "Engine.h")
+@:glueCppIncludes("Private/HTML5SDKSettings.h")
 @:uextern extern class UHTML5SDKSettings extends unreal.UObject {
   
   /**

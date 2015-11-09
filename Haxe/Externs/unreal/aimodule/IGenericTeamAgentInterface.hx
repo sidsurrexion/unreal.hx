@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("GenericTeamAgentInterface.h", "Engine.h")
+@:glueCppIncludes("GenericTeamAgentInterface.h")
 @:uextern extern interface IGenericTeamAgentInterface {
   
 }

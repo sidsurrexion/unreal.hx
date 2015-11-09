@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/Engine.h", "Engine.h")
+@:glueCppIncludes("Engine/Engine.h")
 @:uname("EMatineeCaptureType.Type")
 @:uextern extern enum EMatineeCaptureType {
   

@@ -9,7 +9,7 @@ package unreal;
   PhysicsVolume: A bounding volume which affects actor physics.
   Each AActor is affected at any time by one PhysicsVolume.
 **/
-@:glueCppIncludes("GameFramework/PhysicsVolume.h", "Engine.h")
+@:glueCppIncludes("GameFramework/PhysicsVolume.h")
 @:uextern extern class APhysicsVolume extends unreal.AVolume {
   
   /**

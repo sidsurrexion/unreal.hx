@@ -10,7 +10,7 @@ package unreal.vectorvm;
   *  for access by VectorVM kernels;
 **/
 @:umodule("VectorVM")
-@:glueCppIncludes("VectorVMDataObject.h", "Engine.h")
+@:glueCppIncludes("VectorVMDataObject.h")
 @:uextern extern class UNiagaraDataObject extends unreal.UObject {
   
 }

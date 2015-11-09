@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimSingleNodeInstance.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSingleNodeInstance.h")
 @:uextern extern class UAnimSingleNodeInstance extends unreal.UAnimInstance {
   public var bReverse : Bool;
   public var bPlaying : Bool;

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Velocity/ParticleModuleVelocityInheritParent.h", "Engine.h")
+@:glueCppIncludes("Particles/Velocity/ParticleModuleVelocityInheritParent.h")
 @:uextern extern class UParticleModuleVelocityInheritParent extends unreal.UParticleModuleVelocityBase {
   
   /**

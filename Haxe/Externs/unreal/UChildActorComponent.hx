@@ -8,7 +8,7 @@ package unreal;
 /**
   A component that spawns an Actor when registered, and destroys it when unregistered.
 **/
-@:glueCppIncludes("Components/ChildActorComponent.h", "Engine.h")
+@:glueCppIncludes("Components/ChildActorComponent.h")
 @:uextern extern class UChildActorComponent extends unreal.USceneComponent {
   
   /**

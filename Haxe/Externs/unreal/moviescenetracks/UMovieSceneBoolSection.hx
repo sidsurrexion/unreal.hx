@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   A single bool section
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Sections/MovieSceneBoolSection.h", "Engine.h")
+@:glueCppIncludes("Sections/MovieSceneBoolSection.h")
 @:uextern extern class UMovieSceneBoolSection extends unreal.moviescene.UMovieSceneSection {
   
 }

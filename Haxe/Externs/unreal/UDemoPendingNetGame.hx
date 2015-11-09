@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/DemoPendingNetGame.h", "Engine.h")
+@:glueCppIncludes("Engine/DemoPendingNetGame.h")
 @:uextern extern class UDemoPendingNetGame extends unreal.UPendingNetGame {
   
 }

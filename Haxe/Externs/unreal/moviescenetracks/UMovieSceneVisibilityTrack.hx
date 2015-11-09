@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   Handles manipulation of visibility properties in a movie scene
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Tracks/MovieSceneVisibilityTrack.h", "Engine.h")
+@:glueCppIncludes("Tracks/MovieSceneVisibilityTrack.h")
 @:uextern extern class UMovieSceneVisibilityTrack extends unreal.moviescenetracks.UMovieSceneBoolTrack {
   
 }

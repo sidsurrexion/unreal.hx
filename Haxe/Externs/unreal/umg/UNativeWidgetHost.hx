@@ -10,7 +10,7 @@ package unreal.umg;
   be used when all you need is to nest a native widget inside a UMG widget.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/NativeWidgetHost.h", "Engine.h")
+@:glueCppIncludes("Components/NativeWidgetHost.h")
 @:uextern extern class UNativeWidgetHost extends unreal.umg.UWidget {
   
 }

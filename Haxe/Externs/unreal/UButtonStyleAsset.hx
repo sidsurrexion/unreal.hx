@@ -9,7 +9,7 @@ package unreal;
   An asset describing a button's appearance.
   Just a wrapper for the struct with real data in it.style factory
 **/
-@:glueCppIncludes("Slate/ButtonStyleAsset.h", "Engine.h")
+@:glueCppIncludes("Slate/ButtonStyleAsset.h")
 @:uextern extern class UButtonStyleAsset extends unreal.UObject {
   
   /**

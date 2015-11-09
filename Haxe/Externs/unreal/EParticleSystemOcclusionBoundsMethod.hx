@@ -8,7 +8,7 @@ package unreal;
 /**
   Occlusion method enumeration
 **/
-@:glueCppIncludes("Particles/ParticleSystem.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleSystem.h")
 @:uname("EParticleSystemOcclusionBoundsMethod")
 @:uextern extern enum EParticleSystemOcclusionBoundsMethod {
   

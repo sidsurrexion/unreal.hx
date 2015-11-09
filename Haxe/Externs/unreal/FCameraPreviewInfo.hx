@@ -8,7 +8,7 @@ package unreal;
 /**
   Preview APawn class for this track
 **/
-@:glueCppIncludes("Matinee/InterpGroupCamera.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpGroupCamera.h")
 @:uextern extern class FCameraPreviewInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCameraPreviewInfo>;
   

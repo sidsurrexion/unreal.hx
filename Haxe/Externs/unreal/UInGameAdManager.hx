@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/InGameAdManager.h", "Engine.h")
+@:glueCppIncludes("Engine/InGameAdManager.h")
 @:uextern extern class UInGameAdManager extends unreal.UPlatformInterfaceBase {
   
   /**

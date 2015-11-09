@@ -10,7 +10,7 @@ package unreal.gameplayabilities;
       NOTE: This feature is EXPERIMENTAL. Use at your own risk!
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayAbilityBlueprint.h", "Engine.h")
+@:glueCppIncludes("GameplayAbilityBlueprint.h")
 @:uextern extern class UGameplayAbilityBlueprint extends unreal.UBlueprint {
   
 }

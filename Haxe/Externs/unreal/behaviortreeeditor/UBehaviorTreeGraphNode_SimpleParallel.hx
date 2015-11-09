@@ -5,7 +5,7 @@
 package unreal.behaviortreeeditor;
 
 @:umodule("BehaviorTreeEditor")
-@:glueCppIncludes("BehaviorTreeGraphNode_SimpleParallel.h", "Engine.h")
+@:glueCppIncludes("BehaviorTreeGraphNode_SimpleParallel.h")
 @:uextern extern class UBehaviorTreeGraphNode_SimpleParallel extends unreal.behaviortreeeditor.UBehaviorTreeGraphNode_Composite {
   
 }

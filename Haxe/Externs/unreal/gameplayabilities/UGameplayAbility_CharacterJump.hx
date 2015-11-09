@@ -9,7 +9,7 @@ package unreal.gameplayabilities;
   Ability that jumps with a character.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/GameplayAbility_CharacterJump.h", "Engine.h")
+@:glueCppIncludes("Abilities/GameplayAbility_CharacterJump.h")
 @:uextern extern class UGameplayAbility_CharacterJump extends unreal.gameplayabilities.UGameplayAbility {
   
 }

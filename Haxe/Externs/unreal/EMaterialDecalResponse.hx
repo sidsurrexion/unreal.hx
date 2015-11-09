@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines how the material reacts on DBuffer decals, later we can expose more variants between None and Default.
 **/
-@:glueCppIncludes("Materials/Material.h", "Engine.h")
+@:glueCppIncludes("Materials/Material.h")
 @:uname("EMaterialDecalResponse")
 @:uextern extern enum EMaterialDecalResponse {
   

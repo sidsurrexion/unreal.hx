@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavigationTypes.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationTypes.h")
 @:uextern extern class UNavigationTypes extends unreal.UObject {
   
 }

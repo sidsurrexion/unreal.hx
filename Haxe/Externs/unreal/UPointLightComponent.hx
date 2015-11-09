@@ -8,7 +8,7 @@ package unreal;
 /**
   A light component which emits light from a single point equally in all directions.
 **/
-@:glueCppIncludes("Components/PointLightComponent.h", "Engine.h")
+@:glueCppIncludes("Components/PointLightComponent.h")
 @:uextern extern class UPointLightComponent extends unreal.ULightComponent {
   
   /**

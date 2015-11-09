@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/Level.h", "Engine.h")
+@:glueCppIncludes("Engine/Level.h")
 @:uextern extern class FMaterialSimplificationSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialSimplificationSettings>;
   

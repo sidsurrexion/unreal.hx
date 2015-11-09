@@ -8,7 +8,7 @@ package unreal;
 /**
   Implements an Actor for exponential height fog.
 **/
-@:glueCppIncludes("Engine/ExponentialHeightFog.h", "Engine.h")
+@:glueCppIncludes("Engine/ExponentialHeightFog.h")
 @:uextern extern class AExponentialHeightFog extends unreal.AInfo {
   
   /**

@@ -10,7 +10,7 @@ package unreal.paper2d;
   This takes a 2D terrain material and instances sprite geometry along the spline path.
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("PaperTerrainComponent.h", "Engine.h")
+@:glueCppIncludes("PaperTerrainComponent.h")
 @:uextern extern class UPaperTerrainComponent extends unreal.UPrimitiveComponent {
   
   /**

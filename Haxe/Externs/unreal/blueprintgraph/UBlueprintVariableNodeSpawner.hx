@@ -12,7 +12,7 @@ package unreal.blueprintgraph;
   local function variables.
 **/
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("BlueprintVariableNodeSpawner.h", "Engine.h")
+@:glueCppIncludes("BlueprintVariableNodeSpawner.h")
 @:uextern extern class UBlueprintVariableNodeSpawner extends unreal.blueprintgraph.UBlueprintFieldNodeSpawner {
   
 }

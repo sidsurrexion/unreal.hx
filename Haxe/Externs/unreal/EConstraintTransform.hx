@@ -8,7 +8,7 @@ package unreal;
 /**
   Constraint Transform Type. - currently unused
 **/
-@:glueCppIncludes("Animation/Rig.h", "Engine.h")
+@:glueCppIncludes("Animation/Rig.h")
 @:uname("EConstraintTransform.Type")
 @:uextern extern enum EConstraintTransform {
   

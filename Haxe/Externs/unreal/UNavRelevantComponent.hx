@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavRelevantComponent.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavRelevantComponent.h")
 @:uextern extern class UNavRelevantComponent extends unreal.UActorComponent implements unreal.INavRelevantInterface {
   private var CachedNavParent : unreal.UObject;
   

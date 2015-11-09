@@ -9,7 +9,7 @@ package unreal.editor;
   UGatherTextCommandlet: One commandlet to rule them all. This commandlet loads a config file and then calls other localization commandlets. Allows localization system to be easily extendable and flexible.
 **/
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/GatherTextCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/GatherTextCommandlet.h")
 @:uextern extern class UGatherTextCommandlet extends unreal.editor.UGatherTextCommandletBase {
   
 }

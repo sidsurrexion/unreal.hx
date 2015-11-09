@@ -5,7 +5,7 @@
 package unreal.gameplayabilities;
 
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayAbilityBlueprintGeneratedClass.h", "Engine.h")
+@:glueCppIncludes("GameplayAbilityBlueprintGeneratedClass.h")
 @:uextern extern class UGameplayAbilityBlueprintGeneratedClass extends unreal.UBlueprintGeneratedClass {
   
 }

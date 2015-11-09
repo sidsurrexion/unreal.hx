@@ -10,7 +10,7 @@ package unreal;
   Useful as a 'dummy' component in the hierarchy to offset others.
   @see [Scene Components](https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Actors/Components/index.html#scenecomponents)
 **/
-@:glueCppIncludes("Components/SceneComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SceneComponent.h")
 @:uextern extern class USceneComponent extends unreal.UActorComponent {
   #if WITH_EDITORONLY_DATA
   public var bVisualizeComponent : Bool;

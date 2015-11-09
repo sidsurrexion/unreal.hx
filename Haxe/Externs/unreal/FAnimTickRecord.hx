@@ -8,7 +8,7 @@ package unreal;
 /**
   Information about an animation asset that needs to be ticked
 **/
-@:glueCppIncludes("Animation/AnimInstance.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimInstance.h")
 @:uextern extern class FAnimTickRecord {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimTickRecord>;
   public var SourceAsset : unreal.UAnimationAsset;

@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/DumpBlueprintsInfoCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/DumpBlueprintsInfoCommandlet.h")
 @:uextern extern class UDumpBlueprintsInfoCommandlet extends unreal.UCommandlet {
   
 }

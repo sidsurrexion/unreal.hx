@@ -15,7 +15,7 @@ package unreal;
   Normally the root component of the owning actor is moved, however another component may be selected (see SetUpdatedComponent()).
   During swept (non-teleporting) movement only collision of UpdatedComponent is considered, attached components will teleport to the end location ignoring collision.
 **/
-@:glueCppIncludes("GameFramework/MovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/MovementComponent.h")
 @:uextern extern class UMovementComponent extends unreal.UActorComponent {
   
   /**

@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/VectorFieldStaticFactory.h", "Engine.h")
+@:glueCppIncludes("Factories/VectorFieldStaticFactory.h")
 @:uextern extern class UVectorFieldStaticFactory extends unreal.editor.UFactory {
   
 }

@@ -8,7 +8,7 @@ package unreal;
 /**
   Required condition for this track to be enabled
 **/
-@:glueCppIncludes("Matinee/InterpTrack.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrack.h")
 @:uname("ETrackActiveCondition")
 @:uextern extern enum ETrackActiveCondition {
   

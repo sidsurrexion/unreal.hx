@@ -5,7 +5,7 @@
 package unreal.aigraph;
 
 @:umodule("AIGraph")
-@:glueCppIncludes("AIGraph.h", "Engine.h")
+@:glueCppIncludes("AIGraph.h")
 @:uextern extern class UAIGraph extends unreal.UEdGraph {
   public var GraphVersion : unreal.Int32;
   

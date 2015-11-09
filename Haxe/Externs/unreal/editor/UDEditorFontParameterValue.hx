@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("MaterialEditor/DEditorFontParameterValue.h", "Engine.h")
+@:glueCppIncludes("MaterialEditor/DEditorFontParameterValue.h")
 @:uextern extern class UDEditorFontParameterValue extends unreal.editor.UDEditorParameterValue {
   public var ParameterValue : unreal.editor.FDFontParameters;
   

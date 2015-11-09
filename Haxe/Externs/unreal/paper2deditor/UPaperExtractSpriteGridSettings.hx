@@ -5,7 +5,7 @@
 package unreal.paper2deditor;
 
 @:umodule("Paper2DEditor")
-@:glueCppIncludes("Private/ExtractSprites/PaperExtractSpritesSettings.h", "Engine.h")
+@:glueCppIncludes("Private/ExtractSprites/PaperExtractSpritesSettings.h")
 @:uextern extern class UPaperExtractSpriteGridSettings extends unreal.UObject {
   
   /**

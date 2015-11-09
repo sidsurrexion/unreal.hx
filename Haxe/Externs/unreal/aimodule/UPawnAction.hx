@@ -10,7 +10,7 @@ package unreal.aimodule;
   * Actions are created paused
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("Actions/PawnAction.h", "Engine.h")
+@:glueCppIncludes("Actions/PawnAction.h")
 @:uextern extern class UPawnAction extends unreal.UObject {
   
   /**

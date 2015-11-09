@@ -8,7 +8,7 @@ package unreal;
 /**
   An integral key, which holds the key time and the key value
 **/
-@:glueCppIncludes("Sections/MovieSceneBoolSection.h", "Engine.h")
+@:glueCppIncludes("Sections/MovieSceneBoolSection.h")
 @:uextern extern class FIntegralKey {
   @:uname('new') public static function create():PHaxeCreated<unreal.FIntegralKey>;
   

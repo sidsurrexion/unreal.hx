@@ -5,7 +5,7 @@
 package unreal.umgeditor;
 
 @:umodule("UMGEditor")
-@:glueCppIncludes("WidgetGraphSchema.h", "Engine.h")
+@:glueCppIncludes("WidgetGraphSchema.h")
 @:uextern extern class UWidgetGraphSchema extends unreal.blueprintgraph.UEdGraphSchema_K2 {
   public var DefaultEvaluationHandlerName : unreal.FName;
   public var NAME_OnEvaluate : unreal.FName;

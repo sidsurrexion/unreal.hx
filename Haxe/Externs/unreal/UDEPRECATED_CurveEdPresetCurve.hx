@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Curves/CurveEdPresetCurve.h", "Engine.h")
+@:glueCppIncludes("Curves/CurveEdPresetCurve.h")
 @:uextern extern class UDEPRECATED_CurveEdPresetCurve extends unreal.UObject {
   
 }

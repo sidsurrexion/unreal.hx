@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimationStateMachineSchema.h", "Engine.h")
+@:glueCppIncludes("AnimationStateMachineSchema.h")
 @:uextern extern class UAnimationStateMachineSchema extends unreal.UEdGraphSchema {
   public var PC_Exec : unreal.FString;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/LevelStreamingVolume.h", "Engine.h")
+@:glueCppIncludes("Engine/LevelStreamingVolume.h")
 @:uextern extern class ALevelStreamingVolume extends unreal.AVolume {
   
   /**

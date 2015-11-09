@@ -5,7 +5,7 @@
 package unreal.enginesettings;
 
 @:umodule("EngineSettings")
-@:glueCppIncludes("GameSessionSettings.h", "Engine.h")
+@:glueCppIncludes("GameSessionSettings.h")
 @:uextern extern class UGameSessionSettings extends unreal.UObject {
   
   /**

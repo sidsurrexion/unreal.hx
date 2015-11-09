@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/LightComponent.h", "Engine.h")
+@:glueCppIncludes("Components/LightComponent.h")
 @:uextern extern class ULightComponent extends unreal.ULightComponentBase {
   
   /**

@@ -5,7 +5,7 @@
 package unreal.landscape;
 
 @:umodule("Landscape")
-@:glueCppIncludes("LandscapeComponent.h", "Engine.h")
+@:glueCppIncludes("LandscapeComponent.h")
 @:uextern extern class ULandscapeComponent extends unreal.UPrimitiveComponent {
   
   /**

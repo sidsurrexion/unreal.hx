@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrack.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrack.h")
 @:uextern extern class UInterpTrack extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   

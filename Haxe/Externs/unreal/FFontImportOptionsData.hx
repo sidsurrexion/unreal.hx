@@ -8,7 +8,7 @@ package unreal;
 /**
   Font import options
 **/
-@:glueCppIncludes("Engine/Font.h", "Engine.h")
+@:glueCppIncludes("Engine/Font.h")
 @:uextern extern class FFontImportOptionsData {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFontImportOptionsData>;
   

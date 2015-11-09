@@ -8,7 +8,7 @@ package unreal;
 /**
   Enum for specifying the source of a bone's rotation.
 **/
-@:glueCppIncludes("AnimGraphNode_Fabrik.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_Fabrik.h")
 @:uname("EBoneRotationSource")
 @:uextern extern enum EBoneRotationSource {
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AnimGraphNode_SequencePlayer.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_SequencePlayer.h")
 @:uname("EAnimGroupRole.Type")
 @:uextern extern enum EAnimGroupRole {
   

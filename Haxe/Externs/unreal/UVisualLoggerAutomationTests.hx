@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("VisualLogger/VisualLoggerAutomationTests.h", "Engine.h")
+@:glueCppIncludes("VisualLogger/VisualLoggerAutomationTests.h")
 @:uextern extern class UVisualLoggerAutomationTests extends unreal.UObject {
   
 }

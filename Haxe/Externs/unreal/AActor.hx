@@ -13,7 +13,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Actors/
   @see UActorComponent
 **/
-@:glueCppIncludes("GameFramework/Actor.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Actor.h")
 @:uextern extern class AActor extends unreal.UObject {
   
   /**

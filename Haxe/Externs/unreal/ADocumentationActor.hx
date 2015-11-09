@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/DocumentationActor.h", "Engine.h")
+@:glueCppIncludes("Engine/DocumentationActor.h")
 @:uextern extern class ADocumentationActor extends unreal.AActor {
   #if WITH_EDITORONLY_DATA
   public var Billboard : unreal.UMaterialBillboardComponent;

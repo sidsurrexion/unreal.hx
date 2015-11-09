@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/ReimportSoundSurroundFactory.h", "Engine.h")
+@:glueCppIncludes("Factories/ReimportSoundSurroundFactory.h")
 @:uextern extern class UReimportSoundSurroundFactory extends unreal.editor.USoundSurroundFactory {
   public var ReimportPaths : unreal.TArray<unreal.FString>;
   

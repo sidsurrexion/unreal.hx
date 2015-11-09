@@ -9,7 +9,7 @@ package unreal.umg;
   A widget switcher is like a tab control, but without tabs. At most one widget is visible at time.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/WidgetSwitcher.h", "Engine.h")
+@:glueCppIncludes("Components/WidgetSwitcher.h")
 @:uextern extern class UWidgetSwitcher extends unreal.umg.UPanelWidget {
   
   /**

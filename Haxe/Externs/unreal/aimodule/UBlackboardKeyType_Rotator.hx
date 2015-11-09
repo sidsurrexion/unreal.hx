@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Blackboard/BlackboardKeyType_Rotator.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Blackboard/BlackboardKeyType_Rotator.h")
 @:uextern extern class UBlackboardKeyType_Rotator extends unreal.aimodule.UBlackboardKeyType {
   
 }

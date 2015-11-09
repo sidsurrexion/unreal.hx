@@ -8,7 +8,7 @@ package unreal;
 /**
   Source model from which a renderable static mesh is built.
 **/
-@:glueCppIncludes("Engine/StaticMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/StaticMesh.h")
 @:uextern extern class FStaticMeshSourceModel {
   @:uname('new') public static function create():PHaxeCreated<unreal.FStaticMeshSourceModel>;
   

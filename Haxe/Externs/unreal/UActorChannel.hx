@@ -35,7 +35,7 @@ package unreal;
               | </End Tag>           |                                                                           |
               |----------------------|---------------------------------------------------------------------------|
 **/
-@:glueCppIncludes("Engine/ActorChannel.h", "Engine.h")
+@:glueCppIncludes("Engine/ActorChannel.h")
 @:uextern extern class UActorChannel extends unreal.UChannel {
   
   /**

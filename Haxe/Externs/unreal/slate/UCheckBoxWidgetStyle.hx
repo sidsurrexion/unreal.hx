@@ -5,7 +5,7 @@
 package unreal.slate;
 
 @:umodule("Slate")
-@:glueCppIncludes("Framework/Styling/CheckBoxWidgetStyle.h", "Engine.h")
+@:glueCppIncludes("Framework/Styling/CheckBoxWidgetStyle.h")
 @:uextern extern class UCheckBoxWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
   
   /**

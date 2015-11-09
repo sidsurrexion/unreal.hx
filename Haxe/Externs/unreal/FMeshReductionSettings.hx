@@ -8,7 +8,7 @@ package unreal;
 /**
   Settings used to reduce a mesh.
 **/
-@:glueCppIncludes("Engine/StaticMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/StaticMesh.h")
 @:uextern extern class FMeshReductionSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMeshReductionSettings>;
   public var BaseLODModel : unreal.Int32;

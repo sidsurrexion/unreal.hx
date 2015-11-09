@@ -11,7 +11,7 @@ package unreal;
   Makes sure that the opaque aspects of FUniqueNetId are properly handled/serialized
   over network RPC and actor replication
 **/
-@:glueCppIncludes("GameFramework/PlayerState.h", "Engine.h")
+@:glueCppIncludes("GameFramework/PlayerState.h")
 @:uextern extern class FUniqueNetIdRepl {
   @:uname('new') public static function create():PHaxeCreated<unreal.FUniqueNetIdRepl>;
   

@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/WrangleContentCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/WrangleContentCommandlet.h")
 @:uextern extern class UWrangleContentCommandlet extends unreal.UCommandlet {
   
 }

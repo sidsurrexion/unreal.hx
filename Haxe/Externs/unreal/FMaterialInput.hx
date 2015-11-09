@@ -11,7 +11,7 @@ package unreal;
   Material input structs.
   @warning: manually mirrored in MaterialShared.h
 **/
-@:glueCppIncludes("Materials/Material.h", "Engine.h")
+@:glueCppIncludes("Materials/Material.h")
 @:uextern extern class FMaterialInput {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialInput>;
   

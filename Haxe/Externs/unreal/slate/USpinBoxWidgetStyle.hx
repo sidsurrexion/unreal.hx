@@ -5,7 +5,7 @@
 package unreal.slate;
 
 @:umodule("Slate")
-@:glueCppIncludes("Framework/Styling/SpinBoxWidgetStyle.h", "Engine.h")
+@:glueCppIncludes("Framework/Styling/SpinBoxWidgetStyle.h")
 @:uextern extern class USpinBoxWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
   
   /**

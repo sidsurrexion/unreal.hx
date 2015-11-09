@@ -11,7 +11,7 @@ package unreal.blueprintgraph;
   FEdGraphSchemaAction_K2Delegate, FEdGraphSchemaAction_K2AssignDelegate, etc.
 **/
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("BlueprintDelegateNodeSpawner.h", "Engine.h")
+@:glueCppIncludes("BlueprintDelegateNodeSpawner.h")
 @:uextern extern class UBlueprintDelegateNodeSpawner extends unreal.blueprintgraph.UBlueprintFieldNodeSpawner {
   
 }

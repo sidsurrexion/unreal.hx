@@ -8,7 +8,7 @@ package unreal;
 /**
   Box shape used for collision
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup2D.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup2D.h")
 @:uextern extern class FBoxElement2D {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBoxElement2D>;
   

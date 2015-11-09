@@ -8,7 +8,7 @@ package unreal;
 /**
   like EPassInputId but can expose more e.g. GBuffer
 **/
-@:glueCppIncludes("Materials/MaterialExpressionSceneTexture.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionSceneTexture.h")
 @:uname("ESceneTextureId")
 @:uextern extern enum ESceneTextureId {
   

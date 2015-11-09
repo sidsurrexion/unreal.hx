@@ -8,7 +8,7 @@ package unreal;
 /**
   Rigid body error correction data
 **/
-@:glueCppIncludes("Engine/Engine.h", "Engine.h")
+@:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FRigidBodyErrorCorrection {
   @:uname('new') public static function create():PHaxeCreated<unreal.FRigidBodyErrorCorrection>;
   

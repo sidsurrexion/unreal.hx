@@ -9,7 +9,7 @@ package unreal.umg;
   A panel that evenly divides up available space between all of its children.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/UniformGridPanel.h", "Engine.h")
+@:glueCppIncludes("Components/UniformGridPanel.h")
 @:uextern extern class UUniformGridPanel extends unreal.umg.UPanelWidget {
   
   /**

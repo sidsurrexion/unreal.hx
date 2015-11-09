@@ -13,7 +13,7 @@ package unreal.blueprintgraph;
   FEdGraphSchemaAction_K2ViewNode.
 **/
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("BlueprintBoundEventNodeSpawner.h", "Engine.h")
+@:glueCppIncludes("BlueprintBoundEventNodeSpawner.h")
 @:uextern extern class UBlueprintBoundEventNodeSpawner extends unreal.blueprintgraph.UBlueprintEventNodeSpawner {
   
 }

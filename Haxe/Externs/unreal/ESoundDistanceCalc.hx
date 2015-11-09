@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundAttenuation.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundAttenuation.h")
 @:uname("ESoundDistanceCalc")
 @:uextern extern enum ESoundDistanceCalc {
   SOUNDDISTANCE_Normal;

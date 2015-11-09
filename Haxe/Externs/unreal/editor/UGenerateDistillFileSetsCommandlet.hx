@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/GenerateDistillFileSetsCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/GenerateDistillFileSetsCommandlet.h")
 @:uextern extern class UGenerateDistillFileSetsCommandlet extends unreal.UCommandlet {
   
 }

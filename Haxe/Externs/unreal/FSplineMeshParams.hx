@@ -9,7 +9,7 @@ package unreal;
   Structure that holds info about spline, passed to renderer to deform UStaticMesh.
   Also used by Lightmass, so be sure to update Lightmass::FSplineMeshParams and the static lighting code if this changes!
 **/
-@:glueCppIncludes("Components/SplineMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SplineMeshComponent.h")
 @:uextern extern class FSplineMeshParams {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSplineMeshParams>;
   

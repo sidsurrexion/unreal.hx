@@ -5,7 +5,7 @@
 package unreal.foliage;
 
 @:umodule("Foliage")
-@:glueCppIncludes("FoliageStatistics.h", "Engine.h")
+@:glueCppIncludes("FoliageStatistics.h")
 @:uextern extern class UFoliageStatistics extends unreal.UBlueprintFunctionLibrary {
   
 }

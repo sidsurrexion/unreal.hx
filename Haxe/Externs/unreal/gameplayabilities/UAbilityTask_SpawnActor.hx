@@ -17,7 +17,7 @@ package unreal.gameplayabilities;
   actor down to him. We could potentially also use this to do predictive actor spawning / reconciliation.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/Tasks/AbilityTask_SpawnActor.h", "Engine.h")
+@:glueCppIncludes("Abilities/Tasks/AbilityTask_SpawnActor.h")
 @:uextern extern class UAbilityTask_SpawnActor extends unreal.gameplayabilities.UAbilityTask {
   
 }

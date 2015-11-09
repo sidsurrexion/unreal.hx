@@ -10,7 +10,7 @@ package unreal.aimodule;
   Wait for the time specified by a Blackboard key when executed.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Tasks/BTTask_WaitBlackboardTime.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Tasks/BTTask_WaitBlackboardTime.h")
 @:uextern extern class UBTTask_WaitBlackboardTime extends unreal.aimodule.UBTTask_Wait {
   
   /**

@@ -8,7 +8,7 @@ package unreal;
 /**
   The base class of any auto discovered settings object.
 **/
-@:glueCppIncludes("Engine/DeveloperSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/DeveloperSettings.h")
 @:uextern extern class UDeveloperSettings extends unreal.UObject {
   
 }

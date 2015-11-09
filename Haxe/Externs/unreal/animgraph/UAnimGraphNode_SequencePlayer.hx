@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_SequencePlayer.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_SequencePlayer.h")
 @:uextern extern class UAnimGraphNode_SequencePlayer extends unreal.animgraph.UAnimGraphNode_AssetPlayerBase {
   
   /**

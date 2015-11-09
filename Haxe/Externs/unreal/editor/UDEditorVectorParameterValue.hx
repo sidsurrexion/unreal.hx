@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("MaterialEditor/DEditorVectorParameterValue.h", "Engine.h")
+@:glueCppIncludes("MaterialEditor/DEditorVectorParameterValue.h")
 @:uextern extern class UDEditorVectorParameterValue extends unreal.editor.UDEditorParameterValue {
   public var ParameterValue : unreal.FLinearColor;
   

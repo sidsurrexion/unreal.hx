@@ -9,7 +9,7 @@ package unreal.gameplayabilities;
   Task for providing a generic sync point for client server (one can wait for a signal from the other)
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/Tasks/AbilityTask_NetworkSyncPoint.h", "Engine.h")
+@:glueCppIncludes("Abilities/Tasks/AbilityTask_NetworkSyncPoint.h")
 @:uextern extern class UAbilityTask_NetworkSyncPoint extends unreal.gameplayabilities.UAbilityTask {
   
 }

@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/RepairLocalizationDataCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/RepairLocalizationDataCommandlet.h")
 @:uextern extern class URepairLocalizationDataCommandlet extends unreal.editor.UGatherTextCommandletBase {
   
 }

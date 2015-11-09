@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/UserDefinedStruct.h", "Engine.h")
+@:glueCppIncludes("Engine/UserDefinedStruct.h")
 @:uname("EUserDefinedStructureStatus")
 @:uextern extern enum EUserDefinedStructureStatus {
   

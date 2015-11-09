@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/LightComponentBase.h", "Engine.h")
+@:glueCppIncludes("Components/LightComponentBase.h")
 @:uextern extern class ULightComponentBase extends unreal.USceneComponent {
   #if WITH_EDITORONLY_DATA
   

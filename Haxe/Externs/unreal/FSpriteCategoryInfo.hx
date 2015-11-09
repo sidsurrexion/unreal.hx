@@ -8,7 +8,7 @@ package unreal;
 /**
   Information about the sprite category
 **/
-@:glueCppIncludes("Components/ArrowComponent.h", "Engine.h")
+@:glueCppIncludes("Components/ArrowComponent.h")
 @:uextern extern class FSpriteCategoryInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSpriteCategoryInfo>;
   

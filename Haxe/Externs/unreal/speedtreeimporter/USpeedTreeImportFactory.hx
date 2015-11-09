@@ -5,7 +5,7 @@
 package unreal.speedtreeimporter;
 
 @:umodule("SpeedTreeImporter")
-@:glueCppIncludes("SpeedTreeImportFactory.h", "Engine.h")
+@:glueCppIncludes("SpeedTreeImportFactory.h")
 @:uextern extern class USpeedTreeImportFactory extends unreal.editor.UFactory {
   
 }

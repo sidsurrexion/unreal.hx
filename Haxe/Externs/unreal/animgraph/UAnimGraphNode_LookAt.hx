@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_LookAt.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_LookAt.h")
 @:uextern extern class UAnimGraphNode_LookAt extends unreal.animgraph.UAnimGraphNode_SkeletalControlBase {
   public var Node : unreal.animgraphruntime.FAnimNode_LookAt;
   

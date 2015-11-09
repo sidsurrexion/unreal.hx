@@ -22,7 +22,7 @@ package unreal;
   
   @see https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Controller/
 **/
-@:glueCppIncludes("GameFramework/Controller.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Controller.h")
 @:uextern extern class AController extends unreal.AActor implements unreal.INavAgentInterface {
   
   /**

@@ -10,7 +10,7 @@ package unreal.editor;
   and archive data.
 **/
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/InternationalizationConditioningCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/InternationalizationConditioningCommandlet.h")
 @:uextern extern class UInternationalizationConditioningCommandlet extends unreal.editor.UGatherTextCommandletBase {
   
 }

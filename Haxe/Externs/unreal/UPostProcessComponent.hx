@@ -9,7 +9,7 @@ package unreal;
   PostProcessComponent. Enables Post process controls for blueprints.
      Will use a parent UShapeComponent to provide volume data if available.
 **/
-@:glueCppIncludes("Components/PostProcessComponent.h", "Engine.h")
+@:glueCppIncludes("Components/PostProcessComponent.h")
 @:uextern extern class UPostProcessComponent extends unreal.USceneComponent implements unreal.IInterface_PostProcessVolume {
   
   /**

@@ -9,7 +9,7 @@ package unreal.onlinesubsystem;
   Named interfaces are a registry of UObjects accessible by an FName key that will persist for the lifetime of the process
 **/
 @:umodule("OnlineSubsystem")
-@:glueCppIncludes("NamedInterfaces.h", "Engine.h")
+@:glueCppIncludes("NamedInterfaces.h")
 @:uextern extern class UNamedInterfaces extends unreal.UObject {
   
 }

@@ -8,7 +8,7 @@ package unreal;
 /**
   Structure storing information about one color interpolation track
 **/
-@:glueCppIncludes("Engine/TimelineTemplate.h", "Engine.h")
+@:glueCppIncludes("Engine/TimelineTemplate.h")
 @:uextern extern class FTTLinearColorTrack extends unreal.FTTTrackBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTTLinearColorTrack>;
   

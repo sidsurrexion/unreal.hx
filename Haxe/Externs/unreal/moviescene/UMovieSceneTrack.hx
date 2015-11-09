@@ -9,7 +9,7 @@ package unreal.moviescene;
   Base class for a track in a Movie Scene
 **/
 @:umodule("MovieScene")
-@:glueCppIncludes("MovieSceneTrack.h", "Engine.h")
+@:glueCppIncludes("MovieSceneTrack.h")
 @:uextern extern class UMovieSceneTrack extends unreal.UObject {
   
 }

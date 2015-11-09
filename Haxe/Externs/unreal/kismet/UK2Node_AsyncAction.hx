@@ -9,7 +9,7 @@ package unreal.kismet;
   !!! The proxy object should have RF_StrongRefOnFrame flag. !!!
 **/
 @:umodule("Kismet")
-@:glueCppIncludes("Nodes/K2Node_AsyncAction.h", "Engine.h")
+@:glueCppIncludes("Nodes/K2Node_AsyncAction.h")
 @:uextern extern class UK2Node_AsyncAction extends unreal.blueprintgraph.UK2Node_BaseAsyncTask {
   
 }

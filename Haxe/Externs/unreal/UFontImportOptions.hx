@@ -8,7 +8,7 @@ package unreal;
 /**
   Holds options for importing fonts.
 **/
-@:glueCppIncludes("Engine/FontImportOptions.h", "Engine.h")
+@:glueCppIncludes("Engine/FontImportOptions.h")
 @:uextern extern class UFontImportOptions extends unreal.UObject {
   
   /**

@@ -8,7 +8,7 @@ package unreal;
 /**
   Properties from the base material that can be overridden in material instances.
 **/
-@:glueCppIncludes("Materials/MaterialInstance.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialInstance.h")
 @:uextern extern class FMaterialInstanceBasePropertyOverrides {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialInstanceBasePropertyOverrides>;
   

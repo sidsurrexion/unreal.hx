@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialInstance.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialInstance.h")
 @:uextern extern class UMaterialInstance extends unreal.UMaterialInterface {
   public var BasePropertyOverrides : unreal.FMaterialInstanceBasePropertyOverrides;
   public var bOverrideBaseProperties_DEPRECATED : Bool;

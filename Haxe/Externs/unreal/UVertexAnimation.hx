@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/VertexAnim/VertexAnimation.h", "Engine.h")
+@:glueCppIncludes("Animation/VertexAnim/VertexAnimation.h")
 @:uextern extern class UVertexAnimation extends unreal.UVertexAnimBase {
   
   /**

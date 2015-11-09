@@ -8,7 +8,7 @@ package unreal;
 /**
   NavMovementComponent defines base functionality for MovementComponents that move any 'agent' that may be involved in AI pathfinding.
 **/
-@:glueCppIncludes("GameFramework/NavMovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/NavMovementComponent.h")
 @:uextern extern class UNavMovementComponent extends unreal.UMovementComponent {
   
   /**

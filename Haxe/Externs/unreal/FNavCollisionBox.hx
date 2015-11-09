@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavCollision.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavCollision.h")
 @:uextern extern class FNavCollisionBox {
   @:uname('new') public static function create():PHaxeCreated<unreal.FNavCollisionBox>;
   public var Extent : unreal.FVector;

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/PlayerController.h", "Engine.h")
+@:glueCppIncludes("GameFramework/PlayerController.h")
 @:uname("EObjectTypeQuery")
 @:uextern extern enum EObjectTypeQuery {
   ObjectTypeQuery1;

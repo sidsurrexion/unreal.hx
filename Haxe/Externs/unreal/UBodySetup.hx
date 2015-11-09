@@ -13,7 +13,7 @@ package unreal;
   @see GetBodySetup
   @see FBodyInstance
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class UBodySetup extends unreal.UObject {
   
   /**

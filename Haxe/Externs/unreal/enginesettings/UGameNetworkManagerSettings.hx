@@ -9,7 +9,7 @@ package unreal.enginesettings;
   Holds the settings for the AGameNetworkManager class.
 **/
 @:umodule("EngineSettings")
-@:glueCppIncludes("GameNetworkManagerSettings.h", "Engine.h")
+@:glueCppIncludes("GameNetworkManagerSettings.h")
 @:uextern extern class UGameNetworkManagerSettings extends unreal.UObject {
   
   /**

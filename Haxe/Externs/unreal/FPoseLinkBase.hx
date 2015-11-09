@@ -8,7 +8,7 @@ package unreal;
 /**
   A pose link to another node
 **/
-@:glueCppIncludes("AnimPreviewInstance.h", "Engine.h")
+@:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class FPoseLinkBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FPoseLinkBase>;
   #if WITH_EDITORONLY_DATA

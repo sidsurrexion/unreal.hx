@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/BlueprintFunctionLibraryFactory.h", "Engine.h")
+@:glueCppIncludes("Factories/BlueprintFunctionLibraryFactory.h")
 @:uextern extern class UBlueprintFunctionLibraryFactory extends unreal.editor.UBlueprintFactory {
   
 }

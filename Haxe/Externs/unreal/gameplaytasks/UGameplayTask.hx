@@ -5,7 +5,7 @@
 package unreal.gameplaytasks;
 
 @:umodule("GameplayTasks")
-@:glueCppIncludes("GameplayTask.h", "Engine.h")
+@:glueCppIncludes("GameplayTask.h")
 @:uextern extern class UGameplayTask extends unreal.UObject {
   
   /**

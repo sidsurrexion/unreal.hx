@@ -8,7 +8,7 @@ package unreal;
 /**
   Structure for defining an external tool
 **/
-@:glueCppIncludes("Tests/AutomationTestSettings.h", "Engine.h")
+@:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FExternalToolDefinition {
   @:uname('new') public static function create():PHaxeCreated<unreal.FExternalToolDefinition>;
   

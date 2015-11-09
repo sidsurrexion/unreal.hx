@@ -20,7 +20,7 @@ package unreal;
     polygon's vertices are coplanar!  Out-of-plane polygons will cause
     geometry to be corrupted.
 **/
-@:glueCppIncludes("Engine/BrushBuilder.h", "Engine.h")
+@:glueCppIncludes("Engine/BrushBuilder.h")
 @:uextern extern class UBrushBuilder extends unreal.UObject {
   private var Layer : unreal.FName;
   private var Polys : unreal.TArray<unreal.FBuilderPoly>;

@@ -8,7 +8,7 @@ package unreal;
 /**
   Utility object for moving physics objects around.
 **/
-@:glueCppIncludes("PhysicsEngine/PhysicsHandleComponent.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsHandleComponent.h")
 @:uextern extern class UPhysicsHandleComponent extends unreal.UActorComponent {
   
   /**

@@ -9,7 +9,7 @@ package unreal;
   Each slot data referenced by Animation Slot
   contains slot name, and animation data
 **/
-@:glueCppIncludes("Animation/AnimMontage.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimMontage.h")
 @:uextern extern class FSlotAnimationTrack {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSlotAnimationTrack>;
   public var AnimTrack : unreal.FAnimTrack;

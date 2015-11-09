@@ -9,7 +9,7 @@ package unreal.hardwaretargeting;
   Hardware targeting settings, stored in default config, per-project
 **/
 @:umodule("HardwareTargeting")
-@:glueCppIncludes("HardwareTargetingSettings.h", "Engine.h")
+@:glueCppIncludes("HardwareTargetingSettings.h")
 @:uextern extern class UHardwareTargetingSettings extends unreal.UObject {
   
   /**

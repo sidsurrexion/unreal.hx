@@ -9,7 +9,7 @@ package unreal.editor;
   Base class for import data and options used when importing any asset from FBX
 **/
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/FbxAssetImportData.h", "Engine.h")
+@:glueCppIncludes("Factories/FbxAssetImportData.h")
 @:uextern extern class UFbxAssetImportData extends unreal.UAssetImportData {
   public var ImportUniformScale : unreal.Float32;
   public var ImportRotation : unreal.FRotator;

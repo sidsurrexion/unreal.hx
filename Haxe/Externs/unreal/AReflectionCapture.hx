@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/ReflectionCapture.h", "Engine.h")
+@:glueCppIncludes("Engine/ReflectionCapture.h")
 @:uextern extern class AReflectionCapture extends unreal.AActor {
   #if WITH_EDITORONLY_DATA
   public var SpriteComponent : unreal.UBillboardComponent;

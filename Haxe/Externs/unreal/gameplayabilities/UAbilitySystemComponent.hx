@@ -9,7 +9,7 @@ package unreal.gameplayabilities;
   The core ActorComponent for interfacing with the GameplayAbilities System
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("AbilitySystemComponent.h", "Engine.h")
+@:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class UAbilitySystemComponent extends unreal.gameplaytasks.UGameplayTasksComponent implements unreal.gameplaytags.IGameplayTagAssetInterface {
   
   /**

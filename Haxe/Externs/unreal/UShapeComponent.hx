@@ -8,7 +8,7 @@ package unreal;
 /**
   ShapeComponent is a PrimitiveComponent that is represented by a simple geometrical shape (sphere, capsule, box, etc).
 **/
-@:glueCppIncludes("Components/ShapeComponent.h", "Engine.h")
+@:glueCppIncludes("Components/ShapeComponent.h")
 @:uextern extern class UShapeComponent extends unreal.UPrimitiveComponent {
   
   /**

@@ -10,7 +10,7 @@ package unreal;
   game code can cause an animation to blend in and be played on the slot temporarily, overriding the
   Source input.
 **/
-@:glueCppIncludes("AnimGraphNode_Slot.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_Slot.h")
 @:uextern extern class FAnimNode_Slot extends unreal.FAnimNode_Base {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_Slot>;
   

@@ -11,7 +11,7 @@ package unreal.blueprintgraph;
   event node (spawned in PostPlacedNewNode).
 **/
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_AssignDelegate.h", "Engine.h")
+@:glueCppIncludes("K2Node_AssignDelegate.h")
 @:uextern extern class UK2Node_AssignDelegate extends unreal.blueprintgraph.UK2Node_AddDelegate {
   
 }

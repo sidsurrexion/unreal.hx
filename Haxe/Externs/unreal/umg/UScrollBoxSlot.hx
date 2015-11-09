@@ -9,7 +9,7 @@ package unreal.umg;
   The Slot for the UScrollBox, contains the widget that are scrollable
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/ScrollBoxSlot.h", "Engine.h")
+@:glueCppIncludes("Components/ScrollBoxSlot.h")
 @:uextern extern class UScrollBoxSlot extends unreal.umg.UPanelSlot {
   
   /**

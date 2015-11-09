@@ -9,7 +9,7 @@ package unreal;
   A Spline Mesh Component is a derivation of a Static Mesh Component which can be deformed using a spline. Only a start and end position (and tangent) can be specified.
   @see https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/Blueprint_Splines
 **/
-@:glueCppIncludes("Components/SplineMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SplineMeshComponent.h")
 @:uextern extern class USplineMeshComponent extends unreal.UStaticMeshComponent implements unreal.IInterface_CollisionDataProvider {
   #if WITH_EDITORONLY_DATA
   public var bSelected : Bool;

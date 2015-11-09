@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/LevelStreamingKismet.h", "Engine.h")
+@:glueCppIncludes("Engine/LevelStreamingKismet.h")
 @:uextern extern class ULevelStreamingKismet extends unreal.ULevelStreaming {
   
   /**

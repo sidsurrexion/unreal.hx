@@ -8,7 +8,7 @@ package unreal;
 /**
   Mesh merging settings
 **/
-@:glueCppIncludes("GameFramework/WorldSettings.h", "Engine.h")
+@:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class FMeshMergingSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMeshMergingSettings>;
   

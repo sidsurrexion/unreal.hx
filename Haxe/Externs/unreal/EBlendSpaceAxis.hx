@@ -8,7 +8,7 @@ package unreal;
 /**
   Interpolation data types.
 **/
-@:glueCppIncludes("Animation/BlendSpace.h", "Engine.h")
+@:glueCppIncludes("Animation/BlendSpace.h")
 @:uname("EBlendSpaceAxis")
 @:uextern extern enum EBlendSpaceAxis {
   BSA_None;

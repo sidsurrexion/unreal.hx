@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/ReimportDataTableFactory.h", "Engine.h")
+@:glueCppIncludes("Factories/ReimportDataTableFactory.h")
 @:uextern extern class UReimportDataTableFactory extends unreal.editor.UCSVImportFactory {
   
 }

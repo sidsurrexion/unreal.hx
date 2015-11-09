@@ -8,7 +8,7 @@ package unreal;
 /**
   Point/spot settings for Lightmass
 **/
-@:glueCppIncludes("Components/PointLightComponent.h", "Engine.h")
+@:glueCppIncludes("Components/PointLightComponent.h")
 @:uextern extern class FLightmassPointLightSettings extends unreal.FLightmassLightSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassPointLightSettings>;
   

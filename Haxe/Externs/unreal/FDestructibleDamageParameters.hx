@@ -8,7 +8,7 @@ package unreal;
 /**
   Parameters that pertain to chunk damage.
 **/
-@:glueCppIncludes("Engine/DestructibleMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleDamageParameters {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleDamageParameters>;
   

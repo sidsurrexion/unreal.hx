@@ -8,7 +8,7 @@ package unreal;
 /**
   Transform definition
 **/
-@:glueCppIncludes("Animation/AnimSingleNodeInstance.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSingleNodeInstance.h")
 @:uextern extern class FBlendSampleData {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBlendSampleData>;
   public var Time : unreal.Float32;

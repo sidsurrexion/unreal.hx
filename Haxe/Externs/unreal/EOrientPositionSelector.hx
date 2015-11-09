@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Kismet/HeadMountedDisplayFunctionLibrary.h", "Engine.h")
+@:glueCppIncludes("Kismet/HeadMountedDisplayFunctionLibrary.h")
 @:uname("EOrientPositionSelector.Type")
 @:uextern extern enum EOrientPositionSelector {
   

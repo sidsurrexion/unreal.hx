@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Kismet/HeadMountedDisplayFunctionLibrary.h", "Engine.h")
+@:glueCppIncludes("Kismet/HeadMountedDisplayFunctionLibrary.h")
 @:uextern extern class UHeadMountedDisplayFunctionLibrary extends unreal.UBlueprintFunctionLibrary {
   
 }

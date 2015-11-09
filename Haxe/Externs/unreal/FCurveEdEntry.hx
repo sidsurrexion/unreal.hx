@@ -9,7 +9,7 @@ package unreal;
   Information about a particule curve being viewed.
   Property could be an FInterpCurve, a DistributionFloat or a DistributionVector
 **/
-@:glueCppIncludes("Engine/InterpCurveEdSetup.h", "Engine.h")
+@:glueCppIncludes("Engine/InterpCurveEdSetup.h")
 @:uextern extern class FCurveEdEntry {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCurveEdEntry>;
   public var ClampHigh : unreal.Float32;

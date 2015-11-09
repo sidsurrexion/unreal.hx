@@ -5,7 +5,7 @@
 package unreal.paper2deditor;
 
 @:umodule("Paper2DEditor")
-@:glueCppIncludes("TerrainSplineActorFactory.h", "Engine.h")
+@:glueCppIncludes("TerrainSplineActorFactory.h")
 @:uextern extern class UTerrainSplineActorFactory extends unreal.editor.UActorFactory {
   
 }

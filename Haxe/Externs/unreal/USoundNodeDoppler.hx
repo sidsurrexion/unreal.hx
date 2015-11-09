@@ -8,7 +8,7 @@ package unreal;
 /**
   Computes doppler pitch shift
 **/
-@:glueCppIncludes("Sound/SoundNodeDoppler.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeDoppler.h")
 @:uextern extern class USoundNodeDoppler extends unreal.USoundNode {
   
   /**

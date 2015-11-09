@@ -8,7 +8,7 @@ package unreal;
 /**
   for FPostprocessSettings
 **/
-@:glueCppIncludes("Engine/PostProcessVolume.h", "Engine.h")
+@:glueCppIncludes("Engine/PostProcessVolume.h")
 @:uextern extern class APostProcessVolume extends unreal.AVolume implements unreal.IInterface_PostProcessVolume {
   
   /**

@@ -14,7 +14,7 @@ package unreal.aimodule;
   - selector = would allow executing multiple nodes, turning it into a sequence...
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_ForceSuccess.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_ForceSuccess.h")
 @:uextern extern class UBTDecorator_ForceSuccess extends unreal.aimodule.UBTDecorator {
   
 }

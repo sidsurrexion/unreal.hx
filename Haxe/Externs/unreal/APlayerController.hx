@@ -17,7 +17,7 @@ package unreal;
   
   @see https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Controller/PlayerController/
 **/
-@:glueCppIncludes("GameFramework/PlayerController.h", "Engine.h")
+@:glueCppIncludes("GameFramework/PlayerController.h")
 @:uextern extern class APlayerController extends unreal.AController {
   
   /**

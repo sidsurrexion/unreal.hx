@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct containing information for a particular LOD level, such as materials and info for when to use it.
 **/
-@:glueCppIncludes("Engine/SkeletalMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FSkeletalMeshLODInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSkeletalMeshLODInfo>;
   

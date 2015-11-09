@@ -8,7 +8,7 @@ package unreal;
 /**
   Configurable shortened aliases for GameMode classes.  For convenience when typing urls, for instance.
 **/
-@:glueCppIncludes("GameFramework/GameMode.h", "Engine.h")
+@:glueCppIncludes("GameFramework/GameMode.h")
 @:uextern extern class FGameClassShortName {
   @:uname('new') public static function create():PHaxeCreated<unreal.FGameClassShortName>;
   

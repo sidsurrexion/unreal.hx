@@ -13,7 +13,7 @@ package unreal.aimodule;
   Please use them safely (unregister at abort) and call IsTaskExecuting() when in doubt.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Tasks/BTTask_BlueprintBase.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Tasks/BTTask_BlueprintBase.h")
 @:uextern extern class UBTTask_BlueprintBase extends unreal.aimodule.UBTTaskNode {
   
   /**

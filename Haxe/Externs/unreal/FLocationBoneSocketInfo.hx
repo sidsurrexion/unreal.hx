@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Location/ParticleModuleLocationBoneSocket.h", "Engine.h")
+@:glueCppIncludes("Particles/Location/ParticleModuleLocationBoneSocket.h")
 @:uextern extern class FLocationBoneSocketInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLocationBoneSocketInfo>;
   

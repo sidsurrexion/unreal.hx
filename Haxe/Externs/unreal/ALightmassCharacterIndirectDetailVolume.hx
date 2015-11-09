@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Lightmass/LightmassCharacterIndirectDetailVolume.h", "Engine.h")
+@:glueCppIncludes("Lightmass/LightmassCharacterIndirectDetailVolume.h")
 @:uextern extern class ALightmassCharacterIndirectDetailVolume extends unreal.AVolume {
   
 }

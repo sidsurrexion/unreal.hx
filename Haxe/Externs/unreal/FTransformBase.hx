@@ -8,7 +8,7 @@ package unreal;
 /**
   This is a mapping table between bone in a particular skeletal mesh and bone of this skeleton set.
 **/
-@:glueCppIncludes("Animation/Rig.h", "Engine.h")
+@:glueCppIncludes("Animation/Rig.h")
 @:uextern extern class FTransformBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTransformBase>;
   public var Node : unreal.FName;

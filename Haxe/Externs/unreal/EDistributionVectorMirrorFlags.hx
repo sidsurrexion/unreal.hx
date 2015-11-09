@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Distributions/DistributionVectorUniform.h", "Engine.h")
+@:glueCppIncludes("Distributions/DistributionVectorUniform.h")
 @:uname("EDistributionVectorMirrorFlags")
 @:uextern extern enum EDistributionVectorMirrorFlags {
   

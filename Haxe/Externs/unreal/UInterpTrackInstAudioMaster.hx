@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackInstAudioMaster.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackInstAudioMaster.h")
 @:uextern extern class UInterpTrackInstAudioMaster extends unreal.UInterpTrackInst {
   
 }

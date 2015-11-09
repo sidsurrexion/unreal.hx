@@ -13,7 +13,7 @@ package unreal.umg;
   ● Image
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/Border.h", "Engine.h")
+@:glueCppIncludes("Components/Border.h")
 @:uextern extern class UBorder extends unreal.umg.UContentWidget {
   
   /**

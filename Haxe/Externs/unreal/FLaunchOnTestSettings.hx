@@ -8,7 +8,7 @@ package unreal;
 /**
   Holds settings for the editor Launch On With Map Iterations test.
 **/
-@:glueCppIncludes("Tests/AutomationTestSettings.h", "Engine.h")
+@:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FLaunchOnTestSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLaunchOnTestSettings>;
   

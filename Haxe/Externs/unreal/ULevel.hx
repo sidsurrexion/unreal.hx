@@ -12,7 +12,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Levels
   @see UActor
 **/
-@:glueCppIncludes("Engine/Level.h", "Engine.h")
+@:glueCppIncludes("Engine/Level.h")
 @:uextern extern class ULevel extends unreal.UObject implements unreal.IInterface_AssetUserData {
   
   /**

@@ -9,7 +9,7 @@ package unreal.logvisualizer;
   Transient actor used to draw visual logger data on level
 **/
 @:umodule("LogVisualizer")
-@:glueCppIncludes("Private/VisualLoggerRenderingComponent.h", "Engine.h")
+@:glueCppIncludes("Private/VisualLoggerRenderingComponent.h")
 @:uextern extern class UVisualLoggerRenderingComponent extends unreal.UPrimitiveComponent {
   
 }

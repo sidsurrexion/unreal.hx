@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/BehaviorTree.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/BehaviorTree.h")
 @:uextern extern class UBehaviorTree extends unreal.UObject {
   
   /**

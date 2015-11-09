@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundNodeModulatorContinuous.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeModulatorContinuous.h")
 @:uextern extern class FModulatorContinuousParams {
   @:uname('new') public static function create():PHaxeCreated<unreal.FModulatorContinuousParams>;
   

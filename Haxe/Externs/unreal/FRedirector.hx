@@ -10,7 +10,7 @@ package unreal;
   We use manually parsing array, but that makes harder to modify from property setting
   So adding this USTRUCT to support it properly
 **/
-@:glueCppIncludes("Engine/CollisionProfile.h", "Engine.h")
+@:glueCppIncludes("Engine/CollisionProfile.h")
 @:uextern extern class FRedirector {
   @:uname('new') public static function create():PHaxeCreated<unreal.FRedirector>;
   

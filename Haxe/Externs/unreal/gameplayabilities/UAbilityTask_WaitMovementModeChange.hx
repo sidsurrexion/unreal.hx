@@ -5,7 +5,7 @@
 package unreal.gameplayabilities;
 
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitMovementModeChange.h", "Engine.h")
+@:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitMovementModeChange.h")
 @:uextern extern class UAbilityTask_WaitMovementModeChange extends unreal.gameplayabilities.UAbilityTask {
   
 }

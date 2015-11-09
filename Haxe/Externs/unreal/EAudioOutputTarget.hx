@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundClass.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundClass.h")
 @:uname("EAudioOutputTarget.Type")
 @:uextern extern enum EAudioOutputTarget {
   

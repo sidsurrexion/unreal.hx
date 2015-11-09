@@ -9,7 +9,7 @@ package unreal.slateremote;
   Implements the settings for the Slate Remote plug-in.
 **/
 @:umodule("SlateRemote")
-@:glueCppIncludes("Private/Shared/SlateRemoteSettings.h", "Engine.h")
+@:glueCppIncludes("Private/Shared/SlateRemoteSettings.h")
 @:uextern extern class USlateRemoteSettings extends unreal.UObject {
   
   /**

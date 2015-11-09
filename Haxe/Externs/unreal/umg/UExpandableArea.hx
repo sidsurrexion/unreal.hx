@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Components/ExpandableArea.h", "Engine.h")
+@:glueCppIncludes("Components/ExpandableArea.h")
 @:uextern extern class UExpandableArea extends unreal.umg.UWidget implements unreal.umg.INamedSlotInterface {
   private var BodyContent : unreal.umg.UWidget;
   private var HeaderContent : unreal.umg.UWidget;

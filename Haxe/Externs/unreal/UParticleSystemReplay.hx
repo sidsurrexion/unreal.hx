@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/ParticleSystemReplay.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleSystemReplay.h")
 @:uextern extern class UParticleSystemReplay extends unreal.UObject {
   
   /**

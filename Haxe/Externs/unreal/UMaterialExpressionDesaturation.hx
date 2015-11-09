@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionDesaturation.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionDesaturation.h")
 @:uextern extern class UMaterialExpressionDesaturation extends unreal.UMaterialExpression {
   public var LuminanceFactors : unreal.FLinearColor;
   public var Fraction : unreal.FExpressionInput;

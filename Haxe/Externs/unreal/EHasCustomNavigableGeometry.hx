@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/PrimitiveComponent.h", "Engine.h")
+@:glueCppIncludes("Components/PrimitiveComponent.h")
 @:uname("EHasCustomNavigableGeometry.Type")
 @:uextern extern enum EHasCustomNavigableGeometry {
   

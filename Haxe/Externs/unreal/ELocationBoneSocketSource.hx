@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Location/ParticleModuleLocationBoneSocket.h", "Engine.h")
+@:glueCppIncludes("Particles/Location/ParticleModuleLocationBoneSocket.h")
 @:uname("ELocationBoneSocketSource")
 @:uextern extern enum ELocationBoneSocketSource {
   BONESOCKETSOURCE_Bones;

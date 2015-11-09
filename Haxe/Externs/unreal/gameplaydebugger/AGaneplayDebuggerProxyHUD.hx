@@ -5,7 +5,7 @@
 package unreal.gameplaydebugger;
 
 @:umodule("GameplayDebugger")
-@:glueCppIncludes("GameplayDebuggingControllerComponent.h", "Engine.h")
+@:glueCppIncludes("GameplayDebuggingControllerComponent.h")
 @:uextern extern class AGaneplayDebuggerProxyHUD extends unreal.AHUD {
   
 }

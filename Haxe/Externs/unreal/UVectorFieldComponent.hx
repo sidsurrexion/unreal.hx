@@ -8,7 +8,7 @@ package unreal;
 /**
   A Component referencing a vector field.
 **/
-@:glueCppIncludes("Components/VectorFieldComponent.h", "Engine.h")
+@:glueCppIncludes("Components/VectorFieldComponent.h")
 @:uextern extern class UVectorFieldComponent extends unreal.UPrimitiveComponent {
   
   /**

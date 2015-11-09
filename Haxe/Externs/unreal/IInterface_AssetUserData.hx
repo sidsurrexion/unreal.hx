@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Interfaces/Interface_AssetUserData.h", "Engine.h")
+@:glueCppIncludes("Interfaces/Interface_AssetUserData.h")
 @:uextern extern interface IInterface_AssetUserData {
   
 }

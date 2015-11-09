@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Kismet/BlueprintAsyncActionBase.h", "Engine.h")
+@:glueCppIncludes("Kismet/BlueprintAsyncActionBase.h")
 @:uextern extern class UBlueprintAsyncActionBase extends unreal.UObject {
   
 }

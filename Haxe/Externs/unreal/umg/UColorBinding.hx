@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Binding/ColorBinding.h", "Engine.h")
+@:glueCppIncludes("Binding/ColorBinding.h")
 @:uextern extern class UColorBinding extends unreal.umg.UPropertyBinding {
   
 }

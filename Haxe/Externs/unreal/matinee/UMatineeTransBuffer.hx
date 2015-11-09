@@ -10,7 +10,7 @@ package unreal.matinee;
   Will be capped at InMaxMemory.
 **/
 @:umodule("Matinee")
-@:glueCppIncludes("MatineeTransBuffer.h", "Engine.h")
+@:glueCppIncludes("MatineeTransBuffer.h")
 @:uextern extern class UMatineeTransBuffer extends unreal.editor.UTransBuffer {
   
 }

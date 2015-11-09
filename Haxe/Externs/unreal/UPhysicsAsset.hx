@@ -14,7 +14,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Physics/PhAT/Reference/index.html
   @see USkeletalMesh
 **/
-@:glueCppIncludes("PhysicsEngine/PhysicsAsset.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsAsset.h")
 @:uextern extern class UPhysicsAsset extends unreal.UObject {
   
   /**

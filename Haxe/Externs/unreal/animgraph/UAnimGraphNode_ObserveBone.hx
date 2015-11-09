@@ -9,7 +9,7 @@ package unreal.animgraph;
   This allows you to observe the state of a bone at a particular point in the graph, showing it in any space and optionally relative to the reference pose
 **/
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_ObserveBone.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_ObserveBone.h")
 @:uextern extern class UAnimGraphNode_ObserveBone extends unreal.animgraph.UAnimGraphNode_SkeletalControlBase {
   public var Node : unreal.animgraphruntime.FAnimNode_ObserveBone;
   

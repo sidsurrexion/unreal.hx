@@ -8,7 +8,7 @@ package unreal;
 /**
   The data needed by the runtime to simulate sprites.
 **/
-@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h", "Engine.h")
+@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h")
 @:uextern extern class FGPUSpriteEmitterInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FGPUSpriteEmitterInfo>;
   

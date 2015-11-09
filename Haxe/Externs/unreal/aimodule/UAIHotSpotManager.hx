@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("HotSpots/AIHotSpotManager.h", "Engine.h")
+@:glueCppIncludes("HotSpots/AIHotSpotManager.h")
 @:uextern extern class UAIHotSpotManager extends unreal.UObject {
   
 }

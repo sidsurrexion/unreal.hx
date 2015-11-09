@@ -8,7 +8,7 @@ package unreal;
 /**
   Base class for all table row structs to inherit from.
 **/
-@:glueCppIncludes("Engine.h", "Engine.h")
+@:glueCppIncludes("Engine.h")
 @:uextern extern class FTableRowBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTableRowBase>;
   

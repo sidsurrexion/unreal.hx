@@ -10,7 +10,7 @@ package unreal;
   There may be several spawned in the case of splitscreen/coop.
   There may be 0 spawned on servers.
 **/
-@:glueCppIncludes("Engine/LocalPlayer.h", "Engine.h")
+@:glueCppIncludes("Engine/LocalPlayer.h")
 @:uextern extern class ULocalPlayer extends unreal.UPlayer {
   
   /**

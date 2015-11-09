@@ -10,7 +10,7 @@ package unreal;
   AnimComposite vs AnimMontage have different requirement for the actual data reference
   This only contains composite section information. (vertical sequences)
 **/
-@:glueCppIncludes("Animation/AnimMontage.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimMontage.h")
 @:uextern extern class FCompositeSection extends unreal.FAnimLinkableElement {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCompositeSection>;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Saved editor viewport state information
 **/
-@:glueCppIncludes("Engine/World.h", "Engine.h")
+@:glueCppIncludes("Engine/World.h")
 @:uextern extern class FLevelViewportInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLevelViewportInfo>;
   

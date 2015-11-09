@@ -8,7 +8,7 @@ package unreal;
 /**
   A 2d texture that will be rendered always facing the camera.
 **/
-@:glueCppIncludes("Components/BillboardComponent.h", "Engine.h")
+@:glueCppIncludes("Components/BillboardComponent.h")
 @:uextern extern class UBillboardComponent extends unreal.UPrimitiveComponent {
   #if WITH_EDITORONLY_DATA
   

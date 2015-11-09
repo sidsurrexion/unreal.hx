@@ -8,7 +8,7 @@ package unreal;
 /**
   Float curve data for one track
 **/
-@:glueCppIncludes("Animation/AnimSequenceBase.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSequenceBase.h")
 @:uextern extern class FAnimCurveBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimCurveBase>;
   

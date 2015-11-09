@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Vehicles/TireType.h", "Engine.h")
+@:glueCppIncludes("Vehicles/TireType.h")
 @:uextern extern class UTireType extends unreal.UDataAsset {
   
 }

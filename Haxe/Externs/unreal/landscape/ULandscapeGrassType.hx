@@ -5,7 +5,7 @@
 package unreal.landscape;
 
 @:umodule("Landscape")
-@:glueCppIncludes("LandscapeGrassType.h", "Engine.h")
+@:glueCppIncludes("LandscapeGrassType.h")
 @:uextern extern class ULandscapeGrassType extends unreal.UObject {
   public var AlignToSurface_DEPRECATED : Bool;
   public var RandomRotation_DEPRECATED : Bool;

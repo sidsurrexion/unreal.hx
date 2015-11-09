@@ -13,7 +13,7 @@ package unreal.blueprintgraph;
   actionable errors.
 **/
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_MathExpression.h", "Engine.h")
+@:glueCppIncludes("K2Node_MathExpression.h")
 @:uextern extern class UK2Node_MathExpression extends unreal.blueprintgraph.UK2Node_Composite {
   public var bMadeAfterRotChange : Bool;
   

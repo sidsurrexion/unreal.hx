@@ -8,7 +8,7 @@ package unreal;
 /**
   The importance of a mesh feature when automatically generating mesh LODs.
 **/
-@:glueCppIncludes("Engine/StaticMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/StaticMesh.h")
 @:uname("EMeshFeatureImportance.Type")
 @:uextern extern enum EMeshFeatureImportance {
   Off;

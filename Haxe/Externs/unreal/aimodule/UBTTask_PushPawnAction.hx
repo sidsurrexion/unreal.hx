@@ -10,7 +10,7 @@ package unreal.aimodule;
   Push pawn action to controller.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Tasks/BTTask_PushPawnAction.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Tasks/BTTask_PushPawnAction.h")
 @:uextern extern class UBTTask_PushPawnAction extends unreal.aimodule.UBTTask_PawnActionBase {
   private var Action : unreal.aimodule.UPawnAction;
   

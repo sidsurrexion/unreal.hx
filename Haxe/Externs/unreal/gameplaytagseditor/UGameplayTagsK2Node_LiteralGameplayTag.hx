@@ -5,7 +5,7 @@
 package unreal.gameplaytagseditor;
 
 @:umodule("GameplayTagsEditor")
-@:glueCppIncludes("GameplayTagsK2Node_LiteralGameplayTag.h", "Engine.h")
+@:glueCppIncludes("GameplayTagsK2Node_LiteralGameplayTag.h")
 @:uextern extern class UGameplayTagsK2Node_LiteralGameplayTag extends unreal.blueprintgraph.UK2Node {
   
 }

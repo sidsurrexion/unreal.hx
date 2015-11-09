@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/SkeletalMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uname("ETriangleSortOption")
 @:uextern extern enum ETriangleSortOption {
   TRISORT_None;

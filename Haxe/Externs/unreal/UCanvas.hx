@@ -8,7 +8,7 @@ package unreal;
 /**
   A drawing canvas.
 **/
-@:glueCppIncludes("Engine/Canvas.h", "Engine.h")
+@:glueCppIncludes("Engine/Canvas.h")
 @:uextern extern class UCanvas extends unreal.UObject {
   
   /**

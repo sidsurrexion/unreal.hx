@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("AIResources.h", "Engine.h")
+@:glueCppIncludes("AIResources.h")
 @:uextern extern class UAIResource_Movement extends unreal.gameplaytasks.UGameplayTaskResource {
   
 }

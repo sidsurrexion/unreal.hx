@@ -8,7 +8,7 @@ package unreal;
 /**
   Material interface for USkeletalMesh - contains a material and a shadow casting flag
 **/
-@:glueCppIncludes("Engine/SkeletalMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FSkeletalMaterial {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSkeletalMaterial>;
   public var bEnableShadowCasting : Bool;

@@ -5,7 +5,7 @@
 package unreal.onlinesubsystemutils;
 
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("IpNetDriver.h", "Engine.h")
+@:glueCppIncludes("IpNetDriver.h")
 @:uextern extern class UIpNetDriver extends unreal.UNetDriver {
   
   /**

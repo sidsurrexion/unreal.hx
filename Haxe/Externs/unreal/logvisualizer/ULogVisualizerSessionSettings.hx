@@ -5,7 +5,7 @@
 package unreal.logvisualizer;
 
 @:umodule("LogVisualizer")
-@:glueCppIncludes("LogVisualizerSessionSettings.h", "Engine.h")
+@:glueCppIncludes("LogVisualizerSessionSettings.h")
 @:uextern extern class ULogVisualizerSessionSettings extends unreal.UObject {
   
   /**

@@ -8,7 +8,7 @@ package unreal;
 /**
   Selects a child node based on the value of a boolean parameter
 **/
-@:glueCppIncludes("Sound/SoundNodeBranch.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeBranch.h")
 @:uextern extern class USoundNodeBranch extends unreal.USoundNode {
   
   /**

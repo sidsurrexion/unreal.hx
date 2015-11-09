@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct used to hold effects for destructible damage events
 **/
-@:glueCppIncludes("Components/DestructibleComponent.h", "Engine.h")
+@:glueCppIncludes("Components/DestructibleComponent.h")
 @:uextern extern class FFractureEffect {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFractureEffect>;
   

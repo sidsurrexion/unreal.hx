@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Location/ParticleModuleLocationWorldOffset.h", "Engine.h")
+@:glueCppIncludes("Particles/Location/ParticleModuleLocationWorldOffset.h")
 @:uextern extern class UParticleModuleLocationWorldOffset extends unreal.UParticleModuleLocation {
   
 }

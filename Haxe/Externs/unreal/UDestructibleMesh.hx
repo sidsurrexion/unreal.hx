@@ -8,7 +8,7 @@ package unreal;
 /**
   Holds an APEX destructible asset as well as an associated USkeletalMesh.
 **/
-@:glueCppIncludes("Engine/DestructibleMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class UDestructibleMesh extends unreal.USkeletalMesh {
   #if WITH_EDITORONLY_DATA
   

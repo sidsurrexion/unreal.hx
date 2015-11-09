@@ -9,7 +9,7 @@ package unreal.umg;
   Allows widgets to be stacked on top of each other, uses simple flow layout for content on each layer.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/Overlay.h", "Engine.h")
+@:glueCppIncludes("Components/Overlay.h")
 @:uextern extern class UOverlay extends unreal.umg.UPanelWidget {
   
 }

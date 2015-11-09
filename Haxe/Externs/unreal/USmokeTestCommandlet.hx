@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Commandlets/SmokeTestCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/SmokeTestCommandlet.h")
 @:uextern extern class USmokeTestCommandlet extends unreal.UCommandlet {
   
 }

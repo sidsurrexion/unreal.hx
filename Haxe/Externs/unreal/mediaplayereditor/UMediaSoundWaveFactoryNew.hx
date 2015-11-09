@@ -9,7 +9,7 @@ package unreal.mediaplayereditor;
   Implements a factory for UMediaSoundWave objects.
 **/
 @:umodule("MediaPlayerEditor")
-@:glueCppIncludes("Private/Factories/MediaSoundWaveFactoryNew.h", "Engine.h")
+@:glueCppIncludes("Private/Factories/MediaSoundWaveFactoryNew.h")
 @:uextern extern class UMediaSoundWaveFactoryNew extends unreal.editor.UFactory {
   
   /**

@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Preferences/PersonaOptions.h", "Engine.h")
+@:glueCppIncludes("Preferences/PersonaOptions.h")
 @:uextern extern class UPersonaOptions extends unreal.UObject {
   public var BranchingPointTimingNodeColor : unreal.FLinearColor;
   public var NotifyTimingNodeColor : unreal.FLinearColor;

@@ -8,7 +8,7 @@ package unreal;
 /**
   A predefined animation to be played on a camera
 **/
-@:glueCppIncludes("Camera/CameraAnim.h", "Engine.h")
+@:glueCppIncludes("Camera/CameraAnim.h")
 @:uextern extern class UCameraAnim extends unreal.UObject {
   
   /**

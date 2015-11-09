@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Tests/TextPropertyTestObject.h", "Engine.h")
+@:glueCppIncludes("Tests/TextPropertyTestObject.h")
 @:uextern extern class UTextPropertyTestObject extends unreal.UObject {
   
 }

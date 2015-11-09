@@ -8,7 +8,7 @@ package unreal;
 /**
   Holds settings for the asset import / export automation test
 **/
-@:glueCppIncludes("Tests/AutomationTestSettings.h", "Engine.h")
+@:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FEditorMapPerformanceTestDefinition {
   @:uname('new') public static function create():PHaxeCreated<unreal.FEditorMapPerformanceTestDefinition>;
   

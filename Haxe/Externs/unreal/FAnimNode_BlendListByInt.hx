@@ -8,7 +8,7 @@ package unreal;
 /**
   Blend list node; has many children
 **/
-@:glueCppIncludes("AnimGraphNode_BlendListByInt.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_BlendListByInt.h")
 @:uextern extern class FAnimNode_BlendListByInt extends unreal.FAnimNode_BlendListBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_BlendListByInt>;
   public var ActiveChildIndex : unreal.Int32;

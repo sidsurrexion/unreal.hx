@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Location/ParticleModuleLocationPrimitiveCylinder.h", "Engine.h")
+@:glueCppIncludes("Particles/Location/ParticleModuleLocationPrimitiveCylinder.h")
 @:uname("CylinderHeightAxis")
 @:uextern extern enum CylinderHeightAxis {
   

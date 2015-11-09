@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/VectorField/ParticleModuleVectorFieldGlobal.h", "Engine.h")
+@:glueCppIncludes("Particles/VectorField/ParticleModuleVectorFieldGlobal.h")
 @:uextern extern class UParticleModuleVectorFieldGlobal extends unreal.UParticleModuleVectorFieldBase {
   
   /**

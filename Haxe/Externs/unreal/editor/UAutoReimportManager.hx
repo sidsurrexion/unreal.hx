@@ -9,7 +9,7 @@ package unreal.editor;
   Deals with auto reimporting of objects when the objects file on disk is modified
 **/
 @:umodule("UnrealEd")
-@:glueCppIncludes("AutoReimport/AutoReimportManager.h", "Engine.h")
+@:glueCppIncludes("AutoReimport/AutoReimportManager.h")
 @:uextern extern class UAutoReimportManager extends unreal.UObject {
   
 }

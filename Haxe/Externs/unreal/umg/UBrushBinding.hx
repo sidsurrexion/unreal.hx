@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Binding/BrushBinding.h", "Engine.h")
+@:glueCppIncludes("Binding/BrushBinding.h")
 @:uextern extern class UBrushBinding extends unreal.umg.UPropertyBinding {
   
 }

@@ -5,7 +5,7 @@
 package unreal.landscapeeditor;
 
 @:umodule("LandscapeEditor")
-@:glueCppIncludes("LandscapeEditorObject.h", "Engine.h")
+@:glueCppIncludes("LandscapeEditorObject.h")
 @:uextern extern class ULandscapeEditorObject extends unreal.UObject {
   
   /**

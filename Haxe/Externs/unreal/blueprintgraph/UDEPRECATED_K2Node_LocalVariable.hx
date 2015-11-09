@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_LocalVariable.h", "Engine.h")
+@:glueCppIncludes("K2Node_LocalVariable.h")
 @:uextern extern class UDEPRECATED_K2Node_LocalVariable extends unreal.blueprintgraph.UK2Node_TemporaryVariable {
   
   /**

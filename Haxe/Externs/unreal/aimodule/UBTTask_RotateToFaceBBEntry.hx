@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Tasks/BTTask_RotateToFaceBBEntry.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Tasks/BTTask_RotateToFaceBBEntry.h")
 @:uextern extern class UBTTask_RotateToFaceBBEntry extends unreal.aimodule.UBTTask_BlackboardBase {
   
   /**

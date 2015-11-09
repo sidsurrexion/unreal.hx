@@ -5,7 +5,7 @@
 package unreal.moviescene;
 
 @:umodule("MovieScene")
-@:glueCppIncludes("MovieSceneObjectManager.h", "Engine.h")
+@:glueCppIncludes("MovieSceneObjectManager.h")
 @:uextern extern interface IMovieSceneObjectManager {
   
 }

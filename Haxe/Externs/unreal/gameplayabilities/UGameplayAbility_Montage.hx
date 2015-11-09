@@ -9,7 +9,7 @@ package unreal.gameplayabilities;
   A gameplay ability that plays a single montage and applies a GameplayEffect
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/GameplayAbility_Montage.h", "Engine.h")
+@:glueCppIncludes("Abilities/GameplayAbility_Montage.h")
 @:uextern extern class UGameplayAbility_Montage extends unreal.gameplayabilities.UGameplayAbility {
   
   /**

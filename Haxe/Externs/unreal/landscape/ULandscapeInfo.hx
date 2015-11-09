@@ -5,7 +5,7 @@
 package unreal.landscape;
 
 @:umodule("Landscape")
-@:glueCppIncludes("LandscapeInfo.h", "Engine.h")
+@:glueCppIncludes("LandscapeInfo.h")
 @:uextern extern class ULandscapeInfo extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   public var Layers : unreal.TArray<unreal.landscape.FLandscapeInfoLayerSettings>;

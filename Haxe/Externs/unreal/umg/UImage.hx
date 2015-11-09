@@ -11,7 +11,7 @@ package unreal.umg;
   ● No Children
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/Image.h", "Engine.h")
+@:glueCppIncludes("Components/Image.h")
 @:uextern extern class UImage extends unreal.umg.UWidget {
   
   /**

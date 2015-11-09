@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackMove.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackMove.h")
 @:uextern extern class FInterpLookupTrack {
   @:uname('new') public static function create():PHaxeCreated<unreal.FInterpLookupTrack>;
   public var Points : unreal.TArray<unreal.FInterpLookupPoint>;

@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   Handles manipulation of shot properties in a movie scene
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Tracks/MovieSceneShotTrack.h", "Engine.h")
+@:glueCppIncludes("Tracks/MovieSceneShotTrack.h")
 @:uextern extern class UMovieSceneShotTrack extends unreal.moviescenetracks.USubMovieSceneTrack {
   
 }

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpFilter_Custom.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpFilter_Custom.h")
 @:uextern extern class UInterpFilter_Custom extends unreal.UInterpFilter {
   #if WITH_EDITORONLY_DATA
   

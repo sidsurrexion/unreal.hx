@@ -12,7 +12,7 @@ package unreal.worldbrowser;
   Holding this information in UObject gives us ability to use property editors and support undo operations
 **/
 @:umodule("WorldBrowser")
-@:glueCppIncludes("Private/Tiles/WorldTileDetails.h", "Engine.h")
+@:glueCppIncludes("Private/Tiles/WorldTileDetails.h")
 @:uextern extern class UWorldTileDetails extends unreal.UObject {
   public var LOD4 : unreal.worldbrowser.FTileLODEntryDetails;
   public var LOD3 : unreal.worldbrowser.FTileLODEntryDetails;

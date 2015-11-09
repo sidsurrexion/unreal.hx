@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/BlendSpace1D.h", "Engine.h")
+@:glueCppIncludes("Animation/BlendSpace1D.h")
 @:uextern extern class UBlendSpace1D extends unreal.UBlendSpaceBase {
   
   /**

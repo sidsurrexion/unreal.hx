@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/SubUV/ParticleModuleSubUV.h", "Engine.h")
+@:glueCppIncludes("Particles/SubUV/ParticleModuleSubUV.h")
 @:uextern extern class UParticleModuleSubUV extends unreal.UParticleModuleSubUVBase {
   
   /**

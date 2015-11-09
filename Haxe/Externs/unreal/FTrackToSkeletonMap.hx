@@ -8,7 +8,7 @@ package unreal;
 /**
   @note We have a plan to support skeletal hierarchy. When that happens, we'd like to keep skeleton indexing.
 **/
-@:glueCppIncludes("Animation/AnimSequence.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSequence.h")
 @:uextern extern class FTrackToSkeletonMap {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTrackToSkeletonMap>;
   

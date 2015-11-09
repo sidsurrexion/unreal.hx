@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/ListStaticMeshesImportedFromSpeedTreesCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/ListStaticMeshesImportedFromSpeedTreesCommandlet.h")
 @:uextern extern class UListStaticMeshesImportedFromSpeedTreesCommandlet extends unreal.UCommandlet {
   
 }

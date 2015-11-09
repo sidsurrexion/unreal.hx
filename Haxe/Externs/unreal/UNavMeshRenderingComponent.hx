@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavMeshRenderingComponent.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavMeshRenderingComponent.h")
 @:uextern extern class UNavMeshRenderingComponent extends unreal.UPrimitiveComponent {
   
 }

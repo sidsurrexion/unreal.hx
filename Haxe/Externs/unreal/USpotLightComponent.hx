@@ -8,7 +8,7 @@ package unreal;
 /**
   A spot light component emits a directional cone shaped light (Eg a Torch).
 **/
-@:glueCppIncludes("Components/SpotLightComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SpotLightComponent.h")
 @:uextern extern class USpotLightComponent extends unreal.UPointLightComponent {
   
   /**

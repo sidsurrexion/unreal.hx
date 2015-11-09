@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_MatineeController.h", "Engine.h")
+@:glueCppIncludes("K2Node_MatineeController.h")
 @:uextern extern class UK2Node_MatineeController extends unreal.blueprintgraph.UK2Node {
   
   /**

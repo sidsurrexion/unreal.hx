@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/ParticleEventManager.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleEventManager.h")
 @:uextern extern class AParticleEventManager extends unreal.AActor {
   
 }

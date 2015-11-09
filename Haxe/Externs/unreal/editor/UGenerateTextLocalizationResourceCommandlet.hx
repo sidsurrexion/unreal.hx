@@ -9,7 +9,7 @@ package unreal.editor;
   UGenerateTextLocalizationResourceCommandlet: Localization commandlet that generates a table of FText keys to localized string values.
 **/
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/GenerateTextLocalizationResourceCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/GenerateTextLocalizationResourceCommandlet.h")
 @:uextern extern class UGenerateTextLocalizationResourceCommandlet extends unreal.editor.UGatherTextCommandletBase {
   
 }

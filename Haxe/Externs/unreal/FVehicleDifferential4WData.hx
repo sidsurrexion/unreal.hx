@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent4W.h", "Engine.h")
+@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent4W.h")
 @:uextern extern class FVehicleDifferential4WData {
   @:uname('new') public static function create():PHaxeCreated<unreal.FVehicleDifferential4WData>;
   

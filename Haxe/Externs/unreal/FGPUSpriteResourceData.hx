@@ -8,7 +8,7 @@ package unreal;
 /**
   The source data for runtime resources.
 **/
-@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h", "Engine.h")
+@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h")
 @:uextern extern class FGPUSpriteResourceData {
   @:uname('new') public static function create():PHaxeCreated<unreal.FGPUSpriteResourceData>;
   

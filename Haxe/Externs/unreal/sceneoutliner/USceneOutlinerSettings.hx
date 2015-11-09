@@ -9,7 +9,7 @@ package unreal.sceneoutliner;
   Implements the settings for the Scene Outliner.
 **/
 @:umodule("SceneOutliner")
-@:glueCppIncludes("Private/SceneOutlinerSettings.h", "Engine.h")
+@:glueCppIncludes("Private/SceneOutlinerSettings.h")
 @:uextern extern class USceneOutlinerSettings extends unreal.UObject {
   
   /**

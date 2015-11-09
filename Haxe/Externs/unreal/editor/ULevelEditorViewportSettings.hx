@@ -9,7 +9,7 @@ package unreal.editor;
   Implements the Level Editor's view port settings.
 **/
 @:umodule("UnrealEd")
-@:glueCppIncludes("Settings/LevelEditorViewportSettings.h", "Engine.h")
+@:glueCppIncludes("Settings/LevelEditorViewportSettings.h")
 @:uextern extern class ULevelEditorViewportSettings extends unreal.UObject {
   
   /**

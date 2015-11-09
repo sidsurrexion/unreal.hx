@@ -8,7 +8,7 @@ package unreal;
 /**
   Base struct for wrapping the array used in Fast TArray Replication
 **/
-@:glueCppIncludes("AbilitySystemComponent.h", "Engine.h")
+@:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FFastArraySerializer {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFastArraySerializer>;
   

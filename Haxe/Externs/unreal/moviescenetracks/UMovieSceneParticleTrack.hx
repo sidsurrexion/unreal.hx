@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   Handles triggering of particle emitters
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Tracks/MovieSceneParticleTrack.h", "Engine.h")
+@:glueCppIncludes("Tracks/MovieSceneParticleTrack.h")
 @:uextern extern class UMovieSceneParticleTrack extends unreal.moviescene.UMovieSceneTrack {
   
 }

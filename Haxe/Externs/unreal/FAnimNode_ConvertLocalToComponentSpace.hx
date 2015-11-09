@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AnimGraphNode_LocalToComponentSpace.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_LocalToComponentSpace.h")
 @:uextern extern class FAnimNode_ConvertLocalToComponentSpace extends unreal.FAnimNode_Base {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_ConvertLocalToComponentSpace>;
   public var LocalPose : unreal.FPoseLink;

@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Blueprint/SlateBlueprintLibrary.h", "Engine.h")
+@:glueCppIncludes("Blueprint/SlateBlueprintLibrary.h")
 @:uextern extern class USlateBlueprintLibrary extends unreal.UBlueprintFunctionLibrary {
   
 }

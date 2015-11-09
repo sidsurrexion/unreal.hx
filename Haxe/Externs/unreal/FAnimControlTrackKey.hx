@@ -8,7 +8,7 @@ package unreal;
 /**
   Structure used for holding information for one animation played on the Anim Control track.
 **/
-@:glueCppIncludes("Matinee/InterpTrackAnimControl.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackAnimControl.h")
 @:uextern extern class FAnimControlTrackKey {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimControlTrackKey>;
   

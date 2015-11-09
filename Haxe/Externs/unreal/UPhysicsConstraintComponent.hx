@@ -8,7 +8,7 @@ package unreal;
 /**
   This is effectively a joint that allows you to connect 2 rigid bodies together. You can create different types of joints using the various parameters of this component.
 **/
-@:glueCppIncludes("PhysicsEngine/PhysicsConstraintComponent.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsConstraintComponent.h")
 @:uextern extern class UPhysicsConstraintComponent extends unreal.USceneComponent {
   
   /**

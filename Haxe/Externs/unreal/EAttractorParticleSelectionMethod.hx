@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Attractor/ParticleModuleAttractorParticle.h", "Engine.h")
+@:glueCppIncludes("Particles/Attractor/ParticleModuleAttractorParticle.h")
 @:uname("EAttractorParticleSelectionMethod")
 @:uextern extern enum EAttractorParticleSelectionMethod {
   

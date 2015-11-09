@@ -8,7 +8,7 @@ package unreal;
 /**
   Imported spreadsheet table.
 **/
-@:glueCppIncludes("Engine/DataTable.h", "Engine.h")
+@:glueCppIncludes("Engine/DataTable.h")
 @:uextern extern class UDataTable extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   

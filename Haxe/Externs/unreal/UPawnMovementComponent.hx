@@ -10,7 +10,7 @@ package unreal;
   It also provides ways to accumulate and read directional input in a generic way (with AddInputVector(), ConsumeInputVector(), etc).
   @see APawn
 **/
-@:glueCppIncludes("GameFramework/PawnMovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/PawnMovementComponent.h")
 @:uextern extern class UPawnMovementComponent extends unreal.UNavMovementComponent {
   
   /**

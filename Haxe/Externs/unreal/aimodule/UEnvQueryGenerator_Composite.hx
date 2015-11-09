@@ -10,7 +10,7 @@ package unreal.aimodule;
   All child generators must produce exactly the same item type!
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_Composite.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_Composite.h")
 @:uextern extern class UEnvQueryGenerator_Composite extends unreal.aimodule.UEnvQueryGenerator {
   public var bHasMatchingItemType : Bool;
   public var Generators : unreal.TArray<unreal.aimodule.UEnvQueryGenerator>;

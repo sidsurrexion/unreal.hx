@@ -13,7 +13,7 @@ package unreal.aimodule;
   Please use them safely (unregister at abort) and call IsServiceActive() when in doubt.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Services/BTService_BlueprintBase.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Services/BTService_BlueprintBase.h")
 @:uextern extern class UBTService_BlueprintBase extends unreal.aimodule.UBTService {
   
   /**

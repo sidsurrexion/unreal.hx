@@ -8,7 +8,7 @@ package unreal;
 /**
   Cached vertex information at the time the mesh was painted.
 **/
-@:glueCppIncludes("Components/StaticMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/StaticMeshComponent.h")
 @:uextern extern class FPaintedVertex {
   @:uname('new') public static function create():PHaxeCreated<unreal.FPaintedVertex>;
   public var Color : unreal.FColor;

@@ -8,7 +8,7 @@ package unreal;
 /**
   Audio settings.
 **/
-@:glueCppIncludes("Sound/AudioSettings.h", "Engine.h")
+@:glueCppIncludes("Sound/AudioSettings.h")
 @:uextern extern class UAudioSettings extends unreal.UDeveloperSettings {
   public var QualityLevels : unreal.TArray<unreal.FAudioQualitySettings>;
   

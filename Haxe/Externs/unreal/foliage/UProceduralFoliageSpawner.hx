@@ -5,7 +5,7 @@
 package unreal.foliage;
 
 @:umodule("Foliage")
-@:glueCppIncludes("ProceduralFoliageSpawner.h", "Engine.h")
+@:glueCppIncludes("ProceduralFoliageSpawner.h")
 @:uextern extern class UProceduralFoliageSpawner extends unreal.UObject {
   
   /**

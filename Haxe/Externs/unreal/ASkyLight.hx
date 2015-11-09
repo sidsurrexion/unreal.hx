@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/SkyLight.h", "Engine.h")
+@:glueCppIncludes("Engine/SkyLight.h")
 @:uextern extern class ASkyLight extends unreal.AInfo {
   
   /**

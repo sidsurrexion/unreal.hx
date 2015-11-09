@@ -5,7 +5,7 @@
 package unreal.gameplayabilitieseditor;
 
 @:umodule("GameplayAbilitiesEditor")
-@:glueCppIncludes("GameplayAbilityGraph.h", "Engine.h")
+@:glueCppIncludes("GameplayAbilityGraph.h")
 @:uextern extern class UGameplayAbilityGraph extends unreal.UEdGraph {
   
 }

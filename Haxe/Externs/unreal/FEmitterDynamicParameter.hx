@@ -8,7 +8,7 @@ package unreal;
 /**
   Helper structure for displaying the parameter.
 **/
-@:glueCppIncludes("Particles/Parameter/ParticleModuleParameterDynamic.h", "Engine.h")
+@:glueCppIncludes("Particles/Parameter/ParticleModuleParameterDynamic.h")
 @:uextern extern class FEmitterDynamicParameter {
   @:uname('new') public static function create():PHaxeCreated<unreal.FEmitterDynamicParameter>;
   

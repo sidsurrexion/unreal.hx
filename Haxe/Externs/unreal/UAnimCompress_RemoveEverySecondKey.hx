@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimCompress_RemoveEverySecondKey.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimCompress_RemoveEverySecondKey.h")
 @:uextern extern class UAnimCompress_RemoveEverySecondKey extends unreal.UAnimCompress {
   
   /**

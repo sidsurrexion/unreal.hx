@@ -8,7 +8,7 @@ package unreal;
 /**
   -> will be exported to EngineDecalClasses.h
 **/
-@:glueCppIncludes("Components/SphereReflectionCaptureComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SphereReflectionCaptureComponent.h")
 @:uextern extern class USphereReflectionCaptureComponent extends unreal.UReflectionCaptureComponent {
   public var PreviewInfluenceRadius : unreal.UDrawSphereComponent;
   

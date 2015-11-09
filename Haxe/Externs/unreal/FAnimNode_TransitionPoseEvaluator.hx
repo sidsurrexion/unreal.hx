@@ -9,7 +9,7 @@ package unreal;
   Animation data node for state machine transitions.
   Can be set to supply either the animation data from the transition source (From State) or the transition destination (To State).
 **/
-@:glueCppIncludes("AnimGraphNode_TransitionPoseEvaluator.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_TransitionPoseEvaluator.h")
 @:uextern extern class FAnimNode_TransitionPoseEvaluator extends unreal.FAnimNode_Base {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_TransitionPoseEvaluator>;
   public var CacheFramesRemaining : unreal.Int32;

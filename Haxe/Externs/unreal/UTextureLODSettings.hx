@@ -9,7 +9,7 @@ package unreal;
   Structure containing all information related to an LOD group and providing helper functions to calculate
   the LOD bias of a given group.
 **/
-@:glueCppIncludes("Engine/TextureLODSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/TextureLODSettings.h")
 @:uextern extern class UTextureLODSettings extends unreal.UObject {
   
   /**

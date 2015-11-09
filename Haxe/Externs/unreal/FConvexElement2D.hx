@@ -8,7 +8,7 @@ package unreal;
 /**
   One convex hull, used for simplified collision.
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup2D.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup2D.h")
 @:uextern extern class FConvexElement2D {
   @:uname('new') public static function create():PHaxeCreated<unreal.FConvexElement2D>;
   

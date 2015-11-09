@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("ThumbnailRendering/MaterialInstanceThumbnailRenderer.h", "Engine.h")
+@:glueCppIncludes("ThumbnailRendering/MaterialInstanceThumbnailRenderer.h")
 @:uextern extern class UMaterialInstanceThumbnailRenderer extends unreal.editor.UDefaultSizedThumbnailRenderer {
   
 }

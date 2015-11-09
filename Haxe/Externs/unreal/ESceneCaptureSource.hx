@@ -8,7 +8,7 @@ package unreal;
 /**
   -> will be exported to EngineDecalClasses.h
 **/
-@:glueCppIncludes("Components/SceneCaptureComponent2D.h", "Engine.h")
+@:glueCppIncludes("Components/SceneCaptureComponent2D.h")
 @:uname("ESceneCaptureSource")
 @:uextern extern enum ESceneCaptureSource {
   

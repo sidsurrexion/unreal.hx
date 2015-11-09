@@ -8,7 +8,7 @@ package unreal;
 /**
   This node is effectively a 'branch', picking one of two input poses based on an input Boolean value
 **/
-@:glueCppIncludes("AnimGraphNode_BlendListByBool.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_BlendListByBool.h")
 @:uextern extern class FAnimNode_BlendListByBool extends unreal.FAnimNode_BlendListBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_BlendListByBool>;
   

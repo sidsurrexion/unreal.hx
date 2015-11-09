@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Niagara/NiagaraNodeConstant.h", "Engine.h")
+@:glueCppIncludes("Niagara/NiagaraNodeConstant.h")
 @:uextern extern class UDEPRECATED_NiagaraNodeConstant extends unreal.editor.UNiagaraNode {
   public var bExposeToEffectEditor : Bool;
   public var bNeedsDefault : Bool;

@@ -9,7 +9,7 @@ package unreal.animgraph;
   Helper / intermediate for asset player graphical nodes
 **/
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_AssetPlayerBase.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_AssetPlayerBase.h")
 @:uextern extern class UAnimGraphNode_AssetPlayerBase extends unreal.animgraph.UAnimGraphNode_Base {
   
 }

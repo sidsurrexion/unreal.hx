@@ -8,7 +8,7 @@ package unreal;
 /**
   Contains a grid of data points with weights from sample points in the space
 **/
-@:glueCppIncludes("Animation/BlendSpace.h", "Engine.h")
+@:glueCppIncludes("Animation/BlendSpace.h")
 @:uextern extern class UBlendSpace extends unreal.UBlendSpaceBase {
   
   /**

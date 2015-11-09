@@ -5,7 +5,7 @@
 package unreal.haxeunittests;
 
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("BasicTypesSub.h", "Engine.h")
+@:glueCppIncludes("BasicTypesSub.h")
 @:uextern extern class UBasicTypesSub1 extends unreal.haxeunittests.UBasicTypesUObject {
   
 }

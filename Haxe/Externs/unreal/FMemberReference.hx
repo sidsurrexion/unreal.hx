@@ -9,7 +9,7 @@ package unreal;
   @TODO: this can encapsulate globally defined fields as well (like with native
          delegate signatures); consider renaming to FFieldReference
 **/
-@:glueCppIncludes("K2Node_BaseMCDelegate.h", "Engine.h")
+@:glueCppIncludes("K2Node_BaseMCDelegate.h")
 @:uextern extern class FMemberReference {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMemberReference>;
   

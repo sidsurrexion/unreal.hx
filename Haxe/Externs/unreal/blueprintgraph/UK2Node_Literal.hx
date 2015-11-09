@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_Literal.h", "Engine.h")
+@:glueCppIncludes("K2Node_Literal.h")
 @:uextern extern class UK2Node_Literal extends unreal.blueprintgraph.UK2Node {
   
 }

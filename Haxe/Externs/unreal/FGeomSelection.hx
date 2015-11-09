@@ -8,7 +8,7 @@ package unreal;
 /**
   Selection information for geometry mode
 **/
-@:glueCppIncludes("Engine/Brush.h", "Engine.h")
+@:glueCppIncludes("Engine/Brush.h")
 @:uextern extern class FGeomSelection {
   @:uname('new') public static function create():PHaxeCreated<unreal.FGeomSelection>;
   

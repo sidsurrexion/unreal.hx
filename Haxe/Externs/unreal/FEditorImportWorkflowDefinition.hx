@@ -8,7 +8,7 @@ package unreal;
 /**
   Holds settings for the asset import workflow test
 **/
-@:glueCppIncludes("Tests/AutomationTestSettings.h", "Engine.h")
+@:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FEditorImportWorkflowDefinition {
   @:uname('new') public static function create():PHaxeCreated<unreal.FEditorImportWorkflowDefinition>;
   

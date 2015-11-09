@@ -8,7 +8,7 @@ package unreal;
 /**
   Container for a physics representation of an object.
 **/
-@:glueCppIncludes("PhysicsEngine/PhysicsConstraintTemplate.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsConstraintTemplate.h")
 @:uextern extern class FConstraintInstance {
   @:uname('new') public static function create():PHaxeCreated<unreal.FConstraintInstance>;
   

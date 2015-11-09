@@ -10,7 +10,7 @@ package unreal.aimodule;
   A task node that calls MakeNoise() on this Pawn when executed.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Tasks/BTTask_MakeNoise.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Tasks/BTTask_MakeNoise.h")
 @:uextern extern class UBTTask_MakeNoise extends unreal.aimodule.UBTTaskNode {
   
   /**

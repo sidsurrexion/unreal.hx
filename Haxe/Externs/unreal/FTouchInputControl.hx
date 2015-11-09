@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/TouchInterface.h", "Engine.h")
+@:glueCppIncludes("GameFramework/TouchInterface.h")
 @:uextern extern class FTouchInputControl {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTouchInputControl>;
   

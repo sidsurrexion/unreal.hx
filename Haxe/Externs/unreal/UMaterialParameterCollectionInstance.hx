@@ -9,7 +9,7 @@ package unreal;
   Class that stores per-world instance parameter data for a given UMaterialParameterCollection resource.
   Instances of this class are always transient.
 **/
-@:glueCppIncludes("Materials/MaterialParameterCollectionInstance.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialParameterCollectionInstance.h")
 @:uextern extern class UMaterialParameterCollectionInstance extends unreal.UObject {
   
   /**

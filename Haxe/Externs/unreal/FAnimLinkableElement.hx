@@ -16,7 +16,7 @@ package unreal;
              we have a secondary link to handle a duration
              @see FAnimNotifyEvent
 **/
-@:glueCppIncludes("Animation/AnimInstance.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimInstance.h")
 @:uextern extern class FAnimLinkableElement {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimLinkableElement>;
   

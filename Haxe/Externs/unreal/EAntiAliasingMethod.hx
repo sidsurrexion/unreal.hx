@@ -8,7 +8,7 @@ package unreal;
 /**
   Used by FPostProcessSettings Anti-aliasings
 **/
-@:glueCppIncludes("Camera/CameraAnim.h", "Engine.h")
+@:glueCppIncludes("Camera/CameraAnim.h")
 @:uname("EAntiAliasingMethod")
 @:uextern extern enum EAntiAliasingMethod {
   

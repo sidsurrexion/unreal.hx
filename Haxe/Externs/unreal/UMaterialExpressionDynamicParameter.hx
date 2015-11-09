@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionDynamicParameter.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionDynamicParameter.h")
 @:uextern extern class UMaterialExpressionDynamicParameter extends unreal.UMaterialExpression {
   public var DefaultValue : unreal.FLinearColor;
   

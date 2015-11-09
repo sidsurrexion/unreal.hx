@@ -12,7 +12,7 @@ package unreal;
   @see FDebugDisplayProperty
   @see DrawStatsHUD
 **/
-@:glueCppIncludes("Engine/GameViewportClient.h", "Engine.h")
+@:glueCppIncludes("Engine/GameViewportClient.h")
 @:uextern extern class FDebugDisplayProperty {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDebugDisplayProperty>;
   

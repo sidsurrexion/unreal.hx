@@ -8,7 +8,7 @@ package unreal;
 /**
   Where to place a material node in the post processing graph.
 **/
-@:glueCppIncludes("Materials/Material.h", "Engine.h")
+@:glueCppIncludes("Materials/Material.h")
 @:uname("EBlendableLocation")
 @:uextern extern enum EBlendableLocation {
   

@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("EnvironmentQuery/EnvQueryOption.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQuery/EnvQueryOption.h")
 @:uextern extern class UEnvQueryOption extends unreal.UObject {
   public var Tests : unreal.TArray<unreal.aimodule.UEnvQueryTest>;
   public var Generator : unreal.aimodule.UEnvQueryGenerator;

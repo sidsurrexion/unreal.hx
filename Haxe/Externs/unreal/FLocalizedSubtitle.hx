@@ -8,7 +8,7 @@ package unreal;
 /**
   A subtitle localized to a specific language.
 **/
-@:glueCppIncludes("Sound/SoundWave.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundWave.h")
 @:uextern extern class FLocalizedSubtitle {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLocalizedSubtitle>;
   

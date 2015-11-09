@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Orientation/ParticleModuleOrientationAxisLock.h", "Engine.h")
+@:glueCppIncludes("Particles/Orientation/ParticleModuleOrientationAxisLock.h")
 @:uextern extern class UParticleModuleOrientationAxisLock extends unreal.UParticleModuleOrientationBase {
   
   /**

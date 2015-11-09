@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionDistanceFieldGradient.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionDistanceFieldGradient.h")
 @:uextern extern class UMaterialExpressionDistanceFieldGradient extends unreal.UMaterialExpression {
   
   /**

@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("BlueprintEditorSettings.h", "Engine.h")
+@:glueCppIncludes("BlueprintEditorSettings.h")
 @:uextern extern class UBlueprintEditorSettings extends unreal.UObject {
   
   /**

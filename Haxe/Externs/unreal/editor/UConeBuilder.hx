@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Builders/ConeBuilder.h", "Engine.h")
+@:glueCppIncludes("Builders/ConeBuilder.h")
 @:uextern extern class UConeBuilder extends unreal.editor.UEditorBrushBuilder {
   
   /**

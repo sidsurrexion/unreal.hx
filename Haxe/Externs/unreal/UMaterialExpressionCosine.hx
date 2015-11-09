@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionCosine.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionCosine.h")
 @:uextern extern class UMaterialExpressionCosine extends unreal.UMaterialExpression {
   public var Period : unreal.Float32;
   public var Input : unreal.FExpressionInput;

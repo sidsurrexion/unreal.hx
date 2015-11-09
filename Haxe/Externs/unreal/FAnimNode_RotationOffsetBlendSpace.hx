@@ -8,7 +8,7 @@ package unreal;
 /**
   @TODO: Comment
 **/
-@:glueCppIncludes("AnimGraphNode_RotationOffsetBlendSpace.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_RotationOffsetBlendSpace.h")
 @:uextern extern class FAnimNode_RotationOffsetBlendSpace extends unreal.FAnimNode_BlendSpacePlayer {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_RotationOffsetBlendSpace>;
   public var BasePose : unreal.FPoseLink;

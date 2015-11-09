@@ -8,7 +8,7 @@ package unreal;
 /**
   Volume that causes damage over time to any Actor that overlaps its collision.
 **/
-@:glueCppIncludes("GameFramework/PainCausingVolume.h", "Engine.h")
+@:glueCppIncludes("GameFramework/PainCausingVolume.h")
 @:uextern extern class APainCausingVolume extends unreal.APhysicsVolume {
   
   /**

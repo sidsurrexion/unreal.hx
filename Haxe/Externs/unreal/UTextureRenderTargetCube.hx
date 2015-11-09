@@ -11,7 +11,7 @@ package unreal;
   Cube render target texture resource. This can be used as a target
   for rendering as well as rendered as a regular cube texture resource.
 **/
-@:glueCppIncludes("Engine/TextureRenderTargetCube.h", "Engine.h")
+@:glueCppIncludes("Engine/TextureRenderTargetCube.h")
 @:uextern extern class UTextureRenderTargetCube extends unreal.UTextureRenderTarget {
   
   /**

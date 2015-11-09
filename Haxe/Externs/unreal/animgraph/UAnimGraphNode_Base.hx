@@ -12,7 +12,7 @@ package unreal.animgraph;
   Any concrete implementations will be paired with a runtime graph node derived from FAnimNode_Base
 **/
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_Base.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_Base.h")
 @:uextern extern class UAnimGraphNode_Base extends unreal.blueprintgraph.UK2Node {
   public var ShowPinForProperties : unreal.TArray<unreal.blueprintgraph.FOptionalPinFromProperty>;
   

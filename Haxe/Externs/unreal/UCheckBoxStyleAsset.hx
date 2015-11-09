@@ -9,7 +9,7 @@ package unreal;
   An asset describing a CheckBox's appearance.
   Just a wrapper for the struct with real data in it.
 **/
-@:glueCppIncludes("Slate/CheckboxStyleAsset.h", "Engine.h")
+@:glueCppIncludes("Slate/CheckboxStyleAsset.h")
 @:uextern extern class UCheckBoxStyleAsset extends unreal.UObject {
   
   /**

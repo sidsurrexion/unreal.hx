@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("EnvironmentQuery/Tests/EnvQueryTest_PathfindingBatch.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQuery/Tests/EnvQueryTest_PathfindingBatch.h")
 @:uextern extern class UEnvQueryTest_PathfindingBatch extends unreal.aimodule.UEnvQueryTest_Pathfinding {
   
   /**

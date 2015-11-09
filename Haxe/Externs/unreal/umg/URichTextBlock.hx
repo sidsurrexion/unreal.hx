@@ -12,7 +12,7 @@ package unreal.umg;
   ● No Children
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/RichTextBlock.h", "Engine.h")
+@:glueCppIncludes("Components/RichTextBlock.h")
 @:uextern extern class URichTextBlock extends unreal.umg.UWidget {
   private var Decorators : unreal.TArray<unreal.umg.URichTextBlockDecorator>;
   

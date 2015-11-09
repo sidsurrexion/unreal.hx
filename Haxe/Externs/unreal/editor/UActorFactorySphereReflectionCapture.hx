@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("ActorFactories/ActorFactorySphereReflectionCapture.h", "Engine.h")
+@:glueCppIncludes("ActorFactories/ActorFactorySphereReflectionCapture.h")
 @:uextern extern class UActorFactorySphereReflectionCapture extends unreal.editor.UActorFactory {
   
 }

@@ -8,7 +8,7 @@ package unreal;
 /**
   Used to emit a radial force or impulse that can affect physics objects and or destructible objects.
 **/
-@:glueCppIncludes("PhysicsEngine/RadialForceComponent.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/RadialForceComponent.h")
 @:uextern extern class URadialForceComponent extends unreal.USceneComponent {
   
   /**

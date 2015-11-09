@@ -11,7 +11,7 @@ package unreal.blueprintgraph;
   FEdGraphSchemaAction_K2AddComponent.
 **/
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("BlueprintComponentNodeSpawner.h", "Engine.h")
+@:glueCppIncludes("BlueprintComponentNodeSpawner.h")
 @:uextern extern class UBlueprintComponentNodeSpawner extends unreal.blueprintgraph.UBlueprintNodeSpawner {
   
 }

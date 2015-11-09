@@ -8,7 +8,7 @@ package unreal;
 /**
   A component-space pose link to another node
 **/
-@:glueCppIncludes("AnimPreviewInstance.h", "Engine.h")
+@:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class FComponentSpacePoseLink extends unreal.FPoseLinkBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FComponentSpacePoseLink>;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Elements of data for sound group volume control
 **/
-@:glueCppIncludes("Sound/SoundMix.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundMix.h")
 @:uextern extern class FSoundClassAdjuster {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSoundClassAdjuster>;
   

@@ -9,7 +9,7 @@ package unreal.landscape;
   ULandscapeSplinesComponent
 **/
 @:umodule("Landscape")
-@:glueCppIncludes("LandscapeSplinesComponent.h", "Engine.h")
+@:glueCppIncludes("LandscapeSplinesComponent.h")
 @:uextern extern class ULandscapeSplinesComponent extends unreal.UPrimitiveComponent {
   
   /**

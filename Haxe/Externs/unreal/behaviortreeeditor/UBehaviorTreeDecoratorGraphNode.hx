@@ -5,7 +5,7 @@
 package unreal.behaviortreeeditor;
 
 @:umodule("BehaviorTreeEditor")
-@:glueCppIncludes("BehaviorTreeDecoratorGraphNode.h", "Engine.h")
+@:glueCppIncludes("BehaviorTreeDecoratorGraphNode.h")
 @:uextern extern class UBehaviorTreeDecoratorGraphNode extends unreal.UEdGraphNode {
   
 }

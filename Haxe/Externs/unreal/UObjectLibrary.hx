@@ -8,7 +8,7 @@ package unreal;
 /**
   Class that holds a library of Objects
 **/
-@:glueCppIncludes("Engine/ObjectLibrary.h", "Engine.h")
+@:glueCppIncludes("Engine/ObjectLibrary.h")
 @:uextern extern class UObjectLibrary extends unreal.UObject {
   
   /**

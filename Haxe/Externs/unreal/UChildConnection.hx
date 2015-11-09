@@ -8,7 +8,7 @@ package unreal;
 /**
   Represents a secondary split screen connection that reroutes calls to the parent connection.
 **/
-@:glueCppIncludes("Engine/ChildConnection.h", "Engine.h")
+@:glueCppIncludes("Engine/ChildConnection.h")
 @:uextern extern class UChildConnection extends unreal.UNetConnection {
   public var Parent : unreal.UNetConnection;
   

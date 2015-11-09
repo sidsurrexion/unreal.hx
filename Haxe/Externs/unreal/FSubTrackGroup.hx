@@ -8,7 +8,7 @@ package unreal;
 /**
   A small structure holding data for grouping subtracks. (For UI drawing purposes)
 **/
-@:glueCppIncludes("Matinee/InterpTrack.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrack.h")
 @:uextern extern class FSubTrackGroup {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSubTrackGroup>;
   

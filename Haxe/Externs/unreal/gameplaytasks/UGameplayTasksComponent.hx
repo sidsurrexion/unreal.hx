@@ -9,7 +9,7 @@ package unreal.gameplaytasks;
   The core ActorComponent for interfacing with the GameplayAbilities System
 **/
 @:umodule("GameplayTasks")
-@:glueCppIncludes("GameplayTasksComponent.h", "Engine.h")
+@:glueCppIncludes("GameplayTasksComponent.h")
 @:uextern extern class UGameplayTasksComponent extends unreal.UActorComponent implements unreal.gameplaytasks.IGameplayTaskOwnerInterface {
   private var TaskPriorityQueue : unreal.TArray<unreal.gameplaytasks.UGameplayTask>;
   

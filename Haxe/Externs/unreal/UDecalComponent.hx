@@ -11,7 +11,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Actors/DecalActor
   @see UDecalActor
 **/
-@:glueCppIncludes("Components/DecalComponent.h", "Engine.h")
+@:glueCppIncludes("Components/DecalComponent.h")
 @:uextern extern class UDecalComponent extends unreal.USceneComponent {
   public var FadeScreenSize : unreal.Float32;
   

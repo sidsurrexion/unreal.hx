@@ -9,7 +9,7 @@ package unreal.blueprintgraph;
   Pure kismet node that creates a struct with specified values for each member
 **/
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_SetFieldsInStruct.h", "Engine.h")
+@:glueCppIncludes("K2Node_SetFieldsInStruct.h")
 @:uextern extern class UK2Node_SetFieldsInStruct extends unreal.blueprintgraph.UK2Node_MakeStruct {
   
 }

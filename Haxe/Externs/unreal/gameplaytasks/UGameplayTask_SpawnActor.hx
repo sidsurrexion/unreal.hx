@@ -18,7 +18,7 @@ package unreal.gameplaytasks;
   actor down to him. We could potentially also use this to do predictive actor spawning / reconciliation.
 **/
 @:umodule("GameplayTasks")
-@:glueCppIncludes("Tasks/GameplayTask_SpawnActor.h", "Engine.h")
+@:glueCppIncludes("Tasks/GameplayTask_SpawnActor.h")
 @:uextern extern class UGameplayTask_SpawnActor extends unreal.gameplaytasks.UGameplayTask {
   private var ClassToSpawn : unreal.TSubclassOf<unreal.AActor>;
   

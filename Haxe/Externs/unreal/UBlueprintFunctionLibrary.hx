@@ -9,7 +9,7 @@ package unreal;
   This class is a base class for any function libraries exposed to blueprints.
   Methods in subclasses are expected to be static, and no methods should be added to this base class.
 **/
-@:glueCppIncludes("Kismet/BlueprintFunctionLibrary.h", "Engine.h")
+@:glueCppIncludes("Kismet/BlueprintFunctionLibrary.h")
 @:uextern extern class UBlueprintFunctionLibrary extends unreal.UObject {
   
 }

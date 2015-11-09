@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/EmitterCameraLensEffectBase.h", "Engine.h")
+@:glueCppIncludes("Particles/EmitterCameraLensEffectBase.h")
 @:uextern extern class AEmitterCameraLensEffectBase extends unreal.AEmitter {
   
   /**

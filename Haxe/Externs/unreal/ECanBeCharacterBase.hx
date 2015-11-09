@@ -8,7 +8,7 @@ package unreal;
 /**
   Determines whether a Character can attempt to step up onto a component when they walk in to it.
 **/
-@:glueCppIncludes("Components/PrimitiveComponent.h", "Engine.h")
+@:glueCppIncludes("Components/PrimitiveComponent.h")
 @:uname("ECanBeCharacterBase")
 @:uextern extern enum ECanBeCharacterBase {
   

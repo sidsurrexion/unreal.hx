@@ -11,7 +11,7 @@ package unreal.aimodule;
   Tags specified.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_CheckGameplayTagsOnActor.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_CheckGameplayTagsOnActor.h")
 @:uextern extern class UBTDecorator_CheckGameplayTagsOnActor extends unreal.aimodule.UBTDecorator {
   
   /**

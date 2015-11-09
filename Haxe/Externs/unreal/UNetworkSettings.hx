@@ -8,7 +8,7 @@ package unreal;
 /**
   Network settings.
 **/
-@:glueCppIncludes("Engine/NetworkSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/NetworkSettings.h")
 @:uextern extern class UNetworkSettings extends unreal.UDeveloperSettings {
   
   /**

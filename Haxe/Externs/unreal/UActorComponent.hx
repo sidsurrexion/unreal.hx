@@ -13,7 +13,7 @@ package unreal;
   @see USceneComponent
   @see UPrimitiveComponent
 **/
-@:glueCppIncludes("Components/ActorComponent.h", "Engine.h")
+@:glueCppIncludes("Components/ActorComponent.h")
 @:uextern extern class UActorComponent extends unreal.UObject implements unreal.IInterface_AssetUserData {
   public var CreationMethod : unreal.EComponentCreationMethod;
   

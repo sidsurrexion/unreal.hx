@@ -8,7 +8,7 @@ package unreal;
 /**
   This class is a singleton initialized from the ini
 **/
-@:glueCppIncludes("Sound/SoundGroups.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundGroups.h")
 @:uextern extern class USoundGroups extends unreal.UObject {
   
 }

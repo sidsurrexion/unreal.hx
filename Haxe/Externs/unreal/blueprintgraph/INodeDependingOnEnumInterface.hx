@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("NodeDependingOnEnumInterface.h", "Engine.h")
+@:glueCppIncludes("NodeDependingOnEnumInterface.h")
 @:uextern extern interface INodeDependingOnEnumInterface {
   
 }

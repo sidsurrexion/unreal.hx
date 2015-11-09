@@ -5,7 +5,7 @@
 package unreal.gameplaydebugger;
 
 @:umodule("GameplayDebugger")
-@:glueCppIncludes("GameplayDebuggingReplicator.h", "Engine.h")
+@:glueCppIncludes("GameplayDebuggingReplicator.h")
 @:uextern extern class AGameplayDebuggingReplicator extends unreal.AActor {
   public var DefaultTexture_Green : unreal.UTexture2D;
   public var DefaultTexture_Red : unreal.UTexture2D;

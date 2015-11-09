@@ -10,7 +10,7 @@ package unreal.niagara;
   All positions & orientations are returned in Unreal reference frame & units, assuming the Leap device is located at the origin.
 **/
 @:umodule("Niagara")
-@:glueCppIncludes("NiagaraFunctionLibrary.h", "Engine.h")
+@:glueCppIncludes("NiagaraFunctionLibrary.h")
 @:uextern extern class UNiagaraFunctionLibrary extends unreal.UBlueprintFunctionLibrary {
   
 }

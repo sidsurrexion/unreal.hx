@@ -8,7 +8,7 @@ package unreal;
 /**
   Base struct for items using Fast TArray Replication
 **/
-@:glueCppIncludes("AbilitySystemComponent.h", "Engine.h")
+@:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FFastArraySerializerItem {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFastArraySerializerItem>;
   public var ReplicationKey : unreal.Int32;

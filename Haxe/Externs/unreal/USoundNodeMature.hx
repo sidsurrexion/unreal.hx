@@ -9,7 +9,7 @@ package unreal;
   This SoundNode uses UEngine::bAllowMatureLanguage to determine whether child nodes
   that have USoundWave::bMature=true should be played.
 **/
-@:glueCppIncludes("Sound/SoundNodeMature.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeMature.h")
 @:uextern extern class USoundNodeMature extends unreal.USoundNode {
   
 }

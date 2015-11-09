@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Exporters/TextBufferExporterTXT.h", "Engine.h")
+@:glueCppIncludes("Exporters/TextBufferExporterTXT.h")
 @:uextern extern class UTextBufferExporterTXT extends unreal.UExporter {
   
 }

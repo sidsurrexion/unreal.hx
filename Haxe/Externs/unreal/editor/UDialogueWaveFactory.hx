@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/DialogueWaveFactory.h", "Engine.h")
+@:glueCppIncludes("Factories/DialogueWaveFactory.h")
 @:uextern extern class UDialogueWaveFactory extends unreal.editor.UFactory {
   
 }

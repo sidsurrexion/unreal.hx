@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/BlendSpaceFactoryNew.h", "Engine.h")
+@:glueCppIncludes("Factories/BlendSpaceFactoryNew.h")
 @:uextern extern class UBlendSpaceFactoryNew extends unreal.editor.UFactory {
   public var TargetSkeleton : unreal.USkeleton;
   

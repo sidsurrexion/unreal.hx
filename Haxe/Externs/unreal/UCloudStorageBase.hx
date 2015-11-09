@@ -8,7 +8,7 @@ package unreal;
 /**
   Base class for the various platform interface classes.
 **/
-@:glueCppIncludes("Engine/CloudStorageBase.h", "Engine.h")
+@:glueCppIncludes("Engine/CloudStorageBase.h")
 @:uextern extern class UCloudStorageBase extends unreal.UPlatformInterfaceBase {
   
   /**

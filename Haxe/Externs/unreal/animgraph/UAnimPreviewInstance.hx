@@ -10,7 +10,7 @@ package unreal.animgraph;
   Used by Preview in AnimGraph, Playing single animation in Kismet2 and etc
 **/
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimPreviewInstance.h", "Engine.h")
+@:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class UAnimPreviewInstance extends unreal.UAnimSingleNodeInstance {
   public var MontagePreviewStartSectionIdx : unreal.Int32;
   

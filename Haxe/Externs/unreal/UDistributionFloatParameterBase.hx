@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Distributions/DistributionFloatParameterBase.h", "Engine.h")
+@:glueCppIncludes("Distributions/DistributionFloatParameterBase.h")
 @:uextern extern class UDistributionFloatParameterBase extends unreal.UDistributionFloatConstant {
   
   /**

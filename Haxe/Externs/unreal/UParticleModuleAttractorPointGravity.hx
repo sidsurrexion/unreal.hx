@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Attractor/ParticleModuleAttractorPointGravity.h", "Engine.h")
+@:glueCppIncludes("Particles/Attractor/ParticleModuleAttractorPointGravity.h")
 @:uextern extern class UParticleModuleAttractorPointGravity extends unreal.UParticleModuleAttractorBase {
   
   /**

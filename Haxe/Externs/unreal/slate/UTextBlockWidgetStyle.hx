@@ -5,7 +5,7 @@
 package unreal.slate;
 
 @:umodule("Slate")
-@:glueCppIncludes("Framework/Styling/TextBlockWidgetStyle.h", "Engine.h")
+@:glueCppIncludes("Framework/Styling/TextBlockWidgetStyle.h")
 @:uextern extern class UTextBlockWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
   
   /**

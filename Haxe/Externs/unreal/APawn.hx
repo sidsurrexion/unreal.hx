@@ -11,7 +11,7 @@ package unreal;
   
   @see https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Pawn/
 **/
-@:glueCppIncludes("GameFramework/Pawn.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Pawn.h")
 @:uextern extern class APawn extends unreal.AActor implements unreal.INavAgentInterface {
   
   /**

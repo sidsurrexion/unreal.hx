@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("EnvironmentQuery/Items/EnvQueryItemType_ActorBase.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQuery/Items/EnvQueryItemType_ActorBase.h")
 @:uextern extern class UEnvQueryItemType_ActorBase extends unreal.aimodule.UEnvQueryItemType_VectorBase {
   
 }

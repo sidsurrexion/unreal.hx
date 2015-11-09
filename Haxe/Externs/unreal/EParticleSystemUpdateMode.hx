@@ -9,7 +9,7 @@ package unreal;
   ParticleSystemUpdateMode
   Enumeration indicating the method by which the system should be updated
 **/
-@:glueCppIncludes("Particles/ParticleSystem.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleSystem.h")
 @:uname("EParticleSystemUpdateMode")
 @:uextern extern enum EParticleSystemUpdateMode {
   

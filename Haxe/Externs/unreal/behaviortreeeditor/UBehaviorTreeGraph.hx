@@ -5,7 +5,7 @@
 package unreal.behaviortreeeditor;
 
 @:umodule("BehaviorTreeEditor")
-@:glueCppIncludes("BehaviorTreeGraph.h", "Engine.h")
+@:glueCppIncludes("BehaviorTreeGraph.h")
 @:uextern extern class UBehaviorTreeGraph extends unreal.aigraph.UAIGraph {
   public var bIsUsingModCounter : Bool;
   

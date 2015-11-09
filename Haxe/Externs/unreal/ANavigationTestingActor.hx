@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavigationTestingActor.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationTestingActor.h")
 @:uextern extern class ANavigationTestingActor extends unreal.AActor implements unreal.INavAgentInterface implements unreal.INavPathObserverInterface {
   public var OffsetFromCornersDistance : unreal.Float32;
   public var ShowStepIndex : unreal.Int32;

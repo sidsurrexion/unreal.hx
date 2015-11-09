@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundClass.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundClass.h")
 @:uextern extern class USoundClass extends unreal.UObject {
   public var ParentClass : unreal.USoundClass;
   

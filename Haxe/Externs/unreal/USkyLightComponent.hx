@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/SkyLightComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SkyLightComponent.h")
 @:uextern extern class USkyLightComponent extends unreal.ULightComponentBase {
   private var BlendDestinationCubemap : unreal.UTextureCube;
   

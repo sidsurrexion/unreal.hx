@@ -8,7 +8,7 @@ package unreal;
 /**
   Stores information about a parameter collection that this material references, used to know when the material needs to be recompiled.
 **/
-@:glueCppIncludes("Materials/Material.h", "Engine.h")
+@:glueCppIncludes("Materials/Material.h")
 @:uextern extern class FMaterialParameterCollectionInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialParameterCollectionInfo>;
   

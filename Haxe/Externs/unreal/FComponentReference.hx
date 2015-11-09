@@ -9,7 +9,7 @@ package unreal;
   Struct that allows for different ways to reference a component.
   If just an Actor is specified, will return RootComponent of that Actor.
 **/
-@:glueCppIncludes("CableComponent.h", "Engine.h")
+@:glueCppIncludes("CableComponent.h")
 @:uextern extern class FComponentReference {
   @:uname('new') public static function create():PHaxeCreated<unreal.FComponentReference>;
   

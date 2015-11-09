@@ -9,7 +9,7 @@ package unreal.onlinesubsystemutils;
   Library of synchronous achievement calls
 **/
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("TurnBasedBlueprintLibrary.h", "Engine.h")
+@:glueCppIncludes("TurnBasedBlueprintLibrary.h")
 @:uextern extern class UTurnBasedBlueprintLibrary extends unreal.UBlueprintFunctionLibrary {
   
 }

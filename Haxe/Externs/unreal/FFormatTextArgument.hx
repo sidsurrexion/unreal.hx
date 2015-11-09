@@ -8,7 +8,7 @@ package unreal;
 /**
   Used for formatting text in Blueprints; a helper struct that helps funnel the data to FText::Format
 **/
-@:glueCppIncludes("Engine.h", "Engine.h")
+@:glueCppIncludes("Engine.h")
 @:uextern extern class FFormatTextArgument {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFormatTextArgument>;
   

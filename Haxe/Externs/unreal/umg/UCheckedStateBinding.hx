@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Binding/CheckedStateBinding.h", "Engine.h")
+@:glueCppIncludes("Binding/CheckedStateBinding.h")
 @:uextern extern class UCheckedStateBinding extends unreal.umg.UPropertyBinding {
   
 }

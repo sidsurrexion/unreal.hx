@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines oscillation of a single number.
 **/
-@:glueCppIncludes("Camera/CameraShake.h", "Engine.h")
+@:glueCppIncludes("Camera/CameraShake.h")
 @:uextern extern class FFOscillator {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFOscillator>;
   

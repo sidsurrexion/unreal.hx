@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Private/Commandlets/ChunkDependencyInfo.h", "Engine.h")
+@:glueCppIncludes("Private/Commandlets/ChunkDependencyInfo.h")
 @:uextern extern class UChunkDependencyInfo extends unreal.UObject {
   public var DependencyArray : unreal.TArray<unreal.editor.FChunkDependency>;
   

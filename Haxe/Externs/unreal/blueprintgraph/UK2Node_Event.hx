@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_Event.h", "Engine.h")
+@:glueCppIncludes("K2Node_Event.h")
 @:uextern extern class UK2Node_Event extends unreal.blueprintgraph.UK2Node_EditablePinBase {
   
   /**

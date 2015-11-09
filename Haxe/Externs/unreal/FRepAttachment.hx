@@ -8,7 +8,7 @@ package unreal;
 /**
   Handles attachment replication to clients. Movement replication will not happen while AttachParent is non-nullptr
 **/
-@:glueCppIncludes("GameFramework/Actor.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Actor.h")
 @:uextern extern class FRepAttachment {
   @:uname('new') public static function create():PHaxeCreated<unreal.FRepAttachment>;
   public var AttachComponent : unreal.USceneComponent;

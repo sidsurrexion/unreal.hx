@@ -8,7 +8,7 @@ package unreal;
 /**
   Per-object settings for Lightmass
 **/
-@:glueCppIncludes("Lightmass/LightmassPrimitiveSettingsObject.h", "Engine.h")
+@:glueCppIncludes("Lightmass/LightmassPrimitiveSettingsObject.h")
 @:uextern extern class FLightmassPrimitiveSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassPrimitiveSettings>;
   

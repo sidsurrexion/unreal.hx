@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/ParticleModuleRequired.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleModuleRequired.h")
 @:uextern extern class FParticleBurst {
   @:uname('new') public static function create():PHaxeCreated<unreal.FParticleBurst>;
   

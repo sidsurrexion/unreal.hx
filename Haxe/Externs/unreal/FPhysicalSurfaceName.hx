@@ -8,7 +8,7 @@ package unreal;
 /**
   Structure that represents the name of physical surfaces.
 **/
-@:glueCppIncludes("PhysicsEngine/PhysicsSettings.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsSettings.h")
 @:uextern extern class FPhysicalSurfaceName {
   @:uname('new') public static function create():PHaxeCreated<unreal.FPhysicalSurfaceName>;
   public var Name : unreal.FName;

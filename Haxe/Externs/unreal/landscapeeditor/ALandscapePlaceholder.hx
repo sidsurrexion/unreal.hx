@@ -5,7 +5,7 @@
 package unreal.landscapeeditor;
 
 @:umodule("LandscapeEditor")
-@:glueCppIncludes("LandscapePlaceholder.h", "Engine.h")
+@:glueCppIncludes("LandscapePlaceholder.h")
 @:uextern extern class ALandscapePlaceholder extends unreal.AActor {
   
 }

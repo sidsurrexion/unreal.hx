@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Components/CanvasPanelSlot.h", "Engine.h")
+@:glueCppIncludes("Components/CanvasPanelSlot.h")
 @:uextern extern class UCanvasPanelSlot extends unreal.umg.UPanelSlot {
   
   /**

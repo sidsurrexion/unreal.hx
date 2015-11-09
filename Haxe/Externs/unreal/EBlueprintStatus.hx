@@ -8,7 +8,7 @@ package unreal;
 /**
   Enumerates states a blueprint can be in.
 **/
-@:glueCppIncludes("Engine/Blueprint.h", "Engine.h")
+@:glueCppIncludes("Engine/Blueprint.h")
 @:uname("EBlueprintStatus")
 @:uextern extern enum EBlueprintStatus {
   

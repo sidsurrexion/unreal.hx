@@ -9,7 +9,7 @@ package unreal;
   Helper struct, since UnrealScript doesn't allow arrays of arrays, but
   arrays of structs of arrays are okay.
 **/
-@:glueCppIncludes("Engine/PlatformInterfaceBase.h", "Engine.h")
+@:glueCppIncludes("Engine/PlatformInterfaceBase.h")
 @:uextern extern class FDelegateArray {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDelegateArray>;
   

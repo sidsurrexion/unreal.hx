@@ -8,7 +8,7 @@ package unreal;
 /**
   Information for one toggle in the track.
 **/
-@:glueCppIncludes("Matinee/InterpTrackVisibility.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackVisibility.h")
 @:uextern extern class FVisibilityTrackKey {
   @:uname('new') public static function create():PHaxeCreated<unreal.FVisibilityTrackKey>;
   

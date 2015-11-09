@@ -5,7 +5,7 @@
 package unreal.behaviortreeeditor;
 
 @:umodule("BehaviorTreeEditor")
-@:glueCppIncludes("BlackboardDataFactory.h", "Engine.h")
+@:glueCppIncludes("BlackboardDataFactory.h")
 @:uextern extern class UBlackboardDataFactory extends unreal.editor.UFactory {
   
 }

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/NavigationObjectBase.h", "Engine.h")
+@:glueCppIncludes("Engine/NavigationObjectBase.h")
 @:uextern extern class ANavigationObjectBase extends unreal.AActor implements unreal.INavAgentInterface {
   
   /**

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/EngineMessage.h", "Engine.h")
+@:glueCppIncludes("GameFramework/EngineMessage.h")
 @:uextern extern class UEngineMessage extends unreal.ULocalMessage {
   
   /**

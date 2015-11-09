@@ -8,7 +8,7 @@ package unreal;
 /**
   Entry for a delegate to assign after a blueprint has been instanced
 **/
-@:glueCppIncludes("Engine/ComponentDelegateBinding.h", "Engine.h")
+@:glueCppIncludes("Engine/ComponentDelegateBinding.h")
 @:uextern extern class FBlueprintComponentDelegateBinding {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBlueprintComponentDelegateBinding>;
   

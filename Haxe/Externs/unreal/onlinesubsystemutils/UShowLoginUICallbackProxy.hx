@@ -5,7 +5,7 @@
 package unreal.onlinesubsystemutils;
 
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("ShowLoginUICallbackProxy.h", "Engine.h")
+@:glueCppIncludes("ShowLoginUICallbackProxy.h")
 @:uextern extern class UShowLoginUICallbackProxy extends unreal.UBlueprintAsyncActionBase {
   
 }

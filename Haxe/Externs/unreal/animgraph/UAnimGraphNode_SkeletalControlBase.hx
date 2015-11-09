@@ -12,7 +12,7 @@ package unreal.animgraph;
   Concrete subclasses should contain a member struct derived from FAnimNode_SkeletalControlBase
 **/
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_SkeletalControlBase.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_SkeletalControlBase.h")
 @:uextern extern class UAnimGraphNode_SkeletalControlBase extends unreal.animgraph.UAnimGraphNode_Base {
   
 }

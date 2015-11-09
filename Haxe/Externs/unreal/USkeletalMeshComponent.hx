@@ -11,7 +11,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Content/Types/SkeletalMeshes/
   @see USkeletalMesh
 **/
-@:glueCppIncludes("Components/SkeletalMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SkeletalMeshComponent.h")
 @:uextern extern class USkeletalMeshComponent extends unreal.USkinnedMeshComponent implements unreal.IInterface_CollisionDataProvider {
   
   /**

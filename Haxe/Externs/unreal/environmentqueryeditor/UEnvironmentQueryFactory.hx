@@ -5,7 +5,7 @@
 package unreal.environmentqueryeditor;
 
 @:umodule("EnvironmentQueryEditor")
-@:glueCppIncludes("EnvironmentQueryFactory.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQueryFactory.h")
 @:uextern extern class UEnvironmentQueryFactory extends unreal.editor.UFactory {
   
 }

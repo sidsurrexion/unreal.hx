@@ -10,7 +10,7 @@ package unreal;
   NOTE!! Some of these values are used to index into FCollisionResponseContainers and must be kept in sync.
   @see FCollisionResponseContainer::SetResponse().
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uname("ECollisionChannel")
 @:uextern extern enum ECollisionChannel {
   

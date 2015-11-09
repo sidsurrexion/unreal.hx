@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct containing mappings for legacy method of binding keys to exec commands.
 **/
-@:glueCppIncludes("GameFramework/PlayerInput.h", "Engine.h")
+@:glueCppIncludes("GameFramework/PlayerInput.h")
 @:uextern extern class FKeyBind {
   @:uname('new') public static function create():PHaxeCreated<unreal.FKeyBind>;
   

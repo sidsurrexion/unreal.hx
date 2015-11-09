@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Preferences/LightmassOptionsObject.h", "Engine.h")
+@:glueCppIncludes("Preferences/LightmassOptionsObject.h")
 @:uextern extern class ULightmassOptionsObject extends unreal.UObject {
   public var SwarmSettings : unreal.FSwarmDebugOptions;
   public var DebugSettings : unreal.FLightmassDebugOptions;

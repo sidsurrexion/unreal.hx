@@ -9,7 +9,7 @@ package unreal.onlinesubsystemutils;
   A beacon host used for taking reservations for an existing game session
 **/
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("PartyBeaconState.h", "Engine.h")
+@:glueCppIncludes("PartyBeaconState.h")
 @:uextern extern class UPartyBeaconState extends unreal.UObject {
   
   /**

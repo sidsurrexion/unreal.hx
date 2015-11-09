@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/ParticleLODLevel.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleLODLevel.h")
 @:uextern extern class UParticleLODLevel extends unreal.UObject {
   public var PeakActiveParticles : unreal.Int32;
   public var ConvertedModules : Bool;

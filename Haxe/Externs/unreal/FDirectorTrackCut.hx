@@ -8,7 +8,7 @@ package unreal;
 /**
   Information for one cut in this track.
 **/
-@:glueCppIncludes("Matinee/InterpTrackDirector.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackDirector.h")
 @:uextern extern class FDirectorTrackCut {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDirectorTrackCut>;
   

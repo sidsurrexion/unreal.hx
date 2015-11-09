@@ -5,7 +5,7 @@
 package unreal.functionaltesting;
 
 @:umodule("FunctionalTesting")
-@:glueCppIncludes("FunctionalAITest.h", "Engine.h")
+@:glueCppIncludes("FunctionalAITest.h")
 @:uextern extern class AFunctionalAITest extends unreal.functionaltesting.AFunctionalTest {
   private var PendingDelayedSpawns : unreal.TArray<unreal.functionaltesting.FPendingDelayedSpawn>;
   private var SpawnedPawns : unreal.TArray<unreal.APawn>;

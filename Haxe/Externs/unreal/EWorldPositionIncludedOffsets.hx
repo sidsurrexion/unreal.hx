@@ -8,7 +8,7 @@ package unreal;
 /**
   Specifies which shader generated offsets should included in the world position (displacement/WPO etc.)
 **/
-@:glueCppIncludes("Materials/MaterialExpressionWorldPosition.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionWorldPosition.h")
 @:uname("EWorldPositionIncludedOffsets")
 @:uextern extern enum EWorldPositionIncludedOffsets {
   

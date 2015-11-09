@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AnimGraphNode_LayeredBoneBlend.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_LayeredBoneBlend.h")
 @:uname("ECurveBlendOption.Type")
 @:uextern extern enum ECurveBlendOption {
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/Skeleton.h", "Engine.h")
+@:glueCppIncludes("Animation/Skeleton.h")
 @:uextern extern class FSmartNameContainer {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSmartNameContainer>;
   

@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Binding/Int32Binding.h", "Engine.h")
+@:glueCppIncludes("Binding/Int32Binding.h")
 @:uextern extern class UInt32Binding extends unreal.umg.UPropertyBinding {
   
 }

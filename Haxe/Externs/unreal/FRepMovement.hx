@@ -10,7 +10,7 @@ package unreal;
   Struct used for efficient replication as velocity and location are generally replicated together (this saves a repindex)
   and velocity.Z is commonly zero (most position replications are for walking pawns).
 **/
-@:glueCppIncludes("GameFramework/Actor.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Actor.h")
 @:uextern extern class FRepMovement {
   @:uname('new') public static function create():PHaxeCreated<unreal.FRepMovement>;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionTextureCoordinate.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionTextureCoordinate.h")
 @:uextern extern class UMaterialExpressionTextureCoordinate extends unreal.UMaterialExpression {
   public var UnMirrorV : Bool;
   

@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Perception/AISense_Blueprint.h", "Engine.h")
+@:glueCppIncludes("Perception/AISense_Blueprint.h")
 @:uextern extern class UAISense_Blueprint extends unreal.aimodule.UAISense {
   private var UnprocessedEvents : unreal.TArray<unreal.aimodule.UAISenseEvent>;
   private var ListenerContainer : unreal.TArray<unreal.aimodule.UAIPerceptionComponent>;

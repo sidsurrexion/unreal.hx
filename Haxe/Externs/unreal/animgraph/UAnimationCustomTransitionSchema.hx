@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimationCustomTransitionSchema.h", "Engine.h")
+@:glueCppIncludes("AnimationCustomTransitionSchema.h")
 @:uextern extern class UAnimationCustomTransitionSchema extends unreal.animgraph.UAnimationGraphSchema {
   
 }

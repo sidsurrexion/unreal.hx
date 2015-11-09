@@ -8,7 +8,7 @@ package unreal;
 /**
   Actor that provides a directional wind source. Only affects SpeedTree assets.
 **/
-@:glueCppIncludes("Engine/WindDirectionalSource.h", "Engine.h")
+@:glueCppIncludes("Engine/WindDirectionalSource.h")
 @:uextern extern class AWindDirectionalSource extends unreal.AInfo {
   #if WITH_EDITORONLY_DATA
   public var ArrowComponent : unreal.UArrowComponent;

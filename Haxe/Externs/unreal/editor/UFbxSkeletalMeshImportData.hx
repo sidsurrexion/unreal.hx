@@ -9,7 +9,7 @@ package unreal.editor;
   Import data and options used when importing a static mesh from fbx
 **/
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/FbxSkeletalMeshImportData.h", "Engine.h")
+@:glueCppIncludes("Factories/FbxSkeletalMeshImportData.h")
 @:uextern extern class UFbxSkeletalMeshImportData extends unreal.editor.UFbxMeshImportData {
   
   /**

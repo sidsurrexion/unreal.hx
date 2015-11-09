@@ -5,7 +5,7 @@
 package unreal.blutility;
 
 @:umodule("Blutility")
-@:glueCppIncludes("EditorUtilityBlueprint.h", "Engine.h")
+@:glueCppIncludes("EditorUtilityBlueprint.h")
 @:uextern extern class UEditorUtilityBlueprint extends unreal.UBlueprint {
   
 }

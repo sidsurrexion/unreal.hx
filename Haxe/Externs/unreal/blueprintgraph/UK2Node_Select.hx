@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_Select.h", "Engine.h")
+@:glueCppIncludes("K2Node_Select.h")
 @:uextern extern class UK2Node_Select extends unreal.blueprintgraph.UK2Node implements unreal.blueprintgraph.INodeDependingOnEnumInterface {
   
   /**

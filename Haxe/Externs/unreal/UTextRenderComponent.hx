@@ -8,7 +8,7 @@ package unreal;
 /**
   Renders text in the world with given font. Contains usual font related attributes such as Scale, Alignment, Color etc.
 **/
-@:glueCppIncludes("Components/TextRenderComponent.h", "Engine.h")
+@:glueCppIncludes("Components/TextRenderComponent.h")
 @:uextern extern class UTextRenderComponent extends unreal.UPrimitiveComponent {
   
   /**

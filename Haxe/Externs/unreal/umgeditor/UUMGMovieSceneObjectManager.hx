@@ -9,7 +9,7 @@ package unreal.umgeditor;
   Movie scene object manager used by Sequencer.
 **/
 @:umodule("UMGEditor")
-@:glueCppIncludes("Private/Animation/UMGMovieSceneObjectManager.h", "Engine.h")
+@:glueCppIncludes("Private/Animation/UMGMovieSceneObjectManager.h")
 @:uextern extern class UUMGMovieSceneObjectManager extends unreal.UObject implements unreal.moviescene.IMovieSceneObjectManager {
   
 }

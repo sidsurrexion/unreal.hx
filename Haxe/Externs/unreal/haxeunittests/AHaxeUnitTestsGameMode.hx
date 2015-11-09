@@ -5,7 +5,7 @@
 package unreal.haxeunittests;
 
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("HaxeUnitTestsGameMode.h", "Engine.h")
+@:glueCppIncludes("HaxeUnitTestsGameMode.h")
 @:uextern extern class AHaxeUnitTestsGameMode extends unreal.AGameMode {
   
 }

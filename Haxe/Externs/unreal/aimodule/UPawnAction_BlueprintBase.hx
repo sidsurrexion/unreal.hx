@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Actions/PawnAction_BlueprintBase.h", "Engine.h")
+@:glueCppIncludes("Actions/PawnAction_BlueprintBase.h")
 @:uextern extern class UPawnAction_BlueprintBase extends unreal.aimodule.UPawnAction {
   
 }

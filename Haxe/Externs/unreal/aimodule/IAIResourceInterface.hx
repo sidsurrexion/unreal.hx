@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("AIResourceInterface.h", "Engine.h")
+@:glueCppIncludes("AIResourceInterface.h")
 @:uextern extern interface IAIResourceInterface {
   
 }

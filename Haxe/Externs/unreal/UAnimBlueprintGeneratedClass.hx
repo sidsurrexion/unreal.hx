@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h")
 @:uextern extern class UAnimBlueprintGeneratedClass extends unreal.UBlueprintGeneratedClass {
   
   /**

@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   Movie shots are sections on the shots track, that show what the viewer "sees"
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Sections/MovieSceneShotSection.h", "Engine.h")
+@:glueCppIncludes("Sections/MovieSceneShotSection.h")
 @:uextern extern class UMovieSceneShotSection extends unreal.moviescenetracks.USubMovieSceneSection {
   
 }

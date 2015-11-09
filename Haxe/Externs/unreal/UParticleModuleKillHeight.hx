@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Kill/ParticleModuleKillHeight.h", "Engine.h")
+@:glueCppIncludes("Particles/Kill/ParticleModuleKillHeight.h")
 @:uextern extern class UParticleModuleKillHeight extends unreal.UParticleModuleKillBase {
   
   /**

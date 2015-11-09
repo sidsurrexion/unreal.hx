@@ -9,7 +9,7 @@ package unreal;
   Subsurface Scattering profile asset, can be specified at the material. Only for "Subsurface Profile" materials, is use during Screenspace Subsurface Scattering
   Don't change at runtime. All properties in here are per material - texture like variations need to come from properties that are in the GBuffer.
 **/
-@:glueCppIncludes("Engine/SubsurfaceProfile.h", "Engine.h")
+@:glueCppIncludes("Engine/SubsurfaceProfile.h")
 @:uextern extern class USubsurfaceProfile extends unreal.UObject {
   public var Settings : unreal.FSubsurfaceProfileStruct;
   

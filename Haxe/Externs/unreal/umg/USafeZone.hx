@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Components/SafeZone.h", "Engine.h")
+@:glueCppIncludes("Components/SafeZone.h")
 @:uextern extern class USafeZone extends unreal.umg.UContentWidget {
   
 }

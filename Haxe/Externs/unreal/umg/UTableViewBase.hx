@@ -9,7 +9,7 @@ package unreal.umg;
   The base class for all wrapped table views
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/TableViewBase.h", "Engine.h")
+@:glueCppIncludes("Components/TableViewBase.h")
 @:uextern extern class UTableViewBase extends unreal.umg.UWidget {
   
 }

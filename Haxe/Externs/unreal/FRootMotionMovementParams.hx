@@ -8,7 +8,7 @@ package unreal;
 /**
   Utility struct to accumulate root motion.
 **/
-@:glueCppIncludes("GameFramework/Character.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Character.h")
 @:uextern extern class FRootMotionMovementParams {
   @:uname('new') public static function create():PHaxeCreated<unreal.FRootMotionMovementParams>;
   public var RootMotionTransform : unreal.FTransform;

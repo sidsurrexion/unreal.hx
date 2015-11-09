@@ -8,7 +8,7 @@ package unreal;
 /**
   Unique handle that can be used to distinguish timers that have identical delegates.
 **/
-@:glueCppIncludes("Engine.h", "Engine.h")
+@:glueCppIncludes("Engine.h")
 @:uextern extern class FTimerHandle {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTimerHandle>;
   

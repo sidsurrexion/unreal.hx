@@ -9,7 +9,7 @@ package unreal;
   Custom Scaling Rules for Slate and UMG Widgets can be implemented by sub-classing from this class
   and setting this rule to be used in your project settings.
 **/
-@:glueCppIncludes("Engine/DPICustomScalingRule.h", "Engine.h")
+@:glueCppIncludes("Engine/DPICustomScalingRule.h")
 @:uextern extern class UDPICustomScalingRule extends unreal.UObject {
   
 }

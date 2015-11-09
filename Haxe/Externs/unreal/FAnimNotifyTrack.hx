@@ -8,7 +8,7 @@ package unreal;
 /**
   Keyframe position data for one track.  Pos(i) occurs at Time(i).  Pos.Num() always equals Time.Num().
 **/
-@:glueCppIncludes("Animation/AnimSequenceBase.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSequenceBase.h")
 @:uextern extern class FAnimNotifyTrack {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNotifyTrack>;
   public var TrackColor : unreal.FLinearColor;

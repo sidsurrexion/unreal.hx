@@ -5,7 +5,7 @@
 package unreal.geometrymode;
 
 @:umodule("GeometryMode")
-@:glueCppIncludes("GeomModifier_Weld.h", "Engine.h")
+@:glueCppIncludes("GeomModifier_Weld.h")
 @:uextern extern class UGeomModifier_Weld extends unreal.geometrymode.UGeomModifier_Edit {
   
 }

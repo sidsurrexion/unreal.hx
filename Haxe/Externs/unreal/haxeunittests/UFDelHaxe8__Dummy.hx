@@ -9,7 +9,7 @@ package unreal.haxeunittests;
   added as workaround for UHT, otherwise it won't recognize this file.
 **/
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("FDelHaxe8.h", "Engine.h")
+@:glueCppIncludes("FDelHaxe8.h")
 @:uextern extern class UFDelHaxe8__Dummy extends unreal.UObject {
   
 }

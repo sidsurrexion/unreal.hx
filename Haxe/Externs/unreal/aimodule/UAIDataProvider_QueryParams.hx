@@ -13,7 +13,7 @@ package unreal.aimodule;
   for every query execution.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("DataProviders/AIDataProvider_QueryParams.h", "Engine.h")
+@:glueCppIncludes("DataProviders/AIDataProvider_QueryParams.h")
 @:uextern extern class UAIDataProvider_QueryParams extends unreal.aimodule.UAIDataProvider {
   public var BoolValue : Bool;
   public var IntValue : unreal.Int32;

@@ -9,7 +9,7 @@ package unreal.newsfeed;
   Holds the settings for the news feed.
 **/
 @:umodule("NewsFeed")
-@:glueCppIncludes("Private/Implementation/NewsFeedSettings.h", "Engine.h")
+@:glueCppIncludes("Private/Implementation/NewsFeedSettings.h")
 @:uextern extern class UNewsFeedSettings extends unreal.UObject {
   
   /**

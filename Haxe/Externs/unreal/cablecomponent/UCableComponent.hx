@@ -9,7 +9,7 @@ package unreal.cablecomponent;
   Component that allows you to specify custom triangle mesh geometry
 **/
 @:umodule("CableComponent")
-@:glueCppIncludes("CableComponent.h", "Engine.h")
+@:glueCppIncludes("CableComponent.h")
 @:uextern extern class UCableComponent extends unreal.UMeshComponent {
   
   /**

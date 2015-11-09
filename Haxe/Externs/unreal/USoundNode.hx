@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundNode.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNode.h")
 @:uextern extern class USoundNode extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   

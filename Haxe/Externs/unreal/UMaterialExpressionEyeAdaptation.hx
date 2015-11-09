@@ -8,7 +8,7 @@ package unreal;
 /**
   Provides access to the EyeAdaptation render target.
 **/
-@:glueCppIncludes("Materials/MaterialExpressionEyeAdaptation.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionEyeAdaptation.h")
 @:uextern extern class UMaterialExpressionEyeAdaptation extends unreal.UMaterialExpression {
   
 }

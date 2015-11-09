@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Distributions/DistributionVectorParameterBase.h", "Engine.h")
+@:glueCppIncludes("Distributions/DistributionVectorParameterBase.h")
 @:uextern extern class UDistributionVectorParameterBase extends unreal.UDistributionVectorConstant {
   public var MaxOutput : unreal.FVector;
   public var MinOutput : unreal.FVector;

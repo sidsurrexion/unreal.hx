@@ -8,7 +8,7 @@ package unreal;
 /**
   Crossfades between different sounds based on a parameter
 **/
-@:glueCppIncludes("Sound/SoundNodeParamCrossFade.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeParamCrossFade.h")
 @:uextern extern class USoundNodeParamCrossFade extends unreal.USoundNodeDistanceCrossFade {
   
   /**

@@ -12,7 +12,7 @@ package unreal.umg;
   ● Spinner Progress
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/CircularThrobber.h", "Engine.h")
+@:glueCppIncludes("Components/CircularThrobber.h")
 @:uextern extern class UCircularThrobber extends unreal.umg.UWidget {
   public var Image : unreal.slatecore.FSlateBrush;
   

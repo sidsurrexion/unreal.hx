@@ -10,7 +10,7 @@ package unreal;
   
   Base class for raw (baked out) Distribution type
 **/
-@:glueCppIncludes("Particles/ParticleModuleRequired.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleModuleRequired.h")
 @:uextern extern class FRawDistribution {
   @:uname('new') public static function create():PHaxeCreated<unreal.FRawDistribution>;
   

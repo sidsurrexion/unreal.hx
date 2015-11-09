@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/ResavePackagesCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/ResavePackagesCommandlet.h")
 @:uextern extern class UResavePackagesCommandlet extends unreal.UCommandlet {
   
 }

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/MatineeInterface.h", "Engine.h")
+@:glueCppIncludes("Matinee/MatineeInterface.h")
 @:uextern extern interface IMatineeInterface {
   
 }

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("VectorField/VectorFieldAnimated.h", "Engine.h")
+@:glueCppIncludes("VectorField/VectorFieldAnimated.h")
 @:uextern extern class UVectorFieldAnimated extends unreal.UVectorField {
   
   /**

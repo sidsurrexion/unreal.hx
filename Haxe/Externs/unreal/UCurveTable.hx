@@ -8,7 +8,7 @@ package unreal;
 /**
   Imported spreadsheet table as curves.
 **/
-@:glueCppIncludes("Engine/CurveTable.h", "Engine.h")
+@:glueCppIncludes("Engine/CurveTable.h")
 @:uextern extern class UCurveTable extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   

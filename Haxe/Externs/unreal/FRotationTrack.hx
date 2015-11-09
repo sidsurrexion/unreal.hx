@@ -8,7 +8,7 @@ package unreal;
 /**
   Keyframe rotation data for one track.  Rot(i) occurs at Time(i).  Rot.Num() always equals Time.Num().
 **/
-@:glueCppIncludes("Animation/AnimSequence.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSequence.h")
 @:uextern extern class FRotationTrack {
   @:uname('new') public static function create():PHaxeCreated<unreal.FRotationTrack>;
   public var Times : unreal.TArray<unreal.Float32>;

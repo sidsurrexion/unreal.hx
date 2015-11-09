@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Binding/FloatBinding.h", "Engine.h")
+@:glueCppIncludes("Binding/FloatBinding.h")
 @:uextern extern class UFloatBinding extends unreal.umg.UPropertyBinding {
   
 }

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/PlatformInterfaceWebResponse.h", "Engine.h")
+@:glueCppIncludes("Engine/PlatformInterfaceWebResponse.h")
 @:uextern extern class UPlatformInterfaceWebResponse extends unreal.UObject {
   
   /**

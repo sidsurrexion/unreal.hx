@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_ActorsOfClass.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_ActorsOfClass.h")
 @:uextern extern class UEnvQueryGenerator_ActorsOfClass extends unreal.aimodule.UEnvQueryGenerator {
   
   /**

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Debug/LogVisualizerCameraController.h", "Engine.h")
+@:glueCppIncludes("Debug/LogVisualizerCameraController.h")
 @:uextern extern class ALogVisualizerCameraController extends unreal.ADebugCameraController {
   public var PickedActor : unreal.AActor;
   

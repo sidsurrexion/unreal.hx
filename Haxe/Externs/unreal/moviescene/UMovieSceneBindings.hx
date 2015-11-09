@@ -9,7 +9,7 @@ package unreal.moviescene;
   MovieSceneBindings.  Contains the relationship between MovieScene possessables and actual objects being possessed.
 **/
 @:umodule("MovieScene")
-@:glueCppIncludes("MovieSceneBindings.h", "Engine.h")
+@:glueCppIncludes("MovieSceneBindings.h")
 @:uextern extern class UMovieSceneBindings extends unreal.UObject {
   
 }

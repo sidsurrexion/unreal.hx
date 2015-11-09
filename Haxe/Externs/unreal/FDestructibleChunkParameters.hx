@@ -8,7 +8,7 @@ package unreal;
 /**
   Per-chunk authoring data.
 **/
-@:glueCppIncludes("Engine/DestructibleFractureSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/DestructibleFractureSettings.h")
 @:uextern extern class FDestructibleChunkParameters {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleChunkParameters>;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataMesh.h", "Engine.h")
+@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataMesh.h")
 @:uextern extern class UParticleModuleTypeDataMesh extends unreal.UParticleModuleTypeDataBase {
   
   /**

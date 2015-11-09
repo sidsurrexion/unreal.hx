@@ -5,7 +5,7 @@
 package unreal.cascade;
 
 @:umodule("Cascade")
-@:glueCppIncludes("CascadeConfiguration.h", "Engine.h")
+@:glueCppIncludes("CascadeConfiguration.h")
 @:uextern extern class UCascadeConfiguration extends unreal.UObject {
   
   /**

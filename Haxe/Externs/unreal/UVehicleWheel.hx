@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Vehicles/VehicleWheel.h", "Engine.h")
+@:glueCppIncludes("Vehicles/VehicleWheel.h")
 @:uextern extern class UVehicleWheel extends unreal.UObject {
   
   /**

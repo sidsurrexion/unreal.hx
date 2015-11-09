@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/BlueprintCore.h", "Engine.h")
+@:glueCppIncludes("Engine/BlueprintCore.h")
 @:uextern extern class UBlueprintCore extends unreal.UObject {
   
   /**

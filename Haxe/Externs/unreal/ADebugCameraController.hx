@@ -12,7 +12,7 @@ package unreal;
   or use the "ToggleDebugCamera" console command. Check the debug camera bindings
   in DefaultPawn.cpp for the camera controls.
 **/
-@:glueCppIncludes("Engine/DebugCameraController.h", "Engine.h")
+@:glueCppIncludes("Engine/DebugCameraController.h")
 @:uextern extern class ADebugCameraController extends unreal.APlayerController {
   
   /**

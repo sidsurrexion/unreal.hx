@@ -5,7 +5,7 @@
 package unreal.behaviortreeeditor;
 
 @:umodule("BehaviorTreeEditor")
-@:glueCppIncludes("BehaviorTreeEditorTypes.h", "Engine.h")
+@:glueCppIncludes("BehaviorTreeEditorTypes.h")
 @:uextern extern class UBehaviorTreeEditorTypes extends unreal.UObject {
   
 }

@@ -8,7 +8,7 @@ package unreal;
 /**
   Tick function that calls UPrimitiveComponent::PostPhysicsTick
 **/
-@:glueCppIncludes("Components/PrimitiveComponent.h", "Engine.h")
+@:glueCppIncludes("Components/PrimitiveComponent.h")
 @:uextern extern class FPrimitiveComponentPostPhysicsTickFunction extends unreal.FTickFunction {
   @:uname('new') public static function create():PHaxeCreated<unreal.FPrimitiveComponentPostPhysicsTickFunction>;
   

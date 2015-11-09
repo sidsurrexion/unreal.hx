@@ -12,7 +12,7 @@ package unreal.gameplaytags;
   This query representation is not intended for runtime use.
 **/
 @:umodule("GameplayTags")
-@:glueCppIncludes("GameplayTagContainer.h", "Engine.h")
+@:glueCppIncludes("GameplayTagContainer.h")
 @:uextern extern class UEditableGameplayTagQuery extends unreal.UObject {
   
   /**

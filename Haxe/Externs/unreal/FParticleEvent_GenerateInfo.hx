@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Event/ParticleModuleEventGenerator.h", "Engine.h")
+@:glueCppIncludes("Particles/Event/ParticleModuleEventGenerator.h")
 @:uextern extern class FParticleEvent_GenerateInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FParticleEvent_GenerateInfo>;
   

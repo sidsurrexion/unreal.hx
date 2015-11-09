@@ -10,7 +10,7 @@ package unreal.proceduralmeshcomponent;
   Beware! This feature is experimental and may be substantially changed in future releases.
 **/
 @:umodule("ProceduralMeshComponent")
-@:glueCppIncludes("ProceduralMeshComponent.h", "Engine.h")
+@:glueCppIncludes("ProceduralMeshComponent.h")
 @:uextern extern class UProceduralMeshComponent extends unreal.UMeshComponent implements unreal.IInterface_CollisionDataProvider {
   
   /**

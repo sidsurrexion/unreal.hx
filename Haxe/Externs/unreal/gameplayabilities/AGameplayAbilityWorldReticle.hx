@@ -9,7 +9,7 @@ package unreal.gameplayabilities;
   Reticles allow targeting to be visualized. Tasks can spawn these. Artists/designers can create BPs for these.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/GameplayAbilityWorldReticle.h", "Engine.h")
+@:glueCppIncludes("Abilities/GameplayAbilityWorldReticle.h")
 @:uextern extern class AGameplayAbilityWorldReticle extends unreal.AActor {
   
   /**

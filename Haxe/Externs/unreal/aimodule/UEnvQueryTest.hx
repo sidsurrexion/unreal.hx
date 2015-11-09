@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("EnvironmentQuery/EnvQueryTest.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQuery/EnvQueryTest.h")
 @:uextern extern class UEnvQueryTest extends unreal.aimodule.UEnvQueryNode {
   
   /**

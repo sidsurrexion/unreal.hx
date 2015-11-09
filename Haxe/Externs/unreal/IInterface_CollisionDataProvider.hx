@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Interfaces/Interface_CollisionDataProvider.h", "Engine.h")
+@:glueCppIncludes("Interfaces/Interface_CollisionDataProvider.h")
 @:uextern extern interface IInterface_CollisionDataProvider {
   
 }

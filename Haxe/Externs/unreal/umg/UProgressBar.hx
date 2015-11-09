@@ -11,7 +11,7 @@ package unreal.umg;
   ● No Children
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/ProgressBar.h", "Engine.h")
+@:glueCppIncludes("Components/ProgressBar.h")
 @:uextern extern class UProgressBar extends unreal.umg.UWidget {
   
   /**

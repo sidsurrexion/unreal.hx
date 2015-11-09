@@ -8,7 +8,7 @@ package unreal;
 /**
   Skinned Mesh Update Flag based on rendered or not.
 **/
-@:glueCppIncludes("Components/SkinnedMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SkinnedMeshComponent.h")
 @:uname("EMeshComponentUpdateFlag.Type")
 @:uextern extern enum EMeshComponentUpdateFlag {
   

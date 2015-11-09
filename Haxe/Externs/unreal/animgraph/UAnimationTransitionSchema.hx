@@ -9,7 +9,7 @@ package unreal.animgraph;
   This class is the schema for transition rule graphs in animation state machines
 **/
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimationTransitionSchema.h", "Engine.h")
+@:glueCppIncludes("AnimationTransitionSchema.h")
 @:uextern extern class UAnimationTransitionSchema extends unreal.blueprintgraph.UEdGraphSchema_K2 {
   
 }

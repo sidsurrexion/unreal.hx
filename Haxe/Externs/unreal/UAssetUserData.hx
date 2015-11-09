@@ -8,7 +8,7 @@ package unreal;
 /**
   Object that can be subclassed to store custom data on Unreal asset objects.
 **/
-@:glueCppIncludes("Engine/AssetUserData.h", "Engine.h")
+@:glueCppIncludes("Engine/AssetUserData.h")
 @:uextern extern class UAssetUserData extends unreal.UObject {
   
 }

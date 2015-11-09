@@ -10,7 +10,7 @@ package unreal.aimodule;
   with paths to/from context no further than given limit
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_PathingGrid.h", "Engine.h")
+@:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_PathingGrid.h")
 @:uextern extern class UEnvQueryGenerator_PathingGrid extends unreal.aimodule.UEnvQueryGenerator_SimpleGrid {
   
   /**

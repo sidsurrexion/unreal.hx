@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("MaterialGraph/MaterialGraph.h", "Engine.h")
+@:glueCppIncludes("MaterialGraph/MaterialGraph.h")
 @:uextern extern class UMaterialGraph extends unreal.UEdGraph {
   
   /**

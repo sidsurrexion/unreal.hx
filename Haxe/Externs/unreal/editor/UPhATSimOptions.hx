@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Preferences/PhATSimOptions.h", "Engine.h")
+@:glueCppIncludes("Preferences/PhATSimOptions.h")
 @:uextern extern class UPhATSimOptions extends unreal.UObject {
   
   /**

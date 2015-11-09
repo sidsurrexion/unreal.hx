@@ -8,7 +8,7 @@ package unreal;
 /**
   Configurable properties for control axes, used to transform raw input into game ready values.
 **/
-@:glueCppIncludes("GameFramework/InputSettings.h", "Engine.h")
+@:glueCppIncludes("GameFramework/InputSettings.h")
 @:uextern extern class FInputAxisProperties {
   @:uname('new') public static function create():PHaxeCreated<unreal.FInputAxisProperties>;
   

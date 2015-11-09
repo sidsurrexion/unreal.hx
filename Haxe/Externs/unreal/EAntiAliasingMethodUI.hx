@@ -8,7 +8,7 @@ package unreal;
 /**
   used by FPostProcessSettings Anti-aliasing
 **/
-@:glueCppIncludes("Engine/RendererSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/RendererSettings.h")
 @:uname("EAntiAliasingMethodUI.Type")
 @:uextern extern enum EAntiAliasingMethodUI {
   

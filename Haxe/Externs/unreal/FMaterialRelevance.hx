@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/ParticleSystemComponent.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleSystemComponent.h")
 @:uextern extern class FMaterialRelevance {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialRelevance>;
   public var ShadingModelMask : unreal.UInt16;

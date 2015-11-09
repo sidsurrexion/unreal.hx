@@ -8,7 +8,7 @@ package unreal;
 /**
   Container for an aggregate of 2D collision shapes
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup2D.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup2D.h")
 @:uextern extern class FAggregateGeometry2D {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAggregateGeometry2D>;
   public var ConvexElements : unreal.TArray<unreal.FConvexElement2D>;

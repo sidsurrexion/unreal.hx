@@ -5,7 +5,7 @@
 package unreal.gameplaytagseditor;
 
 @:umodule("GameplayTagsEditor")
-@:glueCppIncludes("GameplayTagsK2Node_MultiCompareBase.h", "Engine.h")
+@:glueCppIncludes("GameplayTagsK2Node_MultiCompareBase.h")
 @:uextern extern class UGameplayTagsK2Node_MultiCompareBase extends unreal.blueprintgraph.UK2Node {
   public var PinNames : unreal.TArray<unreal.FName>;
   public var NumberOfPins : unreal.Int32;

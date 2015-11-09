@@ -5,7 +5,7 @@
 package unreal.onlinesubsystemutils;
 
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("FindSessionsCallbackProxy.h", "Engine.h")
+@:glueCppIncludes("FindSessionsCallbackProxy.h")
 @:uextern extern class UFindSessionsCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
   
 }

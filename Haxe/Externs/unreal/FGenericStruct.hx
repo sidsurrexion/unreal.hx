@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine.h", "Engine.h")
+@:glueCppIncludes("Engine.h")
 @:uextern extern class FGenericStruct {
   @:uname('new') public static function create():PHaxeCreated<unreal.FGenericStruct>;
   public var Data : unreal.Int32;

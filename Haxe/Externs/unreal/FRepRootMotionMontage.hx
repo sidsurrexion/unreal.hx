@@ -8,7 +8,7 @@ package unreal;
 /**
   Replicated data when playing a root motion montage.
 **/
-@:glueCppIncludes("GameFramework/Character.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Character.h")
 @:uextern extern class FRepRootMotionMontage {
   @:uname('new') public static function create():PHaxeCreated<unreal.FRepRootMotionMontage>;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Camera/CameraAnimInst.h", "Engine.h")
+@:glueCppIncludes("Camera/CameraAnimInst.h")
 @:uextern extern class UCameraAnimInst extends unreal.UObject {
   public var PlaySpace : unreal.ECameraAnimPlaySpace;
   public var MoveInst : unreal.UInterpTrackInstMove;

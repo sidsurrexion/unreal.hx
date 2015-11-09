@@ -5,7 +5,7 @@
 package unreal.onlinesubsystem;
 
 @:umodule("OnlineSubsystem")
-@:glueCppIncludes("Interfaces/TurnBasedMatchInterface.h", "Engine.h")
+@:glueCppIncludes("Interfaces/TurnBasedMatchInterface.h")
 @:uextern extern interface ITurnBasedMatchInterface {
   
 }

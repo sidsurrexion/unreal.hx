@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/Light.h", "Engine.h")
+@:glueCppIncludes("Engine/Light.h")
 @:uextern extern class ALight extends unreal.AActor {
   
   /**

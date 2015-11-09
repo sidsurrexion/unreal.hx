@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/AudioSettings.h", "Engine.h")
+@:glueCppIncludes("Sound/AudioSettings.h")
 @:uextern extern class FAudioQualitySettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAudioQualitySettings>;
   

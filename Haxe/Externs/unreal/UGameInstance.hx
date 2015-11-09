@@ -11,7 +11,7 @@ package unreal;
   Running as a standalone game, there will be one of these.
   Running in PIE (play-in-editor) will generate one of these per PIE instance.
 **/
-@:glueCppIncludes("Engine/GameInstance.h", "Engine.h")
+@:glueCppIncludes("Engine/GameInstance.h")
 @:uextern extern class UGameInstance extends unreal.UObject {
   
   /**

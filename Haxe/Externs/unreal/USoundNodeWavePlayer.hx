@@ -8,7 +8,7 @@ package unreal;
 /**
   Sound node that contains a reference to the raw wave file to be played
 **/
-@:glueCppIncludes("Sound/SoundNodeWavePlayer.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeWavePlayer.h")
 @:uextern extern class USoundNodeWavePlayer extends unreal.USoundNodeAssetReferencer {
   public var bLooping : Bool;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Per-light settings for Lightmass
 **/
-@:glueCppIncludes("Components/DirectionalLightComponent.h", "Engine.h")
+@:glueCppIncludes("Components/DirectionalLightComponent.h")
 @:uextern extern class FLightmassLightSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassLightSettings>;
   

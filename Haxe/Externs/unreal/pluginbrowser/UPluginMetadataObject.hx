@@ -9,7 +9,7 @@ package unreal.pluginbrowser;
   We use this object to display plugin properties using details view.
 **/
 @:umodule("PluginBrowser")
-@:glueCppIncludes("Private/PluginMetadataObject.h", "Engine.h")
+@:glueCppIncludes("Private/PluginMetadataObject.h")
 @:uextern extern class UPluginMetadataObject extends unreal.UObject {
   
   /**

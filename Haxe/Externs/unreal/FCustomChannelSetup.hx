@@ -8,7 +8,7 @@ package unreal;
 /**
   Structure for custom channel setup information.
 **/
-@:glueCppIncludes("Engine/CollisionProfile.h", "Engine.h")
+@:glueCppIncludes("Engine/CollisionProfile.h")
 @:uextern extern class FCustomChannelSetup {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCustomChannelSetup>;
   

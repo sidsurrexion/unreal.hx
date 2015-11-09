@@ -8,7 +8,7 @@ package unreal;
 /**
   Parameters that are less-often used.
 **/
-@:glueCppIncludes("Engine/DestructibleMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleAdvancedParameters {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleAdvancedParameters>;
   

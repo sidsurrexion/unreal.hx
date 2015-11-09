@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/TextureCubeThumbnailRenderer.h", "Engine.h")
+@:glueCppIncludes("Factories/TextureCubeThumbnailRenderer.h")
 @:uextern extern class UTextureCubeThumbnailRenderer extends unreal.editor.UTextureThumbnailRenderer {
   
 }

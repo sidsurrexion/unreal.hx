@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Kismet/GameplayStatics.h", "Engine.h")
+@:glueCppIncludes("Kismet/GameplayStatics.h")
 @:uextern extern class UGameplayStatics extends unreal.UBlueprintFunctionLibrary {
   
 }

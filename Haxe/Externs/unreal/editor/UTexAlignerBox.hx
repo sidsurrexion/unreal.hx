@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("TexAligner/TexAlignerBox.h", "Engine.h")
+@:glueCppIncludes("TexAligner/TexAlignerBox.h")
 @:uextern extern class UTexAlignerBox extends unreal.editor.UTexAligner {
   
 }

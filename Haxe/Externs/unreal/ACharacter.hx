@@ -13,7 +13,7 @@ package unreal;
   @see APawn, UCharacterMovementComponent
   @see https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Pawn/Character/
 **/
-@:glueCppIncludes("GameFramework/Character.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Character.h")
 @:uextern extern class ACharacter extends unreal.APawn {
   
   /**

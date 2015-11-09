@@ -5,7 +5,7 @@
 package unreal.haxeunittests;
 
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("TemplatesDef.h", "Engine.h")
+@:glueCppIncludes("TemplatesDef.h")
 @:uextern extern class UTemplatesDef extends unreal.UObject {
   
 }

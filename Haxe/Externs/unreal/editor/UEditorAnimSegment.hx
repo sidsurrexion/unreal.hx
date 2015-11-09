@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Animation/EditorAnimSegment.h", "Engine.h")
+@:glueCppIncludes("Animation/EditorAnimSegment.h")
 @:uextern extern class UEditorAnimSegment extends unreal.editor.UEditorAnimBaseObj {
   
   /**

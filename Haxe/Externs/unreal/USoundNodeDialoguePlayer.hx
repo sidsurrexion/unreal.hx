@@ -8,7 +8,7 @@ package unreal;
 /**
   Sound node that contains a reference to the dialogue table to pull from and be played
 **/
-@:glueCppIncludes("Sound/SoundNodeDialoguePlayer.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeDialoguePlayer.h")
 @:uextern extern class USoundNodeDialoguePlayer extends unreal.USoundNode {
   
   /**

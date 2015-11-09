@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Settings/EditorSettings.h", "Engine.h")
+@:glueCppIncludes("Settings/EditorSettings.h")
 @:uextern extern class UEditorSettings extends unreal.UObject {
   public var AutoScalabilityWorkScaleAmount : unreal.Float32;
   

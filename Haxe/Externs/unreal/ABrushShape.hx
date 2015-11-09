@@ -8,7 +8,7 @@ package unreal;
 /**
   A brush that acts as a template for geometry mode modifiers like "Lathe".
 **/
-@:glueCppIncludes("Engine/BrushShape.h", "Engine.h")
+@:glueCppIncludes("Engine/BrushShape.h")
 @:uextern extern class ABrushShape extends unreal.ABrush {
   
 }

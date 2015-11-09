@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("PhysicsSerializer.h", "Engine.h")
+@:glueCppIncludes("PhysicsSerializer.h")
 @:uextern extern class UPhysicsSerializer extends unreal.UObject {
   
 }

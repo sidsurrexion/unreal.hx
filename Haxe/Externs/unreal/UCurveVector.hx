@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Curves/CurveVector.h", "Engine.h")
+@:glueCppIncludes("Curves/CurveVector.h")
 @:uextern extern class UCurveVector extends unreal.UCurveBase {
   
 }

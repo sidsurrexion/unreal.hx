@@ -8,7 +8,7 @@ package unreal;
 /**
   Enumerates ways to clear a scene.
 **/
-@:glueCppIncludes("Engine/RendererSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/RendererSettings.h")
 @:uname("EClearSceneOptions.Type")
 @:uextern extern enum EClearSceneOptions {
   

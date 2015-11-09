@@ -9,7 +9,7 @@ package unreal.onlinesubsystemutils;
   A beacon host used for taking reservations for an existing game session
 **/
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("LeaderboardBlueprintLibrary.h", "Engine.h")
+@:glueCppIncludes("LeaderboardBlueprintLibrary.h")
 @:uextern extern class ULeaderboardBlueprintLibrary extends unreal.UBlueprintFunctionLibrary {
   
 }

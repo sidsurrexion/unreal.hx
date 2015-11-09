@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("SoundClassGraph/SoundClassGraphSchema.h", "Engine.h")
+@:glueCppIncludes("SoundClassGraph/SoundClassGraphSchema.h")
 @:uextern extern class USoundClassGraphSchema extends unreal.UEdGraphSchema {
   
 }

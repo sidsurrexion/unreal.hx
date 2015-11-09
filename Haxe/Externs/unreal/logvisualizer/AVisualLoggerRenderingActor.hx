@@ -5,7 +5,7 @@
 package unreal.logvisualizer;
 
 @:umodule("LogVisualizer")
-@:glueCppIncludes("Private/VisualLoggerRenderingActor.h", "Engine.h")
+@:glueCppIncludes("Private/VisualLoggerRenderingActor.h")
 @:uextern extern class AVisualLoggerRenderingActor extends unreal.AActor {
   
 }

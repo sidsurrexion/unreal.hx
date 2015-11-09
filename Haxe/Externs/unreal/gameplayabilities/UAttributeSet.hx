@@ -5,7 +5,7 @@
 package unreal.gameplayabilities;
 
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("AttributeSet.h", "Engine.h")
+@:glueCppIncludes("AttributeSet.h")
 @:uextern extern class UAttributeSet extends unreal.UObject {
   
 }

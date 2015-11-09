@@ -8,7 +8,7 @@ package unreal;
 /**
   RefPose pose nodes - ref pose or additive RefPose pose
 **/
-@:glueCppIncludes("AnimGraphNode_RefPoseBase.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_RefPoseBase.h")
 @:uextern extern class FAnimNode_RefPose extends unreal.FAnimNode_Base {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_RefPose>;
   public var RefPoseType : unreal.ERefPoseType;

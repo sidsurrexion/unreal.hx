@@ -5,7 +5,7 @@
 package unreal.gameplayabilities;
 
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayEffectExtension.h", "Engine.h")
+@:glueCppIncludes("GameplayEffectExtension.h")
 @:uextern extern class UGameplayEffectExtension extends unreal.UObject {
   
   /**

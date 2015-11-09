@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/BTFunctionLibrary.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/BTFunctionLibrary.h")
 @:uextern extern class UBTFunctionLibrary extends unreal.UBlueprintFunctionLibrary {
   
 }

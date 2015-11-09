@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Distributions/DistributionVectorConstantCurve.h", "Engine.h")
+@:glueCppIncludes("Distributions/DistributionVectorConstantCurve.h")
 @:uextern extern class UDistributionVectorConstantCurve extends unreal.UDistributionVector {
   public var LockedAxes : unreal.EDistributionVectorLockFlags;
   

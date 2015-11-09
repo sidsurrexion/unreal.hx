@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimNotifies/AnimNotifyState.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimNotifies/AnimNotifyState.h")
 @:uextern extern class UAnimNotifyState extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   

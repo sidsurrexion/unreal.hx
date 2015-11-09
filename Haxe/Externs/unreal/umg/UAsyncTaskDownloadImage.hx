@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Blueprint/AsyncTaskDownloadImage.h", "Engine.h")
+@:glueCppIncludes("Blueprint/AsyncTaskDownloadImage.h")
 @:uextern extern class UAsyncTaskDownloadImage extends unreal.UBlueprintAsyncActionBase {
   
 }

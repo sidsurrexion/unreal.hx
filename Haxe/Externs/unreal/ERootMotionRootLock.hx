@@ -8,7 +8,7 @@ package unreal;
 /**
   Root Bone Lock options when extracting Root Motion.
 **/
-@:glueCppIncludes("Animation/AnimSequence.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSequence.h")
 @:uname("ERootMotionRootLock.Type")
 @:uextern extern enum ERootMotionRootLock {
   

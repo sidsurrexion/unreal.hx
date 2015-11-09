@@ -9,7 +9,7 @@ package unreal.paper2d;
   Dummy component designed to create a batch manager render scene proxy that does work on the render thread
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("Private/Rendering/PaperBatchComponent.h", "Engine.h")
+@:glueCppIncludes("Private/Rendering/PaperBatchComponent.h")
 @:uextern extern class UPaperBatchComponent extends unreal.UPrimitiveComponent {
   
 }

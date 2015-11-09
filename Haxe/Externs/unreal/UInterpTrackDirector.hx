@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackDirector.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackDirector.h")
 @:uextern extern class UInterpTrackDirector extends unreal.UInterpTrack {
   
   /**

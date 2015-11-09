@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Perception/AISense_Damage.h", "Engine.h")
+@:glueCppIncludes("Perception/AISense_Damage.h")
 @:uextern extern class UAISense_Damage extends unreal.aimodule.UAISense {
   public var RegisteredEvents : unreal.TArray<unreal.aimodule.FAIDamageEvent>;
   

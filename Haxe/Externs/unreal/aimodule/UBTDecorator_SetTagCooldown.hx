@@ -10,7 +10,7 @@ package unreal.aimodule;
   A decorator node that sets a gameplay tag cooldown.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_SetTagCooldown.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_SetTagCooldown.h")
 @:uextern extern class UBTDecorator_SetTagCooldown extends unreal.aimodule.UBTDecorator {
   
   /**

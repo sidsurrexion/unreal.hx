@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/InterpCurveEdSetup.h", "Engine.h")
+@:glueCppIncludes("Engine/InterpCurveEdSetup.h")
 @:uextern extern class UInterpCurveEdSetup extends unreal.UObject {
   public var ActiveTab : unreal.Int32;
   public var Tabs : unreal.TArray<unreal.FCurveEdTab>;

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundNodeModulatorContinuous.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeModulatorContinuous.h")
 @:uname("ModulationParamMode")
 @:uextern extern enum ModulationParamMode {
   

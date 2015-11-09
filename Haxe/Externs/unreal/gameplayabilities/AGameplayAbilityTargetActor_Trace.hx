@@ -9,7 +9,7 @@ package unreal.gameplayabilities;
   Intermediate base class for all line-trace type targeting actors.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/GameplayAbilityTargetActor_Trace.h", "Engine.h")
+@:glueCppIncludes("Abilities/GameplayAbilityTargetActor_Trace.h")
 @:uextern extern class AGameplayAbilityTargetActor_Trace extends unreal.gameplayabilities.AGameplayAbilityTargetActor {
   
   /**

@@ -16,7 +16,7 @@ package unreal;
   
   @see UMovementComponent
 **/
-@:glueCppIncludes("GameFramework/ProjectileMovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/ProjectileMovementComponent.h")
 @:uextern extern class UProjectileMovementComponent extends unreal.UMovementComponent {
   
   /**

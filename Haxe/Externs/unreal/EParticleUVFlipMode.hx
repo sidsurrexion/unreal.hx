@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/ParticleModuleRequired.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleModuleRequired.h")
 @:uname("EParticleUVFlipMode")
 @:class @:uextern extern enum EParticleUVFlipMode {
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent.h", "Engine.h")
+@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent.h")
 @:uextern extern class FVehicleInputRate {
   @:uname('new') public static function create():PHaxeCreated<unreal.FVehicleInputRate>;
   

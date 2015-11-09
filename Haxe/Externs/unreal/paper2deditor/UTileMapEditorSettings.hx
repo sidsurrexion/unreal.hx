@@ -9,7 +9,7 @@ package unreal.paper2deditor;
   Settings for the Paper2D tile map editor
 **/
 @:umodule("Paper2DEditor")
-@:glueCppIncludes("Private/TileMapEditing/TileMapEditorSettings.h", "Engine.h")
+@:glueCppIncludes("Private/TileMapEditing/TileMapEditorSettings.h")
 @:uextern extern class UTileMapEditorSettings extends unreal.UObject {
   
   /**

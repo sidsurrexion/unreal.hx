@@ -8,7 +8,7 @@ package unreal;
 /**
   Enum indicating how each type should respond
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uname("ECollisionResponse")
 @:uextern extern enum ECollisionResponse {
   

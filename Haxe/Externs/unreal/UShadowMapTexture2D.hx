@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/ShadowMapTexture2D.h", "Engine.h")
+@:glueCppIncludes("Engine/ShadowMapTexture2D.h")
 @:uextern extern class UShadowMapTexture2D extends unreal.UTexture2D {
   
   /**

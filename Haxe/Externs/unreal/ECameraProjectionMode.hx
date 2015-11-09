@@ -8,7 +8,7 @@ package unreal;
 /**
   @TODO: Document
 **/
-@:glueCppIncludes("Camera/PlayerCameraManager.h", "Engine.h")
+@:glueCppIncludes("Camera/PlayerCameraManager.h")
 @:uname("ECameraProjectionMode.Type")
 @:uextern extern enum ECameraProjectionMode {
   Perspective;

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavigationGraphNodeComponent.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationGraphNodeComponent.h")
 @:uextern extern class FNavGraphNode {
   @:uname('new') public static function create():PHaxeCreated<unreal.FNavGraphNode>;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Data for a single key in this track
 **/
-@:glueCppIncludes("Matinee/InterpTrackParticleReplay.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackParticleReplay.h")
 @:uextern extern class FParticleReplayTrackKey {
   @:uname('new') public static function create():PHaxeCreated<unreal.FParticleReplayTrackKey>;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/DynamicBlueprintBinding.h", "Engine.h")
+@:glueCppIncludes("Engine/DynamicBlueprintBinding.h")
 @:uextern extern class UDynamicBlueprintBinding extends unreal.UObject {
   
 }

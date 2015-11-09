@@ -9,7 +9,7 @@ package unreal.gameplayabilities;
   Wait for targeting actor (spawned from parameter) to provide data. Can be set not to end upon outputting data. Can be ended by task name.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitTargetData.h", "Engine.h")
+@:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitTargetData.h")
 @:uextern extern class UAbilityTask_WaitTargetData extends unreal.gameplayabilities.UAbilityTask {
   
 }

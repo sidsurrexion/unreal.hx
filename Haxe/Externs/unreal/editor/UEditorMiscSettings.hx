@@ -9,7 +9,7 @@ package unreal.editor;
   Implements the miscellaneous Editor settings.
 **/
 @:umodule("UnrealEd")
-@:glueCppIncludes("Settings/EditorMiscSettings.h", "Engine.h")
+@:glueCppIncludes("Settings/EditorMiscSettings.h")
 @:uextern extern class UEditorMiscSettings extends unreal.UObject {
   
 }

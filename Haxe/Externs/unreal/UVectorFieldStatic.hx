@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("VectorField/VectorFieldStatic.h", "Engine.h")
+@:glueCppIncludes("VectorField/VectorFieldStatic.h")
 @:uextern extern class UVectorFieldStatic extends unreal.UVectorField {
   #if WITH_EDITORONLY_DATA
   public var AssetImportData : unreal.UAssetImportData;

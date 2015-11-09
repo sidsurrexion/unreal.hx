@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/TextureRenderTarget.h", "Engine.h")
+@:glueCppIncludes("Engine/TextureRenderTarget.h")
 @:uextern extern class UTextureRenderTarget extends unreal.UTexture {
   
   /**

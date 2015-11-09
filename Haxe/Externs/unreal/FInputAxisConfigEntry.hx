@@ -8,7 +8,7 @@ package unreal;
 /**
   Configurable properties for control axes.
 **/
-@:glueCppIncludes("GameFramework/InputSettings.h", "Engine.h")
+@:glueCppIncludes("GameFramework/InputSettings.h")
 @:uextern extern class FInputAxisConfigEntry {
   @:uname('new') public static function create():PHaxeCreated<unreal.FInputAxisConfigEntry>;
   

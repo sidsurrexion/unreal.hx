@@ -8,7 +8,7 @@ package unreal;
 /**
   A box generally used for simple collision. Bounds are rendered as lines in the editor.
 **/
-@:glueCppIncludes("Components/BoxComponent.h", "Engine.h")
+@:glueCppIncludes("Components/BoxComponent.h")
 @:uextern extern class UBoxComponent extends unreal.UShapeComponent {
   
   /**

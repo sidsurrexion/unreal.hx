@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("PhysicsEngine/PhysicsConstraintTemplate.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsConstraintTemplate.h")
 @:uextern extern class UPhysicsConstraintTemplate extends unreal.UObject {
   public var DefaultInstance : unreal.FConstraintInstance;
   public var AngularBreakThreshold_DEPRECATED : unreal.Float32;

@@ -9,7 +9,7 @@ package unreal.slatereflector;
   A widget reflector node that holds the widget information from a snapshot at a given point in time
 **/
 @:umodule("SlateReflector")
-@:glueCppIncludes("Private/Models/WidgetReflectorNode.h", "Engine.h")
+@:glueCppIncludes("Private/Models/WidgetReflectorNode.h")
 @:uextern extern class USnapshotWidgetReflectorNode extends unreal.slatereflector.UWidgetReflectorNodeBase {
   
 }

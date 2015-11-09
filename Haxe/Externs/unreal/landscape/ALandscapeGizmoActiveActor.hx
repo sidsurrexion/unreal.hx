@@ -5,7 +5,7 @@
 package unreal.landscape;
 
 @:umodule("Landscape")
-@:glueCppIncludes("LandscapeGizmoActiveActor.h", "Engine.h")
+@:glueCppIncludes("LandscapeGizmoActiveActor.h")
 @:uextern extern class ALandscapeGizmoActiveActor extends unreal.landscape.ALandscapeGizmoActor {
   #if WITH_EDITORONLY_DATA
   public var UnsnappedRotation : unreal.FRotator;

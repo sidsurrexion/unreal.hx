@@ -12,7 +12,7 @@ package unreal.umg;
   ● Text Entry
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/EditableTextBox.h", "Engine.h")
+@:glueCppIncludes("Components/EditableTextBox.h")
 @:uextern extern class UEditableTextBox extends unreal.umg.UWidget {
   
   /**

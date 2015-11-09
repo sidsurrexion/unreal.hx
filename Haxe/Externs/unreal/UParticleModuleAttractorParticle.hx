@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Attractor/ParticleModuleAttractorParticle.h", "Engine.h")
+@:glueCppIncludes("Particles/Attractor/ParticleModuleAttractorParticle.h")
 @:uextern extern class UParticleModuleAttractorParticle extends unreal.UParticleModuleAttractorBase {
   public var LastSelIndex : unreal.Int32;
   

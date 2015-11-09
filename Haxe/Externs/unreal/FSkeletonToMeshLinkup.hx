@@ -8,7 +8,7 @@ package unreal;
 /**
   This is a mapping table between bone in a particular skeletal mesh and bone of this skeleton set.
 **/
-@:glueCppIncludes("Animation/Skeleton.h", "Engine.h")
+@:glueCppIncludes("Animation/Skeleton.h")
 @:uextern extern class FSkeletonToMeshLinkup {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSkeletonToMeshLinkup>;
   

@@ -13,7 +13,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Content/Types/StaticMeshes/
   @see AStaticMeshActor, UStaticMeshComponent
 **/
-@:glueCppIncludes("Engine/StaticMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/StaticMesh.h")
 @:uextern extern class UStaticMesh extends unreal.UObject implements unreal.IInterface_CollisionDataProvider implements unreal.IInterface_AssetUserData {
   
   /**

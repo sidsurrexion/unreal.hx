@@ -8,7 +8,7 @@ package unreal;
 /**
   Internal state, not accessible to script.
 **/
-@:glueCppIncludes("Engine/BrushBuilder.h", "Engine.h")
+@:glueCppIncludes("Engine/BrushBuilder.h")
 @:uextern extern class FBuilderPoly {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBuilderPoly>;
   public var PolyFlags : unreal.Int32;

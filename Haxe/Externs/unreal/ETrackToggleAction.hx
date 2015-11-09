@@ -8,7 +8,7 @@ package unreal;
 /**
   Enumeration indicating toggle action
 **/
-@:glueCppIncludes("Matinee/InterpTrackToggle.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackToggle.h")
 @:uname("ETrackToggleAction")
 @:uextern extern enum ETrackToggleAction {
   ETTA_Off;

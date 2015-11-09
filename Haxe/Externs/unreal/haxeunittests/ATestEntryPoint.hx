@@ -15,7 +15,7 @@ package unreal.haxeunittests;
    \___/\____/      |_/ \_| |_/\/   \/
 **/
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("TestEntryPoint.h", "Engine.h")
+@:glueCppIncludes("TestEntryPoint.h")
 @:uextern extern class ATestEntryPoint extends unreal.AActor {
   
 }

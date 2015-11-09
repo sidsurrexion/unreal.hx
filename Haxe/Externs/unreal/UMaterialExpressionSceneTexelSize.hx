@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionSceneTexelSize.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionSceneTexelSize.h")
 @:uextern extern class UMaterialExpressionSceneTexelSize extends unreal.UMaterialExpression {
   
 }

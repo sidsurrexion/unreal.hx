@@ -10,7 +10,7 @@ package unreal.aimodule;
   Wait for the specified time when executed.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Tasks/BTTask_Wait.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Tasks/BTTask_Wait.h")
 @:uextern extern class UBTTask_Wait extends unreal.aimodule.UBTTaskNode {
   
   /**

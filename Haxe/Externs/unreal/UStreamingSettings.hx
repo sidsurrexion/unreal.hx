@@ -8,7 +8,7 @@ package unreal;
 /**
   Rendering settings.
 **/
-@:glueCppIncludes("Engine/CoreSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/CoreSettings.h")
 @:uextern extern class UStreamingSettings extends unreal.UDeveloperSettings {
   
   /**

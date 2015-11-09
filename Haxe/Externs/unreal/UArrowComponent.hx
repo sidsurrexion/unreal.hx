@@ -8,7 +8,7 @@ package unreal;
 /**
   A simple arrow rendered using lines. Useful for indicating which way an object is facing.
 **/
-@:glueCppIncludes("Components/ArrowComponent.h", "Engine.h")
+@:glueCppIncludes("Components/ArrowComponent.h")
 @:uextern extern class UArrowComponent extends unreal.UPrimitiveComponent {
   #if WITH_EDITORONLY_DATA
   

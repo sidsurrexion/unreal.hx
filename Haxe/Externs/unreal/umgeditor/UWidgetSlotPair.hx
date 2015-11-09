@@ -5,7 +5,7 @@
 package unreal.umgeditor;
 
 @:umodule("UMGEditor")
-@:glueCppIncludes("Private/Utility/WidgetSlotPair.h", "Engine.h")
+@:glueCppIncludes("Private/Utility/WidgetSlotPair.h")
 @:uextern extern class UWidgetSlotPair extends unreal.UObject {
   
 }

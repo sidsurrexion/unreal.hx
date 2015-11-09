@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionFrac.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionFrac.h")
 @:uextern extern class UMaterialExpressionFrac extends unreal.UMaterialExpression {
   public var Input : unreal.FExpressionInput;
   

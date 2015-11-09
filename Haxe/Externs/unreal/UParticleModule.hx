@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/ParticleModule.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleModule.h")
 @:uextern extern class UParticleModule extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   

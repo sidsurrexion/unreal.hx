@@ -9,7 +9,7 @@ package unreal.paper2d;
   Contains an animation sequence of sprite frames
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("PaperFlipbook.h", "Engine.h")
+@:glueCppIncludes("PaperFlipbook.h")
 @:uextern extern class UPaperFlipbook extends unreal.UObject {
   
   /**

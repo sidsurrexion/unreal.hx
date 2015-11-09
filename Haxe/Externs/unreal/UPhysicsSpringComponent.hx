@@ -10,7 +10,7 @@ package unreal;
      Used with objects that have physics to create a spring down the X direction
      ie. point X in the direction you want generate spring.
 **/
-@:glueCppIncludes("PhysicsEngine/PhysicsSpringComponent.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsSpringComponent.h")
 @:uextern extern class UPhysicsSpringComponent extends unreal.USceneComponent {
   
   /**

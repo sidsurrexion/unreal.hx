@@ -11,7 +11,7 @@ package unreal;
   of those specific properties is stored on UNiagaraEmitterProperties (on the effect) for serialization
   and handed back to the effect renderer on load.
 **/
-@:glueCppIncludes("Engine/NiagaraEffectRendererProperties.h", "Engine.h")
+@:glueCppIncludes("Engine/NiagaraEffectRendererProperties.h")
 @:uextern extern class UNiagaraEffectRendererProperties extends unreal.UObject {
   public var dummy : unreal.FName;
   

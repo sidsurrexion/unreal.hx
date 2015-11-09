@@ -8,7 +8,7 @@ package unreal;
 /**
   Container for an aggregate of collision shapes
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FKAggregateGeom {
   @:uname('new') public static function create():PHaxeCreated<unreal.FKAggregateGeom>;
   public var ConvexElems : unreal.TArray<unreal.FKConvexElem>;

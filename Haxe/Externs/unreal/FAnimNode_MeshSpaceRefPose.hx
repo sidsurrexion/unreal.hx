@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AnimGraphNode_MeshRefPose.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_MeshRefPose.h")
 @:uextern extern class FAnimNode_MeshSpaceRefPose extends unreal.FAnimNode_Base {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_MeshSpaceRefPose>;
   

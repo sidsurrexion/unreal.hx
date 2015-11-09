@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/ReverbEffect.h", "Engine.h")
+@:glueCppIncludes("Sound/ReverbEffect.h")
 @:uextern extern class UReverbEffect extends unreal.UObject {
   
   /**

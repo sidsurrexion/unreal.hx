@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Animation/DebugSkelMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Animation/DebugSkelMeshComponent.h")
 @:uextern extern class UDebugSkelMeshComponent extends unreal.USkeletalMeshComponent {
   
   /**

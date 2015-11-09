@@ -8,7 +8,7 @@ package unreal;
 /**
   A volume which blocks the Camera channel by default.
 **/
-@:glueCppIncludes("GameFramework/CameraBlockingVolume.h", "Engine.h")
+@:glueCppIncludes("GameFramework/CameraBlockingVolume.h")
 @:uextern extern class ACameraBlockingVolume extends unreal.AVolume {
   
 }

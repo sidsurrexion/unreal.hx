@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Niagara/NiagaraNodeFunctionCall.h", "Engine.h")
+@:glueCppIncludes("Niagara/NiagaraNodeFunctionCall.h")
 @:uextern extern class UNiagaraNodeFunctionCall extends unreal.editor.UNiagaraNode {
   public var FunctionScript : unreal.niagara.UNiagaraScript;
   

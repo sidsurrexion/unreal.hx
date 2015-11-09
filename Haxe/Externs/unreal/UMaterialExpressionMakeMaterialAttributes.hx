@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionMakeMaterialAttributes.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionMakeMaterialAttributes.h")
 @:uextern extern class UMaterialExpressionMakeMaterialAttributes extends unreal.UMaterialExpression {
   public var PixelDepthOffset : unreal.FExpressionInput;
   public var Refraction : unreal.FExpressionInput;

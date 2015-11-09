@@ -8,7 +8,7 @@ package unreal;
 /**
   Keyframe position data for one track.  Pos(i) occurs at Time(i).  Pos.Num() always equals Time.Num().
 **/
-@:glueCppIncludes("Animation/AnimSequence.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSequence.h")
 @:uextern extern class FTranslationTrack {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTranslationTrack>;
   public var Times : unreal.TArray<unreal.Float32>;

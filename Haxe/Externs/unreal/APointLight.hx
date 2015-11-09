@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/PointLight.h", "Engine.h")
+@:glueCppIncludes("Engine/PointLight.h")
 @:uextern extern class APointLight extends unreal.ALight {
   public var PointLightComponent : unreal.UPointLightComponent;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Properties that may be set for all chunks at a particular depth in the fracture hierarchy.
 **/
-@:glueCppIncludes("Engine/DestructibleMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleDepthParameters {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleDepthParameters>;
   

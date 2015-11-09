@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Exporters/SequenceExporterT3D.h", "Engine.h")
+@:glueCppIncludes("Exporters/SequenceExporterT3D.h")
 @:uextern extern class USequenceExporterT3D extends unreal.UExporter {
   
 }

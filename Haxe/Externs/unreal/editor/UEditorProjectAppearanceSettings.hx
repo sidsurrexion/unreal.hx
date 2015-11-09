@@ -9,7 +9,7 @@ package unreal.editor;
   Editor project appearance settings. Stored in default config, per-project
 **/
 @:umodule("UnrealEd")
-@:glueCppIncludes("Settings/EditorProjectSettings.h", "Engine.h")
+@:glueCppIncludes("Settings/EditorProjectSettings.h")
 @:uextern extern class UEditorProjectAppearanceSettings extends unreal.UDeveloperSettings {
   public var DefaultInputUnits_DEPRECATED : unreal.editor.EDefaultLocationUnit;
   public var UnitDisplay_DEPRECATED : unreal.editor.EUnitDisplay;

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionFontSampleParameter.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionFontSampleParameter.h")
 @:uextern extern class UMaterialExpressionFontSampleParameter extends unreal.UMaterialExpressionFontSample {
   
   /**

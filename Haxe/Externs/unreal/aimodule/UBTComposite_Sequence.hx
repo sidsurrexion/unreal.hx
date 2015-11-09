@@ -11,7 +11,7 @@ package unreal.aimodule;
   If a child fails, then the Sequence fails. If all the Sequence's children succeed, then the Sequence succeeds.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Composites/BTComposite_Sequence.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Composites/BTComposite_Sequence.h")
 @:uextern extern class UBTComposite_Sequence extends unreal.aimodule.UBTCompositeNode {
   
 }

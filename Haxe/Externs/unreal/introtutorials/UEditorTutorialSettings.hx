@@ -9,7 +9,7 @@ package unreal.introtutorials;
   Editor-wide tutorial settings
 **/
 @:umodule("IntroTutorials")
-@:glueCppIncludes("Private/EditorTutorialSettings.h", "Engine.h")
+@:glueCppIncludes("Private/EditorTutorialSettings.h")
 @:uextern extern class UEditorTutorialSettings extends unreal.UObject {
   
   /**

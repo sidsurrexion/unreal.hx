@@ -13,7 +13,7 @@ package unreal.gameplayabilities;
   building this table and automatically registering and responding to tag events on the ability system component.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayTagResponseTable.h", "Engine.h")
+@:glueCppIncludes("GameplayTagResponseTable.h")
 @:uextern extern class UGameplayTagReponseTable extends unreal.UDataAsset {
   public var Entries : unreal.TArray<unreal.gameplayabilities.FGameplayTagResponseTableEntry>;
   

@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_IdentityPose.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_IdentityPose.h")
 @:uextern extern class UAnimGraphNode_IdentityPose extends unreal.animgraph.UAnimGraphNode_RefPoseBase {
   
 }

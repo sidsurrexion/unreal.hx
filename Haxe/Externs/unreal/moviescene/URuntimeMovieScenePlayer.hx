@@ -12,7 +12,7 @@ package unreal.moviescene;
   a MovieScene while its playing.
 **/
 @:umodule("MovieScene")
-@:glueCppIncludes("RuntimeMovieScenePlayer.h", "Engine.h")
+@:glueCppIncludes("RuntimeMovieScenePlayer.h")
 @:uextern extern class URuntimeMovieScenePlayer extends unreal.UObject implements unreal.IRuntimeMovieScenePlayerInterface {
   
 }

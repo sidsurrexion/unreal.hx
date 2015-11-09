@@ -9,7 +9,7 @@ package unreal.statsviewer;
   Statistics page for textures.
 **/
 @:umodule("StatsViewer")
-@:glueCppIncludes("TextureStats.h", "Engine.h")
+@:glueCppIncludes("TextureStats.h")
 @:uextern extern class UTextureStats extends unreal.UObject {
   
   /**

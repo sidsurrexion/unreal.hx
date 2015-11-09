@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/InterpCurveEdSetup.h", "Engine.h")
+@:glueCppIncludes("Engine/InterpCurveEdSetup.h")
 @:uextern extern class FCurveEdTab {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCurveEdTab>;
   public var ViewEndOutput : unreal.Float32;

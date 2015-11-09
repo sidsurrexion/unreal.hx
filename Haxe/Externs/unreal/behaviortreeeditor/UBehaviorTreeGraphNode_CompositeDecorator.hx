@@ -5,7 +5,7 @@
 package unreal.behaviortreeeditor;
 
 @:umodule("BehaviorTreeEditor")
-@:glueCppIncludes("BehaviorTreeGraphNode_CompositeDecorator.h", "Engine.h")
+@:glueCppIncludes("BehaviorTreeGraphNode_CompositeDecorator.h")
 @:uextern extern class UBehaviorTreeGraphNode_CompositeDecorator extends unreal.behaviortreeeditor.UBehaviorTreeGraphNode {
   private var CachedDescription : unreal.FString;
   private var ParentNodeInstance : unreal.aimodule.UBTCompositeNode;

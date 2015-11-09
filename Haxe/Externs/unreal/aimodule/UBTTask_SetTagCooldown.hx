@@ -10,7 +10,7 @@ package unreal.aimodule;
   Sets a cooldown tag value.  Use with cooldown tag decorators to prevent behavior tree execution.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Tasks/BTTask_SetTagCooldown.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Tasks/BTTask_SetTagCooldown.h")
 @:uextern extern class UBTTask_SetTagCooldown extends unreal.aimodule.UBTTaskNode {
   
   /**

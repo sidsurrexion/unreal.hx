@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/MatineeActor.h", "Engine.h")
+@:glueCppIncludes("Matinee/MatineeActor.h")
 @:uextern extern class AMatineeActor extends unreal.AActor {
   public var InterpPosition : unreal.Float32;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Properties of representation of an 'agent' (or Pawn) used by AI navigation/pathfinding.
 **/
-@:glueCppIncludes("AI/Navigation/NavigationData.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationData.h")
 @:uextern extern class FNavAgentProperties extends unreal.FMovementProperties {
   @:uname('new') public static function create():PHaxeCreated<unreal.FNavAgentProperties>;
   

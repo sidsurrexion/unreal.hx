@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/ObjectReferencer.h", "Engine.h")
+@:glueCppIncludes("Engine/ObjectReferencer.h")
 @:uextern extern class UObjectReferencer extends unreal.UObject {
   
   /**

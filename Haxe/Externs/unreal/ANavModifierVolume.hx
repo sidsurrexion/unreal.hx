@@ -8,7 +8,7 @@ package unreal;
 /**
   Allows applying selected AreaClass to navmesh, using Volume's shape
 **/
-@:glueCppIncludes("AI/Navigation/NavModifierVolume.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavModifierVolume.h")
 @:uextern extern class ANavModifierVolume extends unreal.AVolume implements unreal.INavRelevantInterface {
   private var AreaClass : unreal.TSubclassOf<unreal.UNavArea>;
   

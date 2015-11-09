@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Kismet/GameplayStatics.h", "Engine.h")
+@:glueCppIncludes("Kismet/GameplayStatics.h")
 @:uname("ESuggestProjVelocityTraceOption.Type")
 @:uextern extern enum ESuggestProjVelocityTraceOption {
   DoNotTrace;

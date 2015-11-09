@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   Handles manipulation of audio
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Tracks/MovieSceneAudioTrack.h", "Engine.h")
+@:glueCppIncludes("Tracks/MovieSceneAudioTrack.h")
 @:uextern extern class UMovieSceneAudioTrack extends unreal.moviescene.UMovieSceneTrack {
   
 }

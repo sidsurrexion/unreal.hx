@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialInstanceDynamic.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialInstanceDynamic.h")
 @:uextern extern class UMaterialInstanceDynamic extends unreal.UMaterialInstance {
   
 }

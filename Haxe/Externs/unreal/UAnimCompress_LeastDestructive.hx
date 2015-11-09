@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimCompress_LeastDestructive.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimCompress_LeastDestructive.h")
 @:uextern extern class UAnimCompress_LeastDestructive extends unreal.UAnimCompress {
   
 }

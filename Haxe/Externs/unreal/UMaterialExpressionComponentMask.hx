@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionComponentMask.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionComponentMask.h")
 @:uextern extern class UMaterialExpressionComponentMask extends unreal.UMaterialExpression {
   public var A : Bool;
   public var B : Bool;

@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   Handles manipulation of byte properties in a movie scene
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Tracks/MovieSceneByteTrack.h", "Engine.h")
+@:glueCppIncludes("Tracks/MovieSceneByteTrack.h")
 @:uextern extern class UMovieSceneByteTrack extends unreal.moviescenetracks.UMovieScenePropertyTrack {
   private var Enum : unreal.UEnum;
   

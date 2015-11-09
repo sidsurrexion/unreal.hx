@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimBlueprint.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimBlueprint.h")
 @:uextern extern class FAnimParentNodeAssetOverride {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimParentNodeAssetOverride>;
   public var ParentNodeGuid : unreal.FGuid;

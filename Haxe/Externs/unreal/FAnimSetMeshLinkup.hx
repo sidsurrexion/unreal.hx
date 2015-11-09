@@ -8,7 +8,7 @@ package unreal;
 /**
   This is a mapping table between each bone in a particular skeletal mesh and the tracks of this animation set.
 **/
-@:glueCppIncludes("Animation/AnimSet.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSet.h")
 @:uextern extern class FAnimSetMeshLinkup {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimSetMeshLinkup>;
   

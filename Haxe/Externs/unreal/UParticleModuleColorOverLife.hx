@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Color/ParticleModuleColorOverLife.h", "Engine.h")
+@:glueCppIncludes("Particles/Color/ParticleModuleColorOverLife.h")
 @:uextern extern class UParticleModuleColorOverLife extends unreal.UParticleModuleColorBase {
   
   /**

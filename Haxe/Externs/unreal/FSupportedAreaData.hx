@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavigationData.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationData.h")
 @:uextern extern class FSupportedAreaData {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSupportedAreaData>;
   public var AreaClass : unreal.UClass;

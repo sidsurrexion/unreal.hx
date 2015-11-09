@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataBeam2.h", "Engine.h")
+@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataBeam2.h")
 @:uextern extern class UParticleModuleTypeDataBeam2 extends unreal.UParticleModuleTypeDataBase {
   public var RenderTessellation : Bool;
   public var RenderLines : Bool;

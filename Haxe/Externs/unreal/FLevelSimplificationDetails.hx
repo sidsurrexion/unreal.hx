@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/Level.h", "Engine.h")
+@:glueCppIncludes("Engine/Level.h")
 @:uextern extern class FLevelSimplificationDetails {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLevelSimplificationDetails>;
   public var bGenerateLandscapeSpecularMap_DEPRECATED : Bool;

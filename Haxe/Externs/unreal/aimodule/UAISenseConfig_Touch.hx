@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Perception/AISenseConfig_Touch.h", "Engine.h")
+@:glueCppIncludes("Perception/AISenseConfig_Touch.h")
 @:uextern extern class UAISenseConfig_Touch extends unreal.aimodule.UAISenseConfig {
   
 }

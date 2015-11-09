@@ -10,7 +10,7 @@ package unreal;
   Rotation can optionally be offset around a pivot point.
   Collision testing is not performed during movement.
 **/
-@:glueCppIncludes("GameFramework/RotatingMovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/RotatingMovementComponent.h")
 @:uextern extern class URotatingMovementComponent extends unreal.UMovementComponent {
   
   /**

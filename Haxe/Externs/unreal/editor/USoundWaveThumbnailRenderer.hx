@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("ThumbnailRendering/SoundWaveThumbnailRenderer.h", "Engine.h")
+@:glueCppIncludes("ThumbnailRendering/SoundWaveThumbnailRenderer.h")
 @:uextern extern class USoundWaveThumbnailRenderer extends unreal.editor.UThumbnailRenderer {
   
 }

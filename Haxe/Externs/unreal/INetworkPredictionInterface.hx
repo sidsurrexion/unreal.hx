@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Interfaces/NetworkPredictionInterface.h", "Engine.h")
+@:glueCppIncludes("Interfaces/NetworkPredictionInterface.h")
 @:uextern extern interface INetworkPredictionInterface {
   
 }

@@ -8,7 +8,7 @@ package unreal;
 /**
   Options for texture padding mode.
 **/
-@:glueCppIncludes("Engine/Texture.h", "Engine.h")
+@:glueCppIncludes("Engine/Texture.h")
 @:uname("ETexturePowerOfTwoSetting.Type")
 @:uextern extern enum ETexturePowerOfTwoSetting {
   

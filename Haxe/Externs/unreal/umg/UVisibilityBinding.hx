@@ -5,7 +5,7 @@
 package unreal.umg;
 
 @:umodule("UMG")
-@:glueCppIncludes("Binding/VisibilityBinding.h", "Engine.h")
+@:glueCppIncludes("Binding/VisibilityBinding.h")
 @:uextern extern class UVisibilityBinding extends unreal.umg.UPropertyBinding {
   
 }

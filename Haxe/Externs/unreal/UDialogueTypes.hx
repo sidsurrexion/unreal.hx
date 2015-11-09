@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/DialogueTypes.h", "Engine.h")
+@:glueCppIncludes("Sound/DialogueTypes.h")
 @:uextern extern class UDialogueTypes extends unreal.UObject {
   
 }

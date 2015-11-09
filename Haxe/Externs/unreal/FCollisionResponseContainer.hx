@@ -8,7 +8,7 @@ package unreal;
 /**
   Container for indicating a set of collision channels that this object will collide with.
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FCollisionResponseContainer {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCollisionResponseContainer>;
   

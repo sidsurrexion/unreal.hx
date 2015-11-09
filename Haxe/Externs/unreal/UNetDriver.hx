@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/NetDriver.h", "Engine.h")
+@:glueCppIncludes("Engine/NetDriver.h")
 @:uextern extern class UNetDriver extends unreal.UObject {
   
   /**

@@ -5,7 +5,7 @@
 package unreal.gameplayabilities;
 
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayEffectExtension_LifestealTest.h", "Engine.h")
+@:glueCppIncludes("GameplayEffectExtension_LifestealTest.h")
 @:uextern extern class UGameplayEffectExtension_LifestealTest extends unreal.gameplayabilities.UGameplayEffectExtension {
   
   /**

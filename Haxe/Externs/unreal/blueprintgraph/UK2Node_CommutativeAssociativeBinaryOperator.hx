@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_CommutativeAssociativeBinaryOperator.h", "Engine.h")
+@:glueCppIncludes("K2Node_CommutativeAssociativeBinaryOperator.h")
 @:uextern extern class UK2Node_CommutativeAssociativeBinaryOperator extends unreal.blueprintgraph.UK2Node_CallFunction {
   
   /**

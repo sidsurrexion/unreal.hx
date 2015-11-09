@@ -9,7 +9,7 @@ package unreal.editor;
   Implements a file server commandlet.
 **/
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/FileServerCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/FileServerCommandlet.h")
 @:uextern extern class UFileServerCommandlet extends unreal.UCommandlet {
   
 }

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackMoveAxis.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackMoveAxis.h")
 @:uextern extern class UInterpTrackMoveAxis extends unreal.UInterpTrackFloatBase {
   
   /**

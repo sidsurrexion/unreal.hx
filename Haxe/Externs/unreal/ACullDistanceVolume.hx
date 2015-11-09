@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/CullDistanceVolume.h", "Engine.h")
+@:glueCppIncludes("Engine/CullDistanceVolume.h")
 @:uextern extern class ACullDistanceVolume extends unreal.AVolume {
   
   /**

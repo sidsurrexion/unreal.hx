@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/NiagaraSpriteRendererProperties.h", "Engine.h")
+@:glueCppIncludes("Engine/NiagaraSpriteRendererProperties.h")
 @:uextern extern class UNiagaraSpriteRendererProperties extends unreal.UNiagaraEffectRendererProperties {
   public var SubImageInfo : unreal.FVector2D;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   An Enumeration is a list of named values.
 **/
-@:glueCppIncludes("Engine/UserDefinedEnum.h", "Engine.h")
+@:glueCppIncludes("Engine/UserDefinedEnum.h")
 @:uextern extern class UUserDefinedEnum extends unreal.UEnum {
   #if WITH_EDITORONLY_DATA
   public var UniqueNameIndex : unreal.FakeUInt32;

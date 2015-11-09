@@ -10,7 +10,7 @@ package unreal;
   being computed by the APlayerCameraManager (@see ModifyCamera). A CameraModifier
   can be stateful, and is associated uniquely with a specific APlayerCameraManager.
 **/
-@:glueCppIncludes("Camera/CameraModifier.h", "Engine.h")
+@:glueCppIncludes("Camera/CameraModifier.h")
 @:uextern extern class UCameraModifier extends unreal.UObject {
   
   /**

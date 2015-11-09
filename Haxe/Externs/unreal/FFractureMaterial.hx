@@ -8,7 +8,7 @@ package unreal;
 /**
   Parameters to describe the application of U,V coordinates on a particular slice within a destructible.
 **/
-@:glueCppIncludes("Engine/DestructibleFractureSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/DestructibleFractureSettings.h")
 @:uextern extern class FFractureMaterial {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFractureMaterial>;
   

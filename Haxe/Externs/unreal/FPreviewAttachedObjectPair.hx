@@ -8,7 +8,7 @@ package unreal;
 /**
   Preview items that are attached to the skeleton *
 **/
-@:glueCppIncludes("Engine/SkeletalMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FPreviewAttachedObjectPair {
   @:uname('new') public static function create():PHaxeCreated<unreal.FPreviewAttachedObjectPair>;
   

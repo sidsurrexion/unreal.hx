@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("PhysicsEngine/PhysicsConstraintTemplate.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsConstraintTemplate.h")
 @:uname("EAngularDriveMode.Type")
 @:uextern extern enum EAngularDriveMode {
   

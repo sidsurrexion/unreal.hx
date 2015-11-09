@@ -5,7 +5,7 @@
 package unreal.haxeunittests;
 
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("BasicTypesUObject.h", "Engine.h")
+@:glueCppIncludes("BasicTypesUObject.h")
 @:uextern extern class UBasicTypesUObject extends unreal.UObject {
   private var m_FStringProp : unreal.FString;
   public var doubleProp : unreal.Float64;

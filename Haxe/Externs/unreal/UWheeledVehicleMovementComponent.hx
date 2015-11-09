@@ -8,7 +8,7 @@ package unreal;
 /**
   Component to handle the vehicle simulation for an actor.
 **/
-@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent.h", "Engine.h")
+@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent.h")
 @:uextern extern class UWheeledVehicleMovementComponent extends unreal.UPawnMovementComponent implements unreal.IRVOAvoidanceInterface {
   
   /**

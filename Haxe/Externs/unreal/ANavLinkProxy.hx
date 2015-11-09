@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavLinkProxy.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavLinkProxy.h")
 @:uextern extern class ANavLinkProxy extends unreal.AActor implements unreal.INavLinkHostInterface implements unreal.INavRelevantInterface {
   #if WITH_EDITORONLY_DATA
   public var SpriteComponent : unreal.UBillboardComponent;

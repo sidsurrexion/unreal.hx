@@ -20,7 +20,7 @@ package unreal;
   
   @see https://docs.unrealengine.com/latest/INT/Gameplay/Framework/GameMode/index.html
 **/
-@:glueCppIncludes("GameFramework/GameMode.h", "Engine.h")
+@:glueCppIncludes("GameFramework/GameMode.h")
 @:uextern extern class AGameMode extends unreal.AInfo {
   
   /**

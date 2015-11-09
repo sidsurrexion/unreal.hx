@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Lifetime/ParticleModuleLifetime.h", "Engine.h")
+@:glueCppIncludes("Particles/Lifetime/ParticleModuleLifetime.h")
 @:uextern extern class UParticleModuleLifetime extends unreal.UParticleModuleLifetimeBase {
   
   /**

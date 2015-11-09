@@ -8,7 +8,7 @@ package unreal;
 /**
   Box shape used for collision
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FKBoxElem extends unreal.FKShapeElem {
   @:uname('new') public static function create():PHaxeCreated<unreal.FKBoxElem>;
   

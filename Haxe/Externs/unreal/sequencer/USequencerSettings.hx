@@ -9,7 +9,7 @@ package unreal.sequencer;
   Serializable options for sequencer.
 **/
 @:umodule("Sequencer")
-@:glueCppIncludes("Private/SequencerSettings.h", "Engine.h")
+@:glueCppIncludes("Private/SequencerSettings.h")
 @:uextern extern class USequencerSettings extends unreal.UObject {
   private var CurveValueSnapInterval : unreal.Float32;
   private var TimeSnapInterval : unreal.Float32;

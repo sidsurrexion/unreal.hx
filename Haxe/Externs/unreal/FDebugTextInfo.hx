@@ -11,7 +11,7 @@ package unreal;
   * @see AHud
   * @see AddDebugText(), RemoveDebugText() and DrawDebugTextList()
 **/
-@:glueCppIncludes("GameFramework/HUD.h", "Engine.h")
+@:glueCppIncludes("GameFramework/HUD.h")
 @:uextern extern class FDebugTextInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDebugTextInfo>;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/InputActionDelegateBinding.h", "Engine.h")
+@:glueCppIncludes("Engine/InputActionDelegateBinding.h")
 @:uextern extern class UInputActionDelegateBinding extends unreal.UInputDelegateBinding {
   public var InputActionDelegateBindings : unreal.TArray<unreal.FBlueprintInputActionDelegateBinding>;
   

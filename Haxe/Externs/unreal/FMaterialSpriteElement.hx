@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/MaterialBillboardComponent.h", "Engine.h")
+@:glueCppIncludes("Components/MaterialBillboardComponent.h")
 @:uextern extern class FMaterialSpriteElement {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialSpriteElement>;
   

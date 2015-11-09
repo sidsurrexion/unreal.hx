@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Perception/AISense.h", "Engine.h")
+@:glueCppIncludes("Perception/AISense.h")
 @:uextern extern class UAISense extends unreal.UObject {
   private var NotifyType : unreal.aimodule.EAISenseNotifyType;
   

@@ -9,7 +9,7 @@ package unreal.paper2deditor;
   Settings for the Paper2D tile set editor
 **/
 @:umodule("Paper2DEditor")
-@:glueCppIncludes("Private/TileSetEditor/TileSetEditorSettings.h", "Engine.h")
+@:glueCppIncludes("Private/TileSetEditor/TileSetEditorSettings.h")
 @:uextern extern class UTileSetEditorSettings extends unreal.UObject {
   
   /**

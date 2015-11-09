@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimCompress_Automatic.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimCompress_Automatic.h")
 @:uextern extern class UAnimCompress_Automatic extends unreal.UAnimCompress {
   public var bRaiseMaxErrorToExisting : Bool;
   public var bAutoReplaceIfExistingErrorTooGreat : Bool;

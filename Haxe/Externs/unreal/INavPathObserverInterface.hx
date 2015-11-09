@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavPathObserverInterface.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavPathObserverInterface.h")
 @:uextern extern interface INavPathObserverInterface {
   
 }

@@ -9,7 +9,7 @@ package unreal.umg;
   An arbitrary scrollable collection of widgets.  Great for presenting 10-100 widgets in a list.  Doesn't support virtualization.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/ScrollBox.h", "Engine.h")
+@:glueCppIncludes("Components/ScrollBox.h")
 @:uextern extern class UScrollBox extends unreal.umg.UPanelWidget {
   public var AlwaysShowScrollbar : Bool;
   public var ScrollbarThickness : unreal.FVector2D;

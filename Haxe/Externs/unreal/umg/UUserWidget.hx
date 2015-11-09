@@ -9,7 +9,7 @@ package unreal.umg;
   The user widget is extensible by users through the WidgetBlueprint.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Blueprint/UserWidget.h", "Engine.h")
+@:glueCppIncludes("Blueprint/UserWidget.h")
 @:uextern extern class UUserWidget extends unreal.umg.UWidget implements unreal.umg.INamedSlotInterface {
   #if WITH_EDITORONLY_DATA
   

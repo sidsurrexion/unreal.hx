@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines a random volume and pitch modification when a sound starts
 **/
-@:glueCppIncludes("Sound/SoundNodeModulator.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeModulator.h")
 @:uextern extern class USoundNodeModulator extends unreal.USoundNode {
   
   /**

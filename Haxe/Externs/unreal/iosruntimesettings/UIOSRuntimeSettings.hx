@@ -9,7 +9,7 @@ package unreal.iosruntimesettings;
   Implements the settings for the iOS target platform.
 **/
 @:umodule("IOSRuntimeSettings")
-@:glueCppIncludes("IOSRuntimeSettings.h", "Engine.h")
+@:glueCppIncludes("IOSRuntimeSettings.h")
 @:uextern extern class UIOSRuntimeSettings extends unreal.UObject {
   
   /**

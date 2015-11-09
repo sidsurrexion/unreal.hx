@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavCollision.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavCollision.h")
 @:uextern extern class FNavCollisionCylinder {
   @:uname('new') public static function create():PHaxeCreated<unreal.FNavCollisionCylinder>;
   public var Height : unreal.Float32;

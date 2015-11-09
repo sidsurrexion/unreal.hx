@@ -8,7 +8,7 @@ package unreal;
 /**
   UMaterial interface settings for Lightmass
 **/
-@:glueCppIncludes("Materials/MaterialInterface.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialInterface.h")
 @:uextern extern class FLightmassMaterialInterfaceSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassMaterialInterfaceSettings>;
   

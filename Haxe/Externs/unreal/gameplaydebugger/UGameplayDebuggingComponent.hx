@@ -5,7 +5,7 @@
 package unreal.gameplaydebugger;
 
 @:umodule("GameplayDebugger")
-@:glueCppIncludes("GameplayDebuggingComponent.h", "Engine.h")
+@:glueCppIncludes("GameplayDebuggingComponent.h")
 @:uextern extern class UGameplayDebuggingComponent extends unreal.UPrimitiveComponent implements unreal.aimodule.IEQSQueryResultSourceInterface {
   
   /**

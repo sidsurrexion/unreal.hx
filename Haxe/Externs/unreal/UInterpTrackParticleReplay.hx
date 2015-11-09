@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackParticleReplay.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackParticleReplay.h")
 @:uextern extern class UInterpTrackParticleReplay extends unreal.UInterpTrack {
   #if WITH_EDITORONLY_DATA
   

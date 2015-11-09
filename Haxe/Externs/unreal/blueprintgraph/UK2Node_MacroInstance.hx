@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_MacroInstance.h", "Engine.h")
+@:glueCppIncludes("K2Node_MacroInstance.h")
 @:uextern extern class UK2Node_MacroInstance extends unreal.blueprintgraph.UK2Node_Tunnel {
   
   /**

@@ -8,7 +8,7 @@ package unreal;
 /**
   Data needed for local vector fields.
 **/
-@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h", "Engine.h")
+@:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h")
 @:uextern extern class FGPUSpriteLocalVectorFieldInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FGPUSpriteLocalVectorFieldInfo>;
   

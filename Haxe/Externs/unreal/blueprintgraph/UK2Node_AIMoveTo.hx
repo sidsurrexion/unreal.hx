@@ -9,7 +9,7 @@ package unreal.blueprintgraph;
   @TODO this should be moved to AIModule
 **/
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_AIMoveTo.h", "Engine.h")
+@:glueCppIncludes("K2Node_AIMoveTo.h")
 @:uextern extern class UK2Node_AIMoveTo extends unreal.blueprintgraph.UK2Node_BaseAsyncTask {
   
 }

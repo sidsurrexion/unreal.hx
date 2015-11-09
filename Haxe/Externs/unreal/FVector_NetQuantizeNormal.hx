@@ -11,7 +11,7 @@ package unreal;
   16 bits per component
   Valid range: -1..+1 inclusive
 **/
-@:glueCppIncludes("GameFramework/CharacterMovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
 @:uextern extern class FVector_NetQuantizeNormal extends unreal.FVector {
   @:uname('new') public static function create():PHaxeCreated<unreal.FVector_NetQuantizeNormal>;
   

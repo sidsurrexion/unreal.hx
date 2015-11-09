@@ -8,7 +8,7 @@ package unreal;
 /**
   Alpha Blend Type
 **/
-@:glueCppIncludes("AnimGraphNode_BlendListByBool.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_BlendListByBool.h")
 @:uextern extern class FAlphaBlend {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAlphaBlend>;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines how concurrent sounds are mixed together
 **/
-@:glueCppIncludes("Sound/SoundNodeMixer.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeMixer.h")
 @:uextern extern class USoundNodeMixer extends unreal.USoundNode {
   
   /**

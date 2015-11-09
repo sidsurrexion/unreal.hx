@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/CheatManager.h", "Engine.h")
+@:glueCppIncludes("GameFramework/CheatManager.h")
 @:uextern extern class UCheatManager extends unreal.UObject {
   
   /**

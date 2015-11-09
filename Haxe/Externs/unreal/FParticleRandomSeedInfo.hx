@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Color/ParticleModuleColor_Seeded.h", "Engine.h")
+@:glueCppIncludes("Particles/Color/ParticleModuleColor_Seeded.h")
 @:uextern extern class FParticleRandomSeedInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FParticleRandomSeedInfo>;
   

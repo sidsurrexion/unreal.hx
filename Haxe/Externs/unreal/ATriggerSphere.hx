@@ -8,7 +8,7 @@ package unreal;
 /**
   A sphere shaped trigger, used to generate overlap events in the level
 **/
-@:glueCppIncludes("Engine/TriggerSphere.h", "Engine.h")
+@:glueCppIncludes("Engine/TriggerSphere.h")
 @:uextern extern class ATriggerSphere extends unreal.ATriggerBase {
   
 }

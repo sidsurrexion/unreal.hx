@@ -9,7 +9,7 @@ package unreal.statsviewer;
   Statistics page for lighting.
 **/
 @:umodule("StatsViewer")
-@:glueCppIncludes("LightingBuildInfo.h", "Engine.h")
+@:glueCppIncludes("LightingBuildInfo.h")
 @:uextern extern class ULightingBuildInfo extends unreal.UObject {
   
   /**

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/NetConnection.h", "Engine.h")
+@:glueCppIncludes("Engine/NetConnection.h")
 @:uextern extern class UNetConnection extends unreal.UPlayer {
   
   /**

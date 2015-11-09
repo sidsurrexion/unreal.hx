@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AimOffsetBlendSpace1D.h", "Engine.h")
+@:glueCppIncludes("Animation/AimOffsetBlendSpace1D.h")
 @:uextern extern class UAimOffsetBlendSpace1D extends unreal.UBlendSpace1D {
   
 }

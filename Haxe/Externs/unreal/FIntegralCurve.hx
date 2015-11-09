@@ -8,7 +8,7 @@ package unreal;
 /**
   An integral curve, which holds the key time and the key value
 **/
-@:glueCppIncludes("Sections/MovieSceneBoolSection.h", "Engine.h")
+@:glueCppIncludes("Sections/MovieSceneBoolSection.h")
 @:uextern extern class FIntegralCurve extends unreal.FIndexedCurve {
   @:uname('new') public static function create():PHaxeCreated<unreal.FIntegralCurve>;
   

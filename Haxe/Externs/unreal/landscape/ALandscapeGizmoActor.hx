@@ -5,7 +5,7 @@
 package unreal.landscape;
 
 @:umodule("Landscape")
-@:glueCppIncludes("LandscapeGizmoActor.h", "Engine.h")
+@:glueCppIncludes("LandscapeGizmoActor.h")
 @:uextern extern class ALandscapeGizmoActor extends unreal.AActor {
   #if WITH_EDITORONLY_DATA
   public var SpriteComponent : unreal.UBillboardComponent;

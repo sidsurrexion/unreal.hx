@@ -8,7 +8,7 @@ package unreal;
 /**
   Information to create an NxDestructibleAsset
 **/
-@:glueCppIncludes("Engine/DestructibleFractureSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/DestructibleFractureSettings.h")
 @:uextern extern class UDestructibleFractureSettings extends unreal.UObject {
   
   /**

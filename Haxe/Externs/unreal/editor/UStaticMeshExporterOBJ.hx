@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Exporters/StaticMeshExporterOBJ.h", "Engine.h")
+@:glueCppIncludes("Exporters/StaticMeshExporterOBJ.h")
 @:uextern extern class UStaticMeshExporterOBJ extends unreal.UExporter {
   
 }

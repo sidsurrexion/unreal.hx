@@ -8,7 +8,7 @@ package unreal;
 /**
   Latent action info
 **/
-@:glueCppIncludes("Engine.h", "Engine.h")
+@:glueCppIncludes("Engine.h")
 @:uextern extern class FLatentActionInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLatentActionInfo>;
   

@@ -12,7 +12,7 @@ package unreal.blueprintgraph;
   UObjects (and we don't have to continuously compare identification strings).
 **/
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("BlueprintNodeSpawner.h", "Engine.h")
+@:glueCppIncludes("BlueprintNodeSpawner.h")
 @:uextern extern class UBlueprintNodeSpawner extends unreal.UObject {
   
   /**

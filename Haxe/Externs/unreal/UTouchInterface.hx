@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines an interface by which touch input can be controlled using any number of buttons and virtual joysticks
 **/
-@:glueCppIncludes("GameFramework/TouchInterface.h", "Engine.h")
+@:glueCppIncludes("GameFramework/TouchInterface.h")
 @:uextern extern class UTouchInterface extends unreal.UObject {
   
   /**

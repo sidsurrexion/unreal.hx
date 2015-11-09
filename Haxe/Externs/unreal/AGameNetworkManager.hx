@@ -8,7 +8,7 @@ package unreal;
 /**
   Handles game-specific networking management (cheat detection, bandwidth management, etc.).
 **/
-@:glueCppIncludes("GameFramework/GameNetworkManager.h", "Engine.h")
+@:glueCppIncludes("GameFramework/GameNetworkManager.h")
 @:uextern extern class AGameNetworkManager extends unreal.AInfo {
   
   /**

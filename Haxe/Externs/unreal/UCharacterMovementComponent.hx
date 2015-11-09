@@ -17,7 +17,7 @@ package unreal;
   @see ACharacter, UPawnMovementComponent
   @see https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Pawn/Character/
 **/
-@:glueCppIncludes("GameFramework/CharacterMovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
 @:uextern extern class UCharacterMovementComponent extends unreal.UPawnMovementComponent implements unreal.IRVOAvoidanceInterface implements unreal.INetworkPredictionInterface {
   
   /**

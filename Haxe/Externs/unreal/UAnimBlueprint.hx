@@ -10,7 +10,7 @@ package unreal;
   It can perform blending of animations, directly control the bones of the skeleton, and output a final pose
   for a Skeletal Mesh each frame.
 **/
-@:glueCppIncludes("Animation/AnimBlueprint.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimBlueprint.h")
 @:uextern extern class UAnimBlueprint extends unreal.UBlueprint {
   #if WITH_EDITORONLY_DATA
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavigationSystem.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationSystem.h")
 @:uname("ENavDataGatheringModeConfig")
 @:class @:uextern extern enum ENavDataGatheringModeConfig {
   Invalid;

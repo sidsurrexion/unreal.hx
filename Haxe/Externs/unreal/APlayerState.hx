@@ -9,7 +9,7 @@ package unreal;
   A PlayerState is created for every player on a server (or in a standalone game).
   PlayerStates are replicated to all clients, and contain network game relevant information about the player, such as playername, score, etc.
 **/
-@:glueCppIncludes("GameFramework/PlayerState.h", "Engine.h")
+@:glueCppIncludes("GameFramework/PlayerState.h")
 @:uextern extern class APlayerState extends unreal.AInfo {
   
   /**

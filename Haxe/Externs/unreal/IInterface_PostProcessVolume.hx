@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Interfaces/Interface_PostProcessVolume.h", "Engine.h")
+@:glueCppIncludes("Interfaces/Interface_PostProcessVolume.h")
 @:uextern extern interface IInterface_PostProcessVolume {
   
 }

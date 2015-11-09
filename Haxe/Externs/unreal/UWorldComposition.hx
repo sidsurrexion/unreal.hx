@@ -11,7 +11,7 @@ package unreal;
       - Holds list of streaming level objects to stream in and out based on distance from current view point
    - Handles properly levels repositioning during level loading and saving
 **/
-@:glueCppIncludes("Engine/WorldComposition.h", "Engine.h")
+@:glueCppIncludes("Engine/WorldComposition.h")
 @:uextern extern class UWorldComposition extends unreal.UObject {
   
   /**

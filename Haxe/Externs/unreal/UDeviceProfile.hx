@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("DeviceProfiles/DeviceProfile.h", "Engine.h")
+@:glueCppIncludes("DeviceProfiles/DeviceProfile.h")
 @:uextern extern class UDeviceProfile extends unreal.UTextureLODSettings {
   
   /**

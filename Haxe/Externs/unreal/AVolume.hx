@@ -9,7 +9,7 @@ package unreal;
   An editable 3D volume placed in a level. Different types of volumes perform different functions
   @see https://docs.unrealengine.com/latest/INT/Engine/Actors/Volumes
 **/
-@:glueCppIncludes("GameFramework/Volume.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Volume.h")
 @:uextern extern class AVolume extends unreal.ABrush {
   
 }

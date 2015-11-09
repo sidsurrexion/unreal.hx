@@ -9,7 +9,7 @@ package unreal;
   Represents abstract Navigation Data (sub-classed as NavMesh, NavGraph, etc)
   Used as a common interface for all navigation types handled by NavigationSystem
 **/
-@:glueCppIncludes("AI/Navigation/NavigationData.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationData.h")
 @:uextern extern class ANavigationData extends unreal.AActor {
   
   /**

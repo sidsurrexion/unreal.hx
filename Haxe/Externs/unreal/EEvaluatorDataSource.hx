@@ -8,7 +8,7 @@ package unreal;
 /**
   Indicates which state is being evaluated by this node (source or destination).
 **/
-@:glueCppIncludes("AnimGraphNode_TransitionPoseEvaluator.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_TransitionPoseEvaluator.h")
 @:uname("EEvaluatorDataSource.Type")
 @:uextern extern enum EEvaluatorDataSource {
   

@@ -5,7 +5,7 @@
 package unreal.paper2deditor;
 
 @:umodule("Paper2DEditor")
-@:glueCppIncludes("PaperTileMapFactory.h", "Engine.h")
+@:glueCppIncludes("PaperTileMapFactory.h")
 @:uextern extern class UPaperTileMapFactory extends unreal.editor.UFactory {
   
 }

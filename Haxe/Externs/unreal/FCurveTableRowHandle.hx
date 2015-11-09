@@ -8,7 +8,7 @@ package unreal;
 /**
   Handle to a particular row in a table.
 **/
-@:glueCppIncludes("GameplayEffect.h", "Engine.h")
+@:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class FCurveTableRowHandle {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCurveTableRowHandle>;
   

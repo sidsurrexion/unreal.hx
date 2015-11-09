@@ -9,7 +9,7 @@ package unreal;
   Used with objects that have physics to apply a force down the negative-X direction
   ie. point X in the direction you want the thrust in.
 **/
-@:glueCppIncludes("PhysicsEngine/PhysicsThrusterComponent.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsThrusterComponent.h")
 @:uextern extern class UPhysicsThrusterComponent extends unreal.USceneComponent {
   
   /**

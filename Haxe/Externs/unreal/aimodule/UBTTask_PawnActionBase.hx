@@ -14,7 +14,7 @@ package unreal.aimodule;
   Please use result returned by PushAction for ExecuteTask function.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Tasks/BTTask_PawnActionBase.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Tasks/BTTask_PawnActionBase.h")
 @:uextern extern class UBTTask_PawnActionBase extends unreal.aimodule.UBTTaskNode {
   
 }

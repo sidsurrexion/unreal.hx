@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Niagara/NiagaraScriptSource.h", "Engine.h")
+@:glueCppIncludes("Niagara/NiagaraScriptSource.h")
 @:uextern extern class UNiagaraScriptSource extends unreal.niagara.UNiagaraScriptSourceBase {
   
   /**

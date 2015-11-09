@@ -9,7 +9,7 @@ package unreal.linuxtargetplatform;
   Implements the settings for the Android target platform.
 **/
 @:umodule("LinuxTargetPlatform")
-@:glueCppIncludes("LinuxTargetSettings.h", "Engine.h")
+@:glueCppIncludes("LinuxTargetSettings.h")
 @:uextern extern class ULinuxTargetSettings extends unreal.UObject {
   
   /**

@@ -8,7 +8,7 @@ package unreal;
 /**
   A 2d material that will be rendered always facing the camera.
 **/
-@:glueCppIncludes("Components/MaterialBillboardComponent.h", "Engine.h")
+@:glueCppIncludes("Components/MaterialBillboardComponent.h")
 @:uextern extern class UMaterialBillboardComponent extends unreal.UPrimitiveComponent {
   public var Elements : unreal.TArray<unreal.FMaterialSpriteElement>;
   

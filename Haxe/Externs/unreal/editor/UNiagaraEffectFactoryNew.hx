@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/NiagaraEffectFactoryNew.h", "Engine.h")
+@:glueCppIncludes("Factories/NiagaraEffectFactoryNew.h")
 @:uextern extern class UNiagaraEffectFactoryNew extends unreal.editor.UFactory {
   
 }

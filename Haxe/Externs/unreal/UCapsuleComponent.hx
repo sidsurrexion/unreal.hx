@@ -8,7 +8,7 @@ package unreal;
 /**
   A capsule generally used for simple collision. Bounds are rendered as lines in the editor.
 **/
-@:glueCppIncludes("Components/CapsuleComponent.h", "Engine.h")
+@:glueCppIncludes("Components/CapsuleComponent.h")
 @:uextern extern class UCapsuleComponent extends unreal.UShapeComponent {
   private var CapsuleHeight_DEPRECATED : unreal.Float32;
   

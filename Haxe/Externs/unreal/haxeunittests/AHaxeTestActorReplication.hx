@@ -15,7 +15,7 @@ package unreal.haxeunittests;
    \___/\____/      |_/ \_| |_/\/   \/
 **/
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("HaxeTestActorReplication.h", "Engine.h")
+@:glueCppIncludes("HaxeTestActorReplication.h")
 @:uextern extern class AHaxeTestActorReplication extends unreal.AActor {
   public var replicatedPropC : unreal.Int32;
   public var replicatedPropB : unreal.Int32;

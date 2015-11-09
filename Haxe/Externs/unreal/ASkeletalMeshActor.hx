@@ -13,7 +13,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Content/Types/SkeletalMeshes/
   @see USkeletalMesh
 **/
-@:glueCppIncludes("Animation/SkeletalMeshActor.h", "Engine.h")
+@:glueCppIncludes("Animation/SkeletalMeshActor.h")
 @:uextern extern class ASkeletalMeshActor extends unreal.AActor implements unreal.IMatineeAnimInterface {
   public var ReplicatedMaterial1 : unreal.UMaterialInterface;
   

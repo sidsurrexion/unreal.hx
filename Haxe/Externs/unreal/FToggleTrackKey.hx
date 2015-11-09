@@ -8,7 +8,7 @@ package unreal;
 /**
   Information for one toggle in the track.
 **/
-@:glueCppIncludes("Matinee/InterpTrackToggle.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackToggle.h")
 @:uextern extern class FToggleTrackKey {
   @:uname('new') public static function create():PHaxeCreated<unreal.FToggleTrackKey>;
   public var ToggleAction : unreal.ETrackToggleAction;

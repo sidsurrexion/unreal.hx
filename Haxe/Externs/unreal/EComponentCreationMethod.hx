@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/ActorComponent.h", "Engine.h")
+@:glueCppIncludes("Components/ActorComponent.h")
 @:uname("EComponentCreationMethod")
 @:class @:uextern extern enum EComponentCreationMethod {
   

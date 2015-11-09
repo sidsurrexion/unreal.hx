@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Exporters/LevelExporterFBX.h", "Engine.h")
+@:glueCppIncludes("Exporters/LevelExporterFBX.h")
 @:uextern extern class ULevelExporterFBX extends unreal.UExporter {
   
 }

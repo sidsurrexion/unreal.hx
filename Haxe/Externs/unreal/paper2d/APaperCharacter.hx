@@ -10,7 +10,7 @@ package unreal.paper2d;
   Note: The variable named Mesh will not be set up on this actor!
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("PaperCharacter.h", "Engine.h")
+@:glueCppIncludes("PaperCharacter.h")
 @:uextern extern class APaperCharacter extends unreal.ACharacter {
   
 }

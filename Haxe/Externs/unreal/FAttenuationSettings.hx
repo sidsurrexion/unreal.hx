@@ -8,7 +8,7 @@ package unreal;
 /**
   The settings for attenuating.
 **/
-@:glueCppIncludes("Sound/SoundAttenuation.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundAttenuation.h")
 @:uextern extern class FAttenuationSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAttenuationSettings>;
   

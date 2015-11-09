@@ -8,7 +8,7 @@ package unreal;
 /**
   Determines which ticking group a tick function belongs to.
 **/
-@:glueCppIncludes("GameFramework/Actor.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Actor.h")
 @:uname("ETickingGroup")
 @:uextern extern enum ETickingGroup {
   

@@ -9,7 +9,7 @@ package unreal.paper2d;
   @TODO: Document
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("PaperTerrainSplineComponent.h", "Engine.h")
+@:glueCppIncludes("PaperTerrainSplineComponent.h")
 @:uextern extern class UPaperTerrainSplineComponent extends unreal.USplineComponent {
   
 }

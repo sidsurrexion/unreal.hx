@@ -8,7 +8,7 @@ package unreal;
 /**
   LOD specific setup for the skeletal mesh component.
 **/
-@:glueCppIncludes("Components/SkinnedMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/SkinnedMeshComponent.h")
 @:uextern extern class FSkelMeshComponentLODInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSkelMeshComponentLODInfo>;
   

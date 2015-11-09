@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionRotateAboutAxis.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionRotateAboutAxis.h")
 @:uextern extern class UMaterialExpressionRotateAboutAxis extends unreal.UMaterialExpression {
   public var Period : unreal.Float32;
   public var Position : unreal.FExpressionInput;

@@ -8,7 +8,7 @@ package unreal;
 /**
   Allows multiple animations to be blended between based on input parameters
 **/
-@:glueCppIncludes("Animation/BlendSpaceBase.h", "Engine.h")
+@:glueCppIncludes("Animation/BlendSpaceBase.h")
 @:uextern extern class UBlendSpaceBase extends unreal.UAnimationAsset {
   
   /**

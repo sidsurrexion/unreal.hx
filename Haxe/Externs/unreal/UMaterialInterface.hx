@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialInterface.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialInterface.h")
 @:uextern extern class UMaterialInterface extends unreal.UObject implements unreal.IBlendableInterface {
   #if WITH_EDITORONLY_DATA
   

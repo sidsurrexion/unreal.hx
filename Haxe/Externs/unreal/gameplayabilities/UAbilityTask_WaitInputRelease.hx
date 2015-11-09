@@ -10,7 +10,7 @@ package unreal.gameplayabilities;
   We expect server to execute this task in parallel and keep its own time.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitInputRelease.h", "Engine.h")
+@:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitInputRelease.h")
 @:uextern extern class UAbilityTask_WaitInputRelease extends unreal.gameplayabilities.UAbilityTask {
   
 }

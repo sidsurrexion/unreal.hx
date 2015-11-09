@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionLightmassReplace.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionLightmassReplace.h")
 @:uextern extern class UMaterialExpressionLightmassReplace extends unreal.UMaterialExpression {
   public var Lightmass : unreal.FExpressionInput;
   public var Realtime : unreal.FExpressionInput;

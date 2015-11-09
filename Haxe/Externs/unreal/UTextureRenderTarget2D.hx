@@ -11,7 +11,7 @@ package unreal;
   2D render target texture resource. This can be used as a target
   for rendering as well as rendered as a regular 2D texture resource.
 **/
-@:glueCppIncludes("Engine/TextureRenderTarget2D.h", "Engine.h")
+@:glueCppIncludes("Engine/TextureRenderTarget2D.h")
 @:uextern extern class UTextureRenderTarget2D extends unreal.UTextureRenderTarget {
   
   /**

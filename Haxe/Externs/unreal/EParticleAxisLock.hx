@@ -8,7 +8,7 @@ package unreal;
 /**
   Flags indicating lock
 **/
-@:glueCppIncludes("Particles/Orientation/ParticleModuleOrientationAxisLock.h", "Engine.h")
+@:glueCppIncludes("Particles/Orientation/ParticleModuleOrientationAxisLock.h")
 @:uname("EParticleAxisLock")
 @:uextern extern enum EParticleAxisLock {
   

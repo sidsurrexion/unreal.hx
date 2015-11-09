@@ -15,7 +15,7 @@ package unreal.haxeunittests;
    \___/\____/      |_/ \_| |_/\/   \/
 **/
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("TestTArray.h", "Engine.h")
+@:glueCppIncludes("TestTArray.h")
 @:uextern extern class UTestTArray extends unreal.UObject {
   public var array : unreal.TArray<unreal.FString>;
   

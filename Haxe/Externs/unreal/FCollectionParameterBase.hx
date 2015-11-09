@@ -8,7 +8,7 @@ package unreal;
 /**
   Base struct for collection parameters
 **/
-@:glueCppIncludes("Materials/MaterialParameterCollection.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialParameterCollection.h")
 @:uextern extern class FCollectionParameterBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCollectionParameterBase>;
   

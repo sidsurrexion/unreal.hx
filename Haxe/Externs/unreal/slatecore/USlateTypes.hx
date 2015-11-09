@@ -9,7 +9,7 @@ package unreal.slatecore;
   HACK: We need a UClass here or UHT will complain.
 **/
 @:umodule("SlateCore")
-@:glueCppIncludes("Styling/SlateTypes.h", "Engine.h")
+@:glueCppIncludes("Styling/SlateTypes.h")
 @:uextern extern class USlateTypes extends unreal.UObject {
   
 }

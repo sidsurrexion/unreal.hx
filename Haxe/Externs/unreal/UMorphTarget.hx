@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/VertexAnim/MorphTarget.h", "Engine.h")
+@:glueCppIncludes("Animation/VertexAnim/MorphTarget.h")
 @:uextern extern class UMorphTarget extends unreal.UVertexAnimBase {
   
 }

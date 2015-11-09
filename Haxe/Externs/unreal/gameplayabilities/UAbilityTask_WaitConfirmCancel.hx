@@ -11,7 +11,7 @@ package unreal.gameplayabilities;
   UAbilityTask_WaitConfirm = Wait for server to confirm ability activation
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitConfirmCancel.h", "Engine.h")
+@:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitConfirmCancel.h")
 @:uextern extern class UAbilityTask_WaitConfirmCancel extends unreal.gameplayabilities.UAbilityTask {
   
 }

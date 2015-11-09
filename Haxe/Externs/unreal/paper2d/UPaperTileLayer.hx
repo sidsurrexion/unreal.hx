@@ -9,7 +9,7 @@ package unreal.paper2d;
   This class represents a single layer in a tile map.  All layers in the map must have the size dimensions.
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("PaperTileLayer.h", "Engine.h")
+@:glueCppIncludes("PaperTileLayer.h")
 @:uextern extern class UPaperTileLayer extends unreal.UObject {
   
 }

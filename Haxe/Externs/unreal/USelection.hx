@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/Selection.h", "Engine.h")
+@:glueCppIncludes("Engine/Selection.h")
 @:uextern extern class USelection extends unreal.UObject {
   
 }

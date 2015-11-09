@@ -8,7 +8,7 @@ package unreal;
 /**
   Structure containing information about one hit of a trace, such as point of impact and surface normal at that point.
 **/
-@:glueCppIncludes("GameFramework/CharacterMovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
 @:uextern extern class FHitResult {
   @:uname('new') public static function create():PHaxeCreated<unreal.FHitResult>;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   User Interface settings that control Slate and UMG.
 **/
-@:glueCppIncludes("Engine/UserInterfaceSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/UserInterfaceSettings.h")
 @:uextern extern class UUserInterfaceSettings extends unreal.UDeveloperSettings {
   
   /**

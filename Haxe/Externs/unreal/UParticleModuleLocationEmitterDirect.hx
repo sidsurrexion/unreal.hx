@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Location/ParticleModuleLocationEmitterDirect.h", "Engine.h")
+@:glueCppIncludes("Particles/Location/ParticleModuleLocationEmitterDirect.h")
 @:uextern extern class UParticleModuleLocationEmitterDirect extends unreal.UParticleModuleLocationBase {
   
   /**

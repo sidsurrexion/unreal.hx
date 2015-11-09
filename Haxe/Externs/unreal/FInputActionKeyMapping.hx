@@ -10,7 +10,7 @@ package unreal;
   
   @see https://docs.unrealengine.com/latest/INT/Gameplay/Input/index.html
 **/
-@:glueCppIncludes("GameFramework/InputSettings.h", "Engine.h")
+@:glueCppIncludes("GameFramework/InputSettings.h")
 @:uextern extern class FInputActionKeyMapping {
   @:uname('new') public static function create():PHaxeCreated<unreal.FInputActionKeyMapping>;
   

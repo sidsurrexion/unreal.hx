@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/Pawn.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Pawn.h")
 @:uname("EAutoPossessAI")
 @:class @:uextern extern enum EAutoPossessAI {
   

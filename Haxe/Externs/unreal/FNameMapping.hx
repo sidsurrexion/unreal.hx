@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/Skeleton.h", "Engine.h")
+@:glueCppIncludes("Animation/Skeleton.h")
 @:uextern extern class FNameMapping {
   @:uname('new') public static function create():PHaxeCreated<unreal.FNameMapping>;
   public var BoneName : unreal.FName;

@@ -10,7 +10,7 @@ package unreal.gameplayabilities;
   Still WIP - needs to be fleshed out more.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayCueNotify_HitImpact.h", "Engine.h")
+@:glueCppIncludes("GameplayCueNotify_HitImpact.h")
 @:uextern extern class UGameplayCueNotify_HitImpact extends unreal.gameplayabilities.UGameplayCueNotify_Static {
   
   /**

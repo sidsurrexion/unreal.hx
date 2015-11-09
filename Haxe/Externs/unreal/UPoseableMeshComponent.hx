@@ -8,7 +8,7 @@ package unreal;
 /**
   UPoseableMeshComponent that allows bone transforms to be driven by blueprint.
 **/
-@:glueCppIncludes("Components/PoseableMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/PoseableMeshComponent.h")
 @:uextern extern class UPoseableMeshComponent extends unreal.USkinnedMeshComponent {
   
 }

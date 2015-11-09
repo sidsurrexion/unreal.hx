@@ -9,7 +9,7 @@ package unreal.internationalizationsettings;
   Implements loading and saving of internationalization settings.
 **/
 @:umodule("InternationalizationSettings")
-@:glueCppIncludes("InternationalizationSettingsModel.h", "Engine.h")
+@:glueCppIncludes("InternationalizationSettingsModel.h")
 @:uextern extern class UInternationalizationSettingsModel extends unreal.UObject {
   
 }

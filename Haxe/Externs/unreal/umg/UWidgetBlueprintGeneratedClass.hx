@@ -12,7 +12,7 @@ package unreal.umg;
   widgets.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Blueprint/WidgetBlueprintGeneratedClass.h", "Engine.h")
+@:glueCppIncludes("Blueprint/WidgetBlueprintGeneratedClass.h")
 @:uextern extern class UWidgetBlueprintGeneratedClass extends unreal.UBlueprintGeneratedClass {
   public var NamedSlots : unreal.TArray<unreal.FName>;
   public var Animations : unreal.TArray<unreal.umg.UWidgetAnimation>;

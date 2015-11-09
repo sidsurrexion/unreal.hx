@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/UserDefinedStruct.h", "Engine.h")
+@:glueCppIncludes("Engine/UserDefinedStruct.h")
 @:uextern extern class UUserDefinedStruct extends unreal.UScriptStruct {
   public var Guid : unreal.FGuid;
   #if WITH_EDITORONLY_DATA

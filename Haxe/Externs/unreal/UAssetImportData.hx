@@ -8,7 +8,7 @@ package unreal;
 /**
   todo: Make this class better suited to multiple import paths - maybe have FAssetImportInfo use a map rather than array?
 **/
-@:glueCppIncludes("EditorFramework/AssetImportData.h", "Engine.h")
+@:glueCppIncludes("EditorFramework/AssetImportData.h")
 @:uextern extern class UAssetImportData extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   

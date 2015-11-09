@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/TextRenderComponent.h", "Engine.h")
+@:glueCppIncludes("Components/TextRenderComponent.h")
 @:uname("EVerticalTextAligment")
 @:uextern extern enum EVerticalTextAligment {
   

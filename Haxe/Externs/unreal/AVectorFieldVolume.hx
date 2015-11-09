@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("VectorField/VectorFieldVolume.h", "Engine.h")
+@:glueCppIncludes("VectorField/VectorFieldVolume.h")
 @:uextern extern class AVectorFieldVolume extends unreal.AActor {
   #if WITH_EDITORONLY_DATA
   public var SpriteComponent : unreal.UBillboardComponent;

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimCompress_PerTrackCompression.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimCompress_PerTrackCompression.h")
 @:uextern extern class UAnimCompress_PerTrackCompression extends unreal.UAnimCompress_RemoveLinearKeys {
   
   /**

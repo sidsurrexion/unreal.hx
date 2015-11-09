@@ -5,7 +5,7 @@
 package unreal.onlinesubsystemutils;
 
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("OnlineBlueprintCallProxyBase.h", "Engine.h")
+@:glueCppIncludes("OnlineBlueprintCallProxyBase.h")
 @:uextern extern class UOnlineBlueprintCallProxyBase extends unreal.UObject {
   
 }

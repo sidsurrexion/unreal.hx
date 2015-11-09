@@ -12,7 +12,7 @@ package unreal;
           - Retargetting related
           - Mirror table
 **/
-@:glueCppIncludes("Animation/Skeleton.h", "Engine.h")
+@:glueCppIncludes("Animation/Skeleton.h")
 @:uextern extern class USkeleton extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   public var BoneReductionSettingsForLODs : unreal.TArray<unreal.FBoneReductionSetting>;

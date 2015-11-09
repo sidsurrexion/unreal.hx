@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/IntSerialization.h", "Engine.h")
+@:glueCppIncludes("Engine/IntSerialization.h")
 @:uextern extern class UIntSerialization extends unreal.UObject {
   public var SignedInt32Variable : unreal.Int32;
   

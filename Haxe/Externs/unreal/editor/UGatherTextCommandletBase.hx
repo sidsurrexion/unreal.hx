@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/GatherTextCommandletBase.h", "Engine.h")
+@:glueCppIncludes("Commandlets/GatherTextCommandletBase.h")
 @:uextern extern class UGatherTextCommandletBase extends unreal.UCommandlet {
   
 }

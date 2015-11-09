@@ -8,7 +8,7 @@ package unreal;
 /**
   Values for specifying bone space.
 **/
-@:glueCppIncludes("Components/PoseableMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/PoseableMeshComponent.h")
 @:uname("EBoneSpaces.Type")
 @:uextern extern enum EBoneSpaces {
   

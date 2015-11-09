@@ -9,7 +9,7 @@ package unreal.statsviewer;
   Statistics page for static meshes.
 **/
 @:umodule("StatsViewer")
-@:glueCppIncludes("StaticMeshLightingInfo.h", "Engine.h")
+@:glueCppIncludes("StaticMeshLightingInfo.h")
 @:uextern extern class UStaticMeshLightingInfo extends unreal.UObject {
   
   /**

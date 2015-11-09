@@ -10,7 +10,7 @@ package unreal;
   
   @see https://docs.unrealengine.com/latest/INT/Gameplay/Input/index.html
 **/
-@:glueCppIncludes("GameFramework/InputSettings.h", "Engine.h")
+@:glueCppIncludes("GameFramework/InputSettings.h")
 @:uextern extern class UInputSettings extends unreal.UObject {
   
   /**

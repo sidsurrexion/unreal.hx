@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Editor/PropertyEditorTestObject.h", "Engine.h")
+@:glueCppIncludes("Editor/PropertyEditorTestObject.h")
 @:uextern extern class UPropertyEditorTestObject extends unreal.UObject {
   public var OnlyActorsAllowed : unreal.AActor;
   public var AnyMaterialInterface : unreal.UMaterialInterface;

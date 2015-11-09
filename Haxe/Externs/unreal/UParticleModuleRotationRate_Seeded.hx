@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/RotationRate/ParticleModuleRotationRate_Seeded.h", "Engine.h")
+@:glueCppIncludes("Particles/RotationRate/ParticleModuleRotationRate_Seeded.h")
 @:uextern extern class UParticleModuleRotationRate_Seeded extends unreal.UParticleModuleRotationRate {
   
   /**

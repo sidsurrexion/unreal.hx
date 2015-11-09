@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Debug/ReporterBase.h", "Engine.h")
+@:glueCppIncludes("Debug/ReporterBase.h")
 @:uextern extern class UReporterBase extends unreal.UObject {
   
 }

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionConstantBiasScale.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionConstantBiasScale.h")
 @:uextern extern class UMaterialExpressionConstantBiasScale extends unreal.UMaterialExpression {
   public var Scale : unreal.Float32;
   public var Bias : unreal.Float32;

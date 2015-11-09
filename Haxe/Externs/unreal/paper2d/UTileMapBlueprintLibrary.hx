@@ -11,7 +11,7 @@ package unreal.paper2d;
   @see UPaperTileMap, UPaperTileMapComponent
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("TileMapBlueprintLibrary.h", "Engine.h")
+@:glueCppIncludes("TileMapBlueprintLibrary.h")
 @:uextern extern class UTileMapBlueprintLibrary extends unreal.UBlueprintFunctionLibrary {
   
 }

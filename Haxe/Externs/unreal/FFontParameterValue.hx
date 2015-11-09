@@ -8,7 +8,7 @@ package unreal;
 /**
   Editable font parameter.
 **/
-@:glueCppIncludes("Materials/MaterialInstance.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialInstance.h")
 @:uextern extern class FFontParameterValue {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFontParameterValue>;
   public var ExpressionGUID : unreal.FGuid;

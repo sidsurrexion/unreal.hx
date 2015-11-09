@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/PlayerStartPIE.h", "Engine.h")
+@:glueCppIncludes("Engine/PlayerStartPIE.h")
 @:uextern extern class APlayerStartPIE extends unreal.APlayerStart {
   
 }

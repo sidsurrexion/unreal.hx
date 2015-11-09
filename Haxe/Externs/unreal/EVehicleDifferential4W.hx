@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent4W.h", "Engine.h")
+@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent4W.h")
 @:uname("EVehicleDifferential4W.Type")
 @:uextern extern enum EVehicleDifferential4W {
   LimitedSlip_4W;

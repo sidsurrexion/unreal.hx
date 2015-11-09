@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Layers/Layer.h", "Engine.h")
+@:glueCppIncludes("Layers/Layer.h")
 @:uextern extern class ULayer extends unreal.UObject {
   
   /**

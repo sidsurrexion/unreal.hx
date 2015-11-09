@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavLinkDefinition.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavLinkDefinition.h")
 @:uextern extern class FNavigationLinkBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FNavigationLinkBase>;
   #if WITH_EDITORONLY_DATA

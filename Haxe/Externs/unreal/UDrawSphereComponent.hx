@@ -8,7 +8,7 @@ package unreal;
 /**
   A sphere generally used for simple collision. Bounds are rendered as lines in the editor.
 **/
-@:glueCppIncludes("Components/DrawSphereComponent.h", "Engine.h")
+@:glueCppIncludes("Components/DrawSphereComponent.h")
 @:uextern extern class UDrawSphereComponent extends unreal.USphereComponent {
   
 }

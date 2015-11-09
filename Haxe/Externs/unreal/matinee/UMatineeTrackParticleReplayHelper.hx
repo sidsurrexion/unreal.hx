@@ -5,7 +5,7 @@
 package unreal.matinee;
 
 @:umodule("Matinee")
-@:glueCppIncludes("MatineeTrackParticleReplayHelper.h", "Engine.h")
+@:glueCppIncludes("MatineeTrackParticleReplayHelper.h")
 @:uextern extern class UMatineeTrackParticleReplayHelper extends unreal.matinee.UInterpTrackHelper {
   
 }

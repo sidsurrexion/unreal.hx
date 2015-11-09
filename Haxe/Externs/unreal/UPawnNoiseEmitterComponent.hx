@@ -9,7 +9,7 @@ package unreal;
   PawnNoiseEmitterComponent tracks noise event data used by SensingComponents to hear a Pawn.
   This component is intended to exist on either a Pawn or its Controller. It does nothing on network clients.
 **/
-@:glueCppIncludes("Components/PawnNoiseEmitterComponent.h", "Engine.h")
+@:glueCppIncludes("Components/PawnNoiseEmitterComponent.h")
 @:uextern extern class UPawnNoiseEmitterComponent extends unreal.UActorComponent {
   
   /**

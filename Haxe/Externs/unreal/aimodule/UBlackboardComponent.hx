@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/BlackboardComponent.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/BlackboardComponent.h")
 @:uextern extern class UBlackboardComponent extends unreal.UActorComponent {
   
   /**

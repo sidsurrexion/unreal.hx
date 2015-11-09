@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Niagara/EdGraphSchema_Niagara.h", "Engine.h")
+@:glueCppIncludes("Niagara/EdGraphSchema_Niagara.h")
 @:uextern extern class UEdGraphSchema_Niagara extends unreal.UEdGraphSchema {
   public var PC_Curve : unreal.FString;
   public var PC_Matrix : unreal.FString;

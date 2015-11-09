@@ -10,7 +10,7 @@ package unreal;
   This does not contain any  AActor  references or state, so can safely be stored in
   packages, shared between multiple MatineeActors etc.
 **/
-@:glueCppIncludes("Matinee/InterpData.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpData.h")
 @:uextern extern class UInterpData extends unreal.UObject {
   
   /**

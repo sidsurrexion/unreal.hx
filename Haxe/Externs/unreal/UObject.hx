@@ -10,7 +10,7 @@ package unreal;
   
   
 **/
-@:glueCppIncludes("Object.h", "Engine.h")
+@:glueCppIncludes("Object.h")
 @:uextern extern class UObject {
   
 }

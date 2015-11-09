@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Perception/AISense_Hearing.h", "Engine.h")
+@:glueCppIncludes("Perception/AISense_Hearing.h")
 @:uextern extern class UAISense_Hearing extends unreal.aimodule.UAISense {
   
   /**

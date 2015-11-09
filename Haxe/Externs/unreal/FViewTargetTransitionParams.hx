@@ -8,7 +8,7 @@ package unreal;
 /**
   A set of parameters to describe how to transition between view targets.
 **/
-@:glueCppIncludes("Engine.h", "Engine.h")
+@:glueCppIncludes("Engine.h")
 @:uextern extern class FViewTargetTransitionParams {
   @:uname('new') public static function create():PHaxeCreated<unreal.FViewTargetTransitionParams>;
   

@@ -10,7 +10,7 @@ package unreal;
   For now this is only one TArray, but in the future
   we should define more transition/blending behaviors
 **/
-@:glueCppIncludes("Animation/AnimComposite.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimComposite.h")
 @:uextern extern class FAnimTrack {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimTrack>;
   public var AnimSegments : unreal.TArray<unreal.FAnimSegment>;

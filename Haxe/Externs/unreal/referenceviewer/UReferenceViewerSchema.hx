@@ -5,7 +5,7 @@
 package unreal.referenceviewer;
 
 @:umodule("ReferenceViewer")
-@:glueCppIncludes("ReferenceViewerSchema.h", "Engine.h")
+@:glueCppIncludes("ReferenceViewerSchema.h")
 @:uextern extern class UReferenceViewerSchema extends unreal.UEdGraphSchema {
   
 }

@@ -5,7 +5,7 @@
 package unreal.slate;
 
 @:umodule("Slate")
-@:glueCppIncludes("Framework/Styling/ButtonWidgetStyle.h", "Engine.h")
+@:glueCppIncludes("Framework/Styling/ButtonWidgetStyle.h")
 @:uextern extern class UButtonWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
   
   /**

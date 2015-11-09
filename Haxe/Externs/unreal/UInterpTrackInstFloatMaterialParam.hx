@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackInstFloatMaterialParam.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackInstFloatMaterialParam.h")
 @:uextern extern class UInterpTrackInstFloatMaterialParam extends unreal.UInterpTrackInst {
   
   /**

@@ -10,7 +10,7 @@ package unreal;
   
   @see USplineMeshComponent
 **/
-@:glueCppIncludes("Engine/SplineMeshActor.h", "Engine.h")
+@:glueCppIncludes("Engine/SplineMeshActor.h")
 @:uextern extern class ASplineMeshActor extends unreal.AActor {
   public var SplineMeshComponent : unreal.USplineMeshComponent;
   

@@ -12,7 +12,7 @@ package unreal.onlinesubsystemutils;
   can communicate with each other without officially connecting through normal Unreal networking
 **/
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("OnlineBeaconHostObject.h", "Engine.h")
+@:glueCppIncludes("OnlineBeaconHostObject.h")
 @:uextern extern class AOnlineBeaconHostObject extends unreal.AActor {
   
   /**

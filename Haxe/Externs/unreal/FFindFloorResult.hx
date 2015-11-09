@@ -8,7 +8,7 @@ package unreal;
 /**
   Data about the floor for walking movement, used by CharacterMovementComponent.
 **/
-@:glueCppIncludes("GameFramework/CharacterMovementComponent.h", "Engine.h")
+@:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
 @:uextern extern class FFindFloorResult {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFindFloorResult>;
   

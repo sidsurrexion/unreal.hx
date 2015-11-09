@@ -9,7 +9,7 @@ package unreal.umg;
   Allows thousands of items to be displayed in a list.  Generates widgets dynamically for each item.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/ListView.h", "Engine.h")
+@:glueCppIncludes("Components/ListView.h")
 @:uextern extern class UListView extends unreal.umg.UTableViewBase {
   
   /**

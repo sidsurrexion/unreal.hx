@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionTextureObjectParameter.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionTextureObjectParameter.h")
 @:uextern extern class UMaterialExpressionTextureObjectParameter extends unreal.UMaterialExpressionTextureSampleParameter {
   
 }

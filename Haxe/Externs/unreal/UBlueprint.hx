@@ -10,7 +10,7 @@ package unreal;
   and script level events; giving designers and gameplay programmers the tools to quickly create and iterate gameplay from
   within Unreal Editor without ever needing to write a line of code.
 **/
-@:glueCppIncludes("Engine/Blueprint.h", "Engine.h")
+@:glueCppIncludes("Engine/Blueprint.h")
 @:uextern extern class UBlueprint extends unreal.UBlueprintCore {
   #if WITH_EDITORONLY_DATA
   public var CrcLastCompiledSignature : unreal.FakeUInt32;

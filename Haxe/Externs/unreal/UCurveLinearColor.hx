@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Curves/CurveLinearColor.h", "Engine.h")
+@:glueCppIncludes("Curves/CurveLinearColor.h")
 @:uextern extern class UCurveLinearColor extends unreal.UCurveBase {
   
 }

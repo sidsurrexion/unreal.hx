@@ -8,7 +8,7 @@ package unreal;
 /**
   Class containing definition of a navigation area
 **/
-@:glueCppIncludes("AI/Navigation/NavAreas/NavAreaMeta_SwitchByAgent.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavAreas/NavAreaMeta_SwitchByAgent.h")
 @:uextern extern class UNavAreaMeta_SwitchByAgent extends unreal.UNavAreaMeta {
   public var Agent15Area : unreal.TSubclassOf<unreal.UNavArea>;
   public var Agent14Area : unreal.TSubclassOf<unreal.UNavArea>;

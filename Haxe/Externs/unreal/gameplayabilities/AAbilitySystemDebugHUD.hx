@@ -5,7 +5,7 @@
 package unreal.gameplayabilities;
 
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("AbilitySystemDebugHUD.h", "Engine.h")
+@:glueCppIncludes("AbilitySystemDebugHUD.h")
 @:uextern extern class AAbilitySystemDebugHUD extends unreal.AHUD {
   
 }

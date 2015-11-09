@@ -5,7 +5,7 @@
 package unreal.gameplaytags;
 
 @:umodule("GameplayTags")
-@:glueCppIncludes("GameplayTagContainer.h", "Engine.h")
+@:glueCppIncludes("GameplayTagContainer.h")
 @:uextern extern class UEditableGameplayTagQueryExpression_AnyExprMatch extends unreal.gameplaytags.UEditableGameplayTagQueryExpression {
   public var Expressions : unreal.TArray<unreal.gameplaytags.UEditableGameplayTagQueryExpression>;
   

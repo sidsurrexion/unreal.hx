@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimationAsset.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimationAsset.h")
 @:uextern extern class UAnimationAsset extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   

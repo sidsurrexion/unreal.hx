@@ -11,7 +11,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Audio/Overview/index.html
   @see USoundBase
 **/
-@:glueCppIncludes("Components/AudioComponent.h", "Engine.h")
+@:glueCppIncludes("Components/AudioComponent.h")
 @:uextern extern class UAudioComponent extends unreal.USceneComponent {
   
   /**

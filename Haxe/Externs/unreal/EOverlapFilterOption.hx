@@ -8,7 +8,7 @@ package unreal;
 /**
   @note, if you change this, change GetCollisionChannelFromOverlapFilter() to match
 **/
-@:glueCppIncludes("Kismet/KismetSystemLibrary.h", "Engine.h")
+@:glueCppIncludes("Kismet/KismetSystemLibrary.h")
 @:uname("EOverlapFilterOption")
 @:uextern extern enum EOverlapFilterOption {
   

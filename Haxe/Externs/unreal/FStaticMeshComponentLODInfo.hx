@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/StaticMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/StaticMeshComponent.h")
 @:uextern extern class FStaticMeshComponentLODInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FStaticMeshComponentLODInfo>;
   

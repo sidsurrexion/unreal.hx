@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Vehicles/VehicleAnimInstance.h", "Engine.h")
+@:glueCppIncludes("Vehicles/VehicleAnimInstance.h")
 @:uextern extern class UVehicleAnimInstance extends unreal.UAnimInstance {
   
 }

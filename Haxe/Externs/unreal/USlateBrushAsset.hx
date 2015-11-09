@@ -9,7 +9,7 @@ package unreal;
   An asset describing how a texture can exist in slate's DPI-aware environment
   and how this texture responds to resizing. e.g. Scale9-stretching? Tiling?
 **/
-@:glueCppIncludes("Slate/SlateBrushAsset.h", "Engine.h")
+@:glueCppIncludes("Slate/SlateBrushAsset.h")
 @:uextern extern class USlateBrushAsset extends unreal.UObject {
   
   /**

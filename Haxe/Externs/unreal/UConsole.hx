@@ -8,7 +8,7 @@ package unreal;
 /**
   A basic command line console that accepts most commands.
 **/
-@:glueCppIncludes("Engine/Console.h", "Engine.h")
+@:glueCppIncludes("Engine/Console.h")
 @:uextern extern class UConsole extends unreal.UObject {
   
   /**

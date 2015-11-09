@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/SkeletalMeshSocket.h", "Engine.h")
+@:glueCppIncludes("Engine/SkeletalMeshSocket.h")
 @:uextern extern class USkeletalMeshSocket extends unreal.UObject {
   
   /**

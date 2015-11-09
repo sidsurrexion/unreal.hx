@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("ThumbnailRendering/WorldThumbnailInfo.h", "Engine.h")
+@:glueCppIncludes("ThumbnailRendering/WorldThumbnailInfo.h")
 @:uextern extern class UWorldThumbnailInfo extends unreal.editor.USceneThumbnailInfo {
   
   /**

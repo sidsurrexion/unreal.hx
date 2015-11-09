@@ -8,7 +8,7 @@ package unreal;
 /**
   This defines what constraint it is defined
 **/
-@:glueCppIncludes("Animation/Rig.h", "Engine.h")
+@:glueCppIncludes("Animation/Rig.h")
 @:uextern extern class FTransformBaseConstraint {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTransformBaseConstraint>;
   

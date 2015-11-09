@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_SpringBone.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_SpringBone.h")
 @:uextern extern class UAnimGraphNode_SpringBone extends unreal.animgraph.UAnimGraphNode_SkeletalControlBase {
   public var Node : unreal.animgraphruntime.FAnimNode_SpringBone;
   

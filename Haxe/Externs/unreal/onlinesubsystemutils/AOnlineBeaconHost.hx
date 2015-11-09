@@ -13,7 +13,7 @@ package unreal.onlinesubsystemutils;
   The AOnlineBeaconHost pairs the two client actors, verifies the validity of the exchange, and accepts/continues the connection
 **/
 @:umodule("OnlineSubsystemUtils")
-@:glueCppIncludes("OnlineBeaconHost.h", "Engine.h")
+@:glueCppIncludes("OnlineBeaconHost.h")
 @:uextern extern class AOnlineBeaconHost extends unreal.onlinesubsystemutils.AOnlineBeacon {
   
   /**

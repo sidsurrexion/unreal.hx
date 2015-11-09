@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimCompress.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimCompress.h")
 @:uextern extern class UAnimCompress extends unreal.UObject {
   
   /**

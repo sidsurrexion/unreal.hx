@@ -8,7 +8,7 @@ package unreal;
 /**
   Container for a physics representation of an object
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FBodyInstance {
   @:uname('new') public static function create():PHaxeCreated<unreal.FBodyInstance>;
   

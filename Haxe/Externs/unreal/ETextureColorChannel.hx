@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionAntialiasedTextureMask.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionAntialiasedTextureMask.h")
 @:uname("ETextureColorChannel")
 @:uextern extern enum ETextureColorChannel {
   TCC_Red;

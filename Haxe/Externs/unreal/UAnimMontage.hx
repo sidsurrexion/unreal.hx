@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimMontage.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimMontage.h")
 @:uextern extern class UAnimMontage extends unreal.UAnimCompositeBase {
   
   /**

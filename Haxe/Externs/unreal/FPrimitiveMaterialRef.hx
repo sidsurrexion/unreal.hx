@@ -8,7 +8,7 @@ package unreal;
 /**
   Reference to a specific material in a PrimitiveComponent.
 **/
-@:glueCppIncludes("Matinee/InterpTrackInstFloatMaterialParam.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackInstFloatMaterialParam.h")
 @:uextern extern class FPrimitiveMaterialRef {
   @:uname('new') public static function create():PHaxeCreated<unreal.FPrimitiveMaterialRef>;
   public var ElementIndex : unreal.Int32;

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/TriggerVolume.h", "Engine.h")
+@:glueCppIncludes("Engine/TriggerVolume.h")
 @:uextern extern class ATriggerVolume extends unreal.AVolume {
   
 }

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Debug/LogVisualizerHUD.h", "Engine.h")
+@:glueCppIncludes("Debug/LogVisualizerHUD.h")
 @:uextern extern class ALogVisualizerHUD extends unreal.ADebugCameraHUD {
   
 }

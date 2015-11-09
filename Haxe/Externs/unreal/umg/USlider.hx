@@ -11,7 +11,7 @@ package unreal.umg;
   ● No Children
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/Slider.h", "Engine.h")
+@:glueCppIncludes("Components/Slider.h")
 @:uextern extern class USlider extends unreal.umg.UWidget {
   
   /**

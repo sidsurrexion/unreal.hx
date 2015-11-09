@@ -9,7 +9,7 @@ package unreal;
   Temporary array for tracking 'solo' emitter mode.
   Entry will be true if emitter was enabled
 **/
-@:glueCppIncludes("Particles/ParticleSystem.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleSystem.h")
 @:uextern extern class FLODSoloTrack {
   @:uname('new') public static function create():PHaxeCreated<unreal.FLODSoloTrack>;
   public var SoloEnableSetting : unreal.TArray<unreal.UInt8>;

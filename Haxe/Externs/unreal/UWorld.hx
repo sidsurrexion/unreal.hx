@@ -14,7 +14,7 @@ package unreal;
   In a standalone game, generally only a single World exists except during seamless area transitions when both a destination and current world exists.
   In the editor many Worlds exist: The level being edited, each PIE instance, each editor tool which has an interactive rendered viewport, and many more.
 **/
-@:glueCppIncludes("Engine/World.h", "Engine.h")
+@:glueCppIncludes("Engine/World.h")
 @:uextern extern class UWorld extends unreal.UObject {
   
   /**

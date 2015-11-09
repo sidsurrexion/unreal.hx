@@ -8,7 +8,7 @@ package unreal;
 /**
   Blend List by Enum, it changes based on enum input that enters
 **/
-@:glueCppIncludes("AnimGraphNode_BlendListByEnum.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_BlendListByEnum.h")
 @:uextern extern class FAnimNode_BlendListByEnum extends unreal.FAnimNode_BlendListBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_BlendListByEnum>;
   

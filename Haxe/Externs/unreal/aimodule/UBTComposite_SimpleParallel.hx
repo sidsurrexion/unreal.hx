@@ -10,7 +10,7 @@ package unreal.aimodule;
   Allows for running two children: one which must be a single task node (with optional decorators), and the other of which can be a complete subtree.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Composites/BTComposite_SimpleParallel.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Composites/BTComposite_SimpleParallel.h")
 @:uextern extern class UBTComposite_SimpleParallel extends unreal.aimodule.UBTCompositeNode {
   
   /**

@@ -8,7 +8,7 @@ package unreal;
 /**
   Tick function that calls UActorComponent::ConditionalTick
 **/
-@:glueCppIncludes("Components/ActorComponent.h", "Engine.h")
+@:glueCppIncludes("Components/ActorComponent.h")
 @:uextern extern class FActorComponentTickFunction extends unreal.FTickFunction {
   @:uname('new') public static function create():PHaxeCreated<unreal.FActorComponentTickFunction>;
   

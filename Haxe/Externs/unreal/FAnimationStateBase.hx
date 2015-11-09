@@ -8,7 +8,7 @@ package unreal;
 /**
   This is the base class that both baked states and transitions use
 **/
-@:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h")
 @:uextern extern class FAnimationStateBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimationStateBase>;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundNodeDistanceCrossFade.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeDistanceCrossFade.h")
 @:uextern extern class FDistanceDatum {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDistanceDatum>;
   

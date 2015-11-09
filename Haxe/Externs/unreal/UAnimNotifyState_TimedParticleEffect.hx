@@ -10,7 +10,7 @@ package unreal;
   Allows a looping particle effect to be played in an animation that will activate
   at the beginning of the notify and deactivate at the end.
 **/
-@:glueCppIncludes("Animation/AnimNotifies/AnimNotifyState_TimedParticleEffect.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimNotifies/AnimNotifyState_TimedParticleEffect.h")
 @:uextern extern class UAnimNotifyState_TimedParticleEffect extends unreal.UAnimNotifyState {
   #if WITH_EDITORONLY_DATA
   public var PreviousSocketNames : unreal.TArray<unreal.FName>;

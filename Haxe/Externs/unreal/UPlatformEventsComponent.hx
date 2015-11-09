@@ -8,7 +8,7 @@ package unreal;
 /**
   Component to handle receiving notifications from the OS about platform events.
 **/
-@:glueCppIncludes("Components/PlatformEventsComponent.h", "Engine.h")
+@:glueCppIncludes("Components/PlatformEventsComponent.h")
 @:uextern extern class UPlatformEventsComponent extends unreal.UActorComponent {
   
 }

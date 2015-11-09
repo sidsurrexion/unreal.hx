@@ -8,7 +8,7 @@ package unreal;
 /**
   Chunks up to the depth DefaultImpactDamageDepth will take impact damage, unless IDO_On or IDO_Off is chosen.
 **/
-@:glueCppIncludes("Engine/DestructibleMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uname("EImpactDamageOverride")
 @:uextern extern enum EImpactDamageOverride {
   IDO_None;

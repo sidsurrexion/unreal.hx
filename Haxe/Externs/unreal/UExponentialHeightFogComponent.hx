@@ -8,7 +8,7 @@ package unreal;
 /**
   Used to create fogging effects such as clouds but with a density that is related to the height of the fog.
 **/
-@:glueCppIncludes("Components/ExponentialHeightFogComponent.h", "Engine.h")
+@:glueCppIncludes("Components/ExponentialHeightFogComponent.h")
 @:uextern extern class UExponentialHeightFogComponent extends unreal.USceneComponent {
   
   /**

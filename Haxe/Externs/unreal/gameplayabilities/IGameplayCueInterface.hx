@@ -5,7 +5,7 @@
 package unreal.gameplayabilities;
 
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayCueInterface.h", "Engine.h")
+@:glueCppIncludes("GameplayCueInterface.h")
 @:uextern extern interface IGameplayCueInterface {
   
 }

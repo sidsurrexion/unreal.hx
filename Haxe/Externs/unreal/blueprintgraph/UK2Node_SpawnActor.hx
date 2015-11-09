@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_SpawnActor.h", "Engine.h")
+@:glueCppIncludes("K2Node_SpawnActor.h")
 @:uextern extern class UK2Node_SpawnActor extends unreal.blueprintgraph.UK2Node {
   
 }

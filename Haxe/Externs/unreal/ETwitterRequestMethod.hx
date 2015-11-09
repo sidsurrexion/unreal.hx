@@ -8,7 +8,7 @@ package unreal;
 /**
   The possible twitter request methods
 **/
-@:glueCppIncludes("Engine/TwitterIntegrationBase.h", "Engine.h")
+@:glueCppIncludes("Engine/TwitterIntegrationBase.h")
 @:uname("ETwitterRequestMethod")
 @:uextern extern enum ETwitterRequestMethod {
   TRM_Get;

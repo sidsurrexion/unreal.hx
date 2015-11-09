@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("EdGraph/EdGraphNode_Documentation.h", "Engine.h")
+@:glueCppIncludes("EdGraph/EdGraphNode_Documentation.h")
 @:uextern extern class UEdGraphNode_Documentation extends unreal.UEdGraphNode {
   
   /**

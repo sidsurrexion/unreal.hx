@@ -14,7 +14,7 @@ package unreal.paper2d;
   @see UPaperSpriteComponent
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("PaperSprite.h", "Engine.h")
+@:glueCppIncludes("PaperSprite.h")
 @:uextern extern class UPaperSprite extends unreal.UObject implements unreal.IInterface_CollisionDataProvider {
   
   /**

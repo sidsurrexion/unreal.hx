@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines a delay
 **/
-@:glueCppIncludes("Sound/SoundNodeDelay.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeDelay.h")
 @:uextern extern class USoundNodeDelay extends unreal.USoundNode {
   
   /**

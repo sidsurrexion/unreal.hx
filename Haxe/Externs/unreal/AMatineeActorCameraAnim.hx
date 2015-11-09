@@ -8,7 +8,7 @@ package unreal;
 /**
   Actor used to control temporary matinees for camera anims that only exist in the editor
 **/
-@:glueCppIncludes("Matinee/MatineeActorCameraAnim.h", "Engine.h")
+@:glueCppIncludes("Matinee/MatineeActorCameraAnim.h")
 @:uextern extern class AMatineeActorCameraAnim extends unreal.AMatineeActor {
   
   /**

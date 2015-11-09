@@ -8,7 +8,7 @@ package unreal;
 /**
   Implements a light that is created after a lighting build with Lightmass and handles mesh area light influence on dynamic objects.
 **/
-@:glueCppIncludes("Engine/GeneratedMeshAreaLight.h", "Engine.h")
+@:glueCppIncludes("Engine/GeneratedMeshAreaLight.h")
 @:uextern extern class AGeneratedMeshAreaLight extends unreal.ASpotLight {
   
 }

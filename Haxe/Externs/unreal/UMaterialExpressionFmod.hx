@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionFmod.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionFmod.h")
 @:uextern extern class UMaterialExpressionFmod extends unreal.UMaterialExpression {
   public var B : unreal.FExpressionInput;
   public var A : unreal.FExpressionInput;

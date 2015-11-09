@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Parameter/ParticleModuleParameterDynamic_Seeded.h", "Engine.h")
+@:glueCppIncludes("Particles/Parameter/ParticleModuleParameterDynamic_Seeded.h")
 @:uextern extern class UParticleModuleParameterDynamic_Seeded extends unreal.UParticleModuleParameterDynamic {
   
   /**

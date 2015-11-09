@@ -9,7 +9,7 @@ package unreal.slatereflector;
   A widget reflector node that holds on to the widget it references so that certain properties can be updated live
 **/
 @:umodule("SlateReflector")
-@:glueCppIncludes("Private/Models/WidgetReflectorNode.h", "Engine.h")
+@:glueCppIncludes("Private/Models/WidgetReflectorNode.h")
 @:uextern extern class ULiveWidgetReflectorNode extends unreal.slatereflector.UWidgetReflectorNodeBase {
   
 }

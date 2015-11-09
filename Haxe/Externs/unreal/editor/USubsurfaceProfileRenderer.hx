@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("ThumbnailRendering/SubsurfaceProfileRenderer.h", "Engine.h")
+@:glueCppIncludes("ThumbnailRendering/SubsurfaceProfileRenderer.h")
 @:uextern extern class USubsurfaceProfileRenderer extends unreal.editor.UTextureThumbnailRenderer {
   
 }

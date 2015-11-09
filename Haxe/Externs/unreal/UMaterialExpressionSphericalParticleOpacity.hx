@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionSphericalParticleOpacity.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionSphericalParticleOpacity.h")
 @:uextern extern class UMaterialExpressionSphericalParticleOpacity extends unreal.UMaterialExpression {
   
   /**

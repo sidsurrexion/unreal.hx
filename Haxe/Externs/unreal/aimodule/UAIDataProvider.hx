@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("DataProviders/AIDataProvider.h", "Engine.h")
+@:glueCppIncludes("DataProviders/AIDataProvider.h")
 @:uextern extern class UAIDataProvider extends unreal.UObject {
   
 }

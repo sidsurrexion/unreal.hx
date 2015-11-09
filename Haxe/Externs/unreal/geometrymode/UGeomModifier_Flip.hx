@@ -5,7 +5,7 @@
 package unreal.geometrymode;
 
 @:umodule("GeometryMode")
-@:glueCppIncludes("GeomModifier_Flip.h", "Engine.h")
+@:glueCppIncludes("GeomModifier_Flip.h")
 @:uextern extern class UGeomModifier_Flip extends unreal.geometrymode.UGeomModifier_Edit {
   
 }

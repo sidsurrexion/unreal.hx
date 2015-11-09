@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/RecastNavMesh.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/RecastNavMesh.h")
 @:uextern extern class ARecastNavMesh extends unreal.ANavigationData {
   
   /**

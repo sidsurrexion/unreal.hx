@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Navigation/CrowdManager.h", "Engine.h")
+@:glueCppIncludes("Navigation/CrowdManager.h")
 @:uextern extern class UCrowdManager extends unreal.UObject {
   
   /**

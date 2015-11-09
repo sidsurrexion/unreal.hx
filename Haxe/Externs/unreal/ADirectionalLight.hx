@@ -8,7 +8,7 @@ package unreal;
 /**
   Implements a directional light actor.
 **/
-@:glueCppIncludes("Engine/DirectionalLight.h", "Engine.h")
+@:glueCppIncludes("Engine/DirectionalLight.h")
 @:uextern extern class ADirectionalLight extends unreal.ALight {
   #if WITH_EDITORONLY_DATA
   public var ArrowComponent : unreal.UArrowComponent;

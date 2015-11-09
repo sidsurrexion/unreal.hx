@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Perception/AISightTargetInterface.h", "Engine.h")
+@:glueCppIncludes("Perception/AISightTargetInterface.h")
 @:uextern extern interface IAISightTargetInterface {
   
 }

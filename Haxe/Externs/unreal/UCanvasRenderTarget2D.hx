@@ -13,7 +13,7 @@ package unreal;
   function.  Also, remember to hold onto your new canvas render target with a reference so that it doesn't get
   garbage collected.
 **/
-@:glueCppIncludes("Engine/CanvasRenderTarget2D.h", "Engine.h")
+@:glueCppIncludes("Engine/CanvasRenderTarget2D.h")
 @:uextern extern class UCanvasRenderTarget2D extends unreal.UTextureRenderTarget2D {
   
 }

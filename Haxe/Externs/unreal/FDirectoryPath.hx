@@ -8,7 +8,7 @@ package unreal;
 /**
   Structure for directory paths that are displayed in the UI.
 **/
-@:glueCppIncludes("Tests/AutomationTestSettings.h", "Engine.h")
+@:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FDirectoryPath {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDirectoryPath>;
   

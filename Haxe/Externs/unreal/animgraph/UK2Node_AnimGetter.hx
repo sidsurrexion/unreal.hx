@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("K2Node_AnimGetter.h", "Engine.h")
+@:glueCppIncludes("K2Node_AnimGetter.h")
 @:uextern extern class UK2Node_AnimGetter extends unreal.blueprintgraph.UK2Node_CallFunction {
   
   /**

@@ -5,7 +5,7 @@
 package unreal.aitestsuite;
 
 @:umodule("AITestSuite")
-@:glueCppIncludes("BehaviorTree/TestBTDecorator_CantExecute.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/TestBTDecorator_CantExecute.h")
 @:uextern extern class UTestBTDecorator_CantExecute extends unreal.aimodule.UBTDecorator {
   
 }

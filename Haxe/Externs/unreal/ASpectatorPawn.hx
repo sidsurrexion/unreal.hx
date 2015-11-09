@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/SpectatorPawn.h", "Engine.h")
+@:glueCppIncludes("GameFramework/SpectatorPawn.h")
 @:uextern extern class ASpectatorPawn extends unreal.ADefaultPawn {
   
 }

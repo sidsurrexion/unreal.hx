@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   A single byte section
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Sections/MovieSceneByteSection.h", "Engine.h")
+@:glueCppIncludes("Sections/MovieSceneByteSection.h")
 @:uextern extern class UMovieSceneByteSection extends unreal.moviescene.UMovieSceneSection {
   
 }

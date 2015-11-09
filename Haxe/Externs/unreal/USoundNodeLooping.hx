@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines how a sound loops; either indefinitely, or for a set number of times
 **/
-@:glueCppIncludes("Sound/SoundNodeLooping.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeLooping.h")
 @:uextern extern class USoundNodeLooping extends unreal.USoundNode {
   
   /**

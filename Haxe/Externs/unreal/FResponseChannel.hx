@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("PhysicsEngine/BodySetup.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FResponseChannel {
   @:uname('new') public static function create():PHaxeCreated<unreal.FResponseChannel>;
   public var Response : unreal.ECollisionResponse;

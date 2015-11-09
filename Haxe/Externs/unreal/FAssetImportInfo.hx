@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct that is used to store an array of asset import data as an asset registry tag
 **/
-@:glueCppIncludes("EditorFramework/AssetImportData.h", "Engine.h")
+@:glueCppIncludes("EditorFramework/AssetImportData.h")
 @:uextern extern class FAssetImportInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAssetImportInfo>;
   

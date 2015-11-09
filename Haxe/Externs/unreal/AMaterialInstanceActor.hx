@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialInstanceActor.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialInstanceActor.h")
 @:uextern extern class AMaterialInstanceActor extends unreal.AActor {
   
   /**

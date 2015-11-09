@@ -8,7 +8,7 @@ package unreal;
 /**
   A component that efficiently renders multiple instances of the same StaticMesh.
 **/
-@:glueCppIncludes("Components/InstancedStaticMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/InstancedStaticMeshComponent.h")
 @:uextern extern class UInstancedStaticMeshComponent extends unreal.UStaticMeshComponent {
   
   /**

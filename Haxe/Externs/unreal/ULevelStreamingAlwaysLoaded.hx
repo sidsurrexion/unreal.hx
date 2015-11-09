@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/LevelStreamingAlwaysLoaded.h", "Engine.h")
+@:glueCppIncludes("Engine/LevelStreamingAlwaysLoaded.h")
 @:uextern extern class ULevelStreamingAlwaysLoaded extends unreal.ULevelStreaming {
   
 }

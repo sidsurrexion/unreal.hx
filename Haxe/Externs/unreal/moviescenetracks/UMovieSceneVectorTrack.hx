@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   Handles manipulation of component transforms in a movie scene
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Tracks/MovieSceneVectorTrack.h", "Engine.h")
+@:glueCppIncludes("Tracks/MovieSceneVectorTrack.h")
 @:uextern extern class UMovieSceneVectorTrack extends unreal.moviescenetracks.UMovieScenePropertyTrack {
   
 }

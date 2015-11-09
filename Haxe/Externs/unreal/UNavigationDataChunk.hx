@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavigationDataChunk.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationDataChunk.h")
 @:uextern extern class UNavigationDataChunk extends unreal.UObject {
   
   /**

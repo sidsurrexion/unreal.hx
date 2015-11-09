@@ -5,7 +5,7 @@
 package unreal.destructiblemesheditor;
 
 @:umodule("DestructibleMeshEditor")
-@:glueCppIncludes("DestructibleChunkParamsProxy.h", "Engine.h")
+@:glueCppIncludes("DestructibleChunkParamsProxy.h")
 @:uextern extern class UDestructibleChunkParamsProxy extends unreal.UObject {
   public var ChunkParams : unreal.FDestructibleChunkParameters;
   public var ChunkIndex : unreal.Int32;

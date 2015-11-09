@@ -5,7 +5,7 @@
 package unreal.paper2deditor;
 
 @:umodule("Paper2DEditor")
-@:glueCppIncludes("PaperFlipbookThumbnailRenderer.h", "Engine.h")
+@:glueCppIncludes("PaperFlipbookThumbnailRenderer.h")
 @:uextern extern class UPaperFlipbookThumbnailRenderer extends unreal.paper2deditor.UPaperSpriteThumbnailRenderer {
   
 }

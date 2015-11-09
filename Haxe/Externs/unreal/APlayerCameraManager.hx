@@ -23,7 +23,7 @@ package unreal;
   
   @see https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Camera/
 **/
-@:glueCppIncludes("Camera/PlayerCameraManager.h", "Engine.h")
+@:glueCppIncludes("Camera/PlayerCameraManager.h")
 @:uextern extern class APlayerCameraManager extends unreal.AActor {
   
   /**

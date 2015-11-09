@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionDistance.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionDistance.h")
 @:uextern extern class UMaterialExpressionDistance extends unreal.UMaterialExpression {
   public var B : unreal.FExpressionInput;
   public var A : unreal.FExpressionInput;

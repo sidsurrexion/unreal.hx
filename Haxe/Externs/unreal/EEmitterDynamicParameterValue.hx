@@ -9,7 +9,7 @@ package unreal;
   EmitterDynamicParameterValue
   Enumeration indicating the way a dynamic parameter should be set.
 **/
-@:glueCppIncludes("Particles/Parameter/ParticleModuleParameterDynamic.h", "Engine.h")
+@:glueCppIncludes("Particles/Parameter/ParticleModuleParameterDynamic.h")
 @:uname("EEmitterDynamicParameterValue")
 @:uextern extern enum EEmitterDynamicParameterValue {
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Editable vector parameter.
 **/
-@:glueCppIncludes("Materials/MaterialInstance.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialInstance.h")
 @:uextern extern class FVectorParameterValue {
   @:uname('new') public static function create():PHaxeCreated<unreal.FVectorParameterValue>;
   public var ExpressionGUID : unreal.FGuid;

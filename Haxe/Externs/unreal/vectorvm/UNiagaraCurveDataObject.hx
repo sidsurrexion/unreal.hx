@@ -9,7 +9,7 @@ package unreal.vectorvm;
   Curve object; encapsulates a curve for the VectorVM
 **/
 @:umodule("VectorVM")
-@:glueCppIncludes("VectorVMDataObject.h", "Engine.h")
+@:glueCppIncludes("VectorVMDataObject.h")
 @:uextern extern class UNiagaraCurveDataObject extends unreal.vectorvm.UNiagaraDataObject {
   public var CurveObj : unreal.UCurveVector;
   

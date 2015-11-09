@@ -9,7 +9,7 @@ package unreal.aitestsuite;
   a Testing-time component that is a way to access UGameplayTasksComponent's protected properties
 **/
 @:umodule("AITestSuite")
-@:glueCppIncludes("MockGameplayTasks.h", "Engine.h")
+@:glueCppIncludes("MockGameplayTasks.h")
 @:uextern extern class UMockGameplayTasksComponent extends unreal.gameplaytasks.UGameplayTasksComponent {
   
 }

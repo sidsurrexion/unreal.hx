@@ -8,7 +8,7 @@ package unreal;
 /**
   Structure for recording float values and displaying them as an Histogram through DrawDebugFloatHistory.
 **/
-@:glueCppIncludes("Engine.h", "Engine.h")
+@:glueCppIncludes("Engine.h")
 @:uextern extern class FDebugFloatHistory {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDebugFloatHistory>;
   

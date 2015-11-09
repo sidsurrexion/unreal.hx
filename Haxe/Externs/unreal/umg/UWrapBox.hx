@@ -13,7 +13,7 @@ package unreal.umg;
   ● Wraps
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/WrapBox.h", "Engine.h")
+@:glueCppIncludes("Components/WrapBox.h")
 @:uextern extern class UWrapBox extends unreal.umg.UPanelWidget {
   
   /**

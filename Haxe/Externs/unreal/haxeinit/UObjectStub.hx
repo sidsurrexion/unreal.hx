@@ -12,7 +12,7 @@ package unreal.haxeinit;
   see IScriptGeneratorPluginInterface::GetGeneratedCodeModuleName for the related code
 **/
 @:umodule("HaxeInit")
-@:glueCppIncludes("Private/StubUObject.h", "Engine.h")
+@:glueCppIncludes("Private/StubUObject.h")
 @:uextern extern class UObjectStub extends unreal.UObject {
   
 }

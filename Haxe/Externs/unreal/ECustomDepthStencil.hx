@@ -8,7 +8,7 @@ package unreal;
 /**
   Enumerates available options for custom depth.
 **/
-@:glueCppIncludes("Engine/RendererSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/RendererSettings.h")
 @:uname("ECustomDepthStencil.Type")
 @:uextern extern enum ECustomDepthStencil {
   Disabled;

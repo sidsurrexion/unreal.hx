@@ -8,7 +8,7 @@ package unreal;
 /**
   One key in a rich, editable float curve
 **/
-@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h", "Engine.h")
+@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FRichCurveKey {
   @:uname('new') public static function create():PHaxeCreated<unreal.FRichCurveKey>;
   

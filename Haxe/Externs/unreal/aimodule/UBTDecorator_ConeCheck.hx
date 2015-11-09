@@ -10,7 +10,7 @@ package unreal.aimodule;
   A decorator node that bases its condition on a cone check, using Blackboard entries to form the parameters of the check.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_ConeCheck.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_ConeCheck.h")
 @:uextern extern class UBTDecorator_ConeCheck extends unreal.aimodule.UBTDecorator {
   
   /**

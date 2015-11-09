@@ -8,7 +8,7 @@ package unreal;
 /**
   Information for one event in the track.
 **/
-@:glueCppIncludes("Matinee/InterpTrackEvent.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackEvent.h")
 @:uextern extern class FEventTrackKey {
   @:uname('new') public static function create():PHaxeCreated<unreal.FEventTrackKey>;
   public var EventName : unreal.FName;

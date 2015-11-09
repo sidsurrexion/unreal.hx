@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Exporters/TextureExporterPCX.h", "Engine.h")
+@:glueCppIncludes("Exporters/TextureExporterPCX.h")
 @:uextern extern class UTextureExporterPCX extends unreal.UExporter {
   
 }

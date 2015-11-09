@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/PlatformInterfaceBase.h", "Engine.h")
+@:glueCppIncludes("Engine/PlatformInterfaceBase.h")
 @:uextern extern class UPlatformInterfaceBase extends unreal.UObject {
   
   /**

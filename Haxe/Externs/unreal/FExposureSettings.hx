@@ -8,7 +8,7 @@ package unreal;
 /**
   Settings to allow designers to override the automatic expose
 **/
-@:glueCppIncludes("Settings/LevelEditorViewportSettings.h", "Engine.h")
+@:glueCppIncludes("Settings/LevelEditorViewportSettings.h")
 @:uextern extern class FExposureSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FExposureSettings>;
   

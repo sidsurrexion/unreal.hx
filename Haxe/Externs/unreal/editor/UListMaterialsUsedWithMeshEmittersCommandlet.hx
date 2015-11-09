@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Commandlets/ListMaterialsUsedWithMeshEmittersCommandlet.h", "Engine.h")
+@:glueCppIncludes("Commandlets/ListMaterialsUsedWithMeshEmittersCommandlet.h")
 @:uextern extern class UListMaterialsUsedWithMeshEmittersCommandlet extends unreal.UCommandlet {
   
 }

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackInstSound.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackInstSound.h")
 @:uextern extern class UInterpTrackInstSound extends unreal.UInterpTrackInst {
   public var PlayAudioComp : unreal.UAudioComponent;
   public var LastUpdatePosition : unreal.Float32;

@@ -10,7 +10,7 @@ package unreal;
   Events can be triggered at keyframes along the timeline.
   Floats, vectors, and colors are interpolated between keyframes along the timeline.
 **/
-@:glueCppIncludes("Components/TimelineComponent.h", "Engine.h")
+@:glueCppIncludes("Components/TimelineComponent.h")
 @:uextern extern class UTimelineComponent extends unreal.UActorComponent {
   
 }

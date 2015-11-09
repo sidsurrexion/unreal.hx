@@ -12,7 +12,7 @@ package unreal;
   if you'd like to override all about profile, please use
   +Profiles=(Name=NameOfProfileYouLikeToOverwrite,....)
 **/
-@:glueCppIncludes("Engine/CollisionProfile.h", "Engine.h")
+@:glueCppIncludes("Engine/CollisionProfile.h")
 @:uextern extern class FCustomProfile {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCustomProfile>;
   

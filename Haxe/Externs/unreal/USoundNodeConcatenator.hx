@@ -8,7 +8,7 @@ package unreal;
 /**
   Plays child nodes sequentially
 **/
-@:glueCppIncludes("Sound/SoundNodeConcatenator.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeConcatenator.h")
 @:uextern extern class USoundNodeConcatenator extends unreal.USoundNode {
   
   /**

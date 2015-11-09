@@ -5,7 +5,7 @@
 package unreal.landscape;
 
 @:umodule("Landscape")
-@:glueCppIncludes("Materials/MaterialExpressionLandscapeVisibilityMask.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionLandscapeVisibilityMask.h")
 @:uextern extern class UMaterialExpressionLandscapeVisibilityMask extends unreal.UMaterialExpression {
   
   /**

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/WorldSettings.h", "Engine.h")
+@:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class FMeshProxySettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMeshProxySettings>;
   public var bPlaneNegativeHalfspace : Bool;

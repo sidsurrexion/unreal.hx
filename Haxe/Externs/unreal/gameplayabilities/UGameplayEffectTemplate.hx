@@ -24,7 +24,7 @@ package unreal.gameplayabilities;
   seen/edited by just checking "ShowAllProperties" on the GameplayEffect itself.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayEffectTemplate.h", "Engine.h")
+@:glueCppIncludes("GameplayEffectTemplate.h")
 @:uextern extern class UGameplayEffectTemplate extends unreal.gameplayabilities.UGameplayEffect {
   #if WITH_EDITORONLY_DATA
   

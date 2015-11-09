@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/TextRenderActor.h", "Engine.h")
+@:glueCppIncludes("Engine/TextRenderActor.h")
 @:uextern extern class ATextRenderActor extends unreal.AActor {
   #if WITH_EDITORONLY_DATA
   public var SpriteComponent : unreal.UBillboardComponent;

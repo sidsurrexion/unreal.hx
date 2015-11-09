@@ -8,7 +8,7 @@ package unreal;
 /**
   A line of subtitle text and the time at which it should be displayed.
 **/
-@:glueCppIncludes("Sound/SoundWave.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundWave.h")
 @:uextern extern class FSubtitleCue {
   @:uname('new') public static function create():PHaxeCreated<unreal.FSubtitleCue>;
   

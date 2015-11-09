@@ -8,7 +8,7 @@ package unreal;
 /**
   Simple class to store 2D camera information.
 **/
-@:glueCppIncludes("Engine/BookMark2D.h", "Engine.h")
+@:glueCppIncludes("Engine/BookMark2D.h")
 @:uextern extern class UBookMark2D extends unreal.UObject {
   
   /**

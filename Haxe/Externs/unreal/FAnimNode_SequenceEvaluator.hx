@@ -10,7 +10,7 @@ package unreal;
   Typically the playback position of the animation for this node will represent something other than time, like jump height.
   This node will not trigger any notifies present in the associated sequence.
 **/
-@:glueCppIncludes("AnimGraphNode_SequenceEvaluator.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_SequenceEvaluator.h")
 @:uextern extern class FAnimNode_SequenceEvaluator extends unreal.FAnimNode_AssetPlayerBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_SequenceEvaluator>;
   

@@ -8,7 +8,7 @@ package unreal;
 /**
   Provides rounding modes for converting numbers into localized text
 **/
-@:glueCppIncludes("Kismet/KismetTextLibrary.h", "Engine.h")
+@:glueCppIncludes("Kismet/KismetTextLibrary.h")
 @:uname("ERoundingMode")
 @:uextern extern enum ERoundingMode {
   

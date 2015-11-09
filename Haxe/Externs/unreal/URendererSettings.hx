@@ -8,7 +8,7 @@ package unreal;
 /**
   Rendering settings.
 **/
-@:glueCppIncludes("Engine/RendererSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/RendererSettings.h")
 @:uextern extern class URendererSettings extends unreal.UDeveloperSettings {
   
   /**

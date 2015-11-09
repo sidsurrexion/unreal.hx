@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   Handles manipulation of float properties in a movie scene
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Tracks/MovieSceneFloatTrack.h", "Engine.h")
+@:glueCppIncludes("Tracks/MovieSceneFloatTrack.h")
 @:uextern extern class UMovieSceneFloatTrack extends unreal.moviescenetracks.UMovieScenePropertyTrack {
   
 }

@@ -8,7 +8,7 @@ package unreal;
 /**
   A CameraActor is a camera viewpoint that can be placed in a level.
 **/
-@:glueCppIncludes("Camera/CameraActor.h", "Engine.h")
+@:glueCppIncludes("Camera/CameraActor.h")
 @:uextern extern class ACameraActor extends unreal.AActor {
   public var CameraComponent : unreal.UCameraComponent;
   

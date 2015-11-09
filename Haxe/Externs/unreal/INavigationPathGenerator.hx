@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/Navigation/NavigationPathGenerator.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationPathGenerator.h")
 @:uextern extern interface INavigationPathGenerator {
   
 }

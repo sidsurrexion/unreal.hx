@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameplayCueManager.h", "Engine.h")
+@:glueCppIncludes("GameplayCueManager.h")
 @:uextern extern class FStreamableManager {
   @:uname('new') public static function create():PHaxeCreated<unreal.FStreamableManager>;
   

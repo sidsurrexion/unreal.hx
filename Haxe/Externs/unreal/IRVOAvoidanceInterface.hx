@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AI/RVOAvoidanceInterface.h", "Engine.h")
+@:glueCppIncludes("AI/RVOAvoidanceInterface.h")
 @:uextern extern interface IRVOAvoidanceInterface {
   
 }

@@ -10,7 +10,7 @@ package unreal;
   General modification of the material cannot be supported without recompilation, so the instances are limited to changing the values of
   predefined material parameters. The parameters are statically defined in the compiled material by a unique name, type and default value.
 **/
-@:glueCppIncludes("Materials/MaterialInstanceConstant.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialInstanceConstant.h")
 @:uextern extern class UMaterialInstanceConstant extends unreal.UMaterialInstance {
   
 }

@@ -9,7 +9,7 @@ package unreal.cascade;
   Used to provide an extended particle system component to allow collision to function in the preview window.
 **/
 @:umodule("Cascade")
-@:glueCppIncludes("CascadeParticleSystemComponent.h", "Engine.h")
+@:glueCppIncludes("CascadeParticleSystemComponent.h")
 @:uextern extern class UCascadeParticleSystemComponent extends unreal.UParticleSystemComponent {
   
 }

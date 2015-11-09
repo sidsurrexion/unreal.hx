@@ -5,7 +5,7 @@
 package unreal.animgraph;
 
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_UseCachedPose.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_UseCachedPose.h")
 @:uextern extern class UAnimGraphNode_UseCachedPose extends unreal.animgraph.UAnimGraphNode_Base {
   public var Node : unreal.FAnimNode_UseCachedPose;
   

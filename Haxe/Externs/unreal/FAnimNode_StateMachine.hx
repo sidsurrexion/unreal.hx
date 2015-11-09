@@ -8,7 +8,7 @@ package unreal;
 /**
   State machine node
 **/
-@:glueCppIncludes("AnimGraphNode_StateMachine.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_StateMachine.h")
 @:uextern extern class FAnimNode_StateMachine extends unreal.FAnimNode_Base {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_StateMachine>;
   

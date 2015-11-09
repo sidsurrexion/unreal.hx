@@ -12,7 +12,7 @@ package unreal;
     Create a struct derived from FAnimNode_Base - this is your runtime node
     Create a class derived from UAnimGraphNode_Base, containing an instance of your runtime node as a member - this is your visual/editor-only node
 **/
-@:glueCppIncludes("AnimPreviewInstance.h", "Engine.h")
+@:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class FAnimNode_Base {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_Base>;
   

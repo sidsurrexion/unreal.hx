@@ -8,7 +8,7 @@ package unreal;
 /**
   Physical materials are used to define the response of a physical object when interacting dynamically with the world.
 **/
-@:glueCppIncludes("PhysicalMaterials/PhysicalMaterial.h", "Engine.h")
+@:glueCppIncludes("PhysicalMaterials/PhysicalMaterial.h")
 @:uextern extern class UPhysicalMaterial extends unreal.UObject {
   
   /**

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("K2Node_MacroInstance.h", "Engine.h")
+@:glueCppIncludes("K2Node_MacroInstance.h")
 @:uextern extern class FGraphReference {
   @:uname('new') public static function create():PHaxeCreated<unreal.FGraphReference>;
   

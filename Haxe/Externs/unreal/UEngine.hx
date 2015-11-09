@@ -9,7 +9,7 @@ package unreal;
   Abstract base class of all Engine classes, responsible for management of systems critical to editor or game systems.
   Also defines default classes for certain engine systems.
 **/
-@:glueCppIncludes("Engine/Engine.h", "Engine.h")
+@:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class UEngine extends unreal.UObject {
   private var NextWorldContextHandle : unreal.Int32;
   

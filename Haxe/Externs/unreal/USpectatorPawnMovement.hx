@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("GameFramework/SpectatorPawnMovement.h", "Engine.h")
+@:glueCppIncludes("GameFramework/SpectatorPawnMovement.h")
 @:uextern extern class USpectatorPawnMovement extends unreal.UFloatingPawnMovement {
   
   /**

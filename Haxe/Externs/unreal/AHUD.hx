@@ -14,7 +14,7 @@ package unreal;
   @see FHUDHitBox
   @see FDebugTextInfo
 **/
-@:glueCppIncludes("GameFramework/HUD.h", "Engine.h")
+@:glueCppIncludes("GameFramework/HUD.h")
 @:uextern extern class AHUD extends unreal.AActor {
   private var DebugTextList : unreal.TArray<unreal.FDebugTextInfo>;
   

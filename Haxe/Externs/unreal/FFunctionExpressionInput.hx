@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct that stores information about a function input which is needed to maintain connections and implement the function call.
 **/
-@:glueCppIncludes("Materials/MaterialExpressionMaterialFunctionCall.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionMaterialFunctionCall.h")
 @:uextern extern class FFunctionExpressionInput {
   @:uname('new') public static function create():PHaxeCreated<unreal.FFunctionExpressionInput>;
   

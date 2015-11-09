@@ -8,7 +8,7 @@ package unreal;
 /**
   Event type
 **/
-@:glueCppIncludes("Particles/Event/ParticleModuleEventGenerator.h", "Engine.h")
+@:glueCppIncludes("Particles/Event/ParticleModuleEventGenerator.h")
 @:uname("EParticleEventType")
 @:uextern extern enum EParticleEventType {
   

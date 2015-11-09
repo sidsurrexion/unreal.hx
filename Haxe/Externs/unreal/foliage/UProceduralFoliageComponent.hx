@@ -5,7 +5,7 @@
 package unreal.foliage;
 
 @:umodule("Foliage")
-@:glueCppIncludes("ProceduralFoliageComponent.h", "Engine.h")
+@:glueCppIncludes("ProceduralFoliageComponent.h")
 @:uextern extern class UProceduralFoliageComponent extends unreal.UActorComponent {
   #if WITH_EDITORONLY_DATA
   

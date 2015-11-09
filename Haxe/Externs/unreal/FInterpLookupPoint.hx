@@ -10,7 +10,7 @@ package unreal;
   A value of NAME_None means to use the PosTrack and EulerTrack data for the keyframe.
   There needs to be the same amount of elements in this array as there are keyframes.
 **/
-@:glueCppIncludes("Matinee/InterpTrackMove.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackMove.h")
 @:uextern extern class FInterpLookupPoint {
   @:uname('new') public static function create():PHaxeCreated<unreal.FInterpLookupPoint>;
   public var Time : unreal.Float32;

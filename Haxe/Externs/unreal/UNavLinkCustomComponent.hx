@@ -13,7 +13,7 @@ package unreal;
   - can create obstacle area for easier/forced separation of link end points
   - can broadcast state changes to nearby agents
 **/
-@:glueCppIncludes("AI/Navigation/NavLinkCustomComponent.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavLinkCustomComponent.h")
 @:uextern extern class UNavLinkCustomComponent extends unreal.UNavRelevantComponent implements unreal.INavLinkCustomInterface {
   
   /**

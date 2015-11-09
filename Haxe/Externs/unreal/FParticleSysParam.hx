@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct used for a particular named instance parameter for this ParticleSystemComponent.
 **/
-@:glueCppIncludes("Particles/ParticleSystemComponent.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleSystemComponent.h")
 @:uextern extern class FParticleSysParam {
   @:uname('new') public static function create():PHaxeCreated<unreal.FParticleSysParam>;
   public var Material : unreal.UMaterialInterface;

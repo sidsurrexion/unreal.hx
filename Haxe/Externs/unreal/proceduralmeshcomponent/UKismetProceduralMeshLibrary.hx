@@ -5,7 +5,7 @@
 package unreal.proceduralmeshcomponent;
 
 @:umodule("ProceduralMeshComponent")
-@:glueCppIncludes("KismetProceduralMeshLibrary.h", "Engine.h")
+@:glueCppIncludes("KismetProceduralMeshLibrary.h")
 @:uextern extern class UKismetProceduralMeshLibrary extends unreal.UBlueprintFunctionLibrary {
   
 }

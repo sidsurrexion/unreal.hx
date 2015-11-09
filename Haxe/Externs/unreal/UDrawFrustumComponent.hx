@@ -8,7 +8,7 @@ package unreal;
 /**
   Utility component for drawing a view frustum. Origin is at the component location, frustum points down position X axis.
 **/
-@:glueCppIncludes("Components/DrawFrustumComponent.h", "Engine.h")
+@:glueCppIncludes("Components/DrawFrustumComponent.h")
 @:uextern extern class UDrawFrustumComponent extends unreal.UPrimitiveComponent {
   
   /**

@@ -8,7 +8,7 @@ package unreal;
 /**
   Texture source data management.
 **/
-@:glueCppIncludes("Engine/Texture.h", "Engine.h")
+@:glueCppIncludes("Engine/Texture.h")
 @:uextern extern class FTextureSource {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTextureSource>;
   

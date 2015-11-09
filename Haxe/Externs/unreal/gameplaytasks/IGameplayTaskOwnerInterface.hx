@@ -5,7 +5,7 @@
 package unreal.gameplaytasks;
 
 @:umodule("GameplayTasks")
-@:glueCppIncludes("GameplayTaskOwnerInterface.h", "Engine.h")
+@:glueCppIncludes("GameplayTaskOwnerInterface.h")
 @:uextern extern interface IGameplayTaskOwnerInterface {
   
 }

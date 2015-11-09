@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent4W.h", "Engine.h")
+@:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent4W.h")
 @:uextern extern class UWheeledVehicleMovementComponent4W extends unreal.UWheeledVehicleMovementComponent {
   
   /**

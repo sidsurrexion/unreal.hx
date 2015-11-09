@@ -15,7 +15,7 @@ package unreal.haxeunittests;
    \___/\____/      |_/ \_| |_/\/   \/
 **/
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("HaxeDerived1.h", "Engine.h")
+@:glueCppIncludes("HaxeDerived1.h")
 @:uextern extern class UHaxeDerived1 extends unreal.haxeunittests.UBasicTypesSub1 {
   public var subclassArray : unreal.TArray<unreal.TSubclassOf<unreal.haxeunittests.UHaxeDerived2>>;
   public var subclass : unreal.TSubclassOf<unreal.haxeunittests.UHaxeDerived2>;

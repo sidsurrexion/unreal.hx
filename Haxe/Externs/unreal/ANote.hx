@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/Note.h", "Engine.h")
+@:glueCppIncludes("Engine/Note.h")
 @:uextern extern class ANote extends unreal.AActor {
   #if WITH_EDITORONLY_DATA
   public var ArrowComponent : unreal.UArrowComponent;

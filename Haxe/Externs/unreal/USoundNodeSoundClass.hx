@@ -8,7 +8,7 @@ package unreal;
 /**
   Remaps the SoundClass of SoundWaves underneath this
 **/
-@:glueCppIncludes("Sound/SoundNodeSoundClass.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeSoundClass.h")
 @:uextern extern class USoundNodeSoundClass extends unreal.USoundNode {
   public var SoundClassOverride : unreal.USoundClass;
   

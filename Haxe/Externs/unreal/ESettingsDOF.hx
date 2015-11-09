@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("PhysicsEngine/PhysicsSettings.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsSettings.h")
 @:uname("ESettingsDOF.Type")
 @:uextern extern enum ESettingsDOF {
   

@@ -9,7 +9,7 @@ package unreal.behaviortreeeditor;
   Root node of this behavior tree, holds Blackboard data
 **/
 @:umodule("BehaviorTreeEditor")
-@:glueCppIncludes("BehaviorTreeGraphNode_Root.h", "Engine.h")
+@:glueCppIncludes("BehaviorTreeGraphNode_Root.h")
 @:uextern extern class UBehaviorTreeGraphNode_Root extends unreal.behaviortreeeditor.UBehaviorTreeGraphNode {
   public var BlackboardAsset : unreal.aimodule.UBlackboardData;
   

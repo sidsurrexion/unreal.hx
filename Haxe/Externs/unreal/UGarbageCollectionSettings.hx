@@ -8,7 +8,7 @@ package unreal;
 /**
   Implements the settings for garbage collection.
 **/
-@:glueCppIncludes("Engine/CoreSettings.h", "Engine.h")
+@:glueCppIncludes("Engine/CoreSettings.h")
 @:uextern extern class UGarbageCollectionSettings extends unreal.UDeveloperSettings {
   
   /**

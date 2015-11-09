@@ -9,7 +9,7 @@ package unreal;
   Attach one of these on an object using physics simulation and it will apply a force down the negative-X direction
   ie. point X in the direction you want the thrust in.
 **/
-@:glueCppIncludes("PhysicsEngine/PhysicsThruster.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/PhysicsThruster.h")
 @:uextern extern class APhysicsThruster extends unreal.ARigidBodyBase {
   #if WITH_EDITORONLY_DATA
   public var SpriteComponent : unreal.UBillboardComponent;

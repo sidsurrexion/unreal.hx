@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundWaveProcedural.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundWaveProcedural.h")
 @:uextern extern class USoundWaveProcedural extends unreal.USoundWave {
   
 }

@@ -11,7 +11,7 @@ package unreal.paper2d;
   @see UPaperTileMap, UPaperTileMapComponent
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("PaperTileSet.h", "Engine.h")
+@:glueCppIncludes("PaperTileSet.h")
 @:uextern extern class UPaperTileSet extends unreal.UObject {
   
 }

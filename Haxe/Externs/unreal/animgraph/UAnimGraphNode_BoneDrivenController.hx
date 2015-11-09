@@ -9,7 +9,7 @@ package unreal.animgraph;
   This is the 'source version' of a bone driven controller, which maps part of the state from one bone to another (e.g., 2 * source.x -> target.z)
 **/
 @:umodule("AnimGraph")
-@:glueCppIncludes("AnimGraphNode_BoneDrivenController.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_BoneDrivenController.h")
 @:uextern extern class UAnimGraphNode_BoneDrivenController extends unreal.animgraph.UAnimGraphNode_SkeletalControlBase {
   public var Node : unreal.animgraphruntime.FAnimNode_BoneDrivenController;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/AudioVolume.h", "Engine.h")
+@:glueCppIncludes("Sound/AudioVolume.h")
 @:uextern extern class AAudioVolume extends unreal.AVolume {
   
   /**

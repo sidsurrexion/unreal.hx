@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimCompress_BitwiseCompressOnly.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimCompress_BitwiseCompressOnly.h")
 @:uextern extern class UAnimCompress_BitwiseCompressOnly extends unreal.UAnimCompress {
   
 }

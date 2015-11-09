@@ -5,7 +5,7 @@
 package unreal.blueprintgraph;
 
 @:umodule("BlueprintGraph")
-@:glueCppIncludes("K2Node_MakeArray.h", "Engine.h")
+@:glueCppIncludes("K2Node_MakeArray.h")
 @:uextern extern class UK2Node_MakeArray extends unreal.blueprintgraph.UK2Node {
   
   /**

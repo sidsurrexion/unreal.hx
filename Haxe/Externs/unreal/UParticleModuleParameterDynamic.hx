@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Parameter/ParticleModuleParameterDynamic.h", "Engine.h")
+@:glueCppIncludes("Particles/Parameter/ParticleModuleParameterDynamic.h")
 @:uextern extern class UParticleModuleParameterDynamic extends unreal.UParticleModuleParameterBase {
   public var bUsesVelocity : Bool;
   

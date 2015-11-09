@@ -8,7 +8,7 @@ package unreal;
 /**
   Editable texture parameter.
 **/
-@:glueCppIncludes("Materials/MaterialInstance.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialInstance.h")
 @:uextern extern class FTextureParameterValue {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTextureParameterValue>;
   public var ExpressionGUID : unreal.FGuid;

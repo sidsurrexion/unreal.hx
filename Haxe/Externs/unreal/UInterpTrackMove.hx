@@ -8,7 +8,7 @@ package unreal;
 /**
   Track containing data for moving an actor around over time.
 **/
-@:glueCppIncludes("Matinee/InterpTrackMove.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackMove.h")
 @:uextern extern class UInterpTrackMove extends unreal.UInterpTrack {
   public var RotMode : unreal.EInterpTrackMoveRotMode;
   

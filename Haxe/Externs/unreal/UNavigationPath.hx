@@ -8,7 +8,7 @@ package unreal;
 /**
   UObject wrapper for FNavigationPath
 **/
-@:glueCppIncludes("AI/Navigation/NavigationPath.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationPath.h")
 @:uextern extern class UNavigationPath extends unreal.UObject {
   public var RecalculateOnInvalidation : unreal.ENavigationOptionFlag;
   public var PathPoints : unreal.TArray<unreal.FVector>;

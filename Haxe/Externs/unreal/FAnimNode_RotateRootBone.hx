@@ -8,7 +8,7 @@ package unreal;
 /**
   @TODO: Comment
 **/
-@:glueCppIncludes("AnimGraphNode_RotateRootBone.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_RotateRootBone.h")
 @:uextern extern class FAnimNode_RotateRootBone extends unreal.FAnimNode_Base {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_RotateRootBone>;
   public var MeshToComponent : unreal.FRotator;

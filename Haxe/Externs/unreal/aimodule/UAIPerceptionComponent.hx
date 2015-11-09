@@ -10,7 +10,7 @@ package unreal.aimodule;
   and gathers registered stimuli. UpdatePerception is called when component gets new stimuli (batched)
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("Perception/AIPerceptionComponent.h", "Engine.h")
+@:glueCppIncludes("Perception/AIPerceptionComponent.h")
 @:uextern extern class UAIPerceptionComponent extends unreal.UActorComponent {
   private var AIOwner : unreal.aimodule.AAIController;
   

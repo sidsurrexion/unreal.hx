@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/StaticMeshActor.h", "Engine.h")
+@:glueCppIncludes("Engine/StaticMeshActor.h")
 @:uname("ENavDataGatheringMode")
 @:class @:uextern extern enum ENavDataGatheringMode {
   Default;

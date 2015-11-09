@@ -5,7 +5,7 @@
 package unreal.aitestsuite;
 
 @:umodule("AITestSuite")
-@:glueCppIncludes("MockAI_BT.h", "Engine.h")
+@:glueCppIncludes("MockAI_BT.h")
 @:uextern extern class UMockAI_BT extends unreal.aitestsuite.UMockAI {
   public var BTComp : unreal.aimodule.UBehaviorTreeComponent;
   

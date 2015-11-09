@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Exporters/ExportTextContainer.h", "Engine.h")
+@:glueCppIncludes("Exporters/ExportTextContainer.h")
 @:uextern extern class UExportTextContainer extends unreal.UObject {
   
   /**

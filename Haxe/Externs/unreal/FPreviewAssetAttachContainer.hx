@@ -8,7 +8,7 @@ package unreal;
 /**
   Component which deals with attaching assets
 **/
-@:glueCppIncludes("Engine/SkeletalMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FPreviewAssetAttachContainer {
   @:uname('new') public static function create():PHaxeCreated<unreal.FPreviewAssetAttachContainer>;
   

@@ -9,7 +9,7 @@ package unreal.paper2d;
   An instance of a piece of 2D terrain in the level
 **/
 @:umodule("Paper2D")
-@:glueCppIncludes("PaperTerrainActor.h", "Engine.h")
+@:glueCppIncludes("PaperTerrainActor.h")
 @:uextern extern class APaperTerrainActor extends unreal.AActor {
   
 }

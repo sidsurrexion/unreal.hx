@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("Blueprint/AIBlueprintHelperLibrary.h", "Engine.h")
+@:glueCppIncludes("Blueprint/AIBlueprintHelperLibrary.h")
 @:uextern extern class UAIBlueprintHelperLibrary extends unreal.UBlueprintFunctionLibrary {
   
 }

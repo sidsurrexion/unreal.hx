@@ -8,7 +8,7 @@ package unreal;
 /**
   A ViewTarget is the primary actor the camera is associated with.
 **/
-@:glueCppIncludes("Camera/PlayerCameraManager.h", "Engine.h")
+@:glueCppIncludes("Camera/PlayerCameraManager.h")
 @:uextern extern class FTViewTarget {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTViewTarget>;
   

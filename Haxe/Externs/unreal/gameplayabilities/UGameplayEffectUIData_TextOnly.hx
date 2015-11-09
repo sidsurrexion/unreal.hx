@@ -10,7 +10,7 @@ package unreal.gameplayabilities;
   If your game needs only text, this is a reasonable class to use. To include more data, make a custom subclass of UGameplayEffectUIData.
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayEffectUIData_TextOnly.h", "Engine.h")
+@:glueCppIncludes("GameplayEffectUIData_TextOnly.h")
 @:uextern extern class UGameplayEffectUIData_TextOnly extends unreal.gameplayabilities.UGameplayEffectUIData {
   
 }

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("AnimGraphNode_RefPoseBase.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_RefPoseBase.h")
 @:uname("ERefPoseType")
 @:uextern extern enum ERefPoseType {
   EIT_LocalSpace;

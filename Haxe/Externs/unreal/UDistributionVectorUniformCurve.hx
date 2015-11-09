@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Distributions/DistributionVectorUniformCurve.h", "Engine.h")
+@:glueCppIncludes("Distributions/DistributionVectorUniformCurve.h")
 @:uextern extern class UDistributionVectorUniformCurve extends unreal.UDistributionVector {
   public var bUseExtremes : Bool;
   public var bLockAxes2 : Bool;

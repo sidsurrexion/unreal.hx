@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines a curve of interpolated points to evaluate over a given range
 **/
-@:glueCppIncludes("Curves/CurveBase.h", "Engine.h")
+@:glueCppIncludes("Curves/CurveBase.h")
 @:uextern extern class UCurveBase extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   

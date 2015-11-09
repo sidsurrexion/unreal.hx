@@ -8,7 +8,7 @@ package unreal;
 /**
   A scalar parameter
 **/
-@:glueCppIncludes("Materials/MaterialParameterCollection.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialParameterCollection.h")
 @:uextern extern class FCollectionScalarParameter extends unreal.FCollectionParameterBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCollectionScalarParameter>;
   public var DefaultValue : unreal.Float32;

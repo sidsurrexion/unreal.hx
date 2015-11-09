@@ -9,7 +9,7 @@ package unreal.vectorvm;
   Volume data object; encapsulates volumetric data for VectorVM
 **/
 @:umodule("VectorVM")
-@:glueCppIncludes("VectorVMDataObject.h", "Engine.h")
+@:glueCppIncludes("VectorVMDataObject.h")
 @:uextern extern class UNiagaraSparseVolumeDataObject extends unreal.vectorvm.UNiagaraDataObject {
   
 }

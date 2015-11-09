@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Sound/SoundWave.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundWave.h")
 @:uextern extern class USoundWave extends unreal.USoundBase {
   #if WITH_EDITORONLY_DATA
   public var AssetImportData : unreal.UAssetImportData;

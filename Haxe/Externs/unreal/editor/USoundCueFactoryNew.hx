@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/SoundCueFactoryNew.h", "Engine.h")
+@:glueCppIncludes("Factories/SoundCueFactoryNew.h")
 @:uextern extern class USoundCueFactoryNew extends unreal.editor.UFactory {
   
   /**

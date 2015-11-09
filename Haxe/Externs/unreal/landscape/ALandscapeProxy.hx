@@ -5,7 +5,7 @@
 package unreal.landscape;
 
 @:umodule("Landscape")
-@:glueCppIncludes("LandscapeProxy.h", "Engine.h")
+@:glueCppIncludes("LandscapeProxy.h")
 @:uextern extern class ALandscapeProxy extends unreal.AActor {
   #if WITH_EDITORONLY_DATA
   public var MaxPaintedLayersPerComponent : unreal.Int32;

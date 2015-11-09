@@ -8,7 +8,7 @@ package unreal;
 /**
   Layered blend (per bone); has dynamic number of blendposes that can blend per different bone sets
 **/
-@:glueCppIncludes("AnimGraphNode_LayeredBoneBlend.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_LayeredBoneBlend.h")
 @:uextern extern class FAnimNode_LayeredBoneBlend extends unreal.FAnimNode_Base {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_LayeredBoneBlend>;
   public var CurveBlendOption : unreal.ECurveBlendOption;

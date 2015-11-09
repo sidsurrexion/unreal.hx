@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimSet.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSet.h")
 @:uextern extern class UAnimSet extends unreal.UObject {
   
   /**

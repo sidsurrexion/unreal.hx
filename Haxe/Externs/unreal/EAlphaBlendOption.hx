@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h")
 @:uname("EAlphaBlendOption")
 @:class @:uextern extern enum EAlphaBlendOption {
   

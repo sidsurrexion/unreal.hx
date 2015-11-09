@@ -5,7 +5,7 @@
 package unreal.gameplaydebugger;
 
 @:umodule("GameplayDebugger")
-@:glueCppIncludes("GameplayDebuggingControllerComponent.h", "Engine.h")
+@:glueCppIncludes("GameplayDebuggingControllerComponent.h")
 @:uextern extern class UGameplayDebuggingControllerComponent extends unreal.UActorComponent {
   private var DebugCameraInputComponent : unreal.UInputComponent;
   private var AIDebugViewInputComponent : unreal.UInputComponent;

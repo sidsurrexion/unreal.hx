@@ -15,7 +15,7 @@ package unreal.haxeunittests;
    \___/\____/      |_/ \_| |_/\/   \/
 **/
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("TemplateMyClass.h", "Engine.h")
+@:glueCppIncludes("TemplateMyClass.h")
 @:uextern extern class UTemplateMyClass extends unreal.UObject {
   public var templ5 : unreal.TArray<unreal.haxeunittests.UBasicTypesUObject>;
   public var templ4 : unreal.TArray<unreal.haxeunittests.UTemplateMyClass>;

@@ -9,7 +9,7 @@ package unreal.umg;
   The base class for all UMG panel widgets.  Panel widgets layout a collection of child widgets.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/PanelWidget.h", "Engine.h")
+@:glueCppIncludes("Components/PanelWidget.h")
 @:uextern extern class UPanelWidget extends unreal.umg.UWidget {
   
   /**

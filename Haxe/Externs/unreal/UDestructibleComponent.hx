@@ -10,7 +10,7 @@ package unreal;
   
   The USkeletalMesh pointer in the base class (SkinnedMeshComponent) MUST be a DestructibleMesh
 **/
-@:glueCppIncludes("Components/DestructibleComponent.h", "Engine.h")
+@:glueCppIncludes("Components/DestructibleComponent.h")
 @:uextern extern class UDestructibleComponent extends unreal.USkinnedMeshComponent {
   #if WITH_EDITORONLY_DATA
   

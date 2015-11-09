@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackColorProp.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackColorProp.h")
 @:uextern extern class UInterpTrackColorProp extends unreal.UInterpTrackVectorBase {
   
   /**

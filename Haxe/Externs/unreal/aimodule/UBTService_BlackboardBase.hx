@@ -5,7 +5,7 @@
 package unreal.aimodule;
 
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Services/BTService_BlackboardBase.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Services/BTService_BlackboardBase.h")
 @:uextern extern class UBTService_BlackboardBase extends unreal.aimodule.UBTService {
   
   /**

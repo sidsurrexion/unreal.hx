@@ -8,7 +8,7 @@ package unreal;
 /**
   Enum used to define which way data flows into or out of this pin.
 **/
-@:glueCppIncludes("EdGraph/EdGraphPin.h", "Engine.h")
+@:glueCppIncludes("EdGraph/EdGraphPin.h")
 @:uname("EEdGraphPinDirection")
 @:uextern extern enum EEdGraphPinDirection {
   EGPD_Input;

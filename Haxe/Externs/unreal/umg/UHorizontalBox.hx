@@ -12,7 +12,7 @@ package unreal.umg;
   ● Flow Horizontal
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/HorizontalBox.h", "Engine.h")
+@:glueCppIncludes("Components/HorizontalBox.h")
 @:uextern extern class UHorizontalBox extends unreal.umg.UPanelWidget {
   
 }

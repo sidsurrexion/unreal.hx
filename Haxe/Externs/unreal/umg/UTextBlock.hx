@@ -12,7 +12,7 @@ package unreal.umg;
   ● Text
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/TextBlock.h", "Engine.h")
+@:glueCppIncludes("Components/TextBlock.h")
 @:uextern extern class UTextBlock extends unreal.umg.UWidget {
   
   /**

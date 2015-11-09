@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/BlendableInterface.h", "Engine.h")
+@:glueCppIncludes("Engine/BlendableInterface.h")
 @:uextern extern interface IBlendableInterface {
   
 }

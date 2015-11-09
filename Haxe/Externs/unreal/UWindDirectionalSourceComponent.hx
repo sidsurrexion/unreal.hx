@@ -8,7 +8,7 @@ package unreal;
 /**
   Component that provides a directional wind source. Only affects SpeedTree assets.
 **/
-@:glueCppIncludes("Components/WindDirectionalSourceComponent.h", "Engine.h")
+@:glueCppIncludes("Components/WindDirectionalSourceComponent.h")
 @:uextern extern class UWindDirectionalSourceComponent extends unreal.USceneComponent {
   public var MaxGustAmount : unreal.Float32;
   public var MinGustAmount : unreal.Float32;

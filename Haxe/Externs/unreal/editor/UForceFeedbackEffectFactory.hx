@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/ForceFeedbackEffectFactory.h", "Engine.h")
+@:glueCppIncludes("Factories/ForceFeedbackEffectFactory.h")
 @:uextern extern class UForceFeedbackEffectFactory extends unreal.editor.UFactory {
   
 }

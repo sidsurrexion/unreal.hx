@@ -8,7 +8,7 @@ package unreal;
 /**
   Movement capabilities, determining available movement options for Pawns and used by AI for reachability tests.
 **/
-@:glueCppIncludes("AI/Navigation/NavigationData.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavigationData.h")
 @:uextern extern class FMovementProperties {
   @:uname('new') public static function create():PHaxeCreated<unreal.FMovementProperties>;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/HierarchicalInstancedStaticMeshComponent.h", "Engine.h")
+@:glueCppIncludes("Components/HierarchicalInstancedStaticMeshComponent.h")
 @:uextern extern class UHierarchicalInstancedStaticMeshComponent extends unreal.UInstancedStaticMeshComponent {
   public var bDisableCollision : Bool;
   

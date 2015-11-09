@@ -10,7 +10,7 @@ package unreal.gameplayabilities;
   Your project is free to implement this however it wants!
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("GameplayAbilitySet.h", "Engine.h")
+@:glueCppIncludes("GameplayAbilitySet.h")
 @:uextern extern class UGameplayAbilitySet extends unreal.UDataAsset {
   public var Abilities : unreal.TArray<unreal.gameplayabilities.FGameplayAbilityBindInfo>;
   

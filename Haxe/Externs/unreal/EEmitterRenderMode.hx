@@ -8,7 +8,7 @@ package unreal;
 /**
   Cascade-related
 **/
-@:glueCppIncludes("Particles/ParticleEmitter.h", "Engine.h")
+@:glueCppIncludes("Particles/ParticleEmitter.h")
 @:uname("EEmitterRenderMode")
 @:uextern extern enum EEmitterRenderMode {
   

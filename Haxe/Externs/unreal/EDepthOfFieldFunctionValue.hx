@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionDepthOfFieldFunction.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionDepthOfFieldFunction.h")
 @:uname("EDepthOfFieldFunctionValue")
 @:uextern extern enum EDepthOfFieldFunctionValue {
   

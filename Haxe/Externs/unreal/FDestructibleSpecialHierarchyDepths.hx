@@ -8,7 +8,7 @@ package unreal;
 /**
   Special hierarchy depths for various behaviors.
 **/
-@:glueCppIncludes("Engine/DestructibleMesh.h", "Engine.h")
+@:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleSpecialHierarchyDepths {
   @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleSpecialHierarchyDepths>;
   

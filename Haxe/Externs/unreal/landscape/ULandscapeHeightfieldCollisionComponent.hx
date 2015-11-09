@@ -5,7 +5,7 @@
 package unreal.landscape;
 
 @:umodule("Landscape")
-@:glueCppIncludes("LandscapeHeightfieldCollisionComponent.h", "Engine.h")
+@:glueCppIncludes("LandscapeHeightfieldCollisionComponent.h")
 @:uextern extern class ULandscapeHeightfieldCollisionComponent extends unreal.UPrimitiveComponent {
   
   /**

@@ -19,7 +19,7 @@ package unreal.gameplaytags;
   the user types (e.g, autocomplete 'Damage.Physical' as the user is adding a 'Damage.Physical.Slash' tag).
 **/
 @:umodule("GameplayTags")
-@:glueCppIncludes("GameplayTagsSettings.h", "Engine.h")
+@:glueCppIncludes("GameplayTagsSettings.h")
 @:uextern extern class UGameplayTagsSettings extends unreal.UObject {
   public var GameplayTags : unreal.TArray<unreal.FString>;
   

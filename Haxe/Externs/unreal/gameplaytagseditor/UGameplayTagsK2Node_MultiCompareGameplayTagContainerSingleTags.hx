@@ -5,7 +5,7 @@
 package unreal.gameplaytagseditor;
 
 @:umodule("GameplayTagsEditor")
-@:glueCppIncludes("GameplayTagsK2Node_MultiCompareGameplayTagContainerSingleTags.h", "Engine.h")
+@:glueCppIncludes("GameplayTagsK2Node_MultiCompareGameplayTagContainerSingleTags.h")
 @:uextern extern class UGameplayTagsK2Node_MultiCompareGameplayTagContainerSingleTags extends unreal.gameplaytagseditor.UGameplayTagsK2Node_MultiCompareBase {
   
 }

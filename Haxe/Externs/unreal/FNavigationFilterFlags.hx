@@ -8,7 +8,7 @@ package unreal;
 /**
   Use UNavigationSystem.DescribeFilterFlags() to setup user friendly names of flags
 **/
-@:glueCppIncludes("AI/Navigation/NavFilters/NavigationQueryFilter.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavFilters/NavigationQueryFilter.h")
 @:uextern extern class FNavigationFilterFlags {
   @:uname('new') public static function create():PHaxeCreated<unreal.FNavigationFilterFlags>;
   public var bNavFlag15 : Bool;

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Matinee/InterpTrackInstColorScale.h", "Engine.h")
+@:glueCppIncludes("Matinee/InterpTrackInstColorScale.h")
 @:uextern extern class UInterpTrackInstColorScale extends unreal.UInterpTrackInst {
   
 }

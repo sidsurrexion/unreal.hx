@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Materials/MaterialExpressionClamp.h", "Engine.h")
+@:glueCppIncludes("Materials/MaterialExpressionClamp.h")
 @:uextern extern class UMaterialExpressionClamp extends unreal.UMaterialExpression {
   public var MaxDefault : unreal.Float32;
   public var MinDefault : unreal.Float32;

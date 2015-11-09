@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Builders/SheetBuilder.h", "Engine.h")
+@:glueCppIncludes("Builders/SheetBuilder.h")
 @:uextern extern class USheetBuilder extends unreal.editor.UEditorBrushBuilder {
   public var GroupName : unreal.FName;
   public var Axis : unreal.editor.ESheetAxis;

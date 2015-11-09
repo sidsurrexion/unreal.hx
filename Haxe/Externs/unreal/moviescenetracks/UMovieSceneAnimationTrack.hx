@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   Handles animation of skeletal mesh actors
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Tracks/MovieSceneAnimationTrack.h", "Engine.h")
+@:glueCppIncludes("Tracks/MovieSceneAnimationTrack.h")
 @:uextern extern class UMovieSceneAnimationTrack extends unreal.moviescene.UMovieSceneTrack {
   
 }

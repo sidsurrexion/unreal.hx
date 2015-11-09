@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Components/TimelineComponent.h", "Engine.h")
+@:glueCppIncludes("Components/TimelineComponent.h")
 @:uextern extern class FTimeline {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTimeline>;
   

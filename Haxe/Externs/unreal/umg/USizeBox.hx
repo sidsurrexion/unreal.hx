@@ -13,7 +13,7 @@ package unreal.umg;
   ● Fixed Size
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/SizeBox.h", "Engine.h")
+@:glueCppIncludes("Components/SizeBox.h")
 @:uextern extern class USizeBox extends unreal.umg.UContentWidget {
   
   /**

@@ -10,7 +10,7 @@ package unreal.umg;
   A 3D instance of a Widget Blueprint that can be interacted with in the world.
 **/
 @:umodule("UMG")
-@:glueCppIncludes("Components/WidgetComponent.h", "Engine.h")
+@:glueCppIncludes("Components/WidgetComponent.h")
 @:uextern extern class UWidgetComponent extends unreal.UPrimitiveComponent {
   
   /**

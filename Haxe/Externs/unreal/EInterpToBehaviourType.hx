@@ -8,7 +8,7 @@ package unreal;
 /**
   Controls the movement behaviour
 **/
-@:glueCppIncludes("Components/InterpToMovementComponent.h", "Engine.h")
+@:glueCppIncludes("Components/InterpToMovementComponent.h")
 @:uname("EInterpToBehaviourType")
 @:class @:uextern extern enum EInterpToBehaviourType {
   

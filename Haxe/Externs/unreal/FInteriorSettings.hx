@@ -8,7 +8,7 @@ package unreal;
 /**
   Struct encapsulating settings for interior areas.
 **/
-@:glueCppIncludes("Sound/AudioVolume.h", "Engine.h")
+@:glueCppIncludes("Sound/AudioVolume.h")
 @:uextern extern class FInteriorSettings {
   @:uname('new') public static function create():PHaxeCreated<unreal.FInteriorSettings>;
   

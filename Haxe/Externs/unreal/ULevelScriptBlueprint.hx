@@ -16,7 +16,7 @@ package unreal;
   @see UBlueprint
   @see ALevelScriptActor
 **/
-@:glueCppIncludes("Engine/LevelScriptBlueprint.h", "Engine.h")
+@:glueCppIncludes("Engine/LevelScriptBlueprint.h")
 @:uextern extern class ULevelScriptBlueprint extends unreal.UBlueprint {
   #if WITH_EDITORONLY_DATA
   

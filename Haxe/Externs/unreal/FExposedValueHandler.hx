@@ -8,7 +8,7 @@ package unreal;
 /**
   An exposed value updater
 **/
-@:glueCppIncludes("AnimPreviewInstance.h", "Engine.h")
+@:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class FExposedValueHandler {
   @:uname('new') public static function create():PHaxeCreated<unreal.FExposedValueHandler>;
   

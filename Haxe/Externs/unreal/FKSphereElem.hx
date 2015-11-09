@@ -8,7 +8,7 @@ package unreal;
 /**
   Sphere shape used for collision
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup.h", "Engine.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FKSphereElem extends unreal.FKShapeElem {
   @:uname('new') public static function create():PHaxeCreated<unreal.FKSphereElem>;
   public var Radius : unreal.Float32;

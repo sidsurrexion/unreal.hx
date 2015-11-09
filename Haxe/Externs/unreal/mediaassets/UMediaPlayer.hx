@@ -12,7 +12,7 @@ package unreal.mediaassets;
   for exposing media playback functionality to the Engine and to Blueprints.
 **/
 @:umodule("MediaAssets")
-@:glueCppIncludes("MediaPlayer.h", "Engine.h")
+@:glueCppIncludes("MediaPlayer.h")
 @:uextern extern class UMediaPlayer extends unreal.UObject {
   
   /**

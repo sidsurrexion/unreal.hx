@@ -8,7 +8,7 @@ package unreal;
 /**
   Engine that manages core systems that enable a game.
 **/
-@:glueCppIncludes("Engine/GameEngine.h", "Engine.h")
+@:glueCppIncludes("Engine/GameEngine.h")
 @:uextern extern class UGameEngine extends unreal.UEngine {
   public var GameInstance : unreal.UGameInstance;
   

@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimSequenceBase.h", "Engine.h")
+@:glueCppIncludes("Animation/AnimSequenceBase.h")
 @:uextern extern class FTransformCurve extends unreal.FAnimCurveBase {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTransformCurve>;
   public var ScaleCurve : unreal.FVectorCurve;

@@ -10,7 +10,7 @@ package unreal.aimodule;
   A decorator node that bases its condition on whether a cooldown timer has expired.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_Cooldown.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_Cooldown.h")
 @:uextern extern class UBTDecorator_Cooldown extends unreal.aimodule.UBTDecorator {
   
   /**

@@ -8,7 +8,7 @@ package unreal;
 /**
   Movement modes for Characters.
 **/
-@:glueCppIncludes("GameFramework/Character.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Character.h")
 @:uname("EMovementMode")
 @:uextern extern enum EMovementMode {
   

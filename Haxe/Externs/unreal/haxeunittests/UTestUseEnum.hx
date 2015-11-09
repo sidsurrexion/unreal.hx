@@ -15,7 +15,7 @@ package unreal.haxeunittests;
    \___/\____/      |_/ \_| |_/\/   \/
 **/
 @:umodule("HaxeUnitTests")
-@:glueCppIncludes("TestUseEnum.h", "Engine.h")
+@:glueCppIncludes("TestUseEnum.h")
 @:uextern extern class UTestUseEnum extends unreal.UObject {
   public var test1 : unreal.haxeunittests.ETestHxEnumClass;
   

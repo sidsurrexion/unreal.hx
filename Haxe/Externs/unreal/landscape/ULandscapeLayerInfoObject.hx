@@ -5,7 +5,7 @@
 package unreal.landscape;
 
 @:umodule("Landscape")
-@:glueCppIncludes("LandscapeLayerInfoObject.h", "Engine.h")
+@:glueCppIncludes("LandscapeLayerInfoObject.h")
 @:uextern extern class ULandscapeLayerInfoObject extends unreal.UObject {
   #if WITH_EDITORONLY_DATA
   public var bNoWeightBlend : Bool;

@@ -9,7 +9,7 @@ package unreal.slatecore;
   Just a wrapper for the struct with real data in it.
 **/
 @:umodule("SlateCore")
-@:glueCppIncludes("Styling/SlateWidgetStyleAsset.h", "Engine.h")
+@:glueCppIncludes("Styling/SlateWidgetStyleAsset.h")
 @:uextern extern class USlateWidgetStyleAsset extends unreal.UObject {
   public var CustomStyle : unreal.slatecore.USlateWidgetStyleContainerBase;
   

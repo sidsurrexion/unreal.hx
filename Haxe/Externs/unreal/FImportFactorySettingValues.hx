@@ -8,7 +8,7 @@ package unreal;
 /**
   Holds UProperty names and values to customize factory settings
 **/
-@:glueCppIncludes("Tests/AutomationTestSettings.h", "Engine.h")
+@:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FImportFactorySettingValues {
   @:uname('new') public static function create():PHaxeCreated<unreal.FImportFactorySettingValues>;
   

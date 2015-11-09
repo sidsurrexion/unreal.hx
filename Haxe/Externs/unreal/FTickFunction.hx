@@ -8,7 +8,7 @@ package unreal;
 /**
   Abstract Base class for all tick functions.
 **/
-@:glueCppIncludes("GameFramework/Actor.h", "Engine.h")
+@:glueCppIncludes("GameFramework/Actor.h")
 @:uextern extern class FTickFunction {
   @:uname('new') public static function create():PHaxeCreated<unreal.FTickFunction>;
   

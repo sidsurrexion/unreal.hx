@@ -8,7 +8,7 @@ package unreal;
 /**
   Used to create fogging effects such as clouds.
 **/
-@:glueCppIncludes("Atmosphere/AtmosphericFogComponent.h", "Engine.h")
+@:glueCppIncludes("Atmosphere/AtmosphericFogComponent.h")
 @:uextern extern class UAtmosphericFogComponent extends unreal.USceneComponent {
   public var IrradianceTexture_DEPRECATED : unreal.UTexture2D;
   public var TransmittanceTexture_DEPRECATED : unreal.UTexture2D;

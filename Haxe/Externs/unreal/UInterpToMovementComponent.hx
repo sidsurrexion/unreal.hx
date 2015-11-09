@@ -10,7 +10,7 @@ package unreal;
   
   @see UMovementComponent
 **/
-@:glueCppIncludes("Components/InterpToMovementComponent.h", "Engine.h")
+@:glueCppIncludes("Components/InterpToMovementComponent.h")
 @:uextern extern class UInterpToMovementComponent extends unreal.UMovementComponent {
   
   /**

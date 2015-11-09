@@ -9,7 +9,7 @@ package unreal.gameplayabilities;
   meta =(RestrictedToClasses="GameplayAbility")
 **/
 @:umodule("GameplayAbilities")
-@:glueCppIncludes("AbilitySystemBlueprintLibrary.h", "Engine.h")
+@:glueCppIncludes("AbilitySystemBlueprintLibrary.h")
 @:uextern extern class UAbilitySystemBlueprintLibrary extends unreal.UBlueprintFunctionLibrary {
   
 }

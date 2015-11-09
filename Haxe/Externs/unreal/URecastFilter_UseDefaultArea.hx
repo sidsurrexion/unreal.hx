@@ -8,7 +8,7 @@ package unreal;
 /**
   Regular navigation area, applied to entire navigation data by default
 **/
-@:glueCppIncludes("AI/Navigation/NavFilters/RecastFilter_UseDefaultArea.h", "Engine.h")
+@:glueCppIncludes("AI/Navigation/NavFilters/RecastFilter_UseDefaultArea.h")
 @:uextern extern class URecastFilter_UseDefaultArea extends unreal.UNavigationQueryFilter {
   
 }

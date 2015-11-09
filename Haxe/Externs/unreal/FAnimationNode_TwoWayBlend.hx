@@ -8,7 +8,7 @@ package unreal;
 /**
   This represents a baked transition
 **/
-@:glueCppIncludes("AnimGraphNode_TwoWayBlend.h", "Engine.h")
+@:glueCppIncludes("AnimGraphNode_TwoWayBlend.h")
 @:uextern extern class FAnimationNode_TwoWayBlend extends unreal.FAnimNode_Base {
   @:uname('new') public static function create():PHaxeCreated<unreal.FAnimationNode_TwoWayBlend>;
   public var AlphaScaleBias : unreal.FInputScaleBias;

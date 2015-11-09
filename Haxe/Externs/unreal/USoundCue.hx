@@ -8,7 +8,7 @@ package unreal;
 /**
   The behavior of audio playback is defined within Sound Cues.
 **/
-@:glueCppIncludes("Sound/SoundCue.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundCue.h")
 @:uextern extern class USoundCue extends unreal.USoundBase {
   #if WITH_EDITORONLY_DATA
   public var SoundCueGraph : unreal.UEdGraph;

@@ -8,7 +8,7 @@ package unreal;
 /**
   Selects a child node based on the value of a integer parameter
 **/
-@:glueCppIncludes("Sound/SoundNodeSwitch.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeSwitch.h")
 @:uextern extern class USoundNodeSwitch extends unreal.USoundNode {
   
   /**

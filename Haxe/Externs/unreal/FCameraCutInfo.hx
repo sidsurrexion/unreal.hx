@@ -8,7 +8,7 @@ package unreal;
 /**
   Helper struct for storing the camera world-position for each camera cut in the cinematic.
 **/
-@:glueCppIncludes("Matinee/MatineeActor.h", "Engine.h")
+@:glueCppIncludes("Matinee/MatineeActor.h")
 @:uextern extern class FCameraCutInfo {
   @:uname('new') public static function create():PHaxeCreated<unreal.FCameraCutInfo>;
   public var TimeStamp : unreal.Float32;

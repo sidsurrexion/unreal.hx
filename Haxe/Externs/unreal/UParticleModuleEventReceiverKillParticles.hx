@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Event/ParticleModuleEventReceiverKillParticles.h", "Engine.h")
+@:glueCppIncludes("Particles/Event/ParticleModuleEventReceiverKillParticles.h")
 @:uextern extern class UParticleModuleEventReceiverKillParticles extends unreal.UParticleModuleEventReceiverBase {
   
   /**

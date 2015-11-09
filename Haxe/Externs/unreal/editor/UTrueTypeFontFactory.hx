@@ -5,7 +5,7 @@
 package unreal.editor;
 
 @:umodule("UnrealEd")
-@:glueCppIncludes("Factories/TrueTypeFontFactory.h", "Engine.h")
+@:glueCppIncludes("Factories/TrueTypeFontFactory.h")
 @:uextern extern class UTrueTypeFontFactory extends unreal.editor.UTextureFactory {
   
   /**

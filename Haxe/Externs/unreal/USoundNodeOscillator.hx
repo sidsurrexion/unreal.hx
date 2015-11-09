@@ -8,7 +8,7 @@ package unreal;
 /**
   Defines how a sound oscillates
 **/
-@:glueCppIncludes("Sound/SoundNodeOscillator.h", "Engine.h")
+@:glueCppIncludes("Sound/SoundNodeOscillator.h")
 @:uextern extern class USoundNodeOscillator extends unreal.USoundNode {
   
   /**

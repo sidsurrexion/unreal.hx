@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Engine/BlueprintGeneratedClass.h", "Engine.h")
+@:glueCppIncludes("Engine/BlueprintGeneratedClass.h")
 @:uextern extern class UBlueprintGeneratedClass extends unreal.UClass {
   #if WITH_EDITORONLY_DATA
   public var OverridenArchetypeForCDO : unreal.UObject;

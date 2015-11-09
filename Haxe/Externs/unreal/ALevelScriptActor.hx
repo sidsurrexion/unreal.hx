@@ -19,7 +19,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Engine/Blueprints/index.html
   @see UBlueprint
 **/
-@:glueCppIncludes("Engine/LevelScriptActor.h", "Engine.h")
+@:glueCppIncludes("Engine/LevelScriptActor.h")
 @:uextern extern class ALevelScriptActor extends unreal.AActor {
   
 }

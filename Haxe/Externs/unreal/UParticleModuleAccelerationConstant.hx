@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Acceleration/ParticleModuleAccelerationConstant.h", "Engine.h")
+@:glueCppIncludes("Particles/Acceleration/ParticleModuleAccelerationConstant.h")
 @:uextern extern class UParticleModuleAccelerationConstant extends unreal.UParticleModuleAccelerationBase {
   
   /**

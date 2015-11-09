@@ -9,7 +9,7 @@ package unreal;
   A UCameraModifier_CameraShake is a camera modifier that can apply a UCameraShake to
   the owning camera.
 **/
-@:glueCppIncludes("Camera/CameraModifier_CameraShake.h", "Engine.h")
+@:glueCppIncludes("Camera/CameraModifier_CameraShake.h")
 @:uextern extern class UCameraModifier_CameraShake extends unreal.UCameraModifier {
   
   /**

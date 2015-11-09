@@ -9,7 +9,7 @@ package unreal.niagaraeditor;
   Niagara editor movie scene section; represents one emitter in the timeline
 **/
 @:umodule("NiagaraEditor")
-@:glueCppIncludes("Private/NiagaraSequencer.h", "Engine.h")
+@:glueCppIncludes("Private/NiagaraSequencer.h")
 @:uextern extern class UNiagaraMovieSceneSection extends unreal.moviescene.UMovieSceneSection {
   
 }

@@ -9,7 +9,7 @@ package unreal.moviescenetracks;
   A container for a movie scene within a movie scene
 **/
 @:umodule("MovieSceneTracks")
-@:glueCppIncludes("Sections/SubMovieSceneSection.h", "Engine.h")
+@:glueCppIncludes("Sections/SubMovieSceneSection.h")
 @:uextern extern class USubMovieSceneSection extends unreal.moviescene.UMovieSceneSection {
   
 }

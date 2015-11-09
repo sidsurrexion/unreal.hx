@@ -11,7 +11,7 @@ package unreal.aimodule;
   If a Selector's child succeeds, the Selector succeeds. If all the Selector's children fail, the Selector fails.
 **/
 @:umodule("AIModule")
-@:glueCppIncludes("BehaviorTree/Composites/BTComposite_Selector.h", "Engine.h")
+@:glueCppIncludes("BehaviorTree/Composites/BTComposite_Selector.h")
 @:uextern extern class UBTComposite_Selector extends unreal.aimodule.UBTCompositeNode {
   
 }

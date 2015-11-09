@@ -4,7 +4,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Location/ParticleModuleLocationPrimitiveCylinder_Seeded.h", "Engine.h")
+@:glueCppIncludes("Particles/Location/ParticleModuleLocationPrimitiveCylinder_Seeded.h")
 @:uextern extern class UParticleModuleLocationPrimitiveCylinder_Seeded extends unreal.UParticleModuleLocationPrimitiveCylinder {
   
   /**
