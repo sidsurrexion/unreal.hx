@@ -56,6 +56,9 @@ class ExternBaker {
         var dir = cp + '/' + pack.join('/');
         for (file in FileSystem.readDirectory(dir)) {
           if (file.endsWith('.hx')) {
+            if (file.endsWith('_Extra.hx')) {
+              continue;
+            }
             var module = pack.join('.') + (pack.length == 0 ? '' : '.') + file.substr(0,-3);
             if (processed[module])
               continue; // already existed on a classpath with higher precedence
@@ -275,6 +278,46 @@ class ExternBaker {
         this.buf.add('@:ueHasGenerics ');
         break;
       }
+    }
+    // process the _Extra type if found
+    try {
+      var extra = Context.getType(c.pack.join('.') + (c.pack.length > 0 ? '.' : '') + c.name + '_Extra');
+      switch(extra) {
+      case TInst(_.get() => ecl,_):
+        var efields = ecl.fields.get();
+        var estatics = ecl.statics.get();
+        for (field in efields) {
+          var oldField = fields.find(function(f) return f.name == field.name);
+          if (oldField != null) {
+            Context.warning('Unreal Extern Baker: The field ${field.name} already exists on ${c.name}', field.pos);
+          } else {
+            fields.push(field);
+          }
+        }
+
+        for (field in estatics) {
+          var oldField = statics.find(function(f) return f.name == field.name);
+          if (oldField != null) {
+            Context.warning('Unreal Extern Baker: The field ${field.name} already exists on ${c.name}', field.pos);
+          } else {
+            statics.push(field);
+          }
+        }
+      case _:
+        var pos = switch(extra) {
+        case TAbstract(a,_):
+          a.get().pos;
+        case TEnum(e,_):
+          e.get().pos;
+        case TType(t,_):
+          t.get().pos;
+        case _:
+          c.pos;
+        }
+        Context.warning('Unreal Extern Baker: Type ${c.name}_Extra is not a class',pos);
+      }
+    }
+    catch(e:Dynamic) {
     }
 
     var params = new HelperBuf();
@@ -511,8 +554,8 @@ class ExternBaker {
       this.buf.add(field.name);
       this.buf.add('(');
       var prop = PropType.Prop;
-      var realTConv = switch [tconv.haxeType.pack, tconv.haxeType.name] {
-        case [ ['unreal'], 'PStruct' ]:
+      var realTConv = switch (tconv.ownershipModifier) {
+        case 'unreal.PStruct':
           prop = PropType.StructProp;
           TypeConv.get( field.type, field.pos, 'unreal.PExternal' );
         case _:
@@ -762,8 +805,11 @@ class ExternBaker {
 
     //
     function genMethodCallArgs(body:String, meth:MethodDef, op:String, glueRet:TypeConv, cppArgs:Array<{ name:String, t:TypeConv }>, cppArgTypes:Array<String>) : String {
-      if (meth.prop == StructProp && meth.name.startsWith('get_'))
+      if (meth.prop == StructProp && !isSetter) {
         body = '&' + body;
+      } else if (meth.prop == Prop && !isSetter && meth.ret.isUObject == true && meth.ret.haxeType.name != 'TSubclassOf') {
+        body = 'const_cast< ${meth.ret.ueType.getCppType()} >( $body )';
+      }
 
       if (meth.prop != NonProp) {
         if (isSetter) {
