@@ -388,7 +388,7 @@ class ExternBaker {
 
         // Add the className to the classMap with the wrapped as the value so we can access it in wrap().
         if (!c.isInterface) {
-          if (!c.meta.has(':noClass')) {
+          if (!meta.hasMeta(':noClass')) {
             if (!methods.exists(function(m) return m.uname == 'StaticClass')) {
               methods.push({
                 name:'StaticClass',
@@ -470,7 +470,7 @@ class ExternBaker {
         this.begin(' {');
           this.buf.add('return new ${this.thisConv.haxeType}(wrapped);');
         this.end('}');
-        if (!c.meta.has(':noCopy')) {
+        if (!meta.hasMeta(':noCopy')) {
           var doc = "\n    Invokes the copy constructor of the referenced C++ class.\n    " +
             "This has some limitations - it won't copy the full inheritance chain of the class if it wasn't typed as the exact class\n    " +
             "it will also be a compilation error if the wrapped class forbids the C++ copy constructor;\n    " +
@@ -507,7 +507,7 @@ class ExternBaker {
             this.buf.add('return throw "The type ${this.thisConv.haxeType} does not support copy constructors";');
           this.end('}');
         }
-        if (!c.meta.has(':noEquals')) {
+        if (!meta.hasMeta(':noEquals')) {
             methods.push({
             name: '_equals',
             uname: '.equals',
@@ -533,6 +533,20 @@ class ExternBaker {
     this.realBuf.add(this.buf);
     this.buf = new StringBuf();
   }
+
+  // private static function getEnableIf(meth:MethodDef, body:String, decl:String, args:String):String {
+  //   var buf = new HelperBuf();
+  //   buf << 'template <bool CHECKOP=std::is_assignable<CHECKOP,CHECKOP>::value>\n\t\tclass ${meth.name}__if_op {\n\t\t\tpublic:\n\t\t\t';
+  //     buf << decl << ';\n\t\t};\n\n\t\t';
+  //   buf << 'template <> class ${meth.name}__if_op<true> {\n\t\t\tpublic:\n\t\t\t';
+  //     buf << decl << ' {\n\t\t\t\t$body\n\t\t\t}\n\t\t};\n\n\t\t';
+  //   buf << 'template <> class ${meth.name}__if_op<false> {\n\t\t\tpublic:\n\t\t\t';
+  //     buf << decl << ' {\n\t\t\t\t::unreal::helpers::HxcppRuntime::throwString("Calling operator $op in type that can\'t be assigned");\n\t\t\t\tthrow "assert";\n\t\t\t}\n\t\t};\n\n\t\t';
+  //   if (!meth.ret.haxeType.isVoid())
+  //     buf << 'return ';
+  //   buf << '${meth.name}__if_op<${meth.params[0]}>::${meth.name}($args)';
+  //   return buf.toString();
+  // }
 
   private function processField(field:ClassField, isStatic:Bool, ?specialization:{ types:Array<TypeConv>, mtypes:Array<Type>, generic:String }, methods:Array<MethodDef>) {
     var uname = switch(MacroHelpers.extractStrings(field.meta, ':uname')[0]) {

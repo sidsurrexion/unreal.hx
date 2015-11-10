@@ -26,11 +26,6 @@ package unreal;
   **/
   public var StaticMeshDerivedDataKey : unreal.FString;
   #end // WITH_EDITORONLY_DATA
-  
-  /**
-    Static mesh LOD data.  Contains static lighting data along with instanced mesh vertex colors.
-  **/
-  public var LODData : unreal.TArray<unreal.FStaticMeshComponentLODInfo>;
   public var IrrelevantLights : unreal.TArray<unreal.FGuid>;
   
   /**
