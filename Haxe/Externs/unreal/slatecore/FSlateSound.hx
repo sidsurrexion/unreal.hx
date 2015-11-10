@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/ButtonWidgetStyle.h")
 @:uextern extern class FSlateSound {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FSlateSound>;
   
   /**
     Pointer to the USoundBase. Holding onto it as a UObject because USoundBase is not available in Slate core.

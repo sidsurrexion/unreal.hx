@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Preferences/UnrealEdOptions.h")
 @:uextern extern class FEditorCommand {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FEditorCommand>;
   public var Description : unreal.FString;
   public var ExecCommand : unreal.FString;
   public var CommandName : unreal.FName;

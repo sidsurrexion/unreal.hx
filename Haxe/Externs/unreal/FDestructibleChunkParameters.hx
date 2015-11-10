@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/DestructibleFractureSettings.h")
 @:uextern extern class FDestructibleChunkParameters {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleChunkParameters>;
   
   /**
     Defines the chunk to be uncrumbleable.  This means this chunk will not be broken down into fluid mesh particles

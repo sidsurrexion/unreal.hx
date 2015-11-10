@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("Perception/AISense_Damage.h")
 @:uextern extern class FAIDamageEvent {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FAIDamageEvent>;
   
   /**
     Actor that instigated damage. Can be None

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionMaterialFunctionCall.h")
 @:uextern extern class FFunctionExpressionInput {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFunctionExpressionInput>;
   
   /**
     Actual input struct which stores information about how this input is connected in the material.

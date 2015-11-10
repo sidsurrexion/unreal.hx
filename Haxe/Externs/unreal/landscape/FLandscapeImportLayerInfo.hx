@@ -11,7 +11,6 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeEditorObject.h")
 @:uextern extern class FLandscapeImportLayerInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscape.FLandscapeImportLayerInfo>;
   #if WITH_EDITORONLY_DATA
   
   /**

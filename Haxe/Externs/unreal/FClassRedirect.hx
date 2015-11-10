@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FClassRedirect {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FClassRedirect>;
   public var InstanceOnly : Bool;
   public var NewSubobjName : unreal.FString;
   public var OldSubobjName : unreal.FString;

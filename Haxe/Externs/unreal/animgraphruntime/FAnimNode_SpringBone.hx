@@ -11,7 +11,6 @@ package unreal.animgraphruntime;
 @:umodule("AnimGraphRuntime")
 @:glueCppIncludes("AnimGraphNode_SpringBone.h")
 @:uextern extern class FAnimNode_SpringBone extends unreal.animgraphruntime.FAnimNode_SkeletalControlBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.animgraphruntime.FAnimNode_SpringBone>;
   
   /**
     If true take the spring calculation for rotation in Z

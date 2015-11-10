@@ -7,7 +7,6 @@ package unreal.gameprojectgeneration;
 @:umodule("GameProjectGeneration")
 @:glueCppIncludes("TemplateProjectDefs.h")
 @:uextern extern class FTemplateFolderRename {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameprojectgeneration.FTemplateFolderRename>;
   public var To : unreal.FString;
   public var From : unreal.FString;
   

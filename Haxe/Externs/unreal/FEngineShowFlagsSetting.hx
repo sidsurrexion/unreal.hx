@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Components/SceneCaptureComponent.h")
 @:uextern extern class FEngineShowFlagsSetting {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FEngineShowFlagsSetting>;
   public var Enabled : Bool;
   public var ShowFlagName : unreal.FString;
   

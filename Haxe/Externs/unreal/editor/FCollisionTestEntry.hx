@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Private/Tests/CollisionAutomationTests.h")
 @:uextern extern class FCollisionTestEntry {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FCollisionTestEntry>;
   public var HitResult : unreal.FHitResult;
   public var ShapeType : unreal.FString;
   public var RootShapeAsset : unreal.FString;

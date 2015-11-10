@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class FCurveTableRowHandle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCurveTableRowHandle>;
   
   /**
     Name of row in the table that we want

@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/EditableTextBoxWidgetStyle.h")
 @:uextern extern class FSlateFontInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FSlateFontInfo>;
   
   /**
     The size of the font

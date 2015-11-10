@@ -7,7 +7,6 @@ package unreal.localization;
 @:umodule("Localization")
 @:glueCppIncludes("LocalizationSettings.h")
 @:uextern extern class FLocalizationTargetSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.localization.FLocalizationTargetSettings>;
   
   /**
     Cultures for which the source text is being localized for.

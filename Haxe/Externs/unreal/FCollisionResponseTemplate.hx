@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/CollisionProfile.h")
 @:uextern extern class FCollisionResponseTemplate {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCollisionResponseTemplate>;
   
   /**
     Help message for collision profile *

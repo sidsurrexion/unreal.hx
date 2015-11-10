@@ -15,7 +15,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FActiveGameplayEffect extends unreal.FFastArraySerializerItem {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FActiveGameplayEffect>;
   
   /**
     Not sure if this should replicate or not. If replicated, we may have trouble where IsInhibited doesn't appear to change when we do tag checks (because it was previously inhibited, but replication made it inhibited).

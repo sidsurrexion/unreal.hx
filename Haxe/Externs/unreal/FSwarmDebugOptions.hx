@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Preferences/LightmassOptionsObject.h")
 @:uextern extern class FSwarmDebugOptions {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSwarmDebugOptions>;
   public var bInitialized : Bool;
   
   /**

@@ -11,7 +11,6 @@ package unreal.addcontentdialog;
 @:umodule("AddContentDialog")
 @:glueCppIncludes("TemplateProjectDefs.h")
 @:uextern extern class FFeaturePackLevelSet {
-  @:uname('new') public static function create():PHaxeCreated<unreal.addcontentdialog.FFeaturePackLevelSet>;
   
   /**
     Mount name for the shared resource - this is the folder the resource will be copied to on project generation as well as the name of the folder that will appear in the content browser.

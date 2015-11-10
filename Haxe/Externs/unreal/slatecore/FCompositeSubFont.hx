@@ -7,7 +7,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Engine/Font.h")
 @:uextern extern class FCompositeSubFont {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FCompositeSubFont>;
   #if WITH_EDITORONLY_DATA
   
   /**

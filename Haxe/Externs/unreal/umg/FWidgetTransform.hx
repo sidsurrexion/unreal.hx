@@ -11,7 +11,6 @@ package unreal.umg;
 @:umodule("UMG")
 @:glueCppIncludes("Components/Widget.h")
 @:uextern extern class FWidgetTransform {
-  @:uname('new') public static function create():PHaxeCreated<unreal.umg.FWidgetTransform>;
   
   /**
     The angle in degrees to rotate

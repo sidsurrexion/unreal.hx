@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Particles/ParticleModuleRequired.h")
 @:uextern extern class FParticleBurst {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FParticleBurst>;
   
   /**
     The time at which to burst them (0..1: emitter lifetime)

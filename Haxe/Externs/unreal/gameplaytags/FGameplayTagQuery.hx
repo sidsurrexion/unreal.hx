@@ -28,6 +28,5 @@ package unreal.gameplaytags;
 @:umodule("GameplayTags")
 @:glueCppIncludes("GameplayTagContainer.h")
 @:uextern extern class FGameplayTagQuery {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplaytags.FGameplayTagQuery>;
   
 }

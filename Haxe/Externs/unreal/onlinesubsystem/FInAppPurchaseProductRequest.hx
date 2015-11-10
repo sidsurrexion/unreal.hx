@@ -11,7 +11,6 @@ package unreal.onlinesubsystem;
 @:umodule("OnlineSubsystem")
 @:glueCppIncludes("Interfaces/TurnBasedMatchInterface.h", "NamedInterfaces.h")
 @:uextern extern class FInAppPurchaseProductRequest {
-  @:uname('new') public static function create():PHaxeCreated<unreal.onlinesubsystem.FInAppPurchaseProductRequest>;
   
   /**
     Flag to determine whether this is a consumable purchase, or not.

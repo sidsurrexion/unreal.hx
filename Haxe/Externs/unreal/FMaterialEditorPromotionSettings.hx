@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FMaterialEditorPromotionSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialEditorPromotionSettings>;
   
   /**
     Default material asset to apply to static meshes *

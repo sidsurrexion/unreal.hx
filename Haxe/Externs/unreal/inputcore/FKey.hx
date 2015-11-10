@@ -7,6 +7,5 @@ package unreal.inputcore;
 @:umodule("InputCore")
 @:glueCppIncludes("GameFramework/InputSettings.h")
 @:uextern extern class FKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.inputcore.FKey>;
   
 }

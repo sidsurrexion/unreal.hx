@@ -11,7 +11,6 @@ package unreal.umg;
 @:umodule("UMG")
 @:glueCppIncludes("Binding/PropertyBinding.h")
 @:uextern extern class FPropertyPathSegment {
-  @:uname('new') public static function create():PHaxeCreated<unreal.umg.FPropertyPathSegment>;
   
   /**
     The optional array index.

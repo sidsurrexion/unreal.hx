@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_TwoWayBlend.h")
 @:uextern extern class FAnimationNode_TwoWayBlend extends unreal.FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimationNode_TwoWayBlend>;
   public var AlphaScaleBias : unreal.FInputScaleBias;
   public var Alpha : unreal.Float32;
   public var B : unreal.FPoseLink;

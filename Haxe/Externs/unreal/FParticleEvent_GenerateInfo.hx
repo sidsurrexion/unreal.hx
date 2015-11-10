@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Particles/Event/ParticleModuleEventGenerator.h")
 @:uextern extern class FParticleEvent_GenerateInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FParticleEvent_GenerateInfo>;
   
   /**
     The events we want to fire off when this event has been generated

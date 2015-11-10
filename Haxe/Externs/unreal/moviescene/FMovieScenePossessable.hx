@@ -11,6 +11,5 @@ package unreal.moviescene;
 @:umodule("MovieScene")
 @:glueCppIncludes("MovieScene.h")
 @:uextern extern class FMovieScenePossessable {
-  @:uname('new') public static function create():PHaxeCreated<unreal.moviescene.FMovieScenePossessable>;
   
 }

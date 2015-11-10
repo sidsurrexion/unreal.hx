@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/ButtonWidgetStyle.h")
 @:uextern extern class FSlateColor {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FSlateColor>;
   
   /**
     The rule for which color to pick.

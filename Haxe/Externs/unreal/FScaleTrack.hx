@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimSequence.h")
 @:uextern extern class FScaleTrack {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FScaleTrack>;
   public var Times : unreal.TArray<unreal.Float32>;
   public var ScaleKeys : unreal.TArray<unreal.FVector>;
   

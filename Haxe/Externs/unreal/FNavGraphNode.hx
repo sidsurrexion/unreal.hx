@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("AI/Navigation/NavigationGraphNodeComponent.h")
 @:uextern extern class FNavGraphNode {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNavGraphNode>;
   
   /**
     Who's this node referring to? This will most commonly point to an actor or a component

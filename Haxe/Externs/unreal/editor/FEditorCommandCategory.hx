@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Preferences/UnrealEdOptions.h")
 @:uextern extern class FEditorCommandCategory {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FEditorCommandCategory>;
   public var Name : unreal.FName;
   public var Parent : unreal.FName;
   

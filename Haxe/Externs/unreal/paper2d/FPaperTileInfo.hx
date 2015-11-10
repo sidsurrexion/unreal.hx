@@ -11,7 +11,6 @@ package unreal.paper2d;
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperTileLayer.h")
 @:uextern extern class FPaperTileInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2d.FPaperTileInfo>;
   
   /**
     This is the index of the current tile within the tile set

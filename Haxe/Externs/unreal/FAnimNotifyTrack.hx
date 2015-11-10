@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimSequenceBase.h")
 @:uextern extern class FAnimNotifyTrack {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNotifyTrack>;
   public var TrackColor : unreal.FLinearColor;
   public var TrackName : unreal.FName;
   

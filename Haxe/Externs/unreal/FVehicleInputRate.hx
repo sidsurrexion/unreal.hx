@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent.h")
 @:uextern extern class FVehicleInputRate {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVehicleInputRate>;
   
   /**
     Rate at which the input value falls

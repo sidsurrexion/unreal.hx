@@ -7,7 +7,6 @@ package unreal.localization;
 @:umodule("Localization")
 @:glueCppIncludes("LocalizationSettings.h")
 @:uextern extern class FGatherTextFromPackagesConfiguration {
-  @:uname('new') public static function create():PHaxeCreated<unreal.localization.FGatherTextFromPackagesConfiguration>;
   
   /**
     If enable, data that is specified as editor-only may be processed for gathering.

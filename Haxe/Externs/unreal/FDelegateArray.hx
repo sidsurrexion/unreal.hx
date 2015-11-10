@@ -11,6 +11,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/PlatformInterfaceBase.h")
 @:uextern extern class FDelegateArray {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDelegateArray>;
   
 }

@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/SplineMeshComponent.h")
 @:uextern extern class FSplineMeshParams {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSplineMeshParams>;
   
   /**
     Ending offset of the mesh from the spline, in component space.

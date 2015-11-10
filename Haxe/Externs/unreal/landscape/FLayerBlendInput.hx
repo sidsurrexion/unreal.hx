@@ -7,7 +7,6 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("Materials/MaterialExpressionLandscapeLayerBlend.h")
 @:uextern extern class FLayerBlendInput {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscape.FLayerBlendInput>;
   
   /**
     only used if HeightInput is not hooked up

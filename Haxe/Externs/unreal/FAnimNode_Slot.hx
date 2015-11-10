@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_Slot.h")
 @:uextern extern class FAnimNode_Slot extends unreal.FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_Slot>;
   
   /**
     The name of this slot, exposed to gameplay code, etc...

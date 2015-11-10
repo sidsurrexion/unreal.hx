@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackEvent.h")
 @:uextern extern class FEventTrackKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FEventTrackKey>;
   public var EventName : unreal.FName;
   public var Time : unreal.Float32;
   

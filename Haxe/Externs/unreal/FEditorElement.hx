@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/BlendSpaceBase.h")
 @:uextern extern class FEditorElement {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FEditorElement>;
   
   /**
     MAX_VERTICES @fixmeconst

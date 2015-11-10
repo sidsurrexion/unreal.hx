@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FRichCurve extends unreal.FIndexedCurve {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRichCurve>;
   
   /**
     Post-infinity extrapolation state

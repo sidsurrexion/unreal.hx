@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("Components/PrimitiveComponent.h")
 @:uextern extern class FPrimitiveComponentPostPhysicsTickFunction extends unreal.FTickFunction {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FPrimitiveComponentPostPhysicsTickFunction>;
   
 }

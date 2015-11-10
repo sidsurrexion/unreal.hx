@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayCueManager.h")
 @:uextern extern class FGameplayEffectSpecForRPC {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayEffectSpecForRPC>;
   public var Level : unreal.Float32;
   public var AggregatedTargetTags : unreal.gameplaytags.FGameplayTagContainer;
   

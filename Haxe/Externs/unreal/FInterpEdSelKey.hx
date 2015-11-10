@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("MatineeOptions.h")
 @:uextern extern class FInterpEdSelKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInterpEdSelKey>;
   public var UnsnappedPosition : unreal.Float32;
   public var KeyIndex : unreal.Int32;
   public var Track : unreal.UInterpTrack;

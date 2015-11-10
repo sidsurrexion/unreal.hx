@@ -7,7 +7,6 @@ package unreal.umgeditor;
 @:umodule("UMGEditor")
 @:glueCppIncludes("WidgetBlueprint.h")
 @:uextern extern class FDelegateEditorBinding {
-  @:uname('new') public static function create():PHaxeCreated<unreal.umgeditor.FDelegateEditorBinding>;
   public var Kind : unreal.umg.EBindingKind;
   
   /**

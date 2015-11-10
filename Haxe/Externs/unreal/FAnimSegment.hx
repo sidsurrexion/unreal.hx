@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimComposite.h")
 @:uextern extern class FAnimSegment {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimSegment>;
   public var LoopingCount : unreal.Int32;
   
   /**

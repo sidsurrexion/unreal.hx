@@ -11,7 +11,6 @@ package unreal.onlinesubsystemutils;
 @:umodule("OnlineSubsystemUtils")
 @:glueCppIncludes("PartyBeaconState.h")
 @:uextern extern class FPartyReservation {
-  @:uname('new') public static function create():PHaxeCreated<unreal.onlinesubsystemutils.FPartyReservation>;
   
   /**
     All party members (including party leader) in the reservation

@@ -12,6 +12,5 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Fonts/FontBulkData.h", "Fonts/FontProviderInterface.h", "Styling/SlateTypes.h", "Styling/SlateWidgetStyleAsset.h", "Styling/SlateWidgetStyleContainerBase.h", "Styling/SlateWidgetStyleContainerInterface.h")
 @:uextern extern class FFocusEvent {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FFocusEvent>;
   
 }

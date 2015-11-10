@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/AnimSequenceBase.h")
 @:uextern extern class FFloatCurve extends unreal.FAnimCurveBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFloatCurve>;
   
   /**
     Curve data for float.

@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class FScalableFloat {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FScalableFloat>;
   public var Curve : unreal.FCurveTableRowHandle;
   public var Value : unreal.Float32;
   

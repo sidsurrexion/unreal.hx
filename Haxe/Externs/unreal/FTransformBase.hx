@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/Rig.h")
 @:uextern extern class FTransformBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTransformBase>;
   public var Node : unreal.FName;
   
 }

@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class FHierarchicalSimplification {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FHierarchicalSimplification>;
   
   /**
     Merge Mesh Setting if bSimplifyMesh is false

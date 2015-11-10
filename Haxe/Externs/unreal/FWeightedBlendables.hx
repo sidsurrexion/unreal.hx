@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Camera/CameraAnim.h")
 @:uextern extern class FWeightedBlendables {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FWeightedBlendables>;
   public var Array : unreal.TArray<unreal.FWeightedBlendable>;
   
 }

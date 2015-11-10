@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class FGameplayEffectModifierMagnitude {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayEffectModifierMagnitude>;
   
   /**
     Magnitude value represented by a SetByCaller magnitude

@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FFloatRange {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFloatRange>;
   
 }

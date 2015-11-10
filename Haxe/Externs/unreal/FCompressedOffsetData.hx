@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/AnimSequence.h")
 @:uextern extern class FCompressedOffsetData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCompressedOffsetData>;
   public var StripSize : unreal.Int32;
   public var OffsetData : unreal.TArray<unreal.Int32>;
   

@@ -7,7 +7,6 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeSplineControlPoint.h")
 @:uextern extern class FLandscapeSplineInterpPoint {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscape.FLandscapeSplineInterpPoint>;
   
   /**
     Start/End Falloff fraction

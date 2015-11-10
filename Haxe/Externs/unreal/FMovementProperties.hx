@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AI/Navigation/NavigationData.h")
 @:uextern extern class FMovementProperties {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMovementProperties>;
   
   /**
     If true, this Pawn is capable of flying.

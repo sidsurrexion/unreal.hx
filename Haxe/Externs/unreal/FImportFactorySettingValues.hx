@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FImportFactorySettingValues {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FImportFactorySettingValues>;
   
   /**
     Value to import for the specified property.

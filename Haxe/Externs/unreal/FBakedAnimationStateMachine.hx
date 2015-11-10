@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h")
 @:uextern extern class FBakedAnimationStateMachine {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBakedAnimationStateMachine>;
   
   /**
     List of all transitions between states

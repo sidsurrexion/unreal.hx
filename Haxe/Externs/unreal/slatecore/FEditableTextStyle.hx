@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/EditableTextWidgetStyle.h")
 @:uextern extern class FEditableTextStyle extends unreal.slatecore.FSlateWidgetStyle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FEditableTextStyle>;
   
   /**
     Image brush used for the caret

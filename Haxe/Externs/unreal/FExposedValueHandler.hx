@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class FExposedValueHandler {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FExposedValueHandler>;
   
   /**
     The function to call to update associated properties (can be NULL)

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine.h")
 @:uextern extern class FViewTargetTransitionParams {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FViewTargetTransitionParams>;
   
   /**
     If true, lock outgoing viewtarget to last frame's camera POV for the remainder of the blend.

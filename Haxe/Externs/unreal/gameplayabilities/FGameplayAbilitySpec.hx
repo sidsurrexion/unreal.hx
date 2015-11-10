@@ -12,7 +12,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FGameplayAbilitySpec extends unreal.FFastArraySerializerItem {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayAbilitySpec>;
   
   /**
     Pending removal due to scope lock

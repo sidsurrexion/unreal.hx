@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("Components/StaticMeshComponent.h")
 @:uextern extern class FPackedNormal {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FPackedNormal>;
   
 }

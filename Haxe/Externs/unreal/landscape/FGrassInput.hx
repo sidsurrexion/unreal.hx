@@ -7,7 +7,6 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("Materials/MaterialExpressionLandscapeGrassOutput.h")
 @:uextern extern class FGrassInput {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscape.FGrassInput>;
   public var Input : unreal.FExpressionInput;
   public var GrassType : unreal.landscape.ULandscapeGrassType;
   public var Name : unreal.FName;

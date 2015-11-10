@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/ButtonWidgetStyle.h")
 @:uextern extern class FMargin {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FMargin>;
   
   /**
     Holds the margin to the bottom.

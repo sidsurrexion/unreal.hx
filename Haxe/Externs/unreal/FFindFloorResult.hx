@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
 @:uextern extern class FFindFloorResult {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFindFloorResult>;
   
   /**
     Hit result of the test that found a floor. Includes more specific data about the point of impact and surface normal at that point.

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialInstance.h")
 @:uextern extern class FVectorParameterValue {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVectorParameterValue>;
   public var ExpressionGUID : unreal.FGuid;
   public var ParameterValue : unreal.FLinearColor;
   public var ParameterName : unreal.FName;

@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/InputAxisKeyDelegateBinding.h")
 @:uextern extern class FBlueprintInputAxisKeyDelegateBinding extends unreal.FBlueprintInputDelegateBinding {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBlueprintInputAxisKeyDelegateBinding>;
   public var FunctionNameToBind : unreal.FName;
   public var AxisKey : unreal.inputcore.FKey;
   

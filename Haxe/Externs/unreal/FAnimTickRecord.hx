@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimInstance.h")
 @:uextern extern class FAnimTickRecord {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimTickRecord>;
   public var SourceAsset : unreal.UAnimationAsset;
   
 }

@@ -7,7 +7,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Editor/PropertyEditorTestObject.h")
 @:uextern extern class FPropertyEditorTestSubStruct {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FPropertyEditorTestSubStruct>;
   public var CustomizedStructInsideUncustomizedStruct2 : unreal.FStringAssetReference;
   public var CustomizedStructInsideUncustomizedStruct : unreal.FLinearColor;
   public var SecondProperty : unreal.Int32;

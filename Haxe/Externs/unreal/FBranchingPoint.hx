@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimMontage.h")
 @:uextern extern class FBranchingPoint extends unreal.FAnimLinkableElement {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBranchingPoint>;
   
   /**
     An offset from the DisplayTime to the actual time we will trigger the notify, as we cannot always trigger it exactly at the time the user wants

@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/CollisionProfile.h")
 @:uextern extern class FRedirector {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRedirector>;
   
   /**
     Types of objects that this physics objects will collide with.

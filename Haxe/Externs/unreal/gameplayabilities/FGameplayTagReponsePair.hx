@@ -7,7 +7,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayTagResponseTable.h")
 @:uextern extern class FGameplayTagReponsePair {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayTagReponsePair>;
   
   /**
     The GameplayEffect to apply in reponse to the tag

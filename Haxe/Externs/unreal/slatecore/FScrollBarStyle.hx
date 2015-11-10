@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/EditableTextBoxWidgetStyle.h")
 @:uextern extern class FScrollBarStyle extends unreal.slatecore.FSlateWidgetStyle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FScrollBarStyle>;
   
   /**
     Image to use when the scrollbar thumb is in its dragged state

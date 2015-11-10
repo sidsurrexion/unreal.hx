@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimSequenceBase.h")
 @:uextern extern class FRawCurveTracks {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRawCurveTracks>;
   #if WITH_EDITORONLY_DATA
   
   /**

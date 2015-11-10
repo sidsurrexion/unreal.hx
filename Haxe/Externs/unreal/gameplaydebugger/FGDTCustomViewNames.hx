@@ -7,7 +7,6 @@ package unreal.gameplaydebugger;
 @:umodule("GameplayDebugger")
 @:glueCppIncludes("GameplayDebuggerSettings.h")
 @:uextern extern class FGDTCustomViewNames {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplaydebugger.FGDTCustomViewNames>;
   public var GameView5 : unreal.FString;
   public var GameView4 : unreal.FString;
   public var GameView3 : unreal.FString;

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/TimelineComponent.h")
 @:uextern extern class FTimelineLinearColorTrack {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTimelineLinearColorTrack>;
   
   /**
     Cached linear color struct property pointer

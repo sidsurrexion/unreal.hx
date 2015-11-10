@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialParameterCollection.h")
 @:uextern extern class FCollectionParameterBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCollectionParameterBase>;
   
   /**
     Uniquely identifies the parameter, used for fixing up materials that reference this parameter when renaming.

@@ -7,7 +7,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("Abilities/GameplayAbilityTargetActor.h")
 @:uextern extern class FWorldReticleParameters {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FWorldReticleParameters>;
   public var AOEScale : unreal.FVector;
   
 }

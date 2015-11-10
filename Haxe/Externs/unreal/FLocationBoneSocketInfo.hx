@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Particles/Location/ParticleModuleLocationBoneSocket.h")
 @:uextern extern class FLocationBoneSocketInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLocationBoneSocketInfo>;
   
   /**
     The offset from the bone/socket to use

@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Particles/ParticleModuleRequired.h")
 @:uextern extern class FDistributionLookupTable {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDistributionLookupTable>;
   
 }

@@ -11,7 +11,6 @@ package unreal.paper2d;
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperSprite.h")
 @:uextern extern class FSpriteGeometryShape {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2d.FSpriteGeometryShape>;
   
   /**
     For Polygon geometry, this tells us if the winding should be negative (CW) regardless of the order in Vertices

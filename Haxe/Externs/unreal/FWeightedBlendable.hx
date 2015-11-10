@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Camera/CameraAnim.h")
 @:uextern extern class FWeightedBlendable {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FWeightedBlendable>;
   
   /**
     should be of the IBlendableInterface* type but UProperties cannot express that

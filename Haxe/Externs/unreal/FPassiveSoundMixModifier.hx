@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/SoundClass.h")
 @:uextern extern class FPassiveSoundMixModifier {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FPassiveSoundMixModifier>;
   
   /**
     Maximum volume level required to activate SoundMix. Above this value the SoundMix will not be active.

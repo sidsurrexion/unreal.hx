@@ -11,7 +11,6 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeComponent.h")
 @:uextern extern class FWeightmapLayerAllocationInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscape.FWeightmapLayerAllocationInfo>;
   
   /**
     Only relevant in non-editor builds, this indicates which channel in the data array is this layer...must be > 1 to be valid, the first two are height *

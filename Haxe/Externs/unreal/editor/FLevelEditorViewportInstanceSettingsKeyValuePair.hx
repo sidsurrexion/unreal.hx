@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Settings/LevelEditorViewportSettings.h")
 @:uextern extern class FLevelEditorViewportInstanceSettingsKeyValuePair {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FLevelEditorViewportInstanceSettingsKeyValuePair>;
   
   /**
     Settings for this config.

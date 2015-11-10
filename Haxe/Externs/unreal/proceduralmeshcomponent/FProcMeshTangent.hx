@@ -12,7 +12,6 @@ package unreal.proceduralmeshcomponent;
 @:umodule("ProceduralMeshComponent")
 @:glueCppIncludes("ProceduralMeshComponent.h")
 @:uextern extern class FProcMeshTangent {
-  @:uname('new') public static function create():PHaxeCreated<unreal.proceduralmeshcomponent.FProcMeshTangent>;
   
   /**
     Bool that indicates whether we should flip the Y tangent when we compute it using cross product

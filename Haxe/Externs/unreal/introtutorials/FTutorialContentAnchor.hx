@@ -11,7 +11,6 @@ package unreal.introtutorials;
 @:umodule("IntroTutorials")
 @:glueCppIncludes("EditorTutorial.h")
 @:uextern extern class FTutorialContentAnchor {
-  @:uname('new') public static function create():PHaxeCreated<unreal.introtutorials.FTutorialContentAnchor>;
   
   /**
     Name of the outer object - should be the blueprint that 'owns' the node

@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("CoreUObject.h", "Object.h")
 @:uextern extern class FIntVector {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FIntVector>;
   
 }

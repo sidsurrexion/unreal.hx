@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FFastArraySerializer {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFastArraySerializer>;
   
 }

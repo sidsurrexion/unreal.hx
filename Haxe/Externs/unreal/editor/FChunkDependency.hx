@@ -7,7 +7,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Private/Commandlets/ChunkDependencyInfo.h")
 @:uextern extern class FChunkDependency {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FChunkDependency>;
   public var ParentChunkID : unreal.Int32;
   public var ChunkID : unreal.Int32;
   

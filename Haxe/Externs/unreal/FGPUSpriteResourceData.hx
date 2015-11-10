@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h")
 @:uextern extern class FGPUSpriteResourceData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FGPUSpriteResourceData>;
   
   /**
     Pivot offset in UV space for placing the verts of each particle.

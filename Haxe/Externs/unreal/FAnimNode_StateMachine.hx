@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_StateMachine.h")
 @:uextern extern class FAnimNode_StateMachine extends unreal.FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_StateMachine>;
   
   /**
     Elapsed time since entering the current state

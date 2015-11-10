@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class FLightmassWorldInfoSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassWorldInfoSettings>;
   
   /**
     Whether to compress lightmap textures.  Disabling lightmap texture compression will reduce artifacts but increase memory and disk size by 4x.

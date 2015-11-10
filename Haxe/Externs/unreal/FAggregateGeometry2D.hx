@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup2D.h")
 @:uextern extern class FAggregateGeometry2D {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAggregateGeometry2D>;
   public var ConvexElements : unreal.TArray<unreal.FConvexElement2D>;
   public var BoxElements : unreal.TArray<unreal.FBoxElement2D>;
   public var CircleElements : unreal.TArray<unreal.FCircleElement2D>;

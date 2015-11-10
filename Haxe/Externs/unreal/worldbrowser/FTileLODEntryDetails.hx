@@ -13,7 +13,6 @@ package unreal.worldbrowser;
 @:umodule("WorldBrowser")
 @:glueCppIncludes("Private/Tiles/WorldTileDetails.h")
 @:uextern extern class FTileLODEntryDetails {
-  @:uname('new') public static function create():PHaxeCreated<unreal.worldbrowser.FTileLODEntryDetails>;
   public var SimplificationDetails : unreal.FLevelSimplificationDetails;
   
   /**

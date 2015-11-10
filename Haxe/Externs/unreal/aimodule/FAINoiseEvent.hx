@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("Perception/AISense_Hearing.h")
 @:uextern extern class FAINoiseEvent {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FAINoiseEvent>;
   
   /**
     Named identifier for the noise.

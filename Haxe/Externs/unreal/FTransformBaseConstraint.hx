@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/Rig.h")
 @:uextern extern class FTransformBaseConstraint {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTransformBaseConstraint>;
   
   /**
     What transform type *

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/TimelineTemplate.h")
 @:uextern extern class FTTVectorTrack extends unreal.FTTTrackBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTTVectorTrack>;
   
   /**
     Curve object used to define vector value over time

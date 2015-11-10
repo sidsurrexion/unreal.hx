@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackMove.h")
 @:uextern extern class FInterpLookupPoint {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInterpLookupPoint>;
   public var Time : unreal.Float32;
   public var GroupName : unreal.FName;
   

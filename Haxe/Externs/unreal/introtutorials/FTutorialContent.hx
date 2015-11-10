@@ -11,7 +11,6 @@ package unreal.introtutorials;
 @:umodule("IntroTutorials")
 @:glueCppIncludes("EditorTutorial.h")
 @:uextern extern class FTutorialContent {
-  @:uname('new') public static function create():PHaxeCreated<unreal.introtutorials.FTutorialContent>;
   
   /**
     Excerpt name for UDN excerpt

@@ -37,7 +37,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("Navigation/CrowdManager.h")
 @:uextern extern class FCrowdAvoidanceConfig {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FCrowdAvoidanceConfig>;
   
   /**
     adaptive sampling: number of iterations at best velocity

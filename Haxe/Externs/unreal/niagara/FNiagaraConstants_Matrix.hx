@@ -7,7 +7,6 @@ package unreal.niagara;
 @:umodule("Niagara")
 @:glueCppIncludes("NiagaraSimulation.h")
 @:uextern extern class FNiagaraConstants_Matrix extends unreal.niagara.FNiagaraConstantBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.niagara.FNiagaraConstants_Matrix>;
   public var Value : unreal.FMatrix;
   
 }

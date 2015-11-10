@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/Font.h")
 @:uextern extern class FFontImportOptionsData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFontImportOptionsData>;
   
   /**
     Shrinks or expands the scan radius used to determine the silhouette of the font edges.

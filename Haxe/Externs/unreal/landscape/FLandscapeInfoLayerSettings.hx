@@ -7,7 +7,6 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeInfo.h")
 @:uextern extern class FLandscapeInfoLayerSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscape.FLandscapeInfoLayerSettings>;
   #if WITH_EDITORONLY_DATA
   public var bValid : Bool;
   public var DebugColorChannel : unreal.Int32;

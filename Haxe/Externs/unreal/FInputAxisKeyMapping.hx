@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/InputSettings.h")
 @:uextern extern class FInputAxisKeyMapping {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInputAxisKeyMapping>;
   
   /**
     Multiplier to use for the mapping when accumulating the axis value

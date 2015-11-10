@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("Perception/AISenseConfig_Hearing.h")
 @:uextern extern class FAISenseAffiliationFilter {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FAISenseAffiliationFilter>;
   public var bDetectFriendlies : Bool;
   public var bDetectNeutrals : Bool;
   public var bDetectEnemies : Bool;

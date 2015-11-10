@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("CoreUObject.h", "Object.h")
 @:uextern extern class FTimespan {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTimespan>;
   
 }

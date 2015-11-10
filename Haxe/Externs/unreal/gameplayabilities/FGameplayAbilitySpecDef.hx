@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FGameplayAbilitySpecDef {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayAbilitySpecDef>;
   
   /**
     This handle can be set if the SpecDef is used to create a real FGameplaybilitySpec

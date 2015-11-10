@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FForceFeedbackChannelDetails {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FForceFeedbackChannelDetails>;
   public var Curve : unreal.FRuntimeFloatCurve;
   public var bAffectsRightSmall : Bool;
   public var bAffectsRightLarge : Bool;

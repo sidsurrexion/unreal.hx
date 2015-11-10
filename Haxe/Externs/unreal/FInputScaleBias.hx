@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class FInputScaleBias {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInputScaleBias>;
   public var Bias : unreal.Float32;
   public var Scale : unreal.Float32;
   

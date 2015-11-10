@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FGameplayEffectAttributeCaptureDefinition {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayEffectAttributeCaptureDefinition>;
   
   /**
     Whether the attribute should be snapshotted or not

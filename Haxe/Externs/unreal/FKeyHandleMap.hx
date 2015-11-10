@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FKeyHandleMap {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FKeyHandleMap>;
   
 }

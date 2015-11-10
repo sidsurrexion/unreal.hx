@@ -7,7 +7,6 @@ package unreal.foliage;
 @:umodule("Foliage")
 @:glueCppIncludes("ProceduralFoliageTile.h")
 @:uextern extern class FProceduralFoliageInstance {
-  @:uname('new') public static function create():PHaxeCreated<unreal.foliage.FProceduralFoliageInstance>;
   public var Type : unreal.foliage.UFoliageType_InstancedStaticMesh;
   public var Scale : unreal.Float32;
   public var Age : unreal.Float32;

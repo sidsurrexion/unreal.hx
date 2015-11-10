@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FKConvexElem extends unreal.FKShapeElem {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FKConvexElem>;
   
   /**
     Transform of this element

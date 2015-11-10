@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleSpecialHierarchyDepths {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleSpecialHierarchyDepths>;
   
   /**
     The chunk hierarchy depth up to which chunks will always be processed.  These chunks are considered

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrack.h")
 @:uextern extern class FSubTrackGroup {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSubTrackGroup>;
   
   /**
     If this group is selected

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Atmosphere/AtmosphericFogComponent.h")
 @:uextern extern class FAtmospherePrecomputeParameters {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAtmospherePrecomputeParameters>;
   
   /**
     Inscatter Texture Width

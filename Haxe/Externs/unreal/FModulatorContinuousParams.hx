@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Sound/SoundNodeModulatorContinuous.h")
 @:uextern extern class FModulatorContinuousParams {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FModulatorContinuousParams>;
   
   /**
     The mode with which to treat the input value

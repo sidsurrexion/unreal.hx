@@ -1,6 +1,6 @@
 package unreal;
 
-@:uextern extern class AController_Extra {
+extern class AController_Extra {
   public function PawnPendingDestroy(inPawn:APawn) : Void;
   public function Possess(InPawn:APawn) : Void;
 

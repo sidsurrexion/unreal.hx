@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_BlendSpaceEvaluator.h")
 @:uextern extern class FAnimNode_BlendSpaceEvaluator extends unreal.FAnimNode_BlendSpacePlayer {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_BlendSpaceEvaluator>;
   
   /**
     Normalized time between [0,1]. The actual length of a blendspace is dynamic based on the coordinate, so it is exposed as a normalized value.

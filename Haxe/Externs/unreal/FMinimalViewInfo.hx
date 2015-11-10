@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Camera/PlayerCameraManager.h")
 @:uextern extern class FMinimalViewInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMinimalViewInfo>;
   
   /**
     Post-process settings to use if PostProcessBlendWeight is non-zero.

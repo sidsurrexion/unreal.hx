@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayCueManager.h")
 @:uextern extern class FGameplayCuePendingExecute {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayCuePendingExecute>;
   
   /**
     Store the full cue parameters or just the effect context depending on type

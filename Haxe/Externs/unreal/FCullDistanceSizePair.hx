@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/CullDistanceVolume.h")
 @:uextern extern class FCullDistanceSizePair {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCullDistanceSizePair>;
   
   /**
     Cull distance associated with size.

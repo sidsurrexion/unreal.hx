@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h")
 @:uextern extern class FFloatDistribution {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFloatDistribution>;
   
 }

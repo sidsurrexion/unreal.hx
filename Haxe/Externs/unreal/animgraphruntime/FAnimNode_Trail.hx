@@ -11,7 +11,6 @@ package unreal.animgraphruntime;
 @:umodule("AnimGraphRuntime")
 @:glueCppIncludes("AnimGraphNode_Trail.h")
 @:uextern extern class FAnimNode_Trail extends unreal.animgraphruntime.FAnimNode_SkeletalControlBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.animgraphruntime.FAnimNode_Trail>;
   
   /**
     Whether 'fake' velocity should be applied in actor or world space.

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FBuildPromotionBlueprintSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBuildPromotionBlueprintSettings>;
   
   /**
     The mesh to set on the blueprint after the delay *

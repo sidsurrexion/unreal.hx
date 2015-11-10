@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/StaticMesh.h")
 @:uextern extern class FAssetEditorOrbitCameraPosition {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAssetEditorOrbitCameraPosition>;
   
   /**
     The rotation to apply around the orbit point

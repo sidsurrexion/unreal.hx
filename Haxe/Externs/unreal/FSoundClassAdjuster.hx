@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/SoundMix.h")
 @:uextern extern class FSoundClassAdjuster {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSoundClassAdjuster>;
   
   /**
     A multiplier applied to VoiceCenterChannelVolume.

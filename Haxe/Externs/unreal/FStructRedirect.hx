@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FStructRedirect {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FStructRedirect>;
   public var NewStructName : unreal.FString;
   public var OldStructName : unreal.FString;
   

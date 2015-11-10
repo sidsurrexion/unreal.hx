@@ -14,7 +14,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/CollisionProfile.h")
 @:uextern extern class FCustomProfile {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCustomProfile>;
   
   /**
     Types of objects that this physics objects will collide with.

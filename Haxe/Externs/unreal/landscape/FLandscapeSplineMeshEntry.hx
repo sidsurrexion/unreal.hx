@@ -7,7 +7,6 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeSplineSegment.h")
 @:uextern extern class FLandscapeSplineMeshEntry {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscape.FLandscapeSplineMeshEntry>;
   
   /**
     Chooses the up axis for the spline mesh orientation

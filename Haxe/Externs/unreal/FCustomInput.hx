@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Materials/MaterialExpressionCustom.h")
 @:uextern extern class FCustomInput {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCustomInput>;
   public var Input : unreal.FExpressionInput;
   public var InputName : unreal.FString;
   

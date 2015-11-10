@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AI/Navigation/NavFilters/NavigationQueryFilter.h")
 @:uextern extern class FNavigationFilterFlags {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNavigationFilterFlags>;
   public var bNavFlag15 : Bool;
   public var bNavFlag14 : Bool;
   public var bNavFlag13 : Bool;

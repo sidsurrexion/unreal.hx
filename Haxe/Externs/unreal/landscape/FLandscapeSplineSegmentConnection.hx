@@ -7,7 +7,6 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeSplineSegment.h")
 @:uextern extern class FLandscapeSplineSegmentConnection {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscape.FLandscapeSplineSegmentConnection>;
   
   /**
     Socket on the control point that we are connected to

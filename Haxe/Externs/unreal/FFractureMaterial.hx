@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/DestructibleFractureSettings.h")
 @:uextern extern class FFractureMaterial {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFractureMaterial>;
   
   /**
     The element index to use for the newly-created triangles.

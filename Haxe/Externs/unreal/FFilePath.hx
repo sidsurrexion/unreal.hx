@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FFilePath {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFilePath>;
   
   /**
     The path to the file.

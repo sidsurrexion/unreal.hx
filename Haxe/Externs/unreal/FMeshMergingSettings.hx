@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class FMeshMergingSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMeshMergingSettings>;
   
   /**
     Merged material texture atlas resolution

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleDepthParameters {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleDepthParameters>;
   
   /**
     Chunks up to the depth DefaultImpactDamageDepth will take impact damage, unless one of the override options (see EImpactDamageOverride) is chosen.

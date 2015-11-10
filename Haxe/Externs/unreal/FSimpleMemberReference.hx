@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Components/ActorComponent.h")
 @:uextern extern class FSimpleMemberReference {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSimpleMemberReference>;
   
   /**
     The Guid of the member

@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpression.h")
 @:uextern extern class FExpressionOutput {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FExpressionOutput>;
   
 }

@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("AI/Navigation/NavLinkDefinition.h")
 @:uextern extern class FNavigationLink extends unreal.FNavigationLinkBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNavigationLink>;
   public var Right : unreal.FVector;
   public var Left : unreal.FVector;
   

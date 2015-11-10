@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleAdvancedParameters {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleAdvancedParameters>;
   
   /**
     Scale factor used to apply an impulse force along the normal of chunk when fractured.  This is used

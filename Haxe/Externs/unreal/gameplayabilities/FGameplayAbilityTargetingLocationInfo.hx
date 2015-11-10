@@ -7,7 +7,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("Abilities/GameplayAbilityTargetActor.h")
 @:uextern extern class FGameplayAbilityTargetingLocationInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayAbilityTargetingLocationInfo>;
   
   /**
     If SourceComponent is valid, this is the name of the socket transform that will be used. If no Socket is provided, SourceComponent's transform will be used.

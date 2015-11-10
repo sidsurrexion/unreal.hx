@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class FComponentSpacePoseLink extends unreal.FPoseLinkBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FComponentSpacePoseLink>;
   
 }

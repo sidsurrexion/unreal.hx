@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleDebrisParameters {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleDebrisParameters>;
   
   /**
     "Debris chunks" (see debrisDepth, above) will be destroyed if they leave this box.

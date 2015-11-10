@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FGameplayAbilityRepAnimMontage {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayAbilityRepAnimMontage>;
   public var PredictionKey : unreal.gameplayabilities.FPredictionKey;
   
   /**

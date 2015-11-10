@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Particles/ParticleSystem.h")
 @:uextern extern class FNamedEmitterMaterial {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNamedEmitterMaterial>;
   public var Material : unreal.UMaterialInterface;
   public var Name : unreal.FName;
   

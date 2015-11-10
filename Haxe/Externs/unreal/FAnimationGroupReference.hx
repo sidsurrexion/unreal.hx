@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("AnimGraphNode_SequencePlayer.h")
 @:uextern extern class FAnimationGroupReference {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimationGroupReference>;
   
   /**
     The type of membership in the group (potential leader, always follower, etc...)

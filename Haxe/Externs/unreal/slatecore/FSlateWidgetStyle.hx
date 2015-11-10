@@ -11,6 +11,5 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/ButtonWidgetStyle.h")
 @:uextern extern class FSlateWidgetStyle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FSlateWidgetStyle>;
   
 }

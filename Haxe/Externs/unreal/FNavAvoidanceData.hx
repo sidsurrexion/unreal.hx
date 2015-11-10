@@ -6,6 +6,5 @@ package unreal;
 
 @:glueCppIncludes("Engine.h")
 @:uextern extern class FNavAvoidanceData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNavAvoidanceData>;
   
 }

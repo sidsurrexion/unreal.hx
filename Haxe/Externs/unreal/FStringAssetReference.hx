@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("GameMapsSettings.h")
 @:uextern extern class FStringAssetReference {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FStringAssetReference>;
   
 }

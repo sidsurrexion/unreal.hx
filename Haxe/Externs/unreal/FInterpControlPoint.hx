@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Components/InterpToMovementComponent.h")
 @:uextern extern class FInterpControlPoint {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInterpControlPoint>;
   
   /**
     Is the location relative to the root components initial location

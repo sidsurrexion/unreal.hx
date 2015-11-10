@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/Blueprint.h")
 @:uextern extern class FBPInterfaceDescription {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBPInterfaceDescription>;
   
   /**
     References to the graphs associated with the required functions for this interface

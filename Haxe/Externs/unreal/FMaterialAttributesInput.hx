@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionBreakMaterialAttributes.h")
 @:uextern extern class FMaterialAttributesInput extends unreal.FExpressionInput {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialAttributesInput>;
   
 }

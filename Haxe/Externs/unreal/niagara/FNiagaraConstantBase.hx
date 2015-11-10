@@ -7,7 +7,6 @@ package unreal.niagara;
 @:umodule("Niagara")
 @:glueCppIncludes("NiagaraSimulation.h")
 @:uextern extern class FNiagaraConstantBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.niagara.FNiagaraConstantBase>;
   public var Name : unreal.FName;
   
 }

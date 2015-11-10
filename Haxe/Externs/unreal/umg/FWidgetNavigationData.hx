@@ -7,7 +7,6 @@ package unreal.umg;
 @:umodule("UMG")
 @:glueCppIncludes("Blueprint/WidgetNavigation.h")
 @:uextern extern class FWidgetNavigationData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.umg.FWidgetNavigationData>;
   public var WidgetToFocus : unreal.FName;
   public var Rule : unreal.slatecore.EUINavigationRule;
   

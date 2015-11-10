@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Camera/PlayerCameraManager.h")
 @:uextern extern class FTViewTarget {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTViewTarget>;
   
   /**
     PlayerState (used to follow same player through pawn transitions, etc., when spectating)

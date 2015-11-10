@@ -7,7 +7,6 @@ package unreal.landscapeeditor;
 @:umodule("LandscapeEditor")
 @:glueCppIncludes("LandscapeEditorObject.h")
 @:uextern extern class FGizmoImportLayer {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscapeeditor.FGizmoImportLayer>;
   public var bNoImport : Bool;
   public var LayerName : unreal.FString;
   public var LayerFilename : unreal.FString;

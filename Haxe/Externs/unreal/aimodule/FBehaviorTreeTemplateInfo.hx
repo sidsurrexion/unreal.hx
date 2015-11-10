@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("BehaviorTree/BehaviorTreeManager.h")
 @:uextern extern class FBehaviorTreeTemplateInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FBehaviorTreeTemplateInfo>;
   
   /**
     initialized template

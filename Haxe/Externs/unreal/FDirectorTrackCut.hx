@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackDirector.h")
 @:uextern extern class FDirectorTrackCut {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDirectorTrackCut>;
   
   /**
     Shot number for developer reference

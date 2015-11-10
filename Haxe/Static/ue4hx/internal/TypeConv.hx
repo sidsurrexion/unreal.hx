@@ -419,7 +419,7 @@ using StringTools;
           haxeToGlueExpr: conv.getClassPath() + '.unwrap(%)',
           glueToHaxeExpr: conv.getClassPath() + '.wrap(%)',
           glueToUeExpr: '( (${refName.getCppType()}) % )',
-          ueToGlueExpr: '( (int) % )',
+          ueToGlueExpr: '( (int) (${refName.getCppType()}) % )',
           args: convArgs,
         };
       } else {

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FSkeletalMeshLODInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSkeletalMeshLODInfo>;
   
   /**
     Reduction settings to apply when building render data.

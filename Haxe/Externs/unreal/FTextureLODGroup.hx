@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/TextureLODSettings.h")
 @:uextern extern class FTextureLODGroup {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTextureLODGroup>;
   public var MipFilter : unreal.FName;
   public var MinMagFilter : unreal.FName;
   public var MaxLODSize : unreal.Int32;

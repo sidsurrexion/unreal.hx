@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/TimelineComponent.h")
 @:uextern extern class FTimelineVectorTrack {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTimelineVectorTrack>;
   
   /**
     Cached vector struct property pointer

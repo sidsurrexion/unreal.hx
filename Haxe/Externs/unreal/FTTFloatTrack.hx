@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/TimelineTemplate.h")
 @:uextern extern class FTTFloatTrack extends unreal.FTTTrackBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTTFloatTrack>;
   
   /**
     Curve object used to define float value over time

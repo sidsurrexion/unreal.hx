@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("FunctionalAITest.h")
 @:uextern extern class FGenericTeamId {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FGenericTeamId>;
   private var TeamID : unreal.UInt8;
   
 }

@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Preferences/UnrealEdOptions.h")
 @:uextern extern class FClassPickerDefaults {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FClassPickerDefaults>;
   
   /**
     The name of the asset type being created

@@ -11,6 +11,5 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FGameplayEffectAttributeCaptureSpec {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayEffectAttributeCaptureSpec>;
   
 }

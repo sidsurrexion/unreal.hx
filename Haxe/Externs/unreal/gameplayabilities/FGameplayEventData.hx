@@ -7,7 +7,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("Abilities/GameplayAbility.h")
 @:uextern extern class FGameplayEventData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayEventData>;
   
   /**
     The magnitude of the triggering event

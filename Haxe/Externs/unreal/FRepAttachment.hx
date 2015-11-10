@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/Actor.h")
 @:uextern extern class FRepAttachment {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRepAttachment>;
   public var AttachComponent : unreal.USceneComponent;
   public var AttachSocket : unreal.FName;
   public var RotationOffset : unreal.FRotator;

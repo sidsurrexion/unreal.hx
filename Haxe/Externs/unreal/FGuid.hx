@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("GeneralProjectSettings.h")
 @:uextern extern class FGuid {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FGuid>;
   
 }

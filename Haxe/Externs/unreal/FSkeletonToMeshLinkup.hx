@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/Skeleton.h")
 @:uextern extern class FSkeletonToMeshLinkup {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSkeletonToMeshLinkup>;
   
   /**
     Mapping table. Size must be same as size of ref pose (not bone tree).

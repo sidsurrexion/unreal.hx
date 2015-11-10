@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/Actor.h")
 @:uextern extern class FTickFunction {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTickFunction>;
   
   /**
     The frequency in seconds at which this tick function will be executed.  If less than or equal to 0 then it will tick every frame

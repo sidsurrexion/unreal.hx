@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/InputAxisDelegateBinding.h")
 @:uextern extern class FBlueprintInputAxisDelegateBinding extends unreal.FBlueprintInputDelegateBinding {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBlueprintInputAxisDelegateBinding>;
   public var FunctionNameToBind : unreal.FName;
   public var InputAxisName : unreal.FName;
   

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/ArrowComponent.h")
 @:uextern extern class FSpriteCategoryInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSpriteCategoryInfo>;
   
   /**
     Sprite category that the component belongs to

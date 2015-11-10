@@ -11,7 +11,6 @@ package unreal.onlinesubsystemutils;
 @:umodule("OnlineSubsystemUtils")
 @:glueCppIncludes("PartyBeaconState.h")
 @:uextern extern class FPlayerReservation {
-  @:uname('new') public static function create():PHaxeCreated<unreal.onlinesubsystemutils.FPlayerReservation>;
   
   /**
     Elapsed time since player made reservation and was last seen

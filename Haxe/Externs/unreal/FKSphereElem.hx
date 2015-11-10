@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FKSphereElem extends unreal.FKShapeElem {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FKSphereElem>;
   public var Radius : unreal.Float32;
   public var Center : unreal.FVector;
   public var TM_DEPRECATED : unreal.FMatrix;

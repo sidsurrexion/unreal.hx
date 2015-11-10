@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent4W.h")
 @:uextern extern class FVehicleTransmissionData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVehicleTransmissionData>;
   
   /**
     Strength of clutch (Kgm^2/s)

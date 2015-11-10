@@ -7,7 +7,6 @@ package unreal.gameprojectgeneration;
 @:umodule("GameProjectGeneration")
 @:glueCppIncludes("TemplateProjectDefs.h")
 @:uextern extern class FLocalizedTemplateString {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameprojectgeneration.FLocalizedTemplateString>;
   public var Text : unreal.FString;
   public var Language : unreal.FString;
   

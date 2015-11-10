@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_Donut.h")
 @:uextern extern class FAIDataProviderIntValue extends unreal.aimodule.FAIDataProviderTypedValue {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FAIDataProviderIntValue>;
   public var DefaultValue : unreal.Int32;
   
 }

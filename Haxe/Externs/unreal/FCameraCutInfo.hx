@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/MatineeActor.h")
 @:uextern extern class FCameraCutInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCameraCutInfo>;
   public var TimeStamp : unreal.Float32;
   public var Location : unreal.FVector;
   

@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Engine/Font.h")
 @:uextern extern class FTypeface {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FTypeface>;
   
   /**
     The fonts contained within this family

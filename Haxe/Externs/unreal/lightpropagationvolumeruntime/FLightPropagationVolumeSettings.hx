@@ -7,7 +7,6 @@ package unreal.lightpropagationvolumeruntime;
 @:umodule("LightPropagationVolumeRuntime")
 @:glueCppIncludes("LightPropagationVolumeBlendable.h")
 @:uextern extern class FLightPropagationVolumeSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.lightpropagationvolumeruntime.FLightPropagationVolumeSettings>;
   
   /**
     Specular occlusion intensity - higher values provide increased specular occlusion.

@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/ComboBoxWidgetStyle.h")
 @:uextern extern class FComboButtonStyle extends unreal.slatecore.FSlateWidgetStyle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FComboButtonStyle>;
   
   /**
     Padding to use to add a "menu border" around the drop-down content

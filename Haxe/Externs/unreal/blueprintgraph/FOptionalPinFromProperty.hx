@@ -7,7 +7,6 @@ package unreal.blueprintgraph;
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_GetClassDefaults.h")
 @:uextern extern class FOptionalPinFromProperty {
-  @:uname('new') public static function create():PHaxeCreated<unreal.blueprintgraph.FOptionalPinFromProperty>;
   public var CategoryName : unreal.FName;
   public var bPropertyIsCustomized : Bool;
   public var bCanToggleVisibility : Bool;

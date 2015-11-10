@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("Perception/AISense_Team.h")
 @:uextern extern class FAITeamStimulusEvent {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FAITeamStimulusEvent>;
   public var Enemy : unreal.AActor;
   
 }

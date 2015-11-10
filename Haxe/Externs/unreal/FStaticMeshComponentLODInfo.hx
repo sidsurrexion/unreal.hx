@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Components/StaticMeshComponent.h")
 @:uextern extern class FStaticMeshComponentLODInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FStaticMeshComponentLODInfo>;
   
   /**
     Vertex data cached at the time this LOD was painted, if any

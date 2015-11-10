@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FEditorImportWorkflowDefinition {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FEditorImportWorkflowDefinition>;
   
   /**
     Settings for the import factory

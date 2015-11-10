@@ -7,6 +7,5 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("Abilities/GameplayAbilityTargetActor.h")
 @:uextern extern class FGameplayTargetDataFilterHandle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayTargetDataFilterHandle>;
   
 }

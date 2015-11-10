@@ -11,7 +11,6 @@ package unreal.gameplaytags;
 @:umodule("GameplayTags")
 @:glueCppIncludes("GameplayTagContainer.h")
 @:uextern extern class FGameplayTagContainer {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplaytags.FGameplayTagContainer>;
   
   /**
     Array of gameplay tags

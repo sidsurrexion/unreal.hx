@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/AnimData/BoneMaskFilter.h")
 @:uextern extern class FInputBlendPose {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInputBlendPose>;
   
   /**
     Bone Name to filter *

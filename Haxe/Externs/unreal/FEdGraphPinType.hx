@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("EdGraph/EdGraphPin.h")
 @:uextern extern class FEdGraphPinType {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FEdGraphPinType>;
   
   /**
     Whether or not this is a weak reference

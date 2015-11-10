@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/Blueprint.h")
 @:uextern extern class FEditedDocumentInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FEditedDocumentInfo>;
   
   /**
     Saved zoom amount

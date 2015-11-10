@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Settings/LevelEditorViewportSettings.h")
 @:uextern extern class FLevelEditorViewportInstanceSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FLevelEditorViewportInstanceSettings>;
   
   /**
     Whether viewport statistics should be enabled by default.

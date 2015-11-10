@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("Particles/ParticleSystem.h")
 @:uextern extern class FParticleSystemLOD {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FParticleSystemLOD>;
   
 }

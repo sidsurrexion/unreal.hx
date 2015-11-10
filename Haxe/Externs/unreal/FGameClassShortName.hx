@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/GameMode.h")
 @:uextern extern class FGameClassShortName {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FGameClassShortName>;
   
   /**
     The class name to use when the alias is specified in a URL

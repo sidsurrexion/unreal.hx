@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/Character.h")
 @:uextern extern class FRootMotionMovementParams {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRootMotionMovementParams>;
   public var RootMotionTransform : unreal.FTransform;
   public var BlendWeight : unreal.Float32;
   public var bHasRootMotion : Bool;

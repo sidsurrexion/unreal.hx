@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Layers/Layer.h")
 @:uextern extern class FLayerActorStats {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLayerActorStats>;
   
   /**
     The total number of Actors of Type assigned to the Layer

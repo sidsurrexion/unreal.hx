@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionMaterialFunctionCall.h")
 @:uextern extern class FFunctionExpressionOutput {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFunctionExpressionOutput>;
   
   /**
     Actual output struct which stores information about how this output is connected in the material.

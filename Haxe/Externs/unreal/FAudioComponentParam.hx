@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/AudioComponent.h")
 @:uextern extern class FAudioComponentParam {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAudioComponentParam>;
   
   /**
     Value of the parameter when used as a sound wave

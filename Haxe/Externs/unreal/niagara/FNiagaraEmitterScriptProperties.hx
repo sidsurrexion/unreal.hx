@@ -7,7 +7,6 @@ package unreal.niagara;
 @:umodule("Niagara")
 @:glueCppIncludes("NiagaraSimulation.h")
 @:uextern extern class FNiagaraEmitterScriptProperties {
-  @:uname('new') public static function create():PHaxeCreated<unreal.niagara.FNiagaraEmitterScriptProperties>;
   public var ExternalConstants : unreal.niagara.FNiagaraConstants;
   public var Script : unreal.niagara.UNiagaraScript;
   

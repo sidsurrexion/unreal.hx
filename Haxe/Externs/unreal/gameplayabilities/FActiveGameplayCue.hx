@@ -7,7 +7,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FActiveGameplayCue extends unreal.FFastArraySerializerItem {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FActiveGameplayCue>;
   
   /**
     Has this been predictively removed on the client?

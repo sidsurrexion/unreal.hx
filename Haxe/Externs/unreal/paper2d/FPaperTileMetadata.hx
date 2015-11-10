@@ -11,7 +11,6 @@ package unreal.paper2d;
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperTileSet.h")
 @:uextern extern class FPaperTileMetadata {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2d.FPaperTileMetadata>;
   
   /**
     Indexes into the Terrains array of the owning tile set, in counterclockwise order starting from top-left

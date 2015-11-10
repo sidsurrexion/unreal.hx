@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FFastArraySerializerItem {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFastArraySerializerItem>;
   public var ReplicationKey : unreal.Int32;
   public var ReplicationID : unreal.Int32;
   

@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class FCustomCalculationBasedFloat {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FCustomCalculationBasedFloat>;
   
   /**
     Additive value to the attribute calculation, added in after the coefficient applies

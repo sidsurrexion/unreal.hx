@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionFunctionInput.h")
 @:uextern extern class FVector4 {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVector4>;
   
 }

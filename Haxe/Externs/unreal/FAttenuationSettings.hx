@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/SoundAttenuation.h")
 @:uextern extern class FAttenuationSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAttenuationSettings>;
   
   /**
     The range at which to apply the maximum amount of low pass filter.

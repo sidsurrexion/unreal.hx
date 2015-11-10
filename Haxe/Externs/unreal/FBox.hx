@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FBox {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBox>;
   
 }

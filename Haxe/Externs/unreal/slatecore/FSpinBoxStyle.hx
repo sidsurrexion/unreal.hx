@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/SpinBoxWidgetStyle.h")
 @:uextern extern class FSpinBoxStyle extends unreal.slatecore.FSlateWidgetStyle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FSpinBoxStyle>;
   
   /**
     Padding to add around the spinbox and its text

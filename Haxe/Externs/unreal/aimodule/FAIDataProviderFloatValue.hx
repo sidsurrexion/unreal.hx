@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("EnvironmentQuery/EnvQueryTest.h")
 @:uextern extern class FAIDataProviderFloatValue extends unreal.aimodule.FAIDataProviderTypedValue {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FAIDataProviderFloatValue>;
   public var DefaultValue : unreal.Float32;
   
 }

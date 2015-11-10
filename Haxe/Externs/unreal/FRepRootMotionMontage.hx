@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/Character.h")
 @:uextern extern class FRepRootMotionMontage {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRepRootMotionMontage>;
   
   /**
     Whether rotation is relative or absolute.

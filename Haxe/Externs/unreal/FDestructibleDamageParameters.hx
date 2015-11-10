@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleDamageParameters {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleDamageParameters>;
   
   /**
     Controls how much resistance is applied to colliding objects. Weak materials like glass should set this to a low value so that objects will pass right through them during fracture.

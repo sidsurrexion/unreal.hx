@@ -11,7 +11,6 @@ package unreal.proceduralmeshcomponent;
 @:umodule("ProceduralMeshComponent")
 @:glueCppIncludes("ProceduralMeshComponent.h")
 @:uextern extern class FProcMeshSection {
-  @:uname('new') public static function create():PHaxeCreated<unreal.proceduralmeshcomponent.FProcMeshSection>;
   
   /**
     Should we display this section

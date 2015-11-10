@@ -7,7 +7,6 @@ package unreal.paper2d;
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperFlipbook.h")
 @:uextern extern class FPaperFlipbookKeyFrame {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2d.FPaperFlipbookKeyFrame>;
   public var FrameRun : unreal.Int32;
   public var Sprite : unreal.paper2d.UPaperSprite;
   

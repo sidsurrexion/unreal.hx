@@ -6,6 +6,5 @@ package unreal;
 
 @:glueCppIncludes("Animation/AnimInstance.h")
 @:uextern extern class FAnimGroupInstance {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimGroupInstance>;
   
 }

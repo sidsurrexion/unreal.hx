@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FPluginRedirect {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FPluginRedirect>;
   public var NewPluginName : unreal.FString;
   public var OldPluginName : unreal.FString;
   

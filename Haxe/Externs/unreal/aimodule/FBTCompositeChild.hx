@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("BehaviorTree/BTCompositeNode.h")
 @:uextern extern class FBTCompositeChild {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FBTCompositeChild>;
   
   /**
     logic operations for decorators

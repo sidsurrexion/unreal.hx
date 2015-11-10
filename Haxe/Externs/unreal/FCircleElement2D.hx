@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup2D.h")
 @:uextern extern class FCircleElement2D {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCircleElement2D>;
   public var Radius : unreal.Float32;
   public var Center : unreal.FVector2D;
   

@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("AnimGraphNode_UseCachedPose.h")
 @:uextern extern class FAnimNode_UseCachedPose extends unreal.FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_UseCachedPose>;
   
   /**
     Note: This link is intentionally not public; it's wired up during compilation

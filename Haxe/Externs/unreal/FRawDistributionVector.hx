@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Particles/Acceleration/ParticleModuleAcceleration.h")
 @:uextern extern class FRawDistributionVector extends unreal.FRawDistribution {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRawDistributionVector>;
   public var Distribution : unreal.UDistributionVector;
   
 }

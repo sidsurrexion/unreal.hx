@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialInstance.h")
 @:uextern extern class FFontParameterValue {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFontParameterValue>;
   public var ExpressionGUID : unreal.FGuid;
   public var FontPage : unreal.Int32;
   public var FontValue : unreal.UFont;

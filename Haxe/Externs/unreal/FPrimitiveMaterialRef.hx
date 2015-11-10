@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackInstFloatMaterialParam.h")
 @:uextern extern class FPrimitiveMaterialRef {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FPrimitiveMaterialRef>;
   public var ElementIndex : unreal.Int32;
   public var Decal : unreal.UDecalComponent;
   public var Primitive : unreal.UPrimitiveComponent;

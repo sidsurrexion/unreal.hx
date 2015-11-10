@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrack.h")
 @:uextern extern class FSupportedSubTrackInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSupportedSubTrackInfo>;
   
   /**
     Index into the any subtrack group this subtrack belongs to (can be -1 for no group)

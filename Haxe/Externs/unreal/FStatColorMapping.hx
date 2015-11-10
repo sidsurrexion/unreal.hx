@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FStatColorMapping {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FStatColorMapping>;
   public var DisableBlend : Bool;
   public var ColorMap : unreal.TArray<unreal.FStatColorMapEntry>;
   public var StatName : unreal.FString;

@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("FoliageType.h")
 @:uextern extern class FFloatInterval {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFloatInterval>;
   
 }

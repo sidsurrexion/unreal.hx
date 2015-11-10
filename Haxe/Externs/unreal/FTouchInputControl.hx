@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("GameFramework/TouchInterface.h")
 @:uextern extern class FTouchInputControl {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTouchInputControl>;
   
   /**
     The alternate input to send from this control (for sticks, this is the vertical axis)

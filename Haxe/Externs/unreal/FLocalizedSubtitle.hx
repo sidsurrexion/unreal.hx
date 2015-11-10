@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/SoundWave.h")
 @:uextern extern class FLocalizedSubtitle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLocalizedSubtitle>;
   
   /**
     true if the subtitles should be displayed one line at a time.

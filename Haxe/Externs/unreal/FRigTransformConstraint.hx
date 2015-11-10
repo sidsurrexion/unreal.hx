@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/Rig.h")
 @:uextern extern class FRigTransformConstraint {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRigTransformConstraint>;
   
   /**
     EditAnywhere, Category="FTransformBaseConstraint"

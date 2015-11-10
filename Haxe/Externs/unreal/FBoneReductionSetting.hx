@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/Skeleton.h")
 @:uextern extern class FBoneReductionSetting {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBoneReductionSetting>;
   public var BonesToRemove : unreal.TArray<unreal.FName>;
   
 }

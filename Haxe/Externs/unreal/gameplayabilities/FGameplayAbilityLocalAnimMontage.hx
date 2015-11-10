@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FGameplayAbilityLocalAnimMontage {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayAbilityLocalAnimMontage>;
   
   /**
     The ability, if any, that instigated this montage

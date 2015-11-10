@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("Camera/PlayerCameraManager.h")
 @:uextern extern class FCameraCacheEntry {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCameraCacheEntry>;
   
   /**
     Camera POV to cache.

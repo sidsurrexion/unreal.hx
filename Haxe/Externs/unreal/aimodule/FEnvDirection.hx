@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_Donut.h")
 @:uextern extern class FEnvDirection {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FEnvDirection>;
   
   /**
     defines direction of second line used by test

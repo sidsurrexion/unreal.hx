@@ -7,7 +7,6 @@ package unreal.animgraphruntime;
 @:umodule("AnimGraphRuntime")
 @:glueCppIncludes("AnimGraphNode_Fabrik.h")
 @:uextern extern class FAnimNode_Fabrik extends unreal.animgraphruntime.FAnimNode_SkeletalControlBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.animgraphruntime.FAnimNode_Fabrik>;
   
   /**
     Toggle drawing of axes to debug joint rotation

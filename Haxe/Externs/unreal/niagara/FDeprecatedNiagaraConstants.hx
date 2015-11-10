@@ -12,7 +12,6 @@ package unreal.niagara;
 @:umodule("Niagara")
 @:glueCppIncludes("NiagaraScript.h")
 @:uextern extern class FDeprecatedNiagaraConstants {
-  @:uname('new') public static function create():PHaxeCreated<unreal.niagara.FDeprecatedNiagaraConstants>;
   public var MatrixConstants_DEPRECATED : unreal.TArray<unreal.FMatrix>;
   public var VectorConstants_DEPRECATED : unreal.TArray<unreal.FVector4>;
   public var ScalarConstants_DEPRECATED : unreal.TArray<unreal.Float32>;

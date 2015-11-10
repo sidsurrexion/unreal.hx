@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FClothPhysicsProperties {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FClothPhysicsProperties>;
   
   /**
     Minimal amount of distance particles will keep of each other.

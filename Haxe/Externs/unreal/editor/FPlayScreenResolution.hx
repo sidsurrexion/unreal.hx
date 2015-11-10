@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Settings/LevelEditorPlaySettings.h")
 @:uextern extern class FPlayScreenResolution {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FPlayScreenResolution>;
   
   /**
     The screen resolution's aspect ratio (as a string).

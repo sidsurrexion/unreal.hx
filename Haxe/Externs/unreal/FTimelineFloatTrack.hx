@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/TimelineComponent.h")
 @:uextern extern class FTimelineFloatTrack {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTimelineFloatTrack>;
   
   /**
     Cached float property pointer

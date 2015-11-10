@@ -7,7 +7,6 @@ package unreal.logvisualizer;
 @:umodule("LogVisualizer")
 @:glueCppIncludes("LogVisualizerSettings.h")
 @:uextern extern class FCategoryFilter {
-  @:uname('new') public static function create():PHaxeCreated<unreal.logvisualizer.FCategoryFilter>;
   public var Enabled : Bool;
   public var LogVerbosity : unreal.Int32;
   public var CategoryName : unreal.FString;

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/AudioVolume.h")
 @:uextern extern class FReverbSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FReverbSettings>;
   
   /**
     Time to fade from the current reverb settings into this setting, in seconds.

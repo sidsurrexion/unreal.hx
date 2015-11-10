@@ -7,7 +7,6 @@ package unreal.html5platformeditor;
 @:umodule("HTML5PlatformEditor")
 @:glueCppIncludes("Private/HTML5SDKSettings.h")
 @:uextern extern class FHTML5DeviceMapping {
-  @:uname('new') public static function create():PHaxeCreated<unreal.html5platformeditor.FHTML5DeviceMapping>;
   public var DevicePath : unreal.FFilePath;
   public var DeviceName : unreal.FString;
   

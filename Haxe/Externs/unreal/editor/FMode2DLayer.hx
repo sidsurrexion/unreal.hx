@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Settings/EditorProjectSettings.h")
 @:uextern extern class FMode2DLayer {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FMode2DLayer>;
   
   /**
     The amount of depth to apply when snapping to surfaces

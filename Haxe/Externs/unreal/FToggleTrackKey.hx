@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackToggle.h")
 @:uextern extern class FToggleTrackKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FToggleTrackKey>;
   public var ToggleAction : unreal.ETrackToggleAction;
   public var Time : unreal.Float32;
   

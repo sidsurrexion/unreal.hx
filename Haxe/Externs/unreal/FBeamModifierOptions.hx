@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Particles/Beam/ParticleModuleBeamModifier.h")
 @:uextern extern class FBeamModifierOptions {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBeamModifierOptions>;
   
   /**
     If true, lock the modifier to the life of the particle.

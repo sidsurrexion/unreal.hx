@@ -18,7 +18,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimInstance.h")
 @:uextern extern class FAnimLinkableElement {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimLinkableElement>;
   
   /**
     The Animation Sequence that this montage element will link to, when the sequence changes

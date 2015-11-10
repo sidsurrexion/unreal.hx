@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Abilities/GameplayAbilityTargetActor_Trace.h")
 @:uextern extern class FCollisionProfileName {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCollisionProfileName>;
   public var Name : unreal.FName;
   
 }

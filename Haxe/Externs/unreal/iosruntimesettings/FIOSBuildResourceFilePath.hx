@@ -11,7 +11,6 @@ package unreal.iosruntimesettings;
 @:umodule("IOSRuntimeSettings")
 @:glueCppIncludes("IOSRuntimeSettings.h")
 @:uextern extern class FIOSBuildResourceFilePath {
-  @:uname('new') public static function create():PHaxeCreated<unreal.iosruntimesettings.FIOSBuildResourceFilePath>;
   
   /**
     The path to the file.

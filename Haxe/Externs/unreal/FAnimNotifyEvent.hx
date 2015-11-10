@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimInstance.h")
 @:uextern extern class FAnimNotifyEvent extends unreal.FAnimLinkableElement {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNotifyEvent>;
   
   /**
     'Track' that the notify exists on, used for visual placement in editor and sorting priority in runtime

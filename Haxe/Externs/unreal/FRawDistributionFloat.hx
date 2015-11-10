@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Particles/ParticleModuleRequired.h")
 @:uextern extern class FRawDistributionFloat extends unreal.FRawDistribution {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRawDistributionFloat>;
   public var Distribution : unreal.UDistributionFloat;
   
 }

@@ -11,6 +11,5 @@ package unreal.kismet;
 @:umodule("Kismet")
 @:glueCppIncludes("BlueprintPaletteFavorites.h")
 @:uextern extern class FFavoritedBlueprintPaletteItem {
-  @:uname('new') public static function create():PHaxeCreated<unreal.kismet.FFavoritedBlueprintPaletteItem>;
   
 }

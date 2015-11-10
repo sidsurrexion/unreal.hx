@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/SubsurfaceProfile.h")
 @:uextern extern class FSubsurfaceProfileStruct {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSubsurfaceProfileStruct>;
   
   /**
     defines the per-channel falloff of the gradients

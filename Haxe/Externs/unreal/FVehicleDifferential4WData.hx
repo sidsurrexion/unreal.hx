@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent4W.h")
 @:uextern extern class FVehicleDifferential4WData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVehicleDifferential4WData>;
   
   /**
     Maximum allowed ratio of rear-left and rear-right wheel rotation speeds (range: 1..inf, works only with LimitedSlip_4W, LimitedSlip_FrontDrive)

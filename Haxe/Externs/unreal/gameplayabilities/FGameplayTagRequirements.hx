@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class FGameplayTagRequirements {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayTagRequirements>;
   
   /**
     None of these tags may be present

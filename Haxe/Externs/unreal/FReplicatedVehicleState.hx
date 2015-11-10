@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent.h")
 @:uextern extern class FReplicatedVehicleState {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FReplicatedVehicleState>;
   
   /**
     state replication: current gear

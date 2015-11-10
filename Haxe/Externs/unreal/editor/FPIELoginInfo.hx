@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Editor/EditorEngine.h")
 @:uextern extern class FPIELoginInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FPIELoginInfo>;
   
   /**
     Credentials of the user logging in (password or auth token)

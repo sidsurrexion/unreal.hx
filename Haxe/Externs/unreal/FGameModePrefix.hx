@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class FGameModePrefix {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FGameModePrefix>;
   
   /**
     GameMode used if none specified on the URL

@@ -7,7 +7,6 @@ package unreal.localization;
 @:umodule("Localization")
 @:glueCppIncludes("LocalizationSettings.h")
 @:uextern extern class FMetaDataKeyName {
-  @:uname('new') public static function create():PHaxeCreated<unreal.localization.FMetaDataKeyName>;
   public var Name : unreal.FString;
   
 }

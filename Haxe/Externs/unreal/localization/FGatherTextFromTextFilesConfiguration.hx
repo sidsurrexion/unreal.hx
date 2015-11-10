@@ -7,7 +7,6 @@ package unreal.localization;
 @:umodule("Localization")
 @:glueCppIncludes("LocalizationSettings.h")
 @:uextern extern class FGatherTextFromTextFilesConfiguration {
-  @:uname('new') public static function create():PHaxeCreated<unreal.localization.FGatherTextFromTextFilesConfiguration>;
   
   /**
     Text files whose names match these wildcard patterns may be parsed for text to gather.

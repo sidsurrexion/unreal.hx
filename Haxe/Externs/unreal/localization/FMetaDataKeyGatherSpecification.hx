@@ -7,7 +7,6 @@ package unreal.localization;
 @:umodule("Localization")
 @:glueCppIncludes("LocalizationSettings.h")
 @:uextern extern class FMetaDataKeyGatherSpecification {
-  @:uname('new') public static function create():PHaxeCreated<unreal.localization.FMetaDataKeyGatherSpecification>;
   
   /**
     The pattern which will be formatted to form the localization key for the metadata value gathered as text.

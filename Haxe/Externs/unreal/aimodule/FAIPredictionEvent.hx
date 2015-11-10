@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("Perception/AISense_Prediction.h")
 @:uextern extern class FAIPredictionEvent {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FAIPredictionEvent>;
   public var PredictedActor : unreal.AActor;
   public var Requestor : unreal.AActor;
   

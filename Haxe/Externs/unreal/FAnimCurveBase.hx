@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimSequenceBase.h")
 @:uextern extern class FAnimCurveBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimCurveBase>;
   
   /**
     Last observed name of the curve. We store this so we can recover from situations that

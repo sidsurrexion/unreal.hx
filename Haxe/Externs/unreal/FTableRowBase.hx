@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine.h")
 @:uextern extern class FTableRowBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTableRowBase>;
   
 }

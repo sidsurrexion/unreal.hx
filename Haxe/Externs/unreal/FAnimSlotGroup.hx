@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/Skeleton.h")
 @:uextern extern class FAnimSlotGroup {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimSlotGroup>;
   public var SlotNames : unreal.TArray<unreal.FName>;
   public var GroupName : unreal.FName;
   

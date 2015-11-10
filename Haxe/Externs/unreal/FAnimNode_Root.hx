@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_Root.h")
 @:uextern extern class FAnimNode_Root extends unreal.FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_Root>;
   public var Result : unreal.FPoseLink;
   
 }

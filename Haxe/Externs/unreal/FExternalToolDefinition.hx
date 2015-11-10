@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FExternalToolDefinition {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FExternalToolDefinition>;
   
   /**
     If the ScriptExtension is set, look here for the script files.

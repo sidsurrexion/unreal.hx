@@ -11,7 +11,6 @@ package unreal.niagara;
 @:umodule("Niagara")
 @:glueCppIncludes("NiagaraEffect.h")
 @:uextern extern class FDeprecatedNiagaraEmitterProperties {
-  @:uname('new') public static function create():PHaxeCreated<unreal.niagara.FDeprecatedNiagaraEmitterProperties>;
   
   /**
     these are the spawn script constants from the effect editor; will be added to the emitter's constant map

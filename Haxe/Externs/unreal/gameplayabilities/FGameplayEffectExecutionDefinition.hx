@@ -12,7 +12,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class FGameplayEffectExecutionDefinition {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayEffectExecutionDefinition>;
   
   /**
     Other Gameplay Effects that will be applied to the target of this execution if the execution is successful

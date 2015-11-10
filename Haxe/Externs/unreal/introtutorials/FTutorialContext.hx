@@ -11,7 +11,6 @@ package unreal.introtutorials;
 @:umodule("IntroTutorials")
 @:glueCppIncludes("Private/EditorTutorialSettings.h")
 @:uextern extern class FTutorialContext {
-  @:uname('new') public static function create():PHaxeCreated<unreal.introtutorials.FTutorialContext>;
   
   /**
     The tutorial to use in this context when the user chooses to launch

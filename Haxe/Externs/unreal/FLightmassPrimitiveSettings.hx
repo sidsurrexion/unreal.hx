@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Lightmass/LightmassPrimitiveSettingsObject.h")
 @:uextern extern class FLightmassPrimitiveSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassPrimitiveSettings>;
   
   /**
     Fraction of samples taken that must be occluded in order to reach full occlusion.

@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimMontage.h")
 @:uextern extern class FSlotAnimationTrack {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSlotAnimationTrack>;
   public var AnimTrack : unreal.FAnimTrack;
   public var SlotName : unreal.FName;
   

@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FStatColorMapEntry {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FStatColorMapEntry>;
   public var Out : unreal.FColor;
   public var In : unreal.Float32;
   

@@ -11,7 +11,6 @@ package unreal.animgraphruntime;
 @:umodule("AnimGraphRuntime")
 @:glueCppIncludes("AnimGraphNode_BoneDrivenController.h")
 @:uextern extern class FAnimNode_BoneDrivenController extends unreal.animgraphruntime.FAnimNode_SkeletalControlBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.animgraphruntime.FAnimNode_BoneDrivenController>;
   
   /**
     The type of modification to make to the destination component(s)

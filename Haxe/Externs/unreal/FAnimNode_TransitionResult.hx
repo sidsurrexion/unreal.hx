@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_TransitionResult.h")
 @:uextern extern class FAnimNode_TransitionResult extends unreal.FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_TransitionResult>;
   public var bCanEnterTransition : Bool;
   
 }

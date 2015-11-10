@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackAnimControl.h")
 @:uextern extern class FAnimControlTrackKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimControlTrackKey>;
   
   /**
     Whether to play the animation in reverse or not.

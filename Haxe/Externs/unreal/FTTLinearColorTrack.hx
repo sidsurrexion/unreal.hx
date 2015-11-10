@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/TimelineTemplate.h")
 @:uextern extern class FTTLinearColorTrack extends unreal.FTTTrackBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTTLinearColorTrack>;
   
   /**
     Curve object used to define color value over time

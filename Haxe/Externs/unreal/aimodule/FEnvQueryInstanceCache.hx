@@ -11,7 +11,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("EnvironmentQuery/EnvQueryManager.h")
 @:uextern extern class FEnvQueryInstanceCache {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FEnvQueryInstanceCache>;
   
   /**
     query template, duplicated in manager's world

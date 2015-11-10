@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FDropNoteInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDropNoteInfo>;
   
   /**
     Text to assign to Note actor in edited level.

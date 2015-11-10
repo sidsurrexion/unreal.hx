@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_BlendListByBool.h")
 @:uextern extern class FAnimNode_BlendListByBool extends unreal.FAnimNode_BlendListBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_BlendListByBool>;
   
   /**
     Which input should be connected to the output?

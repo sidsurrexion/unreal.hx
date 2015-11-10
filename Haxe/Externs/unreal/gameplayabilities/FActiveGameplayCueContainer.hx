@@ -7,7 +7,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FActiveGameplayCueContainer extends unreal.FFastArraySerializer {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FActiveGameplayCueContainer>;
   public var Owner : unreal.gameplayabilities.UAbilitySystemComponent;
   public var GameplayCues : unreal.TArray<unreal.gameplayabilities.FActiveGameplayCue>;
   

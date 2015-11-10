@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/InputSettings.h")
 @:uextern extern class FInputAxisConfigEntry {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInputAxisConfigEntry>;
   
   /**
     Properties for the Axis Key

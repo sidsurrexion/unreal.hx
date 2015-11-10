@@ -11,7 +11,6 @@ package unreal.introtutorials;
 @:umodule("IntroTutorials")
 @:glueCppIncludes("Private/TutorialStateSettings.h")
 @:uextern extern class FTutorialProgress {
-  @:uname('new') public static function create():PHaxeCreated<unreal.introtutorials.FTutorialProgress>;
   public var bUserDismissed : Bool;
   public var CurrentStage : unreal.Int32;
   public var Tutorial : unreal.FStringClassReference;

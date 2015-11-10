@@ -7,7 +7,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("MaterialEditor/DEditorFontParameterValue.h")
 @:uextern extern class FDFontParameters {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FDFontParameters>;
   public var FontPage : unreal.Int32;
   public var FontValue : unreal.UFont;
   

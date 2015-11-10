@@ -11,7 +11,6 @@ package unreal.slate;
 @:umodule("Slate")
 @:glueCppIncludes("Engine/InputKeyDelegateBinding.h")
 @:uextern extern class FInputChord {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slate.FInputChord>;
   
   /**
     Whether the command key is part of the chord.

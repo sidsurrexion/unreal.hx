@@ -7,7 +7,6 @@ package unreal.niagara;
 @:umodule("Niagara")
 @:glueCppIncludes("NiagaraScript.h")
 @:uextern extern class FNiagaraVariableInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.niagara.FNiagaraVariableInfo>;
   public var Type : unreal.niagara.ENiagaraDataType;
   public var Name : unreal.FName;
   

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Camera/CameraShake.h")
 @:uextern extern class FFOscillator {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFOscillator>;
   
   /**
     Defines how to begin (either at zero, or at a randomized value.

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
 @:uextern extern class FHitResult {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FHitResult>;
   
   /**
     Face index we hit (for complex hits with triangle meshes).

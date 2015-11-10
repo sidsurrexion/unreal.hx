@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("EnvironmentQuery/Generators/EnvQueryGenerator_ProjectedPoints.h")
 @:uextern extern class FEnvTraceData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FEnvTraceData>;
   
   /**
     if set, editor show height up/down properties for projection

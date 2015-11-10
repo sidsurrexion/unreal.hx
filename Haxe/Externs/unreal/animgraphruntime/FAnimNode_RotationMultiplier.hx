@@ -11,7 +11,6 @@ package unreal.animgraphruntime;
 @:umodule("AnimGraphRuntime")
 @:glueCppIncludes("AnimGraphNode_RotationMultiplier.h")
 @:uextern extern class FAnimNode_RotationMultiplier extends unreal.animgraphruntime.FAnimNode_SkeletalControlBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.animgraphruntime.FAnimNode_RotationMultiplier>;
   public var bIsAdditive : Bool;
   public var RotationAxisToRefer : unreal.animgraphruntime.EBoneAxis;
   

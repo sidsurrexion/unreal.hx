@@ -7,7 +7,6 @@ package unreal.landscapeeditor;
 @:umodule("LandscapeEditor")
 @:glueCppIncludes("LandscapeEditorObject.h")
 @:uextern extern class FLandscapePatternBrushWorldSpaceSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscapeeditor.FLandscapePatternBrushWorldSpaceSettings>;
   public var RepeatSize : unreal.Float32;
   
   /**

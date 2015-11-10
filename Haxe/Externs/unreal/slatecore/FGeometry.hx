@@ -17,6 +17,5 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Private/Models/WidgetReflectorNode.h")
 @:uextern extern class FGeometry {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FGeometry>;
   
 }

@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Components/MaterialBillboardComponent.h")
 @:uextern extern class FMaterialSpriteElement {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialSpriteElement>;
   
   /**
     A curve that maps distance on the X axis to the sprite size on the Y axis.

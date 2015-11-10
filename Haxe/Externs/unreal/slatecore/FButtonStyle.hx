@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/ButtonWidgetStyle.h")
 @:uextern extern class FButtonStyle extends unreal.slatecore.FSlateWidgetStyle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FButtonStyle>;
   public var HoveredSound_DEPRECATED : unreal.FName;
   public var PressedSound_DEPRECATED : unreal.FName;
   

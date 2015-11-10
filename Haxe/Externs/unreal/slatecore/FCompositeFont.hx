@@ -7,7 +7,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Engine/Font.h")
 @:uextern extern class FCompositeFont {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FCompositeFont>;
   
   /**
     Sub-typefaces to use for a specific set of characters

@@ -11,7 +11,6 @@ package unreal.proceduralmeshcomponent;
 @:umodule("ProceduralMeshComponent")
 @:glueCppIncludes("ProceduralMeshComponent.h")
 @:uextern extern class FProcMeshVertex {
-  @:uname('new') public static function create():PHaxeCreated<unreal.proceduralmeshcomponent.FProcMeshVertex>;
   
   /**
     Vertex texture co-ordinate

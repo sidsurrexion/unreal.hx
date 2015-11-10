@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Components/SplineComponent.h")
 @:uextern extern class FInterpCurvePointVector {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInterpCurvePointVector>;
   
 }

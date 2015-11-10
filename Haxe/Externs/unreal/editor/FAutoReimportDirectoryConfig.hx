@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Settings/EditorLoadingSavingSettings.h")
 @:uextern extern class FAutoReimportDirectoryConfig {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FAutoReimportDirectoryConfig>;
   
   /**
     A set of wildcard filters to apply to this directory

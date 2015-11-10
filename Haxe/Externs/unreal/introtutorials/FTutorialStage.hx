@@ -11,7 +11,6 @@ package unreal.introtutorials;
 @:umodule("IntroTutorials")
 @:glueCppIncludes("EditorTutorial.h")
 @:uextern extern class FTutorialStage {
-  @:uname('new') public static function create():PHaxeCreated<unreal.introtutorials.FTutorialStage>;
   
   /**
     If false, stage will be skipped if running on any platform in PlatformsToTest. If true, the stage will be if not running on any platform in PlatformsToTest.

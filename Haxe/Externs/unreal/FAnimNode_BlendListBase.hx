@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_BlendListByBool.h")
 @:uextern extern class FAnimNode_BlendListBase extends unreal.FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_BlendListBase>;
   private var LastActiveChildIndex : unreal.Int32;
   private var RemainingBlendTimes : unreal.TArray<unreal.Float32>;
   private var BlendWeights : unreal.TArray<unreal.Float32>;

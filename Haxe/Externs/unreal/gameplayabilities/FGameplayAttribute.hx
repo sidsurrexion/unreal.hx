@@ -7,6 +7,5 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FGameplayAttribute {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayAttribute>;
   
 }

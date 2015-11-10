@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/Material.h")
 @:uextern extern class FMaterialInput {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialInput>;
   
 }

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/SoundClass.h")
 @:uextern extern class FSoundClassProperties {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSoundClassProperties>;
   
   /**
     Which output target the sound should be played through

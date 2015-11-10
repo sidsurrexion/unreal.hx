@@ -7,7 +7,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("MaterialEditor/DEditorStaticComponentMaskParameterValue.h")
 @:uextern extern class FDComponentMaskParameter {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FDComponentMaskParameter>;
   public var A : Bool;
   public var B : Bool;
   public var G : Bool;

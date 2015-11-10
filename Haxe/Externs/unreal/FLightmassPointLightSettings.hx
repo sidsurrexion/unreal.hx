@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("Components/PointLightComponent.h")
 @:uextern extern class FLightmassPointLightSettings extends unreal.FLightmassLightSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassPointLightSettings>;
   
 }

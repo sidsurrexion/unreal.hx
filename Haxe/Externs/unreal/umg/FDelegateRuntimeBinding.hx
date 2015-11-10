@@ -7,7 +7,6 @@ package unreal.umg;
 @:umodule("UMG")
 @:glueCppIncludes("Blueprint/WidgetBlueprintGeneratedClass.h")
 @:uextern extern class FDelegateRuntimeBinding {
-  @:uname('new') public static function create():PHaxeCreated<unreal.umg.FDelegateRuntimeBinding>;
   
   /**
     The kind of binding we're performing, are we binding to a property or a function.

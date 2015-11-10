@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FLaunchOnTestSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLaunchOnTestSettings>;
   
   /**
     This is the device to be used for launch on. Example: WindowsNoEditor, Android, IOS, Linux

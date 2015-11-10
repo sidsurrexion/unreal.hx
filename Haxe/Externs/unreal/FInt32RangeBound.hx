@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/Font.h")
 @:uextern extern class FInt32RangeBound {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInt32RangeBound>;
   
 }

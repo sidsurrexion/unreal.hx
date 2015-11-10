@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("Perception/AISense_Touch.h")
 @:uextern extern class FAITouchEvent {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FAITouchEvent>;
   public var OtherActor : unreal.AActor;
   public var TouchReceiver : unreal.AActor;
   

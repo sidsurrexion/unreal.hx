@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("FoliageType.h")
 @:uextern extern class FInt32Interval {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInt32Interval>;
   
 }

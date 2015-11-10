@@ -13,7 +13,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/HUD.h")
 @:uextern extern class FDebugTextInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDebugTextInfo>;
   
   /**
     Scale to apply to font when rendering

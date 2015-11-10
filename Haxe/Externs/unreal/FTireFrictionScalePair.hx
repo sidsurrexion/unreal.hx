@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicalMaterials/PhysicalMaterial.h")
 @:uextern extern class FTireFrictionScalePair {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTireFrictionScalePair>;
   
   /**
     Friction scale for this type of tire

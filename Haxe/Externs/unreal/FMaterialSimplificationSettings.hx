@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/Level.h")
 @:uextern extern class FMaterialSimplificationSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialSimplificationSettings>;
   
   /**
     Size of generated specular map

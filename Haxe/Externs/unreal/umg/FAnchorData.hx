@@ -7,7 +7,6 @@ package unreal.umg;
 @:umodule("UMG")
 @:glueCppIncludes("Components/CanvasPanelSlot.h")
 @:uextern extern class FAnchorData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.umg.FAnchorData>;
   
   /**
     Alignment is the pivot point of the widget.  Starting in the upper left at (0,0),

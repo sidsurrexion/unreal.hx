@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/Rig.h")
 @:uextern extern class FNode {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNode>;
   public var bAdvanced : Bool;
   
   /**

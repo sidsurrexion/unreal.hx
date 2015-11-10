@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("GameFramework/Character.h")
 @:uextern extern class FSimulatedRootMotionReplicatedMove {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSimulatedRootMotionReplicatedMove>;
   
   /**
     Root Motion information

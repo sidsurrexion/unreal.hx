@@ -11,7 +11,6 @@ package unreal.introtutorials;
 @:umodule("IntroTutorials")
 @:glueCppIncludes("EditorTutorial.h")
 @:uextern extern class FTutorialWidgetContent {
-  @:uname('new') public static function create():PHaxeCreated<unreal.introtutorials.FTutorialWidgetContent>;
   
   /**
     If this a node that can be focused (EG a blueprint node) should we auto focus on it

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup2D.h")
 @:uextern extern class FBoxElement2D {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBoxElement2D>;
   
   /**
     Rotation of the box (in degrees)

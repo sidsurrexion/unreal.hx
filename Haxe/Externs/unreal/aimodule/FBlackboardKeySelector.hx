@@ -12,7 +12,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_BlackboardBase.h")
 @:uextern extern class FBlackboardKeySelector {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FBlackboardKeySelector>;
   
   /**
     ID of selected key

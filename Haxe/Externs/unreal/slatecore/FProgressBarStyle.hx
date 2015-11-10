@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/ProgressWidgetStyle.h")
 @:uextern extern class FProgressBarStyle extends unreal.slatecore.FSlateWidgetStyle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FProgressBarStyle>;
   
   /**
     Image to use for marquee mode

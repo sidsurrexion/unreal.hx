@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/MicroTransactionBase.h")
 @:uextern extern class FPurchaseInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FPurchaseInfo>;
   
   /**
     Price displayable to the user

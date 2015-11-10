@@ -11,7 +11,6 @@ package unreal.paper2d;
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperTerrainMaterial.h")
 @:uextern extern class FPaperTerrainMaterialRule {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2d.FPaperTerrainMaterialRule>;
   
   /**
     Specify a draw order for different materials in a spline. Smaller draw orders are drawn first, negative values are allowed.

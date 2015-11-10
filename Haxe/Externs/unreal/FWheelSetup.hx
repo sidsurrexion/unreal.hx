@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent.h")
 @:uextern extern class FWheelSetup {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FWheelSetup>;
   
   /**
     Additional offset to give the wheels for this axle.

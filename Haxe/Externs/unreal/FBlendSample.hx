@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/BlendSpaceBase.h")
 @:uextern extern class FBlendSample {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBlendSample>;
   
   /**
     blend 0->x, blend 1->y, blend 2->z

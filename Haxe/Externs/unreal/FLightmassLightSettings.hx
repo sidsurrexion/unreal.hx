@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/DirectionalLightComponent.h")
 @:uextern extern class FLightmassLightSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassLightSettings>;
   
   /**
     Whether to use area shadows for stationary light precomputed shadowmaps.

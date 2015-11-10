@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("Framework/Styling/ButtonWidgetStyle.h")
 @:uextern extern class FLinearColor {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLinearColor>;
   
 }

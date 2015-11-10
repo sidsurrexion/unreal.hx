@@ -6,6 +6,5 @@ package unreal;
 
 @:glueCppIncludes("Components/InstancedStaticMeshComponent.h")
 @:uextern extern class FInstancedStaticMeshMappingInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInstancedStaticMeshMappingInfo>;
   
 }

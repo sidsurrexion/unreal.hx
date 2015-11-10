@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Particles/Orbit/ParticleModuleOrbit.h")
 @:uextern extern class FOrbitOptions {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FOrbitOptions>;
   
   /**
     Whether to use emitter time during data retrieval.

@@ -11,7 +11,6 @@ package unreal.umg;
 @:umodule("UMG")
 @:glueCppIncludes("Components/HorizontalBoxSlot.h")
 @:uextern extern class FSlateChildSize {
-  @:uname('new') public static function create():PHaxeCreated<unreal.umg.FSlateChildSize>;
   
   /**
     The sizing rule of the content.

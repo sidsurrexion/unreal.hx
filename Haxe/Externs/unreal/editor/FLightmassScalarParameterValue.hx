@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("MaterialEditor/MaterialEditorInstanceConstant.h")
 @:uextern extern class FLightmassScalarParameterValue extends unreal.editor.FLightmassParameterValue {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FLightmassScalarParameterValue>;
   
   /**
     The scalar value to override the parent value with

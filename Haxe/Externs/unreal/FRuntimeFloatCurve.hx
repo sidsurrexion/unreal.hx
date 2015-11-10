@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FRuntimeFloatCurve {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRuntimeFloatCurve>;
   public var ExternalCurve : unreal.UCurveFloat;
   public var EditorCurveData : unreal.FRichCurve;
   

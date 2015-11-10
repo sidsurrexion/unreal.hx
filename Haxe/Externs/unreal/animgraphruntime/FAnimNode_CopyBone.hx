@@ -11,7 +11,6 @@ package unreal.animgraphruntime;
 @:umodule("AnimGraphRuntime")
 @:glueCppIncludes("AnimGraphNode_CopyBone.h")
 @:uextern extern class FAnimNode_CopyBone extends unreal.animgraphruntime.FAnimNode_SkeletalControlBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.animgraphruntime.FAnimNode_CopyBone>;
   
   /**
     If Scale should be copied

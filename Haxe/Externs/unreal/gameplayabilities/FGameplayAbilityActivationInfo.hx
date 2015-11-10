@@ -17,7 +17,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FGameplayAbilityActivationInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayAbilityActivationInfo>;
   
   /**
     An ability that runs on multiple game instances can be canceled by a remote instance, but only if that remote instance has already confirmed starting it.

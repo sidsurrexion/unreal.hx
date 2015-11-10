@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/SoundWave.h")
 @:uextern extern class FSubtitleCue {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSubtitleCue>;
   
   /**
     The time at which the subtitle is to be displayed, in seconds relative to the beginning of the line.

@@ -6,6 +6,5 @@ package unreal;
 
 @:glueCppIncludes("Animation/AnimSingleNodeInstance.h")
 @:uextern extern class FBlendFilter {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBlendFilter>;
   
 }

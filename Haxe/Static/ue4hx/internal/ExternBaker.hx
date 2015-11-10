@@ -279,11 +279,16 @@ class ExternBaker {
         break;
       }
     }
+    var meta = c.meta.get();
     // process the _Extra type if found
     try {
       var extra = Context.getType(c.pack.join('.') + (c.pack.length > 0 ? '.' : '') + c.name + '_Extra');
       switch(extra) {
       case TInst(_.get() => ecl,_):
+        meta = meta.concat(ecl.meta.get());
+        if (ecl.meta.has(':hasCopy')) {
+          meta = meta.filter(function(m) return m.name != ':noCopy');
+        }
         var efields = ecl.fields.get();
         var estatics = ecl.statics.get();
         for (field in efields) {
@@ -328,7 +333,7 @@ class ExternBaker {
     }
     var params = params.toString();
 
-    this.addMeta(c.meta.get());
+    this.addMeta(meta);
     if (!c.isInterface)
       this.buf.add('@:ueGluePath("${this.glueType.getClassPath()}")\n');
     if (c.params.length > 0)
@@ -493,13 +498,13 @@ class ExternBaker {
             isFinal: false, isHaxePublic:false, isStatic:false, isOverride: true, isPublic: true
           });
         } else {
-          this.buf.add('@:deprecated("This type does not support copy constructors") override private function _copy() : unreal.Wrapper');
+          this.buf.add('@:deprecated("This type does not support copy constructors") override private function _copy()');
           this.begin(' {');
-            this.buf.add('throw "The type ${this.thisConv.haxeType} does not support copy constructors";');
+            this.buf.add('return throw "The type ${this.thisConv.haxeType} does not support copy constructors";');
           this.end('}');
-          this.buf.add('@:deprecated("This type does not support copy constructors") override private function _copyStruct() : unreal.Wrapper');
+          this.buf.add('@:deprecated("This type does not support copy constructors") override private function _copyStruct()');
           this.begin(' {');
-            this.buf.add('throw "The type ${this.thisConv.haxeType} does not support copy constructors";');
+            this.buf.add('return throw "The type ${this.thisConv.haxeType} does not support copy constructors";');
           this.end('}');
         }
         if (!c.meta.has(':noEquals')) {

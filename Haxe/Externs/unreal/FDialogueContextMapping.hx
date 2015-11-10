@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Sound/DialogueWave.h")
 @:uextern extern class FDialogueContextMapping {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDialogueContextMapping>;
   
   /**
     Cached object for playing the soundwave with subtitle information included.

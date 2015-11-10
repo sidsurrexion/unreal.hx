@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("AnimGraphNode_ApplyAdditive.h")
 @:uextern extern class FAnimNode_ApplyAdditive extends unreal.FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_ApplyAdditive>;
   public var AlphaScaleBias : unreal.FInputScaleBias;
   public var Alpha : unreal.Float32;
   public var Additive : unreal.FPoseLink;

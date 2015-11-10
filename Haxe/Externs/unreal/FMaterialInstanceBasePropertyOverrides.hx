@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialInstance.h")
 @:uextern extern class FMaterialInstanceBasePropertyOverrides {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialInstanceBasePropertyOverrides>;
   
   /**
     Whether the material should support a dithered LOD transition when used with the foliage system.

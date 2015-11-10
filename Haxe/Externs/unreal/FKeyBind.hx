@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/PlayerInput.h")
 @:uextern extern class FKeyBind {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FKeyBind>;
   
   /**
     Whether the command key must not be held when the key event occurs

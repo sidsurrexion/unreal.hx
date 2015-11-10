@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/InterpCurveEdSetup.h")
 @:uextern extern class FCurveEdEntry {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCurveEdEntry>;
   public var ClampHigh : unreal.Float32;
   public var ClampLow : unreal.Float32;
   public var bClamp : unreal.Int32;

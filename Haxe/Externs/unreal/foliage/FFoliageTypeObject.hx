@@ -11,6 +11,5 @@ package unreal.foliage;
 @:umodule("Foliage")
 @:glueCppIncludes("ProceduralFoliageSpawner.h")
 @:uextern extern class FFoliageTypeObject {
-  @:uname('new') public static function create():PHaxeCreated<unreal.foliage.FFoliageTypeObject>;
   
 }

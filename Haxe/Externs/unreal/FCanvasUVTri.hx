@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine.h")
 @:uextern extern class FCanvasUVTri {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCanvasUVTri>;
   
   /**
     Color of third vertex

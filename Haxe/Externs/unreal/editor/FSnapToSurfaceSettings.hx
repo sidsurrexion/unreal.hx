@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Settings/LevelEditorViewportSettings.h")
 @:uextern extern class FSnapToSurfaceSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FSnapToSurfaceSettings>;
   
   /**
     Whether objects should match the rotation of the surfaces they snap to

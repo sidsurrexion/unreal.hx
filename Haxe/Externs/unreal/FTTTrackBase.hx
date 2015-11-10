@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/TimelineTemplate.h")
 @:uextern extern class FTTTrackBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTTTrackBase>;
   
   /**
     Flag to identify internal/external curve

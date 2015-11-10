@@ -14,7 +14,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_Base>;
   
   /**
     The default handler for graph-exposed inputs

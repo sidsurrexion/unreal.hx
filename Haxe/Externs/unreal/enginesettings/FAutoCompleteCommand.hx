@@ -11,7 +11,6 @@ package unreal.enginesettings;
 @:umodule("EngineSettings")
 @:glueCppIncludes("ConsoleSettings.h")
 @:uextern extern class FAutoCompleteCommand {
-  @:uname('new') public static function create():PHaxeCreated<unreal.enginesettings.FAutoCompleteCommand>;
   public var Desc : unreal.FString;
   public var Command : unreal.FString;
   

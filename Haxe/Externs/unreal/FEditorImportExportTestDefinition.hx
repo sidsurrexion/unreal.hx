@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FEditorImportExportTestDefinition {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FEditorImportExportTestDefinition>;
   
   /**
     Settings for the import factory

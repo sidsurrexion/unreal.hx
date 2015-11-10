@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/SkinnedMeshComponent.h")
 @:uextern extern class FSkelMeshComponentLODInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSkelMeshComponentLODInfo>;
   
   /**
     Material corresponds to section. To show/hide each section, use this.

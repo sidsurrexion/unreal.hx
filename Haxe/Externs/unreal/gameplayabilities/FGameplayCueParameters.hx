@@ -7,7 +7,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayCueManager.h")
 @:uextern extern class FGameplayCueParameters {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayCueParameters>;
   
   /**
     The aggregated target tags taken from the effect spec

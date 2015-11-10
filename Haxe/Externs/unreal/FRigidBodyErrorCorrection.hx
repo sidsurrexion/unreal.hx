@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FRigidBodyErrorCorrection {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRigidBodyErrorCorrection>;
   
   /**
     min squared body speed to perform velocity adjustment

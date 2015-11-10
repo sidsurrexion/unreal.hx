@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Engine/Font.h")
 @:uextern extern class FFontData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FFontData>;
   
   /**
     The data associated with the font - this should always be filled in providing the source font filename is valid

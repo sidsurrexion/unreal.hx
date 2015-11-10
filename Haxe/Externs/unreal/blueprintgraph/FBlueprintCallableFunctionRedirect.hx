@@ -12,7 +12,6 @@ package unreal.blueprintgraph;
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("EdGraphSchema_K2.h")
 @:uextern extern class FBlueprintCallableFunctionRedirect {
-  @:uname('new') public static function create():PHaxeCreated<unreal.blueprintgraph.FBlueprintCallableFunctionRedirect>;
   public var ClassParamName : unreal.FString;
   public var BlueprintParamName : unreal.FString;
   public var NewFunctionName : unreal.FString;

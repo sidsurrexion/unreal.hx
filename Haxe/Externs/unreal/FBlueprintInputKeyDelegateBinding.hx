@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/InputKeyDelegateBinding.h")
 @:uextern extern class FBlueprintInputKeyDelegateBinding extends unreal.FBlueprintInputDelegateBinding {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBlueprintInputKeyDelegateBinding>;
   public var FunctionNameToBind : unreal.FName;
   public var InputKeyEvent : unreal.EInputEvent;
   public var InputChord : unreal.slate.FInputChord;

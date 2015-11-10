@@ -14,7 +14,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("ThumbnailRendering/ThumbnailManager.h")
 @:uextern extern class FThumbnailRenderingInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FThumbnailRenderingInfo>;
   
   /**
     The instance of the renderer class

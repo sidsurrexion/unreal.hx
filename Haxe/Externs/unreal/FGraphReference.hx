@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("K2Node_MacroInstance.h")
 @:uextern extern class FGraphReference {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FGraphReference>;
   
   /**
     The graph GUID so we can refind it if it has been renamed

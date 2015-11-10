@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
 @:uextern extern class FCharacterMovementComponentPreClothTickFunction extends unreal.FTickFunction {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCharacterMovementComponentPreClothTickFunction>;
   
 }

@@ -11,7 +11,6 @@ package unreal.umg;
 @:umodule("UMG")
 @:glueCppIncludes("Animation/WidgetAnimation.h")
 @:uextern extern class FWidgetAnimationBinding {
-  @:uname('new') public static function create():PHaxeCreated<unreal.umg.FWidgetAnimationBinding>;
   public var AnimationGuid : unreal.FGuid;
   public var SlotWidgetName : unreal.FName;
   public var WidgetName : unreal.FName;

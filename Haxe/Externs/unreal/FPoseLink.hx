@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_ApplyAdditive.h")
 @:uextern extern class FPoseLink extends unreal.FPoseLinkBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FPoseLink>;
   
 }

@@ -7,6 +7,5 @@ package unreal.functionaltesting;
 @:umodule("FunctionalTesting")
 @:glueCppIncludes("FunctionalAITest.h")
 @:uextern extern class FPendingDelayedSpawn extends unreal.functionaltesting.FAITestSpawnInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.functionaltesting.FPendingDelayedSpawn>;
   
 }

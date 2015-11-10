@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Sections/MovieSceneBoolSection.h")
 @:uextern extern class FIntegralKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FIntegralKey>;
   
   /**
     The keyed integral value

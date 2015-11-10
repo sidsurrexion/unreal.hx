@@ -1,8 +1,7 @@
 package unreal;
 
 
-@:glueCppIncludes("GameFramework/GameMode.h")
-@:uextern extern class AGameMode_Extra extends unreal.AInfo {
+extern class AGameMode_Extra {
   @:global("MatchState")
   public static var EnteringMap(default,never):Const<PStruct<FName>>;
   @:global("MatchState")

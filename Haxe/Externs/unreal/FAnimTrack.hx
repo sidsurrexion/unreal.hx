@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimComposite.h")
 @:uextern extern class FAnimTrack {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimTrack>;
   public var AnimSegments : unreal.TArray<unreal.FAnimSegment>;
   
 }

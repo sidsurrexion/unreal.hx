@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Particles/ParticleModuleRequired.h")
 @:uextern extern class FRawDistribution {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRawDistribution>;
   
 }

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FKBoxElem extends unreal.FKShapeElem {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FKBoxElem>;
   
   /**
     length (not radius)

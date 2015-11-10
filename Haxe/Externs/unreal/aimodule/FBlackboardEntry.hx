@@ -11,7 +11,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("BehaviorTree/BlackboardData.h")
 @:uextern extern class FBlackboardEntry {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FBlackboardEntry>;
   
   /**
     if set to true then this field will be synchronized across all instances of this blackboard

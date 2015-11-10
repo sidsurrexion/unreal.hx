@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/AnimData/BoneMaskFilter.h")
 @:uextern extern class FBranchFilter {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBranchFilter>;
   
   /**
     Blend Depth *

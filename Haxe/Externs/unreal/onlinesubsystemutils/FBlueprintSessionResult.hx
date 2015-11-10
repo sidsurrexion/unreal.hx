@@ -7,6 +7,5 @@ package unreal.onlinesubsystemutils;
 @:umodule("OnlineSubsystemUtils")
 @:glueCppIncludes("AchievementBlueprintLibrary.h", "AchievementQueryCallbackProxy.h", "AchievementWriteCallbackProxy.h", "ConnectionCallbackProxy.h", "CreateSessionCallbackProxy.h", "DestroySessionCallbackProxy.h", "EndMatchCallbackProxy.h", "EndTurnCallbackProxy.h", "FindSessionsCallbackProxy.h", "FindTurnBasedMatchCallbackProxy.h", "InAppPurchaseCallbackProxy.h", "InAppPurchaseQueryCallbackProxy.h", "InAppPurchaseRestoreCallbackProxy.h", "IpConnection.h", "IpNetDriver.h", "JoinSessionCallbackProxy.h", "LeaderboardBlueprintLibrary.h", "LeaderboardFlushCallbackProxy.h", "LeaderboardQueryCallbackProxy.h", "LogoutCallbackProxy.h", "OnlineBlueprintCallProxyBase.h", "OnlineSessionClient.h", "QuitMatchCallbackProxy.h", "ShowLoginUICallbackProxy.h", "TestBeaconClient.h", "TestBeaconHost.h", "TurnBasedBlueprintLibrary.h", "OnlineBeacon.h", "OnlineBeaconClient.h", "OnlineBeaconHost.h", "OnlineBeaconHostObject.h", "PartyBeaconClient.h", "PartyBeaconHost.h", "PartyBeaconState.h")
 @:uextern extern class FBlueprintSessionResult {
-  @:uname('new') public static function create():PHaxeCreated<unreal.onlinesubsystemutils.FBlueprintSessionResult>;
   
 }

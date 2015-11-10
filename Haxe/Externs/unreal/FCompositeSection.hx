@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimMontage.h")
 @:uextern extern class FCompositeSection extends unreal.FAnimLinkableElement {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCompositeSection>;
   
   /**
     Should this animation loop.

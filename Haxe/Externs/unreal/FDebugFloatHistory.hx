@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine.h")
 @:uextern extern class FDebugFloatHistory {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDebugFloatHistory>;
   
   /**
     Auto adjust Min/Max as new values are recorded?

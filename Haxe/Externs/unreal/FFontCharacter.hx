@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/Font.h")
 @:uextern extern class FFontCharacter {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFontCharacter>;
   public var VerticalOffset : unreal.Int32;
   public var TextureIndex : unreal.UInt8;
   public var VSize : unreal.Int32;

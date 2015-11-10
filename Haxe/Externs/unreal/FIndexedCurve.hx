@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FIndexedCurve {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FIndexedCurve>;
   
   /**
     Map of which key handles go to which indices.

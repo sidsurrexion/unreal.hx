@@ -1,8 +1,6 @@
 package unreal;
 
-
-@:glueCppIncludes("GameFramework/Actor.h")
-@:uextern extern class AActor_Extra extends unreal.UObject {
+extern class AActor_Extra {
   public function Tick(DeltaSeconds:Float32) : Void;
 
   public function Reset() : Void;

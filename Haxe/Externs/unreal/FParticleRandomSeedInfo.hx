@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Particles/Color/ParticleModuleColor_Seeded.h")
 @:uextern extern class FParticleRandomSeedInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FParticleRandomSeedInfo>;
   
   /**
     The random seed values to utilize for the module.

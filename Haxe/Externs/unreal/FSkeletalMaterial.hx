@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FSkeletalMaterial {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSkeletalMaterial>;
   public var bEnableShadowCasting : Bool;
   public var MaterialInterface : unreal.UMaterialInterface;
   

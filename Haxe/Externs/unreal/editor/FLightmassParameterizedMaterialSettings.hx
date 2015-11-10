@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("MaterialEditor/MaterialEditorInstanceConstant.h")
 @:uextern extern class FLightmassParameterizedMaterialSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FLightmassParameterizedMaterialSettings>;
   
   /**
     Scales the resolution that this material's attributes were exported at.

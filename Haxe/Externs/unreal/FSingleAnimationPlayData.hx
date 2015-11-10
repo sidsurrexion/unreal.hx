@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Components/SkeletalMeshComponent.h")
 @:uextern extern class FSingleAnimationPlayData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSingleAnimationPlayData>;
   
   /**
     Default setting for play rate of SequenceToPlay to play.

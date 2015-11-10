@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_SequenceEvaluator.h")
 @:uextern extern class FAnimNode_SequenceEvaluator extends unreal.FAnimNode_AssetPlayerBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_SequenceEvaluator>;
   
   /**
     The time at which to evaluate the associated sequence

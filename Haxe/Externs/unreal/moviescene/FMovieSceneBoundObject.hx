@@ -11,6 +11,5 @@ package unreal.moviescene;
 @:umodule("MovieScene")
 @:glueCppIncludes("MovieSceneBindings.h")
 @:uextern extern class FMovieSceneBoundObject {
-  @:uname('new') public static function create():PHaxeCreated<unreal.moviescene.FMovieSceneBoundObject>;
   
 }

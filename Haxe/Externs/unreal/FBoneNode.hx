@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/Skeleton.h")
 @:uextern extern class FBoneNode {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBoneNode>;
   
   /**
     Retargeting Mode for Translation Component.

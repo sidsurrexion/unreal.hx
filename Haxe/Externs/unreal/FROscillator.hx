@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Camera/CameraShake.h")
 @:uextern extern class FROscillator {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FROscillator>;
   
   /**
     Roll oscillation.

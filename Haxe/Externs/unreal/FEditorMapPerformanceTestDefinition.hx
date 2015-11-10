@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FEditorMapPerformanceTestDefinition {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FEditorMapPerformanceTestDefinition>;
   
   /**
     This is the length of time in seconds that this test will run for before stopping.

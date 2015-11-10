@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h")
 @:uextern extern class FBakedStateExitTransition {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBakedStateExitTransition>;
   public var PoseEvaluatorLinks : unreal.TArray<unreal.Int32>;
   
   /**

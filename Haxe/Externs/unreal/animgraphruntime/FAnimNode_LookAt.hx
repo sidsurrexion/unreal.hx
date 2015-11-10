@@ -11,7 +11,6 @@ package unreal.animgraphruntime;
 @:umodule("AnimGraphRuntime")
 @:glueCppIncludes("AnimGraphNode_LookAt.h")
 @:uextern extern class FAnimNode_LookAt extends unreal.animgraphruntime.FAnimNode_SkeletalControlBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.animgraphruntime.FAnimNode_LookAt>;
   public var bEnableDebug : Bool;
   public var InterpolationTriggerThreashold : unreal.Float32;
   public var InterpolationTime : unreal.Float32;

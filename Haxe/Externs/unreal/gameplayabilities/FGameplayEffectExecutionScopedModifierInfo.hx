@@ -12,7 +12,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class FGameplayEffectExecutionScopedModifierInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayEffectExecutionScopedModifierInfo>;
   
   /**
     Target tag requirements for the modifier to apply

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/BrushBuilder.h")
 @:uextern extern class FBuilderPoly {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBuilderPoly>;
   public var PolyFlags : unreal.Int32;
   public var ItemName : unreal.FName;
   public var Direction : unreal.Int32;

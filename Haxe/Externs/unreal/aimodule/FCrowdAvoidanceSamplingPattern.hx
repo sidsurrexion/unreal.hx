@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("Navigation/CrowdManager.h")
 @:uextern extern class FCrowdAvoidanceSamplingPattern {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FCrowdAvoidanceSamplingPattern>;
   public var Radii : unreal.TArray<unreal.Float32>;
   public var Angles : unreal.TArray<unreal.Float32>;
   

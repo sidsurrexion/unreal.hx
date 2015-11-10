@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Components/SplineComponent.h")
 @:uextern extern class FInterpCurveFloat {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInterpCurveFloat>;
   
 }

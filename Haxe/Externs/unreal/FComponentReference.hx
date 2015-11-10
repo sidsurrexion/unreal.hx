@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("CableComponent.h")
 @:uextern extern class FComponentReference {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FComponentReference>;
   
   /**
     Name of component property to use

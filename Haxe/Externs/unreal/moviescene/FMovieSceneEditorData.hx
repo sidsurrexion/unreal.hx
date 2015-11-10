@@ -11,7 +11,6 @@ package unreal.moviescene;
 @:umodule("MovieScene")
 @:glueCppIncludes("MovieScene.h")
 @:uextern extern class FMovieSceneEditorData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.moviescene.FMovieSceneEditorData>;
   
   /**
     List of collapsed sequencer nodes.  We store collapsed instead of expanded so that new nodes with no saved state are expanded by default

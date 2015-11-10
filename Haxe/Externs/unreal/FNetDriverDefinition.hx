@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/Engine.h")
 @:uextern extern class FNetDriverDefinition {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNetDriverDefinition>;
   
   /**
     Class name of the fallback net driver if the main net driver class fails to initialize

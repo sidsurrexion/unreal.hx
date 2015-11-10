@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("Framework/Styling/ButtonWidgetStyle.h")
 @:uextern extern class FVector2D {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVector2D>;
   
 }

@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/PlayerState.h")
 @:uextern extern class FUniqueNetIdRepl {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FUniqueNetIdRepl>;
   
 }

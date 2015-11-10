@@ -32,7 +32,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FPredictionKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FPredictionKey>;
   
   /**
     True if this was created as a server initiated activation key, used to identify server activations but cannot be used for prediction

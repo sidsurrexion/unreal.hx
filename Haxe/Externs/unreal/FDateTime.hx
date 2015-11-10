@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDateTime {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDateTime>;
   
 }

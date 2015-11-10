@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_BlendListByBool.h")
 @:uextern extern class FAlphaBlend {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAlphaBlend>;
   
   /**
     The current blended value derived from the begin and desired values

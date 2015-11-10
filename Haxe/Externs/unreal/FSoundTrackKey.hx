@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackSound.h")
 @:uextern extern class FSoundTrackKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSoundTrackKey>;
   public var Sound : unreal.USoundBase;
   public var Pitch : unreal.Float32;
   public var Volume : unreal.Float32;

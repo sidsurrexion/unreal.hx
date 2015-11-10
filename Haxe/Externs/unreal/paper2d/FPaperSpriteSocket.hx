@@ -11,7 +11,6 @@ package unreal.paper2d;
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperSprite.h")
 @:uextern extern class FPaperSpriteSocket {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2d.FPaperSpriteSocket>;
   
   /**
     Name of the socket

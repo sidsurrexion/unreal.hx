@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("EnvironmentQuery/EnvQueryTest.h")
 @:uextern extern class FAIDataProviderTypedValue extends unreal.aimodule.FAIDataProviderValue {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FAIDataProviderTypedValue>;
   
   /**
     type of value

@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/ComboBoxWidgetStyle.h")
 @:uextern extern class FComboBoxStyle extends unreal.slatecore.FSlateWidgetStyle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FComboBoxStyle>;
   public var SelectionChangeSound_DEPRECATED : unreal.FName;
   public var PressedSound_DEPRECATED : unreal.FName;
   

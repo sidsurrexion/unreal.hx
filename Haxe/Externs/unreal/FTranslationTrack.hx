@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimSequence.h")
 @:uextern extern class FTranslationTrack {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTranslationTrack>;
   public var Times : unreal.TArray<unreal.Float32>;
   public var PosKeys : unreal.TArray<unreal.FVector>;
   

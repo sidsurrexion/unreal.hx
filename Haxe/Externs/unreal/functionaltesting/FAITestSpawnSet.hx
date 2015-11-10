@@ -7,7 +7,6 @@ package unreal.functionaltesting;
 @:umodule("FunctionalTesting")
 @:glueCppIncludes("FunctionalAITest.h")
 @:uextern extern class FAITestSpawnSet {
-  @:uname('new') public static function create():PHaxeCreated<unreal.functionaltesting.FAITestSpawnSet>;
   
   /**
     location used for spawning if spawn info doesn't define one

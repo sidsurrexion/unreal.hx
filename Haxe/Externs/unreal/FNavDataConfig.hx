@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("AI/Navigation/NavigationData.h")
 @:uextern extern class FNavDataConfig extends unreal.FNavAgentProperties {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNavDataConfig>;
   public var NavigationDataClassName : unreal.FStringClassReference;
   public var NavigationDataClass : unreal.TSubclassOf<unreal.ANavigationData>;
   public var DefaultQueryExtent : unreal.FVector;

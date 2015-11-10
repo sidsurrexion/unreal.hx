@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/Material.h")
 @:uextern extern class FMaterialParameterCollectionInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMaterialParameterCollectionInfo>;
   
   /**
     The collection which this material has a dependency on.

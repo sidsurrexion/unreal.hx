@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Sound/SoundMix.h")
 @:uextern extern class FAudioEQEffect {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAudioEQEffect>;
   
   /**
     Low frequency filter gain - 0.0 is silent, 1.0 is full volume.

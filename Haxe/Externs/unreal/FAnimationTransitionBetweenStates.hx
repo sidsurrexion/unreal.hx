@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h")
 @:uextern extern class FAnimationTransitionBetweenStates extends unreal.FAnimationStateBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimationTransitionBetweenStates>;
   public var LogicType : unreal.ETransitionLogicType;
   public var CustomCurve : unreal.UCurveFloat;
   public var BlendMode : unreal.EAlphaBlendOption;

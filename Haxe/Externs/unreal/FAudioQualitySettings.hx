@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Sound/AudioSettings.h")
 @:uextern extern class FAudioQualitySettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAudioQualitySettings>;
   
   /**
     The number of audio channels that can be used at once

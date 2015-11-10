@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FBoxSphereBounds {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBoxSphereBounds>;
   
 }

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpGroupCamera.h")
 @:uextern extern class FCameraPreviewInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCameraPreviewInfo>;
   
   /**
     APawn Inst - CameraAnimInst doesn't really exist in editor *

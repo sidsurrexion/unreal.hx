@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Sound/SoundGroups.h")
 @:uextern extern class FSoundGroup {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FSoundGroup>;
   
   /**
     Sound duration in seconds below which sounds are entirely expanded to PCM at load time

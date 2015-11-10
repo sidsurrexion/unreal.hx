@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("GameFramework/PlayerController.h")
 @:uextern extern class FActiveForceFeedbackEffect {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FActiveForceFeedbackEffect>;
   public var ForceFeedbackEffect : unreal.UForceFeedbackEffect;
   
 }

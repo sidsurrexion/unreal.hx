@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("AI/Navigation/NavFilters/NavigationQueryFilter.h")
 @:uextern extern class FNavigationFilterArea {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNavigationFilterArea>;
   public var bOverrideEnteringCost : Bool;
   public var bOverrideTravelCost : Bool;
   

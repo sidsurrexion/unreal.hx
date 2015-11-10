@@ -11,7 +11,6 @@ package unreal.introtutorials;
 @:umodule("IntroTutorials")
 @:glueCppIncludes("Private/EditorTutorialSettings.h")
 @:uextern extern class FTutorialCategory {
-  @:uname('new') public static function create():PHaxeCreated<unreal.introtutorials.FTutorialCategory>;
   
   /**
     Texture for this tutorial, used when presented to the user in the tutorial browser.

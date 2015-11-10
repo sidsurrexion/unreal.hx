@@ -11,7 +11,6 @@ package unreal.paper2d;
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperTileSet.h")
 @:uextern extern class FIntMargin {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2d.FIntMargin>;
   
   /**
     Holds the margin to the bottom.

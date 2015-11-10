@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialInstance.h")
 @:uextern extern class FTextureParameterValue {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTextureParameterValue>;
   public var ExpressionGUID : unreal.FGuid;
   public var ParameterValue : unreal.UTexture;
   public var ParameterName : unreal.FName;

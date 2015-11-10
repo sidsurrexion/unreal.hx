@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/ButtonWidgetStyle.h")
 @:uextern extern class FSlateBrush {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FSlateBrush>;
   
   /**
     Optional UV region for an image

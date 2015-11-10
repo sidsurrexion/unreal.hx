@@ -7,7 +7,6 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeSplineControlPoint.h")
 @:uextern extern class FLandscapeSplineConnection {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscape.FLandscapeSplineConnection>;
   
   /**
     Which end of the segment is connected to this control point

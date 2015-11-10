@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_LayeredBoneBlend.h")
 @:uextern extern class FAnimNode_LayeredBoneBlend extends unreal.FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_LayeredBoneBlend>;
   public var CurveBlendOption : unreal.ECurveBlendOption;
   public var bMeshSpaceRotationBlend : Bool;
   public var BlendWeights : unreal.TArray<unreal.Float32>;

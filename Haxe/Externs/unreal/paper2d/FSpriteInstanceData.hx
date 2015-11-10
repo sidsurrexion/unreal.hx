@@ -7,7 +7,6 @@ package unreal.paper2d;
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperGroupedSpriteComponent.h")
 @:uextern extern class FSpriteInstanceData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2d.FSpriteInstanceData>;
   public var MaterialIndex : unreal.Int32;
   public var VertexColor : unreal.FColor;
   public var SourceSprite : unreal.paper2d.UPaperSprite;

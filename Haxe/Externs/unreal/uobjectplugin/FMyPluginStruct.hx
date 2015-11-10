@@ -11,7 +11,6 @@ package unreal.uobjectplugin;
 @:umodule("UObjectPlugin")
 @:glueCppIncludes("MyPluginObject.h")
 @:uextern extern class FMyPluginStruct {
-  @:uname('new') public static function create():PHaxeCreated<unreal.uobjectplugin.FMyPluginStruct>;
   public var TestString : unreal.FString;
   
 }

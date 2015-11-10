@@ -7,7 +7,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FAttributeDefaults {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FAttributeDefaults>;
   public var DefaultStartingTable : unreal.UDataTable;
   public var Attributes : unreal.TSubclassOf<unreal.gameplayabilities.UAttributeSet>;
   

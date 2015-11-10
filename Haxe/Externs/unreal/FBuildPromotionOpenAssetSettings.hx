@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FBuildPromotionOpenAssetSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBuildPromotionOpenAssetSettings>;
   
   /**
     The texture asset to open

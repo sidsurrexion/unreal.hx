@@ -7,7 +7,6 @@ package unreal.landscapeeditor;
 @:umodule("LandscapeEditor")
 @:glueCppIncludes("LandscapeEditorObject.h")
 @:uextern extern class FLandscapeImportLayer extends unreal.landscape.FLandscapeImportLayerInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscapeeditor.FLandscapeImportLayer>;
   public var ImportError : unreal.landscapeeditor.ELandscapeImportLayerError;
   
 }

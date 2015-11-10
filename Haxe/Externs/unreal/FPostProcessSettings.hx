@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("Camera/CameraAnim.h")
 @:uextern extern class FPostProcessSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FPostProcessSettings>;
   
   /**
     for backwards compatibility

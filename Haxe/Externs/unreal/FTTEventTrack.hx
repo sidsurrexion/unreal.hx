@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/TimelineTemplate.h")
 @:uextern extern class FTTEventTrack extends unreal.FTTTrackBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTTEventTrack>;
   
   /**
     Curve object used to store keys

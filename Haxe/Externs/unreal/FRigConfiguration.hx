@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/Skeleton.h")
 @:uextern extern class FRigConfiguration {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRigConfiguration>;
   
   /**
     @todo in the future we can make this to be run-time data

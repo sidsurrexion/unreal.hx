@@ -14,7 +14,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/GameViewportClient.h")
 @:uextern extern class FDebugDisplayProperty {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDebugDisplayProperty>;
   
   /**
     if Obj is a class and WithinClass is not nullptr, further limit the display to objects that have an Outer of WithinClass

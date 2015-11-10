@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimInstance.h")
 @:uextern extern class FColor {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FColor>;
   
 }

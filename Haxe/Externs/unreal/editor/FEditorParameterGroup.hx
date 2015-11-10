@@ -7,7 +7,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("MaterialEditor/MaterialEditorInstanceConstant.h")
 @:uextern extern class FEditorParameterGroup {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FEditorParameterGroup>;
   public var Parameters : unreal.TArray<unreal.editor.UDEditorParameterValue>;
   public var GroupName : unreal.FName;
   

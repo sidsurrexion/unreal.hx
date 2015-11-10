@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/TimelineComponent.h")
 @:uextern extern class FTimelineEventEntry {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTimelineEventEntry>;
   
   /**
     Time at which event should fire

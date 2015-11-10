@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FBuildPromotionImportWorkflowSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBuildPromotionImportWorkflowSettings>;
   
   /**
     Import settings for any other assets you may want to import

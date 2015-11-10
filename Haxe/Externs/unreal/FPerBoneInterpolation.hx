@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/BlendSpaceBase.h")
 @:uextern extern class FPerBoneInterpolation {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FPerBoneInterpolation>;
   public var InterpolationSpeedPerSec : unreal.Float32;
   public var BoneReference : unreal.FBoneReference;
   

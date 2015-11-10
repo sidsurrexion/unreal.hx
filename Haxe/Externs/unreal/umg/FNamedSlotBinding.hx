@@ -12,7 +12,6 @@ package unreal.umg;
 @:umodule("UMG")
 @:glueCppIncludes("Blueprint/UserWidget.h")
 @:uextern extern class FNamedSlotBinding {
-  @:uname('new') public static function create():PHaxeCreated<unreal.umg.FNamedSlotBinding>;
   public var Content : unreal.umg.UWidget;
   public var Name : unreal.FName;
   

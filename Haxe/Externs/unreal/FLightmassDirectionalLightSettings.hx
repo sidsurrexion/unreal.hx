@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/DirectionalLightComponent.h")
 @:uextern extern class FLightmassDirectionalLightSettings extends unreal.FLightmassLightSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassDirectionalLightSettings>;
   
   /**
     Angle that the directional light's emissive surface extends relative to a receiver, affects penumbra sizes.

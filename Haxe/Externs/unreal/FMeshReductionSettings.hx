@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/StaticMesh.h")
 @:uextern extern class FMeshReductionSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMeshReductionSettings>;
   public var BaseLODModel : unreal.Int32;
   public var bRecalculateNormals : Bool;
   

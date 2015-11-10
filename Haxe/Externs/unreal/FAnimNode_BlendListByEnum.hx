@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_BlendListByEnum.h")
 @:uextern extern class FAnimNode_BlendListByEnum extends unreal.FAnimNode_BlendListBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_BlendListByEnum>;
   
   /**
     The currently selected pose (as an enum value)

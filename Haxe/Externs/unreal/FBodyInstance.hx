@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FBodyInstance {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBodyInstance>;
   
   /**
     Locks physical movement along specified axis.

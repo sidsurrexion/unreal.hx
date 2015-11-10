@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/Character.h")
 @:uextern extern class FBasedMovementInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBasedMovementInfo>;
   
   /**
     Whether there is a velocity on the server. Used for forcing replication when velocity goes to zero.

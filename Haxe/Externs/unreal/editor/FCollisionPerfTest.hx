@@ -7,7 +7,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Private/Tests/CollisionAutomationTests.h")
 @:uextern extern class FCollisionPerfTest {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FCollisionPerfTest>;
   public var CreationElements : unreal.FVector;
   public var CreationBounds : unreal.FVector;
   public var ShapeType : unreal.FString;

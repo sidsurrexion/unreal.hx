@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Components/Slider.h")
 @:uextern extern class FSliderStyle extends unreal.slatecore.FSlateWidgetStyle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FSliderStyle>;
   
   /**
     Image to use when the slider thumb is in its disabled state

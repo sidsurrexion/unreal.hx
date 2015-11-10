@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/MatineeActor.h")
 @:uextern extern class FInterpGroupActorInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInterpGroupActorInfo>;
   public var Actors : unreal.TArray<unreal.AActor>;
   public var ObjectName : unreal.FName;
   

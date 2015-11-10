@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FMatrix {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMatrix>;
   
 }

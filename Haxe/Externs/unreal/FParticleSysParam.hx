@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Particles/ParticleSystemComponent.h")
 @:uextern extern class FParticleSysParam {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FParticleSysParam>;
   public var Material : unreal.UMaterialInterface;
   public var Actor : unreal.AActor;
   public var Color : unreal.FColor;

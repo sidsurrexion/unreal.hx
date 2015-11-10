@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackParticleReplay.h")
 @:uextern extern class FParticleReplayTrackKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FParticleReplayTrackKey>;
   
   /**
     Replay clip ID number that identifies the clip we should capture to or playback from

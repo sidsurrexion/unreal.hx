@@ -17,7 +17,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FGameplayEffectSpec {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayEffectSpec>;
   public var GrantedAbilitySpecs : unreal.TArray<unreal.gameplayabilities.FGameplayAbilitySpecDef>;
   
   /**

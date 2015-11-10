@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/InputSettings.h")
 @:uextern extern class FInputActionKeyMapping {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInputActionKeyMapping>;
   
   /**
     true if one of the Cmd keys must be down when the KeyEvent is received to be acknowledged

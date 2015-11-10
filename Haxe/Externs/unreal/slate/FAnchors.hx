@@ -11,7 +11,6 @@ package unreal.slate;
 @:umodule("Slate")
 @:glueCppIncludes("Components/CanvasPanelSlot.h")
 @:uextern extern class FAnchors {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slate.FAnchors>;
   
   /**
     Holds the maximum anchors, right + bottom.

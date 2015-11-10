@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackLinearColorBase.h")
 @:uextern extern class FInterpCurvePointLinearColor {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInterpCurvePointLinearColor>;
   
 }

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialParameterCollection.h")
 @:uextern extern class FCollectionVectorParameter extends unreal.FCollectionParameterBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCollectionVectorParameter>;
   public var DefaultValue : unreal.FLinearColor;
   
 }

@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("EnvironmentQuery/EQSTestingPawn.h")
 @:uextern extern class FEnvNamedValue {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FEnvNamedValue>;
   public var Value : unreal.Float32;
   public var ParamType : unreal.aimodule.EEnvQueryParam;
   public var ParamName : unreal.FName;

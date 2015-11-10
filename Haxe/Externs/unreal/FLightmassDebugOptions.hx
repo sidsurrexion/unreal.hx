@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Preferences/LightmassOptionsObject.h")
 @:uextern extern class FLightmassDebugOptions {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassDebugOptions>;
   
   /**
     The amount of time that will be count as full red when bColorByExecutionTime is enabled

@@ -11,7 +11,6 @@ package unreal.slatecore;
 @:umodule("SlateCore")
 @:glueCppIncludes("Framework/Styling/TextBlockWidgetStyle.h")
 @:uextern extern class FTextBlockStyle extends unreal.slatecore.FSlateWidgetStyle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.slatecore.FTextBlockStyle>;
   
   /**
     The shape of highlighted text

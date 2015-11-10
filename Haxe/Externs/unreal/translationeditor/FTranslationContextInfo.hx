@@ -7,7 +7,6 @@ package unreal.translationeditor;
 @:umodule("TranslationEditor")
 @:glueCppIncludes("Private/TranslationUnit.h")
 @:uextern extern class FTranslationContextInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.translationeditor.FTranslationContextInfo>;
   
   /**
     List of previous versions of the source text for this context

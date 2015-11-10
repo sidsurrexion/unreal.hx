@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimSequence.h")
 @:uextern extern class FRotationTrack {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRotationTrack>;
   public var Times : unreal.TArray<unreal.Float32>;
   public var RotKeys : unreal.TArray<unreal.FQuat>;
   

@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Editor/UnrealEdEngine.h")
 @:uextern extern class FTemplateMapInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FTemplateMapInfo>;
   
   /**
     The object path to the template map

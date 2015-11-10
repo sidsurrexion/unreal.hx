@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/PhysicsSettings.h")
 @:uextern extern class FPhysicalSurfaceName {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FPhysicalSurfaceName>;
   public var Name : unreal.FName;
   public var Type : unreal.EPhysicalSurface;
   

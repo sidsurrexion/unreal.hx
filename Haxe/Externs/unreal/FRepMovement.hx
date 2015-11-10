@@ -12,7 +12,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/Actor.h")
 @:uextern extern class FRepMovement {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRepMovement>;
   
   /**
     Allows tuning the compression level for replicated rotation. You should only need to change this from the default if you see visual artifacts.

@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("K2Node_BaseMCDelegate.h")
 @:uextern extern class FMemberReference {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMemberReference>;
   
   /**
     The Guid of the variable

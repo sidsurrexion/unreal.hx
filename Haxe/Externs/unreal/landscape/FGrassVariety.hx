@@ -7,7 +7,6 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeGrassType.h")
 @:uextern extern class FGrassVariety {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscape.FGrassVariety>;
   public var AlignToSurface : Bool;
   public var RandomRotation : Bool;
   

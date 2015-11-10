@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AI/Navigation/NavigationData.h")
 @:uextern extern class FNavAgentProperties extends unreal.FMovementProperties {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNavAgentProperties>;
   
   /**
     Scale factor to apply to height of bounds when searching for navmesh to project to when nav walking

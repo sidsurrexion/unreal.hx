@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/AudioVolume.h")
 @:uextern extern class FInteriorSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInteriorSettings>;
   
   /**
     The time over which to interpolate from the current LPF to the desired LPF of sounds inside the volume when the player enters the volume

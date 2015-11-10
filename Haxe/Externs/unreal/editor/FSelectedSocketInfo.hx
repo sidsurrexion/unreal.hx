@@ -7,6 +7,5 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Animation/DebugSkelMeshComponent.h")
 @:uextern extern class FSelectedSocketInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FSelectedSocketInfo>;
   
 }

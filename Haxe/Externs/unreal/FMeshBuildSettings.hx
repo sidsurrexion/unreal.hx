@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/StaticMesh.h")
 @:uextern extern class FMeshBuildSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMeshBuildSettings>;
   public var DistanceFieldReplacementMesh : unreal.UStaticMesh;
   
   /**

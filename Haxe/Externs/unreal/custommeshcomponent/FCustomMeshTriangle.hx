@@ -7,7 +7,6 @@ package unreal.custommeshcomponent;
 @:umodule("CustomMeshComponent")
 @:glueCppIncludes("CustomMeshComponent.h")
 @:uextern extern class FCustomMeshTriangle {
-  @:uname('new') public static function create():PHaxeCreated<unreal.custommeshcomponent.FCustomMeshTriangle>;
   public var Vertex2 : unreal.FVector;
   public var Vertex1 : unreal.FVector;
   public var Vertex0 : unreal.FVector;

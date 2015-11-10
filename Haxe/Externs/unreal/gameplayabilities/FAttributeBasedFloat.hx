@@ -12,7 +12,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class FAttributeBasedFloat {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FAttributeBasedFloat>;
   
   /**
     Filter to use on target tags; If specified, only modifiers applied with all of these tags will factor into the calculation

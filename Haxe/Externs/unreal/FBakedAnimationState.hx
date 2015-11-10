@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h")
 @:uextern extern class FBakedAnimationState {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBakedAnimationState>;
   
   /**
     Indices into the property array for player nodes in the state

@@ -7,7 +7,6 @@ package unreal.logvisualizer;
 @:umodule("LogVisualizer")
 @:glueCppIncludes("LogVisualizerSettings.h")
 @:uextern extern class FVisualLoggerFilters {
-  @:uname('new') public static function create():PHaxeCreated<unreal.logvisualizer.FVisualLoggerFilters>;
   public var SelectedClasses : unreal.TArray<unreal.FString>;
   public var Categories : unreal.TArray<unreal.logvisualizer.FCategoryFilter>;
   public var ObjectNameFilter : unreal.FString;

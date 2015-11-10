@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h")
 @:uextern extern class FGPUSpriteLocalVectorFieldInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FGPUSpriteLocalVectorFieldInfo>;
   
   /**
     Tile vector field in z axis?

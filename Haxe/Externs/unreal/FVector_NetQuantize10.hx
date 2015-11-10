@@ -14,6 +14,5 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/Character.h")
 @:uextern extern class FVector_NetQuantize10 extends unreal.FVector {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVector_NetQuantize10>;
   
 }

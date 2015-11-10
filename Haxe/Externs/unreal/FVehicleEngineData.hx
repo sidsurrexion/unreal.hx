@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent4W.h")
 @:uextern extern class FVehicleEngineData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVehicleEngineData>;
   
   /**
     Damping rate of engine in at zero throttle when the clutch is disengaged (in neutral gear) (Kgm^2/s)

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackVisibility.h")
 @:uextern extern class FVisibilityTrackKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVisibilityTrackKey>;
   
   /**
     Condition that must be satisfied for this key event to fire

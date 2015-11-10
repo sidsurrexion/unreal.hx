@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimMontage.h")
 @:uextern extern class FBranchingPointMarker {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBranchingPointMarker>;
   public var NotifyEventType : unreal.EAnimNotifyEventType;
   public var TriggerTime : unreal.Float32;
   public var NotifyIndex : unreal.Int32;

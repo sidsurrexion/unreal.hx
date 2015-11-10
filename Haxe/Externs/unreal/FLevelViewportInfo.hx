@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/World.h")
 @:uextern extern class FLevelViewportInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLevelViewportInfo>;
   
   /**
     Whether camera settings have been systematically changed since the last level viewport update.

@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/Actor.h")
 @:uextern extern class FVector {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVector>;
   
 }

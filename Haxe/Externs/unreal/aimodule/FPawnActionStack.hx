@@ -7,6 +7,5 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("Actions/PawnActionsComponent.h")
 @:uextern extern class FPawnActionStack {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FPawnActionStack>;
   
 }

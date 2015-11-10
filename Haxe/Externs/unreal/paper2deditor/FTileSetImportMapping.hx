@@ -7,7 +7,6 @@ package unreal.paper2deditor;
 @:umodule("Paper2DEditor")
 @:glueCppIncludes("TileMapAssetImportData.h")
 @:uextern extern class FTileSetImportMapping {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2deditor.FTileSetImportMapping>;
   public var SourceName : unreal.FString;
   
 }

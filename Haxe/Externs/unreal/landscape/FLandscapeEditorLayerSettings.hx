@@ -7,7 +7,6 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeProxy.h")
 @:uextern extern class FLandscapeEditorLayerSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.landscape.FLandscapeEditorLayerSettings>;
   #if WITH_EDITORONLY_DATA
   public var ReimportLayerFilePath : unreal.FString;
   public var LayerInfoObj : unreal.landscape.ULandscapeLayerInfoObject;

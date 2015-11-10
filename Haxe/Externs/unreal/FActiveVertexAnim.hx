@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimInstance.h")
 @:uextern extern class FActiveVertexAnim {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FActiveVertexAnim>;
   
   /**
     Time to evaluate the animation at.

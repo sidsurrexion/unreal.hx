@@ -7,6 +7,5 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FTagContainerAggregator {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FTagContainerAggregator>;
   
 }

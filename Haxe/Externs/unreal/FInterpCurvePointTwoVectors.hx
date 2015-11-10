@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Distributions/DistributionVectorUniformCurve.h")
 @:uextern extern class FInterpCurvePointTwoVectors {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInterpCurvePointTwoVectors>;
   
 }

@@ -7,7 +7,6 @@ package unreal.localization;
 @:umodule("Localization")
 @:glueCppIncludes("LocalizationSettings.h")
 @:uextern extern class FGatherTextExcludePath {
-  @:uname('new') public static function create():PHaxeCreated<unreal.localization.FGatherTextExcludePath>;
   public var Pattern : unreal.FString;
   
 }

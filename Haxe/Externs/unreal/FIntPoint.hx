@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/BookMark2D.h")
 @:uextern extern class FIntPoint {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FIntPoint>;
   
 }

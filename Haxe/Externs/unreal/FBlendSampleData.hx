@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimSingleNodeInstance.h")
 @:uextern extern class FBlendSampleData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBlendSampleData>;
   public var Time : unreal.Float32;
   public var TotalWeight : unreal.Float32;
   public var SampleDataIndex : unreal.Int32;

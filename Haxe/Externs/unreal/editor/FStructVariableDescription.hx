@@ -7,7 +7,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("UserDefinedStructure/UserDefinedStructEditorData.h")
 @:uextern extern class FStructVariableDescription {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FStructVariableDescription>;
   public var bEnable3dWidget : Bool;
   public var bDontEditoOnInstance : Bool;
   public var ToolTip : unreal.FString;

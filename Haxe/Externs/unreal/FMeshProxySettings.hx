@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class FMeshProxySettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FMeshProxySettings>;
   public var bPlaneNegativeHalfspace : Bool;
   public var AxisIndex : unreal.Int32;
   public var ClippingLevel : unreal.Float32;

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FRichCurveKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRichCurveKey>;
   
   /**
     If RCTWM_WeightedLeave or RCTWM_WeightedBoth, the weight of the right tangent

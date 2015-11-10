@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FKShapeElem {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FKShapeElem>;
   
 }

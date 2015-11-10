@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine.h")
 @:uextern extern class FLatentActionInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLatentActionInfo>;
   
   /**
     Object to execute the function on.

@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Vehicles/WheeledVehicleMovementComponent4W.h")
 @:uextern extern class FVehicleGearData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVehicleGearData>;
   
   /**
     Value of engineRevs/maxEngineRevs that is high enough to gear up

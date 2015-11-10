@@ -7,7 +7,6 @@ package unreal.animgraphruntime;
 @:umodule("AnimGraphRuntime")
 @:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class FAnimNode_SkeletalControlBase extends unreal.FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.animgraphruntime.FAnimNode_SkeletalControlBase>;
   public var AlphaScaleBias : unreal.FInputScaleBias;
   
   /**

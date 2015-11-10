@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Preferences/UnrealEdKeyBindings.h")
 @:uextern extern class FEditorKeyBinding {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FEditorKeyBinding>;
   public var CommandName : unreal.FName;
   public var Key : unreal.inputcore.FKey;
   public var bShiftDown : Bool;

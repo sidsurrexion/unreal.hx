@@ -14,7 +14,6 @@ package unreal.animgraphruntime;
 @:umodule("AnimGraphRuntime")
 @:glueCppIncludes("AnimGraphNode_HandIKRetargeting.h")
 @:uextern extern class FAnimNode_HandIKRetargeting extends unreal.animgraphruntime.FAnimNode_SkeletalControlBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.animgraphruntime.FAnimNode_HandIKRetargeting>;
   
   /**
     Which hand to favor. 0.5 is equal weight for both, 1 = right hand, 0 = left hand.

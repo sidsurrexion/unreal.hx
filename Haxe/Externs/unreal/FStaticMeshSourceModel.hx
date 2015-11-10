@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/StaticMesh.h")
 @:uextern extern class FStaticMeshSourceModel {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FStaticMeshSourceModel>;
   
   /**
     ScreenSize to display this LOD

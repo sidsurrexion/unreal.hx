@@ -7,7 +7,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayTagResponseTable.h")
 @:uextern extern class FGameplayTagResponseTableEntry {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayTagResponseTableEntry>;
   
   /**
     Tags that count as "negative" toward to final response count. If the overall count is negative, this ResponseGameplayEffect is applied.

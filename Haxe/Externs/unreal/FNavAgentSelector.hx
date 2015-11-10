@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("AI/Navigation/NavAreas/NavArea.h")
 @:uextern extern class FNavAgentSelector {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNavAgentSelector>;
   public var bSupportsAgent15 : Bool;
   public var bSupportsAgent14 : Bool;
   public var bSupportsAgent13 : Bool;

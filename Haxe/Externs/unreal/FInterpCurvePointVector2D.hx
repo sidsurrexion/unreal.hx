@@ -12,6 +12,5 @@ package unreal;
 **/
 @:glueCppIncludes("Distributions/DistributionFloatUniformCurve.h")
 @:uextern extern class FInterpCurvePointVector2D {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInterpCurvePointVector2D>;
   
 }

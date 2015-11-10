@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialInterface.h")
 @:uextern extern class FLightmassMaterialInterfaceSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLightmassMaterialInterfaceSettings>;
   
   /**
     If true, override the export resolution scale setting of the parent material.

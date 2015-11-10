@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/SCS_Node.h")
 @:uextern extern class FBPVariableMetaDataEntry {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBPVariableMetaDataEntry>;
   
   /**
     Name of metadata value

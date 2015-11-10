@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h")
 @:uextern extern class FGPUSpriteEmitterInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FGPUSpriteEmitterInfo>;
   
   /**
     Dynamic alpha scale from the ColorScaleOverLife module.

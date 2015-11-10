@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Editor/PropertyEditorTestObject.h")
 @:uextern extern class FPropertyEditorTestBasicStruct {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FPropertyEditorTestBasicStruct>;
   public var InnerStruct : unreal.editor.FPropertyEditorTestSubStruct;
   public var ObjectPropertyInsideAStruct : unreal.UObject;
   public var FloatPropertyInsideAStruct : unreal.Float32;

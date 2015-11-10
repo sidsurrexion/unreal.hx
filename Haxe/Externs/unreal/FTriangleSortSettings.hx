@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FTriangleSortSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTriangleSortSettings>;
   public var CustomLeftRightBoneName : unreal.FName;
   public var CustomLeftRightAxis : unreal.ETriangleSortAxis;
   public var TriangleSorting : unreal.ETriangleSortOption;

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup2D.h")
 @:uextern extern class FConvexElement2D {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FConvexElement2D>;
   
   /**
     Vertices that lie on the convex hull

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/InputSettings.h")
 @:uextern extern class FInputAxisProperties {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInputAxisProperties>;
   
   /**
     Inverts reported values for this axis

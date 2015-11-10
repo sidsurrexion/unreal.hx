@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackBoolProp.h")
 @:uextern extern class FBoolTrackKey {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBoolTrackKey>;
   public var Value : Bool;
   public var Time : unreal.Float32;
   

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/CollisionProfile.h")
 @:uextern extern class FCustomChannelSetup {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FCustomChannelSetup>;
   
   /**
     Specifies if this is static object. Otherwise it will be dynamic object. This is used for query all objects vs all static objects vs all dynamic objects *

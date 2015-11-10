@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/ComponentDelegateBinding.h")
 @:uextern extern class FBlueprintComponentDelegateBinding {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBlueprintComponentDelegateBinding>;
   
   /**
     Name of function that we want to bind to the delegate.

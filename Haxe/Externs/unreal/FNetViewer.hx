@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/WorldSettings.h")
 @:uextern extern class FNetViewer {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FNetViewer>;
   
   /**
     Direction the viewer is looking

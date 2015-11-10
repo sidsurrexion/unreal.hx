@@ -11,7 +11,6 @@ package unreal.paper2d;
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperTileSet.h")
 @:uextern extern class FPaperTileSetTerrain {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2d.FPaperTileSetTerrain>;
   public var CenterTileIndex : unreal.Int32;
   public var TerrainName : unreal.FString;
   

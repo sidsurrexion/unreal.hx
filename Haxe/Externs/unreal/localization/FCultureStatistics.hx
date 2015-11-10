@@ -7,7 +7,6 @@ package unreal.localization;
 @:umodule("Localization")
 @:glueCppIncludes("LocalizationSettings.h")
 @:uextern extern class FCultureStatistics {
-  @:uname('new') public static function create():PHaxeCreated<unreal.localization.FCultureStatistics>;
   
   /**
     The estimated number of words that have been localized for this culture.

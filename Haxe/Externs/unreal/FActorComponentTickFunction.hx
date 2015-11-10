@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("Components/ActorComponent.h")
 @:uextern extern class FActorComponentTickFunction extends unreal.FTickFunction {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FActorComponentTickFunction>;
   
 }

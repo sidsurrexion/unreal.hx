@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/Brush.h")
 @:uextern extern class FGeomSelection {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FGeomSelection>;
   
   /**
     Index into the geometry data structures

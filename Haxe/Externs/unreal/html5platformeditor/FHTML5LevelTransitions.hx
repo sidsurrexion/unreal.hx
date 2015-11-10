@@ -7,7 +7,6 @@ package unreal.html5platformeditor;
 @:umodule("HTML5PlatformEditor")
 @:glueCppIncludes("HTML5TargetSettings.h")
 @:uextern extern class FHTML5LevelTransitions {
-  @:uname('new') public static function create():PHaxeCreated<unreal.html5platformeditor.FHTML5LevelTransitions>;
   public var MapTo : unreal.FFilePath;
   public var MapFrom : unreal.FFilePath;
   

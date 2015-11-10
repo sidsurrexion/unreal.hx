@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimSet.h")
 @:uextern extern class FAnimSetMeshLinkup {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimSetMeshLinkup>;
   
   /**
     Mapping table. Size must be same as size of SkelMesh reference skeleton.

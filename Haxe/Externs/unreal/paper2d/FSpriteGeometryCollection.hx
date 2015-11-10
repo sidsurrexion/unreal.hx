@@ -7,7 +7,6 @@ package unreal.paper2d;
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperSprite.h")
 @:uextern extern class FSpriteGeometryCollection {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2d.FSpriteGeometryCollection>;
   
   /**
     This is the threshold below which multiple vertices will be merged together when doing shrink-wrapping.  Higher values result in fewer vertices.

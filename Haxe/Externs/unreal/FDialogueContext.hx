@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Sound/DialogueWave.h")
 @:uextern extern class FDialogueContext {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDialogueContext>;
   
   /**
     The people being spoken to.

@@ -11,7 +11,6 @@ package unreal.cascade;
 @:umodule("Cascade")
 @:glueCppIncludes("CascadeConfiguration.h")
 @:uextern extern class FModuleMenuMapper {
-  @:uname('new') public static function create():PHaxeCreated<unreal.cascade.FModuleMenuMapper>;
   public var InvalidObjNames : unreal.TArray<unreal.FString>;
   public var ObjName : unreal.FString;
   

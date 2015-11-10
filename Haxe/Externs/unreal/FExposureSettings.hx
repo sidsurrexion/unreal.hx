@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Settings/LevelEditorViewportSettings.h")
 @:uextern extern class FExposureSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FExposureSettings>;
   
   /**
     true: fixed exposure using the LogOffset value, false: automatic eye adaptation

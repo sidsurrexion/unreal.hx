@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class FSetByCallerFloat {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FSetByCallerFloat>;
   
   /**
     The Name the caller (code or blueprint) will use to set this magnitude by.

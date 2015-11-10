@@ -11,6 +11,5 @@ package unreal.niagara;
 @:umodule("Niagara")
 @:glueCppIncludes("NiagaraEffect.h")
 @:uextern extern class FNiagaraConstantMap {
-  @:uname('new') public static function create():PHaxeCreated<unreal.niagara.FNiagaraConstantMap>;
   
 }

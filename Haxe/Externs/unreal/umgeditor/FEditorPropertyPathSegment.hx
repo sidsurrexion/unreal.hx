@@ -7,6 +7,5 @@ package unreal.umgeditor;
 @:umodule("UMGEditor")
 @:glueCppIncludes("WidgetBlueprint.h")
 @:uextern extern class FEditorPropertyPathSegment {
-  @:uname('new') public static function create():PHaxeCreated<unreal.umgeditor.FEditorPropertyPathSegment>;
   
 }

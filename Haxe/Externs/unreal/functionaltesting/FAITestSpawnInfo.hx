@@ -7,7 +7,6 @@ package unreal.functionaltesting;
 @:umodule("FunctionalTesting")
 @:glueCppIncludes("FunctionalAITest.h")
 @:uextern extern class FAITestSpawnInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.functionaltesting.FAITestSpawnInfo>;
   
   /**
     delay between consecutive spawn attempts

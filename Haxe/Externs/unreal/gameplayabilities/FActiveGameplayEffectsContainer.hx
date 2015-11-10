@@ -26,6 +26,5 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FActiveGameplayEffectsContainer extends unreal.FFastArraySerializer {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FActiveGameplayEffectsContainer>;
   
 }

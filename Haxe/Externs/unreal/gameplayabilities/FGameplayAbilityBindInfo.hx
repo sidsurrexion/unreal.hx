@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayAbilitySet.h")
 @:uextern extern class FGameplayAbilityBindInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayAbilityBindInfo>;
   public var GameplayAbilityClass : unreal.TSubclassOf<unreal.gameplayabilities.UGameplayAbility>;
   public var Command : unreal.gameplayabilities.EGameplayAbilityInputBinds;
   

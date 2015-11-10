@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Camera/CameraShake.h")
 @:uextern extern class FVOscillator {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVOscillator>;
   
   /**
     Oscillation in the Z axis.

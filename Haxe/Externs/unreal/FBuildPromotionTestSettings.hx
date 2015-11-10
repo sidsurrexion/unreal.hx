@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Tests/AutomationTestSettings.h")
 @:uextern extern class FBuildPromotionTestSettings {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBuildPromotionTestSettings>;
   
   /**
     Material to modify for the content browser step *

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/DestructibleMesh.h")
 @:uextern extern class FDestructibleParameters {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FDestructibleParameters>;
   
   /**
     A collection of flags defined in DestructibleParametersFlag.

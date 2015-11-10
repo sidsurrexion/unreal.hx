@@ -7,7 +7,6 @@ package unreal.niagara;
 @:umodule("Niagara")
 @:glueCppIncludes("NiagaraSimulation.h")
 @:uextern extern class FNiagaraConstants_Vector extends unreal.niagara.FNiagaraConstantBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.niagara.FNiagaraConstants_Vector>;
   public var Value : unreal.FVector4;
   
 }

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h")
 @:uextern extern class FAnimationStateBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimationStateBase>;
   
   /**
     The name of this state

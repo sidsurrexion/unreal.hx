@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("Sections/MovieSceneBoolSection.h")
 @:uextern extern class FIntegralCurve extends unreal.FIndexedCurve {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FIntegralCurve>;
   
 }

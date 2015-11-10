@@ -7,7 +7,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("BehaviorTree/BehaviorTree.h")
 @:uextern extern class FBTDecoratorLogic {
-  @:uname('new') public static function create():PHaxeCreated<unreal.aimodule.FBTDecoratorLogic>;
   public var Number : unreal.UInt16;
   public var Operation : unreal.aimodule.EBTDecoratorLogic;
   

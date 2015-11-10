@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Settings/EditorLoadingSavingSettings.h")
 @:uextern extern class FAutoReimportWildcard {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FAutoReimportWildcard>;
   
   /**
     When true, files that match this wildcard will be included (if it doesn't fail any other filters), when false, matches will be excluded from the reimporter

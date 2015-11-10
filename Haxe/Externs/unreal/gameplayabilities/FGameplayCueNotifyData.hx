@@ -7,7 +7,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayCueSet.h")
 @:uextern extern class FGameplayCueNotifyData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FGameplayCueNotifyData>;
   public var LoadedGameplayCueClass : unreal.UClass;
   public var GameplayCueNotifyObj : unreal.FStringAssetReference;
   public var GameplayCueTag : unreal.gameplaytags.FGameplayTag;

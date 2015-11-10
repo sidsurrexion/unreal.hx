@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FBoneReference {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBoneReference>;
   
   /**
     Name of bone to control. This is the main bone chain to modify from. *

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/DestructibleComponent.h")
 @:uextern extern class FFractureEffect {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFractureEffect>;
   
   /**
     Sound cue to play at fracture location.

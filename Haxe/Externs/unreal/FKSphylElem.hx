@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FKSphylElem extends unreal.FKShapeElem {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FKSphylElem>;
   
   /**
     This is of line-segment ie. add Radius to both ends to find total length.

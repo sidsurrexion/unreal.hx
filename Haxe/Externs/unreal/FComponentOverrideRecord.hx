@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/InheritableComponentHandler.h")
 @:uextern extern class FComponentOverrideRecord {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FComponentOverrideRecord>;
   public var ComponentKey : unreal.FComponentKey;
   public var ComponentTemplate : unreal.UActorComponent;
   

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FPreviewAttachedObjectPair {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FPreviewAttachedObjectPair>;
   
   /**
     The name of the attach point of the Object (for example a bone or socket name)

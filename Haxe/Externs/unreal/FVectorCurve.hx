@@ -6,6 +6,5 @@ package unreal;
 
 @:glueCppIncludes("Animation/AnimSequenceBase.h")
 @:uextern extern class FVectorCurve extends unreal.FAnimCurveBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FVectorCurve>;
   
 }

@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialInstance.h")
 @:uextern extern class FScalarParameterValue {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FScalarParameterValue>;
   public var ExpressionGUID : unreal.FGuid;
   public var ParameterValue : unreal.Float32;
   public var ParameterName : unreal.FName;

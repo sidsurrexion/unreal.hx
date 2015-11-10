@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimSequence.h")
 @:uextern extern class FTrackToSkeletonMap {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FTrackToSkeletonMap>;
   
   /**
     Index of Skeleton.BoneTree this Track belongs to.

@@ -7,7 +7,6 @@ package unreal.niagara;
 @:umodule("Niagara")
 @:glueCppIncludes("NiagaraSimulation.h")
 @:uextern extern class FNiagaraConstants {
-  @:uname('new') public static function create():PHaxeCreated<unreal.niagara.FNiagaraConstants>;
   public var DataObjectConstants : unreal.TArray<unreal.niagara.FNiagaraConstants_DataObject>;
   public var MatrixConstants : unreal.TArray<unreal.niagara.FNiagaraConstants_Matrix>;
   public var VectorConstants : unreal.TArray<unreal.niagara.FNiagaraConstants_Vector>;

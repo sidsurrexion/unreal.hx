@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/BlendSpaceBase.h")
 @:uextern extern class FBlendParameter {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBlendParameter>;
   
   /**
     how many grid for this parameter.

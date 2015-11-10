@@ -7,7 +7,6 @@ package unreal.paper2d;
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperSpriteAtlas.h")
 @:uextern extern class FPaperSpriteAtlasSlot {
-  @:uname('new') public static function create():PHaxeCreated<unreal.paper2d.FPaperSpriteAtlasSlot>;
   public var Height : unreal.Int32;
   public var Width : unreal.Int32;
   public var Y : unreal.Int32;

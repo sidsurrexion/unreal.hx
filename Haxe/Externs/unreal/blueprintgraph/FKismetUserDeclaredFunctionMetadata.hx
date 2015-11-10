@@ -12,7 +12,6 @@ package unreal.blueprintgraph;
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_Tunnel.h")
 @:uextern extern class FKismetUserDeclaredFunctionMetadata {
-  @:uname('new') public static function create():PHaxeCreated<unreal.blueprintgraph.FKismetUserDeclaredFunctionMetadata>;
   
   /**
     Cached value for whether or not the graph has latent functions, positive for TRUE, zero for FALSE, and INDEX_None for undetermined

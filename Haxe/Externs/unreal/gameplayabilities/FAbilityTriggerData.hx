@@ -11,7 +11,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("Abilities/GameplayAbility.h")
 @:uextern extern class FAbilityTriggerData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FAbilityTriggerData>;
   
   /**
     The type of trigger to respond to

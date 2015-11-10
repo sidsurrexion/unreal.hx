@@ -11,7 +11,6 @@ package unreal.onlinesubsystem;
 @:umodule("OnlineSubsystem")
 @:glueCppIncludes("NamedInterfaces.h")
 @:uextern extern class FNamedInterface {
-  @:uname('new') public static function create():PHaxeCreated<unreal.onlinesubsystem.FNamedInterface>;
   
   /**
     The object to store at this location

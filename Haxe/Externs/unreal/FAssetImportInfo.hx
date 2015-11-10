@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("EditorFramework/AssetImportData.h")
 @:uextern extern class FAssetImportInfo {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAssetImportInfo>;
   
 }

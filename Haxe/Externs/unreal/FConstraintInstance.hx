@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/PhysicsConstraintTemplate.h")
 @:uextern extern class FConstraintInstance {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FConstraintInstance>;
   
   /**
     Limit to the force the angular drive can apply.

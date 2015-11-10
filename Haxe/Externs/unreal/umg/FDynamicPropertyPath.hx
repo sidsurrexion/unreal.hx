@@ -7,6 +7,5 @@ package unreal.umg;
 @:umodule("UMG")
 @:glueCppIncludes("Binding/PropertyBinding.h")
 @:uextern extern class FDynamicPropertyPath {
-  @:uname('new') public static function create():PHaxeCreated<unreal.umg.FDynamicPropertyPath>;
   
 }

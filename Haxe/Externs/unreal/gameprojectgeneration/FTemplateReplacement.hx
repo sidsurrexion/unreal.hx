@@ -7,7 +7,6 @@ package unreal.gameprojectgeneration;
 @:umodule("GameProjectGeneration")
 @:glueCppIncludes("TemplateProjectDefs.h")
 @:uextern extern class FTemplateReplacement {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameprojectgeneration.FTemplateReplacement>;
   public var bCaseSensitive : Bool;
   public var To : unreal.FString;
   public var From : unreal.FString;

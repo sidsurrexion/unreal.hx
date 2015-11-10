@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_SequencePlayer.h")
 @:uextern extern class FAnimNode_SequencePlayer extends unreal.FAnimNode_AssetPlayerBase {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_SequencePlayer>;
   
   /**
     The role this player can assume within the group (ignored if GroupIndex is INDEX_NONE)

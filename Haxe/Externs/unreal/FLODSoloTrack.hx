@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("Particles/ParticleSystem.h")
 @:uextern extern class FLODSoloTrack {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FLODSoloTrack>;
   public var SoloEnableSetting : unreal.TArray<unreal.UInt8>;
   
 }

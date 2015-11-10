@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Animation/BlendSpaceBase.h")
 @:uextern extern class FInterpolationParameter {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FInterpolationParameter>;
   
   /**
     Interpolation Type for input, when it gets input, it will use this filter to decide how to get to target.

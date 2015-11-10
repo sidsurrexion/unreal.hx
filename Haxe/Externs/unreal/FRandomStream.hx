@@ -13,6 +13,5 @@ package unreal;
 **/
 @:glueCppIncludes("FunctionalTest.h")
 @:uextern extern class FRandomStream {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FRandomStream>;
   
 }

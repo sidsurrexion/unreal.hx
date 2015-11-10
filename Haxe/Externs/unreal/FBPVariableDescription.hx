@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/Blueprint.h")
 @:uextern extern class FBPVariableDescription {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FBPVariableDescription>;
   
   /**
     Optional new default value stored as string

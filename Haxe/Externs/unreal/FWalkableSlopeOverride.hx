@@ -10,7 +10,6 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FWalkableSlopeOverride {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FWalkableSlopeOverride>;
   
   /**
     Override walkable slope, applying the rules of the Walkable Slope Behavior.

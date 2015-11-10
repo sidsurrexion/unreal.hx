@@ -11,7 +11,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("MaterialEditor/MaterialEditorInstanceConstant.h")
 @:uextern extern class FLightmassParameterValue {
-  @:uname('new') public static function create():PHaxeCreated<unreal.editor.FLightmassParameterValue>;
   
   /**
     If true, override the given parameter with the given settings

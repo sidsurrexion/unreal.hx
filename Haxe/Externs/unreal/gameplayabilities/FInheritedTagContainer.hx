@@ -7,7 +7,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayEffect.h")
 @:uextern extern class FInheritedTagContainer {
-  @:uname('new') public static function create():PHaxeCreated<unreal.gameplayabilities.FInheritedTagContainer>;
   
   /**
     Tags that should be removed if my parent had them

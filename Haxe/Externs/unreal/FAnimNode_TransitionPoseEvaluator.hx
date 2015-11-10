@@ -11,7 +11,6 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_TransitionPoseEvaluator.h")
 @:uextern extern class FAnimNode_TransitionPoseEvaluator extends unreal.FAnimNode_Base {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FAnimNode_TransitionPoseEvaluator>;
   public var CacheFramesRemaining : unreal.Int32;
   public var FramesToCachePose : unreal.Int32;
   public var EvaluatorMode : unreal.EEvaluatorMode;

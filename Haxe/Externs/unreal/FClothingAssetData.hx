@@ -6,7 +6,6 @@ package unreal;
 
 @:glueCppIncludes("Engine/SkeletalMesh.h")
 @:uextern extern class FClothingAssetData {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FClothingAssetData>;
   public var PhysicsProperties : unreal.FClothPhysicsProperties;
   
   /**

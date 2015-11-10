@@ -10,6 +10,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine.h")
 @:uextern extern class FFormatTextArgument {
-  @:uname('new') public static function create():PHaxeCreated<unreal.FFormatTextArgument>;
   
 }
