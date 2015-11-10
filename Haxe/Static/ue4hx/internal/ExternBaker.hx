@@ -273,12 +273,6 @@ class ExternBaker {
     this.addDoc(c.doc);
     var fields = c.fields.get(),
         statics = c.statics.get();
-    for (field in fields.concat(statics)) {
-      if (field.params.length > 0) {
-        this.buf.add('@:ueHasGenerics ');
-        break;
-      }
-    }
     var meta = c.meta.get();
     // process the _Extra type if found
     try {
@@ -323,6 +317,13 @@ class ExternBaker {
       }
     }
     catch(e:Dynamic) {
+    }
+
+    for (field in fields.concat(statics)) {
+      if (field.params.length > 0) {
+        this.buf.add('@:ueHasGenerics ');
+        break;
+      }
     }
 
     var params = new HelperBuf();
