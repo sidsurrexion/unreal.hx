@@ -20,10 +20,7 @@ import unreal.helpers.HaxeHelpers;
   }
 
   @:op(A==B) inline public function equals(other:FName) : Bool {
-    if (this == null)
-      return other == null;
-    else
-      return toString() == other.toString();
+    return CoreAPI.equals(this, other);
   }
 #end
 }
