@@ -21,5 +21,22 @@ package unreal;
 **/
 @:glueCppIncludes("Distributions/DistributionVectorUniform.h")
 @:uextern extern class UDistributionVectorUniform extends unreal.UDistributionVector {
+  public var bUseExtremes : Bool;
+  public var LockedAxes : unreal.EDistributionVectorLockFlags;
+  
+  /**
+    If true, X == Y == Z ie. only one degree of freedom. If false, each axis is picked independently.
+  **/
+  public var bLockAxes : Bool;
+  
+  /**
+    Lower end of FVector magnitude range.
+  **/
+  public var Min : unreal.FVector;
+  
+  /**
+    Upper end of FVector magnitude range.
+  **/
+  public var Max : unreal.FVector;
   
 }

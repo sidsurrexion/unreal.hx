@@ -290,12 +290,5 @@ package unreal.editor;
     Textures.
   **/
   public var Bad : unreal.UTexture2D;
-  public var Trans : unreal.editor.UTransactor;
-  public var ConversionTempModel : unreal.UModel;
-  
-  /**
-    Objects.
-  **/
-  public var TempModel : unreal.UModel;
   
 }

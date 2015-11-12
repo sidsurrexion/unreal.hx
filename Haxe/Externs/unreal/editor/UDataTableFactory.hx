@@ -22,5 +22,6 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Factories/DataTableFactory.h")
 @:uextern extern class UDataTableFactory extends unreal.editor.UFactory {
+  public var Struct : unreal.UScriptStruct;
   
 }

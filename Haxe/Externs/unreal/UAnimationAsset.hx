@@ -21,5 +21,12 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimationAsset.h")
 @:uextern extern class UAnimationAsset extends unreal.UObject {
+  #if WITH_EDITORONLY_DATA
+  
+  /**
+    Information for thumbnail rendering
+  **/
+  public var ThumbnailInfo : unreal.UThumbnailInfo;
+  #end // WITH_EDITORONLY_DATA
   
 }

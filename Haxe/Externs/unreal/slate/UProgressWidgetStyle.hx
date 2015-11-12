@@ -23,4 +23,9 @@ package unreal.slate;
 @:glueCppIncludes("Framework/Styling/ProgressWidgetStyle.h")
 @:uextern extern class UProgressWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
   
+  /**
+    The actual data describing the button's appearance.
+  **/
+  public var ProgressBarStyle : unreal.slatecore.FProgressBarStyle;
+  
 }

@@ -22,4 +22,14 @@ package unreal;
 @:glueCppIncludes("Sound/SoundNodeDelay.h")
 @:uextern extern class USoundNodeDelay extends unreal.USoundNode {
   
+  /**
+    The upper bound of delay time in seconds.
+  **/
+  public var DelayMax : unreal.Float32;
+  
+  /**
+    The lower bound of delay time in seconds.
+  **/
+  public var DelayMin : unreal.Float32;
+  
 }

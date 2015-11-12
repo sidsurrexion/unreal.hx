@@ -21,5 +21,10 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackInstAnimControl.h")
 @:uextern extern class UInterpTrackInstAnimControl extends unreal.UInterpTrackInst {
+  #if WITH_EDITORONLY_DATA
+  public var InitRotation : unreal.FRotator;
+  public var InitPosition : unreal.FVector;
+  #end // WITH_EDITORONLY_DATA
+  public var LastUpdatePosition : unreal.Float32;
   
 }

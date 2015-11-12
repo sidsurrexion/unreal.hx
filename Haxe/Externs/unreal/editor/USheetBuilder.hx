@@ -22,5 +22,11 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Builders/SheetBuilder.h")
 @:uextern extern class USheetBuilder extends unreal.editor.UEditorBrushBuilder {
+  public var GroupName : unreal.FName;
+  public var Axis : unreal.editor.ESheetAxis;
+  public var YSegments : unreal.Int32;
+  public var XSegments : unreal.Int32;
+  public var Y : unreal.Int32;
+  public var X : unreal.Int32;
   
 }

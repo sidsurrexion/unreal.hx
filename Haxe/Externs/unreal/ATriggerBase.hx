@@ -21,5 +21,7 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/TriggerBase.h")
 @:uextern extern class ATriggerBase extends unreal.AActor {
+  public var SpriteComponent : unreal.UBillboardComponent;
+  public var CollisionComponent : unreal.UShapeComponent;
   
 }

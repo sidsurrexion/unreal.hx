@@ -23,4 +23,9 @@ package unreal.onlinesubsystemutils;
 @:glueCppIncludes("JoinSessionCallbackProxy.h")
 @:uextern extern class UJoinSessionCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
   
+  /**
+    Joins a remote session with the default online subsystem
+  **/
+  static public function JoinSession(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController, SearchResult : unreal.Const<unreal.PRef<unreal.onlinesubsystemutils.FBlueprintSessionResult>>) : unreal.onlinesubsystemutils.UJoinSessionCallbackProxy;
+  
 }

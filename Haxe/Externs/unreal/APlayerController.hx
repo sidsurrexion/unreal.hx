@@ -212,11 +212,6 @@ package unreal;
   public var AcknowledgedPawn : unreal.APawn;
   
   /**
-    UPlayer associated with this PlayerController.  Could be a local player or a net connection.
-  **/
-  public var Player : unreal.UPlayer;
-  
-  /**
     Indicate that the Spectator is waiting to join/respawn.
   **/
   public function ServerSetSpectatorWaiting(bWaiting : Bool) : Void;

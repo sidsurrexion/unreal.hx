@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Materials/MaterialExpressionQualitySwitch.h")
 @:uextern extern class UMaterialExpressionQualitySwitch extends unreal.UMaterialExpression {
   
+  /**
+    Default connection, used when a specific quality level input is missing.
+  **/
+  public var Default : unreal.FExpressionInput;
+  
 }

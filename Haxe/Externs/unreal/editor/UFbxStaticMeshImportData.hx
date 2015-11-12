@@ -21,6 +21,42 @@ package unreal.editor;
 **/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Factories/FbxStaticMeshImportData.h")
-@:uextern extern class UFbxStaticMeshImportData extends unreal.editor.UFbxMeshImportData {
+@:uextern extern class UFbxStaticMeshImportData extends unreal.editor.UFbxAssetImportData {
+  
+  /**
+    If checked, collision will automatically be generated (ignored if custom collision is imported or used).
+  **/
+  public var bAutoGenerateCollision : Bool;
+  
+  /**
+    If checked, one convex hull per UCX_ prefixed collision mesh will be generated instead of decomposing into multiple hulls
+  **/
+  public var bOneConvexHullPerUCX : Bool;
+  public var bGenerateLightmapUVs : Bool;
+  
+  /**
+    Required for PNT tessellation but can be slow. Recommend disabling for larger meshes.
+  **/
+  public var bBuildAdjacencyBuffer : Bool;
+  
+  /**
+    Disabling this option will keep degenerate triangles found.  In general you should leave this option on.
+  **/
+  public var bRemoveDegenerates : Bool;
+  
+  /**
+    Specify override color in the case that VertexColorImportOption is set to Override
+  **/
+  public var VertexOverrideColor : unreal.FColor;
+  
+  /**
+    Specify how vertex colors should be imported
+  **/
+  public var VertexColorImportOption : unreal.editor.EVertexColorImportOption;
+  
+  /**
+    For static meshes, enabling this option will combine all meshes in the FBX into a single monolithic mesh in Unreal
+  **/
+  public var StaticMeshLODGroup : unreal.FName;
   
 }

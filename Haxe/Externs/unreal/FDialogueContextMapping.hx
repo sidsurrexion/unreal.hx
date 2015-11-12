@@ -17,11 +17,6 @@ package unreal;
 @:uextern extern class FDialogueContextMapping {
   
   /**
-    Cached object for playing the soundwave with subtitle information included.
-  **/
-  public var Proxy : unreal.UDialogueSoundWaveProxy;
-  
-  /**
     The soundwave to play for this dialogue.
   **/
   public var SoundWave : unreal.USoundWave;

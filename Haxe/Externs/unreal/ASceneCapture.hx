@@ -21,5 +21,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/SceneCapture.h")
 @:uextern extern class ASceneCapture extends unreal.AActor {
+  public var MeshComp : unreal.UStaticMeshComponent;
   
 }

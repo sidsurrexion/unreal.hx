@@ -23,4 +23,9 @@ package unreal.onlinesubsystemutils;
 @:glueCppIncludes("InAppPurchaseQueryCallbackProxy.h")
 @:uextern extern class UInAppPurchaseQueryCallbackProxy extends unreal.UObject {
   
+  /**
+    Queries a InAppPurchase for an integer value
+  **/
+  static public function CreateProxyObjectForInAppPurchaseQuery(PlayerController : unreal.APlayerController, ProductIdentifiers : unreal.Const<unreal.PRef<unreal.TArray<unreal.FString>>>) : unreal.onlinesubsystemutils.UInAppPurchaseQueryCallbackProxy;
+  
 }

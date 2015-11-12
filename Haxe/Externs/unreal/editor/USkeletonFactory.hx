@@ -23,4 +23,9 @@ package unreal.editor;
 @:glueCppIncludes("Factories/SkeletonFactory.h")
 @:uextern extern class USkeletonFactory extends unreal.editor.UFactory {
   
+  /**
+    The skeletal mesh with which to initialize this skeleton.
+  **/
+  public var TargetSkeletalMesh : unreal.USkeletalMesh;
+  
 }

@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Materials/MaterialExpressionViewProperty.h")
 @:uextern extern class UMaterialExpressionViewProperty extends unreal.UMaterialExpression {
   
+  /**
+    View input property to be accessed
+  **/
+  public var Property : unreal.EMaterialExposedViewProperty;
+  
 }

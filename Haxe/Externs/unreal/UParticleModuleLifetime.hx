@@ -20,6 +20,11 @@ package unreal;
   
 **/
 @:glueCppIncludes("Particles/Lifetime/ParticleModuleLifetime.h")
-@:uextern extern class UParticleModuleLifetime extends unreal.UParticleModuleLifetimeBase {
+@:uextern extern class UParticleModuleLifetime extends unreal.UParticleModule {
+  
+  /**
+    The lifetime of the particle, in seconds. Retrieved using the EmitterTime at the spawn of the particle.
+  **/
+  public var Lifetime : unreal.FRawDistributionFloat;
   
 }

@@ -21,5 +21,17 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/SoundClass.h")
 @:uextern extern class USoundClass extends unreal.UObject {
+  public var ParentClass : unreal.USoundClass;
+  
+  /**
+    SoundMix Modifiers to activate automatically when a sound of this class is playing.
+  **/
+  public var PassiveSoundMixModifiers : unreal.TArray<unreal.FPassiveSoundMixModifier>;
+  public var ChildClasses : unreal.TArray<unreal.USoundClass>;
+  
+  /**
+    Configurable properties like volume and priority.
+  **/
+  public var Properties : unreal.FSoundClassProperties;
   
 }

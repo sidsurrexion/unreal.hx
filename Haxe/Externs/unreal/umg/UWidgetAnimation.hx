@@ -23,4 +23,22 @@ package unreal.umg;
 @:glueCppIncludes("Animation/WidgetAnimation.h")
 @:uextern extern class UWidgetAnimation extends unreal.UObject {
   
+  /**
+    Get the start time of this animation.
+    
+    @return Start time in seconds.
+    @see GetEndTime
+  **/
+  @:thisConst @:final public function GetStartTime() : unreal.Float32;
+  
+  /**
+    Get the end time of this animation.
+    
+    @return End time in seconds.
+    @see GetStartTime
+  **/
+  @:thisConst @:final public function GetEndTime() : unreal.Float32;
+  public var AnimationBindings : unreal.TArray<unreal.umg.FWidgetAnimationBinding>;
+  public var MovieScene : unreal.moviescene.UMovieScene;
+  
 }

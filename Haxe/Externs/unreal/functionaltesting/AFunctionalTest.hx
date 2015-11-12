@@ -22,5 +22,42 @@ package unreal.functionaltesting;
 @:umodule("FunctionalTesting")
 @:glueCppIncludes("FunctionalTest.h")
 @:uextern extern class AFunctionalTest extends unreal.AActor {
+  public var bIsEnabled : Bool;
+  public var Description : unreal.FString;
+  public var RandomNumbersStream : unreal.FRandomStream;
+  public var AutoDestroyActors : unreal.TArray<unreal.AActor>;
+  public var ObservationPoint : unreal.AActor;
+  
+  /**
+    Test's time limit. '0' means no limit
+  **/
+  public var TimeLimit : unreal.Float32;
+  
+  /**
+    If test is limited by time this is the result that will be returned when time runs out
+  **/
+  public var TimesUpResult : unreal.functionaltesting.EFunctionalTestResult;
+  public var Result : unreal.functionaltesting.EFunctionalTestResult;
+  public var SpriteComponent : unreal.UBillboardComponent;
+  public function FinishTest(TestResult : unreal.functionaltesting.EFunctionalTestResult, Message : unreal.FString) : Void;
+  public function LogMessage(Message : unreal.FString) : Void;
+  public function SetTimeLimit(NewTimeLimit : unreal.Float32, ResultWhenTimeRunsOut : unreal.functionaltesting.EFunctionalTestResult) : Void;
+  
+  /**
+    Used by debug drawing to gather actors this test is using and point at them on the level to better understand test's setup
+  **/
+  @:thisConst public function DebugGatherRelevantActors() : unreal.TArray<unreal.AActor>;
+  
+  /**
+    retrieves information whether test wants to have another run just after finishing
+  **/
+  @:thisConst public function OnWantsReRunCheck() : Bool;
+  @:thisConst public function OnAdditionalTestFinishedMessageRequest(TestResult : unreal.functionaltesting.EFunctionalTestResult) : unreal.FString;
+  
+  /**
+    ACtors registered this way will be automatically destroyed (by limiting their lifespan)
+        on test finish
+  **/
+  public function RegisterAutoDestroyActor(ActorToAutoDestroy : unreal.AActor) : Void;
   
 }

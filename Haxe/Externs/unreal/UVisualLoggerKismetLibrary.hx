@@ -22,4 +22,19 @@ package unreal;
 @:glueCppIncludes("VisualLogger/VisualLoggerKismetLibrary.h")
 @:uextern extern class UVisualLoggerKismetLibrary extends unreal.UBlueprintFunctionLibrary {
   
+  /**
+    Logs simple text string with Visual Logger - recording for Visual Logs has to be enabled to record this data
+  **/
+  static public function LogText(WorldContextObject : unreal.UObject, Text : unreal.FString, LogCategory : unreal.FName) : Void;
+  
+  /**
+    Logs location as sphere with given radius - recording for Visual Logs has to be enabled to record this data
+  **/
+  static public function LogLocation(WorldContextObject : unreal.UObject, Location : unreal.FVector, Text : unreal.FString, ObjectColor : unreal.FLinearColor, Radius : unreal.Float32, LogCategory : unreal.FName) : Void;
+  
+  /**
+    Logs box shape - recording for Visual Logs has to be enabled to record this data
+  **/
+  static public function LogBox(WorldContextObject : unreal.UObject, BoxShape : unreal.FBox, Text : unreal.FString, ObjectColor : unreal.FLinearColor, LogCategory : unreal.FName) : Void;
+  
 }

@@ -23,4 +23,9 @@ package unreal.slate;
 @:glueCppIncludes("Framework/Styling/ButtonWidgetStyle.h")
 @:uextern extern class UButtonWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
   
+  /**
+    The actual data describing the button's appearance.
+  **/
+  public var ButtonStyle : unreal.slatecore.FButtonStyle;
+  
 }

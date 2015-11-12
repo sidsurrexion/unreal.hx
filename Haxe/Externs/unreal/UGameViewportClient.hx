@@ -29,7 +29,7 @@ package unreal;
   @see UGameViewportClient
 **/
 @:glueCppIncludes("Engine/GameViewportClient.h")
-@:uextern extern class UGameViewportClient extends unreal.UScriptViewportClient {
+@:uextern extern class UGameViewportClient extends unreal.UObject {
   private var GameInstance : unreal.UGameInstance;
   
   /**

@@ -21,5 +21,7 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionConstant2Vector.h")
 @:uextern extern class UMaterialExpressionConstant2Vector extends unreal.UMaterialExpression {
+  public var G : unreal.Float32;
+  public var R : unreal.Float32;
   
 }

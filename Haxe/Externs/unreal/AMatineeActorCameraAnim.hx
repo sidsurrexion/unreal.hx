@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Matinee/MatineeActorCameraAnim.h")
 @:uextern extern class AMatineeActorCameraAnim extends unreal.AMatineeActor {
   
+  /**
+    The camera anim we are editing
+  **/
+  public var CameraAnim : unreal.UCameraAnim;
+  
 }

@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Engine/ShadowMapTexture2D.h")
 @:uextern extern class UShadowMapTexture2D extends unreal.UTexture2D {
   
+  /**
+    Bit-field with shadowmap flags.
+  **/
+  public var ShadowmapFlags : unreal.EShadowMapFlags;
+  
 }

@@ -22,6 +22,5 @@ package unreal;
   #if WITH_EDITORONLY_DATA
   public var ArrowComponent : unreal.UArrowComponent;
   #end // WITH_EDITORONLY_DATA
-  public var Component : unreal.UWindDirectionalSourceComponent;
   
 }

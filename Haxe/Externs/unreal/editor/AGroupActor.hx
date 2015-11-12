@@ -22,5 +22,10 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Editor/GroupActor.h")
 @:uextern extern class AGroupActor extends unreal.AActor {
+  #if WITH_EDITORONLY_DATA
+  public var SubGroups : unreal.TArray<unreal.editor.AGroupActor>;
+  public var GroupActors : unreal.TArray<unreal.AActor>;
+  public var bLocked : Bool;
+  #end // WITH_EDITORONLY_DATA
   
 }

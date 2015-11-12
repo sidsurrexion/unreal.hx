@@ -22,5 +22,11 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitAbilityActivate.h")
 @:uextern extern class UAbilityTask_WaitAbilityActivate extends unreal.gameplayabilities.UAbilityTask {
+  @:final public function OnAbilityActivate(ActivatedAbility : unreal.gameplayabilities.UGameplayAbility) : Void;
+  
+  /**
+    Wait until a new ability (of the same or different type) is activated. Only input based abilities will be counted unless IncludeTriggeredAbilities is true.
+  **/
+  static public function WaitForAbilityActivate(WorldContextObject : unreal.UObject, WithTag : unreal.gameplaytags.FGameplayTag, WithoutTag : unreal.gameplaytags.FGameplayTag, IncludeTriggeredAbilities : Bool, TriggerOnce : Bool) : unreal.gameplayabilities.UAbilityTask_WaitAbilityActivate;
   
 }

@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Distributions/DistributionFloatConstant.h")
 @:uextern extern class UDistributionFloatConstant extends unreal.UDistributionFloat {
   
+  /**
+    This float will be returned for all values of time.
+  **/
+  public var Constant : unreal.Float32;
+  
 }

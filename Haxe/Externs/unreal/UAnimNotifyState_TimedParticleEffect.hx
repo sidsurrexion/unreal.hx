@@ -23,5 +23,42 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimNotifies/AnimNotifyState_TimedParticleEffect.h")
 @:uextern extern class UAnimNotifyState_TimedParticleEffect extends unreal.UAnimNotifyState {
+  #if WITH_EDITORONLY_DATA
+  public var PreviousSocketNames : unreal.TArray<unreal.FName>;
+  
+  /**
+    The following arrays are used to handle property changes during a state. Because we can't
+    store any stateful data here we can't know which emitter is ours. The best metric we have
+    is an emitter on our Mesh Component with the same template and socket name we have defined.
+    Because these can change at any time we need to track previous versions when we are in an
+    editor build. Refactor when stateful data is possible, tracking our component instead.
+  **/
+  public var PreviousPSTemplates : unreal.TArray<unreal.UParticleSystem>;
+  #end // WITH_EDITORONLY_DATA
+  
+  /**
+    Whether the particle system should be immediately destroyed at the end of the notify state or be allowed to finish
+  **/
+  public var bDestroyAtEnd : Bool;
+  
+  /**
+    Rotation offset from the socket or bone for the particle system
+  **/
+  public var RotationOffset : unreal.FRotator;
+  
+  /**
+    Offset from the socket or bone to place the particle system
+  **/
+  public var LocationOffset : unreal.FVector;
+  
+  /**
+    The socket or bone to attach the system to
+  **/
+  public var SocketName : unreal.FName;
+  
+  /**
+    The particle system to spawn for the notify state
+  **/
+  public var PSTemplate : unreal.UParticleSystem;
   
 }

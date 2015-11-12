@@ -22,4 +22,63 @@ package unreal;
 @:glueCppIncludes("Animation/AnimMontage.h")
 @:uextern extern class UAnimMontage extends unreal.UAnimCompositeBase {
   
+  /**
+    Keep track of which AnimNotify_State are marked as BranchingPoints, so we can update their state when the Montage is ticked
+  **/
+  public var BranchingPointStateNotifyIndices : unreal.TArray<unreal.Int32>;
+  #if WITH_EDITORONLY_DATA
+  
+  /**
+    Preview Base pose for additive BlendSpace *
+  **/
+  public var PreviewBasePose : unreal.UAnimSequence;
+  #end // WITH_EDITORONLY_DATA
+  
+  /**
+    Root Bone will be locked to that position when extracting root motion. DEPRECATED in 4.5 root motion is controlled by anim sequences *
+  **/
+  public var RootMotionRootLock : unreal.ERootMotionRootLock;
+  
+  /**
+    If this is on, it will allow extracting root motion rotation. DEPRECATED in 4.5 root motion is controlled by anim sequences *
+  **/
+  public var bEnableRootMotionRotation : Bool;
+  
+  /**
+    If this is on, it will allow extracting root motion translation. DEPRECATED in 4.5 root motion is controlled by anim sequences *
+  **/
+  public var bEnableRootMotionTranslation : Bool;
+  
+  /**
+    Remove this when VER_UE4_MONTAGE_BRANCHING_POINT_REMOVAL is removed.
+  **/
+  public var BranchingPoints_DEPRECATED : unreal.TArray<unreal.FBranchingPoint>;
+  
+  /**
+    slot data, each slot contains anim track
+  **/
+  public var SlotAnimTracks : unreal.TArray<unreal.FSlotAnimationTrack>;
+  
+  /**
+    composite section.
+  **/
+  public var CompositeSections : unreal.TArray<unreal.FCompositeSection>;
+  
+  /**
+    Time from Sequence End to trigger blend out.
+    <0 means using BlendOutTime, so BlendOut finishes as Montage ends.
+    >=0 means using 'SequenceEnd - BlendOutTriggerTime' to trigger blend out.
+  **/
+  public var BlendOutTriggerTime : unreal.Float32;
+  
+  /**
+    Default blend out time.
+  **/
+  public var BlendOutTime : unreal.Float32;
+  
+  /**
+    Default blend in time.
+  **/
+  public var BlendInTime : unreal.Float32;
+  
 }

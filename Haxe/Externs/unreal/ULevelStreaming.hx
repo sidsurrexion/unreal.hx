@@ -23,4 +23,115 @@ package unreal;
 @:glueCppIncludes("Engine/LevelStreaming.h")
 @:uextern extern class ULevelStreaming extends unreal.UObject {
   
+  /**
+    List of keywords to filter on in the level browser
+  **/
+  public var Keywords : unreal.TArray<unreal.FString>;
+  
+  /**
+    Cooldown time in seconds between volume-based unload requests.  Used in preventing spurious unload requests.
+  **/
+  public var MinTimeBetweenVolumeUnloadRequests : unreal.Float32;
+  
+  /**
+    The level streaming volumes bound to this level.
+  **/
+  public var EditorStreamingVolumes : unreal.TArray<unreal.ALevelStreamingVolume>;
+  
+  /**
+    The level color used for visualization. (Show -> Advanced -> Level Coloration)
+  **/
+  public var LevelColor : unreal.FLinearColor;
+  
+  /**
+    Deprecated level color used for visualization.
+  **/
+  public var DrawColor_DEPRECATED : unreal.FColor;
+  
+  /**
+    If true, will be drawn on the 'level streaming status' map (STAT LEVELMAP console command)
+  **/
+  public var bDrawOnLevelStatusMap : Bool;
+  
+  /**
+    Whether this level streaming object should be ignored by world composition distance streaming,
+    so streaming state can be controlled by other systems (ex: in blueprints)
+  **/
+  public var bDisableDistanceStreaming : Bool;
+  
+  /**
+    Requested LOD. Non LOD sub-levels have Index = -1
+  **/
+  public var LevelLODIndex : unreal.Int32;
+  
+  /**
+    Whether we want to force a blocking load
+  **/
+  public var bShouldBlockOnLoad : Bool;
+  
+  /**
+    Whether the level should be visible if it is loaded
+  **/
+  public var bShouldBeVisible : Bool;
+  
+  /**
+    Whether the level should be loaded
+  **/
+  public var bShouldBeLoaded : Bool;
+  
+  /**
+    Whether this level is locked; that is, its actors are read-only.
+  **/
+  public var bLocked : Bool;
+  
+  /**
+    Whether this level should be visible in the Editor
+  **/
+  public var bShouldBeVisibleInEditor : Bool;
+  
+  /**
+    Transform applied to actors after loading.
+  **/
+  public var LevelTransform : unreal.FTransform;
+  
+  /**
+    LOD versions of this level
+  **/
+  public var LODPackageNames : unreal.TArray<unreal.FName>;
+  
+  /**
+    If this isn't Name_None, then we load from this package on disk to the new package named PackageName
+  **/
+  public var PackageNameToLoad : unreal.FName;
+  
+  /**
+    Deprecated name of the package containing the level to load. Use WorldAsset or GetWorldAssetPackageFName instead.
+  **/
+  public var PackageName_DEPRECATED : unreal.FName;
+  
+  /**
+    Returns whether streaming level is visible
+  **/
+  @:thisConst @:final public function IsLevelVisible() : Bool;
+  
+  /**
+    Returns whether streaming level is loaded
+  **/
+  @:thisConst @:final public function IsLevelLoaded() : Bool;
+  
+  /**
+    Returns whether level has streaming state change pending
+  **/
+  @:thisConst @:final public function IsStreamingStatePending() : Bool;
+  
+  /**
+    Creates a new instance of this streaming level with a provided unique instance name
+  **/
+  @:final public function CreateInstance(UniqueInstanceName : unreal.FString) : unreal.ULevelStreaming;
+  
+  /**
+    Returns the Level Script Actor of the level if the level is loaded and valid
+  **/
+  @:final public function GetLevelScriptActor() : unreal.ALevelScriptActor;
+  
 }

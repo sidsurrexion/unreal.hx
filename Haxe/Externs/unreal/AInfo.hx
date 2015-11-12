@@ -22,5 +22,8 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/Info.h")
 @:uextern extern class AInfo extends unreal.AActor {
+  #if WITH_EDITORONLY_DATA
+  public var SpriteComponent : unreal.UBillboardComponent;
+  #end // WITH_EDITORONLY_DATA
   
 }

@@ -22,5 +22,6 @@ package unreal.vectorvm;
 @:umodule("VectorVM")
 @:glueCppIncludes("VectorVMDataObject.h")
 @:uextern extern class UNiagaraCurveDataObject extends unreal.vectorvm.UNiagaraDataObject {
+  public var CurveObj : unreal.UCurveVector;
   
 }

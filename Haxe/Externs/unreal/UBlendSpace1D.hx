@@ -22,4 +22,12 @@ package unreal;
 @:glueCppIncludes("Animation/BlendSpace1D.h")
 @:uextern extern class UBlendSpace1D extends unreal.UBlendSpaceBase {
   
+  /**
+    Drive animation speed by blend input position *
+  **/
+  public var bScaleAnimation : Bool;
+  #if WITH_EDITORONLY_DATA
+  public var bDisplayEditorVertically : Bool;
+  #end // WITH_EDITORONLY_DATA
+  
 }

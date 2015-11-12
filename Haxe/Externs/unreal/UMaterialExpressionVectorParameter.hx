@@ -21,5 +21,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionVectorParameter.h")
 @:uextern extern class UMaterialExpressionVectorParameter extends unreal.UMaterialExpressionParameter {
+  public var DefaultValue : unreal.FLinearColor;
   
 }

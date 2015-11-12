@@ -24,7 +24,7 @@ package unreal.paper2d;
 **/
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperSprite.h")
-@:uextern extern class UPaperSprite extends unreal.UObject implements unreal.IInterface_CollisionDataProvider {
+@:uextern extern class UPaperSprite extends unreal.UObject {
   
   /**
     Baked render data (triangle vertices, stored as XY UV tuples)

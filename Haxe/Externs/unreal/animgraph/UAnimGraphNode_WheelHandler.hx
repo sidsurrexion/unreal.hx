@@ -22,5 +22,6 @@ package unreal.animgraph;
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimGraphNode_WheelHandler.h")
 @:uextern extern class UAnimGraphNode_WheelHandler extends unreal.animgraph.UAnimGraphNode_SkeletalControlBase {
+  public var Node : unreal.animgraphruntime.FAnimNode_WheelHandler;
   
 }

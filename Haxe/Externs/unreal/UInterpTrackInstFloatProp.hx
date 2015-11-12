@@ -20,6 +20,11 @@ package unreal;
   
 **/
 @:glueCppIncludes("Matinee/InterpTrackInstFloatProp.h")
-@:uextern extern class UInterpTrackInstFloatProp extends unreal.UInterpTrackInstProperty {
+@:uextern extern class UInterpTrackInstFloatProp extends unreal.UInterpTrackInst {
+  
+  /**
+    Saved value for restoring state when exiting Matinee.
+  **/
+  public var ResetFloat : unreal.Float32;
   
 }

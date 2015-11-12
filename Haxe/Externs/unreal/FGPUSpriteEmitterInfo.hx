@@ -128,11 +128,6 @@ package unreal;
   public var SpawnModules : unreal.TArray<unreal.UParticleModule>;
   
   /**
-    The spawn-per-unit module.
-  **/
-  public var SpawnPerUnitModule : unreal.UParticleModuleSpawnPerUnit;
-  
-  /**
     The spawn module. Needed for now, but should be divorced from the runtime.
   **/
   public var SpawnModule : unreal.UParticleModuleSpawn;

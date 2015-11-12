@@ -23,4 +23,19 @@ package unreal.blueprintgraph;
 @:glueCppIncludes("K2Node_InputTouch.h")
 @:uextern extern class UK2Node_InputTouch extends unreal.blueprintgraph.UK2Node {
   
+  /**
+    Should any bindings to this event in parent classes be removed
+  **/
+  public var bOverrideParentBinding : Bool;
+  
+  /**
+    Should the binding execute even when the game is paused
+  **/
+  public var bExecuteWhenPaused : Bool;
+  
+  /**
+    Prevents actors with lower priority from handling this input
+  **/
+  public var bConsumeInput : Bool;
+  
 }

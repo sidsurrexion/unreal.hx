@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Engine/PlatformInterfaceBase.h")
 @:uextern extern class UPlatformInterfaceBase extends unreal.UObject {
   
+  /**
+    Array of delegate arrays. Only add and remove via helper functions, and call via the helper delegate call function
+  **/
+  public var AllDelegates : unreal.TArray<unreal.FDelegateArray>;
+  
 }

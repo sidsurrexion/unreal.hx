@@ -23,4 +23,12 @@ package unreal.onlinesubsystemutils;
 @:glueCppIncludes("AchievementWriteCallbackProxy.h")
 @:uextern extern class UAchievementWriteCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
   
+  /**
+    Writes progress about an achievement to the default online subsystem
+      AchievementName is the ID of the achievement to update progress on
+      Progress is the reported progress toward accomplishing the achievement
+      UserTag is not used internally, but it is returned on success or failure
+  **/
+  static public function WriteAchievementProgress(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController, AchievementName : unreal.FName, Progress : unreal.Float32, UserTag : unreal.Int32) : unreal.onlinesubsystemutils.UAchievementWriteCallbackProxy;
+  
 }

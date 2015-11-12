@@ -21,5 +21,8 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/SceneCapture2D.h")
 @:uextern extern class ASceneCapture2D extends unreal.ASceneCapture {
+  public var DrawFrustum : unreal.UDrawFrustumComponent;
+  public var CaptureComponent2D : unreal.USceneCaptureComponent2D;
+  @:final public function OnInterpToggle(bEnable : Bool) : Void;
   
 }

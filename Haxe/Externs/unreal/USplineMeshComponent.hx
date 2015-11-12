@@ -19,7 +19,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/Blueprint_Splines
 **/
 @:glueCppIncludes("Components/SplineMeshComponent.h")
-@:uextern extern class USplineMeshComponent extends unreal.UStaticMeshComponent implements unreal.IInterface_CollisionDataProvider {
+@:uextern extern class USplineMeshComponent extends unreal.UStaticMeshComponent {
   #if WITH_EDITORONLY_DATA
   public var bSelected : Bool;
   #end // WITH_EDITORONLY_DATA

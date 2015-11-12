@@ -23,4 +23,9 @@ package unreal.animgraph;
 @:glueCppIncludes("AnimationCustomTransitionGraph.h")
 @:uextern extern class UAnimationCustomTransitionGraph extends unreal.animgraph.UAnimationGraph {
   
+  /**
+    Result node within the state's animation graph
+  **/
+  public var MyResultNode : unreal.animgraph.UAnimGraphNode_CustomTransitionResult;
+  
 }

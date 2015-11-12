@@ -21,5 +21,27 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionTextureCoordinate.h")
 @:uextern extern class UMaterialExpressionTextureCoordinate extends unreal.UMaterialExpression {
+  public var UnMirrorV : Bool;
+  
+  /**
+    Would like to unmirror U or V
+    - if the texture is mirrored and if you would like to undo mirroring for this texture sample, use this to unmirror
+  **/
+  public var UnMirrorU : Bool;
+  
+  /**
+    Controls how much the texture tiles vertically, by scaling the V component of the vertex UVs by the specified amount.
+  **/
+  public var VTiling : unreal.Float32;
+  
+  /**
+    Controls how much the texture tiles horizontally, by scaling the U component of the vertex UVs by the specified amount.
+  **/
+  public var UTiling : unreal.Float32;
+  
+  /**
+    Texture coordinate index
+  **/
+  public var CoordinateIndex : unreal.Int32;
   
 }

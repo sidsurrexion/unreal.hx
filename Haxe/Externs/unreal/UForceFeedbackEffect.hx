@@ -22,4 +22,10 @@ package unreal;
 @:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class UForceFeedbackEffect extends unreal.UObject {
   
+  /**
+    Duration of force feedback pattern in seconds.
+  **/
+  public var Duration : unreal.Float32;
+  public var ChannelDetails : unreal.TArray<unreal.FForceFeedbackChannelDetails>;
+  
 }

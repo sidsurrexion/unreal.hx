@@ -23,4 +23,14 @@ package unreal.onlinesubsystemutils;
 @:glueCppIncludes("AchievementQueryCallbackProxy.h")
 @:uextern extern class UAchievementQueryCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
   
+  /**
+    Fetches and caches achievement progress from the default online subsystem
+  **/
+  static public function CacheAchievements(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController) : unreal.onlinesubsystemutils.UAchievementQueryCallbackProxy;
+  
+  /**
+    Fetches and caches achievement descriptions from the default online subsystem
+  **/
+  static public function CacheAchievementDescriptions(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController) : unreal.onlinesubsystemutils.UAchievementQueryCallbackProxy;
+  
 }

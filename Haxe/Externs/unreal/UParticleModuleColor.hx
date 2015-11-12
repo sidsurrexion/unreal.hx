@@ -20,6 +20,21 @@ package unreal;
   
 **/
 @:glueCppIncludes("Particles/Color/ParticleModuleColor.h")
-@:uextern extern class UParticleModuleColor extends unreal.UParticleModuleColorBase {
+@:uextern extern class UParticleModuleColor extends unreal.UParticleModule {
+  
+  /**
+    If true, the alpha value will be clamped to the [0..1] range.
+  **/
+  public var bClampAlpha : Bool;
+  
+  /**
+    Initial alpha for a particle as a function of Emitter time.
+  **/
+  public var StartAlpha : unreal.FRawDistributionFloat;
+  
+  /**
+    Initial color for a particle as a function of Emitter time.
+  **/
+  public var StartColor : unreal.FRawDistributionVector;
   
 }

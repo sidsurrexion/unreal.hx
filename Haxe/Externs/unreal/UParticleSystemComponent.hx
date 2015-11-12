@@ -26,11 +26,6 @@ package unreal;
   public var CustomTimeDilation : unreal.Float32;
   
   /**
-    Array of replay clips for this particle system component.  These are serialized to disk.  You really should never add anything to this in the editor.  It's exposed so that you can delete clips if you need to, but be careful when doing so!
-  **/
-  public var ReplayClips : unreal.TArray<unreal.UParticleSystemReplay>;
-  
-  /**
     The view relevance flags for each LODLevel.
   **/
   public var CachedViewRelevanceFlags : unreal.TArray<unreal.FMaterialRelevance>;

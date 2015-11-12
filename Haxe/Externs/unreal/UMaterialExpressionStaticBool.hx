@@ -21,5 +21,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionStaticBool.h")
 @:uextern extern class UMaterialExpressionStaticBool extends unreal.UMaterialExpression {
+  public var Value : Bool;
   
 }

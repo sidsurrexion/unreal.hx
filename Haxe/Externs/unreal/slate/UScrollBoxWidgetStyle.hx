@@ -23,4 +23,9 @@ package unreal.slate;
 @:glueCppIncludes("Framework/Styling/ScrollBoxWidgetStyle.h")
 @:uextern extern class UScrollBoxWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
   
+  /**
+    The actual data describing the scrollbox's appearance.
+  **/
+  public var ScrollBoxStyle : unreal.slatecore.FScrollBoxStyle;
+  
 }

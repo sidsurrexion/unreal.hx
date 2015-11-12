@@ -23,4 +23,9 @@ package unreal.editor;
 @:glueCppIncludes("Niagara/NiagaraNodeOp.h")
 @:uextern extern class UNiagaraNodeOp extends unreal.editor.UNiagaraNode {
   
+  /**
+    Name of operation
+  **/
+  public var OpName : unreal.FName;
+  
 }

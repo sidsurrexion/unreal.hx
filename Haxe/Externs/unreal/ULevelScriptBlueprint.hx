@@ -29,5 +29,12 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/LevelScriptBlueprint.h")
 @:uextern extern class ULevelScriptBlueprint extends unreal.UBlueprint {
+  #if WITH_EDITORONLY_DATA
+  
+  /**
+    The friendly name to use for UI
+  **/
+  public var FriendlyName : unreal.FString;
+  #end // WITH_EDITORONLY_DATA
   
 }

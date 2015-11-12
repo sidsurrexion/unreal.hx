@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Sound/SoundNodeParamCrossFade.h")
 @:uextern extern class USoundNodeParamCrossFade extends unreal.USoundNodeDistanceCrossFade {
   
+  /**
+    Parameter controlling cross fades.
+  **/
+  public var ParamName : unreal.FName;
+  
 }

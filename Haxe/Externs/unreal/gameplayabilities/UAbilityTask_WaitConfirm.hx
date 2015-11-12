@@ -22,5 +22,11 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitConfirm.h")
 @:uextern extern class UAbilityTask_WaitConfirm extends unreal.gameplayabilities.UAbilityTask {
+  @:final public function OnConfirmCallback(Ability : unreal.gameplayabilities.UGameplayAbility) : Void;
+  
+  /**
+    Wait until the server confirms the use of this ability. This is used to gate predictive portions of the ability
+  **/
+  static public function WaitConfirm(WorldContextObject : unreal.UObject) : unreal.gameplayabilities.UAbilityTask_WaitConfirm;
   
 }

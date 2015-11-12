@@ -23,4 +23,9 @@ package unreal;
 @:glueCppIncludes("PhysicsEngine/PhysicsThrusterComponent.h")
 @:uextern extern class UPhysicsThrusterComponent extends unreal.USceneComponent {
   
+  /**
+    Strength of thrust force applied to the base object.
+  **/
+  public var ThrustStrength : unreal.Float32;
+  
 }

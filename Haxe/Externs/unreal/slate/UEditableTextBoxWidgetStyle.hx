@@ -23,4 +23,9 @@ package unreal.slate;
 @:glueCppIncludes("Framework/Styling/EditableTextBoxWidgetStyle.h")
 @:uextern extern class UEditableTextBoxWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
   
+  /**
+    The actual data describing the button's appearance.
+  **/
+  public var EditableTextBoxStyle : unreal.slatecore.FEditableTextBoxStyle;
+  
 }

@@ -17,11 +17,6 @@ package unreal;
 @:uextern extern class FParticleEvent_GenerateInfo {
   
   /**
-    The events we want to fire off when this event has been generated
-  **/
-  public var ParticleModuleEventsToSendToGame : unreal.TArray<unreal.UParticleModuleEventSendToGame>;
-  
-  /**
     Should the event tag with a custom name? Leave blank for the default.
   **/
   public var CustomName : unreal.FName;

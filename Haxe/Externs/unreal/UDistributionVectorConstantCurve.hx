@@ -21,5 +21,16 @@ package unreal;
 **/
 @:glueCppIncludes("Distributions/DistributionVectorConstantCurve.h")
 @:uextern extern class UDistributionVectorConstantCurve extends unreal.UDistributionVector {
+  public var LockedAxes : unreal.EDistributionVectorLockFlags;
+  
+  /**
+    If true, X == Y == Z ie. only one degree of freedom. If false, each axis is picked independently.
+  **/
+  public var bLockAxes : Bool;
+  
+  /**
+    Keyframe data for each component (X,Y,Z) over time.
+  **/
+  public var ConstantCurve : unreal.FInterpCurveVector;
   
 }

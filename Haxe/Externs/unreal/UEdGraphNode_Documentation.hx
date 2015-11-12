@@ -22,4 +22,14 @@ package unreal;
 @:glueCppIncludes("EdGraph/EdGraphNode_Documentation.h")
 @:uextern extern class UEdGraphNode_Documentation extends unreal.UEdGraphNode {
   
+  /**
+    Documentation Excerpt
+  **/
+  public var Excerpt : unreal.FString;
+  
+  /**
+    Documentation Link
+  **/
+  public var Link : unreal.FString;
+  
 }

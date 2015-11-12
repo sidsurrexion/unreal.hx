@@ -23,4 +23,12 @@ package unreal.gameplaytagseditor;
 @:glueCppIncludes("GameplayTagsK2Node_SwitchGameplayTag.h")
 @:uextern extern class UGameplayTagsK2Node_SwitchGameplayTag extends unreal.blueprintgraph.UK2Node_Switch {
   
+  /**
+    UPROPERTY(EditAnywhere, Category = PinOptions)
+    bool UseInputsOnGraph;
+  **/
+  public var PinNames : unreal.TArray<unreal.FName>;
+  public var PinTags : unreal.TArray<unreal.gameplaytags.FGameplayTag>;
+  static private function NotEqual_TagTag(A : unreal.gameplaytags.FGameplayTag, B : unreal.FString) : Bool;
+  
 }

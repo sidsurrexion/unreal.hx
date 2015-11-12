@@ -23,4 +23,9 @@ package unreal.onlinesubsystemutils;
 @:glueCppIncludes("LeaderboardFlushCallbackProxy.h")
 @:uextern extern class ULeaderboardFlushCallbackProxy extends unreal.UObject {
   
+  /**
+    Called to perform the query internally
+  **/
+  static public function CreateProxyObjectForFlush(PlayerController : unreal.APlayerController, SessionName : unreal.FName) : unreal.onlinesubsystemutils.ULeaderboardFlushCallbackProxy;
+  
 }

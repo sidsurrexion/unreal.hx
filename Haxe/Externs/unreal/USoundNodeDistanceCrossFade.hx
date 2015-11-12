@@ -45,4 +45,10 @@ package unreal;
 @:glueCppIncludes("Sound/SoundNodeDistanceCrossFade.h")
 @:uextern extern class USoundNodeDistanceCrossFade extends unreal.USoundNode {
   
+  /**
+    Each input needs to have the correct data filled in so the SoundNodeDistanceCrossFade is able
+    to determine which sounds to play
+  **/
+  public var CrossFadeInput : unreal.TArray<unreal.FDistanceDatum>;
+  
 }

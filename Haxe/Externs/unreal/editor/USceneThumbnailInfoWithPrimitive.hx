@@ -23,4 +23,14 @@ package unreal.editor;
 @:glueCppIncludes("ThumbnailRendering/SceneThumbnailInfoWithPrimitive.h")
 @:uextern extern class USceneThumbnailInfoWithPrimitive extends unreal.editor.USceneThumbnailInfo {
   
+  /**
+    The custom mesh used when the primitive type is TPT_None
+  **/
+  public var PreviewMesh : unreal.FStringAssetReference;
+  
+  /**
+    The type of primitive used in this thumbnail
+  **/
+  public var PrimitiveType : unreal.editor.EThumbnailPrimType;
+  
 }

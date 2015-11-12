@@ -22,4 +22,14 @@ package unreal;
 @:glueCppIncludes("VectorField/VectorField.h")
 @:uextern extern class UVectorField extends unreal.UObject {
   
+  /**
+    The intensity with which to multiplie vectors in this field.
+  **/
+  public var Intensity : unreal.Float32;
+  
+  /**
+    Bounds of the volume in local space.
+  **/
+  public var Bounds : unreal.FBox;
+  
 }

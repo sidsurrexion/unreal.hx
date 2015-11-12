@@ -14,6 +14,6 @@
 package unreal;
 
 @:glueCppIncludes("Debug/ReporterGraph.h")
-@:uextern extern class UReporterGraph extends unreal.UReporterBase {
+@:uextern extern class UReporterGraph extends unreal.UObject {
   
 }

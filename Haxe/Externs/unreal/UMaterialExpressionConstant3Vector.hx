@@ -21,5 +21,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionConstant3Vector.h")
 @:uextern extern class UMaterialExpressionConstant3Vector extends unreal.UMaterialExpression {
+  public var Constant : unreal.FLinearColor;
   
 }

@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Sound/SoundNodeSwitch.h")
 @:uextern extern class USoundNodeSwitch extends unreal.USoundNode {
   
+  /**
+    The name of the integer parameter to use to determine which branch we should take
+  **/
+  public var IntParameterName : unreal.FName;
+  
 }

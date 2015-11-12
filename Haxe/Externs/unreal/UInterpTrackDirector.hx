@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Matinee/InterpTrackDirector.h")
 @:uextern extern class UInterpTrackDirector extends unreal.UInterpTrack {
   
+  /**
+    Array of cuts between cameras.
+  **/
+  public var CutTrack : unreal.TArray<unreal.FDirectorTrackCut>;
+  
 }

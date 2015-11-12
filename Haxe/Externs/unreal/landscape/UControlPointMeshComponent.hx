@@ -22,5 +22,8 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("ControlPointMeshComponent.h")
 @:uextern extern class UControlPointMeshComponent extends unreal.UStaticMeshComponent {
+  #if WITH_EDITORONLY_DATA
+  public var bSelected : Bool;
+  #end // WITH_EDITORONLY_DATA
   
 }

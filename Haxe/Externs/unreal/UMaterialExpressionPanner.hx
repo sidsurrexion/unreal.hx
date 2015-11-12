@@ -22,4 +22,27 @@ package unreal;
 @:glueCppIncludes("Materials/MaterialExpressionPanner.h")
 @:uextern extern class UMaterialExpressionPanner extends unreal.UMaterialExpression {
   
+  /**
+    Output only the fractional part of the pan calculation for greater precision.
+    Output is greater than or equal to 0 and less than 1.
+  **/
+  public var bFractionalPart : Bool;
+  
+  /**
+    only used if Coordinate is not hooked up
+  **/
+  public var ConstCoordinate : unreal.FakeUInt32;
+  public var SpeedY : unreal.Float32;
+  public var SpeedX : unreal.Float32;
+  
+  /**
+    Defaults to Game Time if not specified
+  **/
+  public var Time : unreal.FExpressionInput;
+  
+  /**
+    Defaults to 'ConstCoordinate' if not specified
+  **/
+  public var Coordinate : unreal.FExpressionInput;
+  
 }

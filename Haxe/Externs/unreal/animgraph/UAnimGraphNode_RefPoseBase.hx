@@ -22,5 +22,6 @@ package unreal.animgraph;
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimGraphNode_RefPoseBase.h")
 @:uextern extern class UAnimGraphNode_RefPoseBase extends unreal.animgraph.UAnimGraphNode_Base {
+  public var Node : unreal.FAnimNode_RefPose;
   
 }

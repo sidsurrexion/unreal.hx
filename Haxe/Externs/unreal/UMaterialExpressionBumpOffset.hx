@@ -22,4 +22,22 @@ package unreal;
 @:glueCppIncludes("Materials/MaterialExpressionBumpOffset.h")
 @:uextern extern class UMaterialExpressionBumpOffset extends unreal.UMaterialExpression {
   
+  /**
+    only used if Coordinate is not hooked up
+  **/
+  public var ConstCoordinate : unreal.FakeUInt32;
+  
+  /**
+    Perceived height as a fraction of width.
+  **/
+  public var ReferencePlane : unreal.Float32;
+  public var HeightRatio : unreal.Float32;
+  public var HeightRatioInput : unreal.FExpressionInput;
+  public var Height : unreal.FExpressionInput;
+  
+  /**
+    Defaults to 'ConstCoordinate' if not specified
+  **/
+  public var Coordinate : unreal.FExpressionInput;
+  
 }

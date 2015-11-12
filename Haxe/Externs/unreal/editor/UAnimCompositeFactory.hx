@@ -23,4 +23,10 @@ package unreal.editor;
 @:glueCppIncludes("Factories/AnimCompositeFactory.h")
 @:uextern extern class UAnimCompositeFactory extends unreal.editor.UFactory {
   
+  /**
+    Used when creating a composite from an AnimSequence, becomes the only AnimSequence contained
+  **/
+  public var SourceAnimation : unreal.UAnimSequence;
+  public var TargetSkeleton : unreal.USkeleton;
+  
 }

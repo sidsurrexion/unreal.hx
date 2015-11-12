@@ -21,5 +21,6 @@ package unreal;
 **/
 @:glueCppIncludes("Matinee/InterpTrackInstDirector.h")
 @:uextern extern class UInterpTrackInstDirector extends unreal.UInterpTrackInst {
+  public var OldViewTarget : unreal.AActor;
   
 }

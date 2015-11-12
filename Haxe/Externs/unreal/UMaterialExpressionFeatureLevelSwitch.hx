@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Materials/MaterialExpressionFeatureLevelSwitch.h")
 @:uextern extern class UMaterialExpressionFeatureLevelSwitch extends unreal.UMaterialExpression {
   
+  /**
+    Default connection, used when a certain feature level doesn't have an override.
+  **/
+  public var Default : unreal.FExpressionInput;
+  
 }

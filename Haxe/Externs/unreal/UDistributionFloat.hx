@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Distributions/DistributionFloat.h")
 @:uextern extern class UDistributionFloat extends unreal.UDistribution {
   
+  /**
+    Can this variable be baked out to a FRawDistribution? Should be true 99% of the time
+  **/
+  public var bCanBeBaked : Bool;
+  
 }

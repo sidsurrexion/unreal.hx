@@ -44,11 +44,6 @@ package unreal;
   #end // WITH_EDITORONLY_DATA
   
   /**
-    Particle event manager *
-  **/
-  public var MyParticleEventManager : unreal.AParticleEventManager;
-  
-  /**
     Fake NetDriver for capturing network traffic to record demos
   **/
   public var DemoNetDriver : unreal.UDemoNetDriver;

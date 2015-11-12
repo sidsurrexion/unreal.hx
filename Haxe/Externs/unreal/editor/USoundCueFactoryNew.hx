@@ -23,4 +23,9 @@ package unreal.editor;
 @:glueCppIncludes("Factories/SoundCueFactoryNew.h")
 @:uextern extern class USoundCueFactoryNew extends unreal.editor.UFactory {
   
+  /**
+    An initial sound wave to place in the newly created cue
+  **/
+  public var InitialSoundWave : unreal.USoundWave;
+  
 }

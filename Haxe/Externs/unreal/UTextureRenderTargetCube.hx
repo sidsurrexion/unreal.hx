@@ -25,4 +25,29 @@ package unreal;
 @:glueCppIncludes("Engine/TextureRenderTargetCube.h")
 @:uextern extern class UTextureRenderTargetCube extends unreal.UTextureRenderTarget {
   
+  /**
+    True to force linear gamma space for this render target
+  **/
+  public var bForceLinearGamma : Bool;
+  
+  /**
+    Whether to support storing HDR values, which requires more memory.
+  **/
+  public var bHDR : Bool;
+  
+  /**
+    Normally the format is derived from bHDR, this allows code to set the format explicitly.
+  **/
+  public var OverrideFormat : unreal.EPixelFormat;
+  
+  /**
+    the color the texture is cleared to
+  **/
+  public var ClearColor : unreal.FLinearColor;
+  
+  /**
+    The width of the texture.
+  **/
+  public var SizeX : unreal.Int32;
+  
 }

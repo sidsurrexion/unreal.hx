@@ -22,4 +22,14 @@ package unreal;
 @:glueCppIncludes("Materials/MaterialExpressionReflectionVectorWS.h")
 @:uextern extern class UMaterialExpressionReflectionVectorWS extends unreal.UMaterialExpression {
   
+  /**
+    (true): The specified world normal will be normalized. (false): WorldNormal will just be used as is, faster but possible artifacts if normal length isn't 1
+  **/
+  public var bNormalizeCustomWorldNormal : Bool;
+  
+  /**
+    Defaults to Reflection Vector if not specified
+  **/
+  public var CustomWorldNormal : unreal.FExpressionInput;
+  
 }

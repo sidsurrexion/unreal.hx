@@ -22,5 +22,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("Blueprint/AIAsyncTaskBlueprintProxy.h")
 @:uextern extern class UAIAsyncTaskBlueprintProxy extends unreal.UObject {
+  @:final public function OnMoveCompleted(RequestID : unreal.aimodule.FAIRequestID, MovementResult : unreal.aimodule.EPathFollowingResult) : Void;
   
 }

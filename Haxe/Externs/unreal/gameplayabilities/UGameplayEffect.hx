@@ -179,11 +179,6 @@ package unreal.gameplayabilities;
     When false, show a limited set of properties for editing, based on the template we are derived from
   **/
   public var ShowAllProperties : Bool;
-  
-  /**
-    Template to derive starting values and editing customization from
-  **/
-  public var Template : unreal.gameplayabilities.UGameplayEffectTemplate;
   #end // WITH_EDITORONLY_DATA
   // GameplayTagAssetInterface interface implementation
   

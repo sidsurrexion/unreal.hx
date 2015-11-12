@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Sound/SoundNodeBranch.h")
 @:uextern extern class USoundNodeBranch extends unreal.USoundNode {
   
+  /**
+    The name of the boolean parameter to use to determine which branch we should take
+  **/
+  public var BoolParameterName : unreal.FName;
+  
 }

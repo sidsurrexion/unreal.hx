@@ -21,7 +21,7 @@ package unreal;
   @see USkeletalMesh
 **/
 @:glueCppIncludes("Components/SkeletalMeshComponent.h")
-@:uextern extern class USkeletalMeshComponent extends unreal.USkinnedMeshComponent implements unreal.IInterface_CollisionDataProvider {
+@:uextern extern class USkeletalMeshComponent extends unreal.USkinnedMeshComponent {
   
   /**
     Keep track of when animation has been ticked to ensure it is ticked only once per frame.

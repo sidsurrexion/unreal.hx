@@ -28,11 +28,6 @@ package unreal.editor;
   public var bExpandClassPickerClassList : Bool;
   
   /**
-    Pointer to the key bindings object that actually stores key bindings for the editor.
-  **/
-  public var EditorKeyBindings : unreal.editor.UUnrealEdKeyBindings;
-  
-  /**
     Commands that can be bound to in the editor.
   **/
   public var EditorCommands : unreal.TArray<unreal.editor.FEditorCommand>;

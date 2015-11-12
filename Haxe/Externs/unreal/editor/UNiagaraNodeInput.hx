@@ -23,4 +23,23 @@ package unreal.editor;
 @:glueCppIncludes("Niagara/NiagaraNodeInput.h")
 @:uextern extern class UNiagaraNodeInput extends unreal.editor.UNiagaraNode {
   
+  /**
+    When true, and this input is a constant, the input is exposed to the effect editor.
+  **/
+  public var bExposeWhenConstant : Bool;
+  
+  /**
+    Allows code to explicitly disable exposing of certain inputs e.g. system constants such as Delta Time.
+  **/
+  public var bCanBeExposed : Bool;
+  public var DataObjectDefault : unreal.vectorvm.UNiagaraDataObject;
+  public var MatrixDefault : unreal.FMatrix;
+  public var VectorDefault : unreal.FVector4;
+  
+  /**
+    TODO: Customize the details for this and hide these when they're not relevant.
+  **/
+  public var FloatDefault : unreal.Float32;
+  public var Input : unreal.niagara.FNiagaraVariableInfo;
+  
 }

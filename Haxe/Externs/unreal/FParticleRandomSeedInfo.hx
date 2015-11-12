@@ -13,7 +13,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Particles/Color/ParticleModuleColor_Seeded.h")
+@:glueCppIncludes("Particles/Light/ParticleModuleLight_Seeded.h")
 @:uextern extern class FParticleRandomSeedInfo {
   
   /**

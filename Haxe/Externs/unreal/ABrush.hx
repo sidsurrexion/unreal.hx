@@ -30,7 +30,6 @@ package unreal;
   public var BrushBuilder : unreal.UBrushBuilder;
   #end // WITH_EDITORONLY_DATA
   public var BrushComponent : unreal.UBrushComponent;
-  public var Brush : unreal.UModel;
   
   /**
     If true, this brush is a builder or otherwise does not need to be loaded into the game

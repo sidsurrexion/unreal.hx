@@ -23,4 +23,9 @@ package unreal.blueprintgraph;
 @:glueCppIncludes("K2Node_StructOperation.h")
 @:uextern extern class UK2Node_StructOperation extends unreal.blueprintgraph.UK2Node_Variable {
   
+  /**
+    Class that this variable is defined in.
+  **/
+  public var StructType : unreal.UScriptStruct;
+  
 }

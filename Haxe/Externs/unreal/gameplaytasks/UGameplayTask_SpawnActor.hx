@@ -31,5 +31,8 @@ package unreal.gameplaytasks;
 @:umodule("GameplayTasks")
 @:glueCppIncludes("Tasks/GameplayTask_SpawnActor.h")
 @:uextern extern class UGameplayTask_SpawnActor extends unreal.gameplaytasks.UGameplayTask {
+  private var ClassToSpawn : unreal.TSubclassOf<unreal.AActor>;
+  public function BeginSpawningActor(WorldContextObject : unreal.UObject, SpawnedActor : unreal.PRef<unreal.AActor>) : Bool;
+  public function FinishSpawningActor(WorldContextObject : unreal.UObject, SpawnedActor : unreal.AActor) : Void;
   
 }

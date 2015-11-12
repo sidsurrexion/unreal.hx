@@ -20,6 +20,21 @@ package unreal;
   
 **/
 @:glueCppIncludes("Particles/Color/ParticleModuleColorScaleOverLife.h")
-@:uextern extern class UParticleModuleColorScaleOverLife extends unreal.UParticleModuleColorBase {
+@:uextern extern class UParticleModuleColorScaleOverLife extends unreal.UParticleModule {
+  
+  /**
+    Whether it is EmitterTime or ParticleTime related.
+  **/
+  public var bEmitterTime : Bool;
+  
+  /**
+    The scale factor for the alpha.
+  **/
+  public var AlphaScaleOverLife : unreal.FRawDistributionFloat;
+  
+  /**
+    The scale factor for the color.
+  **/
+  public var ColorScaleOverLife : unreal.FRawDistributionVector;
   
 }

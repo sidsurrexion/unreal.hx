@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Curves/CurveVector.h")
 @:uextern extern class UCurveVector extends unreal.UCurveBase {
   
+  /**
+    Evaluate this float curve at the specified time
+  **/
+  @:thisConst @:final public function GetVectorValue(InTime : unreal.Float32) : unreal.FVector;
+  
 }

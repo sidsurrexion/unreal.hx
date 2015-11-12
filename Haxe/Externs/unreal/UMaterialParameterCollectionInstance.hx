@@ -23,4 +23,14 @@ package unreal;
 @:glueCppIncludes("Materials/MaterialParameterCollectionInstance.h")
 @:uextern extern class UMaterialParameterCollectionInstance extends unreal.UObject {
   
+  /**
+    World that owns this instance.
+  **/
+  private var World : unreal.UWorld;
+  
+  /**
+    Collection resource this instance is based off of.
+  **/
+  private var Collection : unreal.UMaterialParameterCollection;
+  
 }

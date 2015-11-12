@@ -21,5 +21,10 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionComponentMask.h")
 @:uextern extern class UMaterialExpressionComponentMask extends unreal.UMaterialExpression {
+  public var A : Bool;
+  public var B : Bool;
+  public var G : Bool;
+  public var R : Bool;
+  public var Input : unreal.FExpressionInput;
   
 }

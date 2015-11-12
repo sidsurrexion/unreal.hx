@@ -22,4 +22,10 @@ package unreal;
 @:glueCppIncludes("Sound/SoundNodeDialoguePlayer.h")
 @:uextern extern class USoundNodeDialoguePlayer extends unreal.USoundNode {
   
+  /**
+    Whether the dialogue line should be played looping
+  **/
+  public var bLooping : Bool;
+  public var DialogueWaveParameter : unreal.FDialogueWaveParameter;
+  
 }

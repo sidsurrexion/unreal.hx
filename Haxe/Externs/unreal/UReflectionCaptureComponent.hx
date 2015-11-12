@@ -22,4 +22,9 @@ package unreal;
 @:glueCppIncludes("Components/ReflectionCaptureComponent.h")
 @:uextern extern class UReflectionCaptureComponent extends unreal.USceneComponent {
   
+  /**
+    A brightness control to scale the captured scene's reflection intensity.
+  **/
+  public var Brightness : unreal.Float32;
+  
 }
