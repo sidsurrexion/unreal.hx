@@ -17,12 +17,6 @@ package unreal;
 @:uextern extern class ABrush extends unreal.AActor {
   
   /**
-    Stores selection information from geometry mode.  This is the only information that we can't
-    regenerate by looking at the source brushes following an undo operation.
-  **/
-  public var SavedSelections : unreal.TArray<unreal.FGeomSelection>;
-  
-  /**
     Flag set when we are in a manipulation (scaling, translation, brush builder param change etc.)
   **/
   public var bInManipulation : Bool;

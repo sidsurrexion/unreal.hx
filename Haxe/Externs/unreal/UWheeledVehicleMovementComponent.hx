@@ -101,21 +101,6 @@ package unreal;
   public var AvoidanceWeight : unreal.Float32;
   
   /**
-    Will NOT avoid other agents if they are in one of specified groups, higher priority than GroupsToAvoid
-  **/
-  public var GroupsToIgnore : unreal.FNavAvoidanceMask;
-  
-  /**
-    Will avoid other agents if they are in one of specified groups
-  **/
-  public var GroupsToAvoid : unreal.FNavAvoidanceMask;
-  
-  /**
-    Moving actor's group mask
-  **/
-  public var AvoidanceGroup : unreal.FNavAvoidanceMask;
-  
-  /**
     No default value, for now it's assumed to be valid if GetAvoidanceManager() returns non-NULL.
   **/
   public var AvoidanceUID : unreal.Int32;

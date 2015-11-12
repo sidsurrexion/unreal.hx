@@ -17,6 +17,5 @@ package unreal.gameplaydebugger;
 @:glueCppIncludes("GameplayDebuggerSettings.h")
 @:uextern extern class UGameplayDebuggerSettings extends unreal.UObject {
   private var ActiveEQSIndex : unreal.Int32;
-  private var CustomViewNames : unreal.gameplaydebugger.FGDTCustomViewNames;
   
 }

@@ -23,11 +23,6 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/CollisionProfile.h")
 @:uextern extern class FCustomProfile {
-  
-  /**
-    Types of objects that this physics objects will collide with.
-  **/
-  public var CustomResponses : unreal.TArray<unreal.FResponseChannel>;
   public var Name : unreal.FName;
   
 }

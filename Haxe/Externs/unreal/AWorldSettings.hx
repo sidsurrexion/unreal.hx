@@ -85,20 +85,9 @@ package unreal;
   public var DefaultBaseSoundMix : unreal.USoundMix;
   
   /**
-    Default interior settings used by audio volumes.
-  **/
-  public var DefaultAmbientZoneSettings : unreal.FInteriorSettings;
-  
-  /**
-    Default reverb settings used by audio volumes.
-  **/
-  public var DefaultReverbSettings : unreal.FReverbSettings;
-  
-  /**
     The lighting quality the level was last built with
   **/
   public var LevelLightingQuality : unreal.ELightingBuildQuality;
-  public var LightmassSettings : unreal.FLightmassWorldInfoSettings;
   
   /**
     Whether to force lightmaps and other precomputed lighting to not be created even when the engine thinks they are needed.
@@ -151,11 +140,6 @@ package unreal;
     Class of GameNetworkManager to spawn for network games
   **/
   public var GameNetworkManagerClass : unreal.TSubclassOf<unreal.AGameNetworkManager>;
-  
-  /**
-    Used for loading appropriate game type if non-specified in URL
-  **/
-  public var DefaultMapPrefixes : unreal.TArray<unreal.FGameModePrefix>;
   
   /**
     The default GameMode to use when starting this map in the game. If this value is NULL, the INI setting for default game type is used.

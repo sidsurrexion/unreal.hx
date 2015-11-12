@@ -19,9 +19,5 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FKAggregateGeom {
-  public var ConvexElems : unreal.TArray<unreal.FKConvexElem>;
-  public var SphylElems : unreal.TArray<unreal.FKSphylElem>;
-  public var BoxElems : unreal.TArray<unreal.FKBoxElem>;
-  public var SphereElems : unreal.TArray<unreal.FKSphereElem>;
   
 }

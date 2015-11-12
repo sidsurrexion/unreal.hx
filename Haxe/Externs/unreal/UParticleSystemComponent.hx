@@ -76,12 +76,6 @@ package unreal;
   public var OldPosition : unreal.FVector;
   
   /**
-    Array holding name instance parameters for this ParticleSystemComponent.
-    Parameters can be used in Cascade using DistributionFloat/VectorParticleParameters.
-  **/
-  public var InstanceParameters : unreal.TArray<unreal.FParticleSysParam>;
-  
-  /**
     whether to update the particle system on dedicated servers
   **/
   public var bUpdateOnDedicatedServer : Bool;

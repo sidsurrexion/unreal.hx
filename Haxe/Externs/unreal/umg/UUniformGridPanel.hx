@@ -30,12 +30,6 @@ package unreal.umg;
     The minimum desired width of the slots
   **/
   public var MinDesiredSlotWidth : unreal.Float32;
-  
-  /**
-    Padding given to each slot
-  **/
-  public var SlotPadding : unreal.slatecore.FMargin;
-  @:final public function SetSlotPadding(InSlotPadding : unreal.slatecore.FMargin) : Void;
   @:final public function SetMinDesiredSlotWidth(InMinDesiredSlotWidth : unreal.Float32) : Void;
   @:final public function SetMinDesiredSlotHeight(InMinDesiredSlotHeight : unreal.Float32) : Void;
   @:final public function AddChildToUniformGrid(Content : unreal.umg.UWidget) : unreal.umg.UUniformGridSlot;

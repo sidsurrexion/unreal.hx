@@ -23,9 +23,4 @@ package unreal.aimodule;
   **/
   private var LocalContexts : unreal.TArray<unreal.aimodule.UEnvQueryContext>;
   
-  /**
-    cache of instances
-  **/
-  private var InstanceCache : unreal.TArray<unreal.aimodule.FEnvQueryInstanceCache>;
-  
 }

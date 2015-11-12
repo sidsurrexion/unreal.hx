@@ -46,9 +46,4 @@ package unreal.animgraphruntime;
   **/
   public var DisplaySpace : unreal.EBoneControlSpace;
   
-  /**
-    Name of bone to observe.
-  **/
-  public var BoneToObserve : unreal.FBoneReference;
-  
 }

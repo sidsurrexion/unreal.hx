@@ -20,7 +20,7 @@ package unreal;
   Quaternion.
   The full C++ class is located here: Engine\Source\Runtime\Core\Public\Math\Quat.h
 **/
-@:glueCppIncludes("PhysicsEngine/BodySetup.h")
+@:glueCppIncludes("Engine/LevelStreaming.h")
 @:uextern extern class FQuat {
   
 }

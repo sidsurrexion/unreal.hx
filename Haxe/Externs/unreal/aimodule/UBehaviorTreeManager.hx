@@ -19,11 +19,6 @@ package unreal.aimodule;
   private var ActiveComponents : unreal.TArray<unreal.aimodule.UBehaviorTreeComponent>;
   
   /**
-    initialized tree templates
-  **/
-  private var LoadedTemplates : unreal.TArray<unreal.aimodule.FBehaviorTreeTemplateInfo>;
-  
-  /**
     limit for recording execution steps for debugger
   **/
   public var MaxDebuggerSteps : unreal.Int32;

@@ -18,9 +18,4 @@ package unreal;
   static public function EvaluateCurveTableRow(CurveTable : unreal.UCurveTable, RowName : unreal.FName, InXY : unreal.Float32, OutResult : unreal.PRef<unreal.EEvaluateCurveTableResult>, OutXY : unreal.Float32) : Void;
   static public function GetDataTableRowNames(Table : unreal.UDataTable, OutRowNames : unreal.PRef<unreal.TArray<unreal.FName>>) : Void;
   
-  /**
-    Get a Row from a DataTable given a RowName
-  **/
-  static public function GetDataTableRowFromName(Table : unreal.UDataTable, RowName : unreal.FName, OutRow : unreal.PRef<unreal.FTableRowBase>) : Bool;
-  
 }

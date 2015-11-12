@@ -78,49 +78,6 @@ package unreal.umg;
   static public function DrawText(Context : unreal.PRef<unreal.umg.FPaintContext>, InString : unreal.FString, Position : unreal.FVector2D, Tint : unreal.FLinearColor) : Void;
   
   /**
-    The event reply to use when you choose to handle an event.  This will prevent the event
-    from continuing to bubble up / down the widget hierarchy.
-  **/
-  static public function Handled() : unreal.umg.FEventReply;
-  
-  /**
-    The event reply to use when you choose not to handle an event.
-  **/
-  static public function Unhandled() : unreal.umg.FEventReply;
-  static public function CaptureMouse(Reply : unreal.PRef<unreal.umg.FEventReply>, CapturingWidget : unreal.umg.UWidget) : unreal.umg.FEventReply;
-  static public function ReleaseMouseCapture(Reply : unreal.PRef<unreal.umg.FEventReply>) : unreal.umg.FEventReply;
-  static public function LockMouse(Reply : unreal.PRef<unreal.umg.FEventReply>, CapturingWidget : unreal.umg.UWidget) : unreal.umg.FEventReply;
-  static public function UnlockMouse(Reply : unreal.PRef<unreal.umg.FEventReply>) : unreal.umg.FEventReply;
-  static public function SetUserFocus(Reply : unreal.PRef<unreal.umg.FEventReply>, FocusWidget : unreal.umg.UWidget, bInAllUsers : Bool) : unreal.umg.FEventReply;
-  static public function CaptureJoystick(Reply : unreal.PRef<unreal.umg.FEventReply>, CapturingWidget : unreal.umg.UWidget, bInAllJoysticks : Bool) : unreal.umg.FEventReply;
-  static public function ClearUserFocus(Reply : unreal.PRef<unreal.umg.FEventReply>, bInAllUsers : Bool) : unreal.umg.FEventReply;
-  static public function ReleaseJoystickCapture(Reply : unreal.PRef<unreal.umg.FEventReply>, bInAllJoysticks : Bool) : unreal.umg.FEventReply;
-  static public function SetMousePosition(Reply : unreal.PRef<unreal.umg.FEventReply>, NewMousePosition : unreal.FVector2D) : unreal.umg.FEventReply;
-  
-  /**
-    Ask Slate to detect if a user starts dragging in this widget later.  Slate internally tracks the movement
-    and if it surpasses the drag threshold, Slate will send an OnDragDetected event to the widget.
-    
-    @param WidgetDetectingDrag  Detect dragging in this widget
-    @param DragKey                      This button should be pressed to detect the drag
-  **/
-  static public function DetectDrag(Reply : unreal.PRef<unreal.umg.FEventReply>, WidgetDetectingDrag : unreal.umg.UWidget, DragKey : unreal.inputcore.FKey) : unreal.umg.FEventReply;
-  
-  /**
-    Given the pointer event, emit the DetectDrag reply if the provided key was pressed.
-    If the DragKey is a touch key, that will also automatically work.
-    @param PointerEvent  The pointer device event coming in.
-    @param WidgetDetectingDrag  Detect dragging in this widget.
-    @param DragKey                      This button should be pressed to detect the drag, won't emit the DetectDrag FEventReply unless this is pressed.
-  **/
-  static public function DetectDragIfPressed(PointerEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>, WidgetDetectingDrag : unreal.umg.UWidget, DragKey : unreal.inputcore.FKey) : unreal.umg.FEventReply;
-  
-  /**
-    An event should return FReply::Handled().EndDragDrop() to request that the current drag/drop operation be terminated.
-  **/
-  static public function EndDragDrop(Reply : unreal.PRef<unreal.umg.FEventReply>) : unreal.umg.FEventReply;
-  
-  /**
     Returns true if a drag/drop event is occurring that a widget can handle.
   **/
   static public function IsDragDropping() : Bool;
@@ -221,11 +178,5 @@ package unreal.umg;
     @param TopLevelOnly Only the widgets that are direct children of the viewport will be returned.
   **/
   static public function GetAllWidgetsWithInterface(WorldContextObject : unreal.UObject, Interface : unreal.TSubclassOf<unreal.IInterface>, FoundWidgets : unreal.PRef<unreal.TArray<unreal.umg.UUserWidget>>, TopLevelOnly : Bool) : Void;
-  static public function GetInputEventFromKeyEvent(Event : unreal.Const<unreal.PRef<unreal.slatecore.FKeyEvent>>) : unreal.slatecore.FInputEvent;
-  static public function GetInputEventFromAnalogInputEvent(Event : unreal.Const<unreal.PRef<unreal.slatecore.FAnalogInputEvent>>) : unreal.slatecore.FInputEvent;
-  static public function GetInputEventFromCharacterEvent(Event : unreal.Const<unreal.PRef<unreal.slatecore.FCharacterEvent>>) : unreal.slatecore.FInputEvent;
-  static public function GetInputEventFromPointerEvent(Event : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.slatecore.FInputEvent;
-  static public function GetInputEventFromControllerEvent(Event : unreal.Const<unreal.PRef<unreal.slatecore.FControllerEvent>>) : unreal.slatecore.FInputEvent;
-  static public function GetInputEventFromNavigationEvent(Event : unreal.Const<unreal.PRef<unreal.slatecore.FNavigationEvent>>) : unreal.slatecore.FInputEvent;
   
 }

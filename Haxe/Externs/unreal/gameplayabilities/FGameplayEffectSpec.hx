@@ -26,7 +26,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
 @:uextern extern class FGameplayEffectSpec {
-  public var GrantedAbilitySpecs : unreal.TArray<unreal.gameplayabilities.FGameplayAbilitySpecDef>;
   
   /**
     Whether the duration of the spec is locked or not; If it is, attempts to set it will fail
@@ -43,7 +42,6 @@ package unreal.gameplayabilities;
   **/
   public var bCompletedSourceAttributeCapture : Bool;
   public var StackCount : unreal.Int32;
-  public var Modifiers : unreal.TArray<unreal.gameplayabilities.FModifierSpec>;
   
   /**
     Tags that are on this effect spec and that did not come from the UGameplayEffect def. These are replicated.

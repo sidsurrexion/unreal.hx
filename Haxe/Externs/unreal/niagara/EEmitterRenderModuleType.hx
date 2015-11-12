@@ -14,7 +14,7 @@
 package unreal.niagara;
 
 @:umodule("Niagara")
-@:glueCppIncludes("NiagaraEffect.h")
+@:glueCppIncludes("NiagaraSimulation.h")
 @:uname("EEmitterRenderModuleType")
 @:uextern extern enum EEmitterRenderModuleType {
   RMT_None;

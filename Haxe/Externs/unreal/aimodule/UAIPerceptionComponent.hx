@@ -51,9 +51,4 @@ package unreal.aimodule;
   **/
   @:thisConst @:final public function GetPerceivedActors(SenseToUse : unreal.TSubclassOf<unreal.aimodule.UAISense>, OutActors : unreal.PRef<unreal.TArray<unreal.AActor>>) : Void;
   
-  /**
-    Retrieves whatever has been sensed about given actor
-  **/
-  @:final public function GetActorsPerception(Actor : unreal.AActor, Info : unreal.PRef<unreal.aimodule.FActorPerceptionBlueprintInfo>) : Bool;
-  
 }

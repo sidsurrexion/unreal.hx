@@ -29,15 +29,6 @@ package unreal.gameplayabilities;
   public function OnOwnerDestroyed() : Void;
   
   /**
-    Generic Event Graph event that will get called for every event type
-  **/
-  public function K2_HandleGameplayCue(MyTarget : unreal.AActor, EventType : unreal.gameplayabilities.EGameplayCueEvent, Parameters : unreal.gameplayabilities.FGameplayCueParameters) : Void;
-  public function OnExecute(MyTarget : unreal.AActor, Parameters : unreal.gameplayabilities.FGameplayCueParameters) : Bool;
-  public function OnActive(MyTarget : unreal.AActor, Parameters : unreal.gameplayabilities.FGameplayCueParameters) : Bool;
-  public function WhileActive(MyTarget : unreal.AActor, Parameters : unreal.gameplayabilities.FGameplayCueParameters) : Bool;
-  public function OnRemove(MyTarget : unreal.AActor, Parameters : unreal.gameplayabilities.FGameplayCueParameters) : Bool;
-  
-  /**
     Does this cue get a new instance for each source object? For example if two source objects apply a GC to the same source, do we create two of these GameplayCue Notify actors or just one?
     If the notify is simply playing FX or sounds on the source, it should not need unique instances. If this Notify is attaching a beam from the source object to the target, it does need a unique instance per instigator.
   **/

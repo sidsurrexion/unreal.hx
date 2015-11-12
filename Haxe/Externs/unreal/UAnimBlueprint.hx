@@ -21,18 +21,6 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimBlueprint.h")
 @:uextern extern class UAnimBlueprint extends unreal.UBlueprint {
-  #if WITH_EDITORONLY_DATA
-  
-  /**
-    Array of overrides to asset containing nodes in the parent that have been overridden
-  **/
-  public var ParentAssetOverrides : unreal.TArray<unreal.FAnimParentNodeAssetOverride>;
-  #end // WITH_EDITORONLY_DATA
-  
-  /**
-    List of animation sync groups
-  **/
-  public var Groups : unreal.TArray<unreal.FAnimGroupInfo>;
   
   /**
     The kind of skeleton that animation graphs compiled from the blueprint will animate

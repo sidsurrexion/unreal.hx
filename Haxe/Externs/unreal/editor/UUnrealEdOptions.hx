@@ -18,23 +18,8 @@ package unreal.editor;
 @:uextern extern class UUnrealEdOptions extends unreal.UObject {
   
   /**
-    The array of default objects in the blueprint class dialog *
-  **/
-  public var NewAssetDefaultClasses : unreal.TArray<unreal.editor.FClassPickerDefaults>;
-  
-  /**
     If true, the list of classes in the class picker dialog will be expanded
   **/
   public var bExpandClassPickerClassList : Bool;
-  
-  /**
-    Commands that can be bound to in the editor.
-  **/
-  public var EditorCommands : unreal.TArray<unreal.editor.FEditorCommand>;
-  
-  /**
-    Categories of commands.
-  **/
-  public var EditorCategories : unreal.TArray<unreal.editor.FEditorCommandCategory>;
   
 }

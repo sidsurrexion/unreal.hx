@@ -25,7 +25,6 @@ package unreal.umg;
 @:uextern extern class UWidgetBlueprintGeneratedClass extends unreal.UBlueprintGeneratedClass {
   public var NamedSlots : unreal.TArray<unreal.FName>;
   public var Animations : unreal.TArray<unreal.umg.UWidgetAnimation>;
-  public var Bindings : unreal.TArray<unreal.umg.FDelegateRuntimeBinding>;
   #if WITH_EDITORONLY_DATA
   
   /**

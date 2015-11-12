@@ -28,11 +28,6 @@ package unreal.gameplayabilities;
   public var ConditionalGameplayEffectClasses : unreal.TArray<unreal.TSubclassOf<unreal.gameplayabilities.UGameplayEffect>>;
   
   /**
-    Modifiers that are applied "in place" during the execution calculation
-  **/
-  public var CalculationModifiers : unreal.TArray<unreal.gameplayabilities.FGameplayEffectExecutionScopedModifierInfo>;
-  
-  /**
     These tags are passed into the execution as is, and may be used to do conditional logic
   **/
   public var PassedInTags : unreal.gameplaytags.FGameplayTagContainer;

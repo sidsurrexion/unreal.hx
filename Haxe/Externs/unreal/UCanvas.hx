@@ -173,22 +173,6 @@ package unreal;
   @:final public function K2_DrawBox(ScreenPosition : unreal.FVector2D, ScreenSize : unreal.FVector2D, Thickness : unreal.Float32) : Void;
   
   /**
-    Draws a set of triangles on the Canvas.
-    
-    @param RenderTexture                         Texture to use when rendering the triangles. If no texture is set, then the default white texture is used.
-    @param Triangles                                     Triangles to render.
-  **/
-  @:final public function K2_DrawTriangle(RenderTexture : unreal.UTexture, Triangles : unreal.TArray<unreal.FCanvasUVTri>) : Void;
-  
-  /**
-    Draws a set of triangles on the Canvas.
-    
-    @param RenderMaterial                        Material to use when rendering. Remember that only the emissive channel is able to be rendered as no lighting is performed when rendering to the Canvas.
-    @param Triangles                                     Triangles to render.
-  **/
-  @:final public function K2_DrawMaterialTriangle(RenderMaterial : unreal.UMaterialInterface, Triangles : unreal.TArray<unreal.FCanvasUVTri>) : Void;
-  
-  /**
     Draws a polygon on the Canvas.
     
     @param RenderTexture                         Texture to use when rendering the triangles. If no texture is set, then the default white texture is used.

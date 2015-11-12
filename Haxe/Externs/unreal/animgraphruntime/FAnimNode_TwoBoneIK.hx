@@ -71,9 +71,4 @@ package unreal.animgraphruntime;
   **/
   public var EffectorLocation : unreal.FVector;
   
-  /**
-    Name of bone to control. This is the main bone chain to modify from. *
-  **/
-  public var IKBone : unreal.FBoneReference;
-  
 }

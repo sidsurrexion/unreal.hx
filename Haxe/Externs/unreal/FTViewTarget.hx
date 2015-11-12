@@ -26,11 +26,6 @@ package unreal;
   private var PlayerState : unreal.APlayerState;
   
   /**
-    Computed point of view
-  **/
-  public var POV : unreal.FMinimalViewInfo;
-  
-  /**
     Target Actor used to compute POV
   **/
   public var Target : unreal.AActor;

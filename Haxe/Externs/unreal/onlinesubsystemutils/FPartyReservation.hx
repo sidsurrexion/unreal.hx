@@ -22,16 +22,6 @@ package unreal.onlinesubsystemutils;
 @:uextern extern class FPartyReservation {
   
   /**
-    All party members (including party leader) in the reservation
-  **/
-  public var PartyMembers : unreal.TArray<unreal.onlinesubsystemutils.FPlayerReservation>;
-  
-  /**
-    Player initiating the request
-  **/
-  public var PartyLeader : unreal.FUniqueNetIdRepl;
-  
-  /**
     Team assigned to this party
   **/
   public var TeamNum : unreal.Int32;

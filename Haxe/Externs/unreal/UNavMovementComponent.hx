@@ -21,11 +21,6 @@ package unreal;
 @:uextern extern class UNavMovementComponent extends unreal.UMovementComponent {
   
   /**
-    Expresses runtime state of character's movement. Put all temporal changes to movement properties here
-  **/
-  public var MovementState : unreal.FMovementProperties;
-  
-  /**
     Properties that define how the component can move.
   **/
   public var NavAgentProps : unreal.FNavAgentProperties;

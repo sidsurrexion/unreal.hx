@@ -126,11 +126,6 @@ package unreal;
   public var StreamingDistanceMultiplier : unreal.Float32;
   
   /**
-    LOD array info. Each index will correspond to the LOD index *
-  **/
-  public var LODInfo : unreal.TArray<unreal.FSkelMeshComponentLODInfo>;
-  
-  /**
     High (best) DistanceFactor that was desired for rendering this USkeletalMesh last frame. Represents how big this mesh was in screen space
   **/
   public var MaxDistanceFactor : unreal.Float32;
@@ -173,11 +168,6 @@ package unreal;
   **/
   public var ChunkIndexPreview : unreal.Int32;
   #end // WITH_EDITORONLY_DATA
-  
-  /**
-    Array indicating all active vertex animations. This array is updated inside RefreshBoneTransforms based on the Anim Blueprint.
-  **/
-  public var ActiveVertexAnims : unreal.TArray<unreal.FActiveVertexAnim>;
   
   /**
     When true, we will just using the bounds from our MasterPoseComponent.  This is useful for when we have a Mesh Parented

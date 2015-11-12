@@ -22,11 +22,6 @@ package unreal.slatecore;
 @:uextern extern class FComboButtonStyle extends unreal.slatecore.FSlateWidgetStyle {
   
   /**
-    Padding to use to add a "menu border" around the drop-down content
-  **/
-  public var MenuBorderPadding : unreal.slatecore.FMargin;
-  
-  /**
     Brush to use to add a "menu border" around the drop-down content
   **/
   public var MenuBorderBrush : unreal.slatecore.FSlateBrush;

@@ -20,6 +20,5 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayCueSet.h")
 @:uextern extern class UGameplayCueSet extends unreal.UDataAsset {
-  public var GameplayCueData : unreal.TArray<unreal.gameplayabilities.FGameplayCueNotifyData>;
   
 }

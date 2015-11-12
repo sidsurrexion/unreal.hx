@@ -91,11 +91,6 @@ package unreal.editor;
   public var PlayInEditorViewportIndex : unreal.Int32;
   
   /**
-    Logins available for use when running PIE instances
-  **/
-  public var PIELogins : unreal.TArray<unreal.editor.FPIELoginInfo>;
-  
-  /**
     Enabled online PIE
   **/
   public var bOnlinePIEEnabled : Bool;

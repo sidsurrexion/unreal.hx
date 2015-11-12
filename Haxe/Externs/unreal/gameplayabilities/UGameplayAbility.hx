@@ -88,11 +88,6 @@ package unreal.gameplayabilities;
   private var CooldownGameplayEffectClass : unreal.TSubclassOf<unreal.gameplayabilities.UGameplayEffect>;
   
   /**
-    Triggers to determine if this ability should execute in response to an event
-  **/
-  private var AbilityTriggers : unreal.TArray<unreal.gameplayabilities.FAbilityTriggerData>;
-  
-  /**
     Deprecated. Use CostGameplayEffectClass instead
   **/
   private var CostGameplayEffect : unreal.gameplayabilities.UGameplayEffect;
@@ -225,20 +220,7 @@ package unreal.gameplayabilities;
   **/
   @:final private function BP_RemoveGameplayEffectFromOwnerWithAssetTags(WithAssetTags : unreal.gameplaytags.FGameplayTagContainer, StacksToRemove : unreal.Int32) : Void;
   @:final private function BP_RemoveGameplayEffectFromOwnerWithGrantedTags(WithGrantedTags : unreal.gameplaytags.FGameplayTagContainer, StacksToRemove : unreal.Int32) : Void;
-  
-  /**
-    GameplayCue
-    Abilities can invoke GameplayCues without having to create GameplayEffects
-  **/
-  private function K2_ExecuteGameplayCue(GameplayCueTag : unreal.gameplaytags.FGameplayTag, Context : unreal.gameplayabilities.FGameplayEffectContextHandle) : Void;
-  private function K2_ExecuteGameplayCueWithParams(GameplayCueTag : unreal.gameplaytags.FGameplayTag, GameplayCueParameters : unreal.Const<unreal.PRef<unreal.gameplayabilities.FGameplayCueParameters>>) : Void;
-  private function K2_AddGameplayCue(GameplayCueTag : unreal.gameplaytags.FGameplayTag, Context : unreal.gameplayabilities.FGameplayEffectContextHandle, bRemoveOnAbilityEnd : Bool) : Void;
   private function K2_RemoveGameplayCue(GameplayCueTag : unreal.gameplaytags.FGameplayTag) : Void;
-  
-  /**
-    Generates a GameplayEffectContextHandle from our owner and an optional TargetData.
-  **/
-  @:thisConst private function GetContextFromOwner(OptionalTargetData : unreal.gameplayabilities.FGameplayAbilityTargetDataHandle) : unreal.gameplayabilities.FGameplayEffectContextHandle;
   
   /**
     Returns the actor info associated with this ability, has cached pointers to useful objects

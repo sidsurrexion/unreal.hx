@@ -25,11 +25,6 @@ package unreal.gameplayabilities;
     Number of active gameplay cue send contexts, when it goes to 0 cues are flushed
   **/
   private var GameplayCueSendContextCount : unreal.Int32;
-  
-  /**
-    List of gameplay cue executes that haven't been processed yet
-  **/
-  private var PendingExecuteCues : unreal.TArray<unreal.gameplayabilities.FGameplayCuePendingExecute>;
   public var StreamableManager : unreal.FStreamableManager;
   public var GameplayCueNotifyStaticObjectLibrary : unreal.UObjectLibrary;
   public var GameplayCueNotifyActorObjectLibrary : unreal.UObjectLibrary;

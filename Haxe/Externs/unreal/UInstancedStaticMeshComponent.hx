@@ -21,11 +21,6 @@ package unreal;
 @:uextern extern class UInstancedStaticMeshComponent extends unreal.UStaticMeshComponent {
   
   /**
-    The mappings for all the instances of this component
-  **/
-  private var CachedMappings : unreal.TArray<unreal.FInstancedStaticMeshMappingInfo>;
-  
-  /**
     Number of pending lightmaps still to be calculated (Apply()'d)
   **/
   private var NumPendingLightmaps : unreal.Int32;
@@ -61,11 +56,6 @@ package unreal;
                   this is set to zero (default), it will be populated automatically by the editor
   **/
   public var InstancingRandomSeed : unreal.Int32;
-  
-  /**
-    Array of instances, bulk serialized
-  **/
-  public var PerInstanceSMData : unreal.TArray<unreal.FInstancedStaticMeshInstanceData>;
   
   /**
     Add an instance to this component. Transform is given in local space of this component.

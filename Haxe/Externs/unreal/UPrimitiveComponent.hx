@@ -23,11 +23,6 @@ package unreal;
 @:uextern extern class UPrimitiveComponent extends unreal.USceneComponent implements unreal.INavRelevantInterface {
   
   /**
-    Tick function for physics ticking *
-  **/
-  public var PostPhysicsComponentTick : unreal.FPrimitiveComponentPostPhysicsTickFunction;
-  
-  /**
     Determine whether a Character can step up onto this component.
     This controls whether they can try to step up on it when they bump in to it, not whether they can walk on it after landing on it.
     @see FWalkableSlopeOverride
@@ -430,16 +425,6 @@ package unreal;
     @param ElementIndex - The index of the skin to replace the material for.  If invalid, the material is unchanged and NULL is returned.
   **/
   public function CreateDynamicMaterialInstance(ElementIndex : unreal.Int32, SourceMaterial : unreal.UMaterialInterface) : unreal.UMaterialInstanceDynamic;
-  
-  /**
-    Returns the slope override struct for this component.
-  **/
-  @:thisConst @:final public function GetWalkableSlopeOverride() : unreal.Const<unreal.PRef<unreal.FWalkableSlopeOverride>>;
-  
-  /**
-    Sets a new slope override for this component instance.
-  **/
-  @:final public function SetWalkableSlopeOverride(NewOverride : unreal.Const<unreal.PRef<unreal.FWalkableSlopeOverride>>) : Void;
   
   /**
     Sets whether or not a single body should use physics simulation, or should be 'fixed' (kinematic).

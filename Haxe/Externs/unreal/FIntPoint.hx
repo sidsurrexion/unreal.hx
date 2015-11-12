@@ -20,7 +20,7 @@ package unreal;
   Screen coordinates.
   The full C++ class is located here: Engine\Source\Runtime\Core\Public\Math\IntPoint.h
 **/
-@:glueCppIncludes("Engine/Level.h")
+@:glueCppIncludes("Engine/Texture2D.h")
 @:uextern extern class FIntPoint {
   
 }

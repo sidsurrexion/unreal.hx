@@ -35,11 +35,6 @@ package unreal;
   public var bWasSimulatingRootMotion : Bool;
   
   /**
-    Root Motion movement params
-  **/
-  public var RootMotionParams : unreal.FRootMotionMovementParams;
-  
-  /**
     Minimum time between client TimeStamp resets.
            !! This has to be large enough so that we don't confuse the server if the client can stall or timeout.
            We do this as we use floats for TimeStamps, and server derives DeltaTime from two TimeStamps.
@@ -47,11 +42,6 @@ package unreal;
            So we trigger a TimeStamp reset at regular intervals to maintain a high level of accuracy.
   **/
   public var MinTimeBetweenTimeStampResets : unreal.Float32;
-  
-  /**
-    Post-physics tick function for this character
-  **/
-  public var PreClothComponentTick : unreal.FCharacterMovementComponentPreClothTickFunction;
   
   /**
     Scale of the total capsule height to use for projection from navmesh to underlying geometry in the downward direction.
@@ -85,21 +75,6 @@ package unreal;
     De facto default value 0.5 (due to that being the default in the avoidance registration function), indicates RVO behavior.
   **/
   public var AvoidanceWeight : unreal.Float32;
-  
-  /**
-    Will NOT avoid other agents if they are in one of specified groups, higher priority than GroupsToAvoid
-  **/
-  public var GroupsToIgnore : unreal.FNavAvoidanceMask;
-  
-  /**
-    Will avoid other agents if they are in one of specified groups
-  **/
-  public var GroupsToAvoid : unreal.FNavAvoidanceMask;
-  
-  /**
-    Moving actor's group mask
-  **/
-  public var AvoidanceGroup : unreal.FNavAvoidanceMask;
   
   /**
     No default value, for now it's assumed to be valid if GetAvoidanceManager() returns non-NULL.
@@ -792,26 +767,6 @@ package unreal;
   private function CapsuleTouched(Other : unreal.AActor, OtherComp : unreal.UPrimitiveComponent, OtherBodyIndex : unreal.Int32, bFromSweep : Bool, SweepResult : unreal.Const<unreal.PRef<unreal.FHitResult>>) : Void;
   
   /**
-    Replicated function sent by client to server - contains client movement and view info.
-  **/
-  public function ServerMove(TimeStamp : unreal.Float32, InAccel : unreal.FVector_NetQuantize10, ClientLoc : unreal.FVector_NetQuantize100, CompressedMoveFlags : unreal.UInt8, ClientRoll : unreal.UInt8, View : unreal.FakeUInt32, ClientMovementBase : unreal.UPrimitiveComponent, ClientBaseBoneName : unreal.FName, ClientMovementMode : unreal.UInt8) : Void;
-  
-  /**
-    Replicated function sent by client to server - contains client movement and view info for two moves.
-  **/
-  public function ServerMoveDual(TimeStamp0 : unreal.Float32, InAccel0 : unreal.FVector_NetQuantize10, PendingFlags : unreal.UInt8, View0 : unreal.FakeUInt32, TimeStamp : unreal.Float32, InAccel : unreal.FVector_NetQuantize10, ClientLoc : unreal.FVector_NetQuantize100, NewFlags : unreal.UInt8, ClientRoll : unreal.UInt8, View : unreal.FakeUInt32, ClientMovementBase : unreal.UPrimitiveComponent, ClientBaseBoneName : unreal.FName, ClientMovementMode : unreal.UInt8) : Void;
-  
-  /**
-    Replicated function sent by client to server - contains client movement and view info for two moves. First move is non root motion, second is root motion.
-  **/
-  public function ServerMoveDualHybridRootMotion(TimeStamp0 : unreal.Float32, InAccel0 : unreal.FVector_NetQuantize10, PendingFlags : unreal.UInt8, View0 : unreal.FakeUInt32, TimeStamp : unreal.Float32, InAccel : unreal.FVector_NetQuantize10, ClientLoc : unreal.FVector_NetQuantize100, NewFlags : unreal.UInt8, ClientRoll : unreal.UInt8, View : unreal.FakeUInt32, ClientMovementBase : unreal.UPrimitiveComponent, ClientBaseBoneName : unreal.FName, ClientMovementMode : unreal.UInt8) : Void;
-  
-  /**
-    Resending an (important) old move. Process it if not already processed.
-  **/
-  public function ServerMoveOld(OldTimeStamp : unreal.Float32, OldAccel : unreal.FVector_NetQuantize10, OldMoveFlags : unreal.UInt8) : Void;
-  
-  /**
     If no client adjustment is needed after processing received ServerMove(), ack the good move so client can remove it from SavedMoves
   **/
   public function ClientAckGoodMove(TimeStamp : unreal.Float32) : Void;
@@ -825,11 +780,6 @@ package unreal;
     Bandwidth saving version, when velocity is zeroed
   **/
   public function ClientVeryShortAdjustPosition(TimeStamp : unreal.Float32, NewLoc : unreal.FVector, NewBase : unreal.UPrimitiveComponent, NewBaseBoneName : unreal.FName, bHasBase : Bool, bBaseRelativePosition : Bool, ServerMovementMode : unreal.UInt8) : Void;
-  
-  /**
-    Replicate position correction to client when using root motion for movement.
-  **/
-  public function ClientAdjustRootMotionPosition(TimeStamp : unreal.Float32, ServerMontageTrackPosition : unreal.Float32, ServerLoc : unreal.FVector, ServerRotation : unreal.FVector_NetQuantizeNormal, ServerVelZ : unreal.Float32, ServerBase : unreal.UPrimitiveComponent, ServerBoneName : unreal.FName, bHasBase : Bool, bBaseRelativePosition : Bool, ServerMovementMode : unreal.UInt8) : Void;
   // RVOAvoidanceInterface interface implementation
   // NetworkPredictionInterface interface implementation
   

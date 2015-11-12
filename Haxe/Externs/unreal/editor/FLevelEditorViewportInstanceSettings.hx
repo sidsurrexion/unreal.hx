@@ -52,11 +52,6 @@ package unreal.editor;
   public var FOVAngle : unreal.Float32;
   
   /**
-    Setting to allow designers to override the automatic expose.
-  **/
-  public var ExposureSettings : unreal.FExposureSettings;
-  
-  /**
     The buffer visualization mode for the viewport.
   **/
   public var BufferVisualizationMode : unreal.FName;

@@ -21,6 +21,5 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayAbilitySet.h")
 @:uextern extern class UGameplayAbilitySet extends unreal.UDataAsset {
-  public var Abilities : unreal.TArray<unreal.gameplayabilities.FGameplayAbilityBindInfo>;
   
 }

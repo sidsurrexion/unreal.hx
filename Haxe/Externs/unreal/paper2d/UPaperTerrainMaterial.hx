@@ -27,6 +27,5 @@ package unreal.paper2d;
     The sprite to use for an interior region fill
   **/
   public var InteriorFill : unreal.paper2d.UPaperSprite;
-  public var Rules : unreal.TArray<unreal.paper2d.FPaperTerrainMaterialRule>;
   
 }

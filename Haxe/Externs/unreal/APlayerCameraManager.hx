@@ -96,11 +96,6 @@ package unreal;
   public var ActiveAnims : unreal.TArray<unreal.UCameraAnimInst>;
   
   /**
-    Internal list of active post process effects. Parallel array to PostProcessBlendCacheWeights.
-  **/
-  private var PostProcessBlendCache : unreal.TArray<unreal.FPostProcessSettings>;
-  
-  /**
     Cached ref to modifier for code-driven screen shakes
   **/
   private var CachedCameraShakeMod : unreal.UCameraModifier_CameraShake;
@@ -144,16 +139,6 @@ package unreal;
     Current ViewTarget
   **/
   public var ViewTarget : unreal.FTViewTarget;
-  
-  /**
-    Cached camera properties, one frame old.
-  **/
-  public var LastFrameCameraCache : unreal.FCameraCacheEntry;
-  
-  /**
-    Cached camera properties.
-  **/
-  public var CameraCache : unreal.FCameraCacheEntry;
   
   /**
     Default aspect ratio

@@ -56,16 +56,10 @@ package unreal.umg;
   public var HorizontalAlignment : unreal.slatecore.EHorizontalAlignment;
   
   /**
-    The padding area between the slot and the content it contains.
-  **/
-  public var Padding : unreal.slatecore.FMargin;
-  
-  /**
     Color and opacity multiplier of content in the border
   **/
   public var ContentColorAndOpacity : unreal.FLinearColor;
   @:final public function SetContentColorAndOpacity(InContentColorAndOpacity : unreal.FLinearColor) : Void;
-  @:final public function SetPadding(InPadding : unreal.slatecore.FMargin) : Void;
   @:final public function SetHorizontalAlignment(InHorizontalAlignment : unreal.slatecore.EHorizontalAlignment) : Void;
   @:final public function SetVerticalAlignment(InVerticalAlignment : unreal.slatecore.EVerticalAlignment) : Void;
   @:final public function SetBrushColor(InBrushColor : unreal.FLinearColor) : Void;

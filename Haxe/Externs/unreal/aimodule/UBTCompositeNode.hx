@@ -22,9 +22,4 @@ package unreal.aimodule;
   **/
   public var Services : unreal.TArray<unreal.aimodule.UBTService>;
   
-  /**
-    child nodes
-  **/
-  public var Children : unreal.TArray<unreal.aimodule.FBTCompositeChild>;
-  
 }

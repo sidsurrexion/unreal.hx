@@ -22,11 +22,6 @@ package unreal.editor;
 @:uextern extern class UEditorLoadingSavingSettings extends unreal.UObject {
   
   /**
-    Specifies the file path to the tool to be used for diff'ing text files
-  **/
-  public var TextDiffToolPath : unreal.FFilePath;
-  
-  /**
     Use global source control login settings, rather than per-project. Changing this will require you to login again
   **/
   public var bSCCUseGlobalSettings : Bool;
@@ -101,11 +96,6 @@ package unreal.editor;
     Specifies an amount of time to wait before a specific file change is considered for auto reimport
   **/
   public var AutoReimportThreshold : unreal.Float32;
-  
-  /**
-    Lists every directory to monitor for content changes. Can be virtual package paths (eg /Game/ or /MyPlugin/), or absolute paths on disk.
-  **/
-  public var AutoReimportDirectorySettings : unreal.TArray<unreal.editor.FAutoReimportDirectoryConfig>;
   public var AutoReimportDirectories_DEPRECATED : unreal.TArray<unreal.FString>;
   
   /**

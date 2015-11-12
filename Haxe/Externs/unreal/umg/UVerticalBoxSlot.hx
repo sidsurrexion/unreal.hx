@@ -30,18 +30,6 @@ package unreal.umg;
     The alignment of the object horizontally.
   **/
   public var HorizontalAlignment : unreal.slatecore.EHorizontalAlignment;
-  
-  /**
-    How much space this slot should occupy in the direction of the panel.
-  **/
-  public var Size : unreal.umg.FSlateChildSize;
-  
-  /**
-    The padding area between the slot and the content it contains.
-  **/
-  public var Padding : unreal.slatecore.FMargin;
-  @:final public function SetPadding(InPadding : unreal.slatecore.FMargin) : Void;
-  @:final public function SetSize(InSize : unreal.umg.FSlateChildSize) : Void;
   @:final public function SetHorizontalAlignment(InHorizontalAlignment : unreal.slatecore.EHorizontalAlignment) : Void;
   @:final public function SetVerticalAlignment(InVerticalAlignment : unreal.slatecore.EVerticalAlignment) : Void;
   

@@ -29,29 +29,4 @@ package unreal.animgraphruntime;
   **/
   public var HandFKWeight : unreal.Float32;
   
-  /**
-    IK Bones to move.
-  **/
-  public var IKBonesToMove : unreal.TArray<unreal.FBoneReference>;
-  
-  /**
-    Bone for Left Hand FK
-  **/
-  public var LeftHandIK : unreal.FBoneReference;
-  
-  /**
-    Bone for Right Hand IK
-  **/
-  public var RightHandIK : unreal.FBoneReference;
-  
-  /**
-    Bone for Left Hand FK
-  **/
-  public var LeftHandFK : unreal.FBoneReference;
-  
-  /**
-    Bone for Right Hand FK
-  **/
-  public var RightHandFK : unreal.FBoneReference;
-  
 }

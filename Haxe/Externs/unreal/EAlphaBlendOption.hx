@@ -13,7 +13,7 @@
 **/
 package unreal;
 
-@:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h")
+@:glueCppIncludes("AnimGraphNode_BlendListByBool.h")
 @:uname("EAlphaBlendOption")
 @:class @:uextern extern enum EAlphaBlendOption {
   

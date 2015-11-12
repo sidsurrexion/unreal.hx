@@ -44,12 +44,6 @@ package unreal.umg;
   public function GenerateWidgetForObject__DelegateSignature(Item : unreal.UObject) : unreal.umg.UWidget;
   
   /**
-    Events
-  **/
-  public function OnReply__DelegateSignature() : unreal.umg.FEventReply;
-  public function OnPointerEvent__DelegateSignature(MyGeometry : unreal.slatecore.FGeometry, MouseEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.umg.FEventReply;
-  
-  /**
     Native property bindings.
   **/
   private var NativeBindings : unreal.TArray<unreal.umg.UPropertyBinding>;
@@ -83,11 +77,6 @@ package unreal.umg;
     This value is a normalized coordinate about which things like rotations will occur.
   **/
   public var RenderTransformPivot : unreal.FVector2D;
-  
-  /**
-    The render transform of the widget allows for arbitrary 2D transforms to be applied to the widget.
-  **/
-  public var RenderTransform : unreal.umg.FWidgetTransform;
   
   /**
     The cursor to show when the mouse is over the widget
@@ -130,7 +119,6 @@ package unreal.umg;
     as variables, so this allows only the most useful ones to end up being exposed.
   **/
   public var bIsVariable : Bool;
-  @:final public function SetRenderTransform(InTransform : unreal.umg.FWidgetTransform) : Void;
   @:final public function SetRenderScale(Scale : unreal.FVector2D) : Void;
   @:final public function SetRenderShear(Shear : unreal.FVector2D) : Void;
   @:final public function SetRenderAngle(Angle : unreal.Float32) : Void;

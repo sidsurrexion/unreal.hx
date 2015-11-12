@@ -38,11 +38,6 @@ package unreal;
   private var World : unreal.UWorld;
   
   /**
-    @todo document
-  **/
-  public var DebugProperties : unreal.TArray<unreal.FDebugDisplayProperty>;
-  
-  /**
     The viewport's console.   Might be null on consoles
   **/
   public var ViewportConsole : unreal.UConsole;

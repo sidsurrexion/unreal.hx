@@ -27,16 +27,6 @@ package unreal.slatecore;
   public var ScrollBarStyle : unreal.slatecore.FScrollBarStyle;
   
   /**
-    Padding around the vertical scrollbar
-  **/
-  public var VScrollBarPadding : unreal.slatecore.FMargin;
-  
-  /**
-    Padding around the horizontal scrollbar
-  **/
-  public var HScrollBarPadding : unreal.slatecore.FMargin;
-  
-  /**
     The read-only foreground color of text in read-only mode.
   **/
   public var ReadOnlyForegroundColor : unreal.slatecore.FSlateColor;
@@ -55,11 +45,6 @@ package unreal.slatecore;
     Font family and size to be used when displaying this text.
   **/
   public var Font : unreal.slatecore.FSlateFontInfo;
-  
-  /**
-    Padding
-  **/
-  public var Padding : unreal.slatecore.FMargin;
   
   /**
     Border background image when the box is read-only

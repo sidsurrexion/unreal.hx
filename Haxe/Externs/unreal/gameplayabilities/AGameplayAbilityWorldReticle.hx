@@ -54,6 +54,5 @@ package unreal.gameplayabilities;
     Makes the reticle's default owner-facing behavior operate in 2D (flat) instead of 3D (pitched). Defaults to true.
   **/
   public var bFaceOwnerFlat : Bool;
-  public var Parameters : unreal.gameplayabilities.FWorldReticleParameters;
   
 }

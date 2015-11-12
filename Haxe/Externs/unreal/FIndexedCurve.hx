@@ -17,12 +17,7 @@ package unreal;
 /**
   A curve base class which enables key handles to index lookups
 **/
-@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
+@:glueCppIncludes("Sound/SoundAttenuation.h")
 @:uextern extern class FIndexedCurve {
-  
-  /**
-    Map of which key handles go to which indices.
-  **/
-  private var KeyHandlesToIndices : unreal.FKeyHandleMap;
   
 }

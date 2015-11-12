@@ -18,17 +18,6 @@ package unreal.proceduralmeshcomponent;
 @:uextern extern class UKismetProceduralMeshLibrary extends unreal.UBlueprintFunctionLibrary {
   
   /**
-    Generate vertex and index buffer for a simple box, given the supplied dimensions. Normals, UVs and tangents are also generated for each vertex.
-  **/
-  static public function GenerateBoxMesh(BoxRadius : unreal.FVector, Vertices : unreal.PRef<unreal.TArray<unreal.FVector>>, Triangles : unreal.PRef<unreal.TArray<unreal.Int32>>, Normals : unreal.PRef<unreal.TArray<unreal.FVector>>, UVs : unreal.PRef<unreal.TArray<unreal.FVector2D>>, Tangents : unreal.PRef<unreal.TArray<unreal.proceduralmeshcomponent.FProcMeshTangent>>) : Void;
-  
-  /**
-    Automatically generate normals and tangent vectors for a mesh
-    UVs are required for correct tangent generation.
-  **/
-  static public function CalculateTangentsForMesh(Vertices : unreal.Const<unreal.PRef<unreal.TArray<unreal.FVector>>>, Triangles : unreal.Const<unreal.PRef<unreal.TArray<unreal.Int32>>>, UVs : unreal.Const<unreal.PRef<unreal.TArray<unreal.FVector2D>>>, Normals : unreal.PRef<unreal.TArray<unreal.FVector>>, Tangents : unreal.PRef<unreal.TArray<unreal.proceduralmeshcomponent.FProcMeshTangent>>) : Void;
-  
-  /**
     Add a quad, specified by four indices, to a triangle index buffer as two triangles.
   **/
   static public function ConvertQuadToTriangles(Triangles : unreal.PRef<unreal.TArray<unreal.Int32>>, Vert0 : unreal.Int32, Vert1 : unreal.Int32, Vert2 : unreal.Int32, Vert3 : unreal.Int32) : Void;

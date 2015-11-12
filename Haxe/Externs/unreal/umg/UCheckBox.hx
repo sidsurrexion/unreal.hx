@@ -32,11 +32,6 @@ package unreal.umg;
   public var BorderBackgroundColor_DEPRECATED : unreal.slatecore.FSlateColor;
   
   /**
-    Spacing between the check box image and its content
-  **/
-  public var Padding_DEPRECATED : unreal.slatecore.FMargin;
-  
-  /**
     How the content of the toggle button should align within the given space
   **/
   public var HorizontalAlignment : unreal.slatecore.EHorizontalAlignment;

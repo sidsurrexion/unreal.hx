@@ -21,11 +21,6 @@ package unreal;
 @:uextern extern class UPointLightComponent extends unreal.ULightComponent {
   
   /**
-    The Lightmass settings for this object.
-  **/
-  public var LightmassSettings : unreal.FLightmassPointLightSettings;
-  
-  /**
     Length of light source shape.
     Note that light sources shapes which intersect shadow casting geometry can cause shadowing artifacts.
   **/

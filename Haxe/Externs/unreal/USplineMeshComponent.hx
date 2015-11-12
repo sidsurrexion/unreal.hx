@@ -65,11 +65,6 @@ package unreal;
   public var SplineUpDir : unreal.FVector;
   
   /**
-    Spline that is used to deform mesh
-  **/
-  public var SplineParams : unreal.FSplineMeshParams;
-  
-  /**
     Get the start position of spline in local space
   **/
   @:thisConst @:final public function GetStartPosition() : unreal.FVector;

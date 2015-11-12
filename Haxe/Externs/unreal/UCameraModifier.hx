@@ -71,15 +71,6 @@ package unreal;
   public function BlueprintModifyCamera(DeltaTime : unreal.Float32, ViewLocation : unreal.FVector, ViewRotation : unreal.FRotator, FOV : unreal.Float32, NewViewLocation : unreal.PRef<unreal.FVector>, NewViewRotation : unreal.PRef<unreal.FRotator>, NewFOV : unreal.Float32) : Void;
   
   /**
-    Called per tick that the modifier is active to allow Blueprinted modifiers to modify the camera's postprocess effects.
-    Scaling by Alpha happens after this in code, so no need to deal with that in the blueprint.
-    @param       DeltaTime                               Change in time since last update
-    @param       PostProcessBlendWeight  (out) Blend weight applied to the entire postprocess structure.
-    @param       PostProcessSettings             (out) Post process structure defining what settings and values to override.
-  **/
-  public function BlueprintModifyPostProcess(DeltaTime : unreal.Float32, PostProcessBlendWeight : unreal.Float32, PostProcessSettings : unreal.PRef<unreal.FPostProcessSettings>) : Void;
-  
-  /**
     @return Returns true if modifier is disabled, false otherwise.
   **/
   @:thisConst public function IsDisabled() : Bool;

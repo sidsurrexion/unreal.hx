@@ -20,6 +20,5 @@ package unreal.paper2deditor;
 @:umodule("Paper2DEditor")
 @:glueCppIncludes("TileMapAssetImportData.h")
 @:uextern extern class UTileMapAssetImportData extends unreal.UAssetImportData {
-  public var TileSetMap : unreal.TArray<unreal.paper2deditor.FTileSetImportMapping>;
   
 }

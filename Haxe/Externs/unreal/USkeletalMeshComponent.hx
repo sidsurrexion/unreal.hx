@@ -197,7 +197,6 @@ package unreal;
     Cached LocalAtoms for Update Rate optimization.
   **/
   public var CachedLocalAtoms : unreal.TArray<unreal.FTransform>;
-  public var AnimationData : unreal.FSingleAnimationPlayData;
   
   /**
     The active animation graph program instance.

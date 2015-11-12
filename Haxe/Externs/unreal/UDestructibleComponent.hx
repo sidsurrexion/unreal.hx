@@ -41,11 +41,6 @@ package unreal;
   public var bEnableHardSleeping : Bool;
   
   /**
-    Fracture effects for each fracture level. Used only if Fracture Effect Override is set.
-  **/
-  public var FractureEffects : unreal.TArray<unreal.FFractureEffect>;
-  
-  /**
     If set, use this actor's fracture effects instead of the asset's fracture effects.
   **/
   public var bFractureEffectOverride : Bool;

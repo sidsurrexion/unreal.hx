@@ -22,31 +22,6 @@ package unreal.editor;
 @:uextern extern class UProjectPackagingSettings extends unreal.UObject {
   
   /**
-    Directories containing files that should always be copied when packaging your project, but are not supposed to be part of the .pak file
-    This is used to stage additional files that you manually load without using the UFS (Unreal File System) file IO API, eg, third-party libraries that perform their own internal file IO
-    Note: These paths are relative to your project Content directory
-  **/
-  public var DirectoriesToAlwaysStageAsNonUFS : unreal.TArray<unreal.FDirectoryPath>;
-  
-  /**
-    Directories containing files that should always be added to the .pak file (if using a .pak file; otherwise they're copied as individual files)
-    This is used to stage additional files that you manually load via the UFS (Unreal File System) file IO API
-    Note: These paths are relative to your project Content directory
-  **/
-  public var DirectoriesToAlwaysStageAsUFS : unreal.TArray<unreal.FDirectoryPath>;
-  
-  /**
-    Directories containing .uasset files that should always be cooked regardless of whether they're referenced by anything in your project
-    Note: These paths are relative to your project Content directory
-  **/
-  public var DirectoriesToAlwaysCook : unreal.TArray<unreal.FDirectoryPath>;
-  
-  /**
-    List of maps to include when no other map list is specified on commandline
-  **/
-  public var MapsToCook : unreal.TArray<unreal.FFilePath>;
-  
-  /**
     Create compressed cooked packages (decreased deployment size)
   **/
   public var bCompressed : Bool;
@@ -93,11 +68,6 @@ package unreal.editor;
   public var HttpChunkInstallDataVersion : unreal.FString;
   
   /**
-    When "Build HTTP Chunk Install Data" is enabled this is the directory where the data will be build to.
-  **/
-  public var HttpChunkInstallDataDirectory : unreal.FDirectoryPath;
-  
-  /**
     If enabled, will generate data for HTTP Chunk Installer. This data can be hosted on webserver to be installed at runtime. Requires "Generate Chunks" enabled.
   **/
   public var bBuildHttpChunkInstallData : Bool;
@@ -131,11 +101,6 @@ package unreal.editor;
     Unless you iterate on packaging, we recommend full rebuilds when packaging.
   **/
   public var FullRebuild : Bool;
-  
-  /**
-    The directory to which the packaged project will be copied.
-  **/
-  public var StagingDirectory : unreal.FDirectoryPath;
   
   /**
     The build configuration for which the project is packaged.

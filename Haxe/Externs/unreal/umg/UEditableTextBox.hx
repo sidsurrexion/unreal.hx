@@ -50,11 +50,6 @@ package unreal.umg;
   public var IsCaretMovedWhenGainFocus : Bool;
   
   /**
-    Padding between the box/border and the text widget inside (overrides Style)
-  **/
-  public var Padding_DEPRECATED : unreal.slatecore.FMargin;
-  
-  /**
     Minimum width that a text block should be
   **/
   public var MinimumDesiredWidth : unreal.Float32;

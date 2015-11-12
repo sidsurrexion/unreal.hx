@@ -16,21 +16,6 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("Navigation/CrowdFollowingComponent.h")
 @:uextern extern class UCrowdFollowingComponent extends unreal.aimodule.UPathFollowingComponent implements unreal.aimodule.ICrowdAgentInterface {
-  
-  /**
-    Will NOT avoid other agents if they are in one of specified groups, higher priority than GroupsToAvoid
-  **/
-  private var GroupsToIgnore : unreal.FNavAvoidanceMask;
-  
-  /**
-    Will avoid other agents if they are in one of specified groups
-  **/
-  private var GroupsToAvoid : unreal.FNavAvoidanceMask;
-  
-  /**
-    Group mask for this agent
-  **/
-  private var AvoidanceGroup : unreal.FNavAvoidanceMask;
   private var CharacterMovement : unreal.UCharacterMovementComponent;
   public var CrowdAgentMoveDirection : unreal.FVector;
   

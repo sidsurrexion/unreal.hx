@@ -31,11 +31,6 @@ package unreal.umg;
   private var LineHeightPercentage : unreal.Float32;
   
   /**
-    The amount of blank space left around the edges of text area.
-  **/
-  private var Margin : unreal.slatecore.FMargin;
-  
-  /**
     Whether text wraps onto a new line when it's length exceeds this width; if this value is zero or negative, no wrapping occurs.
   **/
   private var WrapTextAt : unreal.Float32;

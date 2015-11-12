@@ -28,7 +28,6 @@ package unreal.umgeditor;
   **/
   public var PaletteCategory : unreal.FString;
   public var Animations : unreal.TArray<unreal.umg.UWidgetAnimation>;
-  public var AnimationData_DEPRECATED : unreal.TArray<unreal.umgeditor.FWidgetAnimation_DEPRECATED>;
   public var Bindings : unreal.TArray<unreal.umgeditor.FDelegateEditorBinding>;
   
   /**

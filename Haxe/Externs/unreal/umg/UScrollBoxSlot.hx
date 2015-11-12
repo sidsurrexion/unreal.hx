@@ -25,12 +25,6 @@ package unreal.umg;
     The alignment of the object horizontally.
   **/
   public var HorizontalAlignment : unreal.slatecore.EHorizontalAlignment;
-  
-  /**
-    The padding area between the slot and the content it contains.
-  **/
-  public var Padding : unreal.slatecore.FMargin;
-  @:final public function SetPadding(InPadding : unreal.slatecore.FMargin) : Void;
   @:final public function SetHorizontalAlignment(InHorizontalAlignment : unreal.slatecore.EHorizontalAlignment) : Void;
   
 }

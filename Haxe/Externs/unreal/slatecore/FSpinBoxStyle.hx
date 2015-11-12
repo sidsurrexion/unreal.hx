@@ -22,11 +22,6 @@ package unreal.slatecore;
 @:uextern extern class FSpinBoxStyle extends unreal.slatecore.FSlateWidgetStyle {
   
   /**
-    Padding to add around the spinbox and its text
-  **/
-  public var TextPadding : unreal.slatecore.FMargin;
-  
-  /**
     Color used to draw the spinbox foreground elements
   **/
   public var ForegroundColor : unreal.slatecore.FSlateColor;

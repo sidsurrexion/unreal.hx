@@ -87,11 +87,6 @@ package unreal.paper2d;
   private var SpriteCollisionDomain : unreal.paper2d.ESpriteCollisionMode;
   
   /**
-    List of sockets on this sprite
-  **/
-  private var Sockets : unreal.TArray<unreal.paper2d.FPaperSpriteSocket>;
-  
-  /**
     The alternate material to use on a sprite instance if not overridden (this is only used for Diced render geometry, and will be the opaque material in that case, slot 1)
   **/
   private var AlternateMaterial : unreal.UMaterialInterface;

@@ -67,14 +67,4 @@ package unreal;
   **/
   @:final public function GetAvoidanceVelocityForComponent(MovementComp : unreal.UMovementComponent) : unreal.FVector;
   
-  /**
-    Only use if you want manual velocity planning. Provide your AvoidanceUID in order to avoid colliding with yourself.
-  **/
-  @:final public function GetAvoidanceVelocityIgnoringUID(AvoidanceData : unreal.Const<unreal.PRef<unreal.FNavAvoidanceData>>, DeltaTime : unreal.Float32, IgnoreThisUID : unreal.Int32) : unreal.FVector;
-  
-  /**
-    Only use if you want manual velocity planning. Will not ignore your own volume if you are registered.
-  **/
-  @:final public function GetAvoidanceVelocity(AvoidanceData : unreal.Const<unreal.PRef<unreal.FNavAvoidanceData>>, DeltaTime : unreal.Float32) : unreal.FVector;
-  
 }

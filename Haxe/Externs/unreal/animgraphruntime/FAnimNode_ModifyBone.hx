@@ -66,9 +66,4 @@ package unreal.animgraphruntime;
   **/
   public var Translation : unreal.FVector;
   
-  /**
-    Name of bone to control. This is the main bone chain to modify from. *
-  **/
-  public var BoneToModify : unreal.FBoneReference;
-  
 }

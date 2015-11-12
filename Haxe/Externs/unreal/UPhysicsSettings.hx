@@ -21,11 +21,6 @@ package unreal;
 @:uextern extern class UPhysicsSettings extends unreal.UDeveloperSettings {
   
   /**
-    PhysicalMaterial Surface Types
-  **/
-  public var PhysicalSurfaces : unreal.TArray<unreal.FPhysicalSurfaceName>;
-  
-  /**
     Physics delta time initial average.
   **/
   public var InitialAverageFrameRate : unreal.Float32;

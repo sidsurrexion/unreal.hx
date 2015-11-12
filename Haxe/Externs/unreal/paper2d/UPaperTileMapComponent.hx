@@ -83,17 +83,6 @@ package unreal.paper2d;
   @:final public function GetMapSize(MapWidth : unreal.Int32, MapHeight : unreal.Int32, NumLayers : unreal.Int32) : Void;
   
   /**
-    Returns the contents of a specified tile cell
-  **/
-  @:thisConst @:final public function GetTile(X : unreal.Int32, Y : unreal.Int32, Layer : unreal.Int32) : unreal.paper2d.FPaperTileInfo;
-  
-  /**
-    Modifies the contents of a specified tile cell (Note: This will only work on components that own their own tile map (OwnsTileMap returns true), you cannot modify standalone tile map assets)
-    Note: Does not update collision by default, call RebuildCollision after all edits have been done in a frame if necessary
-  **/
-  @:final public function SetTile(X : unreal.Int32, Y : unreal.Int32, Layer : unreal.Int32, NewValue : unreal.paper2d.FPaperTileInfo) : Void;
-  
-  /**
     Resizes the tile map (Note: This will only work on components that own their own tile map (OwnsTileMap returns true), you cannot modify standalone tile map assets)
   **/
   @:final public function ResizeMap(NewWidthInTiles : unreal.Int32, NewHeightInTiles : unreal.Int32) : Void;

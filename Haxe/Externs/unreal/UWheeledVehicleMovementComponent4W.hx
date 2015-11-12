@@ -26,19 +26,4 @@ package unreal;
   **/
   public var SteeringCurve : unreal.FRuntimeFloatCurve;
   
-  /**
-    Transmission data
-  **/
-  public var TransmissionSetup : unreal.FVehicleTransmissionData;
-  
-  /**
-    Differential
-  **/
-  public var DifferentialSetup : unreal.FVehicleDifferential4WData;
-  
-  /**
-    Engine
-  **/
-  public var EngineSetup : unreal.FVehicleEngineData;
-  
 }

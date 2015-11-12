@@ -24,11 +24,6 @@ package unreal.paper2d;
 @:uextern extern class UPaperGroupedSpriteComponent extends unreal.UMeshComponent {
   
   /**
-    Array of instances
-  **/
-  private var PerInstanceSpriteData : unreal.TArray<unreal.paper2d.FSpriteInstanceData>;
-  
-  /**
     Array of materials used by the instances
   **/
   private var InstanceMaterials : unreal.TArray<unreal.UMaterialInterface>;

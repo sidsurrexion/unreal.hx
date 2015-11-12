@@ -19,7 +19,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/MaterialBillboardComponent.h")
 @:uextern extern class UMaterialBillboardComponent extends unreal.UPrimitiveComponent {
-  public var Elements : unreal.TArray<unreal.FMaterialSpriteElement>;
   
   /**
     Adds an element to the sprite.

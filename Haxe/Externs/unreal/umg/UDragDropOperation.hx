@@ -48,8 +48,5 @@ package unreal.umg;
     A simple string tag you can optionally use to provide extra metadata about the operation.
   **/
   public var Tag : unreal.FString;
-  public function Drop(PointerEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : Void;
-  public function DragCancelled(PointerEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : Void;
-  public function Dragged(PointerEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : Void;
   
 }

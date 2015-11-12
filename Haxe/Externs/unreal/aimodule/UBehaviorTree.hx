@@ -18,11 +18,6 @@ package unreal.aimodule;
 @:uextern extern class UBehaviorTree extends unreal.UObject {
   
   /**
-    logic operators for root level decorators, used by subtrees
-  **/
-  public var RootDecoratorOps : unreal.TArray<unreal.aimodule.FBTDecoratorLogic>;
-  
-  /**
     root level decorators, used by subtrees
   **/
   public var RootDecorators : unreal.TArray<unreal.aimodule.UBTDecorator>;
@@ -32,11 +27,6 @@ package unreal.aimodule;
   **/
   public var BlackboardAsset : unreal.aimodule.UBlackboardData;
   #if WITH_EDITORONLY_DATA
-  
-  /**
-    Info about the graphs we last edited
-  **/
-  public var LastEditedDocuments : unreal.TArray<unreal.FEditedDocumentInfo>;
   
   /**
     Graph for Behavior Tree

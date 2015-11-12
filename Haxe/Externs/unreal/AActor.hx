@@ -214,16 +214,6 @@ package unreal;
   public var Role : unreal.ENetRole;
   
   /**
-    Used for replicating attachment of this actor's RootComponent to another actor.
-  **/
-  public var AttachmentReplication : unreal.FRepAttachment;
-  
-  /**
-    Used for replication of our RootComponent's position and velocity
-  **/
-  public var ReplicatedMovement : unreal.FRepMovement;
-  
-  /**
     If true, all input on the stack below this actor will not be considered
   **/
   public var bBlockInput : Bool;
@@ -293,14 +283,6 @@ package unreal;
     Allow each actor to run at a different time speed. The DeltaTime for a frame is multiplied by the global TimeDilation (in WorldSettings) and this CustomTimeDilation for this actor's tick.
   **/
   public var CustomTimeDilation : unreal.Float32;
-  
-  /**
-    Primary Actor tick function, which calls TickActor().
-    Tick functions can be configured to control whether ticking is enabled, at what time during a frame the update occurs, and to set up tick dependencies.
-    @see https://docs.unrealengine.com/latest/INT/API/Runtime/Engine/Engine/FTickFunction/
-    @see AddTickPrerequisiteActor(), AddTickPrerequisiteComponent()
-  **/
-  public var PrimaryActorTick : unreal.FActorTickFunction;
   
   /**
     Called on client when updated bReplicateMovement value is received for this actor.

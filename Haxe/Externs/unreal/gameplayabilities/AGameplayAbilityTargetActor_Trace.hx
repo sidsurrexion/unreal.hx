@@ -25,7 +25,6 @@ package unreal.gameplayabilities;
     Does the trace affect the aiming pitch
   **/
   public var bTraceAffectsAimPitch : Bool;
-  public var TraceProfile : unreal.FCollisionProfileName;
   public var MaxRange : unreal.Float32;
   
 }

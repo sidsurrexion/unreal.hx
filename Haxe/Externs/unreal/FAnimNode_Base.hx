@@ -24,9 +24,4 @@ package unreal;
 @:glueCppIncludes("AnimPreviewInstance.h")
 @:uextern extern class FAnimNode_Base {
   
-  /**
-    The default handler for graph-exposed inputs
-  **/
-  public var EvaluateGraphExposedInputs : unreal.FExposedValueHandler;
-  
 }

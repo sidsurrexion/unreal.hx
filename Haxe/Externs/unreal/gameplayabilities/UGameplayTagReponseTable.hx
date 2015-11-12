@@ -24,7 +24,6 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("GameplayTagResponseTable.h")
 @:uextern extern class UGameplayTagReponseTable extends unreal.UDataAsset {
-  public var Entries : unreal.TArray<unreal.gameplayabilities.FGameplayTagResponseTableEntry>;
   @:final private function TagResponseEvent(Tag : unreal.Const<unreal.gameplaytags.FGameplayTag>, NewCount : unreal.Int32, ASC : unreal.gameplayabilities.UAbilitySystemComponent, idx : unreal.Int32) : Void;
   
 }

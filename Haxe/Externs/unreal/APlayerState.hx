@@ -22,14 +22,6 @@ package unreal;
 @:uextern extern class APlayerState extends unreal.AInfo {
   
   /**
-    The id used by the network to uniquely identify a player.
-    NOTE: the internals of this property should *never* be exposed to the player as it's transient
-    and opaque in meaning (ie it might mean date/time followed by something else).
-    It is OK to use and pass around this property, though.
-  **/
-  public var UniqueId : unreal.FUniqueNetIdRepl;
-  
-  /**
     This is used for sending game agnostic messages that can be localized
   **/
   public var EngineMessageClass : unreal.TSubclassOf<unreal.ULocalMessage>;

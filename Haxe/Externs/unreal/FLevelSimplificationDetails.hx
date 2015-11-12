@@ -35,20 +35,10 @@ package unreal;
   public var bBakeFoliageToLandscape : Bool;
   
   /**
-    Landscape material simplification
-  **/
-  public var LandscapeMaterial : unreal.FMaterialSimplificationSettings;
-  
-  /**
     Landscape LOD to use for static mesh generation, when not specified 'Max LODLevel' from landscape actor will be used
   **/
   public var LandscapeExportLOD : unreal.Int32;
   public var bOverrideLandscapeExportLOD : Bool;
-  
-  /**
-    Static mesh material simplification
-  **/
-  public var StaticMeshMaterial : unreal.FMaterialSimplificationSettings;
   
   /**
     Percentage of details for static mesh proxy

@@ -22,31 +22,6 @@ package unreal.editor;
 @:uextern extern class ULevelEditorPlaySettings extends unreal.UObject {
   
   /**
-    Collection of common screen resolutions on television screens.
-  **/
-  public var TelevisionScreenResolutions : unreal.TArray<unreal.editor.FPlayScreenResolution>;
-  
-  /**
-    Collection of common screen resolutions on tablet devices.
-  **/
-  public var TabletScreenResolutions : unreal.TArray<unreal.editor.FPlayScreenResolution>;
-  
-  /**
-    Collection of common screen resolutions on mobile phones.
-  **/
-  public var PhoneScreenResolutions : unreal.TArray<unreal.editor.FPlayScreenResolution>;
-  
-  /**
-    Collection of common screen resolutions on desktop monitors.
-  **/
-  public var MonitorScreenResolutions : unreal.TArray<unreal.editor.FPlayScreenResolution>;
-  
-  /**
-    Collection of common screen resolutions on mobile phones.
-  **/
-  public var LaptopScreenResolutions : unreal.TArray<unreal.editor.FPlayScreenResolution>;
-  
-  /**
     The last type of play session the user ran.
   **/
   public var LastExecutedPlayModeType : unreal.editor.EPlayModeType;

@@ -33,7 +33,6 @@ package unreal.umg;
     The max height of the combobox list that opens
   **/
   public var MaxListHeight : unreal.Float32;
-  public var ContentPadding : unreal.slatecore.FMargin;
   
   /**
     The style

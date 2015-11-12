@@ -34,19 +34,6 @@ package unreal.slatecore;
   public var PressedSlateSound : unreal.slatecore.FSlateSound;
   
   /**
-    Same as NormalPadding but used when the button is pressed. Allows for moving the content to match
-    any "movement" in the button's border image.
-  **/
-  public var PressedPadding : unreal.slatecore.FMargin;
-  
-  /**
-    Padding that accounts for the border in the button's background image.
-    When this is applied, the content of the button should appear flush
-    with the button's border. Use this padding when the button is not pressed.
-  **/
-  public var NormalPadding : unreal.slatecore.FMargin;
-  
-  /**
     Button appearance when disabled, by default this is set to an invalid resource when that is the case default disabled drawing is used.
   **/
   public var Disabled : unreal.slatecore.FSlateBrush;
