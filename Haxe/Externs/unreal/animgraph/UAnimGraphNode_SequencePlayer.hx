@@ -13,14 +13,14 @@
 **/
 package unreal.animgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimGraphNode_SequencePlayer.h")
 @:uextern extern class UAnimGraphNode_SequencePlayer extends unreal.animgraph.UAnimGraphNode_AssetPlayerBase {
-  
-  /**
-    Sync group settings for this player.  Sync groups keep related animations with different lengths synchronized.
-  **/
-  public var SyncGroup : unreal.FAnimationGroupReference;
-  public var Node : unreal.FAnimNode_SequencePlayer;
   
 }

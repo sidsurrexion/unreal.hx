@@ -13,12 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Matinee/InterpTrackColorProp.h")
 @:uextern extern class UInterpTrackColorProp extends unreal.UInterpTrackVectorBase {
-  
-  /**
-    Name of property in Group  AActor  which this track mill modify over time.
-  **/
-  public var PropertyName : unreal.FName;
   
 }

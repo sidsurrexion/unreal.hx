@@ -13,9 +13,14 @@
 **/
 package unreal.animgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimationStateMachineSchema.h")
 @:uextern extern class UAnimationStateMachineSchema extends unreal.UEdGraphSchema {
-  public var PC_Exec : unreal.FString;
   
 }

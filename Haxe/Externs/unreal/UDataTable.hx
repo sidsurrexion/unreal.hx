@@ -15,22 +15,11 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   Imported spreadsheet table.
 **/
 @:glueCppIncludes("Engine/DataTable.h")
 @:uextern extern class UDataTable extends unreal.UObject {
-  #if WITH_EDITORONLY_DATA
-  
-  /**
-    The filename imported to create this object. Relative to this object's package, BaseDir() or absolute
-  **/
-  public var ImportPath_DEPRECATED : unreal.FString;
-  public var AssetImportData : unreal.UAssetImportData;
-  #end // WITH_EDITORONLY_DATA
-  
-  /**
-    Structure to use for each row of the table, must inherit from FTableRowBase
-  **/
-  public var RowStruct : unreal.UScriptStruct;
   
 }

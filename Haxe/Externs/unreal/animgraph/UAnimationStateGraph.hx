@@ -13,13 +13,14 @@
 **/
 package unreal.animgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimationStateGraph.h")
 @:uextern extern class UAnimationStateGraph extends unreal.animgraph.UAnimationGraph {
-  
-  /**
-    Result node within the state's animation graph
-  **/
-  public var MyResultNode : unreal.animgraph.UAnimGraphNode_StateResult;
   
 }

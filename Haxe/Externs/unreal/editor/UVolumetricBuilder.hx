@@ -13,12 +13,14 @@
 **/
 package unreal.editor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Builders/VolumetricBuilder.h")
 @:uextern extern class UVolumetricBuilder extends unreal.editor.UEditorBrushBuilder {
-  public var GroupName : unreal.FName;
-  public var NumSheets : unreal.Int32;
-  public var Radius : unreal.Float32;
-  public var Z : unreal.Float32;
   
 }

@@ -13,18 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Particles/Rotation/ParticleModuleMeshRotation.h")
 @:uextern extern class UParticleModuleMeshRotation extends unreal.UParticleModuleRotationBase {
-  
-  /**
-    If true, apply the parents rotation as well.
-  **/
-  public var bInheritParent : Bool;
-  
-  /**
-    Initial rotation in ROTATIONS PER SECOND (1 = 360 degrees).
-    The value is retrieved using the EmitterTime.
-  **/
-  public var StartRotation : unreal.FRawDistributionVector;
   
 }

@@ -13,22 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Engine/StaticMeshSocket.h")
 @:uextern extern class UStaticMeshSocket extends unreal.UObject {
-  #if WITH_EDITORONLY_DATA
-  public var PreviewStaticMesh : unreal.UStaticMesh;
-  #end // WITH_EDITORONLY_DATA
-  public var Tag : unreal.FString;
-  public var RelativeScale : unreal.FVector;
-  public var RelativeRotation : unreal.FRotator;
-  public var RelativeLocation : unreal.FVector;
-  
-  /**
-    Defines a named attachment location on the UStaticMesh.
-    These are set up in editor and used as a shortcut instead of specifying
-    everything explicitly to AttachComponent in the StaticMeshComponent.
-    The Outer of a StaticMeshSocket should always be the UStaticMesh.
-  **/
-  public var SocketName : unreal.FName;
   
 }

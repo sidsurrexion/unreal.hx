@@ -13,14 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Matinee/InterpFilter_Custom.h")
 @:uextern extern class UInterpFilter_Custom extends unreal.UInterpFilter {
-  #if WITH_EDITORONLY_DATA
-  
-  /**
-    Which groups are included in this filter.
-  **/
-  public var GroupsToInclude : unreal.TArray<unreal.UInterpGroup>;
-  #end // WITH_EDITORONLY_DATA
   
 }

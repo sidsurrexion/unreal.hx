@@ -13,13 +13,14 @@
 **/
 package unreal.editor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Animation/EditorAnimSegment.h")
 @:uextern extern class UEditorAnimSegment extends unreal.editor.UEditorAnimBaseObj {
-  
-  /**
-    Default blend in time.
-  **/
-  public var AnimSegment : unreal.FAnimSegment;
   
 }

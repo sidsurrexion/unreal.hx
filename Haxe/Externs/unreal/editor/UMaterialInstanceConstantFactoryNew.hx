@@ -13,9 +13,14 @@
 **/
 package unreal.editor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Factories/MaterialInstanceConstantFactoryNew.h")
 @:uextern extern class UMaterialInstanceConstantFactoryNew extends unreal.editor.UFactory {
-  public var InitialParent : unreal.UMaterialInterface;
   
 }

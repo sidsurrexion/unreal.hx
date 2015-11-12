@@ -13,23 +13,14 @@
 **/
 package unreal.editor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Factories/AnimBlueprintFactory.h")
 @:uextern extern class UAnimBlueprintFactory extends unreal.editor.UFactory {
-  
-  /**
-    The kind of skeleton that animation graphs compiled from the blueprint will animate
-  **/
-  public var TargetSkeleton : unreal.USkeleton;
-  
-  /**
-    The parent class of the created blueprint
-  **/
-  public var ParentClass : unreal.TSubclassOf<unreal.UAnimInstance>;
-  
-  /**
-    The type of blueprint that will be created
-  **/
-  public var BlueprintType : unreal.EBlueprintType;
   
 }

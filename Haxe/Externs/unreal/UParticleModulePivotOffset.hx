@@ -13,12 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Particles/Modules/Location/ParticleModulePivotOffset.h")
 @:uextern extern class UParticleModulePivotOffset extends unreal.UParticleModuleLocationBase {
-  
-  /**
-    Offset applied in UV space to the particle vertex positions. Defaults to (0.5,0.5) putting the pivot in the centre of the partilce.
-  **/
-  public var PivotOffset : unreal.FVector2D;
   
 }

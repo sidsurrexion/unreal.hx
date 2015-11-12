@@ -13,34 +13,14 @@
 **/
 package unreal.blueprintgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_Tunnel.h")
 @:uextern extern class UK2Node_Tunnel extends unreal.blueprintgraph.UK2Node_EditablePinBase {
-  
-  /**
-    The metadata for the function/subgraph associated with this tunnel node; it's only editable and used
-    on the tunnel entry node inside the subgraph or macro.  This structure is ignored on any other tunnel nodes.
-  **/
-  public var MetaData : unreal.blueprintgraph.FKismetUserDeclaredFunctionMetadata;
-  
-  /**
-    Whether this node is allowed to have outputs
-  **/
-  public var bCanHaveOutputs : Bool;
-  
-  /**
-    Whether this node is allowed to have inputs
-  **/
-  public var bCanHaveInputs : Bool;
-  
-  /**
-    The input pins of this tunnel go to the output pins of InputSinkNode
-  **/
-  public var InputSinkNode : unreal.blueprintgraph.UK2Node_Tunnel;
-  
-  /**
-    The output pins of this tunnel node came from the input pins of OutputSourceNode
-  **/
-  public var OutputSourceNode : unreal.blueprintgraph.UK2Node_Tunnel;
   
 }

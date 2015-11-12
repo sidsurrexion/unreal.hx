@@ -13,19 +13,14 @@
 **/
 package unreal.blueprintgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_GetInputAxisValue.h")
 @:uextern extern class UK2Node_GetInputAxisValue extends unreal.blueprintgraph.UK2Node_CallFunction {
-  
-  /**
-    Should the binding gather input even when the game is paused
-  **/
-  public var bExecuteWhenPaused : Bool;
-  
-  /**
-    Prevents actors with lower priority from handling this input
-  **/
-  public var bConsumeInput : Bool;
-  public var InputAxisName : unreal.FName;
   
 }

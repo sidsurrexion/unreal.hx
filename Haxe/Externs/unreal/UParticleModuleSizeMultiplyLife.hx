@@ -13,31 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Particles/Size/ParticleModuleSizeMultiplyLife.h")
 @:uextern extern class UParticleModuleSizeMultiplyLife extends unreal.UParticleModuleSizeBase {
-  
-  /**
-    If true, the Z-component of the scale factor will be applied to the particle size Z-component.
-    If false, the Z-component is left unaltered.
-  **/
-  public var MultiplyZ : Bool;
-  
-  /**
-    If true, the Y-component of the scale factor will be applied to the particle size Y-component.
-    If false, the Y-component is left unaltered.
-  **/
-  public var MultiplyY : Bool;
-  
-  /**
-    If true, the X-component of the scale factor will be applied to the particle size X-component.
-    If false, the X-component is left unaltered.
-  **/
-  public var MultiplyX : Bool;
-  
-  /**
-    The scale factor for the size that should be used for a particle.
-    The value is retrieved using the RelativeTime of the particle during its update.
-  **/
-  public var LifeMultiplier : unreal.FRawDistributionVector;
   
 }

@@ -13,9 +13,14 @@
 **/
 package unreal.editor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Factories/AnimSequenceFactory.h")
 @:uextern extern class UAnimSequenceFactory extends unreal.editor.UFactory {
-  public var TargetSkeleton : unreal.USkeleton;
   
 }

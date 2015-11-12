@@ -13,19 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Particles/Rotation/ParticleModuleRotationOverLifetime.h")
 @:uextern extern class UParticleModuleRotationOverLifetime extends unreal.UParticleModuleRotationBase {
-  
-  /**
-    If true,  the particle rotation is multiplied by the value retrieved from RotationOverLife.
-    If false, the particle rotation is incremented by the value retrieved from RotationOverLife.
-  **/
-  public var Scale : Bool;
-  
-  /**
-    The rotation of the particle (1.0 = 360 degrees).
-    The value is retrieved using the RelativeTime of the particle.
-  **/
-  public var RotationOverLife : unreal.FRawDistributionFloat;
   
 }

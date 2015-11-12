@@ -13,13 +13,14 @@
 **/
 package unreal.editor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Niagara/NiagaraNodeOp.h")
 @:uextern extern class UNiagaraNodeOp extends unreal.editor.UNiagaraNode {
-  
-  /**
-    Name of operation
-  **/
-  public var OpName : unreal.FName;
   
 }

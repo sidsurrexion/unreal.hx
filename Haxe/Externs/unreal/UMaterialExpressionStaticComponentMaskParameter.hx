@@ -13,12 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Materials/MaterialExpressionStaticComponentMaskParameter.h")
 @:uextern extern class UMaterialExpressionStaticComponentMaskParameter extends unreal.UMaterialExpressionParameter {
-  public var DefaultA : Bool;
-  public var DefaultB : Bool;
-  public var DefaultG : Bool;
-  public var DefaultR : Bool;
-  public var Input : unreal.FExpressionInput;
   
 }

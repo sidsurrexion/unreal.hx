@@ -13,17 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Matinee/InterpTrackInstMove.h")
 @:uextern extern class UInterpTrackInstMove extends unreal.UInterpTrackInst {
-  
-  /**
-    Saved rotation. Used in editor for resetting when quitting Matinee.
-  **/
-  public var ResetRotation : unreal.FRotator;
-  
-  /**
-    Saved position. Used in editor for resetting when quitting Matinee.
-  **/
-  public var ResetLocation : unreal.FVector;
   
 }

@@ -13,19 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Materials/MaterialExpressionScalarParameter.h")
 @:uextern extern class UMaterialExpressionScalarParameter extends unreal.UMaterialExpressionParameter {
-  
-  /**
-    Sets the upper bound for the slider on this parameter in the material instance editor.
-    The slider will be disabled if SliderMax <= SliderMin.
-  **/
-  public var SliderMax : unreal.Float32;
-  
-  /**
-    Sets the lower bound for the slider on this parameter in the material instance editor.
-  **/
-  public var SliderMin : unreal.Float32;
-  public var DefaultValue : unreal.Float32;
   
 }

@@ -15,6 +15,8 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   TextureRenderTarget2D
   
   2D render target texture resource. This can be used as a target
@@ -22,45 +24,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/TextureRenderTarget2D.h")
 @:uextern extern class UTextureRenderTarget2D extends unreal.UTextureRenderTarget {
-  
-  /**
-    Normally the format is derived from bHDR, this allows code to set the format explicitly.
-  **/
-  public var OverrideFormat : unreal.EPixelFormat;
-  
-  /**
-    Whether to support storing HDR values, which requires more memory.
-  **/
-  public var bHDR : Bool;
-  
-  /**
-    True to force linear gamma space for this render target
-  **/
-  public var bForceLinearGamma : Bool;
-  
-  /**
-    The addressing mode to use for the Y axis.
-  **/
-  public var AddressY : unreal.TextureAddress;
-  
-  /**
-    The addressing mode to use for the X axis.
-  **/
-  public var AddressX : unreal.TextureAddress;
-  
-  /**
-    the color the texture is cleared to
-  **/
-  public var ClearColor : unreal.FLinearColor;
-  
-  /**
-    The height of the texture.
-  **/
-  public var SizeY : unreal.Int32;
-  
-  /**
-    The width of the texture.
-  **/
-  public var SizeX : unreal.Int32;
   
 }

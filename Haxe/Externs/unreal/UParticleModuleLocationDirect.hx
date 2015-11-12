@@ -13,30 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Particles/Location/ParticleModuleLocationDirect.h")
 @:uextern extern class UParticleModuleLocationDirect extends unreal.UParticleModuleLocationBase {
-  
-  /**
-    Currently unused.
-  **/
-  public var Direction : unreal.FRawDistributionVector;
-  
-  /**
-    Scales the velocity of the object at a given point in the time-line.
-  **/
-  public var ScaleFactor : unreal.FRawDistributionVector;
-  
-  /**
-    An offset to apply to the position retrieved from the Location calculation.
-    The offset is retrieved using the EmitterTime.
-    The offset will remain constant over the life of the particle.
-  **/
-  public var LocationOffset : unreal.FRawDistributionVector;
-  
-  /**
-    The location of the particle at a give time. Retrieved using the particle RelativeTime.
-    IMPORTANT: the particle location is set to this value, thereby over-writing any previous module impacts.
-  **/
-  public var Location : unreal.FRawDistributionVector;
   
 }

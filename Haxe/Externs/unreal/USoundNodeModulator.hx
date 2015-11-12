@@ -15,29 +15,11 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   Defines a random volume and pitch modification when a sound starts
 **/
 @:glueCppIncludes("Sound/SoundNodeModulator.h")
 @:uextern extern class USoundNodeModulator extends unreal.USoundNode {
-  
-  /**
-    The upper bound of volume (1.0 is no change).
-  **/
-  public var VolumeMax : unreal.Float32;
-  
-  /**
-    The lower bound of volume (1.0 is no change).
-  **/
-  public var VolumeMin : unreal.Float32;
-  
-  /**
-    The upper bound of pitch (1.0 is no change).
-  **/
-  public var PitchMax : unreal.Float32;
-  
-  /**
-    The lower bound of pitch (1.0 is no change).
-  **/
-  public var PitchMin : unreal.Float32;
   
 }

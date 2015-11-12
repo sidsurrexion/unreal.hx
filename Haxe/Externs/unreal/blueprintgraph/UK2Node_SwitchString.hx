@@ -13,10 +13,14 @@
 **/
 package unreal.blueprintgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_SwitchString.h")
 @:uextern extern class UK2Node_SwitchString extends unreal.blueprintgraph.UK2Node_Switch {
-  public var bIsCaseSensitive : Bool;
-  public var PinNames : unreal.TArray<unreal.FString>;
   
 }

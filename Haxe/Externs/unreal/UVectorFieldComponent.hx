@@ -15,35 +15,11 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   A Component referencing a vector field.
 **/
 @:glueCppIncludes("Components/VectorFieldComponent.h")
 @:uextern extern class UVectorFieldComponent extends unreal.UPrimitiveComponent {
-  
-  /**
-    If true, the vector field is only used for preview visualizations.
-  **/
-  public var bPreviewVectorField : Bool;
-  
-  /**
-    How tightly particles follow the vector field.
-  **/
-  public var Tightness : unreal.Float32;
-  
-  /**
-    The intensity at which the vector field is applied.
-  **/
-  public var Intensity : unreal.Float32;
-  
-  /**
-    The vector field asset.
-  **/
-  public var VectorField : unreal.UVectorField;
-  
-  /**
-    Set the intensity of the vector field.
-    @param NewIntensity - The new intensity of the vector field.
-  **/
-  public function SetIntensity(NewIntensity : unreal.Float32) : Void;
   
 }

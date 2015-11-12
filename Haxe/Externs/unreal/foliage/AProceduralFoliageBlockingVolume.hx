@@ -15,11 +15,12 @@ package unreal.foliage;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   An invisible volume used to block ProceduralFoliage instances from being spawned.
 **/
 @:umodule("Foliage")
 @:glueCppIncludes("ProceduralFoliageBlockingVolume.h")
 @:uextern extern class AProceduralFoliageBlockingVolume extends unreal.AVolume {
-  public var ProceduralFoliageVolume : unreal.foliage.AProceduralFoliageVolume;
   
 }

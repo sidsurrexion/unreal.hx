@@ -13,18 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Animation/AnimCompress_RemoveEverySecondKey.h")
 @:uextern extern class UAnimCompress_RemoveEverySecondKey extends unreal.UAnimCompress {
-  
-  /**
-    If bStartAtSecondKey is true, remove keys 1,3,5,etc.
-    If bStartAtSecondKey is false, remove keys 0,2,4,etc.
-  **/
-  public var bStartAtSecondKey : Bool;
-  
-  /**
-    Animations with fewer than MinKeys will not lose any keys.
-  **/
-  public var MinKeys : unreal.Int32;
   
 }

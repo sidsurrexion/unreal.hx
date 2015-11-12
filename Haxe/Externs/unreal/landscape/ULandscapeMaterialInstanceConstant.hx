@@ -13,11 +13,14 @@
 **/
 package unreal.landscape;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeMaterialInstanceConstant.h")
 @:uextern extern class ULandscapeMaterialInstanceConstant extends unreal.UMaterialInstanceConstant {
-  public var DataWeightmapSize : unreal.Int32;
-  public var DataWeightmapIndex : unreal.Int32;
-  public var bIsLayerThumbnail : Bool;
   
 }

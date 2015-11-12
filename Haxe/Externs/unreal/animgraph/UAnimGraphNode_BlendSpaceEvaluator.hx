@@ -13,10 +13,14 @@
 **/
 package unreal.animgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimGraphNode_BlendSpaceEvaluator.h")
 @:uextern extern class UAnimGraphNode_BlendSpaceEvaluator extends unreal.animgraph.UAnimGraphNode_BlendSpaceBase {
-  public var SyncGroup : unreal.FAnimationGroupReference;
-  public var Node : unreal.FAnimNode_BlendSpaceEvaluator;
   
 }

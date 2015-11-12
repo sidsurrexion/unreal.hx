@@ -15,84 +15,12 @@ package unreal.paper2d;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   Groups together a set of sprites that will try to share the same texture atlas (allowing them to be combined into a single draw call)
 **/
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperSpriteAtlas.h")
 @:uextern extern class UPaperSpriteAtlas extends unreal.UObject {
-  #if WITH_EDITORONLY_DATA
-  public var BuiltPadding : unreal.Int32;
-  public var BuiltHeight : unreal.Int32;
-  
-  /**
-    Values used when building this atlas
-  **/
-  public var BuiltWidth : unreal.Int32;
-  
-  /**
-    Track the number of incremental builds
-  **/
-  public var NumIncrementalBuilds : unreal.Int32;
-  
-  /**
-    Slots in the atlas
-  **/
-  public var AtlasSlots : unreal.TArray<unreal.paper2d.FPaperSpriteAtlasSlot>;
-  
-  /**
-    Slots in the atlas
-  **/
-  public var bRebuildAtlas : Bool;
-  
-  /**
-    The GUID of the atlas group, used to match up sprites that belong to this group even thru atlas renames
-  **/
-  public var AtlasGUID : unreal.FGuid;
-  
-  /**
-    List of generated atlas textures
-  **/
-  public var GeneratedTextures : unreal.TArray<unreal.UTexture>;
-  
-  /**
-    Texture filtering mode when sampling these textures
-  **/
-  public var Filter : unreal.TextureFilter;
-  
-  /**
-    Compression settings to use on atlas texture
-  **/
-  public var CompressionSettings : unreal.TextureCompressionSettings;
-  
-  /**
-    The number of pixels of padding
-  **/
-  public var Padding : unreal.Int32;
-  
-  /**
-    The type of padding performed on this atlas
-  **/
-  public var PaddingType : unreal.paper2d.EPaperSpriteAtlasPadding;
-  
-  /**
-    Maximum atlas page height (single pages might be smaller)
-  **/
-  public var MipCount : unreal.Int32;
-  
-  /**
-    Maximum atlas page height (single pages might be smaller)
-  **/
-  public var MaxHeight : unreal.Int32;
-  
-  /**
-    Maximum atlas page width (single pages might be smaller)
-  **/
-  public var MaxWidth : unreal.Int32;
-  
-  /**
-    Description of this atlas, which shows up in the content browser tooltip
-  **/
-  public var AtlasDescription : unreal.FString;
-  #end // WITH_EDITORONLY_DATA
   
 }

@@ -13,9 +13,14 @@
 **/
 package unreal.animgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimationTransitionGraph.h")
 @:uextern extern class UAnimationTransitionGraph extends unreal.animgraph.UAnimationGraph {
-  public var MyResultNode : unreal.animgraph.UAnimGraphNode_TransitionResult;
   
 }

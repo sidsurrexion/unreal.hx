@@ -13,21 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Matinee/InterpGroupCamera.h")
 @:uextern extern class UInterpGroupCamera extends unreal.UInterpGroup {
-  
-  /**
-    When compress, tolerance option *
-  **/
-  public var CompressTolerance : unreal.Float32;
-  #if WITH_EDITORONLY_DATA
-  
-  /**
-    this is interaction property info for CameraAnim
-    this information isn't really saved with it
-  **/
-  public var Target : unreal.FCameraPreviewInfo;
-  #end // WITH_EDITORONLY_DATA
-  public var CameraAnimInst : unreal.UCameraAnim;
   
 }

@@ -13,19 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Particles/Velocity/ParticleModuleVelocityOverLifetime.h")
 @:uextern extern class UParticleModuleVelocityOverLifetime extends unreal.UParticleModuleVelocityBase {
-  
-  /**
-    If true, the velocity will be SET to the value from the above dist.
-    If false, the velocity will be scaled by the above dist.
-  **/
-  public var Absolute : Bool;
-  
-  /**
-    The scaling  value applied to the velocity.
-    Value is retrieved using the RelativeTime of the particle.
-  **/
-  public var VelOverLife : unreal.FRawDistributionVector;
   
 }

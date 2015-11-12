@@ -13,9 +13,14 @@
 **/
 package unreal.editor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Animation/EditorSkeletonNotifyObj.h")
 @:uextern extern class UEditorSkeletonNotifyObj extends unreal.UObject {
-  public var Name : unreal.FName;
   
 }

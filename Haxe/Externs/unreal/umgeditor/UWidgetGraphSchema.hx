@@ -13,14 +13,14 @@
 **/
 package unreal.umgeditor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("UMGEditor")
 @:glueCppIncludes("WidgetGraphSchema.h")
 @:uextern extern class UWidgetGraphSchema extends unreal.blueprintgraph.UEdGraphSchema_K2 {
-  public var DefaultEvaluationHandlerName : unreal.FName;
-  public var NAME_OnEvaluate : unreal.FName;
-  public var NAME_AlwaysAsPin : unreal.FName;
-  public var NAME_PinShownByDefault : unreal.FName;
-  public var NAME_PinHiddenByDefault : unreal.FName;
-  public var NAME_NeverAsPin : unreal.FName;
   
 }

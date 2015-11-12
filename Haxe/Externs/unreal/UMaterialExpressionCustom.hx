@@ -13,11 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Materials/MaterialExpressionCustom.h")
 @:uextern extern class UMaterialExpressionCustom extends unreal.UMaterialExpression {
-  public var Inputs : unreal.TArray<unreal.FCustomInput>;
-  public var Description : unreal.FString;
-  public var OutputType : unreal.ECustomMaterialOutputType;
-  public var Code : unreal.FString;
   
 }

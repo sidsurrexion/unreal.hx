@@ -13,13 +13,14 @@
 **/
 package unreal.functionaltesting;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("FunctionalTesting")
 @:glueCppIncludes("FunctionalAITest.h")
 @:uextern extern class AFunctionalAITest extends unreal.functionaltesting.AFunctionalTest {
-  private var PendingDelayedSpawns : unreal.TArray<unreal.functionaltesting.FPendingDelayedSpawn>;
-  private var SpawnedPawns : unreal.TArray<unreal.APawn>;
-  private var SpawnLocationRandomizationRange : unreal.Float32;
-  private var SpawnSets : unreal.TArray<unreal.functionaltesting.FAITestSpawnSet>;
-  public function IsOneOfSpawnedPawns(Actor : unreal.AActor) : Bool;
   
 }

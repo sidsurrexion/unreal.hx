@@ -13,47 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Engine/PlatformInterfaceWebResponse.h")
 @:uextern extern class UPlatformInterfaceWebResponse extends unreal.UObject {
-  
-  /**
-    For non-string results, this is the response
-  **/
-  public var BinaryResponse : unreal.TArray<unreal.UInt8>;
-  
-  /**
-    For string results, this is the response
-  **/
-  public var StringResponse : unreal.FString;
-  
-  /**
-    A user-specified tag specified with the request
-  **/
-  public var Tag : unreal.Int32;
-  
-  /**
-    Result code from the response (200=OK, 404=Not Found, etc)
-  **/
-  public var ResponseCode : unreal.Int32;
-  
-  /**
-    This holds the original requested URL
-  **/
-  public var OriginalURL : unreal.FString;
-  
-  /**
-    @return the number of header/value pairs
-  **/
-  public function GetNumHeaders() : unreal.Int32;
-  
-  /**
-    Retrieve the header and value for the given index of header/value pair
-  **/
-  public function GetHeader(HeaderIndex : unreal.Int32, Header : unreal.PRef<unreal.FString>, Value : unreal.PRef<unreal.FString>) : Void;
-  
-  /**
-    @return the value for the given header (or "" if no matching header)
-  **/
-  public function GetHeaderValue(HeaderName : unreal.FString) : unreal.FString;
   
 }

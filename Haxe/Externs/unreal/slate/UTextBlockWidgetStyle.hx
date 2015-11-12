@@ -13,13 +13,14 @@
 **/
 package unreal.slate;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("Slate")
 @:glueCppIncludes("Framework/Styling/TextBlockWidgetStyle.h")
 @:uextern extern class UTextBlockWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
-  
-  /**
-    The actual data describing the button's appearance.
-  **/
-  public var TextBlockStyle : unreal.slatecore.FTextBlockStyle;
   
 }

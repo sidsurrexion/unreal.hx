@@ -13,13 +13,14 @@
 **/
 package unreal.blueprintgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_MacroInstance.h")
 @:uextern extern class UK2Node_MacroInstance extends unreal.blueprintgraph.UK2Node_Tunnel {
-  
-  /**
-    Stored type info for what type the wildcard pins in this macro should become.
-  **/
-  public var ResolvedWildcardType : unreal.FEdGraphPinType;
   
 }

@@ -13,12 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Particles/Acceleration/ParticleModuleAccelerationDragScaleOverLife.h")
 @:uextern extern class UParticleModuleAccelerationDragScaleOverLife extends unreal.UParticleModuleAccelerationBase {
-  
-  /**
-    Per-particle drag scale. Evaluted using particle relative time.
-  **/
-  public var DragScale : unreal.UDistributionFloat;
   
 }

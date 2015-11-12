@@ -15,12 +15,11 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   Implements a directional light actor.
 **/
 @:glueCppIncludes("Engine/DirectionalLight.h")
 @:uextern extern class ADirectionalLight extends unreal.ALight {
-  #if WITH_EDITORONLY_DATA
-  public var ArrowComponent : unreal.UArrowComponent;
-  #end // WITH_EDITORONLY_DATA
   
 }

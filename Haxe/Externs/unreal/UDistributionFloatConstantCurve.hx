@@ -13,12 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Distributions/DistributionFloatConstantCurve.h")
 @:uextern extern class UDistributionFloatConstantCurve extends unreal.UDistributionFloat {
-  
-  /**
-    Keyframe data for how output constant varies over time.
-  **/
-  public var ConstantCurve : unreal.FInterpCurveFloat;
   
 }

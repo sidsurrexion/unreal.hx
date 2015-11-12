@@ -13,12 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Engine/ShadowMapTexture2D.h")
 @:uextern extern class UShadowMapTexture2D extends unreal.UTexture2D {
-  
-  /**
-    Bit-field with shadowmap flags.
-  **/
-  public var ShadowmapFlags : unreal.EShadowMapFlags;
   
 }

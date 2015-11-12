@@ -15,26 +15,13 @@ package unreal.niagara;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   UNiagaraEmitterProperties stores the attributes of an FNiagaraSimulation
   that need to be serialized and are used for its initialization
 **/
 @:umodule("Niagara")
 @:glueCppIncludes("NiagaraSimulation.h")
 @:uextern extern class UNiagaraEmitterProperties extends unreal.UObject {
-  public var SpawnScriptProps : unreal.niagara.FNiagaraEmitterScriptProperties;
-  public var UpdateScriptProps : unreal.niagara.FNiagaraEmitterScriptProperties;
-  public var NumLoops : unreal.Int32;
-  public var RendererProperties : unreal.UNiagaraEffectRendererProperties;
-  public var EndTime : unreal.Float32;
-  public var StartTime : unreal.Float32;
-  public var RenderModuleType : unreal.niagara.EEmitterRenderModuleType;
-  public var Material : unreal.UMaterial;
-  public var SpawnRate : unreal.Float32;
-  public var bIsEnabled : Bool;
-  
-  /**
-    End UObject Interface
-  **/
-  public var EmitterName : unreal.FString;
   
 }

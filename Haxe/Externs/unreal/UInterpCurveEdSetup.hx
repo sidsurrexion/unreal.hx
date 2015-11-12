@@ -13,9 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Engine/InterpCurveEdSetup.h")
 @:uextern extern class UInterpCurveEdSetup extends unreal.UObject {
-  public var ActiveTab : unreal.Int32;
-  public var Tabs : unreal.TArray<unreal.FCurveEdTab>;
   
 }

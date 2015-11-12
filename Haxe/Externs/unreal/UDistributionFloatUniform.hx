@@ -13,17 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Distributions/DistributionFloatUniform.h")
 @:uextern extern class UDistributionFloatUniform extends unreal.UDistributionFloat {
-  
-  /**
-    High end of output float distribution.
-  **/
-  public var Max : unreal.Float32;
-  
-  /**
-    Low end of output float distribution.
-  **/
-  public var Min : unreal.Float32;
   
 }

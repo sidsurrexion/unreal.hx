@@ -13,9 +13,14 @@
 **/
 package unreal.animgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimGraphNode_BlendListByBool.h")
 @:uextern extern class UAnimGraphNode_BlendListByBool extends unreal.animgraph.UAnimGraphNode_BlendListBase {
-  public var Node : unreal.FAnimNode_BlendListByBool;
   
 }

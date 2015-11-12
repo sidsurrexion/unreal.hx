@@ -13,8 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Materials/MaterialExpressionWorldPosition.h")
 @:uextern extern class UMaterialExpressionWorldPosition extends unreal.UMaterialExpression {
-  public var WorldPositionShaderOffset : unreal.EWorldPositionIncludedOffsets;
   
 }

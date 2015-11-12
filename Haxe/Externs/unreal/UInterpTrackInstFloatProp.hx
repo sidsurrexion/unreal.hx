@@ -13,12 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Matinee/InterpTrackInstFloatProp.h")
 @:uextern extern class UInterpTrackInstFloatProp extends unreal.UInterpTrackInstProperty {
-  
-  /**
-    Saved value for restoring state when exiting Matinee.
-  **/
-  public var ResetFloat : unreal.Float32;
   
 }

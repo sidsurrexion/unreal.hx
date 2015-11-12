@@ -13,17 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("EdGraph/EdGraphNode_Documentation.h")
 @:uextern extern class UEdGraphNode_Documentation extends unreal.UEdGraphNode {
-  
-  /**
-    Documentation Excerpt
-  **/
-  public var Excerpt : unreal.FString;
-  
-  /**
-    Documentation Link
-  **/
-  public var Link : unreal.FString;
   
 }

@@ -13,18 +13,14 @@
 **/
 package unreal.umgeditor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("UMGEditor")
 @:glueCppIncludes("WidgetBlueprintFactory.h")
 @:uextern extern class UWidgetBlueprintFactory extends unreal.editor.UFactory {
-  
-  /**
-    The parent class of the created blueprint
-  **/
-  public var ParentClass : unreal.TSubclassOf<unreal.umg.UUserWidget>;
-  
-  /**
-    The type of blueprint that will be created
-  **/
-  public var BlueprintType : unreal.EBlueprintType;
   
 }

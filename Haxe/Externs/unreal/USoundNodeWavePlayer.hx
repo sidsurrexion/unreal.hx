@@ -15,10 +15,11 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   Sound node that contains a reference to the raw wave file to be played
 **/
 @:glueCppIncludes("Sound/SoundNodeWavePlayer.h")
 @:uextern extern class USoundNodeWavePlayer extends unreal.USoundNodeAssetReferencer {
-  public var bLooping : Bool;
   
 }

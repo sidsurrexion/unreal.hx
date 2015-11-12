@@ -13,17 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Engine/LevelStreamingKismet.h")
 @:uextern extern class ULevelStreamingKismet extends unreal.ULevelStreaming {
-  
-  /**
-    Whether the level should be visible at startup if it is loaded
-  **/
-  public var bInitiallyVisible : Bool;
-  
-  /**
-    Whether the level should be loaded at startup
-  **/
-  public var bInitiallyLoaded : Bool;
   
 }

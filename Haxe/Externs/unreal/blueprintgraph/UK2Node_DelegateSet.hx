@@ -13,18 +13,14 @@
 **/
 package unreal.blueprintgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_DelegateSet.h")
 @:uextern extern class UK2Node_DelegateSet extends unreal.blueprintgraph.UK2Node {
-  
-  /**
-    Class that the delegate property is defined in
-  **/
-  public var DelegatePropertyClass : unreal.TSubclassOf<unreal.UObject>;
-  
-  /**
-    Delegate property name that this event is associated with on the target
-  **/
-  public var DelegatePropertyName : unreal.FName;
   
 }

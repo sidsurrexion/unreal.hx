@@ -15,20 +15,12 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   Class that stores per-world instance parameter data for a given UMaterialParameterCollection resource.
   Instances of this class are always transient.
 **/
 @:glueCppIncludes("Materials/MaterialParameterCollectionInstance.h")
 @:uextern extern class UMaterialParameterCollectionInstance extends unreal.UObject {
-  
-  /**
-    World that owns this instance.
-  **/
-  private var World : unreal.UWorld;
-  
-  /**
-    Collection resource this instance is based off of.
-  **/
-  private var Collection : unreal.UMaterialParameterCollection;
   
 }

@@ -15,15 +15,12 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   An asset describing how a texture can exist in slate's DPI-aware environment
   and how this texture responds to resizing. e.g. Scale9-stretching? Tiling?
 **/
 @:glueCppIncludes("Slate/SlateBrushAsset.h")
 @:uextern extern class USlateBrushAsset extends unreal.UObject {
-  
-  /**
-    The slate brush resource describing the texture's behavior.
-  **/
-  public var Brush : unreal.slatecore.FSlateBrush;
   
 }

@@ -13,10 +13,14 @@
 **/
 package unreal.animgraph;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimGraphNode_SaveCachedPose.h")
 @:uextern extern class UAnimGraphNode_SaveCachedPose extends unreal.animgraph.UAnimGraphNode_Base {
-  public var CacheName : unreal.FString;
-  public var Node : unreal.FAnimNode_SaveCachedPose;
   
 }

@@ -15,15 +15,12 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   Used with objects that have physics to apply a force down the negative-X direction
   ie. point X in the direction you want the thrust in.
 **/
 @:glueCppIncludes("PhysicsEngine/PhysicsThrusterComponent.h")
 @:uextern extern class UPhysicsThrusterComponent extends unreal.USceneComponent {
-  
-  /**
-    Strength of thrust force applied to the base object.
-  **/
-  public var ThrustStrength : unreal.Float32;
   
 }

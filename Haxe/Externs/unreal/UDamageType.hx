@@ -15,6 +15,8 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   A DamageType is intended to define and describe a particular form of damage and to provide an avenue
   for customizing responses to damage from various sources.
   
@@ -25,40 +27,5 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/DamageType.h")
 @:uextern extern class UDamageType extends unreal.UObject {
-  
-  /**
-    Damage fall-off for radius damage (exponent).  Default 1.0=linear, 2.0=square of distance, etc.
-  **/
-  public var DamageFalloff : unreal.Float32;
-  
-  /**
-    How much the damage spreads on a destructible mesh
-  **/
-  public var DestructibleDamageSpreadScale : unreal.Float32;
-  
-  /**
-    How large the impulse should be applied to destructible meshes
-  **/
-  public var DestructibleImpulse : unreal.Float32;
-  
-  /**
-    When applying radial impulses, whether to treat as impulse or velocity change.
-  **/
-  public var bRadialDamageVelChange : Bool;
-  
-  /**
-    The magnitude of impulse to apply to the Actors damaged by this type.
-  **/
-  public var DamageImpulse : unreal.Float32;
-  
-  /**
-    True to scale imparted momentum by the receiving pawn's mass for pawns using character movement
-  **/
-  public var bScaleMomentumByMass : Bool;
-  
-  /**
-    True if this damagetype is caused by the world (falling off level, into lava, etc).
-  **/
-  public var bCausedByWorld : Bool;
   
 }

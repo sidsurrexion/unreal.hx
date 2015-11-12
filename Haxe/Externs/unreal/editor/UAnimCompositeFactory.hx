@@ -13,14 +13,14 @@
 **/
 package unreal.editor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Factories/AnimCompositeFactory.h")
 @:uextern extern class UAnimCompositeFactory extends unreal.editor.UFactory {
-  
-  /**
-    Used when creating a composite from an AnimSequence, becomes the only AnimSequence contained
-  **/
-  public var SourceAnimation : unreal.UAnimSequence;
-  public var TargetSkeleton : unreal.USkeleton;
   
 }

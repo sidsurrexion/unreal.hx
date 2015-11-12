@@ -15,15 +15,12 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   An asset describing a CheckBox's appearance.
   Just a wrapper for the struct with real data in it.
 **/
 @:glueCppIncludes("Slate/CheckboxStyleAsset.h")
 @:uextern extern class UCheckBoxStyleAsset extends unreal.UObject {
-  
-  /**
-    The actual data describing the Check Box's appearance.
-  **/
-  public var CheckBoxStyle : unreal.slatecore.FCheckBoxStyle;
   
 }

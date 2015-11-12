@@ -13,13 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Particles/Velocity/ParticleModuleVelocityInheritParent.h")
 @:uextern extern class UParticleModuleVelocityInheritParent extends unreal.UParticleModuleVelocityBase {
-  
-  /**
-    The scale to apply tot he parent velocity prior to adding it to the particle velocity during spawn.
-    Value is retrieved using the EmitterTime of the emitter.
-  **/
-  public var Scale : unreal.FRawDistributionVector;
   
 }

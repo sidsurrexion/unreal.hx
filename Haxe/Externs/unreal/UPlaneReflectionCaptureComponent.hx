@@ -15,16 +15,11 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   -> will be exported to EngineDecalClasses.h
 **/
 @:glueCppIncludes("Components/PlaneReflectionCaptureComponent.h")
 @:uextern extern class UPlaneReflectionCaptureComponent extends unreal.UReflectionCaptureComponent {
-  public var PreviewCaptureBox : unreal.UBoxComponent;
-  public var PreviewInfluenceRadius : unreal.UDrawSphereComponent;
-  
-  /**
-    Radius of the area that can receive reflections from this capture.
-  **/
-  public var InfluenceRadiusScale : unreal.Float32;
   
 }

@@ -13,17 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Engine/TextureLightProfile.h")
 @:uextern extern class UTextureLightProfile extends unreal.UTexture2D {
-  
-  /**
-    Multiplier to map texture value to result to integrate over the sphere to 1.0f
-  **/
-  public var TextureMultiplier : unreal.Float32;
-  
-  /**
-    Light brightness in Lumens, imported from IES profile, <= 0 if the profile is used for masking only. Use with InverseSquareFalloff.
-  **/
-  public var Brightness : unreal.Float32;
   
 }

@@ -13,27 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Particles/Attractor/ParticleModuleAttractorLine.h")
 @:uextern extern class UParticleModuleAttractorLine extends unreal.UParticleModuleAttractorBase {
-  
-  /**
-    The strength of the line attractor.
-  **/
-  public var Strength : unreal.FRawDistributionFloat;
-  
-  /**
-    The range of the line attractor.
-  **/
-  public var Range : unreal.FRawDistributionFloat;
-  
-  /**
-    The second endpoint of the line.
-  **/
-  public var EndPoint1 : unreal.FVector;
-  
-  /**
-    The first endpoint of the line.
-  **/
-  public var EndPoint0 : unreal.FVector;
   
 }

@@ -13,9 +13,14 @@
 **/
 package unreal.configeditor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("ConfigEditor")
 @:glueCppIncludes("ConfigPropertyHelper.h")
 @:uextern extern class UConfigHierarchyPropertyView extends unreal.UObject {
-  public var ConfigFilePropertyObjects : unreal.TArray<unreal.configeditor.UPropertyConfigFileDisplayRow>;
   
 }

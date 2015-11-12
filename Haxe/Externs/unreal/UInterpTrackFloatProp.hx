@@ -13,12 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Matinee/InterpTrackFloatProp.h")
 @:uextern extern class UInterpTrackFloatProp extends unreal.UInterpTrackFloatBase {
-  
-  /**
-    Name of property in Group  AActor  which this track mill modify over time.
-  **/
-  public var PropertyName : unreal.FName;
   
 }

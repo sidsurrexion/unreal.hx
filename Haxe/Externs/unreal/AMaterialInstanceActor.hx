@@ -13,12 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Materials/MaterialInstanceActor.h")
 @:uextern extern class AMaterialInstanceActor extends unreal.AActor {
-  
-  /**
-    Pointer to actors that we want to control paramters of using Matinee.
-  **/
-  public var TargetActors : unreal.TArray<unreal.AActor>;
   
 }

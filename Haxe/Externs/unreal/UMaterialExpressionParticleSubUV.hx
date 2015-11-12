@@ -13,8 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Materials/MaterialExpressionParticleSubUV.h")
 @:uextern extern class UMaterialExpressionParticleSubUV extends unreal.UMaterialExpressionTextureSample {
-  public var bBlend : Bool;
   
 }

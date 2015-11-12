@@ -13,13 +13,14 @@
 **/
 package unreal.editor;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Niagara/NiagaraScriptSource.h")
 @:uextern extern class UNiagaraScriptSource extends unreal.niagara.UNiagaraScriptSourceBase {
-  
-  /**
-    Graph for particle update expression
-  **/
-  public var NodeGraph : unreal.editor.UNiagaraGraph;
   
 }

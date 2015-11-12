@@ -13,37 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Materials/MaterialExpressionLinearInterpolate.h")
 @:uextern extern class UMaterialExpressionLinearInterpolate extends unreal.UMaterialExpression {
-  
-  /**
-    only used if Alpha is not hooked up
-  **/
-  public var ConstAlpha : unreal.Float32;
-  
-  /**
-    only used if B is not hooked up
-  **/
-  public var ConstB : unreal.Float32;
-  
-  /**
-    only used if A is not hooked up
-  **/
-  public var ConstA : unreal.Float32;
-  
-  /**
-    Defaults to 'ConstAlpha' if not specified
-  **/
-  public var Alpha : unreal.FExpressionInput;
-  
-  /**
-    Defaults to 'ConstB' if not specified
-  **/
-  public var B : unreal.FExpressionInput;
-  
-  /**
-    Defaults to 'ConstA' if not specified
-  **/
-  public var A : unreal.FExpressionInput;
   
 }

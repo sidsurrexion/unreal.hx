@@ -15,34 +15,11 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   -> will be exported to EngineDecalClasses.h
 **/
 @:glueCppIncludes("Components/SceneCaptureComponent.h")
 @:uextern extern class USceneCaptureComponent extends unreal.USceneComponent {
-  
-  /**
-    ShowFlags for the SceneCapture's ViewFamily, to control rendering settings for this view. Hidden but accessible through details customization
-  **/
-  public var ShowFlagSettings : unreal.TArray<unreal.FEngineShowFlagsSetting>;
-  
-  /**
-    if > 0, sets a maximum render distance override.  Can be used to cull distant objects from a reflection if the reflecting plane is in an enclosed area like a hallway or room
-  **/
-  public var MaxViewDistanceOverride : unreal.Float32;
-  
-  /**
-    Whether to update the capture's contents every frame.  If disabled, the component will render once on load and then only when moved.
-  **/
-  public var bCaptureEveryFrame : Bool;
-  
-  /**
-    Adds the component to our list of hidden components.
-  **/
-  @:final public function HideComponent(InComponent : unreal.UPrimitiveComponent) : Void;
-  
-  /**
-    Adds all primitive components in the actor to our list of hidden components.
-  **/
-  @:final public function HideActorComponents(InActor : unreal.AActor) : Void;
   
 }

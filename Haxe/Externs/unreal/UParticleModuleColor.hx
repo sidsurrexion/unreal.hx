@@ -13,22 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Particles/Color/ParticleModuleColor.h")
 @:uextern extern class UParticleModuleColor extends unreal.UParticleModuleColorBase {
-  
-  /**
-    If true, the alpha value will be clamped to the [0..1] range.
-  **/
-  public var bClampAlpha : Bool;
-  
-  /**
-    Initial alpha for a particle as a function of Emitter time.
-  **/
-  public var StartAlpha : unreal.FRawDistributionFloat;
-  
-  /**
-    Initial color for a particle as a function of Emitter time.
-  **/
-  public var StartColor : unreal.FRawDistributionVector;
   
 }

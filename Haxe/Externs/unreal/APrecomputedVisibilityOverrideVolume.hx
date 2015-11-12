@@ -13,22 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
+  
+**/
 @:glueCppIncludes("Lightmass/PrecomputedVisibilityOverrideVolume.h")
 @:uextern extern class APrecomputedVisibilityOverrideVolume extends unreal.AVolume {
-  
-  /**
-    Array of level names whose actors will always be considered invisible by Precomputed Visibility when viewed from inside this volume.
-  **/
-  public var OverrideInvisibleLevels : unreal.TArray<unreal.FName>;
-  
-  /**
-    Array of actors that will always be considered invisible by Precomputed Visibility when viewed from inside this volume.
-  **/
-  public var OverrideInvisibleActors : unreal.TArray<unreal.AActor>;
-  
-  /**
-    Array of actors that will always be considered visible by Precomputed Visibility when viewed from inside this volume.
-  **/
-  public var OverrideVisibleActors : unreal.TArray<unreal.AActor>;
   
 }

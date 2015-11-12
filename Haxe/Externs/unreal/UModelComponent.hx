@@ -15,6 +15,8 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   ModelComponents are PrimitiveComponents that represent elements of BSP geometry in a ULevel object.
   They are used exclusively by ULevel and are not intended as general-purpose components.
   
@@ -22,11 +24,6 @@ package unreal;
 **/
 @:glueCppIncludes("Components/ModelComponent.h")
 @:uextern extern class UModelComponent extends unreal.UPrimitiveComponent implements unreal.IInterface_CollisionDataProvider {
-  
-  /**
-    Description of collision
-  **/
-  public var ModelBodySetup : unreal.UBodySetup;
   // Interface_CollisionDataProvider interface implementation
   
 }

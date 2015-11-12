@@ -15,14 +15,12 @@ package unreal;
 
 
 /**
+  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  
   A placeable fog actor that simulates atmospheric light scattering
   @see https://docs.unrealengine.com/latest/INT/Engine/Actors/FogEffects/AtmosphericFog/index.html
 **/
 @:glueCppIncludes("Atmosphere/AtmosphericFog.h")
 @:uextern extern class AAtmosphericFog extends unreal.AInfo {
-  #if WITH_EDITORONLY_DATA
-  public var ArrowComponent : unreal.UArrowComponent;
-  #end // WITH_EDITORONLY_DATA
-  public var AtmosphericFogComponent : unreal.UAtmosphericFogComponent;
   
 }
