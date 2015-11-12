@@ -20,6 +20,6 @@ package unreal;
   Lookup table for distributions.
 **/
 @:glueCppIncludes("Particles/ParticleModuleRequired.h")
-@:uextern extern class FDistributionLookupTable {
+@:noCopy @:uextern extern class FDistributionLookupTable {
   
 }

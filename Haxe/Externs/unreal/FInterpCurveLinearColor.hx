@@ -20,6 +20,6 @@ package unreal;
   
 **/
 @:glueCppIncludes("Matinee/InterpTrackLinearColorBase.h")
-@:uextern extern class FInterpCurveLinearColor {
+@:noCopy @:uextern extern class FInterpCurveLinearColor {
   
 }

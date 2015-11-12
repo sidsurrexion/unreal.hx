@@ -20,6 +20,6 @@ package unreal;
   
 **/
 @:glueCppIncludes("Components/SplineComponent.h")
-@:uextern extern class FInterpCurvePointVector {
+@:noCopy @:uextern extern class FInterpCurvePointVector {
   
 }

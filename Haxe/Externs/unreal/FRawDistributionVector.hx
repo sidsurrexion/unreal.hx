@@ -13,8 +13,13 @@
 **/
 package unreal;
 
+
+/**
+  WARNING: This type is defined as NoExport by UHT. It will be empty because of it
+  
+  
+**/
 @:glueCppIncludes("Particles/Acceleration/ParticleModuleAcceleration.h")
-@:uextern extern class FRawDistributionVector extends unreal.FRawDistribution {
-  public var Distribution : unreal.UDistributionVector;
+@:noCopy @:uextern extern class FRawDistributionVector extends unreal.FRawDistribution {
   
 }

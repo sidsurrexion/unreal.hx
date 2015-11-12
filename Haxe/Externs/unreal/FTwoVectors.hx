@@ -20,6 +20,6 @@ package unreal;
   
 **/
 @:glueCppIncludes("Distributions/DistributionVectorUniformCurve.h")
-@:uextern extern class FTwoVectors {
+@:noCopy @:uextern extern class FTwoVectors {
   
 }
