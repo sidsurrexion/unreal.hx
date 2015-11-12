@@ -20,7 +20,7 @@ package unreal;
   A bounding box.
   The full C++ class is located here: Engine\Source\Runtime\Core\Public\Math\Box.h
 **/
-@:glueCppIncludes("Camera/CameraAnim.h")
+@:glueCppIncludes("PhysicsEngine/BodySetup.h")
 @:uextern extern class FBox {
   
 }

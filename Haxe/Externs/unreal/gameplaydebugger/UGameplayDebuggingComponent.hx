@@ -72,6 +72,7 @@ package unreal.gameplaydebugger;
   public function OnRep_UpdateBlackboard() : Void;
   public function OnRep_UpdateNavmesh() : Void;
   @:final public function ServerReplicateData(InMessage : unreal.FakeUInt32, DataView : unreal.FakeUInt32) : Void;
+  public function ServerCollectNavmeshData(TargetLocation : unreal.FVector_NetQuantize10) : Void;
   public function ServerDiscardNavmeshData() : Void;
   public function OnRep_PathCorridorData() : Void;
   public function ClientEnableTargetSelection(bEnable : Bool) : Void;

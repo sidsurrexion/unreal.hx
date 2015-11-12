@@ -18,7 +18,7 @@ package unreal.gameplaytags;
   Simple struct for a gameplay tag container
 **/
 @:umodule("GameplayTags")
-@:glueCppIncludes("BehaviorTree/Decorators/BTDecorator_CheckGameplayTagsOnActor.h")
+@:glueCppIncludes("GameplayTagContainer.h")
 @:uextern extern class FGameplayTagContainer {
   
   /**

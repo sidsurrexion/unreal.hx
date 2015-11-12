@@ -43,6 +43,45 @@ package unreal;
   public var PenetrationDepth : unreal.Float32;
   
   /**
+    End location of the trace; this is NOT where the impact occurred (if any), but the furthest point in the attempted sweep.
+    For example if a sphere is swept against the world, this would be the center of the sphere if there was no blocking hit.
+  **/
+  public var TraceEnd : unreal.FVector_NetQuantize;
+  
+  /**
+    Start location of the trace.
+    For example if a sphere is swept against the world, this is the starting location of the center of the sphere.
+  **/
+  public var TraceStart : unreal.FVector_NetQuantize;
+  
+  /**
+    Normal of the hit in world space, for the object that was hit by the sweep, if any.
+    For example if a box hits a flat plane, this is a normalized vector pointing out from the plane.
+    In the case of impact with a corner or edge of a surface, usually the "most opposing" normal (opposed to the query direction) is chosen.
+  **/
+  public var ImpactNormal : unreal.FVector_NetQuantizeNormal;
+  
+  /**
+    Normal of the hit in world space, for the object that was swept. Equal to ImpactNormal for line tests.
+    This is computed for capsules and spheres, otherwise it will be the same as ImpactNormal.
+    Example: for a sphere trace test, this is a normalized vector pointing in towards the center of the sphere at the point of impact.
+  **/
+  public var Normal : unreal.FVector_NetQuantizeNormal;
+  
+  /**
+    Location in world space of the actual contact of the trace shape (box, sphere, ray, etc) with the impacted object.
+    Example: for a sphere trace test, this is the point where the surface of the sphere touches the other object.
+  **/
+  public var ImpactPoint : unreal.FVector_NetQuantize;
+  
+  /**
+    The location in world space where the moving shape would end up against the impacted object, if there is a hit. Equal to the point of impact for line tests.
+    Example: for a sphere trace test, this is the point where the center of the sphere would be located when it touched the other object.
+    For swept movement (but not queries) this may not equal the final location of the shape since hits are pulled back slightly to prevent precision issues from overlapping another surface.
+  **/
+  public var Location : unreal.FVector_NetQuantize;
+  
+  /**
     The distance from the TraceStart to the ImpactPoint in world space. This value is 0 if there was an initial overlap (trace started inside another colliding object).
   **/
   public var Distance : unreal.Float32;

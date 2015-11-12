@@ -698,6 +698,11 @@ package unreal;
   public function ServerShortTimeout() : Void;
   
   /**
+    If PlayerCamera.bUseClientSideCameraUpdates is set, client will replicate camera positions to the server. // @TODO - combine pitch/yaw into one int, maybe also send location compressed
+  **/
+  public function ServerUpdateCamera(CamLoc : unreal.FVector_NetQuantize, CamPitchAndYaw : unreal.Int32) : Void;
+  
+  /**
     Called when the client adds/removes a streamed level
     the server will only replicate references to Actors in visible levels so that it's impossible to send references to
     Actors the client has not initialized

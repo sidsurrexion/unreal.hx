@@ -285,6 +285,14 @@ package unreal;
   public var CustomTimeDilation : unreal.Float32;
   
   /**
+    Primary Actor tick function, which calls TickActor().
+    Tick functions can be configured to control whether ticking is enabled, at what time during a frame the update occurs, and to set up tick dependencies.
+    @see https://docs.unrealengine.com/latest/INT/API/Runtime/Engine/Engine/FTickFunction/
+    @see AddTickPrerequisiteActor(), AddTickPrerequisiteComponent()
+  **/
+  public var PrimaryActorTick : unreal.FActorTickFunction;
+  
+  /**
     Called on client when updated bReplicateMovement value is received for this actor.
   **/
   public function OnRep_ReplicateMovement() : Void;

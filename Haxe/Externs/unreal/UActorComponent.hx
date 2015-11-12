@@ -63,6 +63,11 @@ package unreal;
   public var ComponentTags : unreal.TArray<unreal.FName>;
   
   /**
+    Main tick function for the Actor
+  **/
+  public var PrimaryComponentTick : unreal.FActorComponentTickFunction;
+  
+  /**
     Returns whether the component is in the process of being destroyed.
   **/
   @:thisConst @:final public function IsBeingDestroyed() : Bool;

@@ -20,7 +20,7 @@ package unreal;
   An orthogonal rotation in 3d space.
   The full C++ class is located here: Engine\Source\Runtime\Core\Public\Math\Rotator.h
 **/
-@:glueCppIncludes("Engine/BookMark.h")
+@:glueCppIncludes("GameFramework/Actor.h")
 @:uextern extern class FRotator {
   
 }

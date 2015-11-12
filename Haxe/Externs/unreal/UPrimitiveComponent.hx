@@ -23,6 +23,11 @@ package unreal;
 @:uextern extern class UPrimitiveComponent extends unreal.USceneComponent implements unreal.INavRelevantInterface {
   
   /**
+    Tick function for physics ticking *
+  **/
+  public var PostPhysicsComponentTick : unreal.FPrimitiveComponentPostPhysicsTickFunction;
+  
+  /**
     Determine whether a Character can step up onto this component.
     This controls whether they can try to step up on it when they bump in to it, not whether they can walk on it after landing on it.
     @see FWalkableSlopeOverride

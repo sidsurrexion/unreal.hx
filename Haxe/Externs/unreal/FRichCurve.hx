@@ -17,7 +17,7 @@ package unreal;
 /**
   A rich, editable float curve
 **/
-@:glueCppIncludes("Sound/SoundAttenuation.h")
+@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FRichCurve extends unreal.FIndexedCurve {
   
   /**

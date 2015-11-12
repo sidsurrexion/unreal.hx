@@ -17,7 +17,7 @@ package unreal;
 /**
   @TODO: Document
 **/
-@:glueCppIncludes("AnimStateTransitionNode.h")
+@:glueCppIncludes("Animation/AnimBlueprintGeneratedClass.h")
 @:uname("ETransitionLogicType.Type")
 @:uextern extern enum ETransitionLogicType {
   

@@ -17,7 +17,7 @@ package unreal;
 /**
   One key in a rich, editable float curve
 **/
-@:glueCppIncludes("Sound/SoundAttenuation.h")
+@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FRichCurveKey {
   
   /**

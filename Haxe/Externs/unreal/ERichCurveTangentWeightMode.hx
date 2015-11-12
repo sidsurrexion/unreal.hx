@@ -17,7 +17,7 @@ package unreal;
 /**
   Enum to indicate whether if a tangent is 'weighted' (ie can be stretched).
 **/
-@:glueCppIncludes("Sound/SoundAttenuation.h")
+@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uname("ERichCurveTangentWeightMode")
 @:uextern extern enum ERichCurveTangentWeightMode {
   RCTWM_WeightedNone;

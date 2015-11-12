@@ -17,7 +17,7 @@ package unreal;
 /**
   A curve base class which enables key handles to index lookups
 **/
-@:glueCppIncludes("Sound/SoundAttenuation.h")
+@:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FIndexedCurve {
   
 }
