@@ -21,12 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Components/BoxReflectionCaptureComponent.h")
 @:uextern extern class UBoxReflectionCaptureComponent extends unreal.UReflectionCaptureComponent {
-  public var PreviewCaptureBox : unreal.UBoxComponent;
-  public var PreviewInfluenceBox : unreal.UBoxComponent;
-  
-  /**
-    Adjust capture transition distance
-  **/
-  public var BoxTransitionDistance : unreal.Float32;
   
 }

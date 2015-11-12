@@ -22,35 +22,4 @@ package unreal;
 @:glueCppIncludes("Components/DrawFrustumComponent.h")
 @:uextern extern class UDrawFrustumComponent extends unreal.UPrimitiveComponent {
   
-  /**
-    optional texture to show on the near plane
-  **/
-  public var Texture : unreal.UTexture;
-  
-  /**
-    Distance from origin to stop drawing the frustum.
-  **/
-  public var FrustumEndDist : unreal.Float32;
-  
-  /**
-    Distance from origin to start drawing the frustum.
-  **/
-  public var FrustumStartDist : unreal.Float32;
-  
-  /**
-    Ratio of horizontal size over vertical size.
-  **/
-  public var FrustumAspectRatio : unreal.Float32;
-  
-  /**
-    Angle of longest dimension of view shape.
-    If the angle is 0 then an orthographic projection is used
-  **/
-  public var FrustumAngle : unreal.Float32;
-  
-  /**
-    Color to draw the wireframe frustum.
-  **/
-  public var FrustumColor : unreal.FColor;
-  
 }

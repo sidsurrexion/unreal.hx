@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Particles/Acceleration/ParticleModuleAccelerationDragScaleOverLife.h")
 @:uextern extern class UParticleModuleAccelerationDragScaleOverLife extends unreal.UParticleModule {
   
-  /**
-    Per-particle drag scale. Evaluted using particle relative time.
-  **/
-  public var DragScale : unreal.UDistributionFloat;
-  
 }

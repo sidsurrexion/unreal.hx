@@ -23,9 +23,4 @@ package unreal.slate;
 @:glueCppIncludes("Framework/Styling/ComboBoxWidgetStyle.h")
 @:uextern extern class UComboBoxWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
   
-  /**
-    The actual data describing the combo box's appearance.
-  **/
-  public var ComboBoxStyle : unreal.slatecore.FComboBoxStyle;
-  
 }

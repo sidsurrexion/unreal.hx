@@ -22,11 +22,5 @@ package unreal.landscape;
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeLayerInfoObject.h")
 @:uextern extern class ULandscapeLayerInfoObject extends unreal.UObject {
-  #if WITH_EDITORONLY_DATA
-  public var bNoWeightBlend : Bool;
-  #end // WITH_EDITORONLY_DATA
-  public var Hardness : unreal.Float32;
-  public var PhysMaterial : unreal.UPhysicalMaterial;
-  public var LayerName : unreal.FName;
   
 }

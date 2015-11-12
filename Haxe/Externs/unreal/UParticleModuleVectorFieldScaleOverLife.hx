@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Particles/VectorField/ParticleModuleVectorFieldScaleOverLife.h")
 @:uextern extern class UParticleModuleVectorFieldScaleOverLife extends unreal.UParticleModule {
   
-  /**
-    Per-particle vector field scale. Evaluated using particle relative time.
-  **/
-  public var VectorFieldScaleOverLife : unreal.UDistributionFloat;
-  
 }

@@ -23,9 +23,4 @@ package unreal.gameplayabilities;
 @:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitDelay.h")
 @:uextern extern class UAbilityTask_WaitDelay extends unreal.gameplayabilities.UAbilityTask {
   
-  /**
-    Wait specified time. This is functionally the same as a standard Delay node.
-  **/
-  static public function WaitDelay(WorldContextObject : unreal.UObject, Time : unreal.Float32) : unreal.gameplayabilities.UAbilityTask_WaitDelay;
-  
 }

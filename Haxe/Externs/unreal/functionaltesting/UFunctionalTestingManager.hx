@@ -22,13 +22,5 @@ package unreal.functionaltesting;
 @:umodule("FunctionalTesting")
 @:glueCppIncludes("FunctionalTestingManager.h")
 @:uextern extern class UFunctionalTestingManager extends unreal.UBlueprintFunctionLibrary {
-  public var AllTests : unreal.TArray<unreal.functionaltesting.AFunctionalTest>;
-  public var TestsLeft : unreal.TArray<unreal.functionaltesting.AFunctionalTest>;
-  
-  /**
-    Triggers in sequence all functional tests found on the level.
-        @return true if any tests have been triggered
-  **/
-  static public function RunAllFunctionalTests(WorldContext : unreal.UObject, bNewLog : Bool, bRunLooped : Bool, bWaitForNavigationBuildFinish : Bool, FailedTestsReproString : unreal.FString) : Bool;
   
 }

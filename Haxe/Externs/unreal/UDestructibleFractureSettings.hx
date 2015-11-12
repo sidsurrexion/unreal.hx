@@ -22,39 +22,4 @@ package unreal;
 @:glueCppIncludes("Engine/DestructibleFractureSettings.h")
 @:uextern extern class UDestructibleFractureSettings extends unreal.UObject {
   
-  /**
-    Per-chunk authoring parameters, which should be made writable when a chunk selection GUI is in place.
-  **/
-  public var ChunkParameters : unreal.TArray<unreal.FDestructibleChunkParameters>;
-  
-  /**
-    APEX references materials by name, but we'll bypass that mechanism and use of UE materials instead.
-  **/
-  public var Materials : unreal.TArray<unreal.UMaterialInterface>;
-  
-  /**
-    The mesh's original number of submeshes.  APEX needs to store this in the authoring.
-  **/
-  public var OriginalSubmeshCount : unreal.Int32;
-  
-  /**
-    Stored Voronoi sites
-  **/
-  public var VoronoiSites : unreal.TArray<unreal.FVector>;
-  
-  /**
-    Random seed for reproducibility
-  **/
-  public var RandomSeed : unreal.Int32;
-  
-  /**
-    Stored interior material data.  Just need one as we only support Voronoi splitting.
-  **/
-  public var FractureMaterialDesc : unreal.FFractureMaterial;
-  
-  /**
-    The number of voronoi cell sites.
-  **/
-  public var CellSiteCount : unreal.Int32;
-  
 }

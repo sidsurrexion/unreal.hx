@@ -23,39 +23,4 @@ package unreal.translationeditor;
 @:glueCppIncludes("Private/TranslationUnit.h")
 @:uextern extern class UTranslationUnit extends unreal.UObject {
   
-  /**
-    Optional: Which Locres File this translation is in
-  **/
-  public var LocresPath : unreal.FString;
-  
-  /**
-    If this Translation Unit had a different translation before import, it will be stored here
-  **/
-  public var TranslationBeforeImport : unreal.FString;
-  
-  /**
-    Whether the changes have been reviewed
-  **/
-  public var HasBeenReviewed : Bool;
-  
-  /**
-    Contexts the source was found in
-  **/
-  public var Contexts : unreal.TArray<unreal.translationeditor.FTranslationContextInfo>;
-  
-  /**
-    Translations
-  **/
-  public var Translation : unreal.FString;
-  
-  /**
-    Original text from the source language
-  **/
-  public var Source : unreal.FString;
-  
-  /**
-    The localization namespace for this translation
-  **/
-  public var Namespace : unreal.FString;
-  
 }

@@ -25,34 +25,5 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/Skeleton.h")
 @:uextern extern class USkeleton extends unreal.UObject {
-  #if WITH_EDITORONLY_DATA
-  public var BoneReductionSettingsForLODs : unreal.TArray<unreal.FBoneReductionSetting>;
-  
-  /**
-    Attached assets component for this skeleton
-  **/
-  public var PreviewAttachedAssetContainer : unreal.FPreviewAssetAttachContainer;
-  
-  /**
-    AnimNotifiers that has been created. Right now there is no delete step for this, but in the future we'll supply delete*
-  **/
-  public var AnimationNotifies : unreal.TArray<unreal.FName>;
-  #end // WITH_EDITORONLY_DATA
-  
-  /**
-    Container for smart name mappings
-  **/
-  public var SmartNames : unreal.FSmartNameContainer;
-  
-  /**
-    Array of named socket locations, set up in editor and used as a shortcut instead of specifying
-    everything explicitly to AttachComponent in the SkeletalMeshComponent.
-  **/
-  public var Sockets : unreal.TArray<unreal.USkeletalMeshSocket>;
-  
-  /**
-    Non-serialised cache of linkups between different skeletal meshes and this Skeleton.
-  **/
-  public var LinkupCache : unreal.TArray<unreal.FSkeletonToMeshLinkup>;
   
 }

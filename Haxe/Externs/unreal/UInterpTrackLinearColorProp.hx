@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Matinee/InterpTrackLinearColorProp.h")
 @:uextern extern class UInterpTrackLinearColorProp extends unreal.UInterpTrackLinearColorBase {
   
-  /**
-    Name of property in Group  AActor  which this track mill modify over time.
-  **/
-  public var PropertyName : unreal.FName;
-  
 }

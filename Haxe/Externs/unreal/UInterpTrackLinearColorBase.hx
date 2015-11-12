@@ -22,14 +22,4 @@ package unreal;
 @:glueCppIncludes("Matinee/InterpTrackLinearColorBase.h")
 @:uextern extern class UInterpTrackLinearColorBase extends unreal.UInterpTrack {
   
-  /**
-    Tension of curve, used for keypoints using automatic tangents.
-  **/
-  public var CurveTension : unreal.Float32;
-  
-  /**
-    Actually track data containing keyframes of a FVector as it varies over time.
-  **/
-  public var LinearColorTrack : unreal.FInterpCurveLinearColor;
-  
 }

@@ -22,10 +22,4 @@ package unreal;
 @:glueCppIncludes("Matinee/InterpTrackInstEvent.h")
 @:uextern extern class UInterpTrackInstEvent extends unreal.UInterpTrackInst {
   
-  /**
-    Position we were in last time we evaluated Events.
-    During UpdateTrack, events between this time and the current time will be fired.
-  **/
-  public var LastUpdatePosition : unreal.Float32;
-  
 }

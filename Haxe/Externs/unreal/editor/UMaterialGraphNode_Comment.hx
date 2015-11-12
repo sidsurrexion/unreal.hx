@@ -23,9 +23,4 @@ package unreal.editor;
 @:glueCppIncludes("MaterialGraph/MaterialGraphNode_Comment.h")
 @:uextern extern class UMaterialGraphNode_Comment extends unreal.editor.UEdGraphNode_Comment {
   
-  /**
-    Material Comment that this node represents
-  **/
-  public var MaterialExpressionComment : unreal.UMaterialExpressionComment;
-  
 }

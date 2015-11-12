@@ -22,14 +22,4 @@ package unreal;
 @:glueCppIncludes("Sound/SoundNodeLooping.h")
 @:uextern extern class USoundNodeLooping extends unreal.USoundNode {
   
-  /**
-    If enabled, the node will continue to loop indefinitely regardless of the Loop Count value.
-  **/
-  public var bLoopIndefinitely : Bool;
-  
-  /**
-    The amount of times to loop
-  **/
-  public var LoopCount : unreal.Int32;
-  
 }

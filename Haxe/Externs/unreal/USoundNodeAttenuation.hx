@@ -21,8 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/SoundNodeAttenuation.h")
 @:uextern extern class USoundNodeAttenuation extends unreal.USoundNode {
-  public var bOverrideAttenuation : Bool;
-  public var AttenuationOverrides : unreal.FAttenuationSettings;
-  public var AttenuationSettings : unreal.USoundAttenuation;
   
 }

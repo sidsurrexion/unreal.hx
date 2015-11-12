@@ -21,6 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/SoundNodeSoundClass.h")
 @:uextern extern class USoundNodeSoundClass extends unreal.USoundNode {
-  public var SoundClassOverride : unreal.USoundClass;
   
 }

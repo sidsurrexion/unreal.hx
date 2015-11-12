@@ -23,9 +23,4 @@ package unreal.editor;
 @:glueCppIncludes("Animation/EditorAnimCompositeSegment.h")
 @:uextern extern class UEditorAnimCompositeSegment extends unreal.editor.UEditorAnimBaseObj {
   
-  /**
-    Default blend in time.
-  **/
-  public var AnimSegment : unreal.FAnimSegment;
-  
 }

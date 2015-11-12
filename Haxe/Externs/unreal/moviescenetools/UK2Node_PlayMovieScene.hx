@@ -23,10 +23,4 @@ package unreal.moviescenetools;
 @:glueCppIncludes("K2Node_PlayMovieScene.h")
 @:uextern extern class UK2Node_PlayMovieScene extends unreal.blueprintgraph.UK2Node {
   
-  /**
-    Binding information that connects the MovieScene to objects that can be possessed.  At runtime, the bindings
-             object is actually owned by the LevelScriptActor in the level this node is associated with.
-  **/
-  private var MovieSceneBindings : unreal.moviescene.UMovieSceneBindings;
-  
 }

@@ -23,14 +23,4 @@ package unreal.umgeditor;
 @:glueCppIncludes("WidgetBlueprintFactory.h")
 @:uextern extern class UWidgetBlueprintFactory extends unreal.editor.UFactory {
   
-  /**
-    The parent class of the created blueprint
-  **/
-  public var ParentClass : unreal.TSubclassOf<unreal.umg.UUserWidget>;
-  
-  /**
-    The type of blueprint that will be created
-  **/
-  public var BlueprintType : unreal.EBlueprintType;
-  
 }

@@ -23,9 +23,4 @@ package unreal.editor;
 @:glueCppIncludes("Niagara/NiagaraScriptSource.h")
 @:uextern extern class UNiagaraScriptSource extends unreal.niagara.UNiagaraScriptSourceBase {
   
-  /**
-    Graph for particle update expression
-  **/
-  public var NodeGraph : unreal.editor.UNiagaraGraph;
-  
 }

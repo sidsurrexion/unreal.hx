@@ -22,19 +22,4 @@ package unreal;
 @:glueCppIncludes("Engine/BookMark.h")
 @:uextern extern class UBookMark extends unreal.UObject {
   
-  /**
-    Array of levels that are hidden
-  **/
-  public var HiddenLevels : unreal.TArray<unreal.FString>;
-  
-  /**
-    Camera rotation
-  **/
-  public var Rotation : unreal.FRotator;
-  
-  /**
-    Camera position
-  **/
-  public var Location : unreal.FVector;
-  
 }

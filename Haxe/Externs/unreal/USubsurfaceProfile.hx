@@ -22,6 +22,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/SubsurfaceProfile.h")
 @:uextern extern class USubsurfaceProfile extends unreal.UObject {
-  public var Settings : unreal.FSubsurfaceProfileStruct;
   
 }

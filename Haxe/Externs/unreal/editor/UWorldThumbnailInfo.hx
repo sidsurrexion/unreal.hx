@@ -23,14 +23,4 @@ package unreal.editor;
 @:glueCppIncludes("ThumbnailRendering/WorldThumbnailInfo.h")
 @:uextern extern class UWorldThumbnailInfo extends unreal.editor.USceneThumbnailInfo {
   
-  /**
-    The direction of the camera when in Orthographic CameraMode
-  **/
-  public var OrthoDirection : unreal.editor.EOrthoThumbnailDirection;
-  
-  /**
-    The type of projection to use
-  **/
-  public var CameraMode : unreal.ECameraProjectionMode;
-  
 }

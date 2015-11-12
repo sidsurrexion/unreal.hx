@@ -22,8 +22,5 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("Abilities/Tasks/AbilityTask_PlayMontageAndWait.h")
 @:uextern extern class UAbilityTask_PlayMontageAndWait extends unreal.gameplayabilities.UAbilityTask {
-  @:final public function OnMontageBlendingOut(Montage : unreal.UAnimMontage, bInterrupted : Bool) : Void;
-  @:final public function OnMontageInterrupted() : Void;
-  static public function CreatePlayMontageAndWaitProxy(WorldContextObject : unreal.UObject, TaskInstanceName : unreal.FName, MontageToPlay : unreal.UAnimMontage, Rate : unreal.Float32, StartSection : unreal.FName) : unreal.gameplayabilities.UAbilityTask_PlayMontageAndWait;
   
 }

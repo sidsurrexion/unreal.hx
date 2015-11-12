@@ -23,9 +23,4 @@ package unreal.blueprintgraph;
 @:glueCppIncludes("K2Node_CallFunctionOnMember.h")
 @:uextern extern class UK2Node_CallFunctionOnMember extends unreal.blueprintgraph.UK2Node_CallFunction {
   
-  /**
-    Reference to member variable to call function on
-  **/
-  public var MemberVariableToCallOn : unreal.FMemberReference;
-  
 }

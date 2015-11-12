@@ -21,6 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionParticleSubUV.h")
 @:uextern extern class UMaterialExpressionParticleSubUV extends unreal.UMaterialExpressionTextureSample {
-  public var bBlend : Bool;
   
 }

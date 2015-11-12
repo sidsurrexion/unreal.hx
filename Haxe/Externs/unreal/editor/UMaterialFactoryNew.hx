@@ -23,9 +23,4 @@ package unreal.editor;
 @:glueCppIncludes("Factories/MaterialFactoryNew.h")
 @:uextern extern class UMaterialFactoryNew extends unreal.editor.UFactory {
   
-  /**
-    An initial texture to place in the newly created material
-  **/
-  public var InitialTexture : unreal.UTexture;
-  
 }

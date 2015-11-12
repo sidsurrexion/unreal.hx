@@ -23,14 +23,4 @@ package unreal.editor;
 @:glueCppIncludes("Factories/Texture2dFactoryNew.h")
 @:uextern extern class UTexture2DFactoryNew extends unreal.editor.UFactory {
   
-  /**
-    height of new texture
-  **/
-  public var Height : unreal.Int32;
-  
-  /**
-    width of new texture
-  **/
-  public var Width : unreal.Int32;
-  
 }

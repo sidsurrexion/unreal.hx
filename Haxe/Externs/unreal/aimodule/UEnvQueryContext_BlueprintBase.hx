@@ -22,9 +22,5 @@ package unreal.aimodule;
 @:umodule("AIModule")
 @:glueCppIncludes("EnvironmentQuery/Contexts/EnvQueryContext_BlueprintBase.h")
 @:uextern extern class UEnvQueryContext_BlueprintBase extends unreal.aimodule.UEnvQueryContext {
-  @:thisConst public function ProvideSingleActor(QuerierActor : unreal.AActor, ResultingActor : unreal.PRef<unreal.AActor>) : Void;
-  @:thisConst public function ProvideSingleLocation(QuerierActor : unreal.AActor, ResultingLocation : unreal.PRef<unreal.FVector>) : Void;
-  @:thisConst public function ProvideActorsSet(QuerierActor : unreal.AActor, ResultingActorsSet : unreal.PRef<unreal.TArray<unreal.AActor>>) : Void;
-  @:thisConst public function ProvideLocationsSet(QuerierActor : unreal.AActor, ResultingLocationSet : unreal.PRef<unreal.TArray<unreal.FVector>>) : Void;
   
 }

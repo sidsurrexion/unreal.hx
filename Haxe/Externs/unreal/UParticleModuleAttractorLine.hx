@@ -22,24 +22,4 @@ package unreal;
 @:glueCppIncludes("Particles/Attractor/ParticleModuleAttractorLine.h")
 @:uextern extern class UParticleModuleAttractorLine extends unreal.UParticleModule {
   
-  /**
-    The strength of the line attractor.
-  **/
-  public var Strength : unreal.FRawDistributionFloat;
-  
-  /**
-    The range of the line attractor.
-  **/
-  public var Range : unreal.FRawDistributionFloat;
-  
-  /**
-    The second endpoint of the line.
-  **/
-  public var EndPoint1 : unreal.FVector;
-  
-  /**
-    The first endpoint of the line.
-  **/
-  public var EndPoint0 : unreal.FVector;
-  
 }

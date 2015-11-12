@@ -22,6 +22,5 @@ package unreal.animgraph;
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimGraphNode_LocalToComponentSpace.h")
 @:uextern extern class UAnimGraphNode_LocalToComponentSpace extends unreal.animgraph.UAnimGraphNode_Base {
-  public var Node : unreal.FAnimNode_ConvertLocalToComponentSpace;
   
 }

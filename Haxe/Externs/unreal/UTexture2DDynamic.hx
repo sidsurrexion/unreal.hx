@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Engine/Texture2DDynamic.h")
 @:uextern extern class UTexture2DDynamic extends unreal.UTexture {
   
-  /**
-    The format of the texture.
-  **/
-  public var Format : unreal.EPixelFormat;
-  
 }

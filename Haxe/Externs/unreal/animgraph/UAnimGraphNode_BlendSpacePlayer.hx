@@ -23,10 +23,4 @@ package unreal.animgraph;
 @:glueCppIncludes("AnimGraphNode_BlendSpacePlayer.h")
 @:uextern extern class UAnimGraphNode_BlendSpacePlayer extends unreal.animgraph.UAnimGraphNode_BlendSpaceBase {
   
-  /**
-    Sync group settings for this player.  Sync groups keep related animations with different lengths synchronized.
-  **/
-  public var SyncGroup : unreal.FAnimationGroupReference;
-  public var Node : unreal.FAnimNode_BlendSpacePlayer;
-  
 }

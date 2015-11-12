@@ -23,9 +23,4 @@ package unreal.editor;
 @:glueCppIncludes("Exporters/ExportTextContainer.h")
 @:uextern extern class UExportTextContainer extends unreal.UObject {
   
-  /**
-    ExportText representation of one or more objects
-  **/
-  public var ExportText : unreal.FString;
-  
 }

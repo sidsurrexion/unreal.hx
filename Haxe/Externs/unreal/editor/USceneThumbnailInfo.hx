@@ -23,19 +23,4 @@ package unreal.editor;
 @:glueCppIncludes("ThumbnailRendering/SceneThumbnailInfo.h")
 @:uextern extern class USceneThumbnailInfo extends unreal.UThumbnailInfo {
   
-  /**
-    The offset from the bounds sphere distance from the asset
-  **/
-  public var OrbitZoom : unreal.Float32;
-  
-  /**
-    The yaw of the orbit camera around the asset
-  **/
-  public var OrbitYaw : unreal.Float32;
-  
-  /**
-    The pitch of the orbit camera around the asset
-  **/
-  public var OrbitPitch : unreal.Float32;
-  
 }

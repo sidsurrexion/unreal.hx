@@ -21,6 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Sound/SoundNodeWavePlayer.h")
 @:uextern extern class USoundNodeWavePlayer extends unreal.USoundNodeAssetReferencer {
-  public var bLooping : Bool;
   
 }

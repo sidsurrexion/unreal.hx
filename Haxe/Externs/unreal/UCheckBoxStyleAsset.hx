@@ -23,9 +23,4 @@ package unreal;
 @:glueCppIncludes("Slate/CheckboxStyleAsset.h")
 @:uextern extern class UCheckBoxStyleAsset extends unreal.UObject {
   
-  /**
-    The actual data describing the Check Box's appearance.
-  **/
-  public var CheckBoxStyle : unreal.slatecore.FCheckBoxStyle;
-  
 }

@@ -22,6 +22,5 @@ package unreal.blueprintgraph;
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_ForEachElementInEnum.h")
 @:uextern extern class UK2Node_ForEachElementInEnum extends unreal.blueprintgraph.UK2Node {
-  public var Enum : unreal.UEnum;
   
 }

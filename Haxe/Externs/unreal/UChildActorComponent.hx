@@ -21,11 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Components/ChildActorComponent.h")
 @:uextern extern class UChildActorComponent extends unreal.USceneComponent {
-  @:final public function SetChildActorClass(InClass : unreal.TSubclassOf<unreal.AActor>) : Void;
-  
-  /**
-    The actor that we spawned and own
-  **/
-  public var ChildActor : unreal.AActor;
   
 }

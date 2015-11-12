@@ -22,12 +22,5 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialParameterCollection.h")
 @:uextern extern class UMaterialParameterCollection extends unreal.UObject {
-  public var VectorParameters : unreal.TArray<unreal.FCollectionVectorParameter>;
-  public var ScalarParameters : unreal.TArray<unreal.FCollectionScalarParameter>;
-  
-  /**
-    Used by materials using this collection to know when to recompile.
-  **/
-  public var StateId : unreal.FGuid;
   
 }

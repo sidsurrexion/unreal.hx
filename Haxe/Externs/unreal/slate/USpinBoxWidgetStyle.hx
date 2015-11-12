@@ -23,9 +23,4 @@ package unreal.slate;
 @:glueCppIncludes("Framework/Styling/SpinBoxWidgetStyle.h")
 @:uextern extern class USpinBoxWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
   
-  /**
-    The actual data describing the button's appearance.
-  **/
-  public var SpinBoxStyle : unreal.slatecore.FSpinBoxStyle;
-  
 }

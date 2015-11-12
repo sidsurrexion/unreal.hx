@@ -22,15 +22,4 @@ package unreal;
 @:glueCppIncludes("Engine/ExponentialHeightFog.h")
 @:uextern extern class AExponentialHeightFog extends unreal.AInfo {
   
-  /**
-    replicated copy of ExponentialHeightFogComponent's bEnabled property
-  **/
-  public var bEnabled : Bool;
-  public var Component : unreal.UExponentialHeightFogComponent;
-  
-  /**
-    Replication Notification Callbacks
-  **/
-  public function OnRep_bEnabled() : Void;
-  
 }

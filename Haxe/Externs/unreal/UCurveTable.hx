@@ -21,13 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/CurveTable.h")
 @:uextern extern class UCurveTable extends unreal.UObject {
-  #if WITH_EDITORONLY_DATA
-  
-  /**
-    The filename imported to create this object. Relative to this object's package, BaseDir() or absolute
-  **/
-  public var ImportPath_DEPRECATED : unreal.FString;
-  public var AssetImportData : unreal.UAssetImportData;
-  #end // WITH_EDITORONLY_DATA
   
 }

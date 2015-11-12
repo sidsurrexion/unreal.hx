@@ -22,37 +22,4 @@ package unreal;
 @:glueCppIncludes("Particles/Location/ParticleModuleLocationEmitter.h")
 @:uextern extern class UParticleModuleLocationEmitter extends unreal.UParticleModule {
   
-  /**
-    Amount to scale the source rotation by when inheriting it.
-  **/
-  public var InheritSourceRotationScale : unreal.Float32;
-  
-  /**
-    If true, the spawned particle should inherit the rotation of the source particle.
-  **/
-  public var bInheritSourceRotation : Bool;
-  
-  /**
-    Amount to scale the source velocity by when inheriting it.
-  **/
-  public var InheritSourceVelocityScale : unreal.Float32;
-  
-  /**
-    If true, the spawned particle should inherit the velocity of the source particle.
-  **/
-  public var InheritSourceVelocity : Bool;
-  
-  /**
-    The method to use when selecting a spawn target particle from the emitter.
-    Can be one of the following:
-            ELESM_Random            Randomly select a particle from the source emitter.
-            ELESM_Sequential        Step through each particle from the source emitter in order.
-  **/
-  public var SelectionMethod : unreal.ELocationEmitterSelectionMethod;
-  
-  /**
-    The name of the emitter to use that the source location for particle.
-  **/
-  public var EmitterName : unreal.FName;
-  
 }

@@ -21,17 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("PhysicsEngine/RadialForceActor.h")
 @:uextern extern class ARadialForceActor extends unreal.ARigidBodyBase {
-  #if WITH_EDITORONLY_DATA
-  public var SpriteComponent : unreal.UBillboardComponent;
-  #end // WITH_EDITORONLY_DATA
-  public var ForceComponent : unreal.URadialForceComponent;
-  
-  /**
-    BEGIN DEPRECATED (use component functions now in level script)
-  **/
-  public function FireImpulse() : Void;
-  public function EnableForce() : Void;
-  public function DisableForce() : Void;
-  public function ToggleForce() : Void;
   
 }

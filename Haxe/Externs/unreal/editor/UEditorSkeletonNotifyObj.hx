@@ -22,6 +22,5 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Animation/EditorSkeletonNotifyObj.h")
 @:uextern extern class UEditorSkeletonNotifyObj extends unreal.UObject {
-  public var Name : unreal.FName;
   
 }

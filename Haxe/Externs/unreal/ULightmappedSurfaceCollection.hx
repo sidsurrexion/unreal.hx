@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Lightmass/LightmappedSurfaceCollection.h")
 @:uextern extern class ULightmappedSurfaceCollection extends unreal.UObject {
   
-  /**
-    An array of the surface indices grouped into a single static lighting mapping.
-  **/
-  public var Surfaces : unreal.TArray<unreal.Int32>;
-  
 }

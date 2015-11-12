@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Sound/SoundNodeConcatenator.h")
 @:uextern extern class USoundNodeConcatenator extends unreal.USoundNode {
   
-  /**
-    Volume multiplier for each input.
-  **/
-  public var InputVolume : unreal.TArray<unreal.Float32>;
-  
 }

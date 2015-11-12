@@ -31,11 +31,4 @@ package unreal.gameplayabilities;
 @:glueCppIncludes("Abilities/Tasks/AbilityTask_SpawnActor.h")
 @:uextern extern class UAbilityTask_SpawnActor extends unreal.gameplayabilities.UAbilityTask {
   
-  /**
-    Spawn new Actor on the network authority (server)
-  **/
-  static public function SpawnActor(WorldContextObject : unreal.UObject, TargetData : unreal.gameplayabilities.FGameplayAbilityTargetDataHandle, Class : unreal.TSubclassOf<unreal.AActor>) : unreal.gameplayabilities.UAbilityTask_SpawnActor;
-  @:final public function BeginSpawningActor(WorldContextObject : unreal.UObject, TargetData : unreal.gameplayabilities.FGameplayAbilityTargetDataHandle, Class : unreal.TSubclassOf<unreal.AActor>, SpawnedActor : unreal.PRef<unreal.AActor>) : Bool;
-  @:final public function FinishSpawningActor(WorldContextObject : unreal.UObject, TargetData : unreal.gameplayabilities.FGameplayAbilityTargetDataHandle, SpawnedActor : unreal.AActor) : Void;
-  
 }

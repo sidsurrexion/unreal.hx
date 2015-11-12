@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Animation/VertexAnim/VertexAnimation.h")
 @:uextern extern class UVertexAnimation extends unreal.UVertexAnimBase {
   
-  /**
-    Number of verts animated by this animation, should be size of Deltas array in each frame
-  **/
-  public var NumAnimatedVerts : unreal.Int32;
-  
 }

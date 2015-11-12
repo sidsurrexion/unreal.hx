@@ -23,9 +23,4 @@ package unreal.onlinesubsystemutils;
 @:glueCppIncludes("OnlineBlueprintCallProxyBase.h")
 @:uextern extern class UOnlineBlueprintCallProxyBase extends unreal.UObject {
   
-  /**
-    Called to trigger the actual online action once the delegates have been bound
-  **/
-  public function Activate() : Void;
-  
 }

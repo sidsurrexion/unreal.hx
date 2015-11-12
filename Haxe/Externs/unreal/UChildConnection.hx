@@ -21,6 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/ChildConnection.h")
 @:uextern extern class UChildConnection extends unreal.UNetConnection {
-  public var Parent : unreal.UNetConnection;
   
 }

@@ -22,6 +22,5 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Factories/AnimSequenceFactory.h")
 @:uextern extern class UAnimSequenceFactory extends unreal.editor.UFactory {
-  public var TargetSkeleton : unreal.USkeleton;
   
 }

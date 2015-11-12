@@ -34,12 +34,4 @@ package unreal.gameplayabilities;
 @:glueCppIncludes("Abilities/Tasks/AbilityTask_StartAbilityState.h")
 @:uextern extern class UAbilityTask_StartAbilityState extends unreal.gameplayabilities.UAbilityTask {
   
-  /**
-    Starts a new ability state.
-    
-    @param StateName The name of the state.
-    @param bEndCurrentState If true, all other active ability states will be ended.
-  **/
-  static public function StartAbilityState(WorldContextObject : unreal.UObject, StateName : unreal.FName, bEndCurrentState : Bool) : unreal.gameplayabilities.UAbilityTask_StartAbilityState;
-  
 }

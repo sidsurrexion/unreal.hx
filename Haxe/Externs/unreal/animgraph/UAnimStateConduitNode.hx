@@ -23,9 +23,4 @@ package unreal.animgraph;
 @:glueCppIncludes("AnimStateConduitNode.h")
 @:uextern extern class UAnimStateConduitNode extends unreal.animgraph.UAnimStateNodeBase {
   
-  /**
-    The transition graph for this conduit; it's a logic graph, not an animation graph
-  **/
-  public var BoundGraph : unreal.UEdGraph;
-  
 }

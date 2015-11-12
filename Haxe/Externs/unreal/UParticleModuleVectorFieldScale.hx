@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Particles/VectorField/ParticleModuleVectorFieldScale.h")
 @:uextern extern class UParticleModuleVectorFieldScale extends unreal.UParticleModule {
   
-  /**
-    Per-particle vector field scale. Evaluated using emitter time.
-  **/
-  public var VectorFieldScale : unreal.UDistributionFloat;
-  
 }

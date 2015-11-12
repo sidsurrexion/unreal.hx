@@ -22,16 +22,4 @@ package unreal;
 @:glueCppIncludes("Particles/SubUV/ParticleModuleSubUV.h")
 @:uextern extern class UParticleModuleSubUV extends unreal.UParticleModule {
   
-  /**
-    If true, use *real* time when updating the image index.
-    The movie will update regardless of the slomo settings of the game.
-  **/
-  public var bUseRealTime : Bool;
-  
-  /**
-    The index of the sub-image that should be used for the particle.
-    The value is retrieved using the RelativeTime of the particles.
-  **/
-  public var SubImageIndex : unreal.FRawDistributionFloat;
-  
 }

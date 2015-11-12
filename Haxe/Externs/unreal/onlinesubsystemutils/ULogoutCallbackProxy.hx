@@ -23,9 +23,4 @@ package unreal.onlinesubsystemutils;
 @:glueCppIncludes("LogoutCallbackProxy.h")
 @:uextern extern class ULogoutCallbackProxy extends unreal.UBlueprintAsyncActionBase {
   
-  /**
-    Logs out of the online service
-  **/
-  static public function Logout(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController) : unreal.onlinesubsystemutils.ULogoutCallbackProxy;
-  
 }

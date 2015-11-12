@@ -24,9 +24,4 @@ package unreal;
 @:glueCppIncludes("Engine/LevelBounds.h")
 @:uextern extern class ALevelBounds extends unreal.AActor {
   
-  /**
-    Whether to automatically update actor bounds based on all relevant actors bounds belonging to the same level
-  **/
-  public var bAutoUpdateBounds : Bool;
-  
 }

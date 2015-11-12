@@ -23,19 +23,4 @@ package unreal.blueprintgraph;
 @:glueCppIncludes("K2Node_ActorBoundEvent.h")
 @:uextern extern class UK2Node_ActorBoundEvent extends unreal.blueprintgraph.UK2Node_Event {
   
-  /**
-    The event that this event is bound to
-  **/
-  public var EventOwner : unreal.AActor;
-  
-  /**
-    Delegate property's owner class that this event is associated with
-  **/
-  public var DelegateOwnerClass : unreal.UClass;
-  
-  /**
-    Delegate property name that this event is associated with
-  **/
-  public var DelegatePropertyName : unreal.FName;
-  
 }

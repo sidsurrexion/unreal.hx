@@ -23,9 +23,4 @@ package unreal.blueprintgraph;
 @:glueCppIncludes("K2Node_CommutativeAssociativeBinaryOperator.h")
 @:uextern extern class UK2Node_CommutativeAssociativeBinaryOperator extends unreal.blueprintgraph.UK2Node_CallFunction {
   
-  /**
-    The number of additional input pins to generate for this node (2 base pins are not included)
-  **/
-  public var NumAdditionalInputs : unreal.Int32;
-  
 }

@@ -22,14 +22,4 @@ package unreal;
 @:glueCppIncludes("Materials/MaterialExpressionFontSample.h")
 @:uextern extern class UMaterialExpressionFontSample extends unreal.UMaterialExpression {
   
-  /**
-    allow access to the various font pages
-  **/
-  public var FontTexturePage : unreal.Int32;
-  
-  /**
-    font resource that will be sampled
-  **/
-  public var Font : unreal.UFont;
-  
 }

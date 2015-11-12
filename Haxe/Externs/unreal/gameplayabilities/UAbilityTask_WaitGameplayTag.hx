@@ -22,6 +22,5 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitGameplayTagBase.h")
 @:uextern extern class UAbilityTask_WaitGameplayTag extends unreal.gameplayabilities.UAbilityTask {
-  public function GameplayTagCallback(Tag : unreal.Const<unreal.gameplaytags.FGameplayTag>, NewCount : unreal.Int32) : Void;
   
 }

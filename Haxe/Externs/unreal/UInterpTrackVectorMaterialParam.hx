@@ -22,14 +22,4 @@ package unreal;
 @:glueCppIncludes("Matinee/InterpTrackVectorMaterialParam.h")
 @:uextern extern class UInterpTrackVectorMaterialParam extends unreal.UInterpTrackVectorBase {
   
-  /**
-    Name of parameter in the MaterialInstance which this track will modify over time.
-  **/
-  public var ParamName : unreal.FName;
-  
-  /**
-    Materials whose parameters we want to change and the references to those materials.
-  **/
-  public var TargetMaterials : unreal.TArray<unreal.UMaterialInterface>;
-  
 }

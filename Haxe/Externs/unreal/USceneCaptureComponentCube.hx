@@ -22,14 +22,4 @@ package unreal;
 @:glueCppIncludes("Components/SceneCaptureComponentCube.h")
 @:uextern extern class USceneCaptureComponentCube extends unreal.USceneCaptureComponent {
   
-  /**
-    Temporary render target that can be used by the editor.
-  **/
-  public var TextureTarget : unreal.UTextureRenderTargetCube;
-  
-  /**
-    Render the scene to the texture
-  **/
-  @:final public function UpdateContent() : Void;
-  
 }

@@ -21,10 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/Note.h")
 @:uextern extern class ANote extends unreal.AActor {
-  #if WITH_EDITORONLY_DATA
-  public var ArrowComponent : unreal.UArrowComponent;
-  public var SpriteComponent : unreal.UBillboardComponent;
-  public var Text : unreal.FString;
-  #end // WITH_EDITORONLY_DATA
   
 }

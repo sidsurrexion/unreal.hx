@@ -23,9 +23,4 @@ package unreal.animgraph;
 @:glueCppIncludes("AnimGraphNode_StateMachine.h")
 @:uextern extern class UAnimGraphNode_StateMachine extends unreal.animgraph.UAnimGraphNode_StateMachineBase {
   
-  /**
-    Runtime state machine representation (empty; populated during compilation)
-  **/
-  public var Node : unreal.FAnimNode_StateMachine;
-  
 }

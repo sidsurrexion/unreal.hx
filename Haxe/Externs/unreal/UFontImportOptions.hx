@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Engine/FontImportOptions.h")
 @:uextern extern class UFontImportOptions extends unreal.UObject {
   
-  /**
-    The actual data for this object.  We wrap it in a struct so that we can copy it around between objects.
-  **/
-  public var Data : unreal.FFontImportOptionsData;
-  
 }

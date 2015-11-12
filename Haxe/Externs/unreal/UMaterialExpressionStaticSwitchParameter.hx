@@ -21,7 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionStaticSwitchParameter.h")
 @:uextern extern class UMaterialExpressionStaticSwitchParameter extends unreal.UMaterialExpressionStaticBoolParameter {
-  public var B : unreal.FExpressionInput;
-  public var A : unreal.FExpressionInput;
   
 }

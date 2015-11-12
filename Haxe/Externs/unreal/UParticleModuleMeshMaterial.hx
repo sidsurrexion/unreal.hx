@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Particles/Material/ParticleModuleMeshMaterial.h")
 @:uextern extern class UParticleModuleMeshMaterial extends unreal.UParticleModule {
   
-  /**
-    The array of materials to apply to the mesh particles.
-  **/
-  public var MeshMaterials : unreal.TArray<unreal.UMaterialInterface>;
-  
 }

@@ -22,10 +22,4 @@ package unreal;
 @:glueCppIncludes("Particles/RotationRate/ParticleModuleRotationRate.h")
 @:uextern extern class UParticleModuleRotationRate extends unreal.UParticleModule {
   
-  /**
-    Initial rotation rate, in rotations per second.
-    The value is retrieved using the EmitterTime.
-  **/
-  public var StartRotationRate : unreal.FRawDistributionFloat;
-  
 }

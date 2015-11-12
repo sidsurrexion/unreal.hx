@@ -23,10 +23,4 @@ package unreal.gameplayabilities;
 @:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitGameplayTag.h")
 @:uextern extern class UAbilityTask_WaitGameplayTagAdded extends unreal.gameplayabilities.UAbilityTask_WaitGameplayTag {
   
-  /**
-    Wait until the specified gameplay tag is Added. By default this will look at the owner of this ability. OptionalExternalTarget can be set to make this look at another actor's tags for changes.
-    If the tag is already present when this task is started, it will immediately broadcast the Added event. It will keep listening as long as OnlyTriggerOnce = false.
-  **/
-  static public function WaitGameplayTagAdd(WorldContextObject : unreal.UObject, Tag : unreal.gameplaytags.FGameplayTag, OptionalExternalTarget : unreal.AActor, OnlyTriggerOnce : Bool) : unreal.gameplayabilities.UAbilityTask_WaitGameplayTagAdded;
-  
 }

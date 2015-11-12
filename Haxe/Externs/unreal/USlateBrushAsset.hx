@@ -23,9 +23,4 @@ package unreal;
 @:glueCppIncludes("Slate/SlateBrushAsset.h")
 @:uextern extern class USlateBrushAsset extends unreal.UObject {
   
-  /**
-    The slate brush resource describing the texture's behavior.
-  **/
-  public var Brush : unreal.slatecore.FSlateBrush;
-  
 }

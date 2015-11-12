@@ -23,9 +23,4 @@ package unreal.onlinesubsystemutils;
 @:glueCppIncludes("ConnectionCallbackProxy.h")
 @:uextern extern class UConnectionCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
   
-  /**
-    Connects to an online service such as Google Play
-  **/
-  static public function ConnectToService(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController) : unreal.onlinesubsystemutils.UConnectionCallbackProxy;
-  
 }

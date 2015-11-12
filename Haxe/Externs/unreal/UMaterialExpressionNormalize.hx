@@ -21,6 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionNormalize.h")
 @:uextern extern class UMaterialExpressionNormalize extends unreal.UMaterialExpression {
-  public var VectorInput : unreal.FExpressionInput;
   
 }

@@ -22,6 +22,5 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("Abilities/Tasks/AbilityTask_WaitGameplayEffectApplied.h")
 @:uextern extern class UAbilityTask_WaitGameplayEffectApplied extends unreal.gameplayabilities.UAbilityTask {
-  @:final public function OnApplyGameplayEffectCallback(Target : unreal.gameplayabilities.UAbilitySystemComponent, SpecApplied : unreal.Const<unreal.PRef<unreal.gameplayabilities.FGameplayEffectSpec>>, ActiveHandle : unreal.gameplayabilities.FActiveGameplayEffectHandle) : Void;
   
 }

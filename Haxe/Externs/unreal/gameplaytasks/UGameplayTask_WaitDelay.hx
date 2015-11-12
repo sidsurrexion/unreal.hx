@@ -22,6 +22,5 @@ package unreal.gameplaytasks;
 @:umodule("GameplayTasks")
 @:glueCppIncludes("Tasks/GameplayTask_WaitDelay.h")
 @:uextern extern class UGameplayTask_WaitDelay extends unreal.gameplaytasks.UGameplayTask {
-  public function TaskDelayDelegate__DelegateSignature() : Void;
   
 }

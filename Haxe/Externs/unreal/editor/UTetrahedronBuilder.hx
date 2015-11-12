@@ -22,16 +22,5 @@ package unreal.editor;
 @:umodule("UnrealEd")
 @:glueCppIncludes("Builders/TetrahedronBuilder.h")
 @:uextern extern class UTetrahedronBuilder extends unreal.editor.UEditorBrushBuilder {
-  public var GroupName : unreal.FName;
-  
-  /**
-    How many iterations this sphere uses to tessellate its geometry
-  **/
-  public var SphereExtrapolation : unreal.Int32;
-  
-  /**
-    The radius of this sphere
-  **/
-  public var Radius : unreal.Float32;
   
 }

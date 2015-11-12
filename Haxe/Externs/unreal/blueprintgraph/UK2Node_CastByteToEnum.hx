@@ -23,10 +23,4 @@ package unreal.blueprintgraph;
 @:glueCppIncludes("K2Node_CastByteToEnum.h")
 @:uextern extern class UK2Node_CastByteToEnum extends unreal.blueprintgraph.UK2Node {
   
-  /**
-    if true, the node returns always a valid value
-  **/
-  public var bSafe : Bool;
-  public var Enum : unreal.UEnum;
-  
 }

@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Sound/SoundNodeMixer.h")
 @:uextern extern class USoundNodeMixer extends unreal.USoundNode {
   
-  /**
-    A volume for each input.  Automatically sized.
-  **/
-  public var InputVolume : unreal.TArray<unreal.Float32>;
-  
 }

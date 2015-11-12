@@ -22,36 +22,4 @@ package unreal;
 @:glueCppIncludes("Sound/SoundMix.h")
 @:uextern extern class USoundMix extends unreal.UObject {
   
-  /**
-    Time taken in seconds for the mix to fade out.
-  **/
-  public var FadeOutTime : unreal.Float32;
-  
-  /**
-    Duration of mix, negative means it will be applied until another mix is set.
-  **/
-  public var Duration : unreal.Float32;
-  
-  /**
-    Time taken in seconds for the mix to fade in.
-  **/
-  public var FadeInTime : unreal.Float32;
-  
-  /**
-    Initial delay in seconds before the the mix is applied.
-  **/
-  public var InitialDelay : unreal.Float32;
-  
-  /**
-    Array of changes to be applied to groups.
-  **/
-  public var SoundClassEffects : unreal.TArray<unreal.FSoundClassAdjuster>;
-  public var EQSettings : unreal.FAudioEQEffect;
-  public var EQPriority : unreal.Float32;
-  
-  /**
-    Whether to apply the EQ effect
-  **/
-  public var bApplyEQ : Bool;
-  
 }

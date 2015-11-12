@@ -22,26 +22,4 @@ package unreal;
 @:glueCppIncludes("Components/SceneCaptureComponent2D.h")
 @:uextern extern class USceneCaptureComponent2D extends unreal.USceneCaptureComponent {
   
-  /**
-    Range (0.0, 1.0) where 0 indicates no effect, 1 indicates full effect.
-  **/
-  public var PostProcessBlendWeight : unreal.Float32;
-  public var PostProcessSettings : unreal.FPostProcessSettings;
-  public var CaptureSource : unreal.ESceneCaptureSource;
-  
-  /**
-    Temporary render target that can be used by the editor.
-  **/
-  public var TextureTarget : unreal.UTextureRenderTarget2D;
-  
-  /**
-    Camera field of view (in degrees).
-  **/
-  public var FOVAngle : unreal.Float32;
-  
-  /**
-    Render the scene to the texture
-  **/
-  @:final public function UpdateContent() : Void;
-  
 }

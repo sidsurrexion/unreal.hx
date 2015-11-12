@@ -22,10 +22,4 @@ package unreal;
 @:glueCppIncludes("Particles/Rotation/ParticleModuleRotation.h")
 @:uextern extern class UParticleModuleRotation extends unreal.UParticleModule {
   
-  /**
-    Initial rotation of the particle (1 = 360 degrees).
-    The value is retrieved using the EmitterTime.
-  **/
-  public var StartRotation : unreal.FRawDistributionFloat;
-  
 }

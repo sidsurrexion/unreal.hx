@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Animation/BlendSpace.h")
 @:uextern extern class UBlendSpace extends unreal.UBlendSpaceBase {
   
-  /**
-    If you have input interpolation, which axis to drive animation speed (scale) - i.e. for locomotion animation, speed axis will drive animation speed (thus scale)*
-  **/
-  public var AxisToScaleAnimation : unreal.EBlendSpaceAxis;
-  
 }

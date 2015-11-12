@@ -23,10 +23,4 @@ package unreal.blueprintgraph;
 @:glueCppIncludes("K2Node_TemporaryVariable.h")
 @:uextern extern class UK2Node_TemporaryVariable extends unreal.blueprintgraph.UK2Node {
   
-  /**
-    Whether or not this variable should be flagged with CPF_SaveGame, and inherit its name from the GUID of the macro that that gave rise to it
-  **/
-  public var bIsPersistent : Bool;
-  public var VariableType : unreal.FEdGraphPinType;
-  
 }

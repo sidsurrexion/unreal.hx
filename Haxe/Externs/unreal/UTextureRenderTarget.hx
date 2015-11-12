@@ -22,9 +22,4 @@ package unreal;
 @:glueCppIncludes("Engine/TextureRenderTarget.h")
 @:uextern extern class UTextureRenderTarget extends unreal.UTexture {
   
-  /**
-    Will override FTextureRenderTarget2DResource::GetDisplayGamma if > 0.
-  **/
-  public var TargetGamma : unreal.Float32;
-  
 }

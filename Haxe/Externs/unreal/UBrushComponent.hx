@@ -24,14 +24,4 @@ package unreal;
 @:glueCppIncludes("Components/BrushComponent.h")
 @:uextern extern class UBrushComponent extends unreal.UPrimitiveComponent {
   
-  /**
-    Local space translation
-  **/
-  public var PrePivot_DEPRECATED : unreal.FVector;
-  
-  /**
-    Description of collision
-  **/
-  public var BrushBodySetup : unreal.UBodySetup;
-  
 }

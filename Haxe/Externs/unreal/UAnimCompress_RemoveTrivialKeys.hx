@@ -21,8 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Animation/AnimCompress_RemoveTrivialKeys.h")
 @:uextern extern class UAnimCompress_RemoveTrivialKeys extends unreal.UAnimCompress {
-  public var MaxScaleDiff : unreal.Float32;
-  public var MaxAngleDiff : unreal.Float32;
-  public var MaxPosDiff : unreal.Float32;
   
 }

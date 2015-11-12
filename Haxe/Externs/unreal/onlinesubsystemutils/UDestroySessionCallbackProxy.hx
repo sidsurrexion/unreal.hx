@@ -23,9 +23,4 @@ package unreal.onlinesubsystemutils;
 @:glueCppIncludes("DestroySessionCallbackProxy.h")
 @:uextern extern class UDestroySessionCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
   
-  /**
-    Destroys a session previously created by the default online subsystem
-  **/
-  static public function DestroySession(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController) : unreal.onlinesubsystemutils.UDestroySessionCallbackProxy;
-  
 }

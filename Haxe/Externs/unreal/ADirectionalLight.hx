@@ -21,8 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/DirectionalLight.h")
 @:uextern extern class ADirectionalLight extends unreal.ALight {
-  #if WITH_EDITORONLY_DATA
-  public var ArrowComponent : unreal.UArrowComponent;
-  #end // WITH_EDITORONLY_DATA
   
 }

@@ -23,9 +23,4 @@ package unreal.onlinesubsystemutils;
 @:glueCppIncludes("QuitMatchCallbackProxy.h")
 @:uextern extern class UQuitMatchCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
   
-  /**
-    Quits the turn based match
-  **/
-  static public function QuitMatch(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController, MatchID : unreal.FString, Outcome : unreal.onlinesubsystem.EMPMatchOutcome, TurnTimeoutInSeconds : unreal.Int32) : unreal.onlinesubsystemutils.UQuitMatchCallbackProxy;
-  
 }

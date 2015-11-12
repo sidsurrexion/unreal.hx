@@ -22,9 +22,5 @@ package unreal;
 **/
 @:glueCppIncludes("Atmosphere/AtmosphericFog.h")
 @:uextern extern class AAtmosphericFog extends unreal.AInfo {
-  #if WITH_EDITORONLY_DATA
-  public var ArrowComponent : unreal.UArrowComponent;
-  #end // WITH_EDITORONLY_DATA
-  public var AtmosphericFogComponent : unreal.UAtmosphericFogComponent;
   
 }

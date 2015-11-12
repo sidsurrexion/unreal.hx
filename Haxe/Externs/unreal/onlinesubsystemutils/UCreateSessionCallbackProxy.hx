@@ -23,9 +23,4 @@ package unreal.onlinesubsystemutils;
 @:glueCppIncludes("CreateSessionCallbackProxy.h")
 @:uextern extern class UCreateSessionCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
   
-  /**
-    Creates a session with the default online subsystem
-  **/
-  static public function CreateSession(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController, PublicConnections : unreal.Int32, bUseLAN : Bool) : unreal.onlinesubsystemutils.UCreateSessionCallbackProxy;
-  
 }

@@ -21,6 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Particles/Event/ParticleModuleEventGenerator.h")
 @:uextern extern class UParticleModuleEventGenerator extends unreal.UParticleModule {
-  public var Events : unreal.TArray<unreal.FParticleEvent_GenerateInfo>;
   
 }

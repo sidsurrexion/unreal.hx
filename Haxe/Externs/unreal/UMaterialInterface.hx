@@ -21,39 +21,6 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialInterface.h")
 @:uextern extern class UMaterialInterface extends unreal.UObject {
-  #if WITH_EDITORONLY_DATA
-  
-  /**
-    Information for thumbnail rendering
-  **/
-  public var ThumbnailInfo : unreal.UThumbnailInfo;
-  
-  /**
-    The mesh used by the material editor to preview the material.
-  **/
-  public var PreviewMesh : unreal.FStringAssetReference;
-  #end // WITH_EDITORONLY_DATA
-  
-  /**
-    The Lightmass settings for this object.
-  **/
-  private var LightmassSettings : unreal.FLightmassMaterialInterfaceSettings;
-  
-  /**
-    SubsurfaceProfile, for Screen Space Subsurface Scattering
-  **/
-  public var SubsurfaceProfile : unreal.USubsurfaceProfile;
-  
-  /**
-    Walks up parent chain and finds the base Material that this is an instance of.
-  **/
-  @:final public function GetBaseMaterial() : unreal.UMaterial;
-  
-  /**
-    Return a pointer to the physical material used by this material instance.
-    @return The physical material.
-  **/
-  @:thisConst public function GetPhysicalMaterial() : unreal.UPhysicalMaterial;
   // BlendableInterface interface implementation
   
 }

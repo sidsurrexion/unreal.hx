@@ -23,9 +23,4 @@ package unreal.editor;
 @:glueCppIncludes("Niagara/NiagaraNodeGetAttr.h")
 @:uextern extern class UDEPRECATED_NiagaraNodeGetAttr extends unreal.editor.UNiagaraNode {
   
-  /**
-    Name of attribute we are getting
-  **/
-  public var AttrName : unreal.FName;
-  
 }

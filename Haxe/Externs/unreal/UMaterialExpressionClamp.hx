@@ -21,19 +21,5 @@ package unreal;
 **/
 @:glueCppIncludes("Materials/MaterialExpressionClamp.h")
 @:uextern extern class UMaterialExpressionClamp extends unreal.UMaterialExpression {
-  public var MaxDefault : unreal.Float32;
-  public var MinDefault : unreal.Float32;
-  public var ClampMode : unreal.EClampMode;
-  
-  /**
-    Defaults to 'MaxDefault' if not specified
-  **/
-  public var Max : unreal.FExpressionInput;
-  
-  /**
-    Defaults to 'MinDefault' if not specified
-  **/
-  public var Min : unreal.FExpressionInput;
-  public var Input : unreal.FExpressionInput;
   
 }

@@ -23,9 +23,4 @@ package unreal.editor;
 @:glueCppIncludes("MaterialGraph/MaterialGraphNode_Root.h")
 @:uextern extern class UMaterialGraphNode_Root extends unreal.editor.UMaterialGraphNode_Base {
   
-  /**
-    Material whose inputs this root node represents
-  **/
-  public var Material : unreal.UMaterial;
-  
 }

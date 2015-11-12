@@ -23,9 +23,4 @@ package unreal;
 @:glueCppIncludes("Slate/ButtonStyleAsset.h")
 @:uextern extern class UButtonStyleAsset extends unreal.UObject {
   
-  /**
-    The actual data describing the button's appearance.
-  **/
-  public var ButtonStyle : unreal.slatecore.FButtonStyle;
-  
 }

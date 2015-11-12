@@ -22,27 +22,5 @@ package unreal.niagara;
 @:umodule("Niagara")
 @:glueCppIncludes("NiagaraScript.h")
 @:uextern extern class UNiagaraScript extends unreal.UObject {
-  #if WITH_EDITORONLY_DATA
-  
-  /**
-    'Source' data/graphs for this script
-  **/
-  public var Source : unreal.niagara.UNiagaraScriptSourceBase;
-  #end // WITH_EDITORONLY_DATA
-  
-  /**
-    Attributes used by this script.
-  **/
-  public var Attributes : unreal.TArray<unreal.niagara.FNiagaraVariableInfo>;
-  
-  /**
-    All the data for using constants in the script.
-  **/
-  public var ConstantData : unreal.niagara.FNiagaraScriptConstantData;
-  
-  /**
-    Byte code to execute for this system
-  **/
-  public var ByteCode : unreal.TArray<unreal.UInt8>;
   
 }
