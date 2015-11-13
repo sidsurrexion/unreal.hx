@@ -15,7 +15,7 @@ package unreal.editor;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  WARNING: This type was not defined as DLL export on its declaration. Because of that, its properties/methods are inaccessible
   
   Import data and options used when importing a static mesh from fbx
 **/

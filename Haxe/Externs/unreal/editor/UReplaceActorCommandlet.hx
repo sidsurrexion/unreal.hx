@@ -15,7 +15,7 @@ package unreal.editor;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  WARNING: This type was not defined as DLL export on its declaration. Because of that, its properties/methods are inaccessible
   
   Commandlet for replacing one kind of actor with another kind of actor, copying changed properties from the most-derived common superclass
 **/

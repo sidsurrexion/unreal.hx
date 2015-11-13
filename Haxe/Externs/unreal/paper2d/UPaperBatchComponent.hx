@@ -15,7 +15,7 @@ package unreal.paper2d;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  WARNING: This type was not defined as DLL export on its declaration. Because of that, its properties/methods are inaccessible
   
   Dummy component designed to create a batch manager render scene proxy that does work on the render thread
 **/

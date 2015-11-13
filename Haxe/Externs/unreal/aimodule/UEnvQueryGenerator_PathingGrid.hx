@@ -15,7 +15,7 @@ package unreal.aimodule;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  WARNING: This type was not defined as DLL export on its declaration. Because of that, its properties/methods are inaccessible
   
   Navigation grid, generates points on navmesh
   with paths to/from context no further than given limit

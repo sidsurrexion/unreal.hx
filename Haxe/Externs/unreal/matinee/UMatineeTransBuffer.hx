@@ -15,7 +15,7 @@ package unreal.matinee;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  WARNING: This type was not defined as DLL export on its declaration. Because of that, its properties/methods are inaccessible
   
   Special transaction buffer for Matinee undo/redo.
   Will be capped at InMaxMemory.

@@ -15,7 +15,7 @@ package unreal.gameplayabilities;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  WARNING: This type was not defined as DLL export on its declaration. Because of that, its properties/methods are inaccessible
   
   The idea here is that UGameplayEffectTemplates are templates created by system designers for commonly used
   GameplayEffects. For example: StandardPhysicalDamage, StandardSnare, etc.

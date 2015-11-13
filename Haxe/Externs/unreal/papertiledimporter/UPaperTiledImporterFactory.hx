@@ -15,7 +15,7 @@ package unreal.papertiledimporter;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  WARNING: This type was not defined as DLL export on its declaration. Because of that, its properties/methods are inaccessible
   
   Imports a tile map (and associated textures & tile sets) exported from Tiled (http:www.mapeditor.org/)
 **/

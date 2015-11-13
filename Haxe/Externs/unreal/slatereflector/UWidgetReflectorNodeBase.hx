@@ -15,7 +15,7 @@ package unreal.slatereflector;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
+  WARNING: This type was not defined as DLL export on its declaration. Because of that, its properties/methods are inaccessible
   
   A widget reflector node that contains the interface and basic data required by both live and snapshot nodes
 **/
