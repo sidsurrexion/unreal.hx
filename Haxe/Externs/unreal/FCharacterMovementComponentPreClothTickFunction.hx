@@ -20,6 +20,6 @@ package unreal;
   Tick function that calls UCharacterMovementComponent::PreClothTick
 **/
 @:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
-@:noCopy @:uextern extern class FCharacterMovementComponentPreClothTickFunction extends unreal.FTickFunction {
+@:noCopy @:noEquals @:uextern extern class FCharacterMovementComponentPreClothTickFunction extends unreal.FTickFunction {
   
 }

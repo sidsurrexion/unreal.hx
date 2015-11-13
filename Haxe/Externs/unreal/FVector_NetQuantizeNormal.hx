@@ -23,6 +23,6 @@ package unreal;
   Valid range: -1..+1 inclusive
 **/
 @:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
-@:noCopy @:uextern extern class FVector_NetQuantizeNormal extends unreal.FVector {
+@:noCopy @:noEquals @:uextern extern class FVector_NetQuantizeNormal extends unreal.FVector {
   
 }

@@ -20,6 +20,6 @@ package unreal;
   An int32 range bound
 **/
 @:glueCppIncludes("Engine/Font.h")
-@:noCopy @:uextern extern class FInt32RangeBound {
+@:noCopy @:noEquals @:uextern extern class FInt32RangeBound {
   
 }

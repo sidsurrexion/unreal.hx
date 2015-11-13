@@ -20,6 +20,6 @@ package unreal;
   Tick function that calls AActor::TickActor
 **/
 @:glueCppIncludes("GameFramework/Actor.h")
-@:noCopy @:uextern extern class FActorTickFunction extends unreal.FTickFunction {
+@:noCopy @:noEquals @:uextern extern class FActorTickFunction extends unreal.FTickFunction {
   
 }

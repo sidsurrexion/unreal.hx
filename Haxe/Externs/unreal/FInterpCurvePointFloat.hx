@@ -20,6 +20,6 @@ package unreal;
   
 **/
 @:glueCppIncludes("Components/SplineComponent.h")
-@:noCopy @:uextern extern class FInterpCurvePointFloat {
+@:noCopy @:noEquals @:uextern extern class FInterpCurvePointFloat {
   
 }

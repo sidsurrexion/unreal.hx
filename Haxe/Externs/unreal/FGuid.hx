@@ -20,6 +20,6 @@ package unreal;
   A globally unique identifier.
 **/
 @:glueCppIncludes("GeneralProjectSettings.h")
-@:noCopy @:uextern extern class FGuid {
+@:noCopy @:noEquals @:uextern extern class FGuid {
   
 }

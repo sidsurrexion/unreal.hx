@@ -20,6 +20,6 @@ package unreal;
   A time span value.
 **/
 @:glueCppIncludes("CoreUObject.h", "Object.h")
-@:noCopy @:uextern extern class FTimespan {
+@:noCopy @:noEquals @:uextern extern class FTimespan {
   
 }

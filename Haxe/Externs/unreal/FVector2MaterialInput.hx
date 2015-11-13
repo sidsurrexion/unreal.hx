@@ -20,6 +20,6 @@ package unreal;
   
 **/
 @:glueCppIncludes("Materials/Material.h")
-@:noCopy @:uextern extern class FVector2MaterialInput {
+@:noCopy @:noEquals @:uextern extern class FVector2MaterialInput {
   
 }

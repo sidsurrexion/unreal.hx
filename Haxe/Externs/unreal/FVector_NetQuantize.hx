@@ -26,6 +26,6 @@ package unreal;
   Note: this is the historical UE format for vector net serialization
 **/
 @:glueCppIncludes("GameFramework/CharacterMovementComponent.h")
-@:noCopy @:uextern extern class FVector_NetQuantize extends unreal.FVector {
+@:noCopy @:noEquals @:uextern extern class FVector_NetQuantize extends unreal.FVector {
   
 }

@@ -20,6 +20,6 @@ package unreal;
   Tick function that calls UPrimitiveComponent::PostPhysicsTick
 **/
 @:glueCppIncludes("Components/PrimitiveComponent.h")
-@:noCopy @:uextern extern class FPrimitiveComponentPostPhysicsTickFunction extends unreal.FTickFunction {
+@:noCopy @:noEquals @:uextern extern class FPrimitiveComponentPostPhysicsTickFunction extends unreal.FTickFunction {
   
 }

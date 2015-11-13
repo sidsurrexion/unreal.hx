@@ -20,6 +20,6 @@ package unreal;
   An int32 interval
 **/
 @:glueCppIncludes("FoliageType.h")
-@:noCopy @:uextern extern class FInt32Interval {
+@:noCopy @:noEquals @:uextern extern class FInt32Interval {
   
 }
