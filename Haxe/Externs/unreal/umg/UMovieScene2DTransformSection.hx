@@ -15,8 +15,6 @@ package unreal.umg;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   A transform section
 **/
 @:umodule("UMG")

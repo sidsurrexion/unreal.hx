@@ -40,6 +40,11 @@ package unreal;
   #end // WITH_EDITORONLY_DATA
   
   /**
+    Post process settings to use for this camera. Don't forget to check the properties you want to override
+  **/
+  public var PostProcessSettings : unreal.FPostProcessSettings;
+  
+  /**
     Indicates if PostProcessSettings should be used when using this Camera to view through.
   **/
   public var PostProcessBlendWeight : unreal.Float32;
@@ -89,5 +94,11 @@ package unreal;
     The horizontal field of view (in degrees) in perspective mode (ignored in Orthographic mode)
   **/
   public var FieldOfView : unreal.Float32;
+  
+  /**
+    Returns camera's Point of View.
+    Called by Camera class. Subclass and postprocess to add any effects.
+  **/
+  public function GetCameraView(DeltaTime : unreal.Float32, DesiredView : unreal.PRef<unreal.FMinimalViewInfo>) : Void;
   
 }

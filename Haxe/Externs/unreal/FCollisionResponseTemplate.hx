@@ -29,6 +29,11 @@ package unreal;
     Help message for collision profile *
   **/
   public var HelpMessage : unreal.FString;
+  
+  /**
+    Types of objects that this physics objects will collide with.
+  **/
+  public var CustomResponses : unreal.TArray<unreal.FResponseChannel>;
   public var ObjectTypeName : unreal.FName;
   public var CollisionEnabled : unreal.ECollisionEnabled;
   public var Name : unreal.FName;

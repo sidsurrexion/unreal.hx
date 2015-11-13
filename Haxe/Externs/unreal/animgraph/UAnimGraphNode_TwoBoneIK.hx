@@ -13,14 +13,9 @@
 **/
 package unreal.animgraph;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimGraphNode_TwoBoneIK.h")
 @:uextern extern class UAnimGraphNode_TwoBoneIK extends unreal.animgraph.UAnimGraphNode_SkeletalControlBase {
+  public var Node : unreal.animgraphruntime.FAnimNode_TwoBoneIK;
   
 }

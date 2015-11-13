@@ -13,13 +13,22 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Layers/Layer.h")
 @:uextern extern class ULayer extends unreal.UObject {
+  
+  /**
+    Basic stats regarding the number of Actors and their types currently assigned to the Layer
+  **/
+  public var ActorStats : unreal.TArray<unreal.FLayerActorStats>;
+  
+  /**
+    Whether actors associated with the layer are visible in the viewport
+  **/
+  public var bIsVisible : Bool;
+  
+  /**
+    The display name of the layer
+  **/
+  public var LayerName : unreal.FName;
   
 }

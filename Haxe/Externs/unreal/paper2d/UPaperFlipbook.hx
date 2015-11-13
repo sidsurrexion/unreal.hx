@@ -32,6 +32,11 @@ package unreal.paper2d;
   private var DefaultMaterial : unreal.UMaterialInterface;
   
   /**
+    The set of key frames for this flipbook animation (each one has a duration and a sprite to display)
+  **/
+  private var KeyFrames : unreal.TArray<unreal.paper2d.FPaperFlipbookKeyFrame>;
+  
+  /**
     The nominal frame rate to play this flipbook animation back at
   **/
   private var FramesPerSecond : unreal.Float32;

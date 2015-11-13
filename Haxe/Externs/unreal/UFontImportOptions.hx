@@ -15,11 +15,14 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Holds options for importing fonts.
 **/
 @:glueCppIncludes("Engine/FontImportOptions.h")
 @:uextern extern class UFontImportOptions extends unreal.UObject {
+  
+  /**
+    The actual data for this object.  We wrap it in a struct so that we can copy it around between objects.
+  **/
+  public var Data : unreal.FFontImportOptionsData;
   
 }

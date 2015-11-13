@@ -15,11 +15,14 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Defines how concurrent sounds are mixed together
 **/
 @:glueCppIncludes("Sound/SoundNodeMixer.h")
 @:uextern extern class USoundNodeMixer extends unreal.USoundNode {
+  
+  /**
+    A volume for each input.  Automatically sized.
+  **/
+  public var InputVolume : unreal.TArray<unreal.Float32>;
   
 }

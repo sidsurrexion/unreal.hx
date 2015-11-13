@@ -22,8 +22,18 @@ package unreal;
   public var RootAnimNodeIndex : unreal.Int32;
   
   /**
+    A list of anim notifies that state machines (or anything else) may reference
+  **/
+  public var AnimNotifies : unreal.TArray<unreal.FAnimNotifyEvent>;
+  
+  /**
     Target skeleton for this blueprint class
   **/
   public var TargetSkeleton : unreal.USkeleton;
+  
+  /**
+    List of state machines present in this blueprint class
+  **/
+  public var BakedStateMachines : unreal.TArray<unreal.FBakedAnimationStateMachine>;
   
 }

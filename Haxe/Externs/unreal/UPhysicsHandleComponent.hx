@@ -15,11 +15,94 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Utility object for moving physics objects around.
 **/
 @:glueCppIncludes("PhysicsEngine/PhysicsHandleComponent.h")
 @:uextern extern class UPhysicsHandleComponent extends unreal.UActorComponent {
+  
+  /**
+    How quickly we interpolate the physics target transform
+  **/
+  public var InterpolationSpeed : unreal.Float32;
+  
+  /**
+    Angular stiffness of the handle spring
+  **/
+  public var AngularStiffness : unreal.Float32;
+  
+  /**
+    Angular stiffness of the handle spring
+  **/
+  public var AngularDamping : unreal.Float32;
+  
+  /**
+    Linear stiffness of the handle spring
+  **/
+  public var LinearStiffness : unreal.Float32;
+  
+  /**
+    Linear damping of the handle spring.
+  **/
+  public var LinearDamping : unreal.Float32;
+  
+  /**
+    Component we are currently holding
+  **/
+  public var GrabbedComponent : unreal.UPrimitiveComponent;
+  
+  /**
+    Grab the specified component
+  **/
+  @:final public function GrabComponent(Component : unreal.UPrimitiveComponent, InBoneName : unreal.FName, GrabLocation : unreal.FVector, bConstrainRotation : Bool) : Void;
+  
+  /**
+    Release the currently held component
+  **/
+  @:final public function ReleaseComponent() : Void;
+  
+  /**
+    Set the target location
+  **/
+  @:final public function SetTargetLocation(NewLocation : unreal.FVector) : Void;
+  
+  /**
+    Set the target rotation
+  **/
+  @:final public function SetTargetRotation(NewRotation : unreal.FRotator) : Void;
+  
+  /**
+    Set target location and rotation
+  **/
+  @:final public function SetTargetLocationAndRotation(NewLocation : unreal.FVector, NewRotation : unreal.FRotator) : Void;
+  
+  /**
+    Get the current location and rotation
+  **/
+  @:thisConst @:final public function GetTargetLocationAndRotation(TargetLocation : unreal.PRef<unreal.FVector>, TargetRotation : unreal.PRef<unreal.FRotator>) : Void;
+  
+  /**
+    Set linear damping
+  **/
+  @:final public function SetLinearDamping(NewLinearDamping : unreal.Float32) : Void;
+  
+  /**
+    Set linear stiffness
+  **/
+  @:final public function SetLinearStiffness(NewLinearStiffness : unreal.Float32) : Void;
+  
+  /**
+    Set angular damping
+  **/
+  @:final public function SetAngularDamping(NewAngularDamping : unreal.Float32) : Void;
+  
+  /**
+    Set angular stiffness
+  **/
+  @:final public function SetAngularStiffness(NewAngularStiffness : unreal.Float32) : Void;
+  
+  /**
+    Set interpolation speed
+  **/
+  @:final public function SetInterpolationSpeed(NewInterpolationSpeed : unreal.Float32) : Void;
   
 }

@@ -13,13 +13,7 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Distributions/DistributionFloatParticleParameter.h")
-@:uextern extern class UDistributionFloatParticleParameter extends unreal.UDistributionFloatConstant {
+@:uextern extern class UDistributionFloatParticleParameter extends unreal.UDistributionFloatParameterBase {
   
 }

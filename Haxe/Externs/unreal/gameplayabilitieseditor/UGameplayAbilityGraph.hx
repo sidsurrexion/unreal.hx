@@ -13,12 +13,6 @@
 **/
 package unreal.gameplayabilitieseditor;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("GameplayAbilitiesEditor")
 @:glueCppIncludes("GameplayAbilityGraph.h")
 @:uextern extern class UGameplayAbilityGraph extends unreal.UEdGraph {

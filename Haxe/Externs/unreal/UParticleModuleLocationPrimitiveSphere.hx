@@ -13,13 +13,12 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Particles/Location/ParticleModuleLocationPrimitiveSphere.h")
-@:uextern extern class UParticleModuleLocationPrimitiveSphere extends unreal.UParticleModule {
+@:uextern extern class UParticleModuleLocationPrimitiveSphere extends unreal.UParticleModuleLocationPrimitiveBase {
+  
+  /**
+    The radius of the sphere. Retrieved using EmitterTime.
+  **/
+  public var StartRadius : unreal.FRawDistributionFloat;
   
 }

@@ -24,7 +24,7 @@ package unreal.paper2d;
 **/
 @:umodule("Paper2D")
 @:glueCppIncludes("PaperSprite.h")
-@:uextern extern class UPaperSprite extends unreal.UObject {
+@:uextern extern class UPaperSprite extends unreal.UObject implements unreal.IInterface_CollisionDataProvider {
   
   /**
     Baked render data (triangle vertices, stored as XY UV tuples)
@@ -85,6 +85,11 @@ package unreal.paper2d;
     Collision domain (no collision, 2D, or 3D)
   **/
   private var SpriteCollisionDomain : unreal.paper2d.ESpriteCollisionMode;
+  
+  /**
+    List of sockets on this sprite
+  **/
+  private var Sockets : unreal.TArray<unreal.paper2d.FPaperSpriteSocket>;
   
   /**
     The alternate material to use on a sprite instance if not overridden (this is only used for Diced render geometry, and will be the opaque material in that case, slot 1)

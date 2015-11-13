@@ -84,6 +84,21 @@ package unreal;
   public var AnimPlayRate : unreal.Float32;
   
   /**
+    FOV oscillation
+  **/
+  public var FOVOscillation : unreal.FFOscillator;
+  
+  /**
+    Positional oscillation
+  **/
+  public var LocOscillation : unreal.FVOscillator;
+  
+  /**
+    Rotational oscillation
+  **/
+  public var RotOscillation : unreal.FROscillator;
+  
+  /**
     Duration of the blend-out, where the oscillation scales from 1 to 0.
   **/
   public var OscillationBlendOutTime : unreal.Float32;
@@ -103,6 +118,11 @@ package unreal;
     Subsequent attempts to play this shake will simply restart the timer.
   **/
   public var bSingleInstance : Bool;
+  
+  /**
+    Called every tick to let the shake modify the point of view
+  **/
+  public function BlueprintUpdateCameraShake(DeltaTime : unreal.Float32, Alpha : unreal.Float32, POV : unreal.Const<unreal.PRef<unreal.FMinimalViewInfo>>, ModifiedPOV : unreal.PRef<unreal.FMinimalViewInfo>) : Void;
   
   /**
     Called when the shake starts playing

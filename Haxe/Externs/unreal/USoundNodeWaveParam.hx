@@ -15,11 +15,14 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Sound node that takes a runtime parameter for the wave to play
 **/
 @:glueCppIncludes("Sound/SoundNodeWaveParam.h")
 @:uextern extern class USoundNodeWaveParam extends unreal.USoundNode {
+  
+  /**
+    The name of the wave parameter to use to look up the SoundWave we should play
+  **/
+  public var WaveParameterName : unreal.FName;
   
 }

@@ -432,6 +432,16 @@ package unreal;
   public function CreateDynamicMaterialInstance(ElementIndex : unreal.Int32, SourceMaterial : unreal.UMaterialInterface) : unreal.UMaterialInstanceDynamic;
   
   /**
+    Returns the slope override struct for this component.
+  **/
+  @:thisConst @:final public function GetWalkableSlopeOverride() : unreal.Const<unreal.PRef<unreal.FWalkableSlopeOverride>>;
+  
+  /**
+    Sets a new slope override for this component instance.
+  **/
+  @:final public function SetWalkableSlopeOverride(NewOverride : unreal.Const<unreal.PRef<unreal.FWalkableSlopeOverride>>) : Void;
+  
+  /**
     Sets whether or not a single body should use physics simulation, or should be 'fixed' (kinematic).
     
     @param  bSimulate       New simulation state for single body

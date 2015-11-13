@@ -19,7 +19,7 @@ package unreal;
   @see https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/Blueprint_Splines
 **/
 @:glueCppIncludes("Components/SplineMeshComponent.h")
-@:uextern extern class USplineMeshComponent extends unreal.UStaticMeshComponent {
+@:uextern extern class USplineMeshComponent extends unreal.UStaticMeshComponent implements unreal.IInterface_CollisionDataProvider {
   #if WITH_EDITORONLY_DATA
   public var bSelected : Bool;
   #end // WITH_EDITORONLY_DATA
@@ -63,6 +63,11 @@ package unreal;
     Axis (in component space) that is used to determine X axis for co-ordinates along spline
   **/
   public var SplineUpDir : unreal.FVector;
+  
+  /**
+    Spline that is used to deform mesh
+  **/
+  public var SplineParams : unreal.FSplineMeshParams;
   
   /**
     Get the start position of spline in local space

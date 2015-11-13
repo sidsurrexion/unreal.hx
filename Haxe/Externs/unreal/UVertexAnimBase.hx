@@ -13,13 +13,12 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Animation/VertexAnim/VertexAnimBase.h")
 @:uextern extern class UVertexAnimBase extends unreal.UObject {
+  
+  /**
+    USkeletalMesh that this vertex animation works on.
+  **/
+  public var BaseSkelMesh : unreal.USkeletalMesh;
   
 }

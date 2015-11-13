@@ -91,6 +91,11 @@ package unreal.editor;
   public var PlayInEditorViewportIndex : unreal.Int32;
   
   /**
+    Logins available for use when running PIE instances
+  **/
+  public var PIELogins : unreal.TArray<unreal.editor.FPIELoginInfo>;
+  
+  /**
     Enabled online PIE
   **/
   public var bOnlinePIEEnabled : Bool;
@@ -285,5 +290,12 @@ package unreal.editor;
     Textures.
   **/
   public var Bad : unreal.UTexture2D;
+  public var Trans : unreal.editor.UTransactor;
+  public var ConversionTempModel : unreal.UModel;
+  
+  /**
+    Objects.
+  **/
+  public var TempModel : unreal.UModel;
   
 }

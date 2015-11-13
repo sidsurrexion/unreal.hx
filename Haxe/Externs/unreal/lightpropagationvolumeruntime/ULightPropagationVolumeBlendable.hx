@@ -15,13 +15,17 @@ package unreal.lightpropagationvolumeruntime;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   BlueprintType to make the object spawnable in blueprint
 **/
 @:umodule("LightPropagationVolumeRuntime")
 @:glueCppIncludes("LightPropagationVolumeBlendable.h")
-@:uextern extern class ULightPropagationVolumeBlendable extends unreal.UObject {
+@:uextern extern class ULightPropagationVolumeBlendable extends unreal.UObject implements unreal.IBlendableInterface {
+  
+  /**
+    0:no effect, 1:full effect
+  **/
+  public var BlendWeight : unreal.Float32;
+  public var Settings : unreal.lightpropagationvolumeruntime.FLightPropagationVolumeSettings;
   // BlendableInterface interface implementation
   
 }

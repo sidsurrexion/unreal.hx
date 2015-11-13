@@ -15,11 +15,20 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   -> will be exported to EngineDecalClasses.h
 **/
 @:glueCppIncludes("Components/SphereReflectionCaptureComponent.h")
 @:uextern extern class USphereReflectionCaptureComponent extends unreal.UReflectionCaptureComponent {
+  public var PreviewInfluenceRadius : unreal.UDrawSphereComponent;
+  
+  /**
+    Not needed anymore, not yet removed in case the artist setup values are needed in the future
+  **/
+  public var CaptureDistanceScale : unreal.Float32;
+  
+  /**
+    Radius of the area that can receive reflections from this capture.
+  **/
+  public var InfluenceRadius : unreal.Float32;
   
 }

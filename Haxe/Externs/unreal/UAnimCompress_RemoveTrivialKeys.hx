@@ -13,13 +13,10 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Animation/AnimCompress_RemoveTrivialKeys.h")
 @:uextern extern class UAnimCompress_RemoveTrivialKeys extends unreal.UAnimCompress {
+  public var MaxScaleDiff : unreal.Float32;
+  public var MaxAngleDiff : unreal.Float32;
+  public var MaxPosDiff : unreal.Float32;
   
 }

@@ -72,6 +72,11 @@ package unreal.animgraphruntime;
   public var bAffectTargetTranslationX : Bool;
   
   /**
+    Bone to drive using controller input
+  **/
+  public var TargetBone : unreal.FBoneReference;
+  
+  /**
     Maximum value to apply to the destination (remapped from the input range)
   **/
   public var RemappedMax : unreal.Float32;
@@ -110,5 +115,10 @@ package unreal.animgraphruntime;
     Transform component to use as input
   **/
   public var SourceComponent : unreal.animgraphruntime.EComponentType;
+  
+  /**
+    Bone to use as controller input
+  **/
+  public var SourceBone : unreal.FBoneReference;
   
 }

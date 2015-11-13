@@ -28,6 +28,11 @@ package unreal;
   public function OnInterpToResetDelegate__DelegateSignature(ImpactResult : unreal.Const<unreal.PRef<unreal.FHitResult>>, Time : unreal.Float32) : Void;
   
   /**
+    List of control points to visit.
+  **/
+  public var ControlPoints : unreal.TArray<unreal.FInterpControlPoint>;
+  
+  /**
     Max number of iterations used for each discrete simulation step.
     Increasing this value can address issues with fast-moving objects or complex collision scenarios, at the cost of performance.
     

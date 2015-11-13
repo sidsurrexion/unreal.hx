@@ -13,13 +13,22 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Particles/Velocity/ParticleModuleVelocityCone.h")
-@:uextern extern class UParticleModuleVelocityCone extends unreal.UParticleModule {
+@:uextern extern class UParticleModuleVelocityCone extends unreal.UParticleModuleVelocityBase {
+  
+  /**
+    The direction FVector of the cone.
+  **/
+  public var Direction : unreal.FVector;
+  
+  /**
+    The initial velocity of the particles.
+  **/
+  public var Velocity : unreal.FRawDistributionFloat;
+  
+  /**
+    The Min value represents the inner cone angle value and the Max value represents the outer cone angle value.
+  **/
+  public var Angle : unreal.FRawDistributionFloat;
   
 }

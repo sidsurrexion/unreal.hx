@@ -31,4 +31,14 @@ package unreal;
   **/
   public var AreaClass : unreal.TSubclassOf<unreal.UNavArea>;
   
+  /**
+    list of nav collision boxes
+  **/
+  public var BoxCollision : unreal.TArray<unreal.FNavCollisionBox>;
+  
+  /**
+    list of nav collision cylinders
+  **/
+  public var CylinderCollision : unreal.TArray<unreal.FNavCollisionCylinder>;
+  
 }

@@ -13,14 +13,21 @@
 **/
 package unreal.animgraph;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimStateNode.h")
 @:uextern extern class UAnimStateNode extends unreal.animgraph.UAnimStateNodeBase {
+  public var StateFullyBlended : unreal.FAnimNotifyEvent;
+  public var StateLeft : unreal.FAnimNotifyEvent;
+  public var StateEntered : unreal.FAnimNotifyEvent;
+  
+  /**
+    The type of the contents of this state
+  **/
+  public var StateType : unreal.animgraph.EAnimStateType;
+  
+  /**
+    The animation graph for this state
+  **/
+  public var BoundGraph : unreal.UEdGraph;
   
 }

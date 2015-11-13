@@ -50,6 +50,11 @@ package unreal.slatecore;
   public var ForegroundColor : unreal.slatecore.FSlateColor;
   
   /**
+    Padding
+  **/
+  public var Padding : unreal.slatecore.FMargin;
+  
+  /**
     CheckBox appearance when CheckBox is undetermined and pressed
   **/
   public var UndeterminedPressedImage : unreal.slatecore.FSlateBrush;

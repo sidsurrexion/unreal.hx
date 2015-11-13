@@ -214,6 +214,16 @@ package unreal;
   public var Role : unreal.ENetRole;
   
   /**
+    Used for replicating attachment of this actor's RootComponent to another actor.
+  **/
+  public var AttachmentReplication : unreal.FRepAttachment;
+  
+  /**
+    Used for replication of our RootComponent's position and velocity
+  **/
+  public var ReplicatedMovement : unreal.FRepMovement;
+  
+  /**
     If true, all input on the stack below this actor will not be considered
   **/
   public var bBlockInput : Bool;

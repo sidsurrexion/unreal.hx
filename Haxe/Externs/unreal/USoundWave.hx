@@ -19,12 +19,25 @@ package unreal;
   public var AssetImportData : unreal.UAssetImportData;
   public var SourceFileTimestamp_DEPRECATED : unreal.FString;
   public var SourceFilePath_DEPRECATED : unreal.FString;
+  #end // WITH_EDITORONLY_DATA
+  
+  /**
+    The array of the subtitles for each language. Generated at cook time.
+  **/
+  public var LocalizedSubtitles : unreal.TArray<unreal.FLocalizedSubtitle>;
+  #if WITH_EDITORONLY_DATA
   
   /**
     Provides contextual information for the sound to the translator.
   **/
   public var Comment : unreal.FString;
   #end // WITH_EDITORONLY_DATA
+  
+  /**
+    Subtitle cues.  If empty, use SpokenText as the subtitle.  Will often be empty,
+    as the contents of the subtitle is commonly identical to what is spoken.
+  **/
+  public var Subtitles : unreal.TArray<unreal.FSubtitleCue>;
   
   /**
     Size of RawPCMData, or what RawPCMData would be if the sound was fully decompressed

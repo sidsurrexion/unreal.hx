@@ -132,6 +132,7 @@ package unreal;
     True if PlayerController is currently waiting for the match to start or to respawn. Only valid in Spectating state.
   **/
   public var bPlayerIsWaiting : Bool;
+  public var ActiveForceFeedbackEffects : unreal.TArray<unreal.FActiveForceFeedbackEffect>;
   
   /**
     Object that manages player input.
@@ -209,6 +210,11 @@ package unreal;
     Used in net games so client can acknowledge it possessed a specific pawn.
   **/
   public var AcknowledgedPawn : unreal.APawn;
+  
+  /**
+    UPlayer associated with this PlayerController.  Could be a local player or a net connection.
+  **/
+  public var Player : unreal.UPlayer;
   
   /**
     Indicate that the Spectator is waiting to join/respawn.
@@ -347,6 +353,30 @@ package unreal;
     NOTE: This is done as an RPC instead of variable replication because ordering matters
   **/
   public function ClientVoiceHandshakeComplete() : Void;
+  
+  /**
+    Tell the server to mute a player for this controller
+    @param PlayerId player id to mute
+  **/
+  public function ServerMutePlayer(PlayerId : unreal.FUniqueNetIdRepl) : Void;
+  
+  /**
+    Tell the server to unmute a player for this controller
+    @param PlayerId player id to unmute
+  **/
+  public function ServerUnmutePlayer(PlayerId : unreal.FUniqueNetIdRepl) : Void;
+  
+  /**
+    Tell the client to mute a player for this controller
+    @param PlayerId player id to mute
+  **/
+  public function ClientMutePlayer(PlayerId : unreal.FUniqueNetIdRepl) : Void;
+  
+  /**
+    Tell the client to unmute a player for this controller
+    @param PlayerId player id to unmute
+  **/
+  public function ClientUnmutePlayer(PlayerId : unreal.FUniqueNetIdRepl) : Void;
   
   /**
     Console control commands, useful when remote debugging so you can't touch the console the normal way
@@ -543,6 +573,13 @@ package unreal;
   @:thisConst @:final public function GetHUD() : unreal.AHUD;
   
   /**
+    Set the view target
+    @param A - new actor to set as view target
+    @param TransitionParams - parameters to use for controlling the transition
+  **/
+  public function ClientSetViewTarget(A : unreal.AActor, TransitionParams : unreal.FViewTargetTransitionParams) : Void;
+  
+  /**
     Spawn a camera lens effect (e.g. blood).
   **/
   public function ClientSpawnCameraLensEffect(LensEffectEmitterClass : unreal.TSubclassOf<unreal.AEmitterCameraLensEffectBase>) : Void;
@@ -724,6 +761,11 @@ package unreal;
     Move camera to previous player on round ended or spectating
   **/
   public function ServerViewPrevPlayer() : Void;
+  
+  /**
+    Move camera to current user
+  **/
+  public function ServerViewSelf(TransitionParams : unreal.FViewTargetTransitionParams) : Void;
   
   /**
     @todo document

@@ -13,13 +13,19 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Distributions/DistributionVectorUniformCurve.h")
 @:uextern extern class UDistributionVectorUniformCurve extends unreal.UDistributionVector {
+  public var bUseExtremes : Bool;
+  public var bLockAxes2 : Bool;
+  
+  /**
+    If true, X == Y == Z ie. only one degree of freedom. If false, each axis is picked independently.
+  **/
+  public var bLockAxes1 : Bool;
+  
+  /**
+    Keyframe data for how output constant varies over time.
+  **/
+  public var ConstantCurve : unreal.FInterpCurveTwoVectors;
   
 }

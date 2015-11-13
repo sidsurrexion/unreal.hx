@@ -13,14 +13,13 @@
 **/
 package unreal.slate;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("Slate")
 @:glueCppIncludes("Framework/Styling/ComboBoxWidgetStyle.h")
 @:uextern extern class UComboBoxWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
+  
+  /**
+    The actual data describing the combo box's appearance.
+  **/
+  public var ComboBoxStyle : unreal.slatecore.FComboBoxStyle;
   
 }

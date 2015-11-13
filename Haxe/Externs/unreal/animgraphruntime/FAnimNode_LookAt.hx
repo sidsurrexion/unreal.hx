@@ -50,4 +50,14 @@ package unreal.animgraphruntime;
   **/
   public var LookAtLocation : unreal.FVector;
   
+  /**
+    Target Bone to look at - you can't use LookAtLocation as alternative as you'll get a delay on bone location if you query directly *
+  **/
+  public var LookAtBone : unreal.FBoneReference;
+  
+  /**
+    Name of bone to control. This is the main bone chain to modify from. *
+  **/
+  public var BoneToModify : unreal.FBoneReference;
+  
 }

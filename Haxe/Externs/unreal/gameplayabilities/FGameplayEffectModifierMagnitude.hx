@@ -22,6 +22,22 @@ package unreal.gameplayabilities;
 @:uextern extern class FGameplayEffectModifierMagnitude {
   
   /**
+    Magnitude value represented by a SetByCaller magnitude
+  **/
+  private var SetByCallerMagnitude : unreal.gameplayabilities.FSetByCallerFloat;
+  
+  /**
+    Magnitude value represented by a custom calculation class
+  **/
+  private var CustomMagnitude : unreal.gameplayabilities.FCustomCalculationBasedFloat;
+  
+  /**
+    Magnitude value represented by an attribute-based float
+          (Coefficient * (PreMultiplyAdditiveValue + [Eval'd Attribute Value According to Policy])) + PostMultiplyAdditiveValue
+  **/
+  private var AttributeBasedMagnitude : unreal.gameplayabilities.FAttributeBasedFloat;
+  
+  /**
     Magnitude value represented by a scalable float
   **/
   private var ScalableFloatMagnitude : unreal.gameplayabilities.FScalableFloat;

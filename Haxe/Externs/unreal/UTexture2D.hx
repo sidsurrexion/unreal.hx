@@ -13,13 +13,69 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Engine/Texture2D.h")
 @:uextern extern class UTexture2D extends unreal.UTexture {
+  
+  /**
+    The addressing mode to use for the Y axis.
+  **/
+  public var AddressY : unreal.TextureAddress;
+  
+  /**
+    The addressing mode to use for the X axis.
+  **/
+  public var AddressX : unreal.TextureAddress;
+  #if WITH_EDITORONLY_DATA
+  
+  /**
+    Whether the texture has been painted in the editor.
+  **/
+  public var bHasBeenPaintedInEditor : Bool;
+  #end // WITH_EDITORONLY_DATA
+  
+  /**
+    Global and serialized version of ForceMiplevelsToBeResident.
+  **/
+  public var bGlobalForceMipLevelsToBeResident : Bool;
+  
+  /**
+    Override whether to fully stream even if texture hasn't been rendered.
+  **/
+  public var bForceMiplevelsToBeResident : Bool;
+  
+  /**
+    Whether the current texture mip change request is pending cancellation.
+  **/
+  public var bHasCancelationPending : Bool;
+  
+  /**
+    Whether the texture is currently streamable or not.
+  **/
+  public var bIsStreamable : Bool;
+  
+  /**
+    keep track of first mip level used for ResourceMem creation
+  **/
+  public var FirstResourceMemMip : unreal.Int32;
+  
+  /**
+    Number of miplevels currently resident.
+  **/
+  public var ResidentMips : unreal.Int32;
+  
+  /**
+    Number of miplevels the texture should have resident.
+  **/
+  public var RequestedMips : unreal.Int32;
+  
+  /**
+    Gets the X size of the texture, in pixels
+  **/
+  @:thisConst @:final public function Blueprint_GetSizeX() : unreal.Int32;
+  
+  /**
+    Gets the Y size of the texture, in pixels
+  **/
+  @:thisConst @:final public function Blueprint_GetSizeY() : unreal.Int32;
   
 }

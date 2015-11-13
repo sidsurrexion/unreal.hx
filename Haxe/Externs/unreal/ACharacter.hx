@@ -26,6 +26,21 @@ package unreal;
 @:uextern extern class ACharacter extends unreal.APawn {
   
   /**
+    Replicated Root Motion montage
+  **/
+  public var RepRootMotion : unreal.FRepRootMotionMontage;
+  
+  /**
+    Array of previously received root motion moves from the server.
+  **/
+  public var RootMotionRepMoves : unreal.TArray<unreal.FSimulatedRootMotionReplicatedMove>;
+  
+  /**
+    For LocallyControlled Autonomous clients. Saved root motion data to be used by SavedMoves.
+  **/
+  public var ClientRootMotionParams : unreal.FRootMotionMovementParams;
+  
+  /**
     The max time the jump key can be held.
     Note that if StopJumping() is not called before the max jump hold time is reached,
     then the character will carry on receiving vertical velocity. Therefore it is usually
@@ -93,6 +108,16 @@ package unreal;
     Saved translation offset of mesh.
   **/
   private var BaseTranslationOffset : unreal.FVector;
+  
+  /**
+    Replicated version of relative movement. Read-only on simulated proxies!
+  **/
+  private var ReplicatedBasedMovement : unreal.FBasedMovementInfo;
+  
+  /**
+    Info about our current movement base (object we are standing on).
+  **/
+  private var BasedMovement : unreal.FBasedMovementInfo;
   public var CapsuleComponent : unreal.UCapsuleComponent;
   public var CharacterMovement : unreal.UCharacterMovementComponent;
   #if WITH_EDITORONLY_DATA

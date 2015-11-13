@@ -15,8 +15,6 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   A level blueprint is a specialized type of blueprint. It is used to house
   global, level-wide logic. In a level blueprint, you can operate on specific
   level-actor instances through blueprint's node-based interface. UE3 users
@@ -29,5 +27,12 @@ package unreal;
 **/
 @:glueCppIncludes("Engine/LevelScriptBlueprint.h")
 @:uextern extern class ULevelScriptBlueprint extends unreal.UBlueprint {
+  #if WITH_EDITORONLY_DATA
+  
+  /**
+    The friendly name to use for UI
+  **/
+  public var FriendlyName : unreal.FString;
+  #end // WITH_EDITORONLY_DATA
   
 }

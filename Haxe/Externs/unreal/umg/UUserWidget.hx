@@ -51,6 +51,7 @@ package unreal.umg;
   **/
   @:final public function SetPositionInViewport(Position : unreal.FVector2D, bRemoveDPIScale : Bool) : Void;
   @:final public function SetDesiredSizeInViewport(Size : unreal.FVector2D) : Void;
+  @:final public function SetAnchorsInViewport(Anchors : unreal.slate.FAnchors) : Void;
   @:final public function SetAlignmentInViewport(Alignment : unreal.FVector2D) : Void;
   @:thisConst @:final public function GetIsVisible() : Bool;
   
@@ -108,6 +109,245 @@ package unreal.umg;
     Gets a value indicating if the widget is interactive.
   **/
   @:thisConst public function IsInteractable() : Bool;
+  
+  /**
+    Called when keyboard focus is given to this widget.  This event does not bubble.
+    
+    @param MyGeometry The Geometry of the widget receiving the event
+    @param InFocusEvent  FocusEvent
+    @return  Returns whether the event was handled, along with other possible actions
+  **/
+  public function OnFocusReceived(MyGeometry : unreal.slatecore.FGeometry, InFocusEvent : unreal.slatecore.FFocusEvent) : unreal.umg.FEventReply;
+  
+  /**
+    Called when this widget loses focus.  This event does not bubble.
+    
+    @param  InFocusEvent  FocusEvent
+  **/
+  public function OnFocusLost(InFocusEvent : unreal.slatecore.FFocusEvent) : Void;
+  
+  /**
+    Called after a character is entered while this widget has focus
+    
+    @param MyGeometry The Geometry of the widget receiving the event
+    @param  InCharacterEvent  Character event
+    @return  Returns whether the event was handled, along with other possible actions
+  **/
+  public function OnKeyChar(MyGeometry : unreal.slatecore.FGeometry, InCharacterEvent : unreal.slatecore.FCharacterEvent) : unreal.umg.FEventReply;
+  
+  /**
+    Called after a key (keyboard, controller, ...) is pressed when this widget or a child of this widget has focus
+    If a widget handles this event, OnKeyDown will *not* be passed to the focused widget.
+    
+    This event is primarily to allow parent widgets to consume an event before a child widget processes
+    it and it should be used only when there is no better design alternative.
+    
+    @param MyGeometry The Geometry of the widget receiving the event
+    @param  InKeyEvent  Key event
+    @return  Returns whether the event was handled, along with other possible actions
+  **/
+  public function OnPreviewKeyDown(MyGeometry : unreal.slatecore.FGeometry, InKeyEvent : unreal.slatecore.FKeyEvent) : unreal.umg.FEventReply;
+  
+  /**
+    Called after a key (keyboard, controller, ...) is pressed when this widget has focus (this event bubbles if not handled)
+    
+    @param MyGeometry The Geometry of the widget receiving the event
+    @param  InKeyEvent  Key event
+    @return  Returns whether the event was handled, along with other possible actions
+  **/
+  public function OnKeyDown(MyGeometry : unreal.slatecore.FGeometry, InKeyEvent : unreal.slatecore.FKeyEvent) : unreal.umg.FEventReply;
+  
+  /**
+    Called after a key (keyboard, controller, ...) is released when this widget has focus
+    
+    @param MyGeometry The Geometry of the widget receiving the event
+    @param  InKeyEvent  Key event
+    @return  Returns whether the event was handled, along with other possible actions
+  **/
+  public function OnKeyUp(MyGeometry : unreal.slatecore.FGeometry, InKeyEvent : unreal.slatecore.FKeyEvent) : unreal.umg.FEventReply;
+  
+  /**
+    Called when an analog value changes on a button that supports analog
+    
+    @param MyGeometry The Geometry of the widget receiving the event
+    @param  InAnalogInputEvent  Analog Event
+    @return  Returns whether the event was handled, along with other possible actions
+  **/
+  public function OnAnalogValueChanged(MyGeometry : unreal.slatecore.FGeometry, InAnalogInputEvent : unreal.slatecore.FAnalogInputEvent) : unreal.umg.FEventReply;
+  
+  /**
+    The system calls this method to notify the widget that a mouse button was pressed within it. This event is bubbled.
+    
+    @param MyGeometry The Geometry of the widget receiving the event
+    @param MouseEvent Information about the input event
+    @return Whether the event was handled along with possible requests for the system to take action.
+  **/
+  public function OnMouseButtonDown(MyGeometry : unreal.slatecore.FGeometry, MouseEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.umg.FEventReply;
+  
+  /**
+    Just like OnMouseButtonDown, but tunnels instead of bubbling.
+    If this even is handled, OnMouseButtonDown will not be sent.
+    
+    Use this event sparingly as preview events generally make UIs more
+    difficult to reason about.
+    
+    @param MyGeometry The Geometry of the widget receiving the event
+    @param MouseEvent Information about the input event
+    @return Whether the event was handled along with possible requests for the system to take action.
+  **/
+  public function OnPreviewMouseButtonDown(MyGeometry : unreal.slatecore.FGeometry, MouseEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.umg.FEventReply;
+  
+  /**
+    The system calls this method to notify the widget that a mouse button was release within it. This event is bubbled.
+    
+    @param MyGeometry The Geometry of the widget receiving the event
+    @param MouseEvent Information about the input event
+    @return Whether the event was handled along with possible requests for the system to take action.
+  **/
+  public function OnMouseButtonUp(MyGeometry : unreal.slatecore.FGeometry, MouseEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.umg.FEventReply;
+  
+  /**
+    The system calls this method to notify the widget that a mouse moved within it. This event is bubbled.
+    
+    @param MyGeometry The Geometry of the widget receiving the event
+    @param MouseEvent Information about the input event
+    @return Whether the event was handled along with possible requests for the system to take action.
+  **/
+  public function OnMouseMove(MyGeometry : unreal.slatecore.FGeometry, MouseEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.umg.FEventReply;
+  
+  /**
+    The system will use this event to notify a widget that the cursor has entered it. This event is NOT bubbled.
+    
+    @param MyGeometry The Geometry of the widget receiving the event
+    @param MouseEvent Information about the input event
+  **/
+  public function OnMouseEnter(MyGeometry : unreal.slatecore.FGeometry, MouseEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : Void;
+  
+  /**
+    The system will use this event to notify a widget that the cursor has left it. This event is NOT bubbled.
+    
+    @param MouseEvent Information about the input event
+  **/
+  public function OnMouseLeave(MouseEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : Void;
+  
+  /**
+    Called when the mouse wheel is spun. This event is bubbled.
+    
+    @param  MouseEvent  Mouse event
+    @return  Returns whether the event was handled, along with other possible actions
+  **/
+  public function OnMouseWheel(MyGeometry : unreal.slatecore.FGeometry, MouseEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.umg.FEventReply;
+  
+  /**
+    Called when a mouse button is double clicked.  Override this in derived classes.
+    
+    @param  InMyGeometry  Widget geometry
+    @param  InMouseEvent  Mouse button event
+    @return  Returns whether the event was handled, along with other possible actions
+  **/
+  public function OnMouseButtonDoubleClick(InMyGeometry : unreal.slatecore.FGeometry, InMouseEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.umg.FEventReply;
+  
+  /**
+    Called when Slate detects that a widget started to be dragged.
+    
+    @param  InMyGeometry  Widget geometry
+    @param  PointerEvent  MouseMove that triggered the drag
+    @param  Operation     The drag operation that was detected.
+  **/
+  public function OnDragDetected(MyGeometry : unreal.slatecore.FGeometry, PointerEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>, Operation : unreal.PRef<unreal.umg.UDragDropOperation>) : Void;
+  
+  /**
+    Called when the user cancels the drag operation, typically when they simply release the mouse button after
+    beginning a drag operation, but failing to complete the drag.
+    
+    @param  PointerEvent  Last mouse event from when the drag was canceled.
+    @param  Operation     The drag operation that was canceled.
+  **/
+  public function OnDragCancelled(PointerEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>, Operation : unreal.umg.UDragDropOperation) : Void;
+  
+  /**
+    Called during drag and drop when the drag enters the widget.
+    
+    @param MyGeometry     The geometry of the widget receiving the event.
+    @param PointerEvent   The mouse event from when the drag entered the widget.
+    @param Operation      The drag operation that entered the widget.
+  **/
+  public function OnDragEnter(MyGeometry : unreal.slatecore.FGeometry, PointerEvent : unreal.slatecore.FPointerEvent, Operation : unreal.umg.UDragDropOperation) : Void;
+  
+  /**
+    Called during drag and drop when the drag leaves the widget.
+    
+    @param PointerEvent   The mouse event from when the drag left the widget.
+    @param Operation      The drag operation that entered the widget.
+  **/
+  public function OnDragLeave(PointerEvent : unreal.slatecore.FPointerEvent, Operation : unreal.umg.UDragDropOperation) : Void;
+  
+  /**
+    Called during drag and drop when the the mouse is being dragged over a widget.
+    
+    @param MyGeometry     The geometry of the widget receiving the event.
+    @param PointerEvent   The mouse event from when the drag occurred over the widget.
+    @param Operation      The drag operation over the widget.
+    
+    @return 'true' to indicate that you handled the drag over operation.  Returning 'false' will cause the operation to continue to bubble up.
+  **/
+  public function OnDragOver(MyGeometry : unreal.slatecore.FGeometry, PointerEvent : unreal.slatecore.FPointerEvent, Operation : unreal.umg.UDragDropOperation) : Bool;
+  
+  /**
+    Called when the user is dropping something onto a widget.  Ends the drag and drop operation, even if no widget handles this.
+    
+    @param MyGeometry     The geometry of the widget receiving the event.
+    @param PointerEvent   The mouse event from when the drag occurred over the widget.
+    @param Operation      The drag operation over the widget.
+    
+    @return 'true' to indicate you handled the drop operation.
+  **/
+  public function OnDrop(MyGeometry : unreal.slatecore.FGeometry, PointerEvent : unreal.slatecore.FPointerEvent, Operation : unreal.umg.UDragDropOperation) : Bool;
+  public function OnControllerButtonPressed(MyGeometry : unreal.slatecore.FGeometry, ControllerEvent : unreal.slatecore.FControllerEvent) : unreal.umg.FEventReply;
+  public function OnControllerButtonReleased(MyGeometry : unreal.slatecore.FGeometry, ControllerEvent : unreal.slatecore.FControllerEvent) : unreal.umg.FEventReply;
+  public function OnControllerAnalogValueChanged(MyGeometry : unreal.slatecore.FGeometry, ControllerEvent : unreal.slatecore.FControllerEvent) : unreal.umg.FEventReply;
+  
+  /**
+    Called when the user performs a gesture on trackpad. This event is bubbled.
+    
+    @param MyGeometry     The geometry of the widget receiving the event.
+    @param  GestureEvent  gesture event
+    @return  Returns whether the event was handled, along with other possible actions
+  **/
+  public function OnTouchGesture(MyGeometry : unreal.slatecore.FGeometry, GestureEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.umg.FEventReply;
+  
+  /**
+    Called when a touchpad touch is started (finger down)
+    
+    @param MyGeometry    The geometry of the widget receiving the event.
+    @param InTouchEvent  The touch event generated
+  **/
+  public function OnTouchStarted(MyGeometry : unreal.slatecore.FGeometry, InTouchEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.umg.FEventReply;
+  
+  /**
+    Called when a touchpad touch is moved  (finger moved)
+    
+    @param MyGeometry    The geometry of the widget receiving the event.
+    @param InTouchEvent  The touch event generated
+  **/
+  public function OnTouchMoved(MyGeometry : unreal.slatecore.FGeometry, InTouchEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.umg.FEventReply;
+  
+  /**
+    Called when a touchpad touch is ended (finger lifted)
+    
+    @param MyGeometry    The geometry of the widget receiving the event.
+    @param InTouchEvent  The touch event generated
+  **/
+  public function OnTouchEnded(MyGeometry : unreal.slatecore.FGeometry, InTouchEvent : unreal.Const<unreal.PRef<unreal.slatecore.FPointerEvent>>) : unreal.umg.FEventReply;
+  
+  /**
+    Called when motion is detected (controller or device)
+    e.g. Someone tilts or shakes their controller.
+    
+    @param MyGeometry    The geometry of the widget receiving the event.
+    @param MotionEvent   The motion event generated
+  **/
+  public function OnMotionDetected(MyGeometry : unreal.slatecore.FGeometry, InMotionEvent : unreal.slatecore.FMotionEvent) : unreal.umg.FEventReply;
   
   /**
     Called when an animation is started.

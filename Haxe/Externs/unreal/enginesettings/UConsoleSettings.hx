@@ -27,6 +27,11 @@ package unreal.enginesettings;
   public var AutoCompleteMapPaths : unreal.TArray<unreal.FString>;
   
   /**
+    Manual list of auto-complete commands and info specified in BaseInput.ini
+  **/
+  public var ManualAutoCompleteList : unreal.TArray<unreal.enginesettings.FAutoCompleteCommand>;
+  
+  /**
     Visible Console stuff
   **/
   public var MaxScrollbackSize : unreal.Int32;

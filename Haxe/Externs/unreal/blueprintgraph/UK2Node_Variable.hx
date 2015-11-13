@@ -28,4 +28,9 @@ package unreal.blueprintgraph;
   private var VariableSourceClass_DEPRECATED : unreal.TSubclassOf<unreal.UObject>;
   public var SelfContextInfo : unreal.blueprintgraph.ESelfContextInfo;
   
+  /**
+    Reference to variable we want to set/get
+  **/
+  public var VariableReference : unreal.FMemberReference;
+  
 }

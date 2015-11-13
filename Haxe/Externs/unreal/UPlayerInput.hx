@@ -29,6 +29,11 @@ package unreal;
   public var InvertedAxis : unreal.TArray<unreal.FName>;
   
   /**
+    Generic bindings of keys to Exec()-compatible strings for development purposes only
+  **/
+  public var DebugExecBindings : unreal.TArray<unreal.FKeyBind>;
+  
+  /**
     Exec function to change the mouse sensitivity
   **/
   @:final public function SetMouseSensitivity(Sensitivity : unreal.Float32) : Void;

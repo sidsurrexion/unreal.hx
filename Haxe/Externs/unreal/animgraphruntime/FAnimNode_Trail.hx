@@ -61,4 +61,9 @@ package unreal.animgraphruntime;
   **/
   public var ChainLength : unreal.Int32;
   
+  /**
+    Reference to the active bone in the hierarchy to modify.
+  **/
+  public var TrailBone : unreal.FBoneReference;
+  
 }

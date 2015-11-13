@@ -21,7 +21,7 @@ package unreal;
   @see USkeletalMesh
 **/
 @:glueCppIncludes("Components/SkeletalMeshComponent.h")
-@:uextern extern class USkeletalMeshComponent extends unreal.USkinnedMeshComponent {
+@:uextern extern class USkeletalMeshComponent extends unreal.USkinnedMeshComponent implements unreal.IInterface_CollisionDataProvider {
   
   /**
     Keep track of when animation has been ticked to ensure it is ticked only once per frame.
@@ -197,6 +197,7 @@ package unreal;
     Cached LocalAtoms for Update Rate optimization.
   **/
   public var CachedLocalAtoms : unreal.TArray<unreal.FTransform>;
+  public var AnimationData : unreal.FSingleAnimationPlayData;
   
   /**
     The active animation graph program instance.

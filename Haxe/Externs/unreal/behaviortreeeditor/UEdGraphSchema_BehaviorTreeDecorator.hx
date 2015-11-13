@@ -13,14 +13,9 @@
 **/
 package unreal.behaviortreeeditor;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("BehaviorTreeEditor")
 @:glueCppIncludes("EdGraphSchema_BehaviorTreeDecorator.h")
 @:uextern extern class UEdGraphSchema_BehaviorTreeDecorator extends unreal.UEdGraphSchema {
+  public var PC_Boolean : unreal.FString;
   
 }

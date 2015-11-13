@@ -13,14 +13,13 @@
 **/
 package unreal.editor;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("MaterialGraph/MaterialGraphNode_Comment.h")
 @:uextern extern class UMaterialGraphNode_Comment extends unreal.editor.UEdGraphNode_Comment {
+  
+  /**
+    Material Comment that this node represents
+  **/
+  public var MaterialExpressionComment : unreal.UMaterialExpressionComment;
   
 }

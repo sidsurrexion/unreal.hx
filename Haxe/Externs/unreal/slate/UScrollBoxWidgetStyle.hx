@@ -13,14 +13,13 @@
 **/
 package unreal.slate;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("Slate")
 @:glueCppIncludes("Framework/Styling/ScrollBoxWidgetStyle.h")
 @:uextern extern class UScrollBoxWidgetStyle extends unreal.slatecore.USlateWidgetStyleContainerBase {
+  
+  /**
+    The actual data describing the scrollbox's appearance.
+  **/
+  public var ScrollBoxStyle : unreal.slatecore.FScrollBoxStyle;
   
 }

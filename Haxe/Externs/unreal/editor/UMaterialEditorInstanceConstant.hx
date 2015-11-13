@@ -21,6 +21,11 @@ package unreal.editor;
     Should we use old style typed arrays for unassigned parameters instead of a None group (new style)?
   **/
   public var bUseOldStyleMICEditorGroups : Bool;
+  
+  /**
+    The Lightmass override settings for this object.
+  **/
+  public var LightmassSettings : unreal.editor.FLightmassParameterizedMaterialSettings;
   public var VisibleExpressions : unreal.TArray<unreal.FGuid>;
   public var SourceInstance : unreal.UMaterialInstanceConstant;
   public var BasePropertyOverrides : unreal.FMaterialInstanceBasePropertyOverrides;
@@ -40,6 +45,7 @@ package unreal.editor;
     This is the refraction depth bias, larger values offset distortion to prevent closer objects from rendering into the distorted surface at acute viewing angles but increases the disconnect between surface and where the refraction starts.
   **/
   public var RefractionDepthBias : unreal.Float32;
+  public var ParameterGroups : unreal.TArray<unreal.editor.FEditorParameterGroup>;
   
   /**
     since the Parent may point across levels and the property editor needs to import this text, it must be marked lazy so it doesn't set itself to NULL in FindImportedObject

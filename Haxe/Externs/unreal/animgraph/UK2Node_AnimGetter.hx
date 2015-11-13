@@ -13,14 +13,34 @@
 **/
 package unreal.animgraph;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("K2Node_AnimGetter.h")
 @:uextern extern class UK2Node_AnimGetter extends unreal.blueprintgraph.UK2Node_CallFunction {
+  
+  /**
+    List of valid contexts for the node
+  **/
+  public var Contexts : unreal.TArray<unreal.FString>;
+  
+  /**
+    The anim blueprint that generated this getter
+  **/
+  public var SourceAnimBlueprint : unreal.UAnimBlueprint;
+  
+  /**
+    The UAnimInstance derived class that implements the getter we are running
+  **/
+  public var GetterClass : unreal.UClass;
+  
+  /**
+    UAnimStateNode doesn't use the same hierarchy so we need to have a seperate property here to handle
+    those.
+  **/
+  public var SourceStateNode : unreal.animgraph.UAnimStateNodeBase;
+  
+  /**
+    The node that is required for the getter
+  **/
+  public var SourceNode : unreal.animgraph.UAnimGraphNode_Base;
   
 }

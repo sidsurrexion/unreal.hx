@@ -15,12 +15,11 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Actor used to capture the scene for reflection in a sphere shape.
   @see https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/Reflections/1_4
 **/
 @:glueCppIncludes("Engine/SphereReflectionCapture.h")
 @:uextern extern class ASphereReflectionCapture extends unreal.AReflectionCapture {
+  public var DrawCaptureRadius : unreal.UDrawSphereComponent;
   
 }

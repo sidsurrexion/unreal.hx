@@ -35,6 +35,11 @@ package unreal.gameplayabilities;
     Reticle that will appear on top of acquired targets. Reticles will be spawned/despawned as targets are acquired/lost.
   **/
   public var ReticleClass : unreal.TSubclassOf<unreal.gameplayabilities.AGameplayAbilityWorldReticle>;
+  
+  /**
+    Parameters for world reticle. Usage of these parameters is dependent on the reticle.
+  **/
+  public var ReticleParams : unreal.gameplayabilities.FWorldReticleParameters;
   public var SourceActor : unreal.AActor;
   public var bDestroyOnConfirmation : Bool;
   public var OwningAbility : unreal.gameplayabilities.UGameplayAbility;

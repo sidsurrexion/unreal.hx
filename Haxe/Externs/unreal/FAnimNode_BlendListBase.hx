@@ -22,6 +22,7 @@ package unreal;
   private var LastActiveChildIndex : unreal.Int32;
   private var RemainingBlendTimes : unreal.TArray<unreal.Float32>;
   private var BlendWeights : unreal.TArray<unreal.Float32>;
+  public var Blends : unreal.TArray<unreal.FAlphaBlend>;
   public var CustomBlendCurve : unreal.UCurveFloat;
   public var BlendType : unreal.EAlphaBlendOption;
   public var BlendTime : unreal.TArray<unreal.Float32>;

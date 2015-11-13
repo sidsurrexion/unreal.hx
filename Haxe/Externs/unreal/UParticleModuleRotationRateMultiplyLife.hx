@@ -13,13 +13,13 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Particles/RotationRate/ParticleModuleRotationRateMultiplyLife.h")
-@:uextern extern class UParticleModuleRotationRateMultiplyLife extends unreal.UParticleModule {
+@:uextern extern class UParticleModuleRotationRateMultiplyLife extends unreal.UParticleModuleRotationRateBase {
+  
+  /**
+    The scale factor that should be applied to the rotation rate.
+    The value is retrieved using the RelativeTime of the particle.
+  **/
+  public var LifeMultiplier : unreal.FRawDistributionFloat;
   
 }

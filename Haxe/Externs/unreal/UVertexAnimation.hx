@@ -13,13 +13,12 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Animation/VertexAnim/VertexAnimation.h")
 @:uextern extern class UVertexAnimation extends unreal.UVertexAnimBase {
+  
+  /**
+    Number of verts animated by this animation, should be size of Deltas array in each frame
+  **/
+  public var NumAnimatedVerts : unreal.Int32;
   
 }

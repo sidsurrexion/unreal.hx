@@ -36,6 +36,7 @@ package unreal.gameplayabilities;
     Tracks abilities that are blocked based on input binding. An ability is blocked if BlockedAbilityBindings[InputID] > 0
   **/
   private var BlockedAbilityBindings : unreal.TArray<unreal.UInt8>;
+  private var ActiveGameplayCues : unreal.gameplayabilities.FActiveGameplayCueContainer;
   
   /**
     Contains all of the gameplay effects that are currently active on this component
@@ -112,7 +113,17 @@ package unreal.gameplayabilities;
   /**
     Get an outgoing GameplayEffectSpec that is ready to be applied to other things.
   **/
+  @:thisConst @:final public function MakeOutgoingSpec(GameplayEffectClass : unreal.TSubclassOf<unreal.gameplayabilities.UGameplayEffect>, Level : unreal.Float32, Context : unreal.gameplayabilities.FGameplayEffectContextHandle) : unreal.gameplayabilities.FGameplayEffectSpecHandle;
+  
+  /**
+    Get an outgoing GameplayEffectSpec that is ready to be applied to other things.
+  **/
   @:thisConst @:final public function GetOutgoingSpec(GameplayEffect : unreal.Const<unreal.gameplayabilities.UGameplayEffect>, Level : unreal.Float32) : unreal.gameplayabilities.FGameplayEffectSpecHandle;
+  
+  /**
+    Create an EffectContext for the owner of this AbilitySystemComponent
+  **/
+  @:thisConst @:final public function GetEffectContext() : unreal.gameplayabilities.FGameplayEffectContextHandle;
   
   /**
     Get the count of the specified source effect on the ability system component. For non-stacking effects, this is the sum of all active instances.
@@ -135,12 +146,19 @@ package unreal.gameplayabilities;
     (most likely we want to catch this on the backend - when damage is applied we can get a full dump/history of how the number got to where it is. But still we may need polling methods like below (how much would my damage be)
   **/
   @:thisConst @:final public function GetGameplayEffectMagnitude(Handle : unreal.gameplayabilities.FActiveGameplayEffectHandle, Attribute : unreal.gameplayabilities.FGameplayAttribute) : unreal.Float32;
+  @:final public function BP_ApplyGameplayEffectToTarget(GameplayEffectClass : unreal.TSubclassOf<unreal.gameplayabilities.UGameplayEffect>, Target : unreal.gameplayabilities.UAbilitySystemComponent, Level : unreal.Float32, Context : unreal.gameplayabilities.FGameplayEffectContextHandle) : unreal.gameplayabilities.FActiveGameplayEffectHandle;
+  @:final public function K2_ApplyGameplayEffectToTarget(GameplayEffect : unreal.gameplayabilities.UGameplayEffect, Target : unreal.gameplayabilities.UAbilitySystemComponent, Level : unreal.Float32, Context : unreal.gameplayabilities.FGameplayEffectContextHandle) : unreal.gameplayabilities.FActiveGameplayEffectHandle;
+  @:final public function BP_ApplyGameplayEffectToSelf(GameplayEffectClass : unreal.TSubclassOf<unreal.gameplayabilities.UGameplayEffect>, Level : unreal.Float32, EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : unreal.gameplayabilities.FActiveGameplayEffectHandle;
+  @:final public function K2_ApplyGameplayEffectToSelf(GameplayEffect : unreal.Const<unreal.gameplayabilities.UGameplayEffect>, Level : unreal.Float32, EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : unreal.gameplayabilities.FActiveGameplayEffectHandle;
   @:final public function RemoveActiveEffectsWithTags(Tags : unreal.gameplaytags.FGameplayTagContainer) : Void;
   
   /**
     Do not call these functions directly, call the wrappers on GameplayCueManager instead
   **/
   public function NetMulticast_InvokeGameplayCueExecuted_FromSpec(Spec : unreal.Const<unreal.gameplayabilities.FGameplayEffectSpecForRPC>, PredictionKey : unreal.gameplayabilities.FPredictionKey) : Void;
+  public function NetMulticast_InvokeGameplayCueExecuted(GameplayCueTag : unreal.Const<unreal.gameplaytags.FGameplayTag>, PredictionKey : unreal.gameplayabilities.FPredictionKey, EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : Void;
+  public function NetMulticast_InvokeGameplayCueExecuted_WithParams(GameplayCueTag : unreal.Const<unreal.gameplaytags.FGameplayTag>, PredictionKey : unreal.gameplayabilities.FPredictionKey, GameplayCueParameters : unreal.gameplayabilities.FGameplayCueParameters) : Void;
+  public function NetMulticast_InvokeGameplayCueAdded(GameplayCueTag : unreal.Const<unreal.gameplaytags.FGameplayTag>, PredictionKey : unreal.gameplayabilities.FPredictionKey, EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : Void;
   public function NetMulticast_InvokeGameplayCueAddedAndWhileActive_FromSpec(Spec : unreal.Const<unreal.PRef<unreal.gameplayabilities.FGameplayEffectSpecForRPC>>, PredictionKey : unreal.gameplayabilities.FPredictionKey) : Void;
   
   /**
@@ -162,6 +180,16 @@ package unreal.gameplayabilities;
   **/
   @:final public function TryActivateAbilityByClass(InAbilityToActivate : unreal.TSubclassOf<unreal.gameplayabilities.UGameplayAbility>, bAllowRemoteActivation : Bool) : Bool;
   @:final private function OnRep_ActivateAbilities() : Void;
+  private function ServerTryActivateAbility(AbilityToActivate : unreal.gameplayabilities.FGameplayAbilitySpecHandle, InputPressed : Bool, PredictionKey : unreal.gameplayabilities.FPredictionKey) : Void;
+  private function ServerTryActivateAbilityWithEventData(AbilityToActivate : unreal.gameplayabilities.FGameplayAbilitySpecHandle, InputPressed : Bool, PredictionKey : unreal.gameplayabilities.FPredictionKey, TriggerEventData : unreal.gameplayabilities.FGameplayEventData) : Void;
+  private function ClientTryActivateAbility(AbilityToActivate : unreal.gameplayabilities.FGameplayAbilitySpecHandle) : Void;
+  private function ServerEndAbility(AbilityToEnd : unreal.gameplayabilities.FGameplayAbilitySpecHandle, ActivationInfo : unreal.gameplayabilities.FGameplayAbilityActivationInfo, PredictionKey : unreal.gameplayabilities.FPredictionKey) : Void;
+  private function ClientEndAbility(AbilityToEnd : unreal.gameplayabilities.FGameplayAbilitySpecHandle, ActivationInfo : unreal.gameplayabilities.FGameplayAbilityActivationInfo) : Void;
+  private function ServerCancelAbility(AbilityToCancel : unreal.gameplayabilities.FGameplayAbilitySpecHandle, ActivationInfo : unreal.gameplayabilities.FGameplayAbilityActivationInfo) : Void;
+  private function ClientCancelAbility(AbilityToCancel : unreal.gameplayabilities.FGameplayAbilitySpecHandle, ActivationInfo : unreal.gameplayabilities.FGameplayAbilityActivationInfo) : Void;
+  private function ClientActivateAbilityFailed(AbilityToActivate : unreal.gameplayabilities.FGameplayAbilitySpecHandle, PredictionKey : unreal.Int16) : Void;
+  private function ClientActivateAbilitySucceed(AbilityToActivate : unreal.gameplayabilities.FGameplayAbilitySpecHandle, PredictionKey : unreal.gameplayabilities.FPredictionKey) : Void;
+  private function ClientActivateAbilitySucceedWithEventData(AbilityToActivate : unreal.gameplayabilities.FGameplayAbilitySpecHandle, PredictionKey : unreal.gameplayabilities.FPredictionKey, TriggerEventData : unreal.gameplayabilities.FGameplayEventData) : Void;
   
   /**
     This is meant to be used to inhibit activating an ability from an input perspective. (E.g., the menu is pulled up, another game mechanism is consuming all input, etc)
@@ -196,6 +224,28 @@ package unreal.gameplayabilities;
   **/
   private function ServerCurrentMontageJumpToSectionName(ClientAnimMontage : unreal.UAnimMontage, SectionName : unreal.FName) : Void;
   @:final public function OnRep_OwningActor() : Void;
+  
+  /**
+    Replicates the Generic Replicated Event to the server.
+  **/
+  public function ServerSetReplicatedEvent(EventType : unreal.gameplayabilities.EAbilityGenericReplicatedEvent, AbilityHandle : unreal.gameplayabilities.FGameplayAbilitySpecHandle, AbilityOriginalPredictionKey : unreal.gameplayabilities.FPredictionKey, CurrentPredictionKey : unreal.gameplayabilities.FPredictionKey) : Void;
+  
+  /**
+    Replicates the Generic Replicated Event to the server.
+  **/
+  public function ClientSetReplicatedEvent(EventType : unreal.gameplayabilities.EAbilityGenericReplicatedEvent, AbilityHandle : unreal.gameplayabilities.FGameplayAbilitySpecHandle, AbilityOriginalPredictionKey : unreal.gameplayabilities.FPredictionKey) : Void;
+  public function ServerSetReplicatedTargetData(AbilityHandle : unreal.gameplayabilities.FGameplayAbilitySpecHandle, AbilityOriginalPredictionKey : unreal.gameplayabilities.FPredictionKey, ReplicatedTargetDataHandle : unreal.gameplayabilities.FGameplayAbilityTargetDataHandle, ApplicationTag : unreal.gameplaytags.FGameplayTag, CurrentPredictionKey : unreal.gameplayabilities.FPredictionKey) : Void;
+  
+  /**
+    Replicates to the server that targeting has been cancelled
+  **/
+  public function ServerSetReplicatedTargetDataCancelled(AbilityHandle : unreal.gameplayabilities.FGameplayAbilitySpecHandle, AbilityOriginalPredictionKey : unreal.gameplayabilities.FPredictionKey, CurrentPredictionKey : unreal.gameplayabilities.FPredictionKey) : Void;
+  
+  /**
+    Direct Input state replication. These will be called if bReplicateInputDirectly is true on the ability and is generally not a good thing to use. (Instead, prefer to use Generic Replicated Events).
+  **/
+  public function ServerSetInputPressed(AbilityHandle : unreal.gameplayabilities.FGameplayAbilitySpecHandle) : Void;
+  public function ServerSetInputReleased(AbilityHandle : unreal.gameplayabilities.FGameplayAbilitySpecHandle) : Void;
   @:final private function OnRep_GameplayEffects() : Void;
   // GameplayTagAssetInterface interface implementation
   

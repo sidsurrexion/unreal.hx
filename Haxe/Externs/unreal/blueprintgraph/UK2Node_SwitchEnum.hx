@@ -13,15 +13,24 @@
 **/
 package unreal.blueprintgraph;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_SwitchEnum.h")
 @:uextern extern class UK2Node_SwitchEnum extends unreal.blueprintgraph.UK2Node_Switch implements unreal.blueprintgraph.INodeDependingOnEnumInterface {
+  
+  /**
+    List of the current entries in the enum
+  **/
+  public var EnumFriendlyNames : unreal.TArray<unreal.FString>;
+  
+  /**
+    List of the current entries in the enum
+  **/
+  public var EnumEntries : unreal.TArray<unreal.FName>;
+  
+  /**
+    Name of the enum being switched on
+  **/
+  public var Enum : unreal.UEnum;
   // NodeDependingOnEnumInterface interface implementation
   
 }

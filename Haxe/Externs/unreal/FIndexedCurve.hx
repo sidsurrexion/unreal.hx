@@ -20,4 +20,9 @@ package unreal;
 @:glueCppIncludes("GameFramework/ForceFeedbackEffect.h")
 @:uextern extern class FIndexedCurve {
   
+  /**
+    Map of which key handles go to which indices.
+  **/
+  private var KeyHandlesToIndices : unreal.FKeyHandleMap;
+  
 }

@@ -76,6 +76,78 @@ package unreal.gameplayabilities;
   static public function GetTargetDataEndPointTransform(TargetData : unreal.gameplayabilities.FGameplayAbilityTargetDataHandle, Index : unreal.Int32) : unreal.FTransform;
   
   /**
+    GameplayEffectContext
+  **/
+  static public function EffectContextIsInstigatorLocallyControlled(EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : Bool;
+  static public function EffectContextGetHitResult(EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : unreal.FHitResult;
+  static public function EffectContextHasHitResult(EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : Bool;
+  
+  /**
+    Gets the location the effect originated from
+  **/
+  static public function EffectContextGetOrigin(EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : unreal.FVector;
+  
+  /**
+    Gets the instigating actor (that holds the ability system component) of the EffectContext
+  **/
+  static public function EffectContextGetInstigatorActor(EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : unreal.AActor;
+  
+  /**
+    Gets the original instigator actor that started the chain of events to cause this effect
+  **/
+  static public function EffectContextGetOriginalInstigatorActor(EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : unreal.AActor;
+  
+  /**
+    Gets the physical actor that caused the effect, possibly a projectile or weapon
+  **/
+  static public function EffectContextGetEffectCauser(EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : unreal.AActor;
+  
+  /**
+    Gets the source object of the effect.
+  **/
+  static public function EffectContextGetSourceObject(EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle) : unreal.UObject;
+  
+  /**
+    GameplayCue
+  **/
+  static public function IsInstigatorLocallyControlled(Parameters : unreal.gameplayabilities.FGameplayCueParameters) : Bool;
+  static public function IsInstigatorLocallyControlledPlayer(Parameters : unreal.gameplayabilities.FGameplayCueParameters) : Bool;
+  static public function GetActorCount(Parameters : unreal.gameplayabilities.FGameplayCueParameters) : unreal.Int32;
+  static public function GetActorByIndex(Parameters : unreal.gameplayabilities.FGameplayCueParameters, Index : unreal.Int32) : unreal.AActor;
+  static public function GetHitResult(Parameters : unreal.gameplayabilities.FGameplayCueParameters) : unreal.FHitResult;
+  static public function HasHitResult(Parameters : unreal.gameplayabilities.FGameplayCueParameters) : Bool;
+  
+  /**
+    Gets the instigating actor (that holds the ability system component) of the GameplayCue
+  **/
+  static public function GetInstigatorActor(Parameters : unreal.gameplayabilities.FGameplayCueParameters) : unreal.AActor;
+  
+  /**
+    Gets instigating world location
+  **/
+  static public function GetInstigatorTransform(Parameters : unreal.gameplayabilities.FGameplayCueParameters) : unreal.FTransform;
+  
+  /**
+    Gets instigating world location
+  **/
+  static public function GetOrigin(Parameters : unreal.gameplayabilities.FGameplayCueParameters) : unreal.FVector;
+  
+  /**
+    Gets the best end location and normal for this gameplay cue. If there is hit result data, it will return this. Otherwise it will return the target actor's location/rotation. If none of this is available, it will return false.
+  **/
+  static public function GetGameplayCueEndLocationAndNormal(TargetActor : unreal.AActor, Parameters : unreal.gameplayabilities.FGameplayCueParameters, Location : unreal.PRef<unreal.FVector>, Normal : unreal.PRef<unreal.FVector>) : Bool;
+  
+  /**
+    Gets the best normalized effect direction for this gameplay cue. This is useful for effects that require the direction of an enemy attack. Returns true if a valid direction could be calculated.
+  **/
+  static public function GetGameplayCueDirection(TargetActor : unreal.AActor, Parameters : unreal.gameplayabilities.FGameplayCueParameters, Direction : unreal.PRef<unreal.FVector>) : Bool;
+  
+  /**
+    Returns true if the aggregated source and target tags from the effect spec meets the tag requirements
+  **/
+  static public function DoesGameplayCueMeetTagRequirements(Parameters : unreal.gameplayabilities.FGameplayCueParameters, SourceTagReqs : unreal.PRef<unreal.gameplayabilities.FGameplayTagRequirements>, TargetTagReqs : unreal.PRef<unreal.gameplayabilities.FGameplayTagRequirements>) : Bool;
+  
+  /**
     GameplayEffectSpec
   **/
   static public function AssignSetByCallerMagnitude(SpecHandle : unreal.gameplayabilities.FGameplayEffectSpecHandle, DataName : unreal.FName, Magnitude : unreal.Float32) : unreal.gameplayabilities.FGameplayEffectSpecHandle;

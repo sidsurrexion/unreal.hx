@@ -13,14 +13,13 @@
 **/
 package unreal.editor;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Editor/GroupActor.h")
 @:uextern extern class AGroupActor extends unreal.AActor {
+  #if WITH_EDITORONLY_DATA
+  public var SubGroups : unreal.TArray<unreal.editor.AGroupActor>;
+  public var GroupActors : unreal.TArray<unreal.AActor>;
+  public var bLocked : Bool;
+  #end // WITH_EDITORONLY_DATA
   
 }

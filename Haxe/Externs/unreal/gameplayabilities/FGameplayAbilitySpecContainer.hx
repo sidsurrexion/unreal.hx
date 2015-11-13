@@ -19,7 +19,7 @@ package unreal.gameplayabilities;
 **/
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
-@:uextern extern class FGameplayAbilitySpecContainer {
+@:uextern extern class FGameplayAbilitySpecContainer extends unreal.FFastArraySerializer {
   
   /**
     List of activatable abilities

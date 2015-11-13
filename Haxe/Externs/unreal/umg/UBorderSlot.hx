@@ -20,6 +20,7 @@ package unreal.umg;
 @:umodule("UMG")
 @:glueCppIncludes("Components/BorderSlot.h")
 @:uextern extern class UBorderSlot extends unreal.umg.UPanelSlot {
+  @:final public function SetPadding(InPadding : unreal.slatecore.FMargin) : Void;
   @:final public function SetHorizontalAlignment(InHorizontalAlignment : unreal.slatecore.EHorizontalAlignment) : Void;
   @:final public function SetVerticalAlignment(InVerticalAlignment : unreal.slatecore.EVerticalAlignment) : Void;
   
@@ -32,5 +33,10 @@ package unreal.umg;
     The alignment of the object horizontally.
   **/
   private var HorizontalAlignment : unreal.slatecore.EHorizontalAlignment;
+  
+  /**
+    The padding area between the slot and the content it contains.
+  **/
+  private var Padding : unreal.slatecore.FMargin;
   
 }

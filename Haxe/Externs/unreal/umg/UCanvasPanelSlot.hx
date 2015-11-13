@@ -28,6 +28,21 @@ package unreal.umg;
   public var bAutoSize : Bool;
   
   /**
+    The anchoring information for the slot
+  **/
+  public var LayoutData : unreal.umg.FAnchorData;
+  
+  /**
+    Sets the layout data of the slot
+  **/
+  @:final public function SetLayout(InLayoutData : unreal.Const<unreal.PRef<unreal.umg.FAnchorData>>) : Void;
+  
+  /**
+    Gets the layout data of the slot
+  **/
+  @:thisConst @:final public function GetLayout() : unreal.umg.FAnchorData;
+  
+  /**
     Sets the position of the slot
   **/
   @:final public function SetPosition(InPosition : unreal.FVector2D) : Void;
@@ -46,6 +61,26 @@ package unreal.umg;
     Gets the size of the slot
   **/
   @:thisConst @:final public function GetSize() : unreal.FVector2D;
+  
+  /**
+    Sets the offset data of the slot, which could be position and size, or margins depending on the anchor points
+  **/
+  @:final public function SetOffsets(InOffset : unreal.slatecore.FMargin) : Void;
+  
+  /**
+    Gets the offset data of the slot, which could be position and size, or margins depending on the anchor points
+  **/
+  @:thisConst @:final public function GetOffsets() : unreal.slatecore.FMargin;
+  
+  /**
+    Sets the anchors on the slot
+  **/
+  @:final public function SetAnchors(InAnchors : unreal.slate.FAnchors) : Void;
+  
+  /**
+    Gets the anchors on the slot
+  **/
+  @:thisConst @:final public function GetAnchors() : unreal.slate.FAnchors;
   
   /**
     Sets the alignment on the slot

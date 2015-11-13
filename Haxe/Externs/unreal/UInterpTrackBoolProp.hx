@@ -13,13 +13,17 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Matinee/InterpTrackBoolProp.h")
 @:uextern extern class UInterpTrackBoolProp extends unreal.UInterpTrack {
+  
+  /**
+    Name of property in Group  AActor  which this track will modify over time.
+  **/
+  public var PropertyName : unreal.FName;
+  
+  /**
+    Array of booleans to set.
+  **/
+  public var BoolTrack : unreal.TArray<unreal.FBoolTrackKey>;
   
 }

@@ -64,6 +64,11 @@ package unreal.slatecore;
   public var Tint_DEPRECATED : unreal.FLinearColor;
   
   /**
+    The margin to use in Box and Border modes
+  **/
+  public var Margin : unreal.slatecore.FMargin;
+  
+  /**
     How to draw the image
   **/
   public var DrawAs : unreal.slatecore.ESlateBrushDrawType;

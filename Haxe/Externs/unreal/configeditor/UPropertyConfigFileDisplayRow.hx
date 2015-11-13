@@ -13,14 +13,11 @@
 **/
 package unreal.configeditor;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("ConfigEditor")
 @:glueCppIncludes("ConfigPropertyHelper.h")
 @:uextern extern class UPropertyConfigFileDisplayRow extends unreal.UObject {
+  public var bIsFileWritable : Bool;
+  public var ExternalProperty : unreal.UProperty;
+  public var ConfigFileName : unreal.FString;
   
 }

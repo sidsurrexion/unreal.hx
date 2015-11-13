@@ -13,12 +13,6 @@
 **/
 package unreal.gameplaytasks;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("GameplayTasks")
 @:glueCppIncludes("GameplayTaskOwnerInterface.h")
 @:uextern extern interface IGameplayTaskOwnerInterface {

@@ -195,6 +195,83 @@ package unreal;
   static public function MoveComponentTo(Component : unreal.USceneComponent, TargetRelativeLocation : unreal.FVector, TargetRelativeRotation : unreal.FRotator, bEaseOut : Bool, bEaseIn : Bool, OverTime : unreal.Float32, MoveAction : unreal.EMoveComponentAction, LatentInfo : unreal.FLatentActionInfo) : Void;
   
   /**
+    Returns whether the timer handle is valid. This does not indicate that there is an active timer that this handle references, but rather that it once referenced a valid timer.
+    @param Handle                The handle of the timer to check validity of.
+    @return                              Whether the timer handle is valid.
+  **/
+  static public function K2_IsValidTimerHandle(Handle : unreal.FTimerHandle) : Bool;
+  
+  /**
+    Returns whether the timer handle is valid. This does not indicate that there is an active timer that this handle references, but rather that it once referenced a valid timer.
+    @param Handle                The handle of the timer to check validity of.
+    @return                              Return the invalidated timer handle for convenience.
+  **/
+  static public function K2_InvalidateTimerHandle(Handle : unreal.PRef<unreal.FTimerHandle>) : unreal.FTimerHandle;
+  
+  /**
+    Clears a set timer.
+    @param Handle                The handle of the timer to clear.
+  **/
+  static public function K2_ClearTimerHandle(WorldContextObject : unreal.UObject, Handle : unreal.FTimerHandle) : Void;
+  
+  /**
+    Pauses a set timer at its current elapsed time.
+    @param Handle                The handle of the timer to pause.
+  **/
+  static public function K2_PauseTimerHandle(WorldContextObject : unreal.UObject, Handle : unreal.FTimerHandle) : Void;
+  
+  /**
+    Resumes a paused timer from its current elapsed time.
+    @param Handle                The handle of the timer to unpause.
+  **/
+  static public function K2_UnPauseTimerHandle(WorldContextObject : unreal.UObject, Handle : unreal.FTimerHandle) : Void;
+  
+  /**
+    Returns true if a timer exists and is active for the given handle, false otherwise.
+    @param Handle                The handle of the timer to check whether it is active.
+    @return                              True if the timer exists and is active.
+  **/
+  static public function K2_IsTimerActiveHandle(WorldContextObject : unreal.UObject, Handle : unreal.FTimerHandle) : Bool;
+  
+  /**
+    Returns true if a timer exists and is paused for the given handle, false otherwise.
+    @param Handle                The handle of the timer to check whether it is paused.
+    @return                              True if the timer exists and is paused.
+  **/
+  static public function K2_IsTimerPausedHandle(WorldContextObject : unreal.UObject, Handle : unreal.FTimerHandle) : Bool;
+  
+  /**
+    Returns true is a timer for the given handle exists, false otherwise.
+    @param Handle                The handle to check whether it exists.
+    @return                              True if the timer exists.
+  **/
+  static public function K2_TimerExistsHandle(WorldContextObject : unreal.UObject, Handle : unreal.FTimerHandle) : Bool;
+  
+  /**
+    Returns elapsed time for the given handle (time since current countdown iteration began).
+    @param Handle                The handle of the timer to get the elapsed time of.
+    @return                              How long has elapsed since the current iteration of the timer began.
+  **/
+  static public function K2_GetTimerElapsedTimeHandle(WorldContextObject : unreal.UObject, Handle : unreal.FTimerHandle) : unreal.Float32;
+  
+  /**
+    Returns time until the timer will next execute its handle.
+    @param Handle                The handle of the timer to time remaining of.
+    @return                              How long is remaining in the current iteration of the timer.
+  **/
+  static public function K2_GetTimerRemainingTimeHandle(WorldContextObject : unreal.UObject, Handle : unreal.FTimerHandle) : unreal.Float32;
+  
+  /**
+    Set a timer to execute delegate. Setting an existing timer will reset that timer with updated parameters.
+    @param Object                Object that implements the delegate function. Defaults to self (this blueprint)
+    @param FunctionName  Delegate function name. Can be a K2 function or a Custom Event.
+    @param Time                  How long to wait before executing the delegate, in seconds. Setting a timer to <= 0 seconds will clear it if it is set.
+    @param bLooping              true to keep executing the delegate every Time seconds, false to execute delegate only once.
+    @return                              The timer handle to pass to other timer functions to manipulate this timer.
+  **/
+  static public function K2_SetTimer(Object : unreal.UObject, FunctionName : unreal.FString, Time : unreal.Float32, bLooping : Bool) : unreal.FTimerHandle;
+  
+  /**
     Clears a set timer.
     @param Object                Object that implements the delegate function. Defaults to self (this blueprint)
     @param FunctionName  Delegate function name. Can be a K2 function or a Custom Event.
@@ -314,6 +391,16 @@ package unreal;
     Set a TRANSFORM property by name
   **/
   static public function SetTransformPropertyByName(Object : unreal.UObject, PropertyName : unreal.FName, Value : unreal.Const<unreal.PRef<unreal.FTransform>>) : Void;
+  
+  /**
+    Set a CollisionProfileName property by name
+  **/
+  static public function SetCollisionProfileNameProperty(Object : unreal.UObject, PropertyName : unreal.FName, Value : unreal.Const<unreal.PRef<unreal.FCollisionProfileName>>) : Void;
+  
+  /**
+    Set a custom structure property by name
+  **/
+  static public function SetStructurePropertyByName(Object : unreal.UObject, PropertyName : unreal.FName, Value : unreal.Const<unreal.PRef<unreal.FGenericStruct>>) : Void;
   static public function SphereOverlapActors_DEPRECATED(WorldContextObject : unreal.UObject, SpherePos : unreal.Const<unreal.FVector>, SphereRadius : unreal.Float32, Filter : unreal.EOverlapFilterOption, ActorClassFilter : unreal.UClass, ActorsToIgnore : unreal.Const<unreal.PRef<unreal.TArray<unreal.AActor>>>, OutActors : unreal.PRef<unreal.TArray<unreal.AActor>>) : Bool;
   static public function SphereOverlapComponents_DEPRECATED(WorldContextObject : unreal.UObject, SpherePos : unreal.Const<unreal.FVector>, SphereRadius : unreal.Float32, Filter : unreal.EOverlapFilterOption, ComponentClassFilter : unreal.UClass, ActorsToIgnore : unreal.Const<unreal.PRef<unreal.TArray<unreal.AActor>>>, OutComponents : unreal.PRef<unreal.TArray<unreal.UPrimitiveComponent>>) : Bool;
   static public function BoxOverlapActors_DEPRECATED(WorldContextObject : unreal.UObject, BoxPos : unreal.Const<unreal.FVector>, BoxExtent : unreal.FVector, Filter : unreal.EOverlapFilterOption, ActorClassFilter : unreal.UClass, ActorsToIgnore : unreal.Const<unreal.PRef<unreal.TArray<unreal.AActor>>>, OutActors : unreal.PRef<unreal.TArray<unreal.AActor>>) : Bool;
@@ -623,6 +710,17 @@ package unreal;
     Draw a debug camera shape.
   **/
   static public function DrawDebugCamera(CameraActor : unreal.Const<unreal.ACameraActor>, CameraColor : unreal.FLinearColor, Duration : unreal.Float32) : Void;
+  
+  /**
+    Draws a 2D Histogram of size 'DrawSize' based FDebugFloatHistory struct, using DrawTransform for the position in the world.
+  **/
+  static public function DrawDebugFloatHistoryTransform(WorldContextObject : unreal.UObject, FloatHistory : unreal.Const<unreal.PRef<unreal.FDebugFloatHistory>>, DrawTransform : unreal.Const<unreal.PRef<unreal.FTransform>>, DrawSize : unreal.FVector2D, DrawColor : unreal.FLinearColor, Duration : unreal.Float32) : Void;
+  
+  /**
+    Draws a 2D Histogram of size 'DrawSize' based FDebugFloatHistory struct, using DrawLocation for the location in the world, rotation will face camera of first player.
+  **/
+  static public function DrawDebugFloatHistoryLocation(WorldContextObject : unreal.UObject, FloatHistory : unreal.Const<unreal.PRef<unreal.FDebugFloatHistory>>, DrawLocation : unreal.FVector, DrawSize : unreal.FVector2D, DrawColor : unreal.FLinearColor, Duration : unreal.Float32) : Void;
+  static public function AddFloatHistorySample(Value : unreal.Float32, FloatHistory : unreal.Const<unreal.PRef<unreal.FDebugFloatHistory>>) : unreal.FDebugFloatHistory;
   
   /**
     Mark as modified.

@@ -13,13 +13,13 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Particles/RotationRate/ParticleModuleRotationRate.h")
-@:uextern extern class UParticleModuleRotationRate extends unreal.UParticleModule {
+@:uextern extern class UParticleModuleRotationRate extends unreal.UParticleModuleRotationRateBase {
+  
+  /**
+    Initial rotation rate, in rotations per second.
+    The value is retrieved using the EmitterTime.
+  **/
+  public var StartRotationRate : unreal.FRawDistributionFloat;
   
 }

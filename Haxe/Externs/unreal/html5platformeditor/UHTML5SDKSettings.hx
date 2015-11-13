@@ -21,4 +21,9 @@ package unreal.html5platformeditor;
 @:glueCppIncludes("Private/HTML5SDKSettings.h")
 @:uextern extern class UHTML5SDKSettings extends unreal.UObject {
   
+  /**
+    Available browsers that can be used when launching HTML5 builds.
+  **/
+  public var DeviceMap : unreal.TArray<unreal.html5platformeditor.FHTML5DeviceMapping>;
+  
 }

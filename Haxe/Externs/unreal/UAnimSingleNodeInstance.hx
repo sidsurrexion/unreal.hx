@@ -28,6 +28,16 @@ package unreal;
   /**
     Random cached values to play each asset *
   **/
+  public var BlendFilter : unreal.FBlendFilter;
+  
+  /**
+    Random cached values to play each asset *
+  **/
+  public var BlendSampleData : unreal.TArray<unreal.FBlendSampleData>;
+  
+  /**
+    Random cached values to play each asset *
+  **/
   public var BlendSpaceInput : unreal.FVector;
   public var CurrentVertexAnim : unreal.UVertexAnimation;
   

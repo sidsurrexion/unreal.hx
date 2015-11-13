@@ -71,6 +71,12 @@ package unreal;
   private var PhysMaterialOverride : unreal.UPhysicalMaterial;
   
   /**
+    Custom walkable slope override setting for this instance.
+    @see GetWalkableSlopeOverride(), SetWalkableSlopeOverride()
+  **/
+  private var WalkableSlopeOverride : unreal.FWalkableSlopeOverride;
+  
+  /**
     Per-instance scaling of mass
   **/
   public var MassScale : unreal.Float32;

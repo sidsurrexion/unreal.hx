@@ -13,14 +13,9 @@
 **/
 package unreal.animgraph;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimGraphNode_RotateRootBone.h")
 @:uextern extern class UAnimGraphNode_RotateRootBone extends unreal.animgraph.UAnimGraphNode_Base {
+  public var Node : unreal.FAnimNode_RotateRootBone;
   
 }

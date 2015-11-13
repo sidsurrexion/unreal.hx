@@ -13,13 +13,19 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Animation/AnimComposite.h")
 @:uextern extern class UAnimComposite extends unreal.UAnimCompositeBase {
+  #if WITH_EDITORONLY_DATA
+  
+  /**
+    Preview Base pose for additive BlendSpace *
+  **/
+  public var PreviewBasePose : unreal.UAnimSequence;
+  #end // WITH_EDITORONLY_DATA
+  
+  /**
+    Serializable data that stores section/anim pairing *
+  **/
+  public var AnimationTrack : unreal.FAnimTrack;
   
 }

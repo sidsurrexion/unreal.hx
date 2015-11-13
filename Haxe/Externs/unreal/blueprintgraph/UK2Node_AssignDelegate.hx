@@ -15,8 +15,6 @@ package unreal.blueprintgraph;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Modeled after FEdGraphSchemaAction_K2AssignDelegate for the newer Blueprint
   menu system. Acts simply as a UK2Node_AddDelegate with an attached custom-
   event node (spawned in PostPlacedNewNode).

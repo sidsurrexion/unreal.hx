@@ -13,12 +13,6 @@
 **/
 package unreal.aimodule;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("AIModule")
 @:glueCppIncludes("EnvironmentQuery/EQSQueryResultSourceInterface.h")
 @:uextern extern interface IEQSQueryResultSourceInterface {

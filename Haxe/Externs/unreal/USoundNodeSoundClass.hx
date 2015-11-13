@@ -15,11 +15,10 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Remaps the SoundClass of SoundWaves underneath this
 **/
 @:glueCppIncludes("Sound/SoundNodeSoundClass.h")
 @:uextern extern class USoundNodeSoundClass extends unreal.USoundNode {
+  public var SoundClassOverride : unreal.USoundClass;
   
 }

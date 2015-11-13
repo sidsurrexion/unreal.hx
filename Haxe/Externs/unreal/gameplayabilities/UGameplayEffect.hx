@@ -24,6 +24,11 @@ package unreal.gameplayabilities;
 @:uextern extern class UGameplayEffect extends unreal.UObject implements unreal.gameplaytags.IGameplayTagAssetInterface {
   
   /**
+    Granted abilities
+  **/
+  public var GrantedAbilities : unreal.TArray<unreal.gameplayabilities.FGameplayAbilitySpecDef>;
+  
+  /**
     Policy for how the effect period should be reset (or not) while stacking
   **/
   public var StackPeriodResetPolicy : unreal.gameplayabilities.EGameplayEffectStackingPeriodPolicy;
@@ -92,6 +97,11 @@ package unreal.gameplayabilities;
     Data for the UI representation of this effect. This should include things like text, icons, etc. Not available in server-only builds.
   **/
   public var UIData : unreal.gameplayabilities.UGameplayEffectUIData;
+  
+  /**
+    Cues to trigger non-simulated reactions in response to this GameplayEffect such as sounds, particle effects, etc
+  **/
+  public var GameplayCues : unreal.TArray<unreal.gameplayabilities.FGameplayEffectCue>;
   
   /**
     If true, cues will only trigger when GE modifiers succeed being applied (whether through modifiers or executions)
@@ -169,6 +179,11 @@ package unreal.gameplayabilities;
     When false, show a limited set of properties for editing, based on the template we are derived from
   **/
   public var ShowAllProperties : Bool;
+  
+  /**
+    Template to derive starting values and editing customization from
+  **/
+  public var Template : unreal.gameplayabilities.UGameplayEffectTemplate;
   #end // WITH_EDITORONLY_DATA
   // GameplayTagAssetInterface interface implementation
   

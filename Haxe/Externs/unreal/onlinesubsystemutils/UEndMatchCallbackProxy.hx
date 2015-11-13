@@ -13,12 +13,6 @@
 **/
 package unreal.onlinesubsystemutils;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("OnlineSubsystemUtils")
 @:glueCppIncludes("EndMatchCallbackProxy.h")
 @:uextern extern class UEndMatchCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {

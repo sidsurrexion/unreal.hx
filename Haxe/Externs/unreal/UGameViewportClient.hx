@@ -29,13 +29,18 @@ package unreal;
   @see UGameViewportClient
 **/
 @:glueCppIncludes("Engine/GameViewportClient.h")
-@:uextern extern class UGameViewportClient extends unreal.UObject {
+@:uextern extern class UGameViewportClient extends unreal.UScriptViewportClient {
   private var GameInstance : unreal.UGameInstance;
   
   /**
     The relative world context for this viewport
   **/
   private var World : unreal.UWorld;
+  
+  /**
+    @todo document
+  **/
+  public var DebugProperties : unreal.TArray<unreal.FDebugDisplayProperty>;
   
   /**
     The viewport's console.   Might be null on consoles

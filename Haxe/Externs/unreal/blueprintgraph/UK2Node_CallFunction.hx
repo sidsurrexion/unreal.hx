@@ -18,6 +18,11 @@ package unreal.blueprintgraph;
 @:uextern extern class UK2Node_CallFunction extends unreal.blueprintgraph.UK2Node {
   
   /**
+    The function to call
+  **/
+  public var FunctionReference : unreal.FMemberReference;
+  
+  /**
     Indicates that this is a 'bead' function with no fixed location; it is drawn between the nodes that it is wired to
   **/
   public var bIsBeadFunction : Bool;

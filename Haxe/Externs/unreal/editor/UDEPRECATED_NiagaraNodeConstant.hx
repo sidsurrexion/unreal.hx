@@ -13,14 +13,20 @@
 **/
 package unreal.editor;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Niagara/NiagaraNodeConstant.h")
 @:uextern extern class UDEPRECATED_NiagaraNodeConstant extends unreal.editor.UNiagaraNode {
+  public var bExposeToEffectEditor : Bool;
+  public var bNeedsDefault : Bool;
+  
+  /**
+    The type of the constant we're creating.
+  **/
+  public var DataType : unreal.niagara.ENiagaraDataType;
+  
+  /**
+    The type of the constant we're creating.
+  **/
+  public var ConstName : unreal.FName;
   
 }

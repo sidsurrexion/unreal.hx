@@ -15,8 +15,6 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   An invisible volume used to block other actors.
 **/
 @:glueCppIncludes("Engine/BlockingVolume.h")

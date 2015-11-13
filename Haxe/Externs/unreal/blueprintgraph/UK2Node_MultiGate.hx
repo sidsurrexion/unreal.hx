@@ -13,14 +13,13 @@
 **/
 package unreal.blueprintgraph;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_MultiGate.h")
 @:uextern extern class UK2Node_MultiGate extends unreal.blueprintgraph.UK2Node_ExecutionSequence {
+  
+  /**
+    Reference to the integer that contains
+  **/
+  public var DataNode : unreal.blueprintgraph.UK2Node_TemporaryVariable;
   
 }

@@ -13,13 +13,15 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Materials/MaterialExpressionDynamicParameter.h")
 @:uextern extern class UMaterialExpressionDynamicParameter extends unreal.UMaterialExpression {
+  public var DefaultValue : unreal.FLinearColor;
+  
+  /**
+    The names of the parameters.
+    These will show up in Cascade when editing a particle system
+    that uses the material it is in...
+  **/
+  public var ParamNames : unreal.TArray<unreal.FString>;
   
 }

@@ -15,12 +15,13 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Info is the base class of an Actor that isn't meant to have a physical representation in the world, used primarily
   for "manager" type classes that hold settings data about the world, but might need to be an Actor for replication purposes.
 **/
 @:glueCppIncludes("GameFramework/Info.h")
 @:uextern extern class AInfo extends unreal.AActor {
+  #if WITH_EDITORONLY_DATA
+  public var SpriteComponent : unreal.UBillboardComponent;
+  #end // WITH_EDITORONLY_DATA
   
 }

@@ -15,11 +15,57 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   A Material Function is a collection of material expressions that can be reused in different materials
 **/
 @:glueCppIncludes("Materials/MaterialFunction.h")
 @:uextern extern class UMaterialFunction extends unreal.UObject {
+  #if WITH_EDITORONLY_DATA
+  
+  /**
+    Information for thumbnail rendering
+  **/
+  public var ThumbnailInfo : unreal.UThumbnailInfo;
+  public var CombinedOutputTypes : unreal.FakeUInt32;
+  public var CombinedInputTypes : unreal.FakeUInt32;
+  public var PreviewMaterial : unreal.UMaterial;
+  
+  /**
+    Array of comments associated with this material; viewed in the material editor.
+  **/
+  public var FunctionEditorComments : unreal.TArray<unreal.UMaterialExpressionComment>;
+  #end // WITH_EDITORONLY_DATA
+  
+  /**
+    Array of material expressions, excluding Comments.  Used by the material editor.
+  **/
+  public var FunctionExpressions : unreal.TArray<unreal.UMaterialExpression>;
+  
+  /**
+    Categories that this function belongs to in the material function library.
+    Ideally categories should be chosen carefully so that there are not too many.
+  **/
+  public var LibraryCategories_DEPRECATED : unreal.TArray<unreal.FString>;
+  
+  /**
+    Whether to list this function in the material function library, which is a window in the material editor that lists categorized functions.
+  **/
+  public var bExposeToLibrary : Bool;
+  
+  /**
+    Description of the function which will be displayed as a tooltip wherever the function is used.
+  **/
+  public var Description : unreal.FString;
+  #if WITH_EDITORONLY_DATA
+  
+  /**
+    Used in the material editor, points to the function asset being edited, which this function is just a preview for.
+  **/
+  public var ParentFunction : unreal.UMaterialFunction;
+  #end // WITH_EDITORONLY_DATA
+  
+  /**
+    Used by materials using this function to know when to recompile.
+  **/
+  public var StateId : unreal.FGuid;
   
 }

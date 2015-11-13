@@ -13,13 +13,24 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Materials/MaterialExpressionMakeMaterialAttributes.h")
 @:uextern extern class UMaterialExpressionMakeMaterialAttributes extends unreal.UMaterialExpression {
+  public var PixelDepthOffset : unreal.FExpressionInput;
+  public var Refraction : unreal.FExpressionInput;
+  public var AmbientOcclusion : unreal.FExpressionInput;
+  public var ClearCoatRoughness : unreal.FExpressionInput;
+  public var ClearCoat : unreal.FExpressionInput;
+  public var SubsurfaceColor : unreal.FExpressionInput;
+  public var TessellationMultiplier : unreal.FExpressionInput;
+  public var WorldDisplacement : unreal.FExpressionInput;
+  public var WorldPositionOffset : unreal.FExpressionInput;
+  public var Normal : unreal.FExpressionInput;
+  public var OpacityMask : unreal.FExpressionInput;
+  public var Opacity : unreal.FExpressionInput;
+  public var EmissiveColor : unreal.FExpressionInput;
+  public var Roughness : unreal.FExpressionInput;
+  public var Specular : unreal.FExpressionInput;
+  public var Metallic : unreal.FExpressionInput;
+  public var BaseColor : unreal.FExpressionInput;
   
 }

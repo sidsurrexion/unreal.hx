@@ -15,12 +15,15 @@ package unreal.moviescenetracks;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Handles manipulation of float properties in a movie scene
 **/
 @:umodule("MovieSceneTracks")
 @:glueCppIncludes("Tracks/SubMovieSceneTrack.h")
 @:uextern extern class USubMovieSceneTrack extends unreal.moviescene.UMovieSceneTrack {
+  
+  /**
+    All movie scene sections.
+  **/
+  private var SubMovieSceneSections : unreal.TArray<unreal.moviescene.UMovieSceneSection>;
   
 }

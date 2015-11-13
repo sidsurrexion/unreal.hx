@@ -13,13 +13,27 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Materials/MaterialExpressionMultiply.h")
 @:uextern extern class UMaterialExpressionMultiply extends unreal.UMaterialExpression {
+  
+  /**
+    only used if B is not hooked up
+  **/
+  public var ConstB : unreal.Float32;
+  
+  /**
+    only used if A is not hooked up
+  **/
+  public var ConstA : unreal.Float32;
+  
+  /**
+    Defaults to 'ConstB' if not specified
+  **/
+  public var B : unreal.FExpressionInput;
+  
+  /**
+    Defaults to 'ConstA' if not specified
+  **/
+  public var A : unreal.FExpressionInput;
   
 }

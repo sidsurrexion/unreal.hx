@@ -23,6 +23,11 @@ package unreal;
 **/
 @:glueCppIncludes("Components/StaticMeshComponent.h")
 @:uextern extern class UStaticMeshComponent extends unreal.UMeshComponent {
+  
+  /**
+    The Lightmass settings for this object.
+  **/
+  public var LightmassSettings : unreal.FLightmassPrimitiveSettings;
   #if WITH_EDITORONLY_DATA
   
   /**

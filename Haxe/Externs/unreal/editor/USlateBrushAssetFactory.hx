@@ -15,12 +15,15 @@ package unreal.editor;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Factory for creating SlateBrushAssets
 **/
 @:umodule("UnrealEd")
 @:glueCppIncludes("Factories/SlateBrushAssetFactory.h")
 @:uextern extern class USlateBrushAssetFactory extends unreal.editor.UFactory {
+  
+  /**
+    An initial texture to assign to the newly created slate brush
+  **/
+  public var InitialTexture : unreal.UTexture2D;
   
 }

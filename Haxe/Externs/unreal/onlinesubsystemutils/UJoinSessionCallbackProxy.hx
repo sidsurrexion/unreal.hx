@@ -13,14 +13,13 @@
 **/
 package unreal.onlinesubsystemutils;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("OnlineSubsystemUtils")
 @:glueCppIncludes("JoinSessionCallbackProxy.h")
 @:uextern extern class UJoinSessionCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
+  
+  /**
+    Joins a remote session with the default online subsystem
+  **/
+  static public function JoinSession(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController, SearchResult : unreal.Const<unreal.PRef<unreal.onlinesubsystemutils.FBlueprintSessionResult>>) : unreal.onlinesubsystemutils.UJoinSessionCallbackProxy;
   
 }

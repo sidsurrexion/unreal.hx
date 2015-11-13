@@ -17,6 +17,16 @@ package unreal;
 @:uextern extern class FHierarchicalSimplification {
   
   /**
+    Merge Mesh Setting if bSimplifyMesh is false
+  **/
+  public var MergeSetting : unreal.FMeshMergingSettings;
+  
+  /**
+    Simplification Setting if bSimplifyMesh is true
+  **/
+  public var ProxySetting : unreal.FMeshProxySettings;
+  
+  /**
     Min number of actors to build LODActor
   **/
   public var MinNumberOfActorsToBuild : unreal.Int32;

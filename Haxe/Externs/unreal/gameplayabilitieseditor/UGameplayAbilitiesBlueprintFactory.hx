@@ -13,14 +13,18 @@
 **/
 package unreal.gameplayabilitieseditor;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("GameplayAbilitiesEditor")
 @:glueCppIncludes("GameplayAbilitiesBlueprintFactory.h")
 @:uextern extern class UGameplayAbilitiesBlueprintFactory extends unreal.editor.UFactory {
+  
+  /**
+    The parent class of the created blueprint
+  **/
+  public var ParentClass : unreal.TSubclassOf<unreal.gameplayabilities.UGameplayAbility>;
+  
+  /**
+    The type of blueprint that will be created
+  **/
+  public var BlueprintType : unreal.EBlueprintType;
   
 }

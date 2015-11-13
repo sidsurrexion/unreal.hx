@@ -15,8 +15,6 @@ package unreal.niagara;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Runtime data for a Niagara system
 **/
 @:umodule("Niagara")

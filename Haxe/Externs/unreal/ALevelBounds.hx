@@ -15,13 +15,16 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Defines level bounds
   Updates bounding box automatically based on actors transformation changes or holds fixed user defined bounding box
   Uses only actors where AActor::IsLevelBoundsRelevant() == true
 **/
 @:glueCppIncludes("Engine/LevelBounds.h")
 @:uextern extern class ALevelBounds extends unreal.AActor {
+  
+  /**
+    Whether to automatically update actor bounds based on all relevant actors bounds belonging to the same level
+  **/
+  public var bAutoUpdateBounds : Bool;
   
 }

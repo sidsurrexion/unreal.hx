@@ -15,12 +15,11 @@ package unreal.blueprintgraph;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Pure kismet node that gets one or more member variables of a struct
 **/
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_StructMemberGet.h")
 @:uextern extern class UK2Node_StructMemberGet extends unreal.blueprintgraph.UK2Node_StructOperation {
+  public var ShowPinForProperties : unreal.TArray<unreal.blueprintgraph.FOptionalPinFromProperty>;
   
 }

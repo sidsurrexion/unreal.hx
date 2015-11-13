@@ -15,8 +15,6 @@ package unreal.moviescenetracks;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Handles triggering of particle emitters
 **/
 @:umodule("MovieSceneTracks")

@@ -66,4 +66,11 @@ package unreal.onlinesubsystemutils;
   **/
   private function ServerUpdateReservationRequest(SessionId : unreal.FString, ReservationUpdate : unreal.Const<unreal.PRef<unreal.onlinesubsystemutils.FPartyReservation>>) : Void;
   
+  /**
+    Tell the server to cancel a pending or existing reservation
+    
+    @param PartyLeader id of the party leader for the reservation to cancel
+  **/
+  private function ServerCancelReservationRequest(PartyLeader : unreal.Const<unreal.PRef<unreal.FUniqueNetIdRepl>>) : Void;
+  
 }

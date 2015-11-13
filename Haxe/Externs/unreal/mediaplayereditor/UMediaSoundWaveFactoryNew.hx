@@ -15,12 +15,15 @@ package unreal.mediaplayereditor;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Implements a factory for UMediaSoundWave objects.
 **/
 @:umodule("MediaPlayerEditor")
 @:glueCppIncludes("Private/Factories/MediaSoundWaveFactoryNew.h")
 @:uextern extern class UMediaSoundWaveFactoryNew extends unreal.editor.UFactory {
+  
+  /**
+    An initial UMediaPlayer asset to place in the newly created sound wave.
+  **/
+  public var InitialMediaPlayer : unreal.mediaassets.UMediaPlayer;
   
 }

@@ -13,13 +13,22 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Materials/MaterialExpressionTransformPosition.h")
 @:uextern extern class UMaterialExpressionTransformPosition extends unreal.UMaterialExpression {
+  
+  /**
+    type of transform to apply to the input expression
+  **/
+  public var TransformType : unreal.EMaterialPositionTransformSource;
+  
+  /**
+    source format of the position that will be transformed
+  **/
+  public var TransformSourceType : unreal.EMaterialPositionTransformSource;
+  
+  /**
+    input expression for this transform
+  **/
+  public var Input : unreal.FExpressionInput;
   
 }

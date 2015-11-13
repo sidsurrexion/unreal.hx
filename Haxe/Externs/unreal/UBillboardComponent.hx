@@ -27,6 +27,11 @@ package unreal;
   public var bUseInEditorScaling : Bool;
   
   /**
+    Sprite category information regarding the component
+  **/
+  public var SpriteInfo : unreal.FSpriteCategoryInfo;
+  
+  /**
     Sprite category that the component belongs to. Value serves as a key into the localization file.
   **/
   public var SpriteCategoryName_DEPRECATED : unreal.FName;

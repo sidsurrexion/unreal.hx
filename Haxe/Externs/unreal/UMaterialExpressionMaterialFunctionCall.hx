@@ -13,13 +13,22 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Materials/MaterialExpressionMaterialFunctionCall.h")
 @:uextern extern class UMaterialExpressionMaterialFunctionCall extends unreal.UMaterialExpression {
+  
+  /**
+    Array of all the function outputs that this function exposes.
+  **/
+  public var FunctionOutputs : unreal.TArray<unreal.FFunctionExpressionOutput>;
+  
+  /**
+    Array of all the function inputs that this function exposes.
+  **/
+  public var FunctionInputs : unreal.TArray<unreal.FFunctionExpressionInput>;
+  
+  /**
+    The function to call.
+  **/
+  public var MaterialFunction : unreal.UMaterialFunction;
   
 }

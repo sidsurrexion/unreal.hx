@@ -15,11 +15,19 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Defines how a sound loops; either indefinitely, or for a set number of times
 **/
 @:glueCppIncludes("Sound/SoundNodeLooping.h")
 @:uextern extern class USoundNodeLooping extends unreal.USoundNode {
+  
+  /**
+    If enabled, the node will continue to loop indefinitely regardless of the Loop Count value.
+  **/
+  public var bLoopIndefinitely : Bool;
+  
+  /**
+    The amount of times to loop
+  **/
+  public var LoopCount : unreal.Int32;
   
 }

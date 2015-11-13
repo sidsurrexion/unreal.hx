@@ -31,7 +31,22 @@ package unreal.animgraphruntime;
     Tolerance for final tip location delta from EffectorLocation
   **/
   public var Precision : unreal.Float32;
+  
+  /**
+    Name of the root bone
+  **/
+  public var RootBone : unreal.FBoneReference;
+  
+  /**
+    Name of tip bone
+  **/
+  public var TipBone : unreal.FBoneReference;
   public var EffectorRotationSource : unreal.EBoneRotationSource;
+  
+  /**
+    If EffectorTransformSpace is a bone, this is the bone to use. *
+  **/
+  public var EffectorTransformBone : unreal.FBoneReference;
   
   /**
     Reference frame of Effector Transform.

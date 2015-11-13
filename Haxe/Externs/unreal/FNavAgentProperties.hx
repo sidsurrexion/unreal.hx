@@ -18,7 +18,7 @@ package unreal;
   Properties of representation of an 'agent' (or Pawn) used by AI navigation/pathfinding.
 **/
 @:glueCppIncludes("AI/Navigation/NavigationData.h")
-@:uextern extern class FNavAgentProperties {
+@:uextern extern class FNavAgentProperties extends unreal.FMovementProperties {
   
   /**
     Scale factor to apply to height of bounds when searching for navmesh to project to when nav walking

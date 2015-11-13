@@ -15,11 +15,14 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   -> will be exported to EngineDecalClasses.h
 **/
 @:glueCppIncludes("Components/ReflectionCaptureComponent.h")
 @:uextern extern class UReflectionCaptureComponent extends unreal.USceneComponent {
+  
+  /**
+    A brightness control to scale the captured scene's reflection intensity.
+  **/
+  public var Brightness : unreal.Float32;
   
 }

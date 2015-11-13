@@ -15,8 +15,6 @@ package unreal.gameplayabilities;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Move to a location, ignoring clipping, over a given length of time. Ends when the TargetLocation is reached.
   This will RESET your character's current movement mode! If you wish to maintain PHYS_Flying or PHYS_Custom, you must
   reset it on completion.!
@@ -24,5 +22,19 @@ package unreal.gameplayabilities;
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("Abilities/Tasks/AbilityTask_MoveToLocation.h")
 @:uextern extern class UAbilityTask_MoveToLocation extends unreal.gameplayabilities.UAbilityTask {
+  private var LerpCurveVector : unreal.UCurveVector;
+  private var LerpCurve : unreal.UCurveFloat;
+  private var DurationOfMovement : unreal.Float32;
+  
+  /**
+    FVector
+  **/
+  private var TargetLocation : unreal.FVector;
+  private var StartLocation : unreal.FVector;
+  
+  /**
+    Move to the specified location, using the vector curve (range 0 - 1) if specified, otherwise the float curve (range 0 - 1) or fallback to linear interpolation
+  **/
+  static public function MoveToLocation(WorldContextObject : unreal.UObject, TaskInstanceName : unreal.FName, Location : unreal.FVector, Duration : unreal.Float32, OptionalInterpolationCurve : unreal.UCurveFloat, OptionalVectorInterpolationCurve : unreal.UCurveVector) : unreal.gameplayabilities.UAbilityTask_MoveToLocation;
   
 }

@@ -13,13 +13,32 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Matinee/InterpTrackEvent.h")
 @:uextern extern class UInterpTrackEvent extends unreal.UInterpTrack {
+  
+  /**
+    If checked each key's event name is the exact name of the custom event function in level script that will be called
+  **/
+  public var bUseCustomEventName : Bool;
+  
+  /**
+    If true, events on this track are fired even when jumping forwads through a sequence - for example, skipping a cinematic.
+  **/
+  public var bFireEventsWhenJumpingForwards : Bool;
+  
+  /**
+    If events should be fired when passed playing the sequence backwards.
+  **/
+  public var bFireEventsWhenBackwards : Bool;
+  
+  /**
+    If events should be fired when passed playing the sequence forwards.
+  **/
+  public var bFireEventsWhenForwards : Bool;
+  
+  /**
+    Array of events to fire off.
+  **/
+  public var EventTrack : unreal.TArray<unreal.FEventTrackKey>;
   
 }

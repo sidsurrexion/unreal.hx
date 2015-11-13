@@ -13,13 +13,37 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Particles/Spawn/ParticleModuleSpawn.h")
-@:uextern extern class UParticleModuleSpawn extends unreal.UParticleModule {
+@:uextern extern class UParticleModuleSpawn extends unreal.UParticleModuleSpawnBase {
+  
+  /**
+    If true, the SpawnRate will be scaled by the global CVar r.EmitterSpawnRateScale
+  **/
+  public var bApplyGlobalSpawnRateScale : Bool;
+  
+  /**
+    Scale all burst entries by this amount.
+  **/
+  public var BurstScale : unreal.FRawDistributionFloat;
+  
+  /**
+    The array of burst entries.
+  **/
+  public var BurstList : unreal.TArray<unreal.FParticleBurst>;
+  
+  /**
+    The method to utilize when burst-emitting particles.
+  **/
+  public var ParticleBurstMethod : unreal.EParticleBurstMethod;
+  
+  /**
+    The scalar to apply to the rate.
+  **/
+  public var RateScale : unreal.FRawDistributionFloat;
+  
+  /**
+    The rate at which to spawn particles.
+  **/
+  public var Rate : unreal.FRawDistributionFloat;
   
 }

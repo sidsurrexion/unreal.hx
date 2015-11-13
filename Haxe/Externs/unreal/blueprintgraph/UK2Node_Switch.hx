@@ -13,14 +13,23 @@
 **/
 package unreal.blueprintgraph;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("BlueprintGraph")
 @:glueCppIncludes("K2Node_Switch.h")
 @:uextern extern class UK2Node_Switch extends unreal.blueprintgraph.UK2Node {
+  
+  /**
+    The class that the function is from.
+  **/
+  public var FunctionClass : unreal.TSubclassOf<unreal.UObject>;
+  
+  /**
+    The function underpining the switch, if required
+  **/
+  public var FunctionName : unreal.FName;
+  
+  /**
+    If true switch has a default pin
+  **/
+  public var bHasDefaultPin : Bool;
   
 }

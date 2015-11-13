@@ -23,6 +23,11 @@ package unreal.editor;
   public var CookServer : unreal.editor.UCookOnTheFlyServer;
   
   /**
+    List of info for all known template maps
+  **/
+  public var TemplateMapInfos : unreal.TArray<unreal.editor.FTemplateMapInfo>;
+  
+  /**
     Array of sorted, localized editor sprite categories
   **/
   public var SortedSpriteCategories_DEPRECATED : unreal.TArray<unreal.FString>;

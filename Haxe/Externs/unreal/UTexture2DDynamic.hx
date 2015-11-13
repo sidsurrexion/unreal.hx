@@ -13,13 +13,12 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Engine/Texture2DDynamic.h")
 @:uextern extern class UTexture2DDynamic extends unreal.UTexture {
+  
+  /**
+    The format of the texture.
+  **/
+  public var Format : unreal.EPixelFormat;
   
 }

@@ -15,8 +15,6 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Implements a light that is created after a lighting build with Lightmass and handles mesh area light influence on dynamic objects.
 **/
 @:glueCppIncludes("Engine/GeneratedMeshAreaLight.h")

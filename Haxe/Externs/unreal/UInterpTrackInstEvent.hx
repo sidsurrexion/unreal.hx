@@ -13,13 +13,13 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Matinee/InterpTrackInstEvent.h")
 @:uextern extern class UInterpTrackInstEvent extends unreal.UInterpTrackInst {
+  
+  /**
+    Position we were in last time we evaluated Events.
+    During UpdateTrack, events between this time and the current time will be fired.
+  **/
+  public var LastUpdatePosition : unreal.Float32;
   
 }

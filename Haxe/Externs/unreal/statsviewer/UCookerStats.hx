@@ -15,8 +15,6 @@ package unreal.statsviewer;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Statistics for a cooked asset.
   
   Note: We assume that asset files are not larger than 2GB, because the StatsViewer is still lacking int64 support.
@@ -24,5 +22,20 @@ package unreal.statsviewer;
 @:umodule("StatsViewer")
 @:glueCppIncludes("CookerStats.h")
 @:uextern extern class UCookerStats extends unreal.UObject {
+  
+  /**
+    Asset path without the name "package.[group.]"
+  **/
+  public var Path : unreal.FString;
+  
+  /**
+    The size of the assets after cooking.
+  **/
+  public var SizeAfter : unreal.Float32;
+  
+  /**
+    The size of the assets before cooking.
+  **/
+  public var SizeBefore : unreal.Float32;
   
 }

@@ -13,14 +13,23 @@
 **/
 package unreal.headmounteddisplay;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("HeadMountedDisplay")
 @:glueCppIncludes("MotionControllerComponent.h")
 @:uextern extern class UMotionControllerComponent extends unreal.UPrimitiveComponent {
+  
+  /**
+    Which hand this component should automatically follow
+  **/
+  public var Hand : unreal.headmounteddisplay.EControllerHand;
+  
+  /**
+    Which player index this motion controller should automatically follow
+  **/
+  public var PlayerIndex : unreal.Int32;
+  
+  /**
+    Whether or not this component had a valid tracked device this frame
+  **/
+  @:thisConst @:final public function IsTracked() : Bool;
   
 }

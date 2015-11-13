@@ -13,13 +13,29 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Animation/AnimSet.h")
 @:uextern extern class UAnimSet extends unreal.UObject {
+  
+  /**
+    Holds the name of the skeletal mesh whose reference skeleton best matches the TrackBoneName array.
+  **/
+  public var BestRatioSkelMeshName : unreal.FName;
+  
+  /**
+    In the AnimSetEditor, when you switch to this AnimSet, it sees if this skeletal mesh is loaded and if so switches to it.
+  **/
+  public var PreviewSkelMeshName : unreal.FName;
+  #if WITH_EDITORONLY_DATA
+  
+  /**
+    Actual animation sequence information.
+  **/
+  public var Sequences : unreal.TArray<unreal.UAnimSequence>;
+  #end // WITH_EDITORONLY_DATA
+  
+  /**
+    Bone name that each track relates to. TrackBoneName.Num() == Number of tracks.
+  **/
+  public var TrackBoneNames : unreal.TArray<unreal.FName>;
   
 }

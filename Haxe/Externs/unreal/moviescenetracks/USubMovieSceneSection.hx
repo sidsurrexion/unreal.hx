@@ -15,8 +15,6 @@ package unreal.moviescenetracks;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   A container for a movie scene within a movie scene
 **/
 @:umodule("MovieSceneTracks")

@@ -27,6 +27,7 @@ package unreal.gameplayabilities;
     This tells us how we got here (who / what applied us)
   **/
   public var AggregatedSourceTags : unreal.gameplaytags.FGameplayTagContainer;
+  public var EffectContext : unreal.gameplayabilities.FGameplayEffectContextHandle;
   public var ModifiedAttributes : unreal.TArray<unreal.gameplayabilities.FGameplayEffectModifiedAttribute>;
   
   /**

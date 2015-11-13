@@ -15,12 +15,65 @@ package unreal.statsviewer;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Statistics page for static meshes.
 **/
 @:umodule("StatsViewer")
 @:glueCppIncludes("StaticMeshLightingInfo.h")
 @:uextern extern class UStaticMeshLightingInfo extends unreal.UObject {
+  
+  /**
+    Number of lights generating shadow maps on the primitive.
+  **/
+  public var ShadowMapLightCount : unreal.Int32;
+  
+  /**
+    Estimated memory usage in KB for shadow map vertex data.
+  **/
+  public var VertexShadowMapMemoryUsage : unreal.Float32;
+  
+  /**
+    Estimated memory usage in KB for shadow map texel data.
+  **/
+  public var TextureShadowMapMemoryUsage : unreal.Float32;
+  
+  /**
+    Num lightmap lights
+  **/
+  public var LightMapLightCount : unreal.Int32;
+  
+  /**
+    Estimated memory usage in KB for light map vertex data.
+  **/
+  public var VertexLightMapMemoryUsage : unreal.Float32;
+  
+  /**
+    Estimated memory usage in KB for light map texel data.
+  **/
+  public var TextureLightMapMemoryUsage : unreal.Float32;
+  
+  /**
+    The static lighting resolution the texture mapping was estimated with.
+  **/
+  public var StaticLightingResolution : unreal.Int32;
+  
+  /**
+    Does the Lightmap have UVs?
+  **/
+  public var bHasLightmapTexCoords : Bool;
+  
+  /**
+    Current mapping type flag - not displayed
+  **/
+  public var bTextureMapping : Bool;
+  
+  /**
+    Current mapping type string
+  **/
+  public var TextureMapping : unreal.FString;
+  
+  /**
+    Cached version of the level name this object resides in
+  **/
+  public var LevelName : unreal.FString;
   
 }

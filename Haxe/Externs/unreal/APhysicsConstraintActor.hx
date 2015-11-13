@@ -13,13 +13,11 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("PhysicsEngine/PhysicsConstraintActor.h")
 @:uextern extern class APhysicsConstraintActor extends unreal.ARigidBodyBase {
+  public var bDisableCollision_DEPRECATED : Bool;
+  public var ConstraintActor2_DEPRECATED : unreal.AActor;
+  public var ConstraintActor1_DEPRECATED : unreal.AActor;
+  public var ConstraintComp : unreal.UPhysicsConstraintComponent;
   
 }

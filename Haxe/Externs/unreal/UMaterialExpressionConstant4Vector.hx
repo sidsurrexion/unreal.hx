@@ -13,13 +13,8 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Materials/MaterialExpressionConstant4Vector.h")
 @:uextern extern class UMaterialExpressionConstant4Vector extends unreal.UMaterialExpression {
+  public var Constant : unreal.FLinearColor;
   
 }

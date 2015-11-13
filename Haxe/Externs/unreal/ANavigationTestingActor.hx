@@ -76,6 +76,10 @@ package unreal;
   **/
   public var NavAgentProps : unreal.FNavAgentProperties;
   public var bActAsNavigationInvoker : Bool;
+  public var InvokerComponent : unreal.UNavigationInvokerComponent;
+  #if WITH_EDITORONLY_DATA
+  public var EdRenderComp : unreal.UNavTestRenderingComponent;
+  #end // WITH_EDITORONLY_DATA
   public var CapsuleComponent : unreal.UCapsuleComponent;
   // NavAgentInterface interface implementation
   // NavPathObserverInterface interface implementation

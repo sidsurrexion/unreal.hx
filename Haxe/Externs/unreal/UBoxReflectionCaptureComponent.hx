@@ -15,11 +15,16 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   -> will be exported to EngineDecalClasses.h
 **/
 @:glueCppIncludes("Components/BoxReflectionCaptureComponent.h")
 @:uextern extern class UBoxReflectionCaptureComponent extends unreal.UReflectionCaptureComponent {
+  public var PreviewCaptureBox : unreal.UBoxComponent;
+  public var PreviewInfluenceBox : unreal.UBoxComponent;
+  
+  /**
+    Adjust capture transition distance
+  **/
+  public var BoxTransitionDistance : unreal.Float32;
   
 }

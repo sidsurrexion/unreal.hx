@@ -73,6 +73,11 @@ package unreal.umg;
   public var LineHeightPercentage : unreal.Float32;
   
   /**
+    The amount of blank space left around the edges of text area.
+  **/
+  public var Margin : unreal.slatecore.FMargin;
+  
+  /**
     The minimum desired size for the text
   **/
   public var MinDesiredWidth : unreal.Float32;

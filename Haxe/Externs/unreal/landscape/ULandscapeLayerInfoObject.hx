@@ -13,14 +13,14 @@
 **/
 package unreal.landscape;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeLayerInfoObject.h")
 @:uextern extern class ULandscapeLayerInfoObject extends unreal.UObject {
+  #if WITH_EDITORONLY_DATA
+  public var bNoWeightBlend : Bool;
+  #end // WITH_EDITORONLY_DATA
+  public var Hardness : unreal.Float32;
+  public var PhysMaterial : unreal.UPhysicalMaterial;
+  public var LayerName : unreal.FName;
   
 }

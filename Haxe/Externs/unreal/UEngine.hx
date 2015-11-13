@@ -38,6 +38,11 @@ package unreal;
   public var ServerActors : unreal.TArray<unreal.FString>;
   
   /**
+    A list of named UNetDriver definitions
+  **/
+  public var NetDriverDefinitions : unreal.TArray<unreal.FNetDriverDefinition>;
+  
+  /**
     Used to alter the intensity level of the selection highlight on selected billboard objects
   **/
   public var SelectionHighlightIntensityBillboards : unreal.Float32;
@@ -66,6 +71,7 @@ package unreal;
     true if the the user cannot modify levels that are read only.
   **/
   public var bLockReadOnlyLevels : Bool;
+  public var MatineeScreenshotOptions : unreal.FMatineeScreenshotOptions;
   public var bEnableVisualLogRecordingOnStart : unreal.FakeUInt32;
   
   /**
@@ -114,6 +120,16 @@ package unreal;
     Number of times to tick each client per second
   **/
   public var NetClientTicksPerSecond : unreal.Float32;
+  
+  /**
+    Error correction data for replicating simulated physics (rigid bodies)
+  **/
+  public var PhysicErrorCorrection : unreal.FRigidBodyErrorCorrection;
+  
+  /**
+    @todo document
+  **/
+  public var PendingDroppedNotes : unreal.TArray<unreal.FDropNoteInfo>;
   
   /**
     If the resize request is larger than this, spew out a warning to the log
@@ -386,6 +402,10 @@ package unreal;
     Texture used for pre-integrated skin shading
   **/
   public var PreIntegratedSkinBRDFTexture : unreal.UTexture2D;
+  public var ActiveStructRedirects : unreal.TArray<unreal.FStructRedirect>;
+  public var ActivePluginRedirects : unreal.TArray<unreal.FPluginRedirect>;
+  public var ActiveClassRedirects : unreal.TArray<unreal.FClassRedirect>;
+  public var ActiveGameNameRedirects : unreal.TArray<unreal.FGameNameRedirect>;
   
   /**
     @todo document
@@ -408,6 +428,11 @@ package unreal;
   **/
   public var EditorBrushMaterial : unreal.UMaterial;
   #end // WITH_EDITORONLY_DATA
+  
+  /**
+    @todo document
+  **/
+  public var StatColorMappings : unreal.TArray<unreal.FStatColorMapping>;
   
   /**
     The color to render selected objects in for LightMap Density view mode.

@@ -97,9 +97,19 @@ package unreal.iosruntimesettings;
   public var bSupportsPortraitOrientation : Bool;
   
   /**
+    The path of the ssh permissions key to be used when connecting to the remote server.
+  **/
+  public var SSHPrivateKeyOverridePath : unreal.iosruntimesettings.FIOSBuildResourceFilePath;
+  
+  /**
     The existing location of an SSH Key found by UE4.
   **/
   public var SSHPrivateKeyLocation : unreal.FString;
+  
+  /**
+    The install directory of DeltaCopy.
+  **/
+  public var DeltaCopyInstallPath : unreal.iosruntimesettings.FIOSBuildResourceDirectory;
   
   /**
     The mac users name which matches the SSH Private Key, for remote builds using RSync.

@@ -13,13 +13,53 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Engine/NetConnection.h")
-@:uextern extern class UNetConnection extends unreal.UObject {
+@:uextern extern class UNetConnection extends unreal.UPlayer {
+  
+  /**
+    Internal.
+  **/
+  public var LastReceiveTime : unreal.Float64;
+  
+  /**
+    Maximum packet size.
+  **/
+  public var InternalAck : Bool;
+  public var MaxPacket : unreal.Int32;
+  
+  /**
+    Reference to controlling actor (usually PlayerController)
+  **/
+  public var OwningActor : unreal.AActor;
+  
+  /**
+    The actor that is currently being viewed/controlled by the owning controller
+  **/
+  public var ViewTarget : unreal.AActor;
+  
+  /**
+    @todo document
+  **/
+  public var SentTemporaries : unreal.TArray<unreal.AActor>;
+  
+  /**
+    @todo document
+  **/
+  public var OpenChannels : unreal.TArray<unreal.UChannel>;
+  
+  /**
+    Package map between local and remote. (negotiates net serialization)
+  **/
+  public var PackageMap : unreal.UPackageMap;
+  
+  /**
+    Owning net driver
+  **/
+  public var Driver : unreal.UNetDriver;
+  
+  /**
+    child connections for secondary viewports
+  **/
+  public var Children : unreal.TArray<unreal.UChildConnection>;
   
 }

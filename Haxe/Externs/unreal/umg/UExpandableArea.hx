@@ -18,6 +18,7 @@ package unreal.umg;
 @:uextern extern class UExpandableArea extends unreal.umg.UWidget implements unreal.umg.INamedSlotInterface {
   private var BodyContent : unreal.umg.UWidget;
   private var HeaderContent : unreal.umg.UWidget;
+  public var AreaPadding : unreal.slatecore.FMargin;
   
   /**
     The maximum height of the area

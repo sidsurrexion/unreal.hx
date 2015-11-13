@@ -21,6 +21,11 @@ package unreal;
 @:uextern extern class UPhysicalMaterial extends unreal.UObject {
   
   /**
+    Tire friction scales for specific types of tires. These values are multiplied against our parents' values.
+  **/
+  public var TireFrictionScales : unreal.TArray<unreal.FTireFrictionScalePair>;
+  
+  /**
     Overall tire friction scalar for every type of tire. This value is multiplied against our parents' values.
   **/
   public var TireFrictionScale : unreal.Float32;

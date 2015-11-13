@@ -15,11 +15,14 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Selects a child node based on the value of a boolean parameter
 **/
 @:glueCppIncludes("Sound/SoundNodeBranch.h")
 @:uextern extern class USoundNodeBranch extends unreal.USoundNode {
+  
+  /**
+    The name of the boolean parameter to use to determine which branch we should take
+  **/
+  public var BoolParameterName : unreal.FName;
   
 }

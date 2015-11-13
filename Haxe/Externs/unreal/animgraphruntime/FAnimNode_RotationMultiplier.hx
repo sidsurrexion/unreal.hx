@@ -29,4 +29,14 @@ package unreal.animgraphruntime;
   **/
   public var Multiplier : unreal.Float32;
   
+  /**
+    Source to get transform from *
+  **/
+  public var SourceBone : unreal.FBoneReference;
+  
+  /**
+    Name of bone to control. This is the main bone chain to modify from. *
+  **/
+  public var TargetBone : unreal.FBoneReference;
+  
 }

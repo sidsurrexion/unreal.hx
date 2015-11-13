@@ -13,13 +13,14 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Particles/Size/ParticleModuleSize.h")
-@:uextern extern class UParticleModuleSize extends unreal.UParticleModule {
+@:uextern extern class UParticleModuleSize extends unreal.UParticleModuleSizeBase {
+  
+  /**
+    The initial size that should be used for a particle.
+    The value is retrieved using the EmitterTime during the spawn of a particle.
+    It is added to the Size and BaseSize fields of the spawning particle.
+  **/
+  public var StartSize : unreal.FRawDistributionVector;
   
 }

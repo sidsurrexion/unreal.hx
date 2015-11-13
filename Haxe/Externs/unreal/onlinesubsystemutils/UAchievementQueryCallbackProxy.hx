@@ -13,14 +13,18 @@
 **/
 package unreal.onlinesubsystemutils;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("OnlineSubsystemUtils")
 @:glueCppIncludes("AchievementQueryCallbackProxy.h")
 @:uextern extern class UAchievementQueryCallbackProxy extends unreal.onlinesubsystemutils.UOnlineBlueprintCallProxyBase {
+  
+  /**
+    Fetches and caches achievement progress from the default online subsystem
+  **/
+  static public function CacheAchievements(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController) : unreal.onlinesubsystemutils.UAchievementQueryCallbackProxy;
+  
+  /**
+    Fetches and caches achievement descriptions from the default online subsystem
+  **/
+  static public function CacheAchievementDescriptions(WorldContextObject : unreal.UObject, PlayerController : unreal.APlayerController) : unreal.onlinesubsystemutils.UAchievementQueryCallbackProxy;
   
 }

@@ -13,14 +13,13 @@
 **/
 package unreal.animgraph;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimStateConduitNode.h")
 @:uextern extern class UAnimStateConduitNode extends unreal.animgraph.UAnimStateNodeBase {
+  
+  /**
+    The transition graph for this conduit; it's a logic graph, not an animation graph
+  **/
+  public var BoundGraph : unreal.UEdGraph;
   
 }

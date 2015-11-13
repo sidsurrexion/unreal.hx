@@ -15,11 +15,15 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Sound node that contains a reference to the dialogue table to pull from and be played
 **/
 @:glueCppIncludes("Sound/SoundNodeDialoguePlayer.h")
 @:uextern extern class USoundNodeDialoguePlayer extends unreal.USoundNode {
+  
+  /**
+    Whether the dialogue line should be played looping
+  **/
+  public var bLooping : Bool;
+  public var DialogueWaveParameter : unreal.FDialogueWaveParameter;
   
 }

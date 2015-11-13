@@ -22,6 +22,7 @@ package unreal;
   public var CurveBlendOption : unreal.ECurveBlendOption;
   public var bMeshSpaceRotationBlend : Bool;
   public var BlendWeights : unreal.TArray<unreal.Float32>;
+  public var LayerSetup : unreal.TArray<unreal.FInputBlendPose>;
   
   /**
     @TODO: Anim: Comment these members

@@ -25,6 +25,7 @@ package unreal;
 **/
 @:glueCppIncludes("GameFramework/HUD.h")
 @:uextern extern class AHUD extends unreal.AActor {
+  private var DebugTextList : unreal.TArray<unreal.FDebugTextInfo>;
   
   /**
     'Foreground' debug canvas, will draw in front of Slate UI.

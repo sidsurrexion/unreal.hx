@@ -20,6 +20,11 @@ package unreal;
 **/
 @:glueCppIncludes("AI/Navigation/NavigationData.h")
 @:uextern extern class ANavigationData extends unreal.AActor {
+  
+  /**
+    serialized area class - ID mapping
+  **/
+  private var SupportedAreas : unreal.TArray<unreal.FSupportedAreaData>;
   private var CachedWorld : unreal.UWorld;
   
   /**

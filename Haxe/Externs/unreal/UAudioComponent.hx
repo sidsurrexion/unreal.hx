@@ -104,6 +104,11 @@ package unreal;
   public var SoundClassOverride : unreal.USoundClass;
   
   /**
+    Array of per-instance parameters for this AudioComponent.
+  **/
+  public var InstanceParameters : unreal.TArray<unreal.FAudioComponentParam>;
+  
+  /**
     The sound to be played
   **/
   public var Sound : unreal.USoundBase;

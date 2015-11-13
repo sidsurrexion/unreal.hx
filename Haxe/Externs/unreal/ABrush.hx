@@ -17,6 +17,12 @@ package unreal;
 @:uextern extern class ABrush extends unreal.AActor {
   
   /**
+    Stores selection information from geometry mode.  This is the only information that we can't
+    regenerate by looking at the source brushes following an undo operation.
+  **/
+  public var SavedSelections : unreal.TArray<unreal.FGeomSelection>;
+  
+  /**
     Flag set when we are in a manipulation (scaling, translation, brush builder param change etc.)
   **/
   public var bInManipulation : Bool;
@@ -24,6 +30,7 @@ package unreal;
   public var BrushBuilder : unreal.UBrushBuilder;
   #end // WITH_EDITORONLY_DATA
   public var BrushComponent : unreal.UBrushComponent;
+  public var Brush : unreal.UModel;
   
   /**
     If true, this brush is a builder or otherwise does not need to be loaded into the game

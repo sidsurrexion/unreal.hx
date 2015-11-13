@@ -26,6 +26,11 @@ package unreal;
   public var CustomTimeDilation : unreal.Float32;
   
   /**
+    Array of replay clips for this particle system component.  These are serialized to disk.  You really should never add anything to this in the editor.  It's exposed so that you can delete clips if you need to, but be careful when doing so!
+  **/
+  public var ReplayClips : unreal.TArray<unreal.UParticleSystemReplay>;
+  
+  /**
     The view relevance flags for each LODLevel.
   **/
   public var CachedViewRelevanceFlags : unreal.TArray<unreal.FMaterialRelevance>;
@@ -74,6 +79,12 @@ package unreal;
   public var WarmupTime : unreal.Float32;
   public var PartSysVelocity : unreal.FVector;
   public var OldPosition : unreal.FVector;
+  
+  /**
+    Array holding name instance parameters for this ParticleSystemComponent.
+    Parameters can be used in Cascade using DistributionFloat/VectorParticleParameters.
+  **/
+  public var InstanceParameters : unreal.TArray<unreal.FParticleSysParam>;
   
   /**
     whether to update the particle system on dedicated servers

@@ -48,6 +48,16 @@ package unreal;
   public var bAlwaysShowTouchInterface : Bool;
   
   /**
+    List of Axis Mappings
+  **/
+  public var AxisMappings : unreal.TArray<unreal.FInputAxisKeyMapping>;
+  
+  /**
+    List of Action Mappings
+  **/
+  public var ActionMappings : unreal.TArray<unreal.FInputActionKeyMapping>;
+  
+  /**
     If a key is pressed twice in this amount of time it is considered a "double click"
   **/
   public var DoubleClickTime : unreal.Float32;
@@ -72,5 +82,10 @@ package unreal;
   **/
   public var bUseMouseForTouch : Bool;
   public var bAltEnterTogglesFullscreen : Bool;
+  
+  /**
+    List of Axis Properties
+  **/
+  public var AxisConfig : unreal.TArray<unreal.FInputAxisConfigEntry>;
   
 }

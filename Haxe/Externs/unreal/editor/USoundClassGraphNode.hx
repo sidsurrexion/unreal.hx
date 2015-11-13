@@ -13,14 +13,13 @@
 **/
 package unreal.editor;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("SoundClassGraph/SoundClassGraphNode.h")
 @:uextern extern class USoundClassGraphNode extends unreal.UEdGraphNode {
+  
+  /**
+    The SoundNode this represents
+  **/
+  public var SoundClass : unreal.USoundClass;
   
 }

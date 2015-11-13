@@ -54,5 +54,6 @@ package unreal;
     Opacity (0.0 - 1.0) of all controls while any control is active
   **/
   public var ActiveOpacity : unreal.Float32;
+  public var Controls : unreal.TArray<unreal.FTouchInputControl>;
   
 }

@@ -33,6 +33,11 @@ package unreal.gameplayabilities;
   public var InstigatorTags : unreal.gameplaytags.FGameplayTagContainer;
   
   /**
+    Polymorphic context information
+  **/
+  public var ContextHandle : unreal.gameplayabilities.FGameplayEffectContextHandle;
+  
+  /**
     A second optional ability-specific object to be passed though the event
   **/
   public var OptionalObject2 : unreal.UObject;

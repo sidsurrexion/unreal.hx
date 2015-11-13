@@ -19,6 +19,8 @@ package unreal;
 **/
 @:glueCppIncludes("AnimGraphNode_BlendSpaceEvaluator.h")
 @:uextern extern class FAnimNode_BlendSpacePlayer extends unreal.FAnimNode_AssetPlayerBase {
+  private var BlendSampleDataCache : unreal.TArray<unreal.FBlendSampleData>;
+  private var BlendFilter : unreal.FBlendFilter;
   
   /**
     The role this player can assume within the group (ignored if GroupIndex is INDEX_NONE)

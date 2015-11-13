@@ -15,11 +15,14 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   Crossfades between different sounds based on a parameter
 **/
 @:glueCppIncludes("Sound/SoundNodeParamCrossFade.h")
 @:uextern extern class USoundNodeParamCrossFade extends unreal.USoundNodeDistanceCrossFade {
+  
+  /**
+    Parameter controlling cross fades.
+  **/
+  public var ParamName : unreal.FName;
   
 }

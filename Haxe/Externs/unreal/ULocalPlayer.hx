@@ -20,7 +20,7 @@ package unreal;
   There may be 0 spawned on servers.
 **/
 @:glueCppIncludes("Engine/LocalPlayer.h")
-@:uextern extern class ULocalPlayer extends unreal.UObject {
+@:uextern extern class ULocalPlayer extends unreal.UPlayer {
   
   /**
     set when we've sent a split join request

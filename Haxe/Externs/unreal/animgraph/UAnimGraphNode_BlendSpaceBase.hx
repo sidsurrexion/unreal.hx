@@ -13,12 +13,6 @@
 **/
 package unreal.animgraph;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("AnimGraph")
 @:glueCppIncludes("AnimGraphNode_BlendSpaceBase.h")
 @:uextern extern class UAnimGraphNode_BlendSpaceBase extends unreal.animgraph.UAnimGraphNode_AssetPlayerBase {

@@ -15,8 +15,6 @@ package unreal.moviescenetracks;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   A vector section
 **/
 @:umodule("MovieSceneTracks")

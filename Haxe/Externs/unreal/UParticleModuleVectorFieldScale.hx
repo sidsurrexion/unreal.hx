@@ -13,13 +13,12 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Particles/VectorField/ParticleModuleVectorFieldScale.h")
-@:uextern extern class UParticleModuleVectorFieldScale extends unreal.UParticleModule {
+@:uextern extern class UParticleModuleVectorFieldScale extends unreal.UParticleModuleVectorFieldBase {
+  
+  /**
+    Per-particle vector field scale. Evaluated using emitter time.
+  **/
+  public var VectorFieldScale : unreal.UDistributionFloat;
   
 }

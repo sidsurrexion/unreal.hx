@@ -20,7 +20,7 @@ package unreal.gameplayabilities;
 **/
 @:umodule("GameplayAbilities")
 @:glueCppIncludes("AbilitySystemComponent.h")
-@:uextern extern class FGameplayAbilitySpec {
+@:uextern extern class FGameplayAbilitySpec extends unreal.FFastArraySerializerItem {
   
   /**
     Pending removal due to scope lock
@@ -81,5 +81,10 @@ package unreal.gameplayabilities;
     Ability of the spec (Always the CDO. This should be const but too many things modify it currently)
   **/
   public var Ability : unreal.gameplayabilities.UGameplayAbility;
+  
+  /**
+    Handle for outside sources to refer to this spec by
+  **/
+  public var Handle : unreal.gameplayabilities.FGameplayAbilitySpecHandle;
   
 }

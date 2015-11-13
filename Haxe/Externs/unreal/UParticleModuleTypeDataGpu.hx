@@ -13,13 +13,27 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Particles/TypeData/ParticleModuleTypeDataGpu.h")
 @:uextern extern class UParticleModuleTypeDataGpu extends unreal.UParticleModuleTypeDataBase {
+  
+  /**
+    When true, all existing partilces are cleared when the emitter is initialized.
+  **/
+  public var bClearExistingParticlesOnInit : Bool;
+  
+  /**
+    TEMP: How much to stretch sprites based on camera motion blur.
+  **/
+  public var CameraMotionBlurAmount : unreal.Float32;
+  
+  /**
+    Data used to initialize runtime resources.
+  **/
+  public var ResourceData : unreal.FGPUSpriteResourceData;
+  
+  /**
+    Information for runtime simulation.
+  **/
+  public var EmitterInfo : unreal.FGPUSpriteEmitterInfo;
   
 }

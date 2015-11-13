@@ -43,6 +43,11 @@ package unreal.html5platformeditor;
   public var UploadToS3 : Bool;
   
   /**
+    Generate Delta Pak files for these level transitions.
+  **/
+  public var LevelTransitions : unreal.TArray<unreal.html5platformeditor.FHTML5LevelTransitions>;
+  
+  /**
     Use a loading level and download maps during transitions.
   **/
   public var UseAsyncLevelLoading : Bool;

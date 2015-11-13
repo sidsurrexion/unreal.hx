@@ -44,6 +44,11 @@ package unreal;
     Persistent debugging options
   **/
   public var Breakpoints : unreal.TArray<unreal.UBreakpoint>;
+  
+  /**
+    Set of documents that were being edited in this blueprint, so we can open them right away
+  **/
+  public var LastEditedDocuments : unreal.TArray<unreal.FEditedDocumentInfo>;
   #end // WITH_EDITORONLY_DATA
   
   /**
@@ -53,9 +58,19 @@ package unreal;
   #if WITH_EDITORONLY_DATA
   
   /**
+    Array of info about the interfaces we implement in this blueprint
+  **/
+  public var ImplementedInterfaces : unreal.TArray<unreal.FBPInterfaceDescription>;
+  
+  /**
     Array of user sorted categories
   **/
   public var CategorySorting : unreal.TArray<unreal.FName>;
+  
+  /**
+    Array of new variables to be added to generated class
+  **/
+  public var NewVariables : unreal.TArray<unreal.FBPVariableDescription>;
   
   /**
     The current status of this blueprint

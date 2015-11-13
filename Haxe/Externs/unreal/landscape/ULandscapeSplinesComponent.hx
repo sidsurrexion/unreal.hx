@@ -15,12 +15,45 @@ package unreal.landscape;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   ULandscapeSplinesComponent
 **/
 @:umodule("Landscape")
 @:glueCppIncludes("LandscapeSplinesComponent.h")
 @:uextern extern class ULandscapeSplinesComponent extends unreal.UPrimitiveComponent {
+  
+  /**
+    References to components owned by landscape splines in other levels
+    for cooked build (uncooked keeps references via ForeignWorldSplineDataMap)
+  **/
+  private var CookedForeignMeshComponents : unreal.TArray<unreal.UMeshComponent>;
+  private var Segments : unreal.TArray<unreal.landscape.ULandscapeSplineSegment>;
+  private var ControlPoints : unreal.TArray<unreal.landscape.ULandscapeSplineControlPoint>;
+  #if WITH_EDITORONLY_DATA
+  
+  /**
+    Whether we are in-editor and showing spline editor meshes
+  **/
+  public var bShowSplineEditorMesh : Bool;
+  
+  /**
+    Mesh used to draw splines that have no mesh
+  **/
+  public var SplineEditorMesh : unreal.UStaticMesh;
+  
+  /**
+    Sprite used to draw control points
+  **/
+  public var ControlPointSprite : unreal.UTexture2D;
+  
+  /**
+    Color to use to draw the splines
+  **/
+  public var SplineColor : unreal.FColor;
+  
+  /**
+    Resolution of the spline, in distance per point
+  **/
+  public var SplineResolution : unreal.Float32;
+  #end // WITH_EDITORONLY_DATA
   
 }

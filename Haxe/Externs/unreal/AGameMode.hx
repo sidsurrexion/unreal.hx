@@ -103,6 +103,11 @@ package unreal;
   private var InactivePlayerStateLifeSpan : unreal.Float32;
   
   /**
+    Handy alternate short names for GameMode classes (e.g. "DM" could be an alias for "MyProject.MyGameModeMP_DM".
+  **/
+  private var GameModeClassAliases : unreal.TArray<unreal.FGameClassShortName>;
+  
+  /**
     PlayerStates of players who have disconnected from the server (saved in case they reconnect)
   **/
   public var InactivePlayerArray : unreal.TArray<unreal.APlayerState>;

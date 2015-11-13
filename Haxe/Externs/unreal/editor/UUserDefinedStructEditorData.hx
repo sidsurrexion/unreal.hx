@@ -22,5 +22,6 @@ package unreal.editor;
   **/
   public var NativeBase : unreal.UScriptStruct;
   public var ToolTip : unreal.FString;
+  public var VariablesDescriptions : unreal.TArray<unreal.editor.FStructVariableDescription>;
   
 }

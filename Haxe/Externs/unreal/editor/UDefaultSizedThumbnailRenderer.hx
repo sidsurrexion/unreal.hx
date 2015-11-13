@@ -13,14 +13,18 @@
 **/
 package unreal.editor;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:umodule("UnrealEd")
 @:glueCppIncludes("ThumbnailRendering/DefaultSizedThumbnailRenderer.h")
 @:uextern extern class UDefaultSizedThumbnailRenderer extends unreal.editor.UThumbnailRenderer {
+  
+  /**
+    The default height of this thumbnail
+  **/
+  public var DefaultSizeY : unreal.Int32;
+  
+  /**
+    The default width of this thumbnail
+  **/
+  public var DefaultSizeX : unreal.Int32;
   
 }

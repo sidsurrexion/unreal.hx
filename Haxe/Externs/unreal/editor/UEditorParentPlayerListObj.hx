@@ -17,4 +17,9 @@ package unreal.editor;
 @:glueCppIncludes("Animation/EditorParentPlayerListObj.h")
 @:uextern extern class UEditorParentPlayerListObj extends unreal.UObject {
   
+  /**
+    List of possible overrides to display.
+  **/
+  public var Overrides : unreal.TArray<unreal.FAnimParentNodeAssetOverride>;
+  
 }

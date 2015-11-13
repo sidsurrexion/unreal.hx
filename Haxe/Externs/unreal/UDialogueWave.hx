@@ -13,13 +13,30 @@
 **/
 package unreal;
 
-
-/**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
-  
-**/
 @:glueCppIncludes("Sound/DialogueWave.h")
 @:uextern extern class UDialogueWave extends unreal.UObject {
+  public var LocalizationGUID : unreal.FGuid;
+  
+  /**
+    Mappings between dialogue contexts and associated soundwaves.
+  **/
+  public var ContextMappings : unreal.TArray<unreal.FDialogueContextMapping>;
+  #if WITH_EDITORONLY_DATA
+  
+  /**
+    Provides contextual information for the sound to the translator - Notes to the voice actor intended to direct their performance.
+  **/
+  public var VoiceActorDirection : unreal.FString;
+  #end // WITH_EDITORONLY_DATA
+  
+  /**
+    A localized version of the text that is actually spoken phonetically in the audio.
+  **/
+  public var SpokenText : unreal.FString;
+  
+  /**
+    true if this dialogue is considered to contain mature/adult content.
+  **/
+  public var bMature : Bool;
   
 }

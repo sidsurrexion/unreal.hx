@@ -15,12 +15,15 @@ package unreal;
 
 
 /**
-  WARNING: This type was defined as MinimalAPI on its declaration. Because of that, its properties/methods are inaccessible
-  
   An asset describing a button's appearance.
   Just a wrapper for the struct with real data in it.style factory
 **/
 @:glueCppIncludes("Slate/ButtonStyleAsset.h")
 @:uextern extern class UButtonStyleAsset extends unreal.UObject {
+  
+  /**
+    The actual data describing the button's appearance.
+  **/
+  public var ButtonStyle : unreal.slatecore.FButtonStyle;
   
 }

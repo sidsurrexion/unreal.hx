@@ -32,6 +32,11 @@ package unreal;
   public var bLightAttachment : Bool;
   
   /**
+    Sprite category information regarding the arrow component, if being treated as a sprite.
+  **/
+  public var SpriteInfo : unreal.FSpriteCategoryInfo;
+  
+  /**
     Sprite category that the arrow component belongs to, if being treated as a sprite. Value serves as a key into the localization file.
   **/
   public var SpriteCategoryName_DEPRECATED : unreal.FName;
