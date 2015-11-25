@@ -6,6 +6,7 @@ import haxe.macro.Expr;
 import haxe.macro.Type;
 import sys.FileSystem;
 import sys.io.File;
+import ue4hx.internal.GlueMethod;
 
 using haxe.macro.Tools;
 using ue4hx.internal.MacroHelpers;
@@ -894,12 +895,10 @@ class ExternBaker {
     }
 
     var params = new HelperBuf();
-    var declParams = new HelperBuf();
     if (hasParams) {
       params << '<';
       params.mapJoin(meth.params, function(param) return param);
       params << '>';
-      declParams = params;
     } else if (meth.specialization != null && this.params.length == 0) {
       var useTypeName = meth.meta != null && meth.meta.hasMeta(':typeName');
       params << '<';
@@ -1009,7 +1008,7 @@ class ExternBaker {
       glueHeaderCode << ';';
       glueCppCode <<
         glueRet.glueType.getCppType() <<
-        ' ${this.glueType.getCppType()}_obj::${meth.name}$declParams(' << cppArgDecl << ') {' <<
+        ' ${this.glueType.getCppType()}_obj::${meth.name}(' << cppArgDecl << ') {' <<
           '\n\t' << glueCppBodyVars << ';\n}';
     }
     var allTypes = [ for (arg in helperArgs) arg.t ];
@@ -1409,7 +1408,7 @@ class ExternBaker {
   var StructProp = 0x2;
 }
 
-typedef MethodDef = {
+private typedef MethodDef = {
   name:String,
   uname:String,
   ?doc:Null<String>,

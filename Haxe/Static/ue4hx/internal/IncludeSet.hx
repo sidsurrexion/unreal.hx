@@ -16,7 +16,7 @@ class IncludeSet {
     return keys.iterator();
   }
 
-  @:extern inline append(set:IncludeSet) {
+  @:extern public inline function append(set:IncludeSet) {
     if (set != this) {
       for (key in set.keys) {
         this.add(key);
