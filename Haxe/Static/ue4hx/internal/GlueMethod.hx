@@ -1,7 +1,15 @@
 package ue4hx.internal;
+import haxe.macro.Context;
 import haxe.macro.Expr;
+import haxe.macro.Type;
 import ue4hx.internal.buf.CodeFormatter;
 import ue4hx.internal.buf.HelperBuf;
+
+using StringTools;
+using Lambda;
+
+using haxe.macro.Tools;
+using ue4hx.internal.MacroHelpers;
 
 class GlueMethod {
   ///////////////////////
@@ -9,35 +17,46 @@ class GlueMethod {
   ///////////////////////
   public var meth(default, null):MethodDef;
   /** the TypeConv where the glue function is defined **/
-  public var thisConv(default, null):TypeConv;
+  public var type(default, null):Type;
   public var isTemplatedThis(default, null):Bool;
+  public var glueType:TypeRef;
 
   ///////////////////////
   /// output parameters
   ///////////////////////
-  public var cppIncludes(default, null):IncludeSet;
-  public var headerIncludes(default, null):IncludeSet;
-  public var headerCode(default, null):String;
-  public var cppCode(default, null):String;
-  public var haxeCode(default, null):String;
-  public var glueArgs(default, null):Array<{ name:String, t:TypeConv }>;
-  public var cppArgs(default, null):Array<{ name:String, t:TypeConv }>;
-  public var haxeArgs(default, null):Array<{ name:String, t:TypeConv }>;
-  public var glueRet(default, null):TypeConv;
-  public var retHaxeType(default, null):TypeConv;
-  public var op(default, null):String;
+  public var dependentTypes(default, null):Map<String, String>;
+  public var needsTypeParamGlue(default, null):Bool;
+  var thisConv(default, null):TypeConv;
+  var cppIncludes(default, null):IncludeSet;
+  var headerIncludes(default, null):IncludeSet;
+  var headerCode(default, null):String;
+  var ueHeaderCode(default, null):String;
+  var cppCode(default, null):String;
+  var haxeCode(default, null):String;
+  var glueArgs(default, null):Array<{ name:String, t:TypeConv }>;
+  var cppArgs(default, null):Array<{ name:String, t:TypeConv }>;
+  var haxeArgs(default, null):Array<{ name:String, t:TypeConv }>;
+  var glueRet(default, null):TypeConv;
+  var retHaxeType(default, null):TypeRef;
+  var op(default, null):String;
 
   ///////////////////////
   /// shared parameters
   ///////////////////////
   var isGlueStatic:Bool;
   var templated:Bool;
+  var ctx:Map<String, String>;
 
-  public function new(meth:MethodDef, thisConv:TypeConv, ?isTemplatedThis:Bool) {
+  public function new(meth:MethodDef, type:Type, ?glueType:TypeRef, ?isTemplatedThis:Bool) {
     this.meth = meth;
-    this.thisConv = thisConv;
+    this.type = type;
+    this.thisConv = TypeConv.get(type,meth.pos,'unreal.PExternal');
+    if (glueType == null)
+      glueType = this.thisConv.haxeType.getGlueHelperType();
+    this.glueType = glueType;
     this.cppIncludes = new IncludeSet();
     this.headerIncludes = new IncludeSet();
+    this.dependentTypes = new Map();
     if (isTemplatedThis == null) {
       isTemplatedThis = thisConv.haxeType.params.length > 0 && meth.specialization == null;
     }
@@ -50,7 +69,7 @@ class GlueMethod {
     var meth = this.meth;
     var isStatic = meth.flags.hasAny(Static);
     var isProp = meth.flags.hasAny(Property);
-    var ctx = isProp && !isStatic && !this.thisConv.isUObject ? [ "parent" => "this" ] : null;
+    var ctx = this.ctx = isProp && !isStatic && !this.thisConv.isUObject ? [ "parent" => "this" ] : null;
 
     var haxeArgs = this.haxeArgs = meth.args;
     var glueArgs = this.glueArgs = haxeArgs;
@@ -72,6 +91,8 @@ class GlueMethod {
     /// glue header code
     var cppArgDecl = new HelperBuf();
     cppArgDecl.mapJoin(this.glueArgs, function(arg) return arg.t.glueType.getCppType() + ' ' + escapeCpp(arg.name, true));
+    var glueHeaderCode = new HelperBuf();
+
     if (this.templated) {
       glueHeaderCode << 'template<';
       glueHeaderCode.mapJoin(meth.params, function(p) return 'class $p');
@@ -80,7 +101,7 @@ class GlueMethod {
     if (isGlueStatic) {
       glueHeaderCode << 'static ';
     }
-    glueHeaderCode << '${glueRet.glueType.getCppType()} ${meth.name}(' << cppArgDecl + ')';
+    glueHeaderCode << '${this.glueRet.glueType.getCppType()} ${meth.name}(' << cppArgDecl + ')';
 
     var baseGlueHeaderCode = null;
     if (!isGlueStatic && isTemplatedThis) {
@@ -96,6 +117,98 @@ class GlueMethod {
     if (this.templated || meth.specialization != null) {
       glueCppBody << this.getFunctionCallParams();
     }
+
+    var glueCppBodyVars = new HelperBuf();
+    if (meth.flags.hasAny(CppPrivate)) {
+      var staticCppVars = new HelperBuf(),
+          staticCppBody = genCppCall(glueCppBody.toString(), '_s_', staticCppVars);
+      var localDerivedClassBody = new HelperBuf();
+      // On windows, we need to disable the warning 4610 that this class can never be instantiated.
+      // We know that it can't, and that's just fine. But warnings are promoted to errors. so we have to disable
+      // this warning during this code.
+      localDerivedClassBody << "\n#if PLATFORM_WINDOWS\n#pragma warning( disable : 4510 4610 )\n#endif // PLATFORM_WINDOWS\n\t";
+      localDerivedClassBody << 'class _staticcall_${meth.name} : public ${this.thisConv.ueType.getCppClass()} {\n';
+      var staticCppArgDecl = [ for ( arg in this.glueArgs ) arg.t.glueType.getCppType() + ' ' + '_s_' + escapeCpp(arg.name, true) ].join(', ');
+      localDerivedClassBody << '\t\tpublic:\n\t\t\tstatic ${this.glueRet.glueType.getCppType()} static_${meth.name}(${staticCppArgDecl}) {\n\t\t\t\t'
+        << staticCppVars
+        << staticCppBody
+        << ';\n\t\t}\n'
+        << '\t};\n'
+        << "#if PLATFORM_WINDOWS\n#pragma warning( default : 4510 4610 )\n#endif // PLATFORM_WINDOWS\n\n\t";
+        if (!this.glueRet.haxeType.isVoid()) localDerivedClassBody << 'return ';
+      localDerivedClassBody << '_staticcall_${meth.name}::static_${meth.name}('
+        + [ for (arg in this.glueArgs) escapeCpp(arg.name, true) ].join(', ') + ')';
+      glueCppBodyVars << localDerivedClassBody;
+    } else {
+      glueCppBodyVars << genCppCall(glueCppBody.toString(), '', glueCppBodyVars);
+    }
+
+    var glueCppCode = new HelperBuf();
+    if (this.templated) {
+      glueCppCode << 'template<';
+      glueCppCode.mapJoin(meth.params, function(p) return 'class $p');
+      glueCppCode << '>\n\t';
+    }
+
+    if (this.isTemplatedThis && !this.isGlueStatic) {
+      glueHeaderCode << ' {\n\t\t\t$glueCppBodyVars;\n\t\t}';
+    } else {
+      glueHeaderCode << ';';
+      glueCppCode <<
+        this.glueRet.glueType.getCppType() <<
+        ' ${this.glueType.getCppType}_obj::${meth.name}(' << cppArgDecl << ') {' <<
+          '\n\t' << glueCppBodyVars << ';\n}';
+    }
+
+    var allTypes = [ for (arg in this.glueArgs) arg.t ];
+    allTypes.push(meth.ret);
+
+    // dependent types - this is only used by the extern baker pass
+    // this will add all types that are used by each templated variation of this class
+    if (!this.templated && !isStatic) {
+      for (type in allTypes) {
+        if (type.hasTypeParams()) {
+          var tref = type.haxeType;
+          while (tref.name == 'PRef' || tref.name == 'PRefDef') {
+            if (tref.pack.length == 1 && tref.name == 'PRef' && tref.pack[0] == 'unreal') {
+              tref = tref.params[0];
+            } else if (tref.pack.length == 2 && tref.name == 'PRefDef' && tref.pack[0] == 'ue4hx' && tref.pack[1] == 'internal') {
+              tref = tref.params[0];
+            } else {
+              break;
+            }
+          }
+          var str = tref.toString();
+          this.dependentTypes[str] = str;
+        }
+      }
+    }
+
+    for (t in allTypes) {
+      if ( (t.args != null && t.args.length > 0 && !t.hasTypeParams()) || t.isFunction ) {
+        this.needsTypeParamGlue = true;
+        break;
+      }
+    }
+
+    if (!this.templated) {
+      if (!isGlueStatic && isTemplatedThis) {
+        // in this case, we'll have glueHeader and ueHeaderCode - no cppCode is added
+        this.headerCode = baseGlueHeaderCode;
+        this.ueHeaderCode = glueHeaderCode.toString();
+      } else {
+        this.headerCode = glueHeaderCode.toString();
+        this.cppCode = glueCppCode.toString();
+      }
+    }
+
+    var headerIncludes = this.headerIncludes,
+        cppIncludes = this.cppIncludes;
+    if (meth.uname == '.equals') {
+      cppIncludes.add('<TypeTraits.h>');
+    }
+    for (type in allTypes) {
+    }
   }
 
   private function genCppCallArgs(prefix:String, outVars:HelperBuf) {
@@ -103,13 +216,63 @@ class GlueMethod {
     for (arg in this.cppArgs) {
       if (arg.t.isTypeParam == true && (arg.t.ownershipModifier == 'unreal.PRef' || arg.t.ownershipModifier == 'ue4hx.internal.PRefDef')) {
         var prefixedArgName = prefix + arg.name;
-        outVars << 'auto ${prefixedArgName}_t = ${arg.t.glueToUe(${prefixedArgName}, ctx)};\n\t\t\t';
+        outVars << 'auto ${prefixedArgName}_t = ${arg.t.glueToUe(${prefixedArgName}, this.ctx)};\n\t\t\t';
         cppArgTypes.push('*(${prefixedArgName}_t.getPointer())');
       } else {
-        cppArgTypes.push(arg.t.glueToUe(prefix+escapeCpp(arg.name, this.isGlueStatic), ctx));
+        cppArgTypes.push(arg.t.glueToUe(prefix+escapeCpp(arg.name, this.isGlueStatic), this.ctx));
       }
     }
     return cppArgTypes;
+  }
+
+  private static function isUObjectPointer(type:TypeConv) {
+    if (!type.isUObject) {
+      return false;
+    }
+    if (type.ueType.params.length > 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  private function genCppCall(body:String, prefix:String, outVars:HelperBuf) {
+    var cppArgTypes = [];
+    for (arg in this.cppArgs) {
+      if (arg.t.isTypeParam == true && (arg.t.ownershipModifier == 'unreal.PRef' || arg.t.ownershipModifier == 'ue4hx.internal.PRefDef')) {
+        var prefixedArgName = prefix + arg.name;
+        outVars << 'auto ${prefixedArgName}_t = ${arg.t.glueToUe(${prefixedArgName}, this.ctx)};\n\t\t\t';
+        cppArgTypes.push('*(${prefixedArgName}_t.getPointer())');
+      } else {
+        cppArgTypes.push(arg.t.glueToUe(prefix+escapeCpp(arg.name, this.isGlueStatic), this.ctx));
+      }
+    }
+
+    var isStructProp = this.meth.flags.hasAny(StructProperty);
+    var isGetter = this.meth.name.startsWith('get_');
+    if (isStructProp && isGetter) {
+      body = '&' + body;
+    } else if (this.meth.flags.hasAny(Property) && isGetter && isUObjectPointer(meth.ret)) {
+      body = 'const_cast< ${meth.ret.ueType.getCppType()} >( $body )';
+    }
+
+    if (this.meth.flags.hasAny(Property)) {
+      if (!isGetter) {
+        body += ' = ' + cppArgTypes[cppArgTypes.length-1];
+      }
+    } else if (this.op == '[') {
+      body += '[' + cppArgTypes[0] + ']';
+    } else if (this.op == '*' || this.op == '++' || this.op == '--' || this.op == '!') {
+      if (cppArgs.length > 0) {
+        throw new Error('Unreal Glue: unary operators must take zero arguments', meth.pos);
+      }
+    } else {
+      body += '(' + [ for (arg in cppArgTypes) arg ].join(', ') + ')';
+    }
+    if (!this.glueRet.haxeType.isVoid()) {
+      body = 'return ' + this.glueRet.ueToGlue(body, this.ctx);
+    }
+    return body;
   }
 
   private function getFunctionCallParams():String {
@@ -137,7 +300,7 @@ class GlueMethod {
     - May change `this.cppArgs`, `this.retHaxeType` and `this.op`
    **/
   private function getCppBody():String {
-    return if (isStatic) {
+    return if (this.meth.flags.hasAny(Static)) {
       switch (meth.uname) {
         case 'new':
           'new ' + meth.ret.ueType.getCppClass();
@@ -158,46 +321,46 @@ class GlueMethod {
      var self = if (!isGlueStatic)
         { name: 'this', t: this.thisConv };
       else
-        { name:escapeCpp(this.helperArgs[0].name, true), t: helperArgs[0].t };
+        { name:escapeCpp(this.glueArgs[0].name, true), t: glueArgs[0].t };
 
       switch(meth.uname) {
         case 'get_Item' | 'set_Item':
           this.op = '[';
-          '(*' + self.t.glueToUe(self.name, ctx) + ')';
+          '(*' + self.t.glueToUe(self.name, this.ctx) + ')';
         case '.equals':
-          var thisType = TypeConv.get(this.type, this.pos, 'unreal.PStruct');
+          var thisType = TypeConv.get(this.type, this.meth.pos, 'unreal.PStruct');
           this.cppArgs = [{ name:'this', t:thisType}, { name:'other', t:thisType }];
           'TypeTraits::Equals<${thisType.ueType.getCppType()}>::isEq';
         case 'op_Dereference':
           this.op = '*';
-          '(**(' + self.t.glueToUe(self.name, ctx) + '))';
+          '(**(' + self.t.glueToUe(self.name, this.ctx) + '))';
         case 'op_Increment':
           this.op = '++';
-          '(++(*(' + self.t.glueToUe(self.name, ctx) + ')))';
+          '(++(*(' + self.t.glueToUe(self.name, this.ctx) + ')))';
         case 'op_Decrement':
           this.op = '--';
-          '(--(*(' + self.t.glueToUe(self.name, ctx) + ')))';
+          '(--(*(' + self.t.glueToUe(self.name, this.ctx) + ')))';
         case 'op_Not':
           this.op = '!';
-          '(!(*(' + self.t.glueToUe(self.name, ctx) + ')))';
+          '(!(*(' + self.t.glueToUe(self.name, this.ctx) + ')))';
         case '.copy':
           this.retHaxeType = this.thisConv.haxeType;
-          this.cppArgs = [{ name:'this', t:TypeConv.get(this.type, this.pos, 'unreal.PStruct') }];
+          this.cppArgs = [{ name:'this', t:TypeConv.get(this.type, this.meth.pos, 'unreal.PStruct') }];
           'new ' + this.thisConv.ueType.getCppClass();
         case '.copyStruct':
           this.retHaxeType = this.thisConv.haxeType;
-          this.cppArgs = [{ name:'this', t:TypeConv.get(this.type, this.pos, 'unreal.PStruct') }];
+          this.cppArgs = [{ name:'this', t:TypeConv.get(this.type, this.meth.pos, 'unreal.PStruct') }];
           this.thisConv.ueType.getCppClass();
         case _ if(meth.flags.hasAny(CppPrivate)):
           // For protected external functions we need to use a
           // local derived class with a static function that lets the wrapper
           // call the protected function.
           // See PROTECTED METHOD CALL comments farther down the code.
-          '(' + self.t.glueToUe('_s_' + self.name, ctx) + '->*(&_staticcall_${meth.name}::' + meth.uname + '))';
+          '(' + self.t.glueToUe('_s_' + self.name, this.ctx) + '->*(&_staticcall_${meth.name}::' + meth.uname + '))';
         case _ if(meth.flags.hasAny(ForceNonVirtual)):
-          self.t.glueToUe(self.name, ctx) + '->' + this.thisConv.ueType.getCppClass() + '::' + meth.uname;
+          self.t.glueToUe(self.name, this.ctx) + '->' + this.thisConv.ueType.getCppClass() + '::' + meth.uname;
         case _:
-          self.t.glueToUe(self.name, ctx) + '->' + meth.uname;
+          self.t.glueToUe(self.name, this.ctx) + '->' + meth.uname;
       }
     }
   }
@@ -206,7 +369,7 @@ class GlueMethod {
     if (!alsoThis) {
       return ident; // for now we haven't found a problem between Haxe naming and C++
     }
-    if (indent == 'this') {
+    if (ident == 'this') {
       return 'self';
     }
     return ident;
@@ -278,12 +441,12 @@ class GlueMethod {
     }
   }
 
-  @:isVar private var voidType(get,null):Null<TypeConv>;
+  @:isVar private static var voidType(get,null):Null<TypeConv>;
 
-  private function get_voidType():TypeConv {
-    if (this.voidType == null)
-      this.voidType = TypeConv.get(Context.getType('Void'), this.pos);
-    return this.voidType;
+  private static function get_voidType():TypeConv {
+    if (voidType == null)
+      voidType = TypeConv.get(Context.getType('Void'), null);
+    return voidType;
   }
 }
 
@@ -337,14 +500,16 @@ typedef MethodDef = {
   var None = 0x0;
   /** method is a getter or a setter **/
   var Property = 0x1;
+  /** method is a struct getter or setter **/
+  var StructProperty = 0x3;
   /** Haxe function is not virtual **/
-  var Final = 0x2;
+  var Final = 0x4;
   /** the C++ function is private **/
-  var CppPrivate = 0x4;
+  var CppPrivate = 0x8;
   /** the generated function is private **/
-  var HaxePrivate = 0x8;
+  var HaxePrivate = 0x10;
   /** the C++ function is static **/
-  var Static = 0x10;
+  var Static = 0x20;
   /** the Haxe generated function is override (may happen in some cases - e.g. copy) **/
   var HaxeOverride = 0x40;
   /** the method is calling a forced non-virtual function (if super call, thisConv should be set to the superclass) **/

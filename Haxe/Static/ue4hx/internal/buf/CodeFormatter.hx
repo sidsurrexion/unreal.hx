@@ -1,5 +1,7 @@
 package ue4hx.internal.buf;
 import haxe.macro.Expr;
+
+using haxe.macro.Tools;
 using StringTools;
 
 @:forward(buf)
@@ -17,20 +19,20 @@ abstract CodeFormatter(CodeFormatterImpl) from CodeFormatterImpl {
   }
 
   public function begin(br="{"):CodeFormatter {
-    indent += '  ';
+    this.indent += '  ';
     if (br != '') {
-      this.buf.add(inBr);
-      this.newline();
+      this.buf.add(br);
+      newline();
     }
     return this;
   }
 
   public function end(br="}"):CodeFormatter {
-    indent = indent.substr(2);
+    this.indent = this.indent.substr(2);
     if (br != '') {
-      this.newline();
+      newline();
       this.buf.add(br);
-      this.newline();
+      newline();
     }
     return this;
   }
@@ -74,12 +76,12 @@ abstract CodeFormatter(CodeFormatterImpl) from CodeFormatterImpl {
 
   public function comment(text:String):CodeFormatter {
     if (text == null) return this;
-    if (hasContent) {
+    if (this.hasContent) {
       newline();
     }
-    this.begin('/**');
-    this.addNewlines(text.replace('*/', '*'), false);
-    this.end('**/');
+    begin('/**');
+    addNewlines(text.replace('*/', '*'), false);
+    end('**/');
 
     return this;
   }
@@ -91,30 +93,30 @@ abstract CodeFormatter(CodeFormatterImpl) from CodeFormatterImpl {
   }
 
   @:op(A<<B) inline public function addBegin(text:Begin):CodeFormatter {
-    return this.begin(text);
+    return begin(text);
   }
 
   @:op(A<<B) inline public function addEnd(text:End):CodeFormatter {
-    return this.end(text);
+    return end(text);
   }
 
   @:op(A<<B) inline public function addComment(text:Comment):CodeFormatter {
-    return this.comment(text);
+    return comment(text);
   }
 
   @:op(A<<B) inline public function addNewline(text:Newline):CodeFormatter {
-    return this.newline();
+    return newline();
   }
 
   @:op(A<<B) inline public function _addEscaped(text:Escaped):CodeFormatter {
-    return this.addEscaped(text);
+    return addEscaped(text);
   }
 
   @:extern inline public function mapJoin<T>(arr:Iterable<T>, fn:T->String, joinArg=', ') {
     var first = true;
     for (val in arr) {
-      if (first) first = false; else this.add(joinArg);
-      this.add(fn(val));
+      if (first) first = false; else add(joinArg);
+      add(fn(val));
     }
   }
 
@@ -143,7 +145,7 @@ abstract CodeFormatter(CodeFormatterImpl) from CodeFormatterImpl {
     var first = true;
     var ethis:CodeFormatter = this;
     for (val in arr) {
-      if (first) first = false; else this.add(joinArg);
+      if (first) first = false; else add(joinArg);
       ethis = fn(val, ethis);
     }
     return this;

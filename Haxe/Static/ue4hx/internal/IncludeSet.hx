@@ -9,15 +9,15 @@ class IncludeSet {
 
   public function new() {
     this.map = new Map();
-    this.array = [];
+    this.keys = [];
   }
 
-  @:extern inline public function iterator() {
+  inline public function iterator() {
     return keys.iterator();
   }
 
   @:extern public inline function append(set:IncludeSet) {
-    if (set != this) {
+    if (set != this && set != null) {
       for (key in set.keys) {
         this.add(key);
       }
@@ -36,7 +36,7 @@ class IncludeSet {
   public function add(val:String) {
     if (!map.exists(val)) {
       this.map[val] = true;
-      this.array.push(val);
+      this.keys.push(val);
     }
   }
 }
