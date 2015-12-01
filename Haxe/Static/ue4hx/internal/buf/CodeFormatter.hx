@@ -93,15 +93,15 @@ abstract CodeFormatter(CodeFormatterImpl) from CodeFormatterImpl {
   }
 
   @:op(A<<B) inline public function addBegin(text:Begin):CodeFormatter {
-    return begin(text);
+    return begin(cast text);
   }
 
   @:op(A<<B) inline public function addEnd(text:End):CodeFormatter {
-    return end(text);
+    return end(cast text);
   }
 
   @:op(A<<B) inline public function addComment(text:Comment):CodeFormatter {
-    return comment(text);
+    return comment(cast text);
   }
 
   @:op(A<<B) inline public function addNewline(text:Newline):CodeFormatter {
@@ -109,7 +109,7 @@ abstract CodeFormatter(CodeFormatterImpl) from CodeFormatterImpl {
   }
 
   @:op(A<<B) inline public function _addEscaped(text:Escaped):CodeFormatter {
-    return addEscaped(text);
+    return addEscaped(cast text);
   }
 
   @:extern inline public function mapJoin<T>(arr:Iterable<T>, fn:T->String, joinArg=', ') {
@@ -156,31 +156,31 @@ abstract CodeFormatter(CodeFormatterImpl) from CodeFormatterImpl {
   }
 }
 
-abstract Begin(String) to String {
+abstract Begin(String) {
   @:extern inline public function new(txt:String) {
     this = txt;
   }
 }
 
-abstract End(String) to String {
+abstract End(String) {
   @:extern inline public function new(txt:String) {
     this = txt;
   }
 }
 
-abstract Comment(String) to String {
+abstract Comment(String) {
   @:extern inline public function new(txt:String) {
     this = txt;
   }
 }
 
-abstract Escaped(String) to String {
+abstract Escaped(String) {
   @:extern inline public function new(txt:String) {
     this = txt;
   }
 }
 
-abstract Newline(Dynamic) to Dynamic {
+abstract Newline(Dynamic) {
   @:extern inline public function new() {
     this = null;
   }
@@ -196,5 +196,9 @@ private class CodeFormatterImpl {
     this.buf = new StringBuf();
     this.indent = '';
     this.hasContent = false;
+  }
+
+  public function toString() {
+    return this.buf.toString();
   }
 }

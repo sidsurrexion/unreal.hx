@@ -1,5 +1,6 @@
 package ue4hx.internal;
 import ue4hx.internal.buf.HelperBuf;
+import ue4hx.internal.buf.CodeFormatter;
 import haxe.macro.Compiler;
 import haxe.macro.Context;
 import haxe.macro.Expr;
@@ -200,7 +201,7 @@ class ExternBaker {
     }
   }
 
-  private var buf:HelperBuf;
+  private var buf:CodeFormatter;
   private var realBuf:HelperBuf;
   private var glue:StringBuf;
   private var glueType:TypeRef;
@@ -209,7 +210,6 @@ class ExternBaker {
 
   private var type:Type;
   private var typeRef:TypeRef;
-  private var indentStr:String;
 
   private var pos:Position;
   private var params:Array<String>;
@@ -221,8 +221,7 @@ class ExternBaker {
 
   public function new(buf:StringBuf) {
     this.realBuf = buf;
-    this.buf = new StringBuf();
-    this.indentStr = '';
+    this.buf = new CodeFormatter();
     this.hadErrors = false;
     this.params = [];
   }
@@ -263,10 +262,10 @@ class ExternBaker {
 
     if (cl.isInterface) throw new Error('Unreal Glue Code: Templated functions aren\'t supported on interfaces', pos);
     if (generics.length == 0) return null;
-    this.buf.add('@:ueGluePath("${this.glueType.getClassPath()}")\n');
-    this.buf.add('@:nativeGen\n');
-    this.buf.add('class ');
-    this.buf.add(caller.name);
+    this.add('@:ueGluePath("${this.glueType.getClassPath()}")\n');
+    this.add('@:nativeGen\n');
+    this.add('class ');
+    this.add(caller.name);
     this.begin(' {');
 
     var methods = [];
@@ -310,7 +309,7 @@ class ExternBaker {
 
     this.addDependentTypes();
     this.realBuf.add(this.buf);
-    this.buf = new StringBuf();
+    this.buf = new CodeFormatter();
     return this.glue;
   }
 
@@ -408,7 +407,7 @@ class ExternBaker {
 
     for (field in fields.concat(statics)) {
       if (field.params.length > 0) {
-        this.buf.add('@:ueHasGenerics ');
+        this.add('@:ueHasGenerics ');
         break;
       }
     }
@@ -423,38 +422,38 @@ class ExternBaker {
 
     this.addMeta(meta);
     if (!c.isInterface)
-      this.buf.add('@:ueGluePath("${this.glueType.getClassPath()}")\n');
+      this.add('@:ueGluePath("${this.glueType.getClassPath()}")\n');
     if (c.params.length > 0)
-      this.buf.add('@:ueTemplate\n');
+      this.add('@:ueTemplate\n');
     if (c.isPrivate)
-      this.buf.add('private ');
+      this.add('private ');
     if (c.isInterface) {
-      this.buf.add('interface ');
+      this.add('interface ');
     } else {
-      this.buf.add('class ');
+      this.add('class ');
     }
-    this.buf.add('${c.name}$params ');
+    this.add('${c.name}$params ');
     var hasSuperClass = true;
     if (c.superClass != null) {
       var supRef = TInst(c.superClass.t, c.superClass.params).toString();
-      this.buf.add('extends $supRef ');
+      this.add('extends $supRef ');
     } else if (c.isInterface) {
-      this.buf.add('extends unreal.IInterface ');
+      this.add('extends unreal.IInterface ');
     } else if (!this.thisConv.isUObject) {
-      this.buf.add('extends unreal.Wrapper ');
+      this.add('extends unreal.Wrapper ');
     } else {
       hasSuperClass = false;
-      this.buf.add('implements unreal.IInterface ');
+      this.add('implements unreal.IInterface ');
     }
 
     for (iface in c.interfaces) {
       var t = TInst(iface.t, iface.params).toString();
       // var ifaceRef = TypeRef.fromBaseType(iface.t.get(), iface.params, c.pos);
       if (c.isInterface)
-        this.buf.add('extends ');
+        this.add('extends ');
       else
-        this.buf.add('implements ');
-      this.buf.add('$t ');
+        this.add('implements ');
+      this.add('$t ');
     }
     var methods = [];
     this.begin('{');
@@ -490,77 +489,77 @@ class ExternBaker {
             }
 
             var glueClassGet = glueType.getClassPath() + '.StaticClass()';
-            this.buf.add('static function __init__()');
+            this.add('static function __init__()');
             this.begin(' {');
-              this.buf.add('unreal.helpers.ClassMap.addWrapper($glueClassGet, cpp.Function.fromStaticFunction(wrapPointer));');
-              // this.buf.add('unreal.helpers.GlueClassMap.classMap.set("${uname}", cast ${c.name}.new);');//this.wrapped);');
+              this.add('unreal.helpers.ClassMap.addWrapper($glueClassGet, cpp.Function.fromStaticFunction(wrapPointer));');
+              // this.add('unreal.helpers.GlueClassMap.classMap.set("${uname}", cast ${c.name}.new);');//this.wrapped);');
             this.end('}');
             this.newline();
 
             // add wrap
-            this.buf.add('@:unreflective static function wrapPointer(uobject:cpp.RawPointer<cpp.Void>):cpp.RawPointer<cpp.Void>');
+            this.add('@:unreflective static function wrapPointer(uobject:cpp.RawPointer<cpp.Void>):cpp.RawPointer<cpp.Void>');
             this.begin(' {');
-              this.buf.add('var ptr:cpp.Pointer<Dynamic> = cpp.Pointer.fromRaw(cast uobject);');
-              this.buf.add('return unreal.helpers.HaxeHelpers.dynamicToPointer(new ${this.typeRef.getClassPath()}(ptr));');
+              this.add('var ptr:cpp.Pointer<Dynamic> = cpp.Pointer.fromRaw(cast uobject);');
+              this.add('return unreal.helpers.HaxeHelpers.dynamicToPointer(new ${this.typeRef.getClassPath()}(ptr));');
             this.end('}');
           }
 
-          this.buf.add('@:unreflective public static function wrap(uobject:cpp.RawPointer<cpp.Void>):${this.typeRef.getClassPath()}');
+          this.add('@:unreflective public static function wrap(uobject:cpp.RawPointer<cpp.Void>):${this.typeRef.getClassPath()}');
           this.begin(' {');
-            this.buf.add('return unreal.helpers.HaxeHelpers.pointerToDynamic( unreal.helpers.ClassMap.wrap(uobject) );');
+            this.add('return unreal.helpers.HaxeHelpers.pointerToDynamic( unreal.helpers.ClassMap.wrap(uobject) );');
           this.end('}');
         }
       } else if (!c.isInterface) {
         // add wrap for non-uobject types
-        this.buf.add('@:unreflective public static function wrap$params(ptr:');
-        this.buf.add(this.thisConv.haxeGlueType.toString());
-        this.buf.add(', ?parent:Dynamic');
-        this.buf.add('):' + this.thisConv.haxeType);
+        this.add('@:unreflective public static function wrap$params(ptr:');
+        this.add(this.thisConv.haxeGlueType.toString());
+        this.add(', ?parent:Dynamic');
+        this.add('):' + this.thisConv.haxeType);
         this.begin(' {');
           if (!this.thisConv.haxeGlueType.isReflective()) {
-            this.buf.add('var ptr = cpp.Pointer.fromRaw(cast ptr);');
+            this.add('var ptr = cpp.Pointer.fromRaw(cast ptr);');
             this.newline();
           }
 
-          this.buf.add('if (ptr == null) return null;');
+          this.add('if (ptr == null) return null;');
           this.newline();
-          this.buf.add('return new ${this.typeRef.getClassPath()}(ptr, parent);');
+          this.add('return new ${this.typeRef.getClassPath()}(ptr, parent);');
         this.end('}');
       }
 
       if (!hasSuperClass) {
         this.newline();
         // add constructor
-        this.buf.add('@:unreflective private var wrapped:${this.thisConv.haxeGlueType};');
+        this.add('@:unreflective private var wrapped:${this.thisConv.haxeGlueType};');
         this.newline();
         if (this.thisConv.haxeGlueType.isReflective())
-          this.buf.add('private function new(wrapped) this.wrapped = wrapped;\n\t');
+          this.add('private function new(wrapped) this.wrapped = wrapped;\n\t');
         else
-          this.buf.add('private function new(wrapped:${this.thisConv.haxeGlueType.toReflective()}) this.wrapped = wrapped.rawCast();\n\t');
+          this.add('private function new(wrapped:${this.thisConv.haxeGlueType.toReflective()}) this.wrapped = wrapped.rawCast();\n\t');
         // This is used only on `unreal.UObject`,`cpp.Pointer<cpp.Void>` will fail if we used `this.thisConv.haxeGlueType.getReflective()`
-        this.buf.add('@:extern inline private function getWrapped():cpp.Pointer<Dynamic>');
+        this.add('@:extern inline private function getWrapped():cpp.Pointer<Dynamic>');
         this.begin(' {');
-          this.buf.add('return this == null ? null : cpp.Pointer.fromRaw(cast this.wrapped);');
+          this.add('return this == null ? null : cpp.Pointer.fromRaw(cast this.wrapped);');
         this.end('}');
-        this.buf.add('@:extern inline private function getWrappedAddr():cpp.Pointer<Dynamic>');
+        this.add('@:extern inline private function getWrappedAddr():cpp.Pointer<Dynamic>');
         this.begin(' {');
-          this.buf.add('return this == null ? null : cpp.Pointer.addressOf( this.wrapped ).reinterpret();');
+          this.add('return this == null ? null : cpp.Pointer.addressOf( this.wrapped ).reinterpret();');
         this.end('}');
 
         // add the reflectGetWrapped()
-        this.buf.add('@:ifFeature("${this.typeRef.getClassPath(true)}") private function reflectGetWrapped():cpp.Pointer<Dynamic>');
+        this.add('@:ifFeature("${this.typeRef.getClassPath(true)}") private function reflectGetWrapped():cpp.Pointer<Dynamic>');
         this.begin(' {');
-          this.buf.add('return cpp.Pointer.fromRaw(cast this.wrapped);');
+          this.add('return cpp.Pointer.fromRaw(cast this.wrapped);');
         this.end('}');
-        this.buf.add('@:ifFeature("${this.typeRef.getClassPath(true)}") private function reflectGetWrappedRef():cpp.Pointer<Dynamic>');
+        this.add('@:ifFeature("${this.typeRef.getClassPath(true)}") private function reflectGetWrappedRef():cpp.Pointer<Dynamic>');
         this.begin(' {');
-          this.buf.add('return cpp.Pointer.addressOf(this.wrapped).reinterpret();');
+          this.add('return cpp.Pointer.addressOf(this.wrapped).reinterpret();');
         this.end('}');
       } else if (!c.isInterface && !this.thisConv.isUObject) {
         // add rewrap
-        this.buf.add('override public function rewrap(wrapped:cpp.Pointer<unreal.helpers.UEPointer>):${this.thisConv.haxeType}');
+        this.add('override public function rewrap(wrapped:cpp.Pointer<unreal.helpers.UEPointer>):${this.thisConv.haxeType}');
         this.begin(' {');
-          this.buf.add('return new ${this.thisConv.haxeType}(wrapped);');
+          this.add('return new ${this.thisConv.haxeType}(wrapped);');
         this.end('}');
         if (!meta.hasMeta(':noCopy')) {
           var doc = "\n    Invokes the copy constructor of the referenced C++ class.\n    " +
@@ -590,13 +589,13 @@ class ExternBaker {
             isFinal: false, isHaxePublic:false, isStatic:false, isOverride: true, isPublic: true
           });
         } else {
-          this.buf.add('@:deprecated("This type does not support copy constructors") override private function _copy():${this.thisConv.haxeType.toString()}');
+          this.add('@:deprecated("This type does not support copy constructors") override private function _copy():${this.thisConv.haxeType.toString()}');
           this.begin(' {');
-            this.buf.add('return throw "The type ${this.thisConv.haxeType} does not support copy constructors";');
+            this.add('return throw "The type ${this.thisConv.haxeType} does not support copy constructors";');
           this.end('}');
-          this.buf.add('@:deprecated("This type does not support copy constructors") override private function _copyStruct():${this.thisConv.haxeType.toString()}');
+          this.add('@:deprecated("This type does not support copy constructors") override private function _copyStruct():${this.thisConv.haxeType.toString()}');
           this.begin(' {');
-            this.buf.add('return throw "The type ${this.thisConv.haxeType} does not support copy constructors";');
+            this.add('return throw "The type ${this.thisConv.haxeType} does not support copy constructors";');
           this.end('}');
         }
         if (!meta.hasMeta(':noEquals')) {
@@ -613,14 +612,14 @@ class ExternBaker {
         }
         // add setFinalizer for debugging purposes
         this.newline();
-        this.buf.add('override private function setFinalizer() { cpp.vm.Gc.setFinalizer((this : unreal.Wrapper), cpp.Callable.fromStaticFunction(disposeUEPointer)); }');
+        this.add('override private function setFinalizer() { cpp.vm.Gc.setFinalizer((this : unreal.Wrapper), cpp.Callable.fromStaticFunction(disposeUEPointer)); }');
         this.newline();
 
-        this.buf.add('@:void @:unreflective static function disposeUEPointer(wrapper:unreal.Wrapper):Void ');
+        this.add('@:void @:unreflective static function disposeUEPointer(wrapper:unreal.Wrapper):Void ');
         this.begin('{');
-        this.buf.add('if (!wrapper.disposed)');
+        this.add('if (!wrapper.disposed)');
         this.begin('{');
-        this.buf.add('wrapper.wrapped.destroy();');
+        this.add('wrapper.wrapped.destroy();');
         this.end('}');
         this.end('}');
       }
@@ -635,7 +634,7 @@ class ExternBaker {
     if (this.needsTypeParamGlue)
       this.realBuf.add('@:needsTypeParamGlue\n');
     this.realBuf.add(this.buf);
-    this.buf = new StringBuf();
+    this.buf = new CodeFormatter();
   }
 
   // private static function getEnableIf(meth:MethodDef, body:String, decl:String, args:String):String {
@@ -666,16 +665,16 @@ class ExternBaker {
       var meta = field.meta.get();
       this.addMeta(meta);
       if (field.isPublic)
-        this.buf.add('public ');
+        this.add('public ');
       else
-        this.buf.add('private ');
+        this.add('private ');
 
       if (isStatic)
-        this.buf.add('static ');
+        this.add('static ');
       var tconv = TypeConv.get( field.type, field.pos );
-      this.buf.add('var ');
-      this.buf.add(field.name);
-      this.buf.add('(');
+      this.add('var ');
+      this.add(field.name);
+      this.add('(');
       var prop = PropType.Prop;
       var realTConv = switch (tconv.ownershipModifier) {
         case 'unreal.PStruct':
@@ -695,9 +694,9 @@ class ExternBaker {
           isPublic: field.isPublic,
           meta: meta
         });
-        this.buf.add('get,');
+        this.add('get,');
       case _:
-        this.buf.add('never,');
+        this.add('never,');
       }
       switch(write) {
       case AccNormal | AccCall:
@@ -710,12 +709,12 @@ class ExternBaker {
           isPublic: field.isPublic,
           meta: meta
         });
-        this.buf.add('set):');
+        this.add('set):');
       case _:
-        this.buf.add('never):');
+        this.add('never):');
       }
-      this.buf.add(realTConv.haxeType);
-      this.buf.add(';');
+      this.add(realTConv.haxeType);
+      this.add(';');
       this.newline();
     case FMethod(k):
       switch(Context.follow(field.type)) {
@@ -1033,7 +1032,7 @@ class ExternBaker {
     for (t in allTypes) {
       if ((t.args != null && t.args.length > 0 && !t.hasTypeParams()) || t.isFunction) {
         // add metadata to warn NeedsGlueBuild that we need to make sure this type is built
-        this.buf.add('@:needsTypeParamGlue');
+        this.add('@:needsTypeParamGlue');
         this.newline();
         this.needsTypeParamGlue = true;
         break;
@@ -1042,24 +1041,24 @@ class ExternBaker {
 
     if (!hasParams) {
       if (baseGlueHeaderCode != null) {
-        this.buf.add('@:glueHeaderCode(\'');
+        this.add('@:glueHeaderCode(\'');
         escapeString(baseGlueHeaderCode, this.buf);
-        this.buf.add('\')');
+        this.add('\')');
         this.newline();
-        this.buf.add('@:ueHeaderCode(\'');
+        this.add('@:ueHeaderCode(\'');
         escapeString(glueHeaderCode.toString(), this.buf);
-        this.buf.add('\')');
+        this.add('\')');
         this.newline();
       } else {
         // add the glue header and cpp code to the non-extern class (instead of the glue helper)
         // in order to be able to benefit from DCE (extern types are never DCE'd)
-        this.buf.add('@:glueHeaderCode(\'');
+        this.add('@:glueHeaderCode(\'');
         escapeString(glueHeaderCode.toString(), this.buf);
-        this.buf.add('\')');
+        this.add('\')');
         this.newline();
-        this.buf.add('@:glueCppCode(\'');
+        this.add('@:glueCppCode(\'');
         escapeString(glueCppCode.toString(), this.buf);
-        this.buf.add('\')');
+        this.add('\')');
         this.newline();
       }
     }
@@ -1077,30 +1076,30 @@ class ExternBaker {
         hasCppInc = cppIncludes.length > 0;
     if (hasHeaderInc && !isInterface) {
       var first = true;
-      this.buf.add('@:glueHeaderIncludes(');
+      this.add('@:glueHeaderIncludes(');
       for (inc in headerIncludes) {
-        if (first) first = false; else this.buf.add(', ');
-        this.buf.add('\'');
+        if (first) first = false; else this.add(', ');
+        this.add('\'');
         escapeString(inc, this.buf);
-        this.buf.add('\'');
+        this.add('\'');
       }
-      this.buf.add(')');
+      this.add(')');
       this.newline();
     }
     if (hasCppInc && !isInterface) {
       var first = true;
-      this.buf.add('@:glueCppIncludes(');
+      this.add('@:glueCppIncludes(');
       for (inc in cppIncludes) {
-        if (first) first = false; else this.buf.add(', ');
-        this.buf.add('\'');
+        if (first) first = false; else this.add(', ');
+        this.add('\'');
         escapeString(inc, this.buf);
-        this.buf.add('\'');
+        this.add('\'');
       }
-      this.buf.add(')');
+      this.add(')');
       this.newline();
     }
     if (hasParams)
-      this.buf.add('@:generic ');
+      this.add('@:generic ');
 
     var args = meth.args;
     if (meth.specialization != null) {
@@ -1108,60 +1107,60 @@ class ExternBaker {
       args = helperArgs;
     }
     if (meth.isFinal)
-      this.buf.add('@:final @:nonVirtual ');
+      this.add('@:final @:nonVirtual ');
     if (meth.isHaxePublic)
-      this.buf.add('public ');
+      this.add('public ');
     else
-      this.buf.add('private ');
+      this.add('private ');
     if (isStatic)
-      this.buf.add('static ');
+      this.add('static ');
     if (meth.isOverride)
-      this.buf.add('override ');
+      this.add('override ');
 
-    this.buf.add('function ${meth.name}');
+    this.add('function ${meth.name}');
     if (hasParams) {
-      this.buf.add('<');
+      this.add('<');
       var first = true;
       for (param in meth.params) {
-        if (first) first = false; else this.buf.add(', ');
-        this.buf.add(param);
+        if (first) first = false; else this.add(', ');
+        this.add(param);
       }
-      this.buf.add('>');
+      this.add('>');
     }
-    this.buf.add('(');
+    this.add('(');
     if (hasParams) {
       var first = true;
       for (param in meth.params) {
-        if (first) first = false; else this.buf.add(', ');
-        this.buf.add('?${param}_TP:unreal.TypeParam<$param>');
+        if (first) first = false; else this.add(', ');
+        this.add('?${param}_TP:unreal.TypeParam<$param>');
       }
-      if (meth.args.length != 0) this.buf.add(', ');
+      if (meth.args.length != 0) this.add(', ');
     }
     //TODO: Fix this to not just hardset it to wrapper
     if (meth.uname == '.equals') {
-      this.buf.add('other:unreal.Wrapper');
+      this.add('other:unreal.Wrapper');
     } else {
-      this.buf.add([ for (arg in args) arg.name + ':' + arg.t.haxeType.toString() ].join(', '));
+      this.add([ for (arg in args) arg.name + ':' + arg.t.haxeType.toString() ].join(', '));
     }
-    this.buf.add('):' + retHaxeType + ' ');
+    this.add('):' + retHaxeType + ' ');
     if (isInterface) {
-      this.buf.add(';');
+      this.add(';');
       this.newline();
       return;
     }
     this.begin('{');
       if (hasParams) {
         if (!isVoid)
-          this.buf.add('return cast null;');
+          this.add('return cast null;');
         else
-          this.buf.add('return;');
+          this.add('return;');
       } else {
         if (!isStatic && !this.thisConv.isUObject) {
-          this.buf.add('#if UE4_CHECK_POINTER');
+          this.add('#if UE4_CHECK_POINTER');
           this.newline();
-          this.buf.add('this.checkPointer();');
+          this.add('this.checkPointer();');
           this.newline();
-          this.buf.add('#end');
+          this.add('#end');
           this.newline();
         }
         var haxeBodyCall = '${this.glueType}.${meth.name}';
@@ -1174,11 +1173,11 @@ class ExternBaker {
             [ for (arg in helperArgs) arg.t.haxeToGlue(arg.name, ctx) ].join(', ') +
           ')';
         if (isSetter)
-          haxeBody = haxeBody + ';\n${this.indentStr}return value';
+          haxeBody = haxeBody + ';\nreturn value';
         else if (!isVoid)
           haxeBody = 'return ' + meth.ret.glueToHaxe(haxeBody, ctx);
-        this.buf.add(haxeBody);
-        this.buf.add(';');
+        this.add(haxeBody);
+        this.add(';');
       }
     this.end('}\n');
   }
@@ -1221,26 +1220,8 @@ class ExternBaker {
     };
   }
 
-  private static function escapeString(str:String, ?buf:StringBuf):StringBuf {
-    if (buf == null) buf = new StringBuf();
-    for (i in 0...str.length) {
-      var code = str.fastCodeAt(i);
-      switch (code) {
-      case '\\'.code:
-        buf.add('\\\\');
-      case '\n'.code:
-        buf.add('\\n');
-      case '\t'.code:
-        buf.add('\\t');
-      case '\''.code:
-        buf.add('\\\'');
-      case '"'.code:
-        buf.add('\\"');
-      case chr:
-        buf.addChar(chr);
-      }
-    }
-    return buf;
+  private static function escapeString(str:String, buf:CodeFormatter):Void {
+    buf << new Escaped(str);
   }
 
   private function processEnum(e:EnumType) {
@@ -1252,8 +1233,8 @@ class ExternBaker {
     this.addDoc(e.doc);
     this.addMeta(e.meta.get());
     if (e.isPrivate)
-      this.buf.add('private ');
-    this.buf.add('enum ${e.name} ');
+      this.add('private ');
+    this.add('enum ${e.name} ');
     this.begin('{');
       for (name in e.names) {
         var ctor = e.constructs[name];
@@ -1264,17 +1245,17 @@ class ExternBaker {
         }
         this.addDoc(ctor.doc);
         this.addMeta(ctor.meta.get());
-        this.buf.add(name + ';');
+        this.add(name + ';');
         this.newline();
       }
     this.end('}');
     this.newline();
 
-    this.buf.add('@:ueGluePath("${this.glueType.getClassPath()}")\n');
+    this.add('@:ueGluePath("${this.glueType.getClassPath()}")\n');
     this.addMeta(e.meta.get());
-    this.buf.add('class ${e.name}_EnumConv ');
+    this.add('class ${e.name}_EnumConv ');
     this.begin('{');
-      this.buf.add('public static var all = std.Type.allEnums(${this.typeRef});');
+      this.add('public static var all = std.Type.allEnums(${this.typeRef});');
       this.newline();
       var ueName = MacroHelpers.extractStrings(e.meta, ':uname')[0];
       var isClass = e.meta.has(':class');
@@ -1309,90 +1290,79 @@ class ExternBaker {
       haxeToUe += '}\n\treturn 0;';
 
       this.glue.add('public static function ueToHaxe(value:Int):Int;\n');
-      this.buf.add('@:glueHeaderCode("static int ueToHaxe(int value);")');
+      this.add('@:glueHeaderCode("static int ueToHaxe(int value);")');
       this.newline();
-      this.buf.add('@:glueCppCode("int ${this.glueType.getCppType()}_obj::ueToHaxe(int value) {');
+      this.add('@:glueCppCode("int ${this.glueType.getCppType()}_obj::ueToHaxe(int value) {');
       escapeString('\n\t' +ueToHaxe.toString() + '\n}', this.buf);
-      this.buf.add('")');
+      this.add('")');
       this.newline();
-      this.buf.add('public static function ueToHaxe(value:Int):Int');
+      this.add('public static function ueToHaxe(value:Int):Int');
       this.begin(' {');
-        this.buf.add('return ${this.glueType}.ueToHaxe(value);');
+        this.add('return ${this.glueType}.ueToHaxe(value);');
       this.end('}');
 
       this.glue.add('public static function haxeToUe(value:Int):Int;\n');
-      this.buf.add('@:glueHeaderCode("static int haxeToUe(int value);")');
+      this.add('@:glueHeaderCode("static int haxeToUe(int value);")');
       this.newline();
-      this.buf.add('@:glueCppCode("int ${this.glueType.getCppType()}_obj::haxeToUe(int value) {');
+      this.add('@:glueCppCode("int ${this.glueType.getCppType()}_obj::haxeToUe(int value) {');
       escapeString('\n\t' +haxeToUe.toString() + '\n}', this.buf);
-      this.buf.add('")');
+      this.add('")');
       this.newline();
-      this.buf.add('public static function haxeToUe(value:Int):Int');
+      this.add('public static function haxeToUe(value:Int):Int');
       this.begin(' {');
-        this.buf.add('return ${this.glueType}.haxeToUe(value);');
+        this.add('return ${this.glueType}.haxeToUe(value);');
       this.end('}');
 
-      this.buf.add('public static inline function wrap(v:Int):${this.typeRef} return all[ueToHaxe(v) - 1];');
+      this.add('public static inline function wrap(v:Int):${this.typeRef} return all[ueToHaxe(v) - 1];');
       this.newline();
-      this.buf.add('public static inline function unwrap(v:${this.typeRef}):Int return haxeToUe(v.getIndex() + 1);');
+      this.add('public static inline function unwrap(v:${this.typeRef}):Int return haxeToUe(v.getIndex() + 1);');
     this.end('}');
     this.newline();
 
     this.realBuf.add(this.buf);
-    this.buf = new StringBuf();
+    this.buf = new CodeFormatter();
   }
 
   private function addMeta(metas:Metadata) {
     if (metas != null) {
       for (meta in metas) {
-        this.buf.add('@' + meta.name);
+        this.add('@' + meta.name);
         if (meta.params != null && meta.params.length > 0) {
-          this.buf.add('(');
+          this.add('(');
           var first = true;
           for (param in meta.params) {
-            if (first) first = false; else this.buf.add(', ');
-            this.buf.add(param.toString());
+            if (first) first = false; else this.add(', ');
+            this.add(param.toString());
           }
-          this.buf.add(')');
+          this.add(')');
         }
         if (meta.name == ':final')
-          this.buf.add(' @:nonVirtual ');
+          this.add(' @:nonVirtual ');
         this.newline();
       }
     }
   }
 
-  private function addDoc(doc:Null<String>) {
+  inline private function addDoc(doc:Null<String>) {
     if (doc != null) {
-      buf.add('/**');
-      buf.add(doc);
-      buf.add('**/\n');
-      buf.add(indentStr);
+      buf << new Comment(doc);
     }
   }
 
-  private function begin(?brkt:String) {
-    if (brkt != null) {
-      buf.add(brkt);
-      buf.add('\n');
-      buf.add(indentStr += '  ');
-    } else {
-      indentStr += '  ';
-    }
+  inline private function begin(?brkt:String) {
+    buf << new Begin(brkt);
   }
 
-  private function end(?brkt:String) {
-    indentStr = indentStr.substr(2);
-    if (brkt != null) {
-      this.newline();
-      buf.add(brkt);
-      this.newline();
-    }
+  inline private function end(?brkt:String) {
+    buf << new End(brkt);
   }
 
-  private function newline() {
-    buf.add('\n');
-    buf.add(indentStr);
+  inline private function newline() {
+    buf << new Newline();
+  }
+
+  inline private function add(dyn:Dynamic) {
+    buf << Std.string(dyn);
   }
 
   private function get_voidType():TypeConv {
