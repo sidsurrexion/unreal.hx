@@ -1064,17 +1064,17 @@ class ExternBaker {
       }
     }
 
-    var headerIncludes = new Map(),
-        cppIncludes = new Map();
+    var headerIncludes = new IncludeSet(),
+        cppIncludes = new IncludeSet();
     for (type in allTypes) {
       type.getAllCppIncludes(cppIncludes);
       type.getAllHeaderIncludes(headerIncludes);
     }
     if (meth.uname == ".equals") {
-      cppIncludes['<TypeTraits.h>'] = '<TypeTraits.h>';
+      cppIncludes.add('<TypeTraits.h>');
     }
-    var hasHeaderInc = headerIncludes.iterator().hasNext(),
-        hasCppInc = cppIncludes.iterator().hasNext();
+    var hasHeaderInc = headerIncludes.length > 0,
+        hasCppInc = cppIncludes.length > 0;
     if (hasHeaderInc && !isInterface) {
       var first = true;
       this.buf.add('@:glueHeaderIncludes(');

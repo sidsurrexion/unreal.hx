@@ -7,9 +7,27 @@ class IncludeSet {
   var map:Map<String, Bool>;
   var keys:Array<String>;
 
+  public var length(get,never):Int;
+
   public function new() {
     this.map = new Map();
     this.keys = [];
+  }
+
+  inline private function get_length():Int {
+    return keys.length;
+  }
+
+  inline public function copy() {
+    return IncludeSet.fromUniqueArray(this.keys);
+  }
+
+  inline public function concat(arr:Array<String>) {
+    var ret = this.copy();
+    for (val in arr) {
+      ret.add(val);
+    }
+    return ret;
   }
 
   inline public function iterator() {
@@ -22,13 +40,16 @@ class IncludeSet {
         this.add(key);
       }
     }
+    return this;
   }
 
   public static function fromUniqueArray(array:Array<String>) {
     var set = new IncludeSet();
-    for (val in array) {
-      set.keys.push(val);
-      set.map[val] = true;
+    if (array != null) {
+      for (val in array) {
+        set.keys.push(val);
+        set.map[val] = true;
+      }
     }
     return set;
   }
@@ -38,6 +59,7 @@ class IncludeSet {
       this.map[val] = true;
       this.keys.push(val);
     }
+    return this;
   }
 }
 
