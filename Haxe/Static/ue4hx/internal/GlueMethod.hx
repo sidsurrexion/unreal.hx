@@ -32,7 +32,7 @@ class GlueMethod {
   var headerCode(default, null):String;
   var ueHeaderCode(default, null):String;
   var cppCode(default, null):String;
-  var haxeCode(default, null):String;
+  var haxeCode(default, null):Array<String>;
   var glueArgs(default, null):Array<{ name:String, t:TypeConv }>;
   var cppArgs(default, null):Array<{ name:String, t:TypeConv }>;
   var haxeArgs(default, null):Array<{ name:String, t:TypeConv }>;
@@ -67,6 +67,10 @@ class GlueMethod {
 
   private function process() {
     var meth = this.meth;
+    if (meth.meta == null) {
+      meth.meta = [];
+    }
+
     var isStatic = meth.flags.hasAny(Static);
     var isProp = meth.flags.hasAny(Property);
     var ctx = this.ctx = isProp && !isStatic && !this.thisConv.isUObject ? [ "parent" => "this" ] : null;
@@ -184,9 +188,14 @@ class GlueMethod {
       }
     }
 
+    inline function addMeta(name:String) {
+      meth.meta.push({ name:name, pos:meth.pos });
+    }
+
     for (t in allTypes) {
       if ( (t.args != null && t.args.length > 0 && !t.hasTypeParams()) || t.isFunction ) {
         this.needsTypeParamGlue = true;
+        addMeta(':needsTypeParamGlue');
         break;
       }
     }
@@ -207,22 +216,46 @@ class GlueMethod {
     if (meth.uname == '.equals') {
       cppIncludes.add('<TypeTraits.h>');
     }
-    for (type in allTypes) {
-    }
-  }
 
-  private function genCppCallArgs(prefix:String, outVars:HelperBuf) {
-    var cppArgTypes = [];
-    for (arg in this.cppArgs) {
-      if (arg.t.isTypeParam == true && (arg.t.ownershipModifier == 'unreal.PRef' || arg.t.ownershipModifier == 'ue4hx.internal.PRefDef')) {
-        var prefixedArgName = prefix + arg.name;
-        outVars << 'auto ${prefixedArgName}_t = ${arg.t.glueToUe(${prefixedArgName}, this.ctx)};\n\t\t\t';
-        cppArgTypes.push('*(${prefixedArgName}_t.getPointer())');
+    for (type in allTypes) {
+      type.getAllCppIncludes(cppIncludes);
+      type.getAllHeaderIncludes(headerIncludes);
+    }
+
+    if (this.templated) {
+      addMeta(':generic');
+    }
+
+    if (meth.flags.hasAny(Final)) {
+      addMeta(':final');
+      addMeta(':nonVirtual');
+    }
+
+    if (this.templated) {
+      if (!isVoid) {
+        this.haxeCode = ['return cast null;'];
       } else {
-        cppArgTypes.push(arg.t.glueToUe(prefix+escapeCpp(arg.name, this.isGlueStatic), this.ctx));
+        this.haxeCode = ['return;'];
+      }
+    } else {
+      var haxeBodyCall = if (this.isTemplatedThis && !isStatic) {
+        '( cast this.wrapped : cpp.Pointer<${this.glueType}> ).ptr.${meth.name}';
+      } else {
+        '${this.glueType}.${meth.name}';
+      };
+
+      var haxeBody =
+        '$haxeBodyCall(' +
+          [ for (arg in this.glueArgs) arg.t.haxeToGlue(arg.name, this.ctx) ].join(', ') +
+        ')';
+      if (meth.flags.hasAny(Property) && meth.name.startsWith('set_')) {
+        this.haxeCode = [haxeBody + ';' , 'return value;'];
+      } else if (!isVoid) {
+        this.haxeCode = ['return ' + meth.ret.glueToHaxe(haxeBody, this.ctx) + ';'];
+      } else {
+        this.haxeCode = [haxeBody + ';'];
       }
     }
-    return cppArgTypes;
   }
 
   private static function isUObjectPointer(type:TypeConv) {
@@ -234,6 +267,10 @@ class GlueMethod {
     } else {
       return true;
     }
+  }
+
+  private function shouldCheckPointer() {
+    return !this.meth.flags.hasAny(Static) && !this.thisConv.isUObject;
   }
 
   private function genCppCall(body:String, prefix:String, outVars:HelperBuf) {
@@ -391,6 +428,9 @@ class GlueMethod {
     if (this.cppCode != null) {
       meta.push({ name:':glueCppCode', params:[macro $v{this.cppCode}], pos:meth.pos });
     }
+    if (this.ueHeaderCode != null) {
+      meta.push({ name: ':ueHeaderCode', params:[macro $v{this.ueHeaderCode}], pos:meth.pos });
+    }
 
     var glue:Field = null;
     if (!this.templated) {
@@ -410,7 +450,54 @@ class GlueMethod {
         })
       };
     }
-    return null;
+
+    var acc = [];
+    if (meth.flags.hasAny(HaxePrivate)) {
+      acc.push(APrivate);
+    } else {
+      acc.push(APublic);
+    }
+    if (meth.flags.hasAny(Static)) {
+      acc.push(AStatic);
+    } else if (meth.flags.hasAny(HaxeOverride)) {
+      acc.push(AOverride);
+    }
+    var block = this.haxeCode;
+    if (block != null && Context.defined('UE4_CHECK_POINTER') && this.shouldCheckPointer()) {
+      block = ['this.checkPointer();'].concat(block);
+    }
+
+    var args = this.getArgs();
+    var expr = block != null ? Context.parse('{' + this.haxeCode.join('\n') + '}', meth.pos) : null;
+    var field:Field = {
+      name: meth.name,
+      doc: meth.doc,
+      access: acc,
+      pos: meth.pos,
+      meta: meta,
+      kind: FFun({
+        args: [ for (arg in args) { name:arg.name, opt:arg.opt, type:arg.type.toComplexType() } ],
+        ret: meth.ret.haxeType.toComplexType(),
+        expr: expr,
+        params: (meth.params != null ? [ for (param in meth.params) { name: param } ] : null)
+      })
+    };
+
+    return { glue: glue, field: field };
+  }
+
+  private function getArgs():Array<MethodArg> {
+    var meth = this.meth;
+    var args:Array<MethodArg> = [ for (arg in meth.args) { name:arg.name, type: arg.t.haxeType } ];
+    if (meth.params != null) {
+      var helpers:Array<MethodArg> = [];
+      for (param in meth.params) {
+        var name = param + '_TP';
+        helpers.push({ name:name, opt:true, type: new TypeRef(['unreal'], 'TypeParam', [new TypeRef(param)]) });
+      }
+      args = helpers.concat(args);
+    }
+    return args;
   }
 
   public function getFieldString(buf:CodeFormatter, glue:CodeFormatter):Void {
@@ -427,6 +514,9 @@ class GlueMethod {
     if (this.cppCode != null) {
       buf << '@:glueCppCode("' << new Escaped(this.cppCode) << '")' << new Newline();
     }
+    if (this.ueHeaderCode != null) {
+      buf << '@:ueHeaderCode("' << new Escaped(this.ueHeaderCode) << '")' << new Newline();
+    }
 
     buf << meth.meta;
 
@@ -438,6 +528,36 @@ class GlueMethod {
       glue.add('public $st function ${meth.name}(');
       glue.add([ for (arg in this.glueArgs) escapeCpp(arg.name, this.isGlueStatic) + ':' + arg.t.haxeGlueType.toString() ].join(', '));
       glue.add('):' + this.glueRet.haxeGlueType + ';\n');
+    }
+
+    if (meth.flags.hasAny(HaxePrivate)) {
+      buf << 'private ';
+    } else {
+      buf << 'public ';
+    }
+    if (meth.flags.hasAny(Static)) {
+      buf << 'static ';
+    } else if (meth.flags.hasAny(HaxeOverride)) {
+      buf << 'override ';
+    }
+
+    buf << 'function ' << meth.name;
+    if (meth.params != null && meth.params.length > 0) {
+      buf << '<';
+      buf.mapJoin(meth.params, function(p) return p);
+      buf << '>';
+    }
+    buf << '(';
+    buf.mapJoin(this.getArgs(), function(arg) return (arg.opt ? '?' : '') + arg.name + ' : ' + arg.type.toString());
+    buf << ') : ' << meth.ret.haxeType.toString();
+    if (this.haxeCode == null) {
+      buf << ';';
+    } else {
+      buf << new Begin(' {');
+        for (expr in this.haxeCode) {
+          buf << expr << new Newline();
+        }
+      buf << new End('}');
     }
   }
 
@@ -526,4 +646,10 @@ typedef MethodDef = {
   @:op(A|B) inline public function add(flag:MethodFlags):MethodFlags {
     return this | flag.t();
   }
+}
+
+typedef MethodArg = {
+  name: String,
+  ?opt: Bool,
+  type: TypeRef
 }
