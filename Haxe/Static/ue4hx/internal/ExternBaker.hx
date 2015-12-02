@@ -213,7 +213,7 @@ class ExternBaker {
 
   private var pos:Position;
   private var params:Array<String>;
-  private var dependentTypes:Array<String>;
+  private var dependentTypes:Map<String, String>;
   private var needsTypeParamGlue:Bool;
   public var hadErrors(default, null):Bool;
 
@@ -228,7 +228,7 @@ class ExternBaker {
 
   public function processGenericFunctions(c:Ref<ClassType>):CodeFormatter {
     var cl = c.get();
-    this.dependentTypes = [];
+    this.dependentTypes = new Map();
     this.cls = cl;
     this.params = [ for (p in cl.params) p.name ];
     this.glue = new CodeFormatter();
@@ -314,10 +314,9 @@ class ExternBaker {
   }
 
   private function addDependentTypes() {
-    if (this.dependentTypes.length > 0) {
-      var deps = [ for (d in this.dependentTypes) d => d ];
+    if (this.dependentTypes.iterator().hasNext()) {
       this.realBuf.add('@:ueDependentTypes(');
-      this.realBuf.mapJoin(deps, function(type) return '"$type"');
+      this.realBuf.mapJoin(this.dependentTypes, function(type) return '"$type"');
       this.realBuf.add(')\n');
     }
   }
@@ -347,7 +346,7 @@ class ExternBaker {
   private function processClass(type:Type, c:ClassType) {
     this.needsTypeParamGlue = false;
     this.cls = c;
-    this.dependentTypes = [];
+    this.dependentTypes = new Map();
     this.params = [ for (p in c.params) p.name ];
     this.pos = c.pos;
     if (!c.isExtern || !c.meta.has(':uextern')) return;
@@ -790,6 +789,9 @@ class ExternBaker {
     }
     if (gm.needsTypeParamGlue) {
       this.needsTypeParamGlue = true;
+    }
+    for (dep in gm.dependentTypes) {
+      this.dependentTypes[dep] = dep;
     }
     gm.getFieldString( this.buf, this.glue );
     // var hasParams = meth.params != null && meth.params.length > 0;
