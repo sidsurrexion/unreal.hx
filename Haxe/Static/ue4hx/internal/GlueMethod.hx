@@ -558,6 +558,12 @@ class GlueMethod {
       buf << ';';
     } else {
       buf << new Begin(' {');
+        if (this.shouldCheckPointer()) {
+          buf << '#if UE4_CHECK_POINTER'
+            << new Newline() << "this.checkPointer();"
+            << new Newline() << "#end"
+            << new Newline();
+        }
         for (expr in this.haxeCode) {
           buf << expr << new Newline();
         }
