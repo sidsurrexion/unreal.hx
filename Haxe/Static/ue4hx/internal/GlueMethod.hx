@@ -301,6 +301,8 @@ class GlueMethod {
       }
     } else if (this.op == '[') {
       body += '[' + cppArgTypes[0] + ']';
+      if (cppArgs.length == 2)
+        body += ' = ' + cppArgTypes[1];
     } else if (this.op == '*' || this.op == '++' || this.op == '--' || this.op == '!') {
       if (cppArgs.length > 0) {
         throw new Error('Unreal Glue: unary operators must take zero arguments', meth.pos);
