@@ -26,13 +26,13 @@ class GlueMethod {
   ///////////////////////
   public var dependentTypes(default, null):Map<String, String>;
   public var needsTypeParamGlue(default, null):Bool;
+  public var haxeCode:Array<String>;
+  public var headerCode:String;
+  public var ueHeaderCode:String;
+  public var cppCode:String;
   var thisConv(default, null):TypeConv;
   var cppIncludes(default, null):IncludeSet;
   var headerIncludes(default, null):IncludeSet;
-  var headerCode(default, null):String;
-  var ueHeaderCode(default, null):String;
-  var cppCode(default, null):String;
-  var haxeCode(default, null):Array<String>;
   var glueArgs(default, null):Array<{ name:String, t:TypeConv }>;
   var cppArgs(default, null):Array<{ name:String, t:TypeConv }>;
   var haxeArgs(default, null):Array<{ name:String, t:TypeConv }>;
@@ -79,7 +79,7 @@ class GlueMethod {
     var glueArgs = this.glueArgs = haxeArgs;
     var isGlueStatic = this.isGlueStatic = !this.isTemplatedThis || isStatic;
 
-    if (!isGlueStatic) {
+    if (!isStatic && !this.isTemplatedThis) {
       // CLEANUP use 'this' directly?
       var name = meth.specialization != null ? 'self' : 'this';
       glueArgs = this.glueArgs = glueArgs.copy();
@@ -108,7 +108,7 @@ class GlueMethod {
     glueHeaderCode << '${this.glueRet.glueType.getCppType()} ${meth.name}(' << cppArgDecl + ')';
 
     var baseGlueHeaderCode = null;
-    if (!isGlueStatic && isTemplatedThis) {
+    if (this.isTemplatedThis && !isStatic) {
       baseGlueHeaderCode = 'virtual ' + glueHeaderCode.toString() + ' = 0;';
     }
 
@@ -154,13 +154,13 @@ class GlueMethod {
       glueCppCode << '>\n\t';
     }
 
-    if (this.isTemplatedThis && !this.isGlueStatic) {
+    if (this.isTemplatedThis && !isStatic) {
       glueHeaderCode << ' {\n\t\t\t$glueCppBodyVars;\n\t\t}';
     } else {
       glueHeaderCode << ';';
       glueCppCode <<
         this.glueRet.glueType.getCppType() <<
-        ' ${this.glueType.getCppType}_obj::${meth.name}(' << cppArgDecl << ') {' <<
+        ' ${this.glueType.getCppType()}_obj::${meth.name}(' << cppArgDecl << ') {' <<
           '\n\t' << glueCppBodyVars << ';\n}';
     }
 
@@ -169,7 +169,7 @@ class GlueMethod {
 
     // dependent types - this is only used by the extern baker pass
     // this will add all types that are used by each templated variation of this class
-    if (!this.templated && !isStatic) {
+    if (!this.templated && !isStatic && this.isTemplatedThis) {
       for (type in allTypes) {
         if (type.hasTypeParams()) {
           var tref = type.haxeType;
@@ -226,6 +226,12 @@ class GlueMethod {
       addMeta(':generic');
     }
 
+    if (meth.specialization != null) {
+      isStatic = true;
+      meth.flags |= Static;
+      this.haxeArgs = this.glueArgs;
+    }
+
     if (meth.flags.hasAny(Final)) {
       addMeta(':final');
       addMeta(':nonVirtual');
@@ -262,11 +268,7 @@ class GlueMethod {
     if (!type.isUObject) {
       return false;
     }
-    if (type.ueType.params.length > 0) {
-      return false;
-    } else {
-      return true;
-    }
+    return type.ueType.isPointer();
   }
 
   private function shouldCheckPointer() {
@@ -285,7 +287,7 @@ class GlueMethod {
       }
     }
 
-    var isStructProp = this.meth.flags.hasAny(StructProperty);
+    var isStructProp = this.meth.flags.hasAll(StructProperty);
     var isGetter = this.meth.name.startsWith('get_');
     if (isStructProp && isGetter) {
       body = '&' + body;
@@ -318,7 +320,7 @@ class GlueMethod {
       params << '<';
       params.mapJoin(meth.params, function(param) return param);
       params << '>';
-    } else if (this.meth.specialization != null) {
+    } else if (this.meth.specialization != null && !this.isTemplatedThis) {
       var useTypeName = this.meth.meta != null && this.meth.meta.hasMeta(':typeName');
       params << '<';
       params.mapJoin(this.meth.specialization.types, function (tconv) return {
@@ -420,8 +422,8 @@ class GlueMethod {
       meta = meth.meta.copy();
     }
 
-    meta.push({ name:':glueCppIncludes', params:[for (inc in cppIncludes) macro $v{inc}], pos:meth.pos });
-    meta.push({ name:':glueHeaderIncludes', params:[for (inc in headerIncludes) macro $v{inc}], pos:meth.pos });
+    meta.push({ name:':glueCppIncludes', params:[for (inc in this.cppIncludes) macro $v{inc}], pos:meth.pos });
+    meta.push({ name:':glueHeaderIncludes', params:[for (inc in this.headerIncludes) macro $v{inc}], pos:meth.pos });
     if (this.headerCode != null) {
       meta.push({ name:':glueHeaderCode', params:[macro $v{this.headerCode}], pos:meth.pos });
     }
@@ -477,7 +479,7 @@ class GlueMethod {
       meta: meta,
       kind: FFun({
         args: [ for (arg in args) { name:arg.name, opt:arg.opt, type:arg.type.toComplexType() } ],
-        ret: meth.ret.haxeType.toComplexType(),
+        ret: this.retHaxeType.toComplexType(),
         expr: expr,
         params: (meth.params != null ? [ for (param in meth.params) { name: param } ] : null)
       })
@@ -488,7 +490,9 @@ class GlueMethod {
 
   private function getArgs():Array<MethodArg> {
     var meth = this.meth;
-    var args:Array<MethodArg> = [ for (arg in meth.args) { name:arg.name, type: arg.t.haxeType } ];
+    if (meth.uname == '.equals')
+      return [ { name:this.haxeArgs[0].name, type: new TypeRef(['unreal'], 'Wrapper') } ];
+    var args:Array<MethodArg> = [ for (arg in this.haxeArgs) { name:arg.name, type: arg.t.haxeType } ];
     if (meth.params != null) {
       var helpers:Array<MethodArg> = [];
       for (param in meth.params) {
@@ -506,7 +510,7 @@ class GlueMethod {
     buf.foldJoin(this.cppIncludes, function(inc:String, buf:CodeFormatter) return buf << '"' << new Escaped(inc) << '"');
     buf << ')' << new Newline();
     buf << '@:glueHeaderIncludes(';
-    buf.foldJoin(this.cppIncludes, function(inc:String, buf:CodeFormatter) return buf << '"' << new Escaped(inc) << '"');
+    buf.foldJoin(this.headerIncludes, function(inc:String, buf:CodeFormatter) return buf << '"' << new Escaped(inc) << '"');
     buf << ')' << new Newline();
     if (this.headerCode != null) {
       buf << '@:glueHeaderCode("' << new Escaped(this.headerCode) << '")' << new Newline();
@@ -549,7 +553,7 @@ class GlueMethod {
     }
     buf << '(';
     buf.mapJoin(this.getArgs(), function(arg) return (arg.opt ? '?' : '') + arg.name + ' : ' + arg.type.toString());
-    buf << ') : ' << meth.ret.haxeType.toString();
+    buf << ') : ' << this.retHaxeType.toString();
     if (this.haxeCode == null) {
       buf << ';';
     } else {
@@ -641,6 +645,10 @@ typedef MethodDef = {
 
   inline public function hasAny(flags:MethodFlags):Bool {
     return flags.t() & this != 0;
+  }
+
+  inline public function hasAll(flags:MethodFlags):Bool {
+    return flags.t() & this == flags;
   }
 
   @:op(A|B) inline public function add(flag:MethodFlags):MethodFlags {
