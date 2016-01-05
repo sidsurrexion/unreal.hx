@@ -11,12 +11,12 @@ using StringTools;
   Per-build globals
  **/
 class Globals {
-  public static var MIN_BUILDTOOL_VERSION_LEVEL = 2;
+  public static var MIN_BUILDTOOL_VERSION_LEVEL = 3;
 
   public static var cur(default,null):Globals = new Globals();
 
   @:isVar public var haxeRuntimeDir(get,null):String;
-  @:isVar public var haxeTargetModule(get,null):String;
+  @:isVar public var glueTargetModule(get,null):String;
   public var module(get,null):String;
 
   private var targetModuleSet:Bool = false;
@@ -26,12 +26,12 @@ class Globals {
       this.setHaxeRuntimeDir();
     return this.haxeRuntimeDir;
   }
-  inline private function get_haxeTargetModule() {
+  inline private function get_glueTargetModule() {
     if (this.targetModuleSet) {
-      return haxeTargetModule;
+      return glueTargetModule;
     } else {
-      setHaxeTargetModule();
-      return haxeTargetModule;
+      setGlueTargetModule();
+      return glueTargetModule;
     }
   }
 
@@ -56,8 +56,8 @@ class Globals {
     }
   }
 
-  public function setHaxeTargetModule() {
-    this.haxeTargetModule = Context.definedValue('haxe_target_module');
+  public function setGlueTargetModule() {
+    this.glueTargetModule = Context.definedValue('glue_target_module');
     this.targetModuleSet = true;
   }
 
